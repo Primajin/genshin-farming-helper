@@ -75,7 +75,7 @@ function FarmHelper({category, item}) {
 						<br/>
 						{tierValue[index]}
 					</button>
-					{index < 3 && !hasJustOne && (
+					{index < items.length - 1 && (
 						<label>
 							<input
 								type='checkbox'
