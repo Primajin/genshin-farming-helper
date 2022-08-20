@@ -1,0 +1,89 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  user-select: none;
+}
+
+.wrapper {
+  display: inline-block;
+  margin: 2px;
+  width: 75px;
+  height: 130px;
+  position: relative;
+  vertical-align: top;
+}
+
+button {
+  background: #eae6dd top center no-repeat;
+  text-align: center;
+  cursor: pointer;
+  border: 0 solid transparent;
+  border-radius: 7px;
+}
+
+.wrapper button {
+  background-size: contain;
+  height: 95px;
+  padding: 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.wrapper button::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, #eae6dd 21px);
+  position: absolute;
+  top: 75px;
+  right: 0;
+  transform: translateY(-100%);
+}
+
+button img {
+  pointer-events: none;
+}
+
+label {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  background: top center no-repeat;
+  background-size: contain;
+  border: 0 solid transparent;
+  border-radius: 7px;
+  width: 75px;
+  height: 75px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + div {
+  background: rgba(255,255,255,0.5);
+}
+
+[data-hidden="true"] {
+  visibility: hidden;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.plus-button {
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.choose-item {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+fieldset {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
