@@ -1,12 +1,26 @@
 import PropTypes from 'prop-types';
+import genshinDB from 'genshin-db';
 import {useEffect, useState} from 'react';
 
-import materials from '../constants';
-import {getOffset} from '../helper';
+import {materialTypes, nameKeys} from '../constants';
 import backgrounds from './backgrounds.js';
 
 function FarmHelper({category, item}) {
-	const items = materials[category][item];
+	let itemNames = [];
+	switch (category) {
+		case materialTypes.TALENT:
+			itemNames = nameKeys.map(key => genshinDB.talentmaterialtypes(item)[key]);
+			break;
+		case materialTypes.WEAPON:
+			itemNames = nameKeys.map(key => genshinDB.weaponmaterialtypes(item)[key]);
+			break;
+		default:
+			// Moep
+	}
+
+	const items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
+	console.log('itemNames', itemNames, items);
+	// Console.log(materialTypes.TALENT, category, items, genshinDB.materials(item));
 	const hasJustOne = items.length === 1;
 	const hasTierFour = items.length > 3;
 
@@ -60,18 +74,16 @@ function FarmHelper({category, item}) {
 		}
 	}, [lockTierThree, hasTierFour, tierThree, tierFour]);
 
-	const offset = getOffset(items.length);
-
 	return (
 		<section>
-			{items.map((itemPath, index) => (
-				<div key={itemPath} className='wrapper'>
+			{items.map((item, index) => (
+				<div key={item.name} className='wrapper'>
 					<button
-						style={{backgroundImage: `url(${backgrounds[index + offset]})`}}
+						style={{backgroundImage: `url(${backgrounds[item.rarity - 1]})`}}
 						type='button'
 						onClick={incTier[index]}
 					>
-						<img alt={`${item} Tier ${index + 1}`} src={itemPath} width='75' height='75'/>
+						<img alt={`${item} Tier ${index + 1}`} src={item?.images.fandom} width='75' height='75'/>
 						<br/>
 						{tierValue[index]}
 					</button>
@@ -94,7 +106,6 @@ function FarmHelper({category, item}) {
 }
 
 FarmHelper.propTypes = {
-	category: PropTypes.string,
 	item: PropTypes.string,
 };
 

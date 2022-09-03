@@ -1,28 +1,18 @@
 import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
 
-import materials from '../constants';
-import ItemPicker from './item-picker.js';
+import {materialTypes} from '../constants';
+import ItemsPicker from './items-picker.js';
+import SingleItemPicker from './single-item-picker.js';
 
-/**
- * Get items for Arraylist
- * @param {string[]} collection
- * @param {string} type
- * @returns {object[][]}
- */
-const getItemsFromDBForCollection = (collection, type) => collection.map(itemName => Object.hasOwn(genshinDB, type) && genshinDB[type](itemName));
+const getAllMaterialItemsFromDB = type => genshinDB.materials(type, {matchCategories: true, verboseCategories: true}).sort((a, b) => a.sortorder - b.sortorder);
 
-const getMaterialItemsFromDB = type => {
-	const list = genshinDB.materials(type, {matchCategories: true});
-	return getItemsFromDBForCollection(list, 'materials').sort((a, b) => a.sortorder - b.sortorder);
-};
+const characterMaterials = getAllMaterialItemsFromDB('Character Level-Up Material');
+const characterLVLMaterials = characterMaterials.filter(material => !material?.description.startsWith('Character Ascension'));
+const characterAscensionMaterials = characterMaterials.filter(material => material?.description.startsWith('Character Ascension'));
 
-const talentMaterials = getMaterialItemsFromDB('talent material');
-const weaponMaterials = getMaterialItemsFromDB('weapon material');
-const ingredients = getMaterialItemsFromDB('ingredient');
-const characterMaterials = getMaterialItemsFromDB('Character Level-Up Material');
-const characterLVLMaterials = characterMaterials.filter(material => !material.description.startsWith('Character Ascension'));
-const characterAscensionMaterials = characterMaterials.filter(material => material.description.startsWith('Character Ascension'));
+const weaponMaterials2 = genshinDB.weaponmaterialtypes('names', {matchCategories: true, verboseCategories: true});
+const talentMaterials2 = genshinDB.talentmaterialtypes('names', {matchCategories: true, verboseCategories: true});
 
 function ItemCategories({onChangeProp, onSubmitProp}) {
 	return (
@@ -34,29 +24,24 @@ function ItemCategories({onChangeProp, onSubmitProp}) {
 			<button type='submit' className='material-icons plus-button'>note_add</button>
 
 			<fieldset className='narrow'>
-				<legend>Character Level-Up Materials:</legend>
-				<ItemPicker materials={characterLVLMaterials}/>
-			</fieldset>
-
-			<fieldset>
-				<legend>Character Ascension Materials:</legend>
-				<ItemPicker materials={characterAscensionMaterials}/>
+				<legend>Talent Materials:</legend>
+				<SingleItemPicker materials={talentMaterials2} type={materialTypes.TALENT}/>
 			</fieldset>
 
 			<fieldset className='narrow'>
-				<legend>Talent Materials:</legend>
-				<ItemPicker materials={talentMaterials}/>
-			</fieldset>
-
-			<fieldset>
 				<legend>Weapon Materials:</legend>
-				<ItemPicker materials={weaponMaterials}/>
+				<SingleItemPicker materials={weaponMaterials2} type={materialTypes.WEAPON}/>
 			</fieldset>
 
-			<fieldset>
-				<legend>Ingredients:</legend>
-				<ItemPicker materials={ingredients}/>
-			</fieldset>
+			{/* <fieldset className='narrow'> */}
+			{/*	<legend>Character Level-Up Materials:</legend> */}
+			{/*	<ItemsPicker materials={characterLVLMaterials}/> */}
+			{/* </fieldset> */}
+
+			{/* <fieldset> */}
+			{/*	<legend>Character Ascension Materials:</legend> */}
+			{/*	<ItemsPicker materials={characterAscensionMaterials}/> */}
+			{/* </fieldset> */}
 
 			<button type='submit' className='material-icons plus-button'>note_add</button>
 		</form>

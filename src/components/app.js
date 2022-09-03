@@ -4,7 +4,7 @@ import FarmHelper from './farm-helper.js';
 import ItemCategories from './item-categories.js';
 
 export default function App() {
-	const [helperList, setHelperList] = useState([<FarmHelper key='initial'/>]);
+	const [helperList, setHelperList] = useState([]);
 	const [value, setValue] = useState('Ascension.AgnidusAgate');
 
 	const addHelperWithItem = itemName => {
