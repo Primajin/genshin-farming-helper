@@ -1,11 +1,12 @@
 import {useState} from 'react';
 
+import {materialTypes} from '../constants';
 import FarmHelper from './farm-helper.js';
 import ItemCategories from './item-categories.js';
 
 export default function App() {
 	const [helperList, setHelperList] = useState([]);
-	const [value, setValue] = useState('Ascension.AgnidusAgate');
+	const [value, setValue] = useState(materialTypes.ASCENSION + 'Agnidus Agate');
 
 	const addHelperWithItem = itemName => {
 		const category = itemName.split('.')[0];

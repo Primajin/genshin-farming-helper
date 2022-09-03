@@ -6,21 +6,31 @@ import {materialTypes, nameKeys} from '../constants';
 import backgrounds from './backgrounds.js';
 
 function FarmHelper({category, item}) {
-	let itemNames = [];
+	console.log('category, item', category, item);
+	let items = [];
+	let itemNames;
 	switch (category) {
 		case materialTypes.TALENT:
 			itemNames = nameKeys.map(key => genshinDB.talentmaterialtypes(item)[key]);
+			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
 			break;
 		case materialTypes.WEAPON:
 			itemNames = nameKeys.map(key => genshinDB.weaponmaterialtypes(item)[key]);
+			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
+			break;
+		case materialTypes.LEVEL:
+			// NOT YET IMPLEMENTED
+			items = [genshinDB.materials(item)];
 			break;
 		default:
-			// Moep
+			itemNames = item.split(' ')[0];
+			items = genshinDB
+				.materials('names', {matchCategories: true, verboseCategories: true})
+				.filter(item => item.name.includes(itemNames))
+				.sort((a, b) => a.sortorder - b.sortorder).reverse();
+			break;
 	}
 
-	const items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
-	console.log('itemNames', itemNames, items);
-	// Console.log(materialTypes.TALENT, category, items, genshinDB.materials(item));
 	const hasJustOne = items.length === 1;
 	const hasTierFour = items.length > 3;
 
@@ -106,12 +116,13 @@ function FarmHelper({category, item}) {
 }
 
 FarmHelper.propTypes = {
+	category: PropTypes.string,
 	item: PropTypes.string,
 };
 
 FarmHelper.defaultProps = {
-	category: 'Ascension',
-	item: 'AgnidusAgate',
+	category: materialTypes.ASCENSION,
+	item: 'Agnidus Agate',
 };
 
 export default FarmHelper;

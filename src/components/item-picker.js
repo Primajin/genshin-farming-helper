@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
 import backgrounds from './backgrounds.js';
 
-function SingleItemPicker({materials, type}) {
+function ItemPicker({materials, type}) {
 	return materials.map(material => {
 		const goesUpTo5 = Boolean(material['5starname']);
-		const rarity = (goesUpTo5 ? 5 : 4) - 1;
-		const highestName = material['5starname'] ?? material['4starname'];
+		const rarity = (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
+		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
 		const item = genshinDB.materials(highestName);
 		return (
 			<label key={material.name} title={material.name}>
@@ -27,9 +27,9 @@ function SingleItemPicker({materials, type}) {
 	);
 }
 
-SingleItemPicker.propTypes = {
+ItemPicker.propTypes = {
 	materials: PropTypes.array.isRequired,
 	type: PropTypes.string.isRequired,
 };
 
-export default SingleItemPicker;
+export default ItemPicker;
