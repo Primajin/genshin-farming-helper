@@ -16,6 +16,7 @@ function ItemPicker({onChangeProp, onSubmitProp}) {
 					<legend>{categoryName}:</legend>
 					{Object.keys(materials[categoryName]).map((itemName, itemIndex) => (
 						<label key={itemName} style={{backgroundImage: `url(${backgrounds[getReverseOffset(materials[categoryName][itemName].length) - 1]})`}}>
+							{/* eslint-disable-next-line react/no-unknown-property */}
 							<input defaultChecked={catIndex === 0 && itemIndex === 0} type='radio' name='item' value={`${categoryName}.${itemName}`}/>
 							<div><img src={materials[categoryName][itemName].at(-1)} alt={itemName} width='75' height='75'/></div>
 						</label>
