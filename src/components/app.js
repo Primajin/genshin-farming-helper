@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 import FarmHelper from './farm-helper.js';
-import ItemPicker from './item-picker.js';
+import ItemCategories from './item-categories.js';
 
 export default function App() {
 	const [helperList, setHelperList] = useState([<FarmHelper key='initial'/>]);
@@ -23,7 +23,7 @@ export default function App() {
 	return (
 		<>
 			{helperList}
-			<ItemPicker onChangeProp={onChange} onSubmitProp={onSubmit}/>
+			<ItemCategories onChangeProp={onChange} onSubmitProp={onSubmit}/>
 		</>
 	);
 }

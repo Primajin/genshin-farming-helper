@@ -6,63 +6,90 @@ body {
 
 .wrapper {
   display: inline-block;
-  margin: 2px;
-  width: 75px;
   height: 130px;
+  margin: 2px;
   position: relative;
   vertical-align: top;
+  width: 75px;
 }
 
 button {
   background: #eae6dd top center no-repeat;
-  text-align: center;
-  cursor: pointer;
-  border: 0 solid transparent;
   border-radius: 7px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  text-align: center;
 }
 
 .wrapper button {
   background-size: contain;
+  font-weight: bold;
   height: 95px;
   padding: 0;
-  font-weight: bold;
   position: relative;
 }
 
 .wrapper button::after {
+  background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, #eae6dd 21px);
   content: "";
   display: block;
-  width: 20px;
   height: 20px;
-  background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, #eae6dd 21px);
   position: absolute;
-  top: 75px;
   right: 0;
+  top: 75px;
   transform: translateY(-100%);
+  width: 20px;
+}
+
+.wrapper span {
+  margin-top: 3px;
 }
 
 button img {
   pointer-events: none;
 }
 
+fieldset {
+  border: 1px solid #000;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  padding: 5px 12px 6px;
+}
+
+fieldset.narrow {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 label {
   cursor: pointer;
-  display: inline-block;
+  font: 12px sans-serif;
   margin: 5px;
-  background: top center no-repeat;
-  background-size: contain;
-  border: 0 solid transparent;
-  border-radius: 7px;
+  min-height: 75px;
   width: 75px;
-  height: 75px;
+}
+
+label img:not([src]) {
+  display: none;
 }
 
 input {
   display: none;
 }
 
+input + div {
+  background: transparent center center no-repeat;
+  background-size: contain;
+  border-radius: 7px;
+  height: 75px;
+  margin-bottom: 5px;
+  width: 75px;
+}
+
 input:checked + div {
-  background: rgba(255,255,255,0.5);
+  opacity: .5;
 }
 
 [data-hidden="true"] {
@@ -74,16 +101,11 @@ input:checked + div {
 }
 
 .plus-button {
-  margin-top: 15px;
+  margin: 15px;
   padding: 5px;
 }
 
 .choose-item {
   margin: 0 auto;
   max-width: 400px;
-}
-
-fieldset {
-  border: 1px solid #000;
-  margin-bottom: 5px;
 }
