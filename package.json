@@ -19,7 +19,7 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@babel/runtime": "7.18.9",
+    "@babel/runtime": "7.19.0",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
