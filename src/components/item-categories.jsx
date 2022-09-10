@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
 
 import {materialTypes} from '../constants';
-import ItemPicker from './item-picker.js';
+import ItemPicker from './item-picker.jsx';
 
 const getAllMaterialItemsFromDB = type => genshinDB.materials(type, {matchCategories: true, verboseCategories: true}).sort((a, b) => a.sortorder - b.sortorder);
 

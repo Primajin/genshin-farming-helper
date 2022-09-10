@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import genshinDB from 'genshin-db';
-import backgrounds from './backgrounds.js';
+import {backgrounds} from '../constants';
 
 function ItemPicker({materials, type}) {
 	return materials.map(material => {
@@ -30,6 +30,11 @@ function ItemPicker({materials, type}) {
 ItemPicker.propTypes = {
 	materials: PropTypes.array.isRequired,
 	type: PropTypes.string.isRequired,
+};
+
+ItemPicker.defaultProps = {
+	materials: [],
+	type: '',
 };
 
 export default ItemPicker;

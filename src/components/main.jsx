@@ -1,10 +1,10 @@
 import {useState} from 'react';
 
 import {materialTypes} from '../constants';
-import FarmHelper from './farm-helper.js';
-import ItemCategories from './item-categories.js';
+import FarmHelper from './farm-helper.jsx';
+import ItemCategories from './item-categories.jsx';
 
-export default function App() {
+export default function Main() {
 	const [helperList, setHelperList] = useState([]);
 	const [value, setValue] = useState(materialTypes.ASCENSION + 'Agnidus Agate');
 

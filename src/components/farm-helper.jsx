@@ -2,11 +2,9 @@ import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
 import {useEffect, useState} from 'react';
 
-import {materialTypes, nameKeys} from '../constants';
-import backgrounds from './backgrounds.js';
+import {backgrounds, materialTypes, nameKeys} from '../constants';
 
 function FarmHelper({category, item}) {
-	console.log('category, item', category, item);
 	let items = [];
 	let itemNames;
 	switch (category) {

@@ -9,7 +9,7 @@
     "impact",
     "farming"
   ],
-  "main": "src/index.js",
+  "main": "src/index.jsx",
   "dependencies": {
     "@fontsource/material-icons": "^4.5.4",
     "genshin-db": "^4.3.0",
