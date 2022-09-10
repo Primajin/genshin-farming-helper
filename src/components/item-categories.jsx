@@ -13,7 +13,7 @@ const characterAscensionMaterials = characterMaterials.filter(material => materi
 const weaponMaterials2 = genshinDB.weaponmaterialtypes('names', {matchCategories: true, verboseCategories: true});
 const talentMaterials2 = genshinDB.talentmaterialtypes('names', {matchCategories: true, verboseCategories: true});
 
-function ItemCategories({onChangeProp, onSubmitProp}) {
+function ItemCategories({onChangeProp}) {
 	return (
 		<form
 			className='choose-item'
