@@ -88,12 +88,12 @@ function FarmHelper({category, item}) {
 				<div key={item.name} className='wrapper'>
 					<button
 						style={{backgroundImage: `url(${backgrounds[item.rarity - 1]})`}}
+						title={item.name}
 						type='button'
 						onClick={incTier[index]}
 					>
-						<img alt={`${item} Tier ${index + 1}`} src={item?.images.fandom} width='75' height='75'/>
-						<br/>
-						{tierValue[index]}
+						<img alt={item.name} src={item?.images.fandom} width='75' height='75'/>
+						<b>{tierValue[index]}</b>
 					</button>
 					{index < items.length - 1 && (
 						<label>

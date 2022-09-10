@@ -23,7 +23,6 @@ button {
 
 .wrapper button {
   background-size: contain;
-  font-weight: bold;
   height: 95px;
   padding: 0;
   position: relative;
