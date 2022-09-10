@@ -18,10 +18,7 @@ function ItemCategories({onChangeProp, onSubmitProp}) {
 		<form
 			className='choose-item'
 			onChange={onChangeProp}
-			onSubmit={onSubmitProp}
 		>
-			<button type='submit' className='material-icons plus-button'>note_add</button>
-
 			<fieldset className='narrow'>
 				<legend>Talent Materials:</legend>
 				<ItemPicker materials={talentMaterials2} type={materialTypes.TALENT}/>
@@ -42,15 +39,12 @@ function ItemCategories({onChangeProp, onSubmitProp}) {
 				<h2>NOT FULLY IMPLEMENTED YET</h2>
 				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL}/>
 			</fieldset>
-
-			<button type='submit' className='material-icons plus-button'>note_add</button>
 		</form>
 	);
 }
 
 ItemCategories.propTypes = {
 	onChangeProp: PropTypes.func.isRequired,
-	onSubmitProp: PropTypes.func.isRequired,
 };
 
 export default ItemCategories;
