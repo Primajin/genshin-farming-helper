@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/genshin-farming-helper/static/css/main.ec421f0f.css",
-    "main.js": "/genshin-farming-helper/static/js/main.e21ee3be.js",
+    "main.css": "/genshin-farming-helper/static/css/main.27caad7a.css",
+    "main.js": "/genshin-farming-helper/static/js/main.b30eb7dd.js",
     "static/media/material-icons-base-400-normal.woff": "/genshin-farming-helper/static/media/material-icons-base-400-normal.88899cc48af9534ab3fb.woff",
     "static/media/material-icons-base-400-normal.woff2": "/genshin-farming-helper/static/media/material-icons-base-400-normal.fbec73474c1c92fba7af.woff2",
     "static/media/background_Item_2_Star.png": "/genshin-farming-helper/static/media/background_Item_2_Star.a0764fd5015d464a5bb7.png",
@@ -10,11 +10,11 @@
     "static/media/background_Item_4_Star.png": "/genshin-farming-helper/static/media/background_Item_4_Star.d2d4270ad6514f5d43a4.png",
     "static/media/background_Item_1_Star.png": "/genshin-farming-helper/static/media/background_Item_1_Star.6681830d3ea34dbd452c.png",
     "index.html": "/genshin-farming-helper/index.html",
-    "main.ec421f0f.css.map": "/genshin-farming-helper/static/css/main.ec421f0f.css.map",
-    "main.e21ee3be.js.map": "/genshin-farming-helper/static/js/main.e21ee3be.js.map"
+    "main.27caad7a.css.map": "/genshin-farming-helper/static/css/main.27caad7a.css.map",
+    "main.b30eb7dd.js.map": "/genshin-farming-helper/static/js/main.b30eb7dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec421f0f.css",
-    "static/js/main.e21ee3be.js"
+    "static/css/main.27caad7a.css",
+    "static/js/main.b30eb7dd.js"
   ]
 }
