@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.19.0",
+    "@testing-library/react": "^13.4.0",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -45,7 +46,22 @@
     "not op_mini all"
   ],
   "xo": {
-    "extends": "xo-react",
+    "extends": [
+      "xo",
+      "xo-react"
+    ],
+    "overrides": [
+      {
+        "files": "src/**/__tests__/*",
+        "plugins": [
+          "jest"
+        ],
+        "extends": [
+          "plugin:jest/recommended",
+          "plugin:jest/style"
+        ]
+      }
+    ],
     "rules": {
       "import/extensions": "off",
       "react/react-in-jsx-scope": "off"
