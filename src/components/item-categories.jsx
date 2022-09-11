@@ -16,12 +16,21 @@ const categories = css`
     flex-flow: row wrap;
     justify-content: space-around;
     margin-top: 25px;
-    padding: 5px 12px 6px;
+    padding: 5px 10px 6px;
 
     &.narrow {
       padding-left: 55px;
       padding-right: 55px;
     }
+		
+		label {
+      margin: 5px 0;
+      width: 75px;
+			
+			&:empty {
+				margin: 0;
+			}
+		}
   }
 
   legend {
@@ -50,22 +59,26 @@ function ItemCategories({onChangeProp}) {
 			<fieldset className='narrow'>
 				<legend>Talent Materials</legend>
 				<ItemPicker materials={talentMaterials2} type={materialTypes.TALENT}/>
+				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset className='narrow'>
 				<legend>Weapon Materials</legend>
 				<ItemPicker materials={weaponMaterials2} type={materialTypes.WEAPON}/>
+				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset>
 				<legend>Character Ascension Materials</legend>
 				<ItemPicker materials={characterAscensionMaterials} type={materialTypes.ASCENSION}/>
+				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset>
 				<legend>Character Level-Up Materials</legend>
 				<h2>NOT FULLY IMPLEMENTED YET</h2>
 				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL}/>
+				<label/><label/><label/><label/>
 			</fieldset>
 		</form>
 	);

@@ -32,7 +32,7 @@ const globalStyles = css`
     left: 50%;
     margin: 0 auto;
 		width: 100%;
-    max-width: 400px;
+    max-width: 396px;
     transform: translateX(-50%);
 		padding: 15px 0;
   }

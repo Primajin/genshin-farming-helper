@@ -8,9 +8,7 @@ import {backgrounds, IMG_URL} from '../constants';
 const wrapper = css`
   cursor: pointer;
   font: 12px sans-serif;
-  margin: 5px;
   min-height: 75px;
-  width: 75px;
 
   input + div {
     background: transparent center center no-repeat;
