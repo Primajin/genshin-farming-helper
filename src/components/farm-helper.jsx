@@ -17,8 +17,8 @@ const wrapper = css`
 `;
 
 const button = css`
-  background: ${theme.primary} top center no-repeat;
-  background-size: contain;
+	background: ${theme.primary} top center no-repeat;
+	background-size: contain;
 	border-radius: 7px;
 	border: 0 solid transparent;
 	cursor: pointer;
@@ -26,28 +26,28 @@ const button = css`
 	padding: 0;
 	position: relative;
 	text-align: center;
-	
-	&::after {
-    background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, ${theme.primary} 21px);
-    content: "";
-    display: block;
-    height: 20px;
-    position: absolute;
-    right: 0;
-    top: 75px;
-    transform: translateY(-100%);
-    width: 20px;
-  }
 
-  > * {
-    pointer-events: none;
-  }
+	&::after {
+		background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, ${theme.primary} 21px);
+		content: "";
+		display: block;
+		height: 20px;
+		position: absolute;
+		right: 0;
+		top: 75px;
+		transform: translateY(-100%);
+		width: 20px;
+	}
+
+	> * {
+		pointer-events: none;
+	}
 `;
 
 const lock = css`
 	background: ${theme.primary};
 	border-radius: 50%;
-  margin-top: 3px;
+	margin-top: 3px;
 	padding: 3px;
 `;
 

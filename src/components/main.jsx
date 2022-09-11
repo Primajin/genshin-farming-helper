@@ -8,34 +8,34 @@ import ItemCategories from './item-categories.jsx';
 
 const globalStyles = css`
 	body {
-    background: transparent top center url("https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg") no-repeat fixed;
-    background-size: cover;
-    margin: 0;
+		background: transparent top center url("https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg") no-repeat fixed;
+		background-size: cover;
+		margin: 0;
 		padding: 0;
-    font-family: sans-serif;
-    text-align: center;
-    user-select: none;
+		font-family: sans-serif;
+		text-align: center;
+		user-select: none;
 	}
 
-  .material-icons {
-    cursor: pointer;
-  }
+	.material-icons {
+		cursor: pointer;
+	}
 
-  input {
-    display: none;
-  }
+	input {
+		display: none;
+	}
 
-  main {
+	main {
 		position: absolute;
 		top: 0;
 		z-index: 1;
-    left: 50%;
-    margin: 0 auto;
+		left: 50%;
+		margin: 0 auto;
 		width: 100%;
-    max-width: 396px;
-    transform: translateX(-50%);
+		max-width: 396px;
+		transform: translateX(-50%);
 		padding: 15px 0;
-  }
+	}
 `;
 
 const video = css`
@@ -45,11 +45,11 @@ const video = css`
 	top: 0;
 	z-index: 0;
 
-  video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+	video {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
 `;
 
 export default function Main() {

@@ -8,40 +8,40 @@ import theme from '../theme';
 import ItemPicker from './item-picker.jsx';
 
 const categories = css`
-  fieldset {
-    background: ${theme.primary};
-    border: 1px solid rgba(0,0,0,0.5);
-    border-radius: 7px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 25px;
-    padding: 5px 10px 6px;
+	fieldset {
+		background: ${theme.primary};
+		border: 1px solid rgba(0,0,0,0.5);
+		border-radius: 7px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin-top: 25px;
+		padding: 5px 10px 6px;
 
-    &.narrow {
-      padding-left: 55px;
-      padding-right: 55px;
-    }
-		
+		&.narrow {
+			padding-left: 55px;
+			padding-right: 55px;
+		}
+
 		label {
-      margin: 5px 0;
-      width: 75px;
-			
+			margin: 5px 0;
+			width: 75px;
+
 			&:empty {
 				margin: 0;
 			}
 		}
-  }
+	}
 
-  legend {
-    background: ${theme.primary};
-    border: 1px solid rgba(0,0,0,0.5);
-    border-bottom: 0;
-    border-radius: 7px 7px 0 0;
-    padding: 3px 5px 0;
-    position: relative;
-    top: -10px;
-  }
+	legend {
+		background: ${theme.primary};
+		border: 1px solid rgba(0,0,0,0.5);
+		border-bottom: 0;
+		border-radius: 7px 7px 0 0;
+		padding: 3px 5px 0;
+		position: relative;
+		top: -10px;
+	}
 `;
 
 const getAllMaterialItemsFromDB = type => genshinDB.materials(type, {matchCategories: true, verboseCategories: true}).sort((a, b) => a.sortorder - b.sortorder);
