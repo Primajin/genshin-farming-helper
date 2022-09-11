@@ -11,6 +11,7 @@
   ],
   "main": "src/index.jsx",
   "dependencies": {
+    "@emotion/react": "^11.10.4",
     "@fontsource/material-icons": "^4.5.4",
     "genshin-db": "^4.3.0",
     "gh-pages": "^4.0.0",
@@ -36,6 +37,7 @@
     "lint:watch": "npx nodemon -x npm run lint:fix --ext js,jsx,json",
     "predeploy": "npm run build",
     "pretest": "npm run lint",
+    "publish": "npm run deploy",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
   },
@@ -64,7 +66,8 @@
     ],
     "rules": {
       "import/extensions": "off",
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "react/no-unknown-property": [2,{"ignore": ["css"]}]
     }
   }
 }

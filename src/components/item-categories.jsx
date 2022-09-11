@@ -1,8 +1,39 @@
+/** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
+import {css} from '@emotion/react';
 
 import {materialTypes} from '../constants';
+import theme from '../theme';
 import ItemPicker from './item-picker.jsx';
+
+const categories = css`
+  fieldset {
+    background: ${theme.primary};
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 7px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding: 5px 12px 6px;
+
+    &.narrow {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+  }
+
+  legend {
+    background: ${theme.primary};
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 0;
+    border-radius: 7px 7px 0 0;
+    padding: 3px 5px 0;
+    position: relative;
+    top: -10px;
+  }
+`;
 
 const getAllMaterialItemsFromDB = type => genshinDB.materials(type, {matchCategories: true, verboseCategories: true}).sort((a, b) => a.sortorder - b.sortorder);
 
@@ -15,27 +46,24 @@ const talentMaterials2 = genshinDB.talentmaterialtypes('names', {matchCategories
 
 function ItemCategories({onChangeProp}) {
 	return (
-		<form
-			className='choose-item'
-			onChange={onChangeProp}
-		>
+		<form css={categories} onChange={onChangeProp}>
 			<fieldset className='narrow'>
-				<legend>Talent Materials:</legend>
+				<legend>Talent Materials</legend>
 				<ItemPicker materials={talentMaterials2} type={materialTypes.TALENT}/>
 			</fieldset>
 
 			<fieldset className='narrow'>
-				<legend>Weapon Materials:</legend>
+				<legend>Weapon Materials</legend>
 				<ItemPicker materials={weaponMaterials2} type={materialTypes.WEAPON}/>
 			</fieldset>
 
 			<fieldset>
-				<legend>Character Ascension Materials:</legend>
+				<legend>Character Ascension Materials</legend>
 				<ItemPicker materials={characterAscensionMaterials} type={materialTypes.ASCENSION}/>
 			</fieldset>
 
 			<fieldset>
-				<legend>Character Level-Up Materials:</legend>
+				<legend>Character Level-Up Materials</legend>
 				<h2>NOT FULLY IMPLEMENTED YET</h2>
 				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL}/>
 			</fieldset>

@@ -1,8 +1,55 @@
+/** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
+import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
 
 import {backgrounds, IMG_URL, materialTypes, nameKeys} from '../constants';
+import theme from '../theme';
+
+const wrapper = css`
+	display: inline-block;
+	height: 130px;
+	margin: 2px;
+	position: relative;
+	vertical-align: top;
+	width: 75px;
+`;
+
+const button = css`
+  background: ${theme.primary} top center no-repeat;
+  background-size: contain;
+	border-radius: 7px;
+	border: 0 solid transparent;
+	cursor: pointer;
+	height: 95px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	
+	&::after {
+    background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, ${theme.primary} 21px);
+    content: "";
+    display: block;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    transform: translateY(-100%);
+    width: 20px;
+  }
+
+  > * {
+    pointer-events: none;
+  }
+`;
+
+const lock = css`
+	background: ${theme.primary};
+	border-radius: 50%;
+  margin-top: 3px;
+	padding: 3px;
+`;
 
 function FarmHelper({category, item}) {
 	let items = [];
@@ -82,11 +129,14 @@ function FarmHelper({category, item}) {
 		}
 	}, [lockTierThree, hasTierFour, tierThree, tierFour]);
 
+	// Console.log('items', items);
+
 	return (
 		<section>
 			{items.map((item, index) => (
-				<div key={item.name} className='wrapper'>
+				<div key={item.name} css={wrapper}>
 					<button
+						css={button}
 						style={{backgroundImage: `url(${backgrounds[item.rarity - 1]})`}}
 						title={item.name}
 						type='button'
@@ -102,9 +152,9 @@ function FarmHelper({category, item}) {
 								checked={lockedTier[index]}
 								onChange={() => setLockTier[index](!lockedTier[index])}
 							/>
-							<span className='material-icons'>
+							<div css={lock} className='material-icons'>
 								{lockedTier[index] ? 'lock' : 'lock_open'}
-							</span>
+							</div>
 						</label>
 					)}
 				</div>
