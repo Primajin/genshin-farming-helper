@@ -81,6 +81,7 @@ export default function Main() {
 	};
 
 	const showVideo = window?.innerWidth > 768;
+	const disabledKeys = farmHelperList.map(item => item.key);
 
 	return (
 		<>
@@ -94,7 +95,7 @@ export default function Main() {
 			)}
 			<main>
 				{farmHelperList}
-				<ItemCategories list={farmHelperList} onChangeProp={onChange}/>
+				<ItemCategories list={disabledKeys} onChangeProp={onChange}/>
 			</main>
 		</>
 	);
