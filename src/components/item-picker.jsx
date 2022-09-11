@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import genshinDB from 'genshin-db';
-import {backgrounds} from '../constants';
+import {backgrounds, IMG_URL} from '../constants';
 
 function ItemPicker({materials, type}) {
 	return materials.map(material => {
@@ -17,7 +17,7 @@ function ItemPicker({materials, type}) {
 				}}
 				>
 					<img
-						src={item.images?.fandom} alt={material.name} width='75'
+						src={`${IMG_URL}${item.images?.nameicon}.png`} alt={material.name} width='75'
 						height='75'/>
 				</div>
 				<span>{material.name}</span>

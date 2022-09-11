@@ -34,7 +34,7 @@ const slime = {
 	rarity: '3',
 	category: 'AVATAR_MATERIAL',
 	materialtype: 'Character Level-Up Material',
-	source: ['Crafted',		'Dropped by Lv. 60+ slimes'],
+	source: ['Crafted', 'Dropped by Lv. 60+ slimes'],
 	images: {
 		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Slime_Concentrate.png',
 		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d8/Item_Slime_Concentrate.png',

@@ -12,4 +12,7 @@ export const materialTypes = {
 	LEVEL: 'LEVEL',
 	ASCENSION: 'ASCENSION',
 };
+
 export const nameKeys = ['2starname', '3starname', '4starname', '5starname'];
+
+export const IMG_URL = 'https://res.cloudinary.com/genshin/image/upload/sprites/'
