@@ -44,16 +44,21 @@ const button = css`
 	}
 `;
 
-const lock = css`
+const actions = css`
 	background: ${theme.primary};
 	border-radius: 50%;
 	margin-top: 3px;
 	padding: 3px;
 `;
 
-function FarmHelper({category, item}) {
+const removeButton = css`
+	margin: 30px 0 0 25px;
+`;
+
+function FarmHelper({category, item, onRemove}) {
 	let items = [];
 	let itemNames;
+	let dropsIndex = 0;
 	switch (category) {
 		case materialTypes.TALENT:
 			itemNames = nameKeys.map(key => genshinDB.talentmaterialtypes(item)[key]);
@@ -64,8 +69,8 @@ function FarmHelper({category, item}) {
 			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
 			break;
 		case materialTypes.LEVEL:
-			const index = drops.indexOf(item);
-			items = index > 0 ? [genshinDB.materials(drops[index - 2]), genshinDB.materials(drops[index - 1]), genshinDB.materials(drops[index])] : [genshinDB.materials(item)];
+			dropsIndex = drops.indexOf(item);
+			items = dropsIndex > 0 ? [genshinDB.materials(drops[dropsIndex - 2]), genshinDB.materials(drops[dropsIndex - 1]), genshinDB.materials(drops[dropsIndex])] : [genshinDB.materials(item)];
 			break;
 		default:
 			itemNames = item.split(' ')[0];
@@ -129,36 +134,35 @@ function FarmHelper({category, item}) {
 		}
 	}, [lockTierThree, hasTierFour, tierThree, tierFour]);
 
-	// Console.log('items', items);
-
 	return (
 		<section>
-			{items.map((item, index) => (
+			{items.map((item, itemIndex) => (
 				<div key={item.name} css={wrapper}>
 					<button
 						css={button}
 						style={{backgroundImage: `url(${backgrounds[item.rarity - 1]})`}}
 						title={item.name}
 						type='button'
-						onClick={incTier[index]}
+						onClick={incTier[itemIndex]}
 					>
 						<img alt={item.name} src={`${IMG_URL}${item.images?.nameicon}.png`} width='75' height='75'/>
-						<b>{tierValue[index]}</b>
+						<b>{tierValue[itemIndex]}</b>
 					</button>
-					{index < items.length - 1 && (
+					{itemIndex < items.length - 1 && (
 						<label>
 							<input
 								type='checkbox'
-								checked={lockedTier[index]}
-								onChange={() => setLockTier[index](!lockedTier[index])}
+								checked={lockedTier[itemIndex]}
+								onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}
 							/>
-							<div css={lock} className='material-icons'>
-								{lockedTier[index] ? 'lock' : 'lock_open'}
+							<div css={actions} className='material-icons'>
+								{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
 							</div>
 						</label>
 					)}
 				</div>
 			))}
+			<div css={[actions, removeButton]} className='material-icons' onClick={() => onRemove(item)}>delete</div>
 		</section>
 	);
 }
@@ -166,11 +170,13 @@ function FarmHelper({category, item}) {
 FarmHelper.propTypes = {
 	category: PropTypes.string,
 	item: PropTypes.string,
+	onRemove: PropTypes.func,
 };
 
 FarmHelper.defaultProps = {
 	category: materialTypes.ASCENSION,
 	item: 'Agnidus Agate',
+	onRemove() {},
 };
 
 export default FarmHelper;

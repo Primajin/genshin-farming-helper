@@ -53,12 +53,27 @@ const video = css`
 `;
 
 export default function Main() {
-	const [helperList, setHelperList] = useState([]);
+	const [farmHelperList, setFarmHelperList] = useState([]);
+
+	const onRemove = name => {
+		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
+	};
 
 	const addHelperWithItem = itemName => {
 		const category = itemName.split('.')[0];
 		const item = itemName.split('.')[1];
-		setHelperList(helperList.concat(<FarmHelper key={helperList.length} category={category} item={item}/>));
+		setFarmHelperList(
+			previousHelpers =>
+				[
+					...previousHelpers,
+					<FarmHelper
+						key={item}
+						category={category}
+						item={item}
+						onRemove={onRemove}
+					/>,
+				],
+		);
 	};
 
 	const onChange = event => {
@@ -78,8 +93,8 @@ export default function Main() {
 				</div>
 			)}
 			<main>
-				{helperList}
-				<ItemCategories onChangeProp={onChange}/>
+				{farmHelperList}
+				<ItemCategories list={farmHelperList} onChangeProp={onChange}/>
 			</main>
 		</>
 	);

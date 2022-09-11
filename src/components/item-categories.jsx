@@ -61,30 +61,30 @@ const characterLVLMaterials = characterMaterials.filter(material => {
 const weaponMaterials2 = genshinDB.weaponmaterialtypes('names', {matchCategories: true, verboseCategories: true});
 const talentMaterials2 = genshinDB.talentmaterialtypes('names', {matchCategories: true, verboseCategories: true});
 
-function ItemCategories({onChangeProp}) {
+function ItemCategories({onChangeProp, list}) {
 	return (
 		<form css={categories} onChange={onChangeProp}>
 			<fieldset className='narrow'>
 				<legend>Talent Materials</legend>
-				<ItemPicker materials={talentMaterials2} type={materialTypes.TALENT}/>
+				<ItemPicker materials={talentMaterials2} type={materialTypes.TALENT} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset className='narrow'>
 				<legend>Weapon Materials</legend>
-				<ItemPicker materials={weaponMaterials2} type={materialTypes.WEAPON}/>
+				<ItemPicker materials={weaponMaterials2} type={materialTypes.WEAPON} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset>
 				<legend>Character Ascension Materials</legend>
-				<ItemPicker materials={characterAscensionMaterials} type={materialTypes.ASCENSION}/>
+				<ItemPicker materials={characterAscensionMaterials} type={materialTypes.ASCENSION} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset>
 				<legend>Character Level-Up Materials</legend>
-				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL}/>
+				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 		</form>
@@ -92,6 +92,7 @@ function ItemCategories({onChangeProp}) {
 }
 
 ItemCategories.propTypes = {
+	list: PropTypes.array.isRequired,
 	onChangeProp: PropTypes.func.isRequired,
 };
 

@@ -19,20 +19,23 @@ const wrapper = css`
 		width: 75px;
 	}
 
-	input:checked + div {
+	input:checked + div,
+	input:disabled + div {
 		opacity: .5;
 	}
 `;
 
-function ItemPicker({materials, type}) {
+function ItemPicker({list, materials, type}) {
+	const disabledKeys = new Set(list.map(item => item.key));
 	return materials.map(material => {
 		const goesUpTo5 = Boolean(material['5starname']);
 		const rarity = (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
 		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
 		const item = genshinDB.materials(highestName);
+		const disabled = disabledKeys.has(material.name);
 		return (
-			<label key={material.name} css={wrapper} title={material.name}>
-				<input type='radio' name='item' value={`${type}.${material.name}`}/>
+			<label key={material.name} css={wrapper} title={material.name} aria-disabled={disabled}>
+				<input type='radio' name='item' value={`${type}.${material.name}`} disabled={disabled}/>
 				<div style={{
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
@@ -47,11 +50,13 @@ function ItemPicker({materials, type}) {
 }
 
 ItemPicker.propTypes = {
+	list: PropTypes.array,
 	materials: PropTypes.array.isRequired,
 	type: PropTypes.string.isRequired,
 };
 
 ItemPicker.defaultProps = {
+	list: [],
 	materials: [],
 	type: '',
 };
