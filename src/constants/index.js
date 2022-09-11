@@ -54,7 +54,7 @@ export const commonDrops = [
 	'Rich Red Brocade',
 ];
 
-export const eliteDrops = [
+const eliteDrops = [
 	'Heavy Horn',
 	'Black Bronze Horn',
 	'Black Crystal Horn',
@@ -92,3 +92,5 @@ export const eliteDrops = [
 	'Chaos Module',
 	'Chaos Bolt',
 ];
+
+export const drops = [...commonDrops, ...eliteDrops];

@@ -84,7 +84,6 @@ function ItemCategories({onChangeProp}) {
 
 			<fieldset>
 				<legend>Character Level-Up Materials</legend>
-				<h2>NOT FULLY IMPLEMENTED YET</h2>
 				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL}/>
 				<label/><label/><label/><label/>
 			</fieldset>

@@ -4,7 +4,7 @@ import genshinDB from 'genshin-db';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
 
-import {backgrounds, IMG_URL, materialTypes, nameKeys} from '../constants';
+import {backgrounds, drops, IMG_URL, materialTypes, nameKeys} from '../constants';
 import theme from '../theme';
 
 const wrapper = css`
@@ -64,8 +64,8 @@ function FarmHelper({category, item}) {
 			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
 			break;
 		case materialTypes.LEVEL:
-			// NOT YET IMPLEMENTED
-			items = [genshinDB.materials(item)];
+			const index = drops.indexOf(item);
+			items = index > 0 ? [genshinDB.materials(drops[index - 2]), genshinDB.materials(drops[index - 1]), genshinDB.materials(drops[index])] : [genshinDB.materials(item)];
 			break;
 		default:
 			itemNames = item.split(' ')[0];
