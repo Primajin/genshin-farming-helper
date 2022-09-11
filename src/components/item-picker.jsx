@@ -16,9 +16,7 @@ function ItemPicker({materials, type}) {
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
 				>
-					<img
-						src={`${IMG_URL}${item.images?.nameicon}.png`} alt={material.name} width='75'
-						height='75'/>
+					<img alt={material.name} src={`${IMG_URL}${item.images?.nameicon}.png`} width='75' height='75'/>
 				</div>
 				<span>{material.name}</span>
 			</label>

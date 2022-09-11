@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import genshinDB from 'genshin-db';
 import {useEffect, useState} from 'react';
 
-import {backgrounds, materialTypes, nameKeys} from '../constants';
+import {backgrounds, IMG_URL, materialTypes, nameKeys} from '../constants';
 
 function FarmHelper({category, item}) {
 	let items = [];
@@ -92,7 +92,7 @@ function FarmHelper({category, item}) {
 						type='button'
 						onClick={incTier[index]}
 					>
-						<img alt={item.name} src={item?.images.fandom} width='75' height='75'/>
+						<img alt={item.name} src={`${IMG_URL}${item.images?.nameicon}.png`} width='75' height='75'/>
 						<b>{tierValue[index]}</b>
 					</button>
 					{index < items.length - 1 && (
