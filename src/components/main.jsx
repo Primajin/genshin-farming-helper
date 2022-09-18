@@ -1,8 +1,9 @@
 /* global window */
 /** @jsxImportSource @emotion/react */
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
 
+import storage, {fromLocalStorage} from '../utils/local-storage.js';
 import FarmHelper from './farm-helper.jsx';
 import ItemCategories from './item-categories.jsx';
 
@@ -52,16 +53,24 @@ const video = css`
 	}
 `;
 
+const localStorageKey = 'genshin-farming-helper';
+let didRun = false;
+
 export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 
 	const onRemove = name => {
+		const savedHelpers = storage.get(localStorageKey);
+		storage.set(localStorageKey, savedHelpers.filter(savedHelper => savedHelper.split('.')[1] !== name));
 		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
 	};
 
 	const addHelperWithItem = itemName => {
 		const category = itemName.split('.')[0];
 		const item = itemName.split('.')[1];
+		const savedHelpers = new Set(storage.get(localStorageKey));
+		savedHelpers.add(itemName);
+		storage.set(localStorageKey, Array.from(savedHelpers));
 		setFarmHelperList(
 			previousHelpers =>
 				[
@@ -79,6 +88,20 @@ export default function Main() {
 	const onChange = event => {
 		addHelperWithItem(event.target.value);
 	};
+
+	useEffect(() => {
+		if (!didRun) {
+			didRun = true;
+			const savedHelpers = storage.get(localStorageKey);
+			if (!Array.isArray(savedHelpers)) {
+				fromLocalStorage.setItem(localStorageKey, '[]');
+			} else {
+				for (const helper of savedHelpers) {
+					addHelperWithItem(helper);
+				}
+			}
+		}
+	}, []);
 
 	const showVideo = window?.innerWidth > 768;
 	const disabledKeys = farmHelperList.map(item => item.key);
