@@ -1,6 +1,6 @@
 /* global window */
 /** @jsxImportSource @emotion/react */
-import {useEffect, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
 
 import storage, {fromLocalStorage} from '../utils/local-storage.js';
@@ -65,7 +65,7 @@ export default function Main() {
 		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
 	};
 
-	const addHelperWithItem = itemName => {
+	const addHelperWithItem = useCallback(itemName => {
 		const category = itemName.split('.')[0];
 		const item = itemName.split('.')[1];
 		const savedHelpers = new Set(storage.get(localStorageKey));
@@ -83,7 +83,7 @@ export default function Main() {
 					/>,
 				],
 		);
-	};
+	}, []);
 
 	const onChange = event => {
 		addHelperWithItem(event.target.value);
@@ -93,15 +93,15 @@ export default function Main() {
 		if (!didRun) {
 			didRun = true;
 			const savedHelpers = storage.get(localStorageKey);
-			if (!Array.isArray(savedHelpers)) {
-				fromLocalStorage.setItem(localStorageKey, '[]');
-			} else {
+			if (Array.isArray(savedHelpers)) {
 				for (const helper of savedHelpers) {
 					addHelperWithItem(helper);
 				}
+			} else {
+				fromLocalStorage.setItem(localStorageKey, '[]');
 			}
 		}
-	}, []);
+	}, [addHelperWithItem]);
 
 	const showVideo = window?.innerWidth > 768;
 	const disabledKeys = farmHelperList.map(item => item.key);
