@@ -2,6 +2,9 @@ name: "Build and Preview"
 
 on: [push, fork]
 
+env:
+  PUBLIC_URL: genshin-farming-helper/pr-preview/pr-7/
+
 jobs:
   build:
     runs-on: ubuntu-latest
