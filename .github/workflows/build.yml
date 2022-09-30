@@ -1,6 +1,14 @@
 name: "Build and Preview"
 
-on: [push, fork]
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
 
 jobs:
   build:
