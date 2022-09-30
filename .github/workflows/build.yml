@@ -1,11 +1,11 @@
-name: "Build"
+name: "Build and Preview"
 
 on: [push, fork]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Make sure it builds.
+    name: Make sure it builds. Then show a preview.
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -24,3 +24,7 @@ jobs:
         run: npm ci
       - name: Run build
         run: npm run build
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build/
