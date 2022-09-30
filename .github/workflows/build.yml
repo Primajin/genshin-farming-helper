@@ -1,11 +1,19 @@
-name: "Build"
+name: "Build and Preview"
 
-on: [push, fork]
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Make sure it builds.
+    name: Make sure it builds. Then show a preview.
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -20,7 +28,13 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('package-lock.json') }}
           restore-keys: npm-
+      - name: Setup ENV
+        run: echo "PUBLIC_URL=/genshin-farming-helper/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/" >> .env
       - name: Install dependencies
         run: npm ci
       - name: Run build
         run: npm run build
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./build/
