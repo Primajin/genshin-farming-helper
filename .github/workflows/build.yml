@@ -4,7 +4,6 @@ on: [push, fork]
 
 env:
   PR_NUMBER: $(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
-  PUBLIC_URL: https://primajin.github.io/genshin-farming-helper/pr-preview/pr-7/
 
 jobs:
   build:
@@ -24,6 +23,10 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('package-lock.json') }}
           restore-keys: npm-
+      - name: Setup ENV
+        run: |
+          echo "PR:$PR_NUMBER"
+          echo "PUBLIC_URL=https://primajin.github.io/genshin-farming-helper/pr-preview/pr-7/" >> .env
       - name: Install dependencies
         run: npm ci
       - name: Run build
