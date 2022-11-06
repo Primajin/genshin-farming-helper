@@ -104,7 +104,7 @@ function IndexPage() {
 		}
 	}, [addHelperWithItem]);
 
-	const showVideo = window?.innerWidth > 768;
+	const showVideo = typeof window !== 'undefined' && window && window?.innerWidth > 768;
 	const disabledKeys = farmHelperList.map(item => item.key);
 
 	return (
