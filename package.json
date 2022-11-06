@@ -1,11 +1,15 @@
 {
   "name": "genshin-farming-helper",
+  "homepage": "https://Primajin.github.io/genshin-farming-helper",
   "version": "1.0.0",
-  "private": true,
-  "description": "genshin-farming-helper",
+  "description": "Proof of concept of a helper for keeping track while farming in Genshin Impact",
   "author": "Jannis Hell",
+  "private": true,
   "keywords": [
-    "gatsby"
+    "genshin impact",
+    "genshin",
+    "impact",
+    "farming"
   ],
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -18,6 +22,7 @@
     "gatsby-source-filesystem": "^4.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
     "genshin-db": "^4.3.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
@@ -31,17 +36,17 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "coverage": "npm test -- --coverage",
     "clean": "gatsby clean",
+    "coverage": "npm test -- --coverage",
     "deploy": "gh-pages -d build",
+    "develop": "gatsby develop",
     "lint": "xo",
     "lint:fix": "xo --fix",
     "lint:watch": "npx nodemon -x npm run lint:fix --ext js,jsx,json",
     "predeploy": "npm run build",
     "pretest": "npm run lint",
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "start": "gatsby develop"
   },
   "xo": {
     "extends": [
