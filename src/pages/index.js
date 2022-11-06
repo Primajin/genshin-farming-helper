@@ -1,11 +1,12 @@
 /* global window */
-/** @jsxImportSource @emotion/react */
+import * as React from 'react';
+import '@fontsource/material-icons'; // eslint-disable-line import/no-unassigned-import
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
 
 import storage, {fromLocalStorage} from '../utils/local-storage.js';
-import FarmHelper from './farm-helper.jsx';
-import ItemCategories from './item-categories.jsx';
+import FarmHelper from '../components/farm-helper.jsx';
+import ItemCategories from '../components/item-categories.jsx';
 
 const globalStyles = css`
 	body {
@@ -56,7 +57,7 @@ const video = css`
 const localStorageKey = 'genshin-farming-helper';
 let didRun = false;
 
-export default function Main() {
+function IndexPage() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 
 	const onRemove = name => {
@@ -122,4 +123,10 @@ export default function Main() {
 			</main>
 		</>
 	);
+}
+
+export default IndexPage;
+
+export function Head() {
+	return <title>Home Page</title>;
 }

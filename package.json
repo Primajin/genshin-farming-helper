@@ -1,68 +1,52 @@
 {
   "name": "genshin-farming-helper",
-  "homepage": "https://Primajin.github.io/genshin-farming-helper",
   "version": "1.0.0",
-  "description": "Proof of concept of a helper for keeping track while farming in Genshin Impact",
+  "private": true,
+  "description": "genshin-farming-helper",
+  "author": "Jannis Hell",
   "keywords": [
-    "genshin impact",
-    "genshin",
-    "impact",
-    "farming"
+    "gatsby"
   ],
-  "main": "src/index.jsx",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@fontsource/material-icons": "^4.5.4",
+    "gatsby": "^4.24.7",
+    "gatsby-plugin-emotion": "^7.24.0",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
     "genshin-db": "^4.3.2",
-    "gh-pages": "^4.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-scripts": "5.0.1"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@babel/runtime": "7.20.1",
     "@testing-library/react": "^13.4.0",
+    "eslint-config-xo": "^0.42.0",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "xo": "^0.52.4"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "build": "gatsby build",
     "coverage": "npm test -- --coverage",
+    "clean": "gatsby clean",
     "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject",
     "lint": "xo",
     "lint:fix": "xo --fix",
     "lint:watch": "npx nodemon -x npm run lint:fix --ext js,jsx,json",
     "predeploy": "npm run build",
     "pretest": "npm run lint",
-    "publish": "npm run deploy",
-    "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "xo": {
     "extends": [
       "xo",
       "xo-react"
-    ],
-    "overrides": [
-      {
-        "files": "src/**/__tests__/*",
-        "plugins": [
-          "jest"
-        ],
-        "extends": [
-          "plugin:jest/recommended",
-          "plugin:jest/style"
-        ]
-      }
     ],
     "rules": {
       "import/extensions": "off",
