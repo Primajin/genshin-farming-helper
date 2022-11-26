@@ -59,25 +59,32 @@ function FarmHelper({category, item, onRemove}) {
 	let itemNames;
 	let dropsIndex = 0;
 	switch (category) {
-		case materialTypes.TALENT:
+		case materialTypes.TALENT: {
 			itemNames = nameKeys.map(key => genshinDB.talentmaterialtypes(item)[key]);
 			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
 			break;
-		case materialTypes.WEAPON:
+		}
+
+		case materialTypes.WEAPON: {
 			itemNames = nameKeys.map(key => genshinDB.weaponmaterialtypes(item)[key]);
 			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
 			break;
-		case materialTypes.LEVEL:
+		}
+
+		case materialTypes.LEVEL: {
 			dropsIndex = drops.indexOf(item);
 			items = dropsIndex > 0 ? [genshinDB.materials(drops[dropsIndex - 2]), genshinDB.materials(drops[dropsIndex - 1]), genshinDB.materials(drops[dropsIndex])] : [genshinDB.materials(item)];
 			break;
-		default:
+		}
+
+		default: {
 			itemNames = item.split(' ')[0];
 			items = genshinDB
 				.materials('names', {matchCategories: true, verboseCategories: true})
 				.filter(item => item.name.includes(itemNames))
 				.sort((a, b) => a.sortorder - b.sortorder).reverse();
 			break;
+		}
 	}
 
 	const hasJustOne = items.length === 1;
