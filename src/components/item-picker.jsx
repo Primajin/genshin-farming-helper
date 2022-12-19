@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 import {css} from '@emotion/react';
-import {backgrounds, IMG_URL} from '../constants';
+import {backgrounds, IMG_URL, materialTypes} from '../constants';
 
 const wrapper = css`
 	cursor: pointer;
@@ -27,7 +27,7 @@ const wrapper = css`
 function ItemPicker({list, materials, type}) {
 	return materials.map(material => {
 		const goesUpTo5 = Boolean(material['5starname']);
-		const rarity = (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
+		const rarity = type === materialTypes.LOCAL ? 0 : (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
 		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
 		const item = materials.find(material => material.name === highestName);
 		const disabled = list.includes(material.name);

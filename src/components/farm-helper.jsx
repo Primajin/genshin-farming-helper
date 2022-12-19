@@ -54,23 +54,11 @@ const removeButton = css`
 	margin: 30px 0 0 25px;
 `;
 
-function FarmHelper({category, item, materials: {characterAscensionMaterials, characterLVLMaterials, talentMaterials, weaponMaterials}, onRemove}) {
+function FarmHelper({category, item, materials: {characterAscensionMaterials, characterLVLMaterials, localSpecialties, talentMaterials, weaponMaterials}, onRemove}) {
 	let items = [];
 	let queryItem;
 	let dropsIndex = 0;
 	switch (category) {
-		case materialTypes.TALENT: {
-			queryItem = talentMaterials.find(material => material.name === item);
-			items = talentMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
-			break;
-		}
-
-		case materialTypes.WEAPON: {
-			queryItem = weaponMaterials.find(material => material.name === item);
-			items = weaponMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
-			break;
-		}
-
 		case materialTypes.ASCENSION: {
 			items = characterAscensionMaterials.filter(material => material.name.startsWith(item.split(' ')[0])).reverse();
 			break;
@@ -82,6 +70,23 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 			dropsIndex = reversedCharacterLVLMaterials.findIndex(material => material.name === item);
 
 			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterLVLMaterials[dropsIndex - 2], reversedCharacterLVLMaterials[dropsIndex - 1], reversedCharacterLVLMaterials[dropsIndex]] : [queryItem];
+			break;
+		}
+
+		case materialTypes.LOCAL: {
+			items = [localSpecialties.find(material => material.name === item)];
+			break;
+		}
+
+		case materialTypes.TALENT: {
+			queryItem = talentMaterials.find(material => material.name === item);
+			items = talentMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
+			break;
+		}
+
+		case materialTypes.WEAPON: {
+			queryItem = weaponMaterials.find(material => material.name === item);
+			items = weaponMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
 			break;
 		}
 
@@ -149,7 +154,7 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 				<div key={item.name} css={wrapper}>
 					<button
 						css={button}
-						style={{backgroundImage: `url(${backgrounds[item.rarity - 1]})`}}
+						style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
 						title={item.name}
 						type='button'
 						onClick={incTier[itemIndex]}
@@ -182,6 +187,7 @@ FarmHelper.propTypes = {
 	materials: PropTypes.shape({
 		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
+		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
 	}),

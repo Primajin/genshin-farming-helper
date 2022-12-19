@@ -67,7 +67,7 @@ export default function Main() {
 	const weaponMaterials = sundayDrops.filter(material => material?.materialtype.startsWith('Weapon'));
 	const weaponMaterialsRare = weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
 
-	const characterMaterials = materials('Character Level-Up Material', defaultOptions).sort((a, b) => a.sortorder - b.sortorder);
+	const characterMaterials = materials('names', defaultOptions).filter(material => material?.materialtype.startsWith('Character Level-Up Material') || material?.materialtype.startsWith('Local')).sort((a, b) => a.sortorder - b.sortorder);
 
 	const characterAscensionMaterials = characterMaterials.filter(material => material?.description.startsWith('Character Ascension'));
 	const characterAscensionMaterialsRare = characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
@@ -78,11 +78,14 @@ export default function Main() {
 		return rarityInt > 2 ? (rarityInt === 3 ? !material.source.includes('Stardust Exchange') : true) : false;
 	});
 
+	const localSpecialties = characterMaterials.filter(material => material?.materialtype.startsWith('Local'));
+
 	const materialsAll = {
 		talentMaterials,
 		weaponMaterials,
 		characterAscensionMaterials,
 		characterLVLMaterials,
+		localSpecialties,
 	};
 
 	const materialsRare = {
@@ -90,6 +93,7 @@ export default function Main() {
 		weaponMaterials: weaponMaterialsRare,
 		characterAscensionMaterials: characterAscensionMaterialsRare,
 		characterLVLMaterials: characterLVLMaterialsRare,
+		localSpecialties,
 	};
 
 	const [farmHelperList, setFarmHelperList] = useState([]);
