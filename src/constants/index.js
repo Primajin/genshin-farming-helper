@@ -7,10 +7,11 @@ import rarity5 from '../images/bg/background_Item_5_Star.png';
 export const backgrounds = [rarity1, rarity2, rarity3, rarity4, rarity5];
 
 export const materialTypes = {
+	ASCENSION: 'ASCENSION',
+	LEVEL: 'LEVEL',
+	LOCAL: 'LOCAL',
 	TALENT: 'TALENT',
 	WEAPON: 'WEAPON',
-	LEVEL: 'LEVEL',
-	ASCENSION: 'ASCENSION',
 };
 
 export const IMG_URL = 'https://res.cloudinary.com/genshin/image/upload/sprites/';
