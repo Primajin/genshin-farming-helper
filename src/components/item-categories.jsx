@@ -1,9 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
-import genshinDB from 'genshin-db';
 import {css} from '@emotion/react';
 
-import {commonDrops, materialTypes} from '../constants';
+import {materialTypes} from '../constants';
 import theme from '../theme';
 import ItemPicker from './item-picker.jsx';
 
@@ -44,35 +43,18 @@ const categories = css`
 	}
 `;
 
-const getAllMaterialItemsFromDB = type => genshinDB.materials(type, {matchCategories: true, verboseCategories: true}).sort((a, b) => a.sortorder - b.sortorder);
-
-const characterMaterials = getAllMaterialItemsFromDB('Character Level-Up Material');
-const characterAscensionMaterials = characterMaterials.filter(material => material?.description.startsWith('Character Ascension') && Number.parseInt(material?.rarity, 10) > 4);
-const characterLVLMaterials = characterMaterials.filter(material => {
-	const {description, name, rarity} = material ?? {};
-	if (description.startsWith('Character Ascension')) {
-		return false;
-	}
-
-	const rarityInt = Number.parseInt(rarity, 10);
-	return rarityInt > 2 ? (rarityInt === 3 ? commonDrops.includes(name) : true) : false;
-});
-
-const weaponMaterials2 = genshinDB.weaponmaterialtypes('names', {matchCategories: true, verboseCategories: true});
-const talentMaterials2 = genshinDB.talentmaterialtypes('names', {matchCategories: true, verboseCategories: true});
-
-function ItemCategories({onChangeProp, list}) {
+function ItemCategories({list, materials: {characterAscensionMaterials, characterLVLMaterials, talentMaterials, weaponMaterials}, onChangeProp}) {
 	return (
 		<form css={categories} onChange={onChangeProp}>
 			<fieldset className='narrow'>
 				<legend>Talent Materials</legend>
-				<ItemPicker materials={talentMaterials2} type={materialTypes.TALENT} list={list}/>
+				<ItemPicker materials={talentMaterials} type={materialTypes.TALENT} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset className='narrow'>
 				<legend>Weapon Materials</legend>
-				<ItemPicker materials={weaponMaterials2} type={materialTypes.WEAPON} list={list}/>
+				<ItemPicker materials={weaponMaterials} type={materialTypes.WEAPON} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
@@ -93,6 +75,12 @@ function ItemCategories({onChangeProp, list}) {
 
 ItemCategories.propTypes = {
 	list: PropTypes.array.isRequired,
+	materials: PropTypes.shape({
+		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
+		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
+		talentMaterials: PropTypes.arrayOf(PropTypes.object),
+		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
+	}),
 	onChangeProp: PropTypes.func.isRequired,
 };
 
