@@ -10,6 +10,7 @@
     "farming"
   ],
   "main": "src/index.jsx",
+  "type": "module",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@fontsource/material-icons": "^4.5.4",
@@ -32,10 +33,13 @@
     "coverage": "npm test -- --coverage",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
+    "generate": "node src/scripts/generate-data.js",
     "lint": "xo",
     "lint:fix": "xo --fix",
     "lint:watch": "npx nodemon -x npm run lint:fix --ext js,jsx,json",
+    "prebuild": "npm run generate",
     "predeploy": "npm run build",
+    "prestart": "npm run generate",
     "pretest": "npm run lint",
     "publish": "npm run deploy",
     "start": "react-scripts start",
