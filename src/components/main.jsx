@@ -1,5 +1,6 @@
 /* global window */
 /** @jsxImportSource @emotion/react */
+import {materials} from 'genshin-db';
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
 
@@ -57,6 +58,40 @@ const localStorageKey = 'genshin-farming-helper';
 let didRun = false;
 
 export default function Main() {
+	const defaultOptions = {matchCategories: true, verboseCategories: true};
+	const sundayDrops = materials('Sunday', defaultOptions).sort((a, b) => a.sortorder - b.sortorder);
+
+	const talentMaterials = sundayDrops.filter(material => material?.materialtype.startsWith('Talent'));
+	const talentMaterialsRare = talentMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 3);
+
+	const weaponMaterials = sundayDrops.filter(material => material?.materialtype.startsWith('Weapon'));
+	const weaponMaterialsRare = weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
+
+	const characterMaterials = materials('Character Level-Up Material', defaultOptions).sort((a, b) => a.sortorder - b.sortorder);
+
+	const characterAscensionMaterials = characterMaterials.filter(material => material?.description.startsWith('Character Ascension'));
+	const characterAscensionMaterialsRare = characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
+
+	const characterLVLMaterials = characterMaterials.filter(material => !material?.description.startsWith('Character Ascension'));
+	const characterLVLMaterialsRare = characterLVLMaterials.filter(material => {
+		const rarityInt = Number.parseInt(material?.rarity, 10);
+		return rarityInt > 2 ? (rarityInt === 3 ? !material.source.includes('Stardust Exchange') : true) : false;
+	});
+
+	const materialsAll = {
+		talentMaterials,
+		weaponMaterials,
+		characterAscensionMaterials,
+		characterLVLMaterials,
+	};
+
+	const materialsRare = {
+		talentMaterials: talentMaterialsRare,
+		weaponMaterials: weaponMaterialsRare,
+		characterAscensionMaterials: characterAscensionMaterialsRare,
+		characterLVLMaterials: characterLVLMaterialsRare,
+	};
+
 	const [farmHelperList, setFarmHelperList] = useState([]);
 
 	const onRemove = name => {
@@ -79,10 +114,12 @@ export default function Main() {
 						key={item}
 						category={category}
 						item={item}
+						materials={materialsAll}
 						onRemove={onRemove}
 					/>,
 				],
 		);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const onChange = event => {
@@ -118,7 +155,7 @@ export default function Main() {
 			)}
 			<main>
 				{farmHelperList}
-				<ItemCategories list={disabledKeys} onChangeProp={onChange}/>
+				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>
 		</>
 	);

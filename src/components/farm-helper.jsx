@@ -1,10 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
-import genshinDB from 'genshin-db';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
 
-import {backgrounds, drops, IMG_URL, materialTypes, nameKeys} from '../constants';
+import {backgrounds, IMG_URL, materialTypes} from '../constants';
 import theme from '../theme';
 
 const wrapper = css`
@@ -55,36 +54,39 @@ const removeButton = css`
 	margin: 30px 0 0 25px;
 `;
 
-function FarmHelper({category, item, onRemove}) {
+function FarmHelper({category, item, materials: {characterAscensionMaterials, characterLVLMaterials, talentMaterials, weaponMaterials}, onRemove}) {
 	let items = [];
-	let itemNames;
+	let queryItem;
 	let dropsIndex = 0;
 	switch (category) {
 		case materialTypes.TALENT: {
-			itemNames = nameKeys.map(key => genshinDB.talentmaterialtypes(item)[key]);
-			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
+			queryItem = talentMaterials.find(material => material.name === item);
+			items = talentMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
 			break;
 		}
 
 		case materialTypes.WEAPON: {
-			itemNames = nameKeys.map(key => genshinDB.weaponmaterialtypes(item)[key]);
-			items = itemNames.filter(Boolean).map(name => genshinDB.materials(name));
+			queryItem = weaponMaterials.find(material => material.name === item);
+			items = weaponMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
+			break;
+		}
+
+		case materialTypes.ASCENSION: {
+			items = characterAscensionMaterials.filter(material => material.name.startsWith(item.split(' ')[0])).reverse();
 			break;
 		}
 
 		case materialTypes.LEVEL: {
-			dropsIndex = drops.indexOf(item);
-			items = dropsIndex > 0 ? [genshinDB.materials(drops[dropsIndex - 2]), genshinDB.materials(drops[dropsIndex - 1]), genshinDB.materials(drops[dropsIndex])] : [genshinDB.materials(item)];
+			const reversedCharacterLVLMaterials = characterLVLMaterials.slice().reverse();
+			queryItem = characterLVLMaterials.find(material => material.name === item);
+			dropsIndex = reversedCharacterLVLMaterials.findIndex(material => material.name === item);
+
+			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterLVLMaterials[dropsIndex - 2], reversedCharacterLVLMaterials[dropsIndex - 1], reversedCharacterLVLMaterials[dropsIndex]] : [queryItem];
 			break;
 		}
 
 		default: {
-			itemNames = item.split(' ')[0];
-			items = genshinDB
-				.materials('names', {matchCategories: true, verboseCategories: true})
-				.filter(item => item.name.includes(itemNames))
-				.sort((a, b) => a.sortorder - b.sortorder).reverse();
-			break;
+			console.warn('encountered unexpected item of type', category, item);
 		}
 	}
 
@@ -177,6 +179,12 @@ function FarmHelper({category, item, onRemove}) {
 FarmHelper.propTypes = {
 	category: PropTypes.string,
 	item: PropTypes.string,
+	materials: PropTypes.shape({
+		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
+		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
+		talentMaterials: PropTypes.arrayOf(PropTypes.object),
+		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
+	}),
 	onRemove: PropTypes.func,
 };
 

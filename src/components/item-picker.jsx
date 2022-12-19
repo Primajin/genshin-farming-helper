@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
-import genshinDB from 'genshin-db';
 
 import {css} from '@emotion/react';
 import {backgrounds, IMG_URL} from '../constants';
@@ -30,7 +29,7 @@ function ItemPicker({list, materials, type}) {
 		const goesUpTo5 = Boolean(material['5starname']);
 		const rarity = (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
 		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
-		const item = genshinDB.materials(highestName);
+		const item = materials.find(material => material.name === highestName);
 		const disabled = list.includes(material.name);
 		return (
 			<label key={material.name} css={wrapper} title={material.name} aria-disabled={disabled}>
