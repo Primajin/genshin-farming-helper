@@ -23,3 +23,25 @@ fs.writeFile('src/data.json', JSON.stringify(materials), error => {
 		console.log(error);
 	}
 });
+
+const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 3);
+const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
+const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
+const characterLVLMaterialsRare = materials.characterLVLMaterials.filter(material => {
+	const rarityInt = Number.parseInt(material?.rarity, 10);
+	return rarityInt > 2 ? (rarityInt === 3 ? !material.source.includes('Stardust Exchange') : true) : false;
+});
+
+const materialsRare = {
+	talentMaterials: talentMaterialsRare,
+	weaponMaterials: weaponMaterialsRare,
+	characterAscensionMaterials: characterAscensionMaterialsRare,
+	characterLVLMaterials: characterLVLMaterialsRare,
+	localSpecialties,
+};
+
+fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
+	if (error) {
+		console.log(error);
+	}
+});
