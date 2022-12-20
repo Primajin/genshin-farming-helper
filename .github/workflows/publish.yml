@@ -4,7 +4,8 @@ on:
   push:
     branches: [ main ]
 
-permissions: write-all
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -26,5 +27,9 @@ jobs:
           restore-keys: npm-
       - name: Install dependencies
         run: npm ci
-      - name: Run deploy
-        run: npm run deploy
+      - name: Run build
+        run: npm run build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
