@@ -5,6 +5,7 @@ import {Global, css} from '@emotion/react';
 
 import storage, {fromLocalStorage} from '../utils/local-storage.js';
 import materials from '../data.json';
+import materialsRare from '../data-rare.json';
 import FarmHelper from './farm-helper.jsx';
 import ItemCategories from './item-categories.jsx';
 
@@ -58,22 +59,6 @@ const localStorageKey = 'genshin-farming-helper';
 let didRun = false;
 
 export default function Main() {
-	const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 3);
-	const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
-	const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
-	const characterLVLMaterialsRare = materials.characterLVLMaterials.filter(material => {
-		const rarityInt = Number.parseInt(material?.rarity, 10);
-		return rarityInt > 2 ? (rarityInt === 3 ? !material.source.includes('Stardust Exchange') : true) : false;
-	});
-
-	const materialsRare = {
-		talentMaterials: talentMaterialsRare,
-		weaponMaterials: weaponMaterialsRare,
-		characterAscensionMaterials: characterAscensionMaterialsRare,
-		characterLVLMaterials: characterLVLMaterialsRare,
-		localSpecialties: materials.localSpecialties,
-	};
-
 	const [farmHelperList, setFarmHelperList] = useState([]);
 
 	const onRemove = name => {
