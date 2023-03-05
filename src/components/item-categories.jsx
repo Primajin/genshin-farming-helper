@@ -43,29 +43,35 @@ const categories = css`
 	}
 `;
 
-function ItemCategories({list, materials: {characterAscensionMaterials, characterLVLMaterials, localSpecialties, talentMaterials, weaponMaterials}, onChangeProp}) {
+function ItemCategories({list, materials: {characterAscensionMaterials, characterLVLMaterials, characterWeaponEnhancementMaterials, localSpecialties, talentMaterials, weaponMaterials}, onChangeProp}) {
 	return (
 		<form css={categories} onChange={onChangeProp}>
 			<fieldset className='narrow'>
-				<legend>Talent Materials</legend>
+				<legend>Character Talent</legend>
 				<ItemPicker materials={talentMaterials} type={materialTypes.TALENT} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset className='narrow'>
-				<legend>Weapon Materials</legend>
+				<legend>Weapon Ascension</legend>
 				<ItemPicker materials={weaponMaterials} type={materialTypes.WEAPON} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset>
-				<legend>Character Ascension Materials</legend>
+				<legend>Character and Weapon Enhancement</legend>
+				<ItemPicker materials={characterWeaponEnhancementMaterials} type={materialTypes.LEVEL} list={list}/>
+				<label/><label/><label/><label/>
+			</fieldset>
+
+			<fieldset>
+				<legend>Character Ascension</legend>
 				<ItemPicker materials={characterAscensionMaterials} type={materialTypes.ASCENSION} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
 			<fieldset>
-				<legend>Character Level-Up Materials</legend>
+				<legend>Character Level-Up</legend>
 				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
@@ -84,6 +90,7 @@ ItemCategories.propTypes = {
 	materials: PropTypes.shape({
 		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
+		characterWeaponEnhancementMaterials: PropTypes.arrayOf(PropTypes.object),
 		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
