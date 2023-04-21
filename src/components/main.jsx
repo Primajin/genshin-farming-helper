@@ -62,17 +62,42 @@ export default function Main() {
 
 	const onRemove = name => {
 		const savedHelpers = storage.load();
-		storage.save(savedHelpers.filter(savedHelper => savedHelper.split('.')[1] !== name));
+		for (const key of Object.keys(savedHelpers)) {
+			if (key.split('.')[1] === name) {
+				delete savedHelpers[key];
+			}
+		}
+
+		storage.save(savedHelpers);
 		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
 	};
 
-	const addHelperWithItem = useCallback(itemName => {
+	/**
+	 * The config array has seven positions
+	 * @typedef ConfigArray
+	 * @type {array}
+	 * @property {number}		0=0			low quality amount
+	 * @property {boolean}	1=false	low quality lock
+	 * @property {number}		2=0			mid quality amount
+	 * @property {boolean}	3=false	mid quality lock
+	 * @property {number}		4=0			high quality amount
+	 * @property {boolean}	5=false	high quality lock
+	 * @property {boolean}	6=0			super quality amount
+	 */
+
+	/**
+	 * Add a new helper with given Item
+	 * @type {(function({[config]: ConfigArray, itemName: string}): void)|*}
+	 */
+	const addHelperWithItem = useCallback(helper => {
+		const {config = [0, false, 0, false, 0, false, 0], itemName} = helper;
+		const savedHelpers = storage.load();
+
+		const newHelpers = {...savedHelpers, [itemName]: config};
+		storage.save(newHelpers);
+
 		const category = itemName.split('.')[0];
 		const item = itemName.split('.')[1];
-		const savedHelpers = new Set(storage.load());
-		savedHelpers.add(itemName);
-		console.log('savedHelpers', savedHelpers);
-		storage.save(Array.from(savedHelpers));
 		setFarmHelperList(
 			previousHelpers =>
 				[
@@ -89,19 +114,20 @@ export default function Main() {
 	}, []);
 
 	const onChange = event => {
-		addHelperWithItem(event.target.value);
+		addHelperWithItem({itemName: event.target.value});
 	};
 
 	useEffect(() => {
 		if (!didRun) {
 			didRun = true;
 			const savedHelpers = storage.load();
-			if (Array.isArray(savedHelpers) && savedHelpers.length > 0) {
-				for (const helper of savedHelpers) {
-					addHelperWithItem(helper);
+			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
+				for (const [key, value] of Object.entries(savedHelpers)) {
+					addHelperWithItem({itemName: key, config: value});
 				}
 			} else {
-				storage.save([]);
+				// Storage is empty, create new
+				storage.save({});
 			}
 		}
 	}, [addHelperWithItem]);
