@@ -64,12 +64,19 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 			break;
 		}
 
-		case materialTypes.LEVEL: {
-			const reversedCharacterLVLMaterials = characterLVLMaterials.slice().reverse();
-			queryItem = characterLVLMaterials.find(material => material.name === item);
-			dropsIndex = reversedCharacterLVLMaterials.findIndex(material => material.name === item);
+		case materialTypes.ENHANCEMENT: {
+			const reversedCharacterWeaponEnhancementMaterials = characterWeaponEnhancementMaterials.slice().reverse();
+			queryItem = characterWeaponEnhancementMaterials.find(material => material.name === item);
+			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
 
-			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterLVLMaterials[dropsIndex - 2], reversedCharacterLVLMaterials[dropsIndex - 1], reversedCharacterLVLMaterials[dropsIndex]] : [queryItem];
+			console.log(queryItem, characterWeaponEnhancementMaterials);
+
+			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2], reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1], reversedCharacterWeaponEnhancementMaterials[dropsIndex]] : [queryItem];
+			break;
+		}
+
+		case materialTypes.LEVEL: {
+			items = [characterLVLMaterials.find(material => material.name === item)];
 			break;
 		}
 
@@ -187,6 +194,7 @@ FarmHelper.propTypes = {
 	materials: PropTypes.shape({
 		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
+		characterWeaponEnhancementMaterials: PropTypes.arrayOf(PropTypes.object),
 		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
