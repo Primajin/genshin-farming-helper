@@ -22,7 +22,7 @@ const setItem = (_key, _value) => {};
  * Getter and setter for local storage
  * @type {{getItem: (function(string): string | null), setItem: setItem}|Storage} fromLocalStorage
  */
-export const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem} : localStorage;
+const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem} : localStorage;
 
 /**
  * Getter and setter for local storage for lazy people who don't want to call JSON parse all the time

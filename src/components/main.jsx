@@ -3,7 +3,7 @@
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
 
-import storage, {fromLocalStorage} from '../utils/local-storage.js';
+import storage from '../utils/local-storage.js';
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import FarmHelper from './farm-helper.jsx';
@@ -101,7 +101,7 @@ export default function Main() {
 					addHelperWithItem(helper);
 				}
 			} else {
-				fromLocalStorage.setItem(localStorageKey, '[]');
+				storage.set(localStorageKey, []);
 			}
 		}
 	}, [addHelperWithItem]);
