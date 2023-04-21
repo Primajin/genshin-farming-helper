@@ -55,24 +55,24 @@ const video = css`
 	}
 `;
 
-const localStorageKey = 'genshin-farming-helper';
 let didRun = false;
 
 export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 
 	const onRemove = name => {
-		const savedHelpers = storage.get(localStorageKey);
-		storage.set(localStorageKey, savedHelpers.filter(savedHelper => savedHelper.split('.')[1] !== name));
+		const savedHelpers = storage.get();
+		storage.set(savedHelpers.filter(savedHelper => savedHelper.split('.')[1] !== name));
 		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
 	};
 
 	const addHelperWithItem = useCallback(itemName => {
 		const category = itemName.split('.')[0];
 		const item = itemName.split('.')[1];
-		const savedHelpers = new Set(storage.get(localStorageKey));
+		const savedHelpers = new Set(storage.get());
 		savedHelpers.add(itemName);
-		storage.set(localStorageKey, Array.from(savedHelpers));
+		console.log('savedHelpers', savedHelpers);
+		storage.set(Array.from(savedHelpers));
 		setFarmHelperList(
 			previousHelpers =>
 				[
@@ -95,13 +95,13 @@ export default function Main() {
 	useEffect(() => {
 		if (!didRun) {
 			didRun = true;
-			const savedHelpers = storage.get(localStorageKey);
-			if (Array.isArray(savedHelpers)) {
+			const savedHelpers = storage.get();
+			if (Array.isArray(savedHelpers) && savedHelpers.length > 0) {
 				for (const helper of savedHelpers) {
 					addHelperWithItem(helper);
 				}
 			} else {
-				storage.set(localStorageKey, []);
+				storage.set([]);
 			}
 		}
 	}, [addHelperWithItem]);
