@@ -60,7 +60,7 @@ function ItemCategories({list, materials: {characterAscensionMaterials, characte
 
 			<fieldset>
 				<legend>Character and Weapon Enhancement</legend>
-				<ItemPicker materials={characterWeaponEnhancementMaterials} type={materialTypes.LEVEL} list={list}/>
+				<ItemPicker materials={characterWeaponEnhancementMaterials} type={materialTypes.ENHANCEMENT} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
