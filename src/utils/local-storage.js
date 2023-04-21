@@ -27,11 +27,11 @@ const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem
 
 /**
  * Getter and setter for local storage for lazy people who don't want to call JSON parse all the time
- * @type {{set: (function(any): void), get: (function(): any)}}
+ * @type {{load: (function(): any), save: (function(any): void)}}
  */
 const storage = {
-	get: () => JSON.parse(fromLocalStorage.getItem(localStorageKey)),
-	set: value => fromLocalStorage.setItem(localStorageKey, JSON.stringify(value)),
+	load: () => JSON.parse(fromLocalStorage.getItem(localStorageKey)),
+	save: value => fromLocalStorage.setItem(localStorageKey, JSON.stringify(value)),
 };
 
 export default storage;

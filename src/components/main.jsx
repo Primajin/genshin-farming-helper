@@ -61,18 +61,18 @@ export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 
 	const onRemove = name => {
-		const savedHelpers = storage.get();
-		storage.set(savedHelpers.filter(savedHelper => savedHelper.split('.')[1] !== name));
+		const savedHelpers = storage.load();
+		storage.save(savedHelpers.filter(savedHelper => savedHelper.split('.')[1] !== name));
 		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
 	};
 
 	const addHelperWithItem = useCallback(itemName => {
 		const category = itemName.split('.')[0];
 		const item = itemName.split('.')[1];
-		const savedHelpers = new Set(storage.get());
+		const savedHelpers = new Set(storage.load());
 		savedHelpers.add(itemName);
 		console.log('savedHelpers', savedHelpers);
-		storage.set(Array.from(savedHelpers));
+		storage.save(Array.from(savedHelpers));
 		setFarmHelperList(
 			previousHelpers =>
 				[
@@ -95,13 +95,13 @@ export default function Main() {
 	useEffect(() => {
 		if (!didRun) {
 			didRun = true;
-			const savedHelpers = storage.get();
+			const savedHelpers = storage.load();
 			if (Array.isArray(savedHelpers) && savedHelpers.length > 0) {
 				for (const helper of savedHelpers) {
 					addHelperWithItem(helper);
 				}
 			} else {
-				storage.set([]);
+				storage.save([]);
 			}
 		}
 	}, [addHelperWithItem]);
