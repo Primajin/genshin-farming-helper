@@ -1,5 +1,5 @@
 /* global localStorage */
-// localStorage may be used only after it has been checked against being undefined
+const localStorageKey = 'genshin-farming-helper';
 
 /**
  * Returns the current value associated with the given key, or null if the given key does not exist.
@@ -20,17 +20,18 @@ const setItem = (_key, _value) => {};
 
 /**
  * Getter and setter for local storage
- * @type {{getItem: (function(string): string | null), setItem: setItem}|Storage} fromLocalStorage
+ * @type {{getItem: (function(key: string): string | null), setItem: (function(key: string, value: string): void)}|Storage}
  */
 const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem} : localStorage;
+// LocalStorage may be used only after it has been checked against being undefined
 
 /**
  * Getter and setter for local storage for lazy people who don't want to call JSON parse all the time
- * @type {{set: (function(string, *): void), get: (function(string): any)}}
+ * @type {{set: (function(any): void), get: (function(): any)}}
  */
 const storage = {
-	get: key => JSON.parse(fromLocalStorage.getItem(key)),
-	set: (key, value) => fromLocalStorage.setItem(key, JSON.stringify(value)),
+	get: () => JSON.parse(fromLocalStorage.getItem(localStorageKey)),
+	set: value => fromLocalStorage.setItem(localStorageKey, JSON.stringify(value)),
 };
 
 export default storage;
