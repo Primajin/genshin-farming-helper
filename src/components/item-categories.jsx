@@ -37,9 +37,9 @@ const categories = css`
 		border: 1px solid rgba(0,0,0,0.5);
 		border-bottom: 0;
 		border-radius: 7px 7px 0 0;
-		padding: 3px 5px 0;
+		padding: 5px 18px 0;
 		position: relative;
-		top: -10px;
+		top: -11px;
 	}
 `;
 
