@@ -4,12 +4,12 @@ import genshinDb from 'genshin-db';
 const defaultOptions = {matchCategories: true, verboseCategories: true};
 const talentMaterials = genshinDb.materials('Character Talent Material', defaultOptions).filter(material => !material?.name.startsWith('Crown')).sort((a, b) => a.sortorder - b.sortorder);
 const weaponMaterials = genshinDb.materials('Weapon Ascension Material', defaultOptions).sort((a, b) => a.sortorder - b.sortorder);
-const characterAscensionMaterials = genshinDb.materials('Character Ascension Material', defaultOptions);
+const characterAscensionMaterials = genshinDb.materials('Character Ascension Material', defaultOptions).sort((a, b) => a.sortorder - b.sortorder);
 const characterWeaponEnhancementMaterialNames = new Set(genshinDb.materials('Character and Weapon Enhancement Material', defaultOptions).map(material => material?.name));
 const allMaterials = genshinDb.materials('names', defaultOptions);
 const characterWeaponEnhancementMaterials = allMaterials.filter(material => characterWeaponEnhancementMaterialNames.has(material?.name)).sort((a, b) => a.sortorder - b.sortorder);
 const characterLVLMaterials = allMaterials.filter(material => material?.materialtype.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension')).sort((a, b) => a.sortorder - b.sortorder);
-const localSpecialties = allMaterials.filter(material => material?.materialtype.startsWith('Local'));
+const localSpecialties = allMaterials.filter(material => material?.materialtype.startsWith('Local')).sort((a, b) => a.sortorder - b.sortorder);
 
 const materials = {
 	characterAscensionMaterials,
