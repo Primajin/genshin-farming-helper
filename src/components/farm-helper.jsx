@@ -5,6 +5,7 @@ import {useEffect, useState} from 'react';
 
 import {backgrounds, IMG_URL, materialTypes} from '../constants';
 import theme from '../theme';
+import storage from '../utils/local-storage.js';
 
 const wrapper = css`
 	display: inline-block;
@@ -54,7 +55,7 @@ const removeButton = css`
 	margin: 30px 0 0 25px;
 `;
 
-function FarmHelper({category, item, materials: {characterAscensionMaterials, characterLVLMaterials, localSpecialties, talentMaterials, weaponMaterials}, onRemove}) {
+function FarmHelper({category, config, item, materials: {characterAscensionMaterials, characterLVLMaterials, characterWeaponEnhancementMaterials, localSpecialties, talentMaterials, weaponMaterials}, onRemove}) {
 	let items = [];
 	let queryItem;
 	let dropsIndex = 0;
@@ -68,8 +69,6 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 			const reversedCharacterWeaponEnhancementMaterials = characterWeaponEnhancementMaterials.slice().reverse();
 			queryItem = characterWeaponEnhancementMaterials.find(material => material.name === item);
 			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
-
-			console.log(queryItem, characterWeaponEnhancementMaterials);
 
 			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2], reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1], reversedCharacterWeaponEnhancementMaterials[dropsIndex]] : [queryItem];
 			break;
@@ -105,13 +104,13 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 	const hasJustOne = items.length === 1;
 	const hasTierFour = items.length > 3;
 
-	const [tierOne, setTierOne] = useState(0);
-	const [lockTierOne, setLockTierOne] = useState(hasJustOne);
-	const [tierTwo, setTierTwo] = useState(0);
-	const [lockTierTwo, setLockTierTwo] = useState(false);
-	const [tierThree, setTierThree] = useState(0);
-	const [lockTierThree, setLockTierThree] = useState(false);
-	const [tierFour, setTierFour] = useState(0);
+	const [tierOne, setTierOne] = useState(config[0]);
+	const [lockTierOne, setLockTierOne] = useState(config[1] || hasJustOne);
+	const [tierTwo, setTierTwo] = useState(config[2]);
+	const [lockTierTwo, setLockTierTwo] = useState(config[3]);
+	const [tierThree, setTierThree] = useState(config[4]);
+	const [lockTierThree, setLockTierThree] = useState(config[5]);
+	const [tierFour, setTierFour] = useState(config[6]);
 
 	const incTierOne = () => {
 		setTierOne(tierOne + 1);
@@ -128,11 +127,6 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 	const incTierFour = () => {
 		setTierFour(tierFour + 1);
 	};
-
-	const incTier = [incTierOne, incTierTwo, incTierThree, incTierFour];
-	const setLockTier = [setLockTierOne, setLockTierTwo, setLockTierThree];
-	const lockedTier = [lockTierOne, lockTierTwo, lockTierThree];
-	const tierValue = [tierOne, tierTwo, tierThree, tierFour];
 
 	useEffect(() => {
 		if (!lockTierOne && tierOne && tierOne / 3 >= 1) {
@@ -154,6 +148,14 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 			setTierThree(tierThree % 3);
 		}
 	}, [lockTierThree, hasTierFour, tierThree, tierFour]);
+
+	const incTier = [incTierOne, incTierTwo, incTierThree, incTierFour];
+	const setLockTier = [setLockTierOne, setLockTierTwo, setLockTierThree];
+	const lockedTier = [lockTierOne, lockTierTwo, lockTierThree];
+	const tierValue = [tierOne, tierTwo, tierThree, tierFour];
+	const savedHelpers = storage.load();
+	const newHelpers = {...savedHelpers, [`${category}.${item}`]: [tierOne, lockTierOne, tierTwo, lockTierTwo, tierThree, lockTierThree, tierFour]};
+	storage.save(newHelpers);
 
 	return (
 		<section>
@@ -190,6 +192,10 @@ function FarmHelper({category, item, materials: {characterAscensionMaterials, ch
 
 FarmHelper.propTypes = {
 	category: PropTypes.string,
+	config: PropTypes.arrayOf(PropTypes.oneOfType([
+		PropTypes.number,
+		PropTypes.bool,
+	])),
 	item: PropTypes.string,
 	materials: PropTypes.shape({
 		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
