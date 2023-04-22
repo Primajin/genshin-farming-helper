@@ -105,6 +105,7 @@ export default function Main() {
 					<FarmHelper
 						key={item}
 						category={category}
+						config={config}
 						item={item}
 						materials={materials}
 						onRemove={onRemove}
