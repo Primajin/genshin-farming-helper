@@ -12,7 +12,7 @@
   "main": "src/index.jsx",
   "type": "module",
   "dependencies": {
-    "@emotion/react": "^11.10.6",
+    "@emotion/react": "^11.10.8",
     "@fontsource/material-icons": "^4.5.4",
     "genshin-db": "^4.3.7",
     "gh-pages": "^5.0.0",
@@ -21,12 +21,12 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@babel/runtime": "7.21.0",
+    "@babel/runtime": "7.21.5",
     "@testing-library/react": "^14.0.0",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "xo": "^0.54.1"
+    "xo": "^0.54.2"
   },
   "scripts": {
     "build": "react-scripts build",
