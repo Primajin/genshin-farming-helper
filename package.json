@@ -14,7 +14,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@fontsource/material-icons": "^4.5.4",
-    "genshin-db": "^4.3.8",
+    "genshin-db": "^4.3.9",
     "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
