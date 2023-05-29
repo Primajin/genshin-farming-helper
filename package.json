@@ -13,7 +13,7 @@
   "type": "module",
   "dependencies": {
     "@emotion/react": "^11.11.0",
-    "@fontsource/material-icons": "^4.5.4",
+    "@fontsource/material-icons": "^5.0.1",
     "genshin-db": "^4.3.9",
     "gh-pages": "^5.0.0",
     "react": "18.2.0",
