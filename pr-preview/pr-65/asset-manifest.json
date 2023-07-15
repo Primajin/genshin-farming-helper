@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/genshin-farming-helper/pr-preview/pr-65/static/css/main.d418a3fd.css",
+    "main.js": "/genshin-farming-helper/pr-preview/pr-65/static/js/main.6d130541.js",
+    "static/media/material-icons-latin-400-normal.woff": "/genshin-farming-helper/pr-preview/pr-65/static/media/material-icons-latin-400-normal.ec276a3b4c1b27cdbab7.woff",
+    "static/media/material-icons-latin-400-normal.woff2": "/genshin-farming-helper/pr-preview/pr-65/static/media/material-icons-latin-400-normal.0c35d18bf06992036b69.woff2",
+    "static/media/background_Item_2_Star.png": "/genshin-farming-helper/pr-preview/pr-65/static/media/background_Item_2_Star.a0764fd5015d464a5bb7.png",
+    "static/media/background_Item_3_Star.png": "/genshin-farming-helper/pr-preview/pr-65/static/media/background_Item_3_Star.54846f81c6f90f716f9f.png",
+    "static/media/background_Item_5_Star.png": "/genshin-farming-helper/pr-preview/pr-65/static/media/background_Item_5_Star.9e3aed41ec755cabcdfe.png",
+    "static/media/background_Item_4_Star.png": "/genshin-farming-helper/pr-preview/pr-65/static/media/background_Item_4_Star.d2d4270ad6514f5d43a4.png",
+    "static/media/background_Item_1_Star.png": "/genshin-farming-helper/pr-preview/pr-65/static/media/background_Item_1_Star.6681830d3ea34dbd452c.png",
+    "index.html": "/genshin-farming-helper/pr-preview/pr-65/index.html",
+    "main.d418a3fd.css.map": "/genshin-farming-helper/pr-preview/pr-65/static/css/main.d418a3fd.css.map",
+    "main.6d130541.js.map": "/genshin-farming-helper/pr-preview/pr-65/static/js/main.6d130541.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d418a3fd.css",
+    "static/js/main.6d130541.js"
+  ]
+}
