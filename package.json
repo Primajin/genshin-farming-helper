@@ -15,7 +15,7 @@
     "@emotion/react": "^11.11.1",
     "@fontsource/material-icons": "^5.0.7",
     "genshin-db": "^4.3.11",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1"
