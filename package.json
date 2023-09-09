@@ -37,7 +37,6 @@
     "build": "vite build",
     "coverage": "vitest run --coverage",
     "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject",
     "generate": "node src/scripts/generate-data.js",
     "lint": "xo",
     "lint:fix": "xo --fix",
