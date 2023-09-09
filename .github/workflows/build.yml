@@ -37,7 +37,9 @@ jobs:
       - name: Generate resources
         run: npm run generate
       - name: Run build with Base
-        run: npx vite build --base=$BASE_URL
+        run: |
+          echo $BASE_URL
+          npx vite build --base=$BASE_URL
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
