@@ -54,7 +54,7 @@ function ItemPicker({list, materials, type}) {
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
 				>
-					<img alt={material.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
+					<img data-testid='image' alt={material.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
 				</div>
 				<span>{material.name}</span>
 			</label>
