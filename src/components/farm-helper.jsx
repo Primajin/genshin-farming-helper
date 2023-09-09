@@ -6,6 +6,7 @@ import {useEffect, useState} from 'react';
 import {backgrounds, IMG_URL, materialTypes} from '../constants';
 import theme from '../theme';
 import storage from '../utils/local-storage.js';
+import {cleanName} from '../utils/string-manipulation.js';
 
 const wrapper = css`
 	display: inline-block;
@@ -159,32 +160,38 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 
 	return (
 		<section>
-			{items.map((item, itemIndex) => (
-				<div key={item.name} css={wrapper}>
-					<button
-						css={button}
-						style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
-						title={item.name}
-						type='button'
-						onClick={incTier[itemIndex]}
-					>
-						<img alt={item.name} src={`${IMG_URL}${item.images?.nameicon}.png`} width='75' height='75'/>
-						<b>{tierValue[itemIndex]}</b>
-					</button>
-					{itemIndex < items.length - 1 && (
-						<label>
-							<input
-								type='checkbox'
-								checked={lockedTier[itemIndex]}
-								onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}
-							/>
-							<div css={actions} className='material-icons'>
-								{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
-							</div>
-						</label>
-					)}
-				</div>
-			))}
+			{items.map((item, itemIndex) => {
+				// eslint-disable-next-line no-warning-comments
+				// FIXME find a better way
+				// eslint-disable-next-line react-hooks/rules-of-hooks
+				const [src, setSrc] = useState(`${IMG_URL}${item.images?.nameicon}.png`);
+
+				let tooManyRetries = 0;
+				const tryOtherUrl = () => {
+					if (!tooManyRetries) {
+						setSrc(`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/materials/${cleanName(item.name)}.png`);
+					}
+
+					tooManyRetries++;
+				};
+
+				return (
+					<div key={item.name} css={wrapper}>
+						<button css={button} style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}} title={item.name} type='button' onClick={incTier[itemIndex]}>
+							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
+							<b>{tierValue[itemIndex]}</b>
+						</button>
+						{itemIndex < items.length - 1 && (
+							<label>
+								<input type='checkbox' checked={lockedTier[itemIndex]} onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}/>
+								<div css={actions} className='material-icons'>
+									{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
+								</div>
+							</label>
+						)}
+					</div>
+				);
+			})}
 			<div css={[actions, removeButton]} className='material-icons' onClick={() => onRemove(item)}>delete</div>
 		</section>
 	);
