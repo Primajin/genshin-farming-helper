@@ -1,4 +1,5 @@
-import {render, screen} from '@testing-library/react';
+import {fireEvent, render, screen} from '@testing-library/react';
+import {describe, it, expect} from 'vitest';
 
 import ItemPicker from '../item-picker.jsx';
 import {materialTypes} from '../../constants';
@@ -79,8 +80,30 @@ const slime = {
 	version: '',
 };
 
+const ancientChord = {
+	name: 'Echo of an Ancient Chord',
+	description: 'The God King\'s Grand Symphony is composed of countless melodies linked together, but its main thesis is submerged under the common destiny of the Water Nation.\nThe harmonies of those carefree years and sonatas were once the greatest representation of civilization and order, but when the prosperous empire descended into a playground for tyrants, the brutal despots tore the connection with the source asunder under the cover of golden cloaks, and discord finally swarmed through the empire—\nThe original song of fate continued to ring out on a score of fading gold, unperturbed by all... until all was dissolved, and all returned to chaos.',
+	sortorder: 2984,
+	rarity: '5',
+	category: 'AVATAR_MATERIAL',
+	materialtype: 'Weapon Ascension Material',
+	dropdomain: 'Domain of Forgery: Robotic Ruse',
+	daysofweek: [
+		'Monday',
+		'Thursday',
+		'Sunday',
+	],
+	source: [
+		'Crafted',
+	],
+	images: {
+		nameicon: 'UI_ItemIcon_114052',
+		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Echo_of_an_Ancient_Chord.png',
+	},
+	version: '4.0',
+};
+
 describe('ItemPicker', () => {
-	// eslint-disable-next-line jest/expect-expect
 	it('does not explode without props', () => {
 		render(<ItemPicker/>);
 	});
@@ -91,7 +114,7 @@ describe('ItemPicker', () => {
 		expect(label).toBeDefined();
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
 		const regExp = /url\((\S+)\)/g;
-		expect(regExp.exec(backgroundStyle)[1]).toBe('background_Item_5_Star.png');
+		expect(regExp.exec(backgroundStyle)[1]).toBe('/src/images/bg/background_Item_5_Star.png');
 	});
 
 	it('renders with single element (char lvl)', () => {
@@ -100,7 +123,7 @@ describe('ItemPicker', () => {
 		expect(label).toBeDefined();
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
 		const regExp = /url\((\S+)\)/g;
-		expect(regExp.exec(backgroundStyle)[1]).toBe('background_Item_3_Star.png');
+		expect(regExp.exec(backgroundStyle)[1]).toBe('/src/images/bg/background_Item_3_Star.png');
 	});
 
 	it('renders with multiple elements', () => {
@@ -113,6 +136,19 @@ describe('ItemPicker', () => {
 		expect(label3).toBeDefined();
 		const backgroundStyle = label2.querySelectorAll('div')[0].getAttribute('style');
 		const regExp = /url\((\S+)\)/g;
-		expect(regExp.exec(backgroundStyle)[1]).toBe('background_Item_4_Star.png');
+		expect(regExp.exec(backgroundStyle)[1]).toBe('/src/images/bg/background_Item_4_Star.png');
+	});
+
+	it('renders alternative image when initial one can not be loaded', () => {
+		render(<ItemPicker materials={[ancientChord]} type={materialTypes.LEVEL}/>);
+		const image = screen.getByTestId('image');
+		expect(image).toBeDefined();
+		const imageSourceBefore = image.getAttribute('src');
+		expect(imageSourceBefore.includes('cloudinary.com')).toBeTruthy();
+		fireEvent.error(image);
+		const imageSourceAfter = image.getAttribute('src');
+		expect(imageSourceAfter.includes('cloudinary.com')).toBeFalsy();
+		console.log('imageSourceAfter', imageSourceAfter);
+		expect(imageSourceAfter.includes('digitaloceanspaces.com')).toBeTruthy();
 	});
 });
