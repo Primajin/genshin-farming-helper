@@ -30,12 +30,14 @@ jobs:
           path: ~/.npm
           key: npm-${{ hashFiles('package-lock.json') }}
           restore-keys: npm-
-      - name: Setup ENV
-        run: echo "BASE_URL=/genshin-farming-helper/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/" >> .env
+      - name: Set BASE_URL
+        run: BASE_URL=/genshin-farming-helper/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/
       - name: Install dependencies
         run: npm ci
-      - name: Run build
-        run: npm run build
+      - name: Generate resources
+        run: npm run generate
+      - name: Run build with Base
+        run: npx vite build --base=$BASE_URL
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
