@@ -104,6 +104,7 @@ const ancientChord = {
 };
 
 describe('ItemPicker', () => {
+	// eslint-disable-next-line vitest/expect-expect
 	it('does not explode without props', () => {
 		render(<ItemPicker/>);
 	});
