@@ -1,8 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
-
 import {css} from '@emotion/react';
+import {useState} from 'react';
+
 import {backgrounds, IMG_URL, materialTypes} from '../constants';
+import {cleanName} from '../utils/string-manipulation.js';
 
 const wrapper = css`
 	cursor: pointer;
@@ -31,6 +33,20 @@ function ItemPicker({list, materials, type}) {
 		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
 		const item = materials.find(material => material.name === highestName);
 		const disabled = list.includes(material.name);
+		// eslint-disable-next-line no-warning-comments
+		// FIXME find a better way
+		// eslint-disable-next-line react-hooks/rules-of-hooks
+		const [src, setSrc] = useState(`${IMG_URL}${item.images?.nameicon}.png`);
+
+		let tooManyRetries = 0;
+		const tryOtherUrl = () => {
+			if (!tooManyRetries) {
+				setSrc(`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/materials/${cleanName(material.name)}.png`);
+			}
+
+			tooManyRetries++;
+		};
+
 		return (
 			<label key={material.name} css={wrapper} title={material.name} aria-disabled={disabled}>
 				<input type='radio' name='item' value={`${type}.${material.name}`} disabled={disabled}/>
@@ -38,7 +54,7 @@ function ItemPicker({list, materials, type}) {
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
 				>
-					<img alt={material.name} src={`${IMG_URL}${item.images?.nameicon}.png`} width='75' height='75'/>
+					<img alt={material.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
 				</div>
 				<span>{material.name}</span>
 			</label>
