@@ -177,13 +177,22 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 
 				return (
 					<div key={item.name} css={wrapper}>
-						<button css={button} style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}} title={item.name} type='button' onClick={incTier[itemIndex]}>
+						<button
+							css={button}
+							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
+							title={item.name}
+							type='button' onClick={incTier[itemIndex]}
+						>
 							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
 							<b>{tierValue[itemIndex]}</b>
 						</button>
 						{itemIndex < items.length - 1 && (
 							<label>
-								<input type='checkbox' checked={lockedTier[itemIndex]} onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}/>
+								<input
+									type='checkbox'
+									checked={lockedTier[itemIndex]}
+									onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}
+								/>
 								<div css={actions} className='material-icons'>
 									{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
 								</div>
