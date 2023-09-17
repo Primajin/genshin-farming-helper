@@ -7,7 +7,7 @@ import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';
 import theme from '../theme/index.js';
-import {up} from '../utils/theming.js';
+import {breakpoints, up} from '../utils/theming.js';
 import ItemCategories from './item-categories.jsx';
 import FarmHelper from './farm-helper.jsx';
 
@@ -30,7 +30,7 @@ const globalStyles = css`
 		font-family: 'Material Symbols Outlined', emoji;
 		font-weight: normal;
 		font-style: normal;
-		font-size: 24px;  /* Preferred icon size */
+		font-size: 24px; /* Preferred icon size */
 		display: inline-block;
 		line-height: 1;
 		text-transform: none;
@@ -70,14 +70,18 @@ const globalStyles = css`
 		${up('sm')} {
 			max-width: 90%;
 		};
-		
+
+		${up('xl')} {
+			max-width: ${breakpoints.get('xl')}px;
+		};
+
 		section {
 			margin-top: 20px;
-		}
-
-		&.float-groups section {
-			display: inline-block;
-			margin-right: 50px;
+			min-width: 155px;
+			
+			&:empty {
+				margin-top: 0;
+			}
 		}
 	}
 `;
@@ -99,6 +103,16 @@ const video = css`
 const toggleFloat = css`
 	margin: 0;
 	transform: rotate(90deg);
+`;
+
+const helperList = css`
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		${up('md')} {
+			justify-content: space-between;
+		};
 `;
 
 let didRun = false;
@@ -198,18 +212,19 @@ export default function Main() {
 					</video>
 				</div>
 			)}
-			<main className={floatGroups ? 'float-groups' : undefined}>
-				<div>
-					<button
-						className='material-icons'
-						css={[actions, toggleFloat]}
-						type='button'
-						onClick={handleFloatChange}
-					>
-						{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
-					</button>
+			<main>
+				<button
+					className='material-icons'
+					css={[actions, toggleFloat]}
+					type='button'
+					onClick={handleFloatChange}
+				>
+					{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
+				</button>
+				<div css={floatGroups ? helperList : undefined}>
+					{farmHelperList}
+					<section/><section/><section/><section/><section/><section/>
 				</div>
-				{farmHelperList}
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>
 		</>

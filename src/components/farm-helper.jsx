@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
 
-import {backgrounds, IMG_URL, materialTypes} from '../constants';
-import theme from '../theme';
 import storage from '../utils/local-storage.js';
+import theme from '../theme';
+import {backgrounds, IMG_URL, materialTypes} from '../constants';
 import {cleanName} from '../utils/string-manipulation.js';
+import {up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
 
@@ -48,7 +49,13 @@ const button = css`
 `;
 
 const removeButton = css`
+	font-size: 25px;
+	padding: 0;
 	margin: 30px 0 0 25px;
+
+	${up('md')} {
+		margin-left: 10px;
+	};
 `;
 
 function FarmHelper({category, config, item, materials: {characterAscensionMaterials, characterLVLMaterials, characterWeaponEnhancementMaterials, localSpecialties, talentMaterials, weaponMaterials}, onRemove}) {
@@ -203,7 +210,7 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 				type='button'
 				onClick={() => onRemove(item)}
 			>
-				delete
+				close
 			</button>
 		</section>
 	);
