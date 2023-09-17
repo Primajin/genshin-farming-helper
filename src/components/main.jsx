@@ -26,8 +26,8 @@ const globalStyles = css`
 		user-select: none;
 	}
 
-	.material-icons {
-		font-family: 'Material Symbols Outlined', emoji;
+	.material-symbols-outlined {
+		font-family: 'Material Symbols Outlined Variable', emoji;
 		font-weight: normal;
 		font-style: normal;
 		font-size: 24px; /* Preferred icon size */
@@ -38,19 +38,25 @@ const globalStyles = css`
 		word-wrap: normal;
 		white-space: nowrap;
 		direction: ltr;
-		
+
 		/* Support for all WebKit browsers. */
 		-webkit-font-smoothing: antialiased;
 		/* Support for Safari and Chrome. */
 		text-rendering: optimizeLegibility;
-		
+
 		/* Support for Firefox. */
 		-moz-osx-font-smoothing: grayscale;
-		
+
 		/* Support for IE. */
 		font-feature-settings: 'liga';
 
 		cursor: pointer;
+
+		font-variation-settings: 'FILL' 0, 'wght' 400,  'GRAD' 0, 'opsz' 24;
+
+		&.fill {
+			font-variation-settings: 'FILL' 1, 'wght' 400,  'GRAD' 0, 'opsz' 24;
+		}
 	}
 
 	input {
@@ -216,7 +222,7 @@ export default function Main() {
 			<main>
 				{hasItems && (
 					<button
-						className='material-icons'
+						className='material-symbols-outlined'
 						css={[actions, toggleFloat]}
 						type='button'
 						onClick={handleFloatChange}

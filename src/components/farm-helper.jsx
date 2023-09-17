@@ -6,17 +6,33 @@ import {useEffect, useState} from 'react';
 import storage from '../utils/local-storage.js';
 import theme from '../theme';
 import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
-import {up} from '../utils/theming.js';
+import {forDevice, up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
 
 const wrapper = css`
 	display: inline-block;
-	height: 130px;
 	margin: 2px;
 	position: relative;
 	vertical-align: top;
 	width: 75px;
+
+	label {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+
+	${forDevice('mouse')} {
+		input[type="number"] {
+			display: block;
+			margin: 0 auto;
+			width: 80%;
+
+			+ div {
+				display: none;
+			}
+		}
+	};
 `;
 
 const button = css`
@@ -54,11 +70,15 @@ const button = css`
 const removeButton = css`
 	font-size: 25px;
 	padding: 0;
-	margin: 30px 0 0 25px;
+	margin: 60px 0 0 25px;
 
 	${up('md')} {
 		margin-left: 10px;
 	};
+`;
+
+const reachedGoal = css`
+	color: red;
 `;
 
 function FarmHelper({
@@ -143,6 +163,11 @@ function FarmHelper({
 	const [lockTierThree, setLockTierThree] = useState(config[5]);
 	const [tierFour, setTierFour] = useState(config[6]);
 
+	const [tierOneGoal, setTierOneGoal] = useState(config[7]);
+	const handleOneGoal = event => {
+		setTierOneGoal(Number.parseInt(event.target.value, 10));
+	};
+
 	const incTierOne = () => {
 		setTierOne(tierOne + 1);
 	};
@@ -184,6 +209,7 @@ function FarmHelper({
 	const setLockTier = [setLockTierOne, setLockTierTwo, setLockTierThree];
 	const lockedTier = [lockTierOne, lockTierTwo, lockTierThree];
 	const tierValue = [tierOne, tierTwo, tierThree, tierFour];
+	const goalValue = [tierOneGoal];
 	const savedHelpers = storage.load();
 	const newHelpers = {...savedHelpers, [`${category}.${item}`]: [tierOne, lockTierOne, tierTwo, lockTierTwo, tierThree, lockTierThree, tierFour]};
 	storage.save(newHelpers);
@@ -207,6 +233,15 @@ function FarmHelper({
 
 				return (
 					<div key={item.name} css={wrapper}>
+						<label>
+							<input
+								type='number'
+								min='0'
+								step='1'
+								onChange={handleOneGoal}
+							/>
+							<div css={actions} className='material-symbols-outlined'>pin</div>
+						</label>
 						<button
 							css={button}
 							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
@@ -215,7 +250,9 @@ function FarmHelper({
 							onClick={incTier[itemIndex]}
 						>
 							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
-							<b>{tierValue[itemIndex]}</b>
+							<b css={tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}>
+								{tierValue[itemIndex]}
+							</b>
 						</button>
 						{itemIndex < items.length - 1 && (
 							<label>
@@ -224,7 +261,7 @@ function FarmHelper({
 									checked={lockedTier[itemIndex]}
 									onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}
 								/>
-								<div css={actions} className='material-icons'>
+								<div css={actions} className={`material-symbols-outlined ${lockedTier[itemIndex] ? 'fill' : undefined}`}>
 									{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
 								</div>
 							</label>
@@ -233,7 +270,7 @@ function FarmHelper({
 				);
 			})}
 			<button
-				className='material-icons'
+				className='material-symbols-outlined'
 				css={[actions, removeButton]}
 				type='button'
 				onClick={() => onRemove(item)}

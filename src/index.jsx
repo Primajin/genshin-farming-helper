@@ -2,7 +2,7 @@
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client'; // eslint-disable-line n/file-extension-in-import
 
-import '@fontsource/material-symbols-outlined'; // eslint-disable-line import/no-unassigned-import
+import '@fontsource-variable/material-symbols-outlined/fill.css';
 import Main from './components/main.jsx';
 
 const rootElement = document.querySelector('#root');
