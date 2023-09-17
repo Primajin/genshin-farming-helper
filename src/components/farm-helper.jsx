@@ -5,8 +5,7 @@ import {useEffect, useState} from 'react';
 
 import storage from '../utils/local-storage.js';
 import theme from '../theme';
-import {backgrounds, IMG_URL, materialTypes} from '../constants';
-import {cleanName} from '../utils/string-manipulation.js';
+import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
 import {up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
@@ -58,7 +57,21 @@ const removeButton = css`
 	};
 `;
 
-function FarmHelper({category, config, item, materials: {characterAscensionMaterials, characterLVLMaterials, characterWeaponEnhancementMaterials, localSpecialties, talentMaterials, weaponMaterials}, onRemove}) {
+function FarmHelper({
+	category,
+	config,
+	item,
+	materials: {
+		characterAscensionMaterials,
+		characterLVLMaterials,
+		characterWeaponEnhancementMaterials,
+		fish,
+		localSpecialties,
+		talentMaterials,
+		weaponMaterials,
+	},
+	onRemove,
+}) {
 	let items = [];
 	let queryItem;
 	let dropsIndex = 0;
@@ -74,6 +87,11 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
 
 			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2], reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1], reversedCharacterWeaponEnhancementMaterials[dropsIndex]] : [queryItem];
+			break;
+		}
+
+		case materialTypes.FISH: {
+			items = [fish.find(material => material.name === item)];
 			break;
 		}
 
@@ -171,7 +189,7 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 				let tooManyRetries = 0;
 				const tryOtherUrl = () => {
 					if (!tooManyRetries) {
-						setSrc(`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/materials/${cleanName(item.name)}.png`);
+						setSrc(`${IMG_URL2}${item.images?.nameicon}.png`);
 					}
 
 					tooManyRetries++;
@@ -227,6 +245,7 @@ FarmHelper.propTypes = {
 		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterWeaponEnhancementMaterials: PropTypes.arrayOf(PropTypes.object),
+		fish: PropTypes.arrayOf(PropTypes.object),
 		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),

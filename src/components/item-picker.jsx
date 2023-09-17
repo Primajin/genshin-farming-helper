@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useState} from 'react';
 
-import {backgrounds, IMG_URL, materialTypes} from '../constants';
-import {cleanName} from '../utils/string-manipulation.js';
+import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
 
 const wrapper = css`
 	cursor: pointer;
@@ -41,7 +40,7 @@ function ItemPicker({list, materials, type}) {
 		let tooManyRetries = 0;
 		const tryOtherUrl = () => {
 			if (!tooManyRetries) {
-				setSrc(`https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/materials/${cleanName(material.name)}.png`);
+				setSrc(`${IMG_URL2}${item.images?.nameicon}.png`);
 			}
 
 			tooManyRetries++;
