@@ -197,6 +197,7 @@ export default function Main() {
 
 	const showVideo = window?.innerWidth > 768;
 	const disabledKeys = farmHelperList.map(item => item.key);
+	const hasItems = farmHelperList.length > 0;
 
 	const handleFloatChange = () => {
 		setFloatGroups(!floatGroups);
@@ -213,17 +214,19 @@ export default function Main() {
 				</div>
 			)}
 			<main>
-				<button
-					className='material-icons'
-					css={[actions, toggleFloat]}
-					type='button'
-					onClick={handleFloatChange}
-				>
-					{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
-				</button>
+				{hasItems && (
+					<button
+						className='material-icons'
+						css={[actions, toggleFloat]}
+						type='button'
+						onClick={handleFloatChange}
+					>
+						{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
+					</button>
+				)}
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
-					<section/><section/><section/><section/><section/><section/>
+					{hasItems && <><section/><section/><section/><section/><section/><section/></>}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>
