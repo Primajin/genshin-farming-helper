@@ -14,6 +14,7 @@ export const materialTypes = {
 	LOCAL: 'LOCAL',
 	TALENT: 'TALENT',
 	WEAPON: 'WEAPON',
+	WOOD: 'WOOD',
 };
 
 export const IMG_URL = 'https://res.cloudinary.com/genshin/image/upload/sprites/';
