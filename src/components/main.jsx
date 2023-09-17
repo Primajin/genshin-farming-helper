@@ -21,7 +21,7 @@ const globalStyles = css`
 	}
 
 	.material-icons {
-		font-family: 'Material Icons';
+		font-family: 'Material Symbols Outlined', emoji;
 		font-weight: normal;
 		font-style: normal;
 		font-size: 24px;  /* Preferred icon size */
