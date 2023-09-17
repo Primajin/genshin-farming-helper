@@ -149,7 +149,6 @@ describe('ItemPicker', () => {
 		fireEvent.error(image);
 		const imageSourceAfter = image.getAttribute('src');
 		expect(imageSourceAfter.includes('cloudinary.com')).toBeFalsy();
-		console.log('imageSourceAfter', imageSourceAfter);
-		expect(imageSourceAfter.includes('digitaloceanspaces.com')).toBeTruthy();
+		expect(imageSourceAfter.includes('api.ambr.top')).toBeTruthy();
 	});
 });

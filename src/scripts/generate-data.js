@@ -10,11 +10,13 @@ const allMaterials = genshinDb.materials('names', defaultOptions);
 const characterWeaponEnhancementMaterials = allMaterials.filter(material => characterWeaponEnhancementMaterialNames.has(material?.name)).sort((a, b) => a.sortorder - b.sortorder);
 const characterLVLMaterials = allMaterials.filter(material => material?.materialtype.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension')).sort((a, b) => a.sortorder - b.sortorder);
 const localSpecialties = allMaterials.filter(material => material?.materialtype.startsWith('Local')).sort((a, b) => a.sortorder - b.sortorder);
+const fish = allMaterials.filter(material => material?.materialtype === 'Fish').sort((a, b) => a.sortorder - b.sortorder);
 
 const materials = {
 	characterAscensionMaterials,
 	characterLVLMaterials,
 	characterWeaponEnhancementMaterials,
+	fish,
 	localSpecialties,
 	talentMaterials,
 	weaponMaterials,
@@ -22,7 +24,7 @@ const materials = {
 
 fs.writeFile('src/data.json', JSON.stringify(materials), error => {
 	if (error) {
-		console.log(error);
+		console.error(error);
 	}
 });
 
@@ -38,6 +40,7 @@ const materialsRare = {
 	characterAscensionMaterials: characterAscensionMaterialsRare,
 	characterLVLMaterials,
 	characterWeaponEnhancementMaterials: characterWeaponEnhancementMaterialsRare,
+	fish,
 	localSpecialties,
 	talentMaterials: talentMaterialsRare,
 	weaponMaterials: weaponMaterialsRare,
@@ -45,6 +48,6 @@ const materialsRare = {
 
 fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
 	if (error) {
-		console.log(error);
+		console.error(error);
 	}
 });

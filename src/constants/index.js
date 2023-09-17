@@ -9,6 +9,7 @@ export const backgrounds = [rarity1, rarity2, rarity3, rarity4, rarity5];
 export const materialTypes = {
 	ASCENSION: 'ASCENSION',
 	ENHANCEMENT: 'ENHANCEMENT',
+	FISH: 'FISH',
 	LEVEL: 'LEVEL',
 	LOCAL: 'LOCAL',
 	TALENT: 'TALENT',
@@ -16,3 +17,4 @@ export const materialTypes = {
 };
 
 export const IMG_URL = 'https://res.cloudinary.com/genshin/image/upload/sprites/';
+export const IMG_URL2 = 'https://api.ambr.top/assets/UI/';

@@ -46,7 +46,18 @@ const categories = css`
 	}
 `;
 
-function ItemCategories({list, materials: {characterAscensionMaterials, characterLVLMaterials, characterWeaponEnhancementMaterials, localSpecialties, talentMaterials, weaponMaterials}, onChangeProp}) {
+function ItemCategories({list,
+	materials: {
+		characterAscensionMaterials,
+		characterLVLMaterials,
+		characterWeaponEnhancementMaterials,
+		fish,
+		localSpecialties,
+		talentMaterials,
+		weaponMaterials,
+	},
+	onChangeProp,
+}) {
 	return (
 		<form css={categories} onChange={onChangeProp}>
 			<fieldset className='narrow'>
@@ -84,6 +95,12 @@ function ItemCategories({list, materials: {characterAscensionMaterials, characte
 				<ItemPicker materials={localSpecialties} type={materialTypes.LOCAL} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
+
+			<fieldset>
+				<legend>Fish</legend>
+				<ItemPicker materials={fish} type={materialTypes.FISH} list={list}/>
+				<label/><label/><label/><label/>
+			</fieldset>
 		</form>
 	);
 }
@@ -94,6 +111,7 @@ ItemCategories.propTypes = {
 		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
 		characterWeaponEnhancementMaterials: PropTypes.arrayOf(PropTypes.object),
+		fish: PropTypes.arrayOf(PropTypes.object),
 		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
