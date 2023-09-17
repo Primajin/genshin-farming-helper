@@ -45,6 +45,10 @@ const button = css`
 	> * {
 		pointer-events: none;
 	}
+	
+	> img {
+		display: inline-block;
+	}
 `;
 
 const removeButton = css`
@@ -69,6 +73,7 @@ function FarmHelper({
 		localSpecialties,
 		talentMaterials,
 		weaponMaterials,
+		wood,
 	},
 	onRemove,
 }) {
@@ -114,6 +119,11 @@ function FarmHelper({
 		case materialTypes.WEAPON: {
 			queryItem = weaponMaterials.find(material => material.name === item);
 			items = weaponMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
+			break;
+		}
+
+		case materialTypes.WOOD: {
+			items = [wood.find(material => material.name === item)];
 			break;
 		}
 
@@ -249,6 +259,7 @@ FarmHelper.propTypes = {
 		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
+		wood: PropTypes.arrayOf(PropTypes.object),
 	}),
 	onRemove: PropTypes.func,
 };

@@ -11,6 +11,7 @@ const characterWeaponEnhancementMaterials = allMaterials.filter(material => char
 const characterLVLMaterials = allMaterials.filter(material => material?.materialtype.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension')).sort((a, b) => a.sortorder - b.sortorder);
 const localSpecialties = allMaterials.filter(material => material?.materialtype.startsWith('Local')).sort((a, b) => a.sortorder - b.sortorder);
 const fish = allMaterials.filter(material => material?.materialtype === 'Fish').sort((a, b) => a.sortorder - b.sortorder);
+const wood = allMaterials.filter(material => material?.category === 'WOOD').sort((a, b) => a.sortorder - b.sortorder);
 
 const materials = {
 	characterAscensionMaterials,
@@ -20,6 +21,7 @@ const materials = {
 	localSpecialties,
 	talentMaterials,
 	weaponMaterials,
+	wood,
 };
 
 fs.writeFile('src/data.json', JSON.stringify(materials), error => {
@@ -44,6 +46,7 @@ const materialsRare = {
 	localSpecialties,
 	talentMaterials: talentMaterialsRare,
 	weaponMaterials: weaponMaterialsRare,
+	wood,
 };
 
 fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {

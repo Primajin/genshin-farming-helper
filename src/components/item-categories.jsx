@@ -55,6 +55,7 @@ function ItemCategories({list,
 		localSpecialties,
 		talentMaterials,
 		weaponMaterials,
+		wood,
 	},
 	onChangeProp,
 }) {
@@ -101,6 +102,12 @@ function ItemCategories({list,
 				<ItemPicker materials={fish} type={materialTypes.FISH} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
+
+			<fieldset>
+				<legend>Wood</legend>
+				<ItemPicker materials={wood} type={materialTypes.WOOD} list={list}/>
+				<label/><label/><label/><label/>
+			</fieldset>
 		</form>
 	);
 }
@@ -115,6 +122,7 @@ ItemCategories.propTypes = {
 		localSpecialties: PropTypes.arrayOf(PropTypes.object),
 		talentMaterials: PropTypes.arrayOf(PropTypes.object),
 		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
+		wood: PropTypes.arrayOf(PropTypes.object),
 	}),
 	onChangeProp: PropTypes.func.isRequired,
 };
