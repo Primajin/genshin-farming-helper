@@ -7,6 +7,9 @@ import theme from '../theme';
 import ItemPicker from './item-picker.jsx';
 
 const categories = css`
+	margin: 25px auto 0;
+	max-width: 396px;
+
 	fieldset {
 		background: ${theme.primary};
 		border: 1px solid rgba(0,0,0,0.5);

@@ -3,13 +3,19 @@
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
 
-import storage from '../utils/local-storage.js';
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
-import FarmHelper from './farm-helper.jsx';
+import storage from '../utils/local-storage.js';
+import theme from '../theme/index.js';
+import {up} from '../utils/theming.js';
 import ItemCategories from './item-categories.jsx';
+import FarmHelper from './farm-helper.jsx';
 
 const globalStyles = css`
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+	
 	body {
 		background: transparent top center url("https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg") no-repeat fixed;
 		background-size: cover;
@@ -58,9 +64,21 @@ const globalStyles = css`
 		left: 50%;
 		margin: 0 auto;
 		width: 100%;
-		max-width: 396px;
 		transform: translateX(-50%);
 		padding: 15px 0;
+
+		${up('sm')} {
+			max-width: 90%;
+		};
+		
+		section {
+			margin-top: 20px;
+		}
+
+		&.float-groups section {
+			display: inline-block;
+			margin-right: 50px;
+		}
 	}
 `;
 
@@ -78,10 +96,17 @@ const video = css`
 	}
 `;
 
+const toggleFloat = css`
+	margin: 0;
+	transform: rotate(90deg);
+`;
+
 let didRun = false;
+const {actions} = theme;
 
 export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
+	const [floatGroups, setFloatGroups] = useState(false);
 
 	const onRemove = name => {
 		const savedHelpers = storage.load();
@@ -159,6 +184,10 @@ export default function Main() {
 	const showVideo = window?.innerWidth > 768;
 	const disabledKeys = farmHelperList.map(item => item.key);
 
+	const handleFloatChange = () => {
+		setFloatGroups(!floatGroups);
+	};
+
 	return (
 		<>
 			<Global styles={globalStyles}/>
@@ -169,7 +198,17 @@ export default function Main() {
 					</video>
 				</div>
 			)}
-			<main>
+			<main className={floatGroups ? 'float-groups' : undefined}>
+				<div>
+					<button
+						className='material-icons'
+						css={[actions, toggleFloat]}
+						type='button'
+						onClick={handleFloatChange}
+					>
+						{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
+					</button>
+				</div>
 				{farmHelperList}
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>

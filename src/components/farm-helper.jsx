@@ -8,6 +8,8 @@ import theme from '../theme';
 import storage from '../utils/local-storage.js';
 import {cleanName} from '../utils/string-manipulation.js';
 
+const {actions, primary} = theme;
+
 const wrapper = css`
 	display: inline-block;
 	height: 130px;
@@ -18,7 +20,7 @@ const wrapper = css`
 `;
 
 const button = css`
-	background: ${theme.primary} top center no-repeat;
+	background: ${primary} top center no-repeat;
 	background-size: contain;
 	border-radius: 7px;
 	border: 0 solid transparent;
@@ -29,7 +31,7 @@ const button = css`
 	text-align: center;
 
 	&::after {
-		background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, ${theme.primary} 21px);
+		background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, ${primary} 21px);
 		content: "";
 		display: block;
 		height: 20px;
@@ -43,13 +45,6 @@ const button = css`
 	> * {
 		pointer-events: none;
 	}
-`;
-
-const actions = css`
-	background: ${theme.primary};
-	border-radius: 50%;
-	margin-top: 3px;
-	padding: 3px;
 `;
 
 const removeButton = css`
@@ -181,7 +176,8 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 							css={button}
 							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
 							title={item.name}
-							type='button' onClick={incTier[itemIndex]}
+							type='button'
+							onClick={incTier[itemIndex]}
 						>
 							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
 							<b>{tierValue[itemIndex]}</b>
@@ -201,7 +197,14 @@ function FarmHelper({category, config, item, materials: {characterAscensionMater
 					</div>
 				);
 			})}
-			<div css={[actions, removeButton]} className='material-icons' onClick={() => onRemove(item)}>delete</div>
+			<button
+				className='material-icons'
+				css={[actions, removeButton]}
+				type='button'
+				onClick={() => onRemove(item)}
+			>
+				delete
+			</button>
 		</section>
 	);
 }
