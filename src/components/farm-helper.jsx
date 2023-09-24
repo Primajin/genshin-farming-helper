@@ -6,7 +6,7 @@ import {useEffect, useState} from 'react';
 import storage from '../utils/local-storage.js';
 import theme from '../theme';
 import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
-import {forDevice, up} from '../utils/theming.js';
+import {up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
 
@@ -16,40 +16,29 @@ const wrapper = css`
 	position: relative;
 	vertical-align: top;
 	width: 75px;
-
-	label {
-		display: inline-block;
-		margin-bottom: 5px;
-	}
-
-	${forDevice('mouse')} {
-		input[type="number"] {
-			display: block;
-			margin: 0 auto;
-			width: 46px;
-
-			+ div {
-				display: none;
-			}
-		}
-	};
 `;
 
 const label = css`
-		display: inline-block;
-		margin-bottom: 5px;
+	display: inline-block;
+	margin-bottom: 5px;
+	overflow: hidden;
+	position: relative;
 `;
 
 const input = css`
-	${forDevice('mouse')} {
-			display: block;
-			margin: 0 auto;
-			width: 46px;
+	display: block;
+	margin: 7px auto 6px;
+	position: absolute;
+	left: -5em;
+	width: 46px;
 
-			+ div {
-				display: none;
-			}
-	};
+	&:focus {
+		position: static;
+
+		+ div {
+			display: none;
+		}
+	}
 `;
 
 const button = css`

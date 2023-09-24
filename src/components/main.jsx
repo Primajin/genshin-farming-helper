@@ -52,10 +52,10 @@ const globalStyles = css`
 
 		cursor: pointer;
 
-		font-variation-settings: 'FILL' 0, 'wght' 400,  'GRAD' 0, 'opsz' 24;
+		font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 
 		&.fill {
-			font-variation-settings: 'FILL' 1, 'wght' 400,  'GRAD' 0, 'opsz' 24;
+			font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 		}
 	}
 
