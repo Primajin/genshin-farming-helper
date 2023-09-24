@@ -26,12 +26,29 @@ const wrapper = css`
 		input[type="number"] {
 			display: block;
 			margin: 0 auto;
-			width: 80%;
+			width: 46px;
 
 			+ div {
 				display: none;
 			}
 		}
+	};
+`;
+
+const label = css`
+		display: inline-block;
+		margin-bottom: 5px;
+`;
+
+const input = css`
+	${forDevice('mouse')} {
+			display: block;
+			margin: 0 auto;
+			width: 46px;
+
+			+ div {
+				display: none;
+			}
 	};
 `;
 
@@ -78,7 +95,7 @@ const removeButton = css`
 `;
 
 const reachedGoal = css`
-	color: red;
+	color: #347d39;
 `;
 
 function FarmHelper({
@@ -163,10 +180,10 @@ function FarmHelper({
 	const [lockTierThree, setLockTierThree] = useState(config[5]);
 	const [tierFour, setTierFour] = useState(config[6]);
 
-	const [tierOneGoal, setTierOneGoal] = useState(config[7]);
-	const handleOneGoal = event => {
-		setTierOneGoal(Number.parseInt(event.target.value, 10));
-	};
+	const [tierOneGoal, setTierOneGoal] = useState(config[7] ?? '');
+	const [tierTwoGoal, setTierTwoGoal] = useState(config[8] ?? '');
+	const [tierThreeGoal, setTierThreeGoal] = useState(config[9] ?? '');
+	const [tierFourGoal, setTierFourGoal] = useState(config[10] ?? '');
 
 	const incTierOne = () => {
 		setTierOne(tierOne + 1);
@@ -209,7 +226,20 @@ function FarmHelper({
 	const setLockTier = [setLockTierOne, setLockTierTwo, setLockTierThree];
 	const lockedTier = [lockTierOne, lockTierTwo, lockTierThree];
 	const tierValue = [tierOne, tierTwo, tierThree, tierFour];
-	const goalValue = [tierOneGoal];
+	const goalValue = [tierOneGoal, tierTwoGoal, tierThreeGoal, tierFourGoal];
+	const setGoalValue = [setTierOneGoal, setTierTwoGoal, setTierThreeGoal, setTierFourGoal];
+
+	const handleGoalChange = index => event => {
+		const value = event.target.value;
+		if (value) {
+			if (value.length < 4) {
+				setGoalValue[index](Number.parseInt(value, 10));
+			}
+		} else {
+			setGoalValue[index]('');
+		}
+	};
+
 	const savedHelpers = storage.load();
 	const newHelpers = {...savedHelpers, [`${category}.${item}`]: [tierOne, lockTierOne, tierTwo, lockTierTwo, tierThree, lockTierThree, tierFour]};
 	storage.save(newHelpers);
@@ -233,12 +263,16 @@ function FarmHelper({
 
 				return (
 					<div key={item.name} css={wrapper}>
-						<label>
+						<label css={label}>
 							<input
-								type='number'
+								css={input}
+								max='999'
+								maxLength='3'
 								min='0'
 								step='1'
-								onChange={handleOneGoal}
+								type='number'
+								value={goalValue[itemIndex]}
+								onChange={handleGoalChange(itemIndex)}
 							/>
 							<div css={actions} className='material-symbols-outlined'>pin</div>
 						</label>
@@ -250,7 +284,7 @@ function FarmHelper({
 							onClick={incTier[itemIndex]}
 						>
 							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
-							<b css={tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}>
+							<b css={goalValue[itemIndex] > 0 && tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}>
 								{tierValue[itemIndex]}
 							</b>
 						</button>
