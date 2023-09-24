@@ -882,7 +882,7 @@ Can be used to create furnishings.`,sortorder:2649,rarity:"1",category:"WOOD",ma
 `,kg=xe`
 	font-size: 25px;
 	padding: 0;
-	margin: 60px 0 0 25px;
+	margin: 75px 0 0 25px;
 
 	${za("md")} {
 		margin-left: 10px;
