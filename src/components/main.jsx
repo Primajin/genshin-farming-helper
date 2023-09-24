@@ -224,6 +224,7 @@ export default function Main() {
 					<button
 						className='material-symbols-outlined'
 						css={[actions, toggleFloat]}
+						title={floatGroups ? 'Click to stack items' : 'Click to float items'}
 						type='button'
 						onClick={handleFloatChange}
 					>
