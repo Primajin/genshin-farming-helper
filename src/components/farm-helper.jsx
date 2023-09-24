@@ -230,7 +230,21 @@ function FarmHelper({
 	};
 
 	const savedHelpers = storage.load();
-	const newHelpers = {...savedHelpers, [`${category}.${item}`]: [tierOne, lockTierOne, tierTwo, lockTierTwo, tierThree, lockTierThree, tierFour]};
+	const newHelpers = {...savedHelpers,
+		[`${category}.${item}`]: [
+			tierOne,
+			lockTierOne,
+			tierTwo,
+			lockTierTwo,
+			tierThree,
+			lockTierThree,
+			tierFour,
+			tierOneGoal,
+			tierTwoGoal,
+			tierThreeGoal,
+			tierFourGoal,
+		],
+	};
 	storage.save(newHelpers);
 
 	return (
