@@ -76,7 +76,7 @@ const button = css`
 const removeButton = css`
 	font-size: 25px;
 	padding: 0;
-	margin: 60px 0 0 25px;
+	margin: 75px 0 0 25px;
 
 	${up('md')} {
 		margin-left: 10px;
