@@ -53,7 +53,7 @@ const button = css`
 	text-align: center;
 
 	&::after {
-		background-image: radial-gradient(circle at 0 0, rgba(255,0,0,0) 20px, ${primary} 21px);
+		background-image: radial-gradient(circle at 0 0, rgba(255, 0, 0, 0) 20px, ${primary} 21px);
 		content: "";
 		display: block;
 		height: 20px;
@@ -67,7 +67,7 @@ const button = css`
 	> * {
 		pointer-events: none;
 	}
-	
+
 	> img {
 		display: inline-block;
 	}
@@ -117,7 +117,13 @@ function FarmHelper({
 			queryItem = characterWeaponEnhancementMaterials.find(material => material.name === item);
 			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
 
-			items = queryItem.source.includes('Crafted') && dropsIndex > 0 ? [reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2], reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1], reversedCharacterWeaponEnhancementMaterials[dropsIndex]] : [queryItem];
+			items = queryItem.source.includes('Crafted') && dropsIndex > 0
+				? [
+					reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2],
+					reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1],
+					reversedCharacterWeaponEnhancementMaterials[dropsIndex],
+				]
+				: [queryItem];
 			break;
 		}
 
@@ -230,7 +236,8 @@ function FarmHelper({
 	};
 
 	const savedHelpers = storage.load();
-	const newHelpers = {...savedHelpers,
+	const newHelpers = {
+		...savedHelpers,
 		[`${category}.${item}`]: [
 			tierOne,
 			lockTierOne,
@@ -266,7 +273,7 @@ function FarmHelper({
 
 				return (
 					<div key={item.name} css={wrapper}>
-						<label css={label}>
+						<label css={label} title='Set target goal. Color will change to green when reached'>
 							<input
 								css={input}
 								max='999'
@@ -282,7 +289,11 @@ function FarmHelper({
 						<button
 							css={button}
 							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
-							title={item.name}
+							title={
+								goalValue[itemIndex] > 0 && tierValue[itemIndex] <= goalValue[itemIndex]
+									? `${goalValue[itemIndex] - tierValue[itemIndex]} ${item.name} remaining`
+									: item.name
+							}
 							type='button'
 							onClick={incTier[itemIndex]}
 						>
@@ -292,7 +303,7 @@ function FarmHelper({
 							</b>
 						</button>
 						{itemIndex < items.length - 1 && (
-							<label>
+							<label title='Lock this tier from automatically tallying up to the next'>
 								<input
 									type='checkbox'
 									checked={lockedTier[itemIndex]}
@@ -309,6 +320,7 @@ function FarmHelper({
 			<button
 				className='material-symbols-outlined'
 				css={[actions, removeButton]}
+				title='Remove item'
 				type='button'
 				onClick={() => onRemove(item)}
 			>
