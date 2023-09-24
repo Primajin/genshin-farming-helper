@@ -321,8 +321,9 @@ function FarmHelper({
 FarmHelper.propTypes = {
 	category: PropTypes.string,
 	config: PropTypes.arrayOf(PropTypes.oneOfType([
-		PropTypes.number,
 		PropTypes.bool,
+		PropTypes.number,
+		PropTypes.string,
 	])),
 	item: PropTypes.string,
 	materials: PropTypes.shape({
