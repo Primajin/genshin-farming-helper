@@ -14,9 +14,9 @@ updates:
     labels:
       - "dependencies"
     groups:
-      dev-dependencies:
+      dependencies:
         patterns:
-          - *
+          - "*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
