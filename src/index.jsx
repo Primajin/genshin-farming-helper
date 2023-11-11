@@ -1,6 +1,6 @@
 /* global document */
 import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client'; // eslint-disable-line n/file-extension-in-import
+import {createRoot} from 'react-dom/client';
 
 import '@fontsource-variable/material-symbols-outlined/fill.css';
 import Main from './components/main.jsx';
