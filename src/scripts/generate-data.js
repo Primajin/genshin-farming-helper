@@ -8,9 +8,9 @@ const characterAscensionMaterials = genshinDb.materials('Character Ascension Mat
 const characterWeaponEnhancementMaterialNames = new Set(genshinDb.materials('Character and Weapon Enhancement Material', defaultOptions).map(material => material?.name));
 const allMaterials = genshinDb.materials('names', defaultOptions);
 const characterWeaponEnhancementMaterials = allMaterials.filter(material => characterWeaponEnhancementMaterialNames.has(material?.name)).sort((a, b) => a.sortorder - b.sortorder);
-const characterLVLMaterials = allMaterials.filter(material => material?.materialtype.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension')).sort((a, b) => a.sortorder - b.sortorder);
-const localSpecialties = allMaterials.filter(material => material?.materialtype.startsWith('Local')).sort((a, b) => a.sortorder - b.sortorder);
-const fish = allMaterials.filter(material => material?.materialtype === 'Fish').sort((a, b) => a.sortorder - b.sortorder);
+const characterLVLMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension')).sort((a, b) => a.sortorder - b.sortorder);
+const localSpecialties = allMaterials.filter(material => material?.typeText.startsWith('Local')).sort((a, b) => a.sortorder - b.sortorder);
+const fish = allMaterials.filter(material => material?.typeText === 'Fish').sort((a, b) => a.sortorder - b.sortorder);
 const wood = allMaterials.filter(material => material?.category === 'WOOD').sort((a, b) => a.sortorder - b.sortorder);
 
 const materials = {
@@ -24,18 +24,23 @@ const materials = {
 	wood,
 };
 
-fs.writeFile('src/data.json', JSON.stringify(materials), error => {
-	if (error) {
-		console.error(error);
-	}
-});
+try {
+	fs.writeFile('src/data.json', JSON.stringify(materials), error => {
+		if (error) {
+			console.error(error);
+		}
+	});
+} catch (error) {
+	console.error(error);
+}
+
 
 const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 3);
 const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
 const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
 const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhancementMaterials.filter(material => {
 	const rarityInt = Number.parseInt(material?.rarity, 10);
-	return rarityInt > 2 ? (rarityInt === 3 ? !material.source.includes('Stardust Exchange') : true) : false;
+	return rarityInt > 2 ? (rarityInt === 3 ? !material.sources.includes('Stardust Exchange') : true) : false;
 });
 
 const materialsRare = {
@@ -49,8 +54,12 @@ const materialsRare = {
 	wood,
 };
 
-fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-	if (error) {
-		console.error(error);
-	}
-});
+try {
+	fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
+		if (error) {
+			console.error(error);
+		}
+	});
+} catch (error) {
+	console.error(error);
+}
