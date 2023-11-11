@@ -24,15 +24,11 @@ const materials = {
 	wood,
 };
 
-try {
-	fs.writeFile('src/data.json', JSON.stringify(materials), error => {
-		if (error) {
-			console.error(error);
-		}
-	});
-} catch (error) {
-	console.error(error);
-}
+fs.writeFile('src/data.json', JSON.stringify(materials), error => {
+	if (error) {
+		console.error(error);
+	}
+});
 
 
 const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 3);
@@ -54,12 +50,8 @@ const materialsRare = {
 	wood,
 };
 
-try {
-	fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-		if (error) {
-			console.error(error);
-		}
-	});
-} catch (error) {
-	console.error(error);
-}
+fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
+	if (error) {
+		console.error(error);
+	}
+});
