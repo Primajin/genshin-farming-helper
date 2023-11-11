@@ -35,12 +35,12 @@ function ItemPicker({list, materials, type}) {
 		// eslint-disable-next-line no-warning-comments
 		// FIXME find a better way
 		// eslint-disable-next-line react-hooks/rules-of-hooks
-		const [src, setSrc] = useState(`${IMG_URL}${item.images?.nameicon}.png`);
+		const [src, setSrc] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
 
 		let tooManyRetries = 0;
 		const tryOtherUrl = () => {
 			if (!tooManyRetries) {
-				setSrc(`${IMG_URL2}${item.images?.nameicon}.png`);
+				setSrc(`${IMG_URL2}${item.images?.filename_icon}.png`);
 			}
 
 			tooManyRetries++;
