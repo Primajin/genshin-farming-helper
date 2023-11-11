@@ -117,7 +117,7 @@ function FarmHelper({
 			queryItem = characterWeaponEnhancementMaterials.find(material => material.name === item);
 			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
 
-			items = queryItem.source.includes('Crafted') && dropsIndex > 0
+			items = queryItem.sources.includes('Crafted') && dropsIndex > 0
 				? [
 					reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2],
 					reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1],
