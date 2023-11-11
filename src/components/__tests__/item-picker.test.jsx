@@ -7,7 +7,7 @@ import {materialTypes} from '../../constants';
 const ballad = {
 	name: 'Philosophies of Ballad',
 	description: 'Talent Level-Up material.\nPoetry is the soul of the land of the wind.\nPoetry is the manifestations of the desire to spread the word. Though nothing is eternal, though nothing will be the same, the wind\'s poetry will still spread beyond the skies, the land, the seas to every corner of the world.',
-	sortorder: 2224,
+	sortRank: 2224,
 	rarity: '4',
 	category: 'AVATAR_MATERIAL',
 	materialtype: 'Talent Level-Up Material',
@@ -17,7 +17,7 @@ const ballad = {
 		'Saturday',
 		'Sunday',
 	],
-	source: [
+	sources: [
 		'Crafted',
 	],
 	images: {
@@ -34,7 +34,7 @@ const ballad = {
 const aerosiderite = {
 	name: 'Chunk of Aerosiderite',
 	description: 'Weapon Ascension Material.\nWhen Khaenri\'ah was destroyed, a great sinner created endless monsters with dark, alien blood flowing through their veins. They rampaged across the land, destroying all in their paths. They were mutated lifeforms, and the mutations were caused by powers from beyond this world. The black serpentine dragon Durin that attacked Mondstadt was one such mutated being.',
-	sortorder: 2286,
+	sortRank: 2286,
 	rarity: '5',
 	category: 'AVATAR_MATERIAL',
 	materialtype: 'Weapon Ascension Material',
@@ -44,7 +44,7 @@ const aerosiderite = {
 		'Saturday',
 		'Sunday',
 	],
-	source: [
+	sources: [
 		'Crafted',
 	],
 	images: {
@@ -61,11 +61,11 @@ const aerosiderite = {
 const slime = {
 	name: 'Slime Concentrate',
 	description: 'Concentrated slime essence. When left alone, it will begin to move on its own.',
-	sortorder: 2072,
+	sortRank: 2072,
 	rarity: '3',
 	category: 'AVATAR_MATERIAL',
 	materialtype: 'Character Level-Up Material',
-	source: [
+	sources: [
 		'Crafted',
 		'Dropped by Lv. 60+ slimes',
 	],
@@ -83,7 +83,7 @@ const slime = {
 const ancientChord = {
 	name: 'Echo of an Ancient Chord',
 	description: 'The God King\'s Grand Symphony is composed of countless melodies linked together, but its main thesis is submerged under the common destiny of the Water Nation.\nThe harmonies of those carefree years and sonatas were once the greatest representation of civilization and order, but when the prosperous empire descended into a playground for tyrants, the brutal despots tore the connection with the source asunder under the cover of golden cloaks, and discord finally swarmed through the empire—\nThe original song of fate continued to ring out on a score of fading gold, unperturbed by all... until all was dissolved, and all returned to chaos.',
-	sortorder: 2984,
+	sortRank: 2984,
 	rarity: '5',
 	category: 'AVATAR_MATERIAL',
 	materialtype: 'Weapon Ascension Material',
@@ -93,7 +93,7 @@ const ancientChord = {
 		'Thursday',
 		'Sunday',
 	],
-	source: [
+	sources: [
 		'Crafted',
 	],
 	images: {
