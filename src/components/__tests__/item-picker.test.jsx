@@ -23,7 +23,7 @@ const ballad = {
 	images: {
 		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Philosophies_of_Ballad.png',
 		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png',
-		nameicon: 'UI_ItemIcon_104309',
+		filename_icon: 'UI_ItemIcon_104309',
 	},
 	url: {
 		fandom: 'https://genshin-impact.fandom.com/wiki/Philosophies_of_Ballad',
@@ -50,7 +50,7 @@ const aerosiderite = {
 	images: {
 		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Chunk_of_Aerosiderite.png',
 		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/4/48/Item_Chunk_of_Aerosiderite.png',
-		nameicon: 'UI_ItemIcon_114024',
+		filename_icon: 'UI_ItemIcon_114024',
 	},
 	url: {
 		fandom: 'https://genshin-impact.fandom.com/wiki/Chunk_of_Aerosiderite',
@@ -72,7 +72,7 @@ const slime = {
 	images: {
 		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Slime_Concentrate.png',
 		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d8/Item_Slime_Concentrate.png',
-		nameicon: 'UI_ItemIcon_112004',
+		filename_icon: 'UI_ItemIcon_112004',
 	},
 	url: {
 		fandom: 'https://genshin-impact.fandom.com/wiki/Slime_Concentrate',
@@ -97,7 +97,7 @@ const ancientChord = {
 		'Crafted',
 	],
 	images: {
-		nameicon: 'UI_ItemIcon_114052',
+		filename_icon: 'UI_ItemIcon_114052',
 		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Echo_of_an_Ancient_Chord.png',
 	},
 	version: '4.0',
