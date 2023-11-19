@@ -4,7 +4,7 @@ import genshinDb from 'genshin-db';
 const defaultOptions = {matchCategories: true, verboseCategories: true};
 const allMaterials = genshinDb.materials('names', defaultOptions).sort((a, b) => a.sortRank === b.sortRank ? a.id - b.id : a.sortRank - b.sortRank);
 
-const characterAscensionMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Ascension Material') && !material?.description.startsWith('Character Ascension'));
+const characterAscensionMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Ascension Material'));
 const characterLVLMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension'));
 const characterWeaponEnhancementMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character and Weapon Enhancement Material'));
 const fish = allMaterials.filter(material => material?.typeText === 'Fish');
