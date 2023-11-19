@@ -4,15 +4,19 @@ import {describe, it, expect} from 'vitest';
 import ItemPicker from '../item-picker.jsx';
 import {materialTypes} from '../../constants';
 
+/* eslint-disable camelcase */
+
 const ballad = {
+	id: 104_309,
 	name: 'Philosophies of Ballad',
+	rarity: 4,
+	sortRank: 13_103,
 	description: 'Talent Level-Up material.\nPoetry is the soul of the land of the wind.\nPoetry is the manifestations of the desire to spread the word. Though nothing is eternal, though nothing will be the same, the wind\'s poetry will still spread beyond the skies, the land, the seas to every corner of the world.',
-	sortRank: 2224,
-	rarity: '4',
 	category: 'AVATAR_MATERIAL',
-	materialtype: 'Talent Level-Up Material',
-	dropdomain: 'Domain of Mastery: Realm of Slumber',
-	daysofweek: [
+	typeText: 'Character Talent Material',
+	dropDomainId: 4233,
+	dropDomainName: 'Domain of Mastery: Realm of Slumber',
+	daysOfWeek: [
 		'Wednesday',
 		'Saturday',
 		'Sunday',
@@ -21,25 +25,22 @@ const ballad = {
 		'Crafted',
 	],
 	images: {
-		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Philosophies_of_Ballad.png',
-		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png',
 		filename_icon: 'UI_ItemIcon_104309',
-	},
-	url: {
-		fandom: 'https://genshin-impact.fandom.com/wiki/Philosophies_of_Ballad',
 	},
 	version: '',
 };
 
 const aerosiderite = {
+	id: 114_024,
 	name: 'Chunk of Aerosiderite',
+	rarity: 5,
+	sortRank: 15_106,
 	description: 'Weapon Ascension Material.\nWhen Khaenri\'ah was destroyed, a great sinner created endless monsters with dark, alien blood flowing through their veins. They rampaged across the land, destroying all in their paths. They were mutated lifeforms, and the mutations were caused by powers from beyond this world. The black serpentine dragon Durin that attacked Mondstadt was one such mutated being.',
-	sortRank: 2286,
-	rarity: '5',
 	category: 'AVATAR_MATERIAL',
-	materialtype: 'Weapon Ascension Material',
-	dropdomain: 'Domain of Forgery: Trial Grounds of Thunder',
-	daysofweek: [
+	typeText: 'Weapon Ascension Material',
+	dropDomainId: 5225,
+	dropDomainName: 'Domain of Forgery: Trial Grounds of Thunder',
+	daysOfWeek: [
 		'Wednesday',
 		'Saturday',
 		'Sunday',
@@ -48,47 +49,39 @@ const aerosiderite = {
 		'Crafted',
 	],
 	images: {
-		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Chunk_of_Aerosiderite.png',
-		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/4/48/Item_Chunk_of_Aerosiderite.png',
 		filename_icon: 'UI_ItemIcon_114024',
-	},
-	url: {
-		fandom: 'https://genshin-impact.fandom.com/wiki/Chunk_of_Aerosiderite',
 	},
 	version: '',
 };
 
 const slime = {
+	id: 112_004,
 	name: 'Slime Concentrate',
+	rarity: 3,
+	sortRank: 10_101,
 	description: 'Concentrated slime essence. When left alone, it will begin to move on its own.',
-	sortRank: 2072,
-	rarity: '3',
 	category: 'AVATAR_MATERIAL',
-	materialtype: 'Character Level-Up Material',
+	typeText: 'Character and Weapon Enhancement Material',
 	sources: [
 		'Crafted',
-		'Dropped by Lv. 60+ slimes',
 	],
 	images: {
-		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Slime_Concentrate.png',
-		fandom: 'https://static.wikia.nocookie.net/gensin-impact/images/d/d8/Item_Slime_Concentrate.png',
 		filename_icon: 'UI_ItemIcon_112004',
-	},
-	url: {
-		fandom: 'https://genshin-impact.fandom.com/wiki/Slime_Concentrate',
 	},
 	version: '',
 };
 
 const ancientChord = {
+	id: 114_052,
 	name: 'Echo of an Ancient Chord',
-	description: 'The God King\'s Grand Symphony is composed of countless melodies linked together, but its main thesis is submerged under the common destiny of the Water Nation.\nThe harmonies of those carefree years and sonatas were once the greatest representation of civilization and order, but when the prosperous empire descended into a playground for tyrants, the brutal despots tore the connection with the source asunder under the cover of golden cloaks, and discord finally swarmed through the empire—\nThe original song of fate continued to ring out on a score of fading gold, unperturbed by all... until all was dissolved, and all returned to chaos.',
-	sortRank: 2984,
-	rarity: '5',
+	rarity: 5,
+	sortRank: 15_113,
+	description: 'Weapon Ascension Material.\nThe God King\'s Grand Symphony is composed of countless melodies linked together, but its main thesis is submerged under the common destiny of the Water Nation.\nThe harmonies of those carefree years and sonatas were once the greatest representation of civilization and order, but when the prosperous empire descended into a playground for tyrants, the brutal despots tore the connection with the source asunder under the cover of golden cloaks, and discord finally swarmed through the empire—\nThe original song of fate continued to ring out on a score of fading gold, unperturbed by all... until all was dissolved, and all returned to chaos.',
 	category: 'AVATAR_MATERIAL',
-	materialtype: 'Weapon Ascension Material',
-	dropdomain: 'Domain of Forgery: Robotic Ruse',
-	daysofweek: [
+	typeText: 'Weapon Ascension Material',
+	dropDomainId: 4473,
+	dropDomainName: 'Domain of Forgery: Robotic Ruse',
+	daysOfWeek: [
 		'Monday',
 		'Thursday',
 		'Sunday',
@@ -98,10 +91,11 @@ const ancientChord = {
 	],
 	images: {
 		filename_icon: 'UI_ItemIcon_114052',
-		redirect: 'https://genshin-impact.fandom.com/wiki/Special:Redirect/file/Item_Echo_of_an_Ancient_Chord.png',
 	},
 	version: '4.0',
 };
+
+/* eslint-enable */
 
 describe('ItemPicker', () => {
 	// eslint-disable-next-line vitest/expect-expect
