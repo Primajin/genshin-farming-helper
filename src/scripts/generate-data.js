@@ -34,8 +34,9 @@ const talentMaterialsRare = materials.talentMaterials.filter(material => Number.
 const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
 const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
 const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhancementMaterials.filter(material => {
-	const rarityInt = Number.parseInt(material?.rarity, 10);
-	return rarityInt > 2 ? (rarityInt === 3 ? !material.sources.includes('Stardust Exchange') : true) : false;
+	const rarityInt = Number.parseInt(material.rarity, 10);
+	const sortRankInt = Number.parseInt(material.sortRank, 10);
+	return rarityInt > 2 ? (rarityInt === 3 ? !characterWeaponEnhancementMaterials.some(material => material.sortRank === sortRankInt && material.rarity > 3) : true) : false;
 });
 
 const materialsRare = {
