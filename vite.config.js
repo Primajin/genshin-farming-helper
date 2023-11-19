@@ -3,6 +3,7 @@ import process from 'node:process';
 import {fileURLToPath} from 'node:url';
 import {defineConfig, searchForWorkspaceRoot} from 'vite';
 import react from '@vitejs/plugin-react';
+import {configDefaults} from 'vitest/config';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -22,6 +23,10 @@ export default defineConfig(() => ({
 		},
 	},
 	test: {
+		exclude: [
+			...configDefaults.exclude,
+			'__tests__/*',
+		],
 		coverage: {
 			all: true,
 		},

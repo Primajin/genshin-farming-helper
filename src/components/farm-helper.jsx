@@ -7,6 +7,7 @@ import storage from '../utils/local-storage.js';
 import theme from '../theme';
 import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
 import {up} from '../utils/theming.js';
+import {materialsType} from '../types';
 
 const {actions, primary} = theme;
 
@@ -108,12 +109,12 @@ function FarmHelper({
 	let dropsIndex = 0;
 	switch (category) {
 		case materialTypes.ASCENSION: {
-			items = characterAscensionMaterials.filter(material => material.name.startsWith(item.split(' ')[0])).reverse();
+			items = characterAscensionMaterials.filter(material => material.name.startsWith(item.split(' ')[0]));
 			break;
 		}
 
 		case materialTypes.ENHANCEMENT: {
-			const reversedCharacterWeaponEnhancementMaterials = characterWeaponEnhancementMaterials.slice().reverse();
+			const reversedCharacterWeaponEnhancementMaterials = characterWeaponEnhancementMaterials.slice();
 			queryItem = characterWeaponEnhancementMaterials.find(material => material.name === item);
 			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
 
@@ -144,13 +145,13 @@ function FarmHelper({
 
 		case materialTypes.TALENT: {
 			queryItem = talentMaterials.find(material => material.name === item);
-			items = talentMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
+			items = talentMaterials.filter(material => material.sortRank === queryItem.sortRank);
 			break;
 		}
 
 		case materialTypes.WEAPON: {
 			queryItem = weaponMaterials.find(material => material.name === item);
-			items = weaponMaterials.filter(material => material.dropdomain === queryItem.dropdomain && material.daysofweek[0] === queryItem.daysofweek[0]).reverse();
+			items = weaponMaterials.filter(material => material.sortRank === queryItem.sortRank);
 			break;
 		}
 
@@ -288,6 +289,7 @@ function FarmHelper({
 						</label>
 						<button
 							css={button}
+							data-testid={`button-tier-${itemIndex}`}
 							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
 							title={
 								goalValue[itemIndex] > 0 && tierValue[itemIndex] <= goalValue[itemIndex]
@@ -298,18 +300,21 @@ function FarmHelper({
 							onClick={incTier[itemIndex]}
 						>
 							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
-							<b css={goalValue[itemIndex] > 0 && tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}>
+							<b
+								css={goalValue[itemIndex] > 0 && tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}
+								data-testid={`value-tier-${itemIndex}`}
+							>
 								{tierValue[itemIndex]}
 							</b>
 						</button>
 						{itemIndex < items.length - 1 && (
-							<label title='Lock this tier from automatically tallying up to the next'>
+							<label data-testid={`lock-tier-${itemIndex}`} title='Lock this tier from automatically tallying up to the next'>
 								<input
 									type='checkbox'
 									checked={lockedTier[itemIndex]}
 									onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}
 								/>
-								<div css={actions} className={`material-symbols-outlined ${lockedTier[itemIndex] ? 'fill' : undefined}`}>
+								<div css={actions} className={`material-symbols-outlined${lockedTier[itemIndex] ? ' fill' : ''}`}>
 									{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
 								</div>
 							</label>
@@ -331,30 +336,15 @@ function FarmHelper({
 }
 
 FarmHelper.propTypes = {
-	category: PropTypes.string,
+	category: PropTypes.string.isRequired,
 	config: PropTypes.arrayOf(PropTypes.oneOfType([
 		PropTypes.bool,
 		PropTypes.number,
 		PropTypes.string,
-	])),
-	item: PropTypes.string,
-	materials: PropTypes.shape({
-		characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
-		characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
-		characterWeaponEnhancementMaterials: PropTypes.arrayOf(PropTypes.object),
-		fish: PropTypes.arrayOf(PropTypes.object),
-		localSpecialties: PropTypes.arrayOf(PropTypes.object),
-		talentMaterials: PropTypes.arrayOf(PropTypes.object),
-		weaponMaterials: PropTypes.arrayOf(PropTypes.object),
-		wood: PropTypes.arrayOf(PropTypes.object),
-	}),
-	onRemove: PropTypes.func,
-};
-
-FarmHelper.defaultProps = {
-	category: materialTypes.ASCENSION,
-	item: 'Agnidus Agate',
-	onRemove() {},
+	])).isRequired,
+	item: PropTypes.string.isRequired,
+	materials: PropTypes.shape(materialsType).isRequired,
+	onRemove: PropTypes.func.isRequired,
 };
 
 export default FarmHelper;
