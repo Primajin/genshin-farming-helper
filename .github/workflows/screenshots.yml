@@ -1,0 +1,32 @@
+name: "Screenshots"
+
+on:
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Pages deployment
+        uses: wbeuil/wait-for-deployment@v1.0.0
+        id: deployment
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo "Deployed to ${{ steps.deployment.outputs.url }}"
+      - uses: actions/checkout@v2
+      - name: install puppeteer-headful
+        uses: mujo-code/puppeteer-headful@master
+        env:
+          CI: 'true'
+      - name: screenshots-ci-action
+        uses: flameddd/screenshots-ci-action@master
+        with:
+          url: ${{ steps.deployment.outputs.url }}
+          releaseId: 132411332
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v2
+        with:
+          path: screenshots
+          name: Download-screenshots
