@@ -37,7 +37,6 @@ jobs:
       - name: Run build with Base
         run: npx vite build --base="/genshin-farming-helper/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/"
       - name: Deploy preview
-        id: deploy-preview
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./build/
