@@ -7,13 +7,14 @@ on:
 jobs:
   screenshots:
     runs-on: ubuntu-latest
+    name: Take a screenshot after page was built
     steps:
       - name: Wait for build to succeed
         uses: fountainhead/action-wait-for-check@v1.1.0
         id: wait-for-build
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          checkName: build
+          checkName: Make sure it builds. Then show a preview.
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Do something with a passing build
