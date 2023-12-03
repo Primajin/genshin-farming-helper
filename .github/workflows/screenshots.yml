@@ -16,16 +16,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           checkName: Make sure it builds. Then show a preview.
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
-
-      - name: Do something with a passing build
-        if: steps.wait-for-build.outputs.conclusion == 'success'
-        run: echo "YAAAY ${{ steps.wait-for-build.outputs }}"
-
-      - name: Do something with a failing build
-        if: steps.wait-for-build.outputs.conclusion == 'failure'
-        run: echo "NOOOO ${{ steps.wait-for-build.outputs }}"
-
-      - run: echo "Deployed to ${{ steps.wait-for-build.outputs }}"
+      - name: Dump GitHub context
+        env:
+          OUTPUTS: ${{ toJson(steps.wait-for-build.outputs) }}
+        run: echo "$OUTPUTS"
       - uses: actions/checkout@v2
       - name: install puppeteer-headful
         uses: mujo-code/puppeteer-headful@master
