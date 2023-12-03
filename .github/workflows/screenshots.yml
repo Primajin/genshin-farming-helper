@@ -16,10 +16,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           checkName: Make sure it builds. Then show a preview.
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
-      - name: Dump GitHub context
-        env:
-          OUTPUTS: ${{ toJson(steps.wait-for-build.outputs) }}
-        run: echo "$OUTPUTS"
       - uses: actions/checkout@v2
       - name: install puppeteer-headful
         uses: mujo-code/puppeteer-headful@master
@@ -28,10 +24,11 @@ jobs:
       - name: screenshots-ci-action
         uses: flameddd/screenshots-ci-action@master
         with:
-          url: ${{ steps.deployment.outputs.url }}
+          url: ${{ env.PR_NUMBER }}
           releaseId: 132411332
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: https://primajin.github.io/genshin-farming-helper/pr-preview/pr-${{ github.event.number }}/
       - uses: actions/upload-artifact@v2
         with:
           path: screenshots
