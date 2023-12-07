@@ -13,7 +13,7 @@
   "type": "module",
   "dependencies": {
     "@emotion/react": "^11.11.1",
-    "@fontsource-variable/material-symbols-outlined": "^5.0.16",
+    "@fontsource-variable/material-symbols-outlined": "^5.0.17",
     "genshin-db": "^5.0.3",
     "gh-pages": "^6.1.0",
     "react": "18.2.0",
@@ -23,15 +23,15 @@
     "@babel/runtime": "^7.23.5",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
-    "@vitejs/plugin-react": "^4.2.0",
-    "@vitest/coverage-v8": "^0.34.6",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.0.1",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-vitest": "^0.3.10",
     "jsdom": "^23.0.1",
-    "vite": "^5.0.4",
-    "vitest": "^0.34.6",
+    "vite": "^5.0.6",
+    "vitest": "^1.0.1",
     "xo": "^0.56.0"
   },
   "scripts": {
