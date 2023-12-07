@@ -18,7 +18,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           checkName: Make sure it builds. Then show a preview.
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: install puppeteer-headful
         uses: mujo-code/puppeteer-headful@master
         env:
