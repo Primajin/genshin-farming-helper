@@ -25,7 +25,7 @@ export default defineConfig(() => ({
 	test: {
 		exclude: [
 			...configDefaults.exclude,
-			'__tests__/*',
+			'src/index.jsx',
 		],
 		coverage: {
 			all: true,
