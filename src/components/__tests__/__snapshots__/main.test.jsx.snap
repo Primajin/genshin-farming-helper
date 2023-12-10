@@ -3056,18 +3056,18 @@ exports[`ItemCategories > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-pdowyh-ItemPicker"
-              title="\\"Tourbillon Device\\""
+              title="Tourbillon Device"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.\\"Tourbillon Device\\""
+                value="LEVEL.Tourbillon Device"
               />
               <div
                 style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
-                  alt="\\"Tourbillon Device\\""
+                  alt="Tourbillon Device"
                   data-testid="image"
                   height="75"
                   src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113052.png"
@@ -3075,7 +3075,7 @@ exports[`ItemCategories > renders without crashing 1`] = `
                 />
               </div>
               <span>
-                "Tourbillon Device"
+                Tourbillon Device
               </span>
             </label>
             <label
@@ -8772,18 +8772,18 @@ exports[`ItemCategories > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-pdowyh-ItemPicker"
-            title="\\"Tourbillon Device\\""
+            title="Tourbillon Device"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.\\"Tourbillon Device\\""
+              value="LEVEL.Tourbillon Device"
             />
             <div
               style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
             >
               <img
-                alt="\\"Tourbillon Device\\""
+                alt="Tourbillon Device"
                 data-testid="image"
                 height="75"
                 src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113052.png"
@@ -8791,7 +8791,7 @@ exports[`ItemCategories > renders without crashing 1`] = `
               />
             </div>
             <span>
-              "Tourbillon Device"
+              Tourbillon Device
             </span>
           </label>
           <label
