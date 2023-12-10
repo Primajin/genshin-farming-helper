@@ -8,7 +8,8 @@ const onChangeProp = vi.fn();
 
 describe('ItemCategories', () => {
 	it('renders the correct number of categories and handles click', () => {
-		render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProp}/>);
+		const rendering = render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProp}/>);
+		expect(rendering).toMatchSnapshot();
 
 		const fieldsets = screen.getAllByRole('group');
 		expect(fieldsets.length).toBe(8);

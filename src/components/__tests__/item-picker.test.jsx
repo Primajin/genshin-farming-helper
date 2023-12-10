@@ -10,9 +10,9 @@ const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material
 const slimeConcentrate = materials.characterWeaponEnhancementMaterials.find(material => material.id === 112_004);
 
 describe('ItemPicker', () => {
-	// eslint-disable-next-line vitest/expect-expect
 	it('does not explode without props', () => {
-		render(<ItemPicker/>);
+		const rendering = render(<ItemPicker/>);
+		expect(rendering).toMatchSnapshot();
 	});
 
 	it('renders with single element (weapon)', () => {
