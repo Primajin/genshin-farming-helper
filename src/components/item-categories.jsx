@@ -62,49 +62,49 @@ function ItemCategories({list,
 }) {
 	return (
 		<form css={categories} onChange={onChangeProp}>
-			<fieldset className='narrow'>
+			<fieldset className='narrow' role='group'>
 				<legend>Character Talent</legend>
 				<ItemPicker materials={talentMaterials} type={materialTypes.TALENT} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset className='narrow'>
+			<fieldset className='narrow' role='group'>
 				<legend>Weapon Ascension</legend>
 				<ItemPicker materials={weaponMaterials} type={materialTypes.WEAPON} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset role='group'>
 				<legend>Character and Weapon Enhancement</legend>
 				<ItemPicker materials={characterWeaponEnhancementMaterials} type={materialTypes.ENHANCEMENT} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset role='group'>
 				<legend>Character Ascension</legend>
 				<ItemPicker materials={characterAscensionMaterials} type={materialTypes.ASCENSION} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset role='group'>
 				<legend>Character Level-Up</legend>
 				<ItemPicker materials={characterLVLMaterials} type={materialTypes.LEVEL} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset role='group'>
 				<legend>Local Specialties</legend>
 				<ItemPicker materials={localSpecialties} type={materialTypes.LOCAL} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset role='group'>
 				<legend>Fish</legend>
 				<ItemPicker materials={fish} type={materialTypes.FISH} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 
-			<fieldset>
+			<fieldset role='group'>
 				<legend>Wood</legend>
 				<ItemPicker materials={wood} type={materialTypes.WOOD} list={list}/>
 				<label/><label/><label/><label/>
