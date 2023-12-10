@@ -1,0 +1,2457 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone with 4 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            title="Brilliant Diamond Sliver"
+            type="button"
+          >
+            <img
+              alt="Brilliant Diamond Sliver"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-0"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-1"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            title="Brilliant Diamond Fragment"
+            type="button"
+          >
+            <img
+              alt="Brilliant Diamond Fragment"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-1"
+            >
+              1
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-1"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-2"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            title="Brilliant Diamond Chunk"
+            type="button"
+          >
+            <img
+              alt="Brilliant Diamond Chunk"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-2"
+            >
+              2
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-2"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-3"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            title="Brilliant Diamond Gemstone"
+            type="button"
+          >
+            <img
+              alt="Brilliant Diamond Gemstone"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-3"
+            >
+              3
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+          title="Brilliant Diamond Sliver"
+          type="button"
+        >
+          <img
+            alt="Brilliant Diamond Sliver"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-0"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-1"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+          title="Brilliant Diamond Fragment"
+          type="button"
+        >
+          <img
+            alt="Brilliant Diamond Fragment"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-1"
+          >
+            1
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-1"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-2"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+          title="Brilliant Diamond Chunk"
+          type="button"
+        >
+          <img
+            alt="Brilliant Diamond Chunk"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-2"
+          >
+            2
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-2"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-3"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+          title="Brilliant Diamond Gemstone"
+          type="button"
+        >
+          <img
+            alt="Brilliant Diamond Gemstone"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-3"
+          >
+            3
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            title="Slime Condensate"
+            type="button"
+          >
+            <img
+              alt="Slime Condensate"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-0"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-1"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            title="Slime Secretions"
+            type="button"
+          >
+            <img
+              alt="Slime Secretions"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-1"
+            >
+              1
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-1"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-2"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            title="Slime Concentrate"
+            type="button"
+          >
+            <img
+              alt="Slime Concentrate"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-2"
+            >
+              2
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+          title="Slime Condensate"
+          type="button"
+        >
+          <img
+            alt="Slime Condensate"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-0"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-1"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+          title="Slime Secretions"
+          type="button"
+        >
+          <img
+            alt="Slime Secretions"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-1"
+          >
+            1
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-1"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-2"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+          title="Slime Concentrate"
+          type="button"
+        >
+          <img
+            alt="Slime Concentrate"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-2"
+          >
+            2
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            title="Medaka"
+            type="button"
+          >
+            <img
+              alt="Medaka"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+          title="Medaka"
+          type="button"
+        >
+          <img
+            alt="Medaka"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            title="Dvalin's Plume"
+            type="button"
+          >
+            <img
+              alt="Dvalin's Plume"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+          title="Dvalin's Plume"
+          type="button"
+        >
+          <img
+            alt="Dvalin's Plume"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            title="Wolfhook"
+            type="button"
+          >
+            <img
+              alt="Wolfhook"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+          title="Wolfhook"
+          type="button"
+        >
+          <img
+            alt="Wolfhook"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 3 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            title="Teachings of Freedom"
+            type="button"
+          >
+            <img
+              alt="Teachings of Freedom"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-0"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-1"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            title="Guide to Freedom"
+            type="button"
+          >
+            <img
+              alt="Guide to Freedom"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-1"
+            >
+              1
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-1"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-2"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            title="Philosophies of Freedom"
+            type="button"
+          >
+            <img
+              alt="Philosophies of Freedom"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-2"
+            >
+              2
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+          title="Teachings of Freedom"
+          type="button"
+        >
+          <img
+            alt="Teachings of Freedom"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-0"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-1"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+          title="Guide to Freedom"
+          type="button"
+        >
+          <img
+            alt="Guide to Freedom"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-1"
+          >
+            1
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-1"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-2"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+          title="Philosophies of Freedom"
+          type="button"
+        >
+          <img
+            alt="Philosophies of Freedom"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-2"
+          >
+            2
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian's Dream with 4 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            title="Tile of Decarabian's Tower"
+            type="button"
+          >
+            <img
+              alt="Tile of Decarabian's Tower"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-0"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-1"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            title="Debris of Decarabian's City"
+            type="button"
+          >
+            <img
+              alt="Debris of Decarabian's City"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-1"
+            >
+              1
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-1"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-2"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            title="Fragment of Decarabian's Epic"
+            type="button"
+          >
+            <img
+              alt="Fragment of Decarabian's Epic"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-2"
+            >
+              2
+            </b>
+          </button>
+          <label
+            data-testid="lock-tier-2"
+            title="Lock this tier from automatically tallying up to the next"
+          >
+            <input
+              type="checkbox"
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              lock_open
+            </div>
+          </label>
+        </div>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-3"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            title="Scattered Piece of Decarabian's Dream"
+            type="button"
+          >
+            <img
+              alt="Scattered Piece of Decarabian's Dream"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-3"
+            >
+              3
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+          title="Tile of Decarabian's Tower"
+          type="button"
+        >
+          <img
+            alt="Tile of Decarabian's Tower"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-0"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-1"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+          title="Debris of Decarabian's City"
+          type="button"
+        >
+          <img
+            alt="Debris of Decarabian's City"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-1"
+          >
+            1
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-1"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-2"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+          title="Fragment of Decarabian's Epic"
+          type="button"
+        >
+          <img
+            alt="Fragment of Decarabian's Epic"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-2"
+          >
+            2
+          </b>
+        </button>
+        <label
+          data-testid="lock-tier-2"
+          title="Lock this tier from automatically tallying up to the next"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            lock_open
+          </div>
+        </label>
+      </div>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-3"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+          title="Scattered Piece of Decarabian's Dream"
+          type="button"
+        >
+          <img
+            alt="Scattered Piece of Decarabian's Dream"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-3"
+          >
+            3
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            title="Birch Wood"
+            type="button"
+          >
+            <img
+              alt="Birch Wood"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+          title="Birch Wood"
+          type="button"
+        >
+          <img
+            alt="Birch Wood"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

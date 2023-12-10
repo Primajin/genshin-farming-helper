@@ -27,7 +27,8 @@ describe('FarmHelper', () => {
 	for (const [category, {name, tiers}] of materialMap) {
 		it(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
 			const mockRemove = vi.fn();
-			render(<FarmHelper category={category} config={config} item={name} materials={materials} onRemove={mockRemove}/>);
+			const rendering = render(<FarmHelper category={category} config={config} item={name} materials={materials} onRemove={mockRemove}/>);
+			expect(rendering).toMatchSnapshot();
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			expect(buttons.length).toBe(tiers);
