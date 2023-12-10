@@ -45,7 +45,7 @@
     "prebuild": "npm run generate",
     "predeploy": "npm run build",
     "prestart": "npm run generate",
-    "pretest": "npm run lint",
+    "pretest": "npm run generate",
     "publish": "npm run deploy",
     "serve": "vite preview",
     "start": "vite",
