@@ -13,7 +13,7 @@ const talentMaterials = allMaterials.filter(material => material?.typeText.start
 const weaponMaterials = allMaterials.filter(material => material?.typeText.startsWith('Weapon Ascension Material'));
 const wood = allMaterials.filter(material => material?.category === 'WOOD');
 
-const materials = {
+export const materials = {
 	characterAscensionMaterials,
 	characterLVLMaterials,
 	characterWeaponEnhancementMaterials,
@@ -39,7 +39,7 @@ const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhance
 	return rarityInt > 2 ? (rarityInt === 3 ? !characterWeaponEnhancementMaterials.some(material => material.sortRank === sortRankInt && material.rarity > 3) : true) : false;
 });
 
-const materialsRare = {
+export const materialsRare = {
 	characterAscensionMaterials: characterAscensionMaterialsRare,
 	characterLVLMaterials,
 	characterWeaponEnhancementMaterials: characterWeaponEnhancementMaterialsRare,
