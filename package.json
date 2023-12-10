@@ -43,6 +43,7 @@
     "lint:fix": "xo --fix",
     "lint:watch": "npx nodemon -x npm run lint:fix --ext js,jsx,json",
     "prebuild": "npm run generate",
+    "precoverage": "npm run generate",
     "predeploy": "npm run build",
     "prestart": "npm run generate",
     "pretest": "npm run generate",
