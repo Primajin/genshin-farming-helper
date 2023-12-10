@@ -4,6 +4,7 @@ import {css} from '@emotion/react';
 import {useState} from 'react';
 
 import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
+import {removeQuotesFromString} from '../utils/strings.js';
 
 const wrapper = css`
 	cursor: pointer;
@@ -46,16 +47,18 @@ function ItemPicker({list, materials, type}) {
 			tooManyRetries++;
 		};
 
+		const name = removeQuotesFromString(material.name);
+
 		return (
-			<label key={material.name} css={wrapper} title={material.name} aria-disabled={disabled}>
-				<input type='radio' name='item' value={`${type}.${material.name}`} disabled={disabled}/>
+			<label key={name} css={wrapper} title={name} aria-disabled={disabled}>
+				<input type='radio' name='item' value={`${type}.${name}`} disabled={disabled}/>
 				<div style={{
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
 				>
-					<img data-testid='image' alt={material.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
+					<img data-testid='image' alt={name} src={src} width='75' height='75' onError={tryOtherUrl}/>
 				</div>
-				<span>{material.name}</span>
+				<span>{name}</span>
 			</label>
 		);
 	},
