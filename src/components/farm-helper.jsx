@@ -228,7 +228,7 @@ function FarmHelper({
 	const handleGoalChange = index => event => {
 		const value = event.target.value;
 		if (value) {
-			if (value.length < 4) {
+			if (value.length < 4) { // Up to 999
 				setGoalValue[index](Number.parseInt(value, 10));
 			}
 		} else {
@@ -274,7 +274,7 @@ function FarmHelper({
 
 				return (
 					<div key={item.name} css={wrapper}>
-						<label css={label} title='Set target goal. Color will change to green when reached'>
+						<label data-testid='goal-label' css={label} title='Set target goal. Color will change to green when reached'>
 							<input
 								css={input}
 								max='999'
