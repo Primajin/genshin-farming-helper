@@ -17,7 +17,7 @@ const globalStyles = css`
 	}
 	
 	body {
-		background: transparent top center url("https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg") no-repeat fixed;
+		background: transparent top center url("https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg") no-repeat fixed;
 		background-size: cover;
 		margin: 0;
 		padding: 0;
@@ -214,8 +214,8 @@ export default function Main() {
 			<Global styles={globalStyles}/>
 			{showVideo && (
 				<div css={video}>
-					<video autoPlay='autoplay' poster='https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg' loop='loop' muted='muted'>
-						<source src='https://genshin.hoyoverse.com/_nuxt/videos/3e78e80.mp4' type='audio/mp4'/>
+					<video autoPlay='autoplay' poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg' loop='loop' muted='muted'>
+						<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
 					</video>
 				</div>
 			)}

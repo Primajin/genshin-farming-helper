@@ -11,10 +11,10 @@ exports[`ItemCategories > renders without crashing 1`] = `
         <video
           autoplay=""
           loop=""
-          poster="https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg"
+          poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
         >
           <source
-            src="https://genshin.hoyoverse.com/_nuxt/videos/3e78e80.mp4"
+            src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
             type="audio/mp4"
           />
         </video>
@@ -5727,10 +5727,10 @@ exports[`ItemCategories > renders without crashing 1`] = `
       <video
         autoplay=""
         loop=""
-        poster="https://genshin.hoyoverse.com/_nuxt/img/47f71d4.jpg"
+        poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
       >
         <source
-          src="https://genshin.hoyoverse.com/_nuxt/videos/3e78e80.mp4"
+          src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
           type="audio/mp4"
         />
       </video>

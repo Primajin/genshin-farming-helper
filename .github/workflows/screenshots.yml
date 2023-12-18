@@ -29,8 +29,9 @@ jobs:
       - name: screenshots-ci-action
         uses: flameddd/screenshots-ci-action@master
         with:
-          devices: iPhone 13,Pixel 5,iPad Pro,iPad Pro landscape
+          devices: iPhone 13,iPad Pro,iPad Pro landscape
           fullpage: false
+          noDesktop: true
           releaseId: 132411332
           type: png
           url: ${{ env.PR_NUMBER }}
