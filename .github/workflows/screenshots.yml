@@ -29,8 +29,11 @@ jobs:
       - name: screenshots-ci-action
         uses: flameddd/screenshots-ci-action@master
         with:
-          url: ${{ env.PR_NUMBER }}
+          devices: iPhone 13,Pixel 5,iPad Pro,iPad Pro landscape
+          fullpage: false
           releaseId: 132411332
+          type: png
+          url: ${{ env.PR_NUMBER }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: https://primajin.github.io/genshin-farming-helper/pr-preview/pr-${{ github.event.number }}/
