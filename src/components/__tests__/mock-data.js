@@ -552,4 +552,423 @@ export const materials = {
 	],
 };
 
+export const materialsRare = {
+	characterAscensionMaterials: [
+		{
+			id: 104_104,
+			name: 'Brilliant Diamond Gemstone',
+			rarity: 5,
+			sortRank: 12_101,
+			description: 'Character Ascension material.\n"Welcome to this world."',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Ascension Material',
+			sources: [
+				'Adventure Rank Reward',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_104104',
+			},
+			version: '',
+		},
+	],
+	characterLVLMaterials: [
+		{
+			id: 113_001,
+			name: 'Hurricane Seed',
+			rarity: 4,
+			sortRank: 11_101,
+			description: 'The imploded form of an Anemo Hypostasis upon its defeat.\nContains the essence of Anemo energy.\nIt is said that the power to create hurricanes resides within its seemingly fragile body. This butterfly of pure Anemo energy must surely be waiting for the day when it can conjure up storms once again.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113001',
+			},
+			version: '',
+		},
+		{
+			id: 113_002,
+			name: 'Lightning Prism',
+			rarity: 4,
+			sortRank: 11_101,
+			description: 'An Electro Hypostasis channels nearby elemental energy to repair damaged elemental entities. Contains the essence of Electro energy.\nAn ordinary prism separates white light into its component colors; a Lightning Prism, however, channels flowing energies and weaves them into lightning. It will continue to do so even after the Electro Hypostasis has been defeated.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113002',
+			},
+			version: '',
+		},
+		{
+			id: 113_003,
+			name: 'Dvalin\'s Plume',
+			rarity: 5,
+			sortRank: 11_101,
+			description: 'A feather from the tail of the Dragon of the East.\nAs a dragon\'s feather it has experienced more than a thousand years\' worth of winds. One senses within it a yearning for freedom so strong that it could whip up a light breeze to rescue it from its current confines. Its former owner\'s recognition of you is what makes it content to stay in your hands.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113003',
+			},
+			version: '',
+		},
+		{
+			id: 113_004,
+			name: 'Dvalin\'s Claw',
+			rarity: 5,
+			sortRank: 11_101,
+			description: 'A claw from the Dragon of the East.\nIt once contained the shadow dragon Durin\'s vile poison, having torn through the latter\'s flesh in battle. Thanks to your purification and healing, it is no longer toxic.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113004',
+			},
+			version: '',
+		},
+		{
+			id: 113_005,
+			name: 'Dvalin\'s Sigh',
+			rarity: 5,
+			sortRank: 11_101,
+			description: 'A bit of power taken from the whirlwinds evoked by the Dragon of the East.\nBeautiful and transparent, both trade winds and tornadoes will work in his name. The winds move as his companion, his voice, and his freedom.\nHis enemies are the thousands who stand against the wind.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113005',
+			},
+			version: '',
+		},
+		{
+			id: 113_056,
+			name: 'Lightless Mass',
+			rarity: 5,
+			sortRank: 11_101,
+			description: 'A fragment produced from the intense battle against the All-Devouring Narwhal.\nThe universe is a dark and cold place.\nBut look carefully. Inside are always faint glimmers of light, like pearls gleaming from within the sand, splinters of diamond sprinkled over asphalt, lights lancing through the fog on a misty night, and sparks that ignite the brightest blazes.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113056',
+			},
+			version: '4.2',
+		},
+		{
+			id: 113_057,
+			name: 'Water That Failed To Transcend',
+			rarity: 4,
+			sortRank: 11_101,
+			description: 'The only remnants of Hydro Tulpas after their parts are dispersed.\nThis substance is very similar to the crystals extracted from the bodies of Fontemer Aberrants, but they contain a lot of tiny impurities, like the bubbles in glass crafted by clumsy craftsmen.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Level-Up Material',
+			sources: [],
+			images: {
+				filename_icon: 'UI_ItemIcon_113057',
+			},
+			version: '4.2',
+		},
+	],
+	characterWeaponEnhancementMaterials: [
+		{
+			id: 112_004,
+			name: 'Slime Concentrate',
+			rarity: 3,
+			sortRank: 10_101,
+			description: 'Concentrated slime essence. When left alone, it will begin to move on its own.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character and Weapon Enhancement Material',
+			sources: [
+				'Crafted',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_112004',
+			},
+			version: '',
+		},
+		{
+			id: 112_094,
+			name: 'Operative\'s Constancy',
+			rarity: 4,
+			sortRank: 10_132,
+			description: 'An accessory with a Delusion mounted on it. This is source of the Fatui Operative\'s power.\nThat said, taking it off would not detract from the fact that said Operative has physical abilities far beyond that of ordinary humans, forged through long years of training and combat experience. As for them, they are well-aware that they have sacrificed their past, present, and future upon the altar of the Fatui\'s ideal paradise, such that the damage they cause themselves on account of using a Delusion\'s power matters not at all.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character and Weapon Enhancement Material',
+			sources: [
+				'Crafted',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_112094',
+			},
+			version: '4.1',
+		},
+	],
+	fish: [
+		{
+			id: 131_000,
+			name: 'Medaka',
+			rarity: 3,
+			sortRank: 341,
+			description: 'A lively, energetic fish famous for its petal-shaped tail.\nMost such creatures lived out their lives peacefully as ornamental fish. But when it was discovered that their meat was flavorful, less bony, and very fatty, they would also come to find themselves carefully prepared and served up on meal tables.',
+			category: 'EXCHANGE',
+			typeText: 'Fish',
+			sources: [
+				'Obtained from fishing',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_131000',
+			},
+			version: '',
+		},
+		{
+			id: 131_001,
+			name: 'Glaze Medaka',
+			rarity: 3,
+			sortRank: 341,
+			description: 'A lively, energetic fish famous for its petal-shaped tail.\nThis species has inscrutable behavioral patterns, and they can often be seen bursting into struggling fits out of the blue, as if bearing some sort of unseen pain. This phenomenon, however, does not occur at all when they are alone. Some researchers believe that this peculiarity stems from their natural desire to perform.',
+			category: 'EXCHANGE',
+			typeText: 'Fish',
+			sources: [
+				'Obtained from fishing',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_131001',
+			},
+			version: '',
+		},
+		{
+			id: 131_002,
+			name: 'Sweet-Flower Medaka',
+			rarity: 3,
+			sortRank: 341,
+			description: 'A lively, energetic fish famous for its petal-shaped tail.\nIt might be because this fish has a sweet tooth, but every bone in its body seems to serve as an antenna to seek out sweet treats. Following this absolute ideology, they swim through every creek and river in Teyvat in search of tasty sweets. True egalitarians, they will never reject any morsel, and certainly not because there\'s a hook attached. Have bait, will bite, as they say.\nBeginner friendly.',
+			category: 'EXCHANGE',
+			typeText: 'Fish',
+			sources: [
+				'Obtained from fishing',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_131002',
+			},
+			version: '',
+		},
+		{
+			id: 131_036,
+			name: 'Maintenance Mek: Gold Leader',
+			rarity: 3,
+			sortRank: 341,
+			description: 'Compact assistance meka developed to increase the overall utilization rates of meka groups, providing aid for underwater projects. They were originally designed to remove junk, vegetation, and other underwater debris in order to prevent these from clogging up the vital parts of other clockwork meka, thereby minimizing failure rates. From another point of view, they are undoubtedly benefiting Fontaine\'s ecosystem greatly as underwater cleaners.\nCompared to other mass-produced models, this special "Gold Leader" assistance meka utilizes a clear gold outer casing along with special control equipment. The project team designed it to fulfill the role of a command relay station in particularly complex underwater environments, receiving and re-transmitting commands from the controller to all other meka within the group, effectively fulfilling the important role of leader.\nHowever, as the whole maintenance meka project stopped functioning, these leader meka lost their reason for existence. Only their highly recognizable clear golden casing gives them value in the eyes of the anglers who collect them.',
+			category: 'EXCHANGE',
+			typeText: 'Fish',
+			sources: [
+				'Obtained from fishing',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_131036',
+			},
+			version: '4.2',
+		},
+	],
+	localSpecialties: [
+		{
+			id: 100_021,
+			name: 'Wolfhook',
+			sortRank: 311,
+			description: 'A berry with thorns that often gets attached to a wolf\'s pelt. When you look at it, you can almost hear the echoing cries of the wolves in the woods.',
+			category: 'EXCHANGE',
+			typeText: 'Local Specialty (Mondstadt)',
+			sources: [
+				'Found in the wild',
+				'Recommendation: Found in Wolvendom',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_100021',
+			},
+			version: '',
+		},
+		{
+			id: 100_022,
+			name: 'Valberry',
+			sortRank: 311,
+			description: 'A plump and translucent berry that has a fragrant smell and a sweet, refreshing taste. In the past, the storm watchers\' only solace was the sweetness of this fruit and hope for the city\'s peace.',
+			category: 'EXCHANGE',
+			typeText: 'Local Specialty (Mondstadt)',
+			sources: [
+				'Found in the wild',
+				'Recommendation: Found on Stormbearer Mountains',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_100022',
+			},
+			version: '',
+		},
+		{
+			id: 101_239,
+			name: 'Subdetection Unit',
+			sortRank: 315,
+			description: 'Detection units produced by Fontaine Research Institute using new models of artificed components. Its original purpose was monitoring all kinds of environmental data.',
+			category: 'EXCHANGE',
+			typeText: 'Local Specialty (Fontaine)',
+			sources: [
+				'Found in the wild',
+				'Recommendation:Found in Fontaine Research Institute of Kinetic Energy Engineering Region',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_101239',
+			},
+			version: '4.1',
+		},
+		{
+			id: 101_240,
+			name: 'Spring of the First Dewdrop',
+			sortRank: 315,
+			description: 'A limpid drop of dew floating amidst the waters of Morte Region. It is different from other pure water bodies, as though it is a conglomeration of even more pure and primordial Elemental Energy.',
+			category: 'EXCHANGE',
+			typeText: 'Local Specialty (Fontaine)',
+			sources: [
+				'Found in the wild',
+				'Recommendation: Found underwater in Morte Region',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_101240',
+			},
+			version: '4.2',
+		},
+	],
+	talentMaterials: [
+		{
+			id: 104_303,
+			name: 'Philosophies of Freedom',
+			rarity: 4,
+			sortRank: 13_101,
+			description: 'Talent Level-Up material.\nFreedom is the spirit of the land of the wind.\nTo sing is one such freedom. To sing on the land created by the Anemo Archon is to send your heart away with the song on the wind.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Talent Material',
+			dropDomainId: 4213,
+			dropDomainName: 'Domain of Mastery: Frosted Altar',
+			daysOfWeek: [
+				'Monday',
+				'Thursday',
+				'Sunday',
+			],
+			sources: [
+				'Crafted',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_104303',
+			},
+			version: '',
+		},
+		{
+			id: 104_346,
+			name: 'Philosophies of Order',
+			rarity: 4,
+			sortRank: 13_115,
+			description: 'Talent Level-Up Material.\nThe shield of the Nation of Water is order.\nAll law in Fontaine ultimately serves to maintain a stable order. Equity and justice come from order, and serve order. Like the still, ripple-less surface of the waters of Fontaine, order is the cornerstone of Fontaine\'s existence.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Character Talent Material',
+			dropDomainId: 4497,
+			dropDomainName: 'Domain of Mastery: Chiming Recitation',
+			daysOfWeek: [
+				'Wednesday',
+				'Saturday',
+				'Sunday',
+			],
+			sources: [
+				'Crafted',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_104346',
+			},
+			version: '4.0',
+		},
+	],
+	weaponMaterials: [
+		{
+			id: 114_004,
+			name: 'Scattered Piece of Decarabian\'s Dream',
+			rarity: 5,
+			sortRank: 15_101,
+			description: 'Weapon Ascension Material.\nThe people did not bow to Decarabian out of respect or adoration, but because the harsh winds had laid them low. This was the shattered dream and ambition of the Anemo Archon before the rise of Barbatos.\nHe tried so hard to make his dream come true, and so the fragments of that dream are still mighty.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Weapon Ascension Material',
+			dropDomainId: 4313,
+			dropDomainName: 'Domain of Forgery: City of Reflections',
+			daysOfWeek: [
+				'Monday',
+				'Thursday',
+				'Sunday',
+			],
+			sources: [
+				'Crafted',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_114004',
+			},
+			version: '',
+		},
+		{
+			id: 114_060,
+			name: 'Golden Goblet of the Pristine Sea',
+			rarity: 5,
+			sortRank: 15_115,
+			description: 'Weapon Ascension Material.\nWhen the Usurper of the sunken city played the last movement of the golden symphony, the favored musician stole the golden goblet brimming with Ichor.\nShocked by the foolhardy betrayal of the God King, the musician summoned the last guards, and used the insoluble Ichor to seal the dragon beneath the tall tower, and sank into the abyss with the capital.\nAfterwards, this noble thief vanished silently from history, and only the "Golden Troupe" faithfully remembers his prophecy.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Weapon Ascension Material',
+			dropDomainId: 4507,
+			dropDomainName: 'Domain of Forgery: Curious Contraptions',
+			daysOfWeek: [
+				'Wednesday',
+				'Saturday',
+				'Sunday',
+			],
+			sources: [
+				'Crafted',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_114060',
+			},
+			version: '4.0',
+		},
+	],
+	wood: [
+		{
+			id: 101_301,
+			name: 'Birch Wood',
+			rarity: 1,
+			sortRank: 330,
+			description: 'Timber obtained from birches. It is easy to work with and produces smooth cuts. Furniture made using such wood is both beautiful and durable.\nCan be used to create furnishings.',
+			category: 'WOOD',
+			typeText: 'Material',
+			sources: [
+				'Found in the wild',
+				'Recommendation: Cut from Windwail Highland',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_101301',
+			},
+			version: '',
+		},
+		{
+			id: 101_322,
+			name: 'Torch Wood',
+			rarity: 1,
+			sortRank: 330,
+			description: 'Wood from the Torch Tree. It has a soft texture, can be easily cut, stays dry easily, and the color is compatible with many bright paints. This makes it a common choice for artisans making delicate decorations.\nCan be used to create furnishings.',
+			category: 'WOOD',
+			typeText: 'Material',
+			sources: [
+				'Found in the wild',
+				'Recommendation: Cut from the wilds of Fontaine',
+			],
+			images: {
+				filename_icon: 'UI_ItemIcon_101322',
+			},
+			version: '4.0',
+		},
+	],
+};
+
 /* eslint-enable */
