@@ -31,3 +31,4 @@ jobs:
         with:
           auto_fix: true
           xo: true
+          commit_message: ":sparkles: Fix code style issues with ${linter}"
