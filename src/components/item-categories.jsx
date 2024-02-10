@@ -47,7 +47,8 @@ const categories = css`
 	}
 `;
 
-function ItemCategories({list,
+function ItemCategories({
+	list,
 	materials: {
 		characterAscensionMaterials,
 		characterLVLMaterials,

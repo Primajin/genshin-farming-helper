@@ -1,14 +1,16 @@
 import {fireEvent, render, screen} from '@testing-library/react';
-import {describe, it, expect, vi} from 'vitest';
+import {
+	describe, it, expect, vi,
+} from 'vitest';
 
 import ItemCategories from '../item-categories.jsx';
 import {materials} from './mock-data.js';
 
-const onChangeProp = vi.fn();
+const onChangeProperty = vi.fn();
 
 describe('ItemCategories', () => {
 	it('renders the correct number of categories and handles click', () => {
-		const rendering = render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProp}/>);
+		const rendering = render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProperty}/>);
 		expect(rendering).toMatchSnapshot();
 
 		const fieldsets = screen.getAllByRole('group');
@@ -16,7 +18,7 @@ describe('ItemCategories', () => {
 
 		fireEvent.click(fieldsets[0].querySelector('label'));
 
-		expect(onChangeProp).toHaveBeenCalledTimes(1);
+		expect(onChangeProperty).toHaveBeenCalledTimes(1);
 	});
 
 	it('disables items that are already in the list', () => {
@@ -39,7 +41,7 @@ describe('ItemCategories', () => {
 			'Birch Wood',
 		];
 
-		render(<ItemCategories list={list} materials={materials} onChangeProp={onChangeProp}/>);
+		render(<ItemCategories list={list} materials={materials} onChangeProp={onChangeProperty}/>);
 
 		for (const item of list) {
 			const element = screen.getByLabelText(item);

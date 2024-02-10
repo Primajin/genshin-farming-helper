@@ -5,7 +5,9 @@ import {useEffect, useState} from 'react';
 
 import storage from '../utils/local-storage.js';
 import theme from '../theme';
-import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
+import {
+	backgrounds, IMG_URL, IMG_URL2, materialTypes,
+} from '../constants';
 import {up} from '../utils/theming.js';
 import {materialsType} from '../types';
 
@@ -181,19 +183,19 @@ function FarmHelper({
 	const [tierThreeGoal, setTierThreeGoal] = useState(config[9] ?? '');
 	const [tierFourGoal, setTierFourGoal] = useState(config[10] ?? '');
 
-	const incTierOne = () => {
+	const incrementTierOne = () => {
 		setTierOne(tierOne + 1);
 	};
 
-	const incTierTwo = () => {
+	const incrementTierTwo = () => {
 		setTierTwo(tierTwo + 1);
 	};
 
-	const incTierThree = () => {
+	const incrementTierThree = () => {
 		setTierThree(tierThree + 1);
 	};
 
-	const incTierFour = () => {
+	const incrementTierFour = () => {
 		setTierFour(tierFour + 1);
 	};
 
@@ -218,7 +220,7 @@ function FarmHelper({
 		}
 	}, [lockTierThree, hasTierFour, tierThree, tierFour]);
 
-	const incTier = [incTierOne, incTierTwo, incTierThree, incTierFour];
+	const incrementTier = [incrementTierOne, incrementTierTwo, incrementTierThree, incrementTierFour];
 	const setLockTier = [setLockTierOne, setLockTierTwo, setLockTierThree];
 	const lockedTier = [lockTierOne, lockTierTwo, lockTierThree];
 	const tierValue = [tierOne, tierTwo, tierThree, tierFour];
@@ -261,12 +263,12 @@ function FarmHelper({
 				// eslint-disable-next-line no-warning-comments
 				// FIXME find a better way
 				// eslint-disable-next-line react-hooks/rules-of-hooks
-				const [src, setSrc] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
+				const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
 
 				let tooManyRetries = 0;
 				const tryOtherUrl = () => {
 					if (!tooManyRetries) {
-						setSrc(`${IMG_URL2}${item.images?.filename_icon}.png`);
+						setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
 					}
 
 					tooManyRetries++;
@@ -297,9 +299,9 @@ function FarmHelper({
 									: item.name
 							}
 							type='button'
-							onClick={incTier[itemIndex]}
+							onClick={incrementTier[itemIndex]}
 						>
-							<img alt={item.name} src={src} width='75' height='75' onError={tryOtherUrl}/>
+							<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
 							<b
 								css={goalValue[itemIndex] > 0 && tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}
 								data-testid={`value-tier-${itemIndex}`}

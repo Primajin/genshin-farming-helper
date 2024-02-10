@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useState} from 'react';
 
-import {backgrounds, IMG_URL, IMG_URL2, materialTypes} from '../constants';
+import {
+	backgrounds, IMG_URL, IMG_URL2, materialTypes,
+} from '../constants';
 import {removeQuotesFromString} from '../utils/strings.js';
 
 const wrapper = css`
@@ -36,12 +38,12 @@ function ItemPicker({list, materials, type}) {
 		// eslint-disable-next-line no-warning-comments
 		// FIXME find a better way
 		// eslint-disable-next-line react-hooks/rules-of-hooks
-		const [src, setSrc] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
+		const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
 
 		let tooManyRetries = 0;
 		const tryOtherUrl = () => {
 			if (!tooManyRetries) {
-				setSrc(`${IMG_URL2}${item.images?.filename_icon}.png`);
+				setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
 			}
 
 			tooManyRetries++;
@@ -56,7 +58,7 @@ function ItemPicker({list, materials, type}) {
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
 				>
-					<img data-testid='image' alt={name} src={src} width='75' height='75' onError={tryOtherUrl}/>
+					<img data-testid='image' alt={name} src={source} width='75' height='75' onError={tryOtherUrl}/>
 				</div>
 				<span>{name}</span>
 			</label>
