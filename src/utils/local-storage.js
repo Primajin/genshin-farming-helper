@@ -1,4 +1,7 @@
 /* global localStorage */
+import localStorageState from './__tests__/__mocks__/local-storage.js';
+import {isPRPreview} from './url.js';
+
 const localStorageKey = 'genshin-farming-helper';
 
 /**
@@ -31,7 +34,7 @@ const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem
  * @property {function(any): void} save Save the given value to local storage by stringifying it
  */
 const storage = {
-	load: () => JSON.parse(fromLocalStorage.getItem(localStorageKey)),
+	load: () => isPRPreview() ? localStorageState : JSON.parse(fromLocalStorage.getItem(localStorageKey)),
 	save: value => fromLocalStorage.setItem(localStorageKey, JSON.stringify(value)),
 };
 

@@ -10,6 +10,8 @@ exports[`Main > renders without crashing 1`] = `
       >
         <video
           autoplay=""
+          disablepictureinpicture=""
+          disableremoteplayback=""
           loop=""
           poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
         >
@@ -726,6 +728,8 @@ exports[`Main > renders without crashing 1`] = `
     >
       <video
         autoplay=""
+        disablepictureinpicture=""
+        disableremoteplayback=""
         loop=""
         poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
       >

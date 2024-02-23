@@ -214,7 +214,7 @@ export default function Main() {
 			<Global styles={globalStyles}/>
 			{showVideo && (
 				<div css={video}>
-					<video autoPlay='autoplay' poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg' loop='loop' muted='muted'>
+					<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg'>
 						<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
 					</video>
 				</div>
