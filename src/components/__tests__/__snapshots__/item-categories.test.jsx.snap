@@ -26,7 +26,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="TALENT.Teachings of Freedom"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Teachings of Freedom"
@@ -51,7 +51,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="TALENT.Guide to Freedom"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Guide to Freedom"
@@ -76,7 +76,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="TALENT.Philosophies of Freedom"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Philosophies of Freedom"
@@ -101,7 +101,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="TALENT.Teachings of Order"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Teachings of Order"
@@ -126,7 +126,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="TALENT.Guide to Order"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Guide to Order"
@@ -151,7 +151,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="TALENT.Philosophies of Order"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Philosophies of Order"
@@ -188,7 +188,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Tile of Decarabian's Tower"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Tile of Decarabian's Tower"
@@ -213,7 +213,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Debris of Decarabian's City"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Debris of Decarabian's City"
@@ -238,7 +238,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Fragment of Decarabian's Epic"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Fragment of Decarabian's Epic"
@@ -263,7 +263,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Scattered Piece of Decarabian's Dream"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Scattered Piece of Decarabian's Dream"
@@ -288,7 +288,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Broken Goblet of the Pristine Sea"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Broken Goblet of the Pristine Sea"
@@ -313,7 +313,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Wine Goblet of the Pristine Sea"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Wine Goblet of the Pristine Sea"
@@ -338,7 +338,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Silver Goblet of the Pristine Sea"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Silver Goblet of the Pristine Sea"
@@ -363,7 +363,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WEAPON.Golden Goblet of the Pristine Sea"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Golden Goblet of the Pristine Sea"
@@ -399,7 +399,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.Slime Condensate"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Slime Condensate"
@@ -424,7 +424,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.Slime Secretions"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Slime Secretions"
@@ -449,7 +449,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.Slime Concentrate"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Slime Concentrate"
@@ -474,7 +474,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.Old Operative's Pocket Watch"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Old Operative's Pocket Watch"
@@ -499,7 +499,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.Operative's Standard Pocket Watch"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Operative's Standard Pocket Watch"
@@ -524,7 +524,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.Operative's Constancy"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Operative's Constancy"
@@ -560,7 +560,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ASCENSION.Brilliant Diamond Sliver"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             >
               <img
                 alt="Brilliant Diamond Sliver"
@@ -585,7 +585,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ASCENSION.Brilliant Diamond Fragment"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Brilliant Diamond Fragment"
@@ -610,7 +610,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ASCENSION.Brilliant Diamond Chunk"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Brilliant Diamond Chunk"
@@ -635,7 +635,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="ASCENSION.Brilliant Diamond Gemstone"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Brilliant Diamond Gemstone"
@@ -671,7 +671,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Hurricane Seed"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Hurricane Seed"
@@ -696,7 +696,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Lightning Prism"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Lightning Prism"
@@ -721,7 +721,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Dvalin's Plume"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Dvalin's Plume"
@@ -746,7 +746,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Dvalin's Claw"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Dvalin's Claw"
@@ -771,7 +771,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Dvalin's Sigh"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Dvalin's Sigh"
@@ -796,7 +796,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Lightless Mass"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Lightless Mass"
@@ -821,7 +821,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LEVEL.Water That Failed To Transcend"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Water That Failed To Transcend"
@@ -857,7 +857,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LOCAL.Wolfhook"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Wolfhook"
@@ -882,7 +882,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LOCAL.Valberry"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Valberry"
@@ -907,7 +907,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LOCAL.Subdetection Unit"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Subdetection Unit"
@@ -932,7 +932,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="LOCAL.Spring of the First Dewdrop"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Spring of the First Dewdrop"
@@ -968,7 +968,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="FISH.Medaka"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Medaka"
@@ -993,7 +993,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="FISH.Glaze Medaka"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Glaze Medaka"
@@ -1018,7 +1018,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="FISH.Sweet-Flower Medaka"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Sweet-Flower Medaka"
@@ -1043,7 +1043,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="FISH.Maintenance Mek: Gold Leader"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Maintenance Mek: Gold Leader"
@@ -1079,7 +1079,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WOOD.Birch Wood"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Birch Wood"
@@ -1104,7 +1104,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
               value="WOOD.Torch Wood"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Torch Wood"
@@ -1148,7 +1148,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="TALENT.Teachings of Freedom"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Teachings of Freedom"
@@ -1173,7 +1173,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="TALENT.Guide to Freedom"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Guide to Freedom"
@@ -1198,7 +1198,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="TALENT.Philosophies of Freedom"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Philosophies of Freedom"
@@ -1223,7 +1223,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="TALENT.Teachings of Order"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Teachings of Order"
@@ -1248,7 +1248,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="TALENT.Guide to Order"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Guide to Order"
@@ -1273,7 +1273,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="TALENT.Philosophies of Order"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Philosophies of Order"
@@ -1310,7 +1310,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Tile of Decarabian's Tower"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Tile of Decarabian's Tower"
@@ -1335,7 +1335,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Debris of Decarabian's City"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Debris of Decarabian's City"
@@ -1360,7 +1360,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Fragment of Decarabian's Epic"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Fragment of Decarabian's Epic"
@@ -1385,7 +1385,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Scattered Piece of Decarabian's Dream"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Scattered Piece of Decarabian's Dream"
@@ -1410,7 +1410,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Broken Goblet of the Pristine Sea"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Broken Goblet of the Pristine Sea"
@@ -1435,7 +1435,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Wine Goblet of the Pristine Sea"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Wine Goblet of the Pristine Sea"
@@ -1460,7 +1460,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Silver Goblet of the Pristine Sea"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Silver Goblet of the Pristine Sea"
@@ -1485,7 +1485,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WEAPON.Golden Goblet of the Pristine Sea"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Golden Goblet of the Pristine Sea"
@@ -1521,7 +1521,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.Slime Condensate"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Slime Condensate"
@@ -1546,7 +1546,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.Slime Secretions"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Slime Secretions"
@@ -1571,7 +1571,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.Slime Concentrate"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Slime Concentrate"
@@ -1596,7 +1596,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.Old Operative's Pocket Watch"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Old Operative's Pocket Watch"
@@ -1621,7 +1621,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.Operative's Standard Pocket Watch"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Operative's Standard Pocket Watch"
@@ -1646,7 +1646,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.Operative's Constancy"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Operative's Constancy"
@@ -1682,7 +1682,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ASCENSION.Brilliant Diamond Sliver"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           >
             <img
               alt="Brilliant Diamond Sliver"
@@ -1707,7 +1707,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ASCENSION.Brilliant Diamond Fragment"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Brilliant Diamond Fragment"
@@ -1732,7 +1732,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ASCENSION.Brilliant Diamond Chunk"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Brilliant Diamond Chunk"
@@ -1757,7 +1757,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="ASCENSION.Brilliant Diamond Gemstone"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Brilliant Diamond Gemstone"
@@ -1793,7 +1793,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Hurricane Seed"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Hurricane Seed"
@@ -1818,7 +1818,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Lightning Prism"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Lightning Prism"
@@ -1843,7 +1843,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Dvalin's Plume"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Dvalin's Plume"
@@ -1868,7 +1868,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Dvalin's Claw"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Dvalin's Claw"
@@ -1893,7 +1893,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Dvalin's Sigh"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Dvalin's Sigh"
@@ -1918,7 +1918,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Lightless Mass"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           >
             <img
               alt="Lightless Mass"
@@ -1943,7 +1943,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LEVEL.Water That Failed To Transcend"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           >
             <img
               alt="Water That Failed To Transcend"
@@ -1979,7 +1979,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LOCAL.Wolfhook"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Wolfhook"
@@ -2004,7 +2004,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LOCAL.Valberry"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Valberry"
@@ -2029,7 +2029,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LOCAL.Subdetection Unit"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Subdetection Unit"
@@ -2054,7 +2054,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="LOCAL.Spring of the First Dewdrop"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Spring of the First Dewdrop"
@@ -2090,7 +2090,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="FISH.Medaka"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Medaka"
@@ -2115,7 +2115,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="FISH.Glaze Medaka"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Glaze Medaka"
@@ -2140,7 +2140,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="FISH.Sweet-Flower Medaka"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Sweet-Flower Medaka"
@@ -2165,7 +2165,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="FISH.Maintenance Mek: Gold Leader"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           >
             <img
               alt="Maintenance Mek: Gold Leader"
@@ -2201,7 +2201,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WOOD.Birch Wood"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Birch Wood"
@@ -2226,7 +2226,7 @@ exports[`ItemCategories > renders the correct number of categories and handles c
             value="WOOD.Torch Wood"
           />
           <div
-            style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           >
             <img
               alt="Torch Wood"

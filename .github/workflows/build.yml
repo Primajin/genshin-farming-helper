@@ -35,7 +35,7 @@ jobs:
       - name: Generate resources
         run: npm run generate
       - name: Run build with Base
-        run: npx vite build --base="/genshin-farming-helper/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/"
+        run: npx vite build --base="/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/"
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
