@@ -46,7 +46,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="TALENT.Philosophies of Freedom"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
                   alt="Philosophies of Freedom"
@@ -71,7 +71,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="TALENT.Philosophies of Order"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
                   alt="Philosophies of Order"
@@ -108,7 +108,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="WEAPON.Scattered Piece of Decarabian's Dream"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Scattered Piece of Decarabian's Dream"
@@ -133,7 +133,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="WEAPON.Golden Goblet of the Pristine Sea"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Golden Goblet of the Pristine Sea"
@@ -169,7 +169,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="ENHANCEMENT.Slime Concentrate"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               >
                 <img
                   alt="Slime Concentrate"
@@ -194,7 +194,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="ENHANCEMENT.Operative's Constancy"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
                   alt="Operative's Constancy"
@@ -230,7 +230,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="ASCENSION.Brilliant Diamond Gemstone"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Brilliant Diamond Gemstone"
@@ -266,7 +266,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Hurricane Seed"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
                   alt="Hurricane Seed"
@@ -291,7 +291,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Lightning Prism"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
                   alt="Lightning Prism"
@@ -316,7 +316,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Dvalin's Plume"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Dvalin's Plume"
@@ -341,7 +341,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Dvalin's Claw"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Dvalin's Claw"
@@ -366,7 +366,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Dvalin's Sigh"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Dvalin's Sigh"
@@ -391,7 +391,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Lightless Mass"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               >
                 <img
                   alt="Lightless Mass"
@@ -416,7 +416,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LEVEL.Water That Failed To Transcend"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               >
                 <img
                   alt="Water That Failed To Transcend"
@@ -452,7 +452,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LOCAL.Wolfhook"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               >
                 <img
                   alt="Wolfhook"
@@ -477,7 +477,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LOCAL.Valberry"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               >
                 <img
                   alt="Valberry"
@@ -502,7 +502,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LOCAL.Subdetection Unit"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               >
                 <img
                   alt="Subdetection Unit"
@@ -527,7 +527,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="LOCAL.Spring of the First Dewdrop"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               >
                 <img
                   alt="Spring of the First Dewdrop"
@@ -563,7 +563,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="FISH.Medaka"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               >
                 <img
                   alt="Medaka"
@@ -588,7 +588,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="FISH.Glaze Medaka"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               >
                 <img
                   alt="Glaze Medaka"
@@ -613,7 +613,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="FISH.Sweet-Flower Medaka"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               >
                 <img
                   alt="Sweet-Flower Medaka"
@@ -638,7 +638,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="FISH.Maintenance Mek: Gold Leader"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               >
                 <img
                   alt="Maintenance Mek: Gold Leader"
@@ -674,7 +674,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="WOOD.Birch Wood"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               >
                 <img
                   alt="Birch Wood"
@@ -699,7 +699,7 @@ exports[`Main > renders without crashing 1`] = `
                 value="WOOD.Torch Wood"
               />
               <div
-                style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               >
                 <img
                   alt="Torch Wood"
@@ -764,7 +764,7 @@ exports[`Main > renders without crashing 1`] = `
               value="TALENT.Philosophies of Freedom"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Philosophies of Freedom"
@@ -789,7 +789,7 @@ exports[`Main > renders without crashing 1`] = `
               value="TALENT.Philosophies of Order"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Philosophies of Order"
@@ -826,7 +826,7 @@ exports[`Main > renders without crashing 1`] = `
               value="WEAPON.Scattered Piece of Decarabian's Dream"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Scattered Piece of Decarabian's Dream"
@@ -851,7 +851,7 @@ exports[`Main > renders without crashing 1`] = `
               value="WEAPON.Golden Goblet of the Pristine Sea"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Golden Goblet of the Pristine Sea"
@@ -887,7 +887,7 @@ exports[`Main > renders without crashing 1`] = `
               value="ENHANCEMENT.Slime Concentrate"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Slime Concentrate"
@@ -912,7 +912,7 @@ exports[`Main > renders without crashing 1`] = `
               value="ENHANCEMENT.Operative's Constancy"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Operative's Constancy"
@@ -948,7 +948,7 @@ exports[`Main > renders without crashing 1`] = `
               value="ASCENSION.Brilliant Diamond Gemstone"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Brilliant Diamond Gemstone"
@@ -984,7 +984,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Hurricane Seed"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Hurricane Seed"
@@ -1009,7 +1009,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Lightning Prism"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Lightning Prism"
@@ -1034,7 +1034,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Dvalin's Plume"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Dvalin's Plume"
@@ -1059,7 +1059,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Dvalin's Claw"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Dvalin's Claw"
@@ -1084,7 +1084,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Dvalin's Sigh"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Dvalin's Sigh"
@@ -1109,7 +1109,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Lightless Mass"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             >
               <img
                 alt="Lightless Mass"
@@ -1134,7 +1134,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LEVEL.Water That Failed To Transcend"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             >
               <img
                 alt="Water That Failed To Transcend"
@@ -1170,7 +1170,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LOCAL.Wolfhook"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Wolfhook"
@@ -1195,7 +1195,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LOCAL.Valberry"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Valberry"
@@ -1220,7 +1220,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LOCAL.Subdetection Unit"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Subdetection Unit"
@@ -1245,7 +1245,7 @@ exports[`Main > renders without crashing 1`] = `
               value="LOCAL.Spring of the First Dewdrop"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Spring of the First Dewdrop"
@@ -1281,7 +1281,7 @@ exports[`Main > renders without crashing 1`] = `
               value="FISH.Medaka"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Medaka"
@@ -1306,7 +1306,7 @@ exports[`Main > renders without crashing 1`] = `
               value="FISH.Glaze Medaka"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Glaze Medaka"
@@ -1331,7 +1331,7 @@ exports[`Main > renders without crashing 1`] = `
               value="FISH.Sweet-Flower Medaka"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Sweet-Flower Medaka"
@@ -1356,7 +1356,7 @@ exports[`Main > renders without crashing 1`] = `
               value="FISH.Maintenance Mek: Gold Leader"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             >
               <img
                 alt="Maintenance Mek: Gold Leader"
@@ -1392,7 +1392,7 @@ exports[`Main > renders without crashing 1`] = `
               value="WOOD.Birch Wood"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Birch Wood"
@@ -1417,7 +1417,7 @@ exports[`Main > renders without crashing 1`] = `
               value="WOOD.Torch Wood"
             />
             <div
-              style="background-image: url(/genshin-farming-helper/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             >
               <img
                 alt="Torch Wood"

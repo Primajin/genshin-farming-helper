@@ -37,7 +37,7 @@ jobs:
           url: ${{ env.PR_NUMBER }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: https://primajin.github.io/genshin-farming-helper/pr-preview/pr-${{ github.event.number }}/
+          PR_NUMBER: https://primajin.github.io/pr-preview/pr-${{ github.event.number }}/
       - uses: actions/upload-artifact@v4
         with:
           path: screenshots
