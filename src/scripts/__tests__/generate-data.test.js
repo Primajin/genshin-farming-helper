@@ -7,7 +7,7 @@ describe('Generate Data', () => {
 	describe('materials', () => {
 		it('should test that correct data is generated', () => {
 			const keys = Object.keys(materials);
-			expect(keys).toHaveLength(8);
+			expect(keys).toHaveLength(9);
 
 			const {characterAscensionMaterials} = materials;
 			expect(characterAscensionMaterials).toHaveLength(32);
@@ -26,7 +26,7 @@ describe('Generate Data', () => {
 	describe('materialsRare', () => {
 		it('should test that correct data is generated', () => {
 			const keys = Object.keys(materialsRare);
-			expect(keys).toHaveLength(8);
+			expect(keys).toHaveLength(9);
 
 			const {characterAscensionMaterials} = materialsRare;
 			expect(characterAscensionMaterials).toHaveLength(8);
@@ -37,7 +37,8 @@ describe('Generate Data', () => {
 		});
 
 		it('should test that data is written to file', () => {
-			expect(fs.existsSync('src/data-rare.json')).toBe(true);
+			const file = fs.existsSync('src/data-rare.json');
+			expect(file).toBe(true);
 		});
 	});
 });

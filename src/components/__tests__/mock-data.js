@@ -1,6 +1,34 @@
 /* eslint-disable camelcase */
 
 export const materials = {
+	buildingMaterials: [
+		{
+			id: 101_001,
+			name: 'Iron Chunk',
+			sortRank: 301,
+			description: 'This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.',
+			category: 'EXCHANGE',
+			typeText: 'Forging Ore',
+			sources: ['Found in the wild'],
+			images: {filename_icon: 'UI_ItemIcon_101001'},
+			version: '',
+		},
+		{
+			id: 101_002,
+			name: 'White Iron Chunk',
+			sortRank: 301,
+			description: 'Skilled hands can make this into something brilliant.',
+			category: 'EXCHANGE',
+			typeText: 'Forging Ore',
+			sources: [
+				'Found in the wild',
+				'Recommendation: Found on Stormbearer Mountains',
+				'Recommendation: Found in Wolvendom',
+			],
+			images: {filename_icon: 'UI_ItemIcon_101002'},
+			version: '',
+		},
+	],
 	characterAscensionMaterials: [
 		{
 			id: 104_101,

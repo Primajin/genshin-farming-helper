@@ -1123,6 +1123,67 @@ exports[`ItemCategories > renders the correct number of categories and handles c
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Building Materials
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Iron Chunk"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="BUILDING.Iron Chunk"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Iron Chunk"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Iron Chunk
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="White Iron Chunk"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="BUILDING.White Iron Chunk"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="White Iron Chunk"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              White Iron Chunk
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
     </div>
   </body>,
@@ -2238,6 +2299,67 @@ exports[`ItemCategories > renders the correct number of categories and handles c
           </div>
           <span>
             Torch Wood
+          </span>
+        </label>
+        <label />
+        <label />
+        <label />
+        <label />
+      </fieldset>
+      <fieldset
+        role="group"
+      >
+        <legend>
+          Building Materials
+        </legend>
+        <label
+          aria-disabled="false"
+          class="css-pdowyh-ItemPicker"
+          title="Iron Chunk"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="BUILDING.Iron Chunk"
+          />
+          <div
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          >
+            <img
+              alt="Iron Chunk"
+              data-testid="image"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Iron Chunk
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-pdowyh-ItemPicker"
+          title="White Iron Chunk"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="BUILDING.White Iron Chunk"
+          />
+          <div
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          >
+            <img
+              alt="White Iron Chunk"
+              data-testid="image"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101002.png"
+              width="75"
+            />
+          </div>
+          <span>
+            White Iron Chunk
           </span>
         </label>
         <label />

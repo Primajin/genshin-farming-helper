@@ -718,6 +718,17 @@ exports[`Main > renders without crashing 1`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Building Materials
+            </legend>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
       </main>
     </div>
@@ -1431,6 +1442,17 @@ exports[`Main > renders without crashing 1`] = `
               Torch Wood
             </span>
           </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Building Materials
+          </legend>
           <label />
           <label />
           <label />
