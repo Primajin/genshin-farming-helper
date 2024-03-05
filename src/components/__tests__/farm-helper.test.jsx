@@ -8,11 +8,20 @@ import {materialTypes} from '../../constants/index.js';
 import {materials} from './mock-data.js';
 
 const {
-	ASCENSION, ENHANCEMENT, FISH, LEVEL, LOCAL, TALENT, WEAPON, WOOD,
+	ASCENSION,
+	BUILDING,
+	ENHANCEMENT,
+	FISH,
+	LEVEL,
+	LOCAL,
+	TALENT,
+	WEAPON,
+	WOOD,
 } = materialTypes;
 
 const materialMap = new Map([
 	[ASCENSION, {name: 'Brilliant Diamond Gemstone', tiers: 4}],
+	[BUILDING, {name: 'Iron Chunk', tiers: 1}],
 	[ENHANCEMENT, {name: 'Slime Concentrate', tiers: 3}],
 	[FISH, {name: 'Medaka', tiers: 1}],
 	[LEVEL, {name: 'Dvalin\'s Plume', tiers: 1}],

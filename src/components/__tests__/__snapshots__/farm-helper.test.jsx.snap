@@ -511,6 +511,175 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
 }
 `;
 
+exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <div
+          class="css-13cb1v3-FarmHelper"
+        >
+          <label
+            class="css-oe0wek-FarmHelper"
+            data-testid="goal-label"
+            title="Set target goal. Color will change to green when reached"
+          >
+            <input
+              class="css-gv0dhs-FarmHelper"
+              max="999"
+              maxlength="3"
+              min="0"
+              step="1"
+              type="number"
+              value=""
+            />
+            <div
+              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            >
+              pin
+            </div>
+          </label>
+          <button
+            class="css-12v9q2g-FarmHelper"
+            data-testid="button-tier-0"
+            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            title="Iron Chunk"
+            type="button"
+          >
+            <img
+              alt="Iron Chunk"
+              height="75"
+              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+              width="75"
+            />
+            <b
+              class="css-0"
+              data-testid="value-tier-0"
+            >
+              0
+            </b>
+          </button>
+        </div>
+        <button
+          class="material-symbols-outlined css-102pca7-FarmHelper"
+          title="Remove item"
+          type="button"
+        >
+          close
+        </button>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <div
+        class="css-13cb1v3-FarmHelper"
+      >
+        <label
+          class="css-oe0wek-FarmHelper"
+          data-testid="goal-label"
+          title="Set target goal. Color will change to green when reached"
+        >
+          <input
+            class="css-gv0dhs-FarmHelper"
+            max="999"
+            maxlength="3"
+            min="0"
+            step="1"
+            type="number"
+            value=""
+          />
+          <div
+            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+          >
+            pin
+          </div>
+        </label>
+        <button
+          class="css-12v9q2g-FarmHelper"
+          data-testid="button-tier-0"
+          style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          title="Iron Chunk"
+          type="button"
+        >
+          <img
+            alt="Iron Chunk"
+            height="75"
+            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+            width="75"
+          />
+          <b
+            class="css-0"
+            data-testid="value-tier-0"
+          >
+            0
+          </b>
+        </button>
+      </div>
+      <button
+        class="material-symbols-outlined css-102pca7-FarmHelper"
+        title="Remove item"
+        type="button"
+      >
+        close
+      </button>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3 tiers 1`] = `
 {
   "asFragment": [Function],

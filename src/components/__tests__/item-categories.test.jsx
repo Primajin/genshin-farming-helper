@@ -14,7 +14,7 @@ describe('ItemCategories', () => {
 		expect(rendering).toMatchSnapshot();
 
 		const fieldsets = screen.getAllByRole('group');
-		expect(fieldsets.length).toBe(8);
+		expect(fieldsets.length).toBe(9);
 
 		fireEvent.click(fieldsets[0].querySelector('label'));
 

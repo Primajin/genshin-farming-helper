@@ -26,6 +26,8 @@ export default defineConfig(() => ({
 		exclude: [
 			...configDefaults.exclude,
 			'src/index.jsx',
+			'src/data.json',
+			'src/data-rare.json',
 		],
 		coverage: {
 			all: true,
