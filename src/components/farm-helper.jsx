@@ -95,6 +95,7 @@ function FarmHelper({
 	config,
 	item,
 	materials: {
+		buildingMaterials,
 		characterAscensionMaterials,
 		characterLVLMaterials,
 		characterWeaponEnhancementMaterials,
@@ -112,6 +113,11 @@ function FarmHelper({
 	switch (category) {
 		case materialTypes.ASCENSION: {
 			items = characterAscensionMaterials.filter(material => material.name.startsWith(item.split(' ')[0]));
+			break;
+		}
+
+		case materialTypes.BUILDING: {
+			items = [buildingMaterials.find(material => material.name === item)];
 			break;
 		}
 
