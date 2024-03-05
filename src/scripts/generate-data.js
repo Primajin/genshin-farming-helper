@@ -12,8 +12,10 @@ const localSpecialties = allMaterials.filter(material => material?.typeText.star
 const talentMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Talent Material') && !material?.name.startsWith('Crown of Insight'));
 const weaponMaterials = allMaterials.filter(material => material?.typeText.startsWith('Weapon Ascension Material'));
 const wood = allMaterials.filter(material => material?.category === 'WOOD');
+const buildingMaterials = allMaterials.filter(material => material?.sortRank === 301 || material?.sortRank === 331);
 
 export const materials = {
+	buildingMaterials,
 	characterAscensionMaterials,
 	characterLVLMaterials,
 	characterWeaponEnhancementMaterials,
@@ -40,6 +42,7 @@ const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhance
 });
 
 export const materialsRare = {
+	buildingMaterials,
 	characterAscensionMaterials: characterAscensionMaterialsRare,
 	characterLVLMaterials,
 	characterWeaponEnhancementMaterials: characterWeaponEnhancementMaterialsRare,

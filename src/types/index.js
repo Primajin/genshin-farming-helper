@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const materialsType = {
+	buildingMaterials: PropTypes.arrayOf(PropTypes.object),
 	characterAscensionMaterials: PropTypes.arrayOf(PropTypes.object),
 	characterLVLMaterials: PropTypes.arrayOf(PropTypes.object),
 	characterWeaponEnhancementMaterials: PropTypes.arrayOf(PropTypes.object),

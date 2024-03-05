@@ -50,6 +50,7 @@ const categories = css`
 function ItemCategories({
 	list,
 	materials: {
+		buildingMaterials,
 		characterAscensionMaterials,
 		characterLVLMaterials,
 		characterWeaponEnhancementMaterials,
@@ -108,6 +109,12 @@ function ItemCategories({
 			<fieldset role='group'>
 				<legend>Wood</legend>
 				<ItemPicker materials={wood} type={materialTypes.WOOD} list={list}/>
+				<label/><label/><label/><label/>
+			</fieldset>
+
+			<fieldset role='group'>
+				<legend>Building Materials</legend>
+				<ItemPicker materials={buildingMaterials} type={materialTypes.BUILDING} list={list}/>
 				<label/><label/><label/><label/>
 			</fieldset>
 		</form>

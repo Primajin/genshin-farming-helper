@@ -8,6 +8,7 @@ export const backgrounds = [rarity1, rarity2, rarity3, rarity4, rarity5];
 
 export const materialTypes = {
 	ASCENSION: 'ASCENSION',
+	BUILDING: 'BUILDING',
 	ENHANCEMENT: 'ENHANCEMENT',
 	FISH: 'FISH',
 	LEVEL: 'LEVEL',
