@@ -28,9 +28,9 @@
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-vitest": "^0.3.24",
+    "eslint-plugin-vitest": "^0.3.25",
     "jsdom": "^24.0.0",
-    "vite": "^5.1.5",
+    "vite": "^5.1.6",
     "vitest": "^1.2.2",
     "xo": "^0.58.0"
   },
