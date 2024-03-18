@@ -1,18 +1,25 @@
 import fs from 'node:fs';
 import genshinDb from 'genshin-db';
 
-const defaultOptions = {matchCategories: true, verboseCategories: true};
-const allMaterials = genshinDb.materials('names', defaultOptions).sort((a, b) => a.sortRank === b.sortRank ? a.id - b.id : a.sortRank - b.sortRank);
+const isValidMaterial = material => material
+	&& material.typeText
+	&& material.category
+	&& material.sortRank
+	&& material.description
+	&& material.name;
 
-const characterAscensionMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Ascension Material'));
-const characterLVLMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Level-Up Material') && !material?.description.startsWith('Character Ascension'));
-const characterWeaponEnhancementMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character and Weapon Enhancement Material'));
-const fish = allMaterials.filter(material => material?.typeText === 'Fish');
-const localSpecialties = allMaterials.filter(material => material?.typeText.startsWith('Local'));
-const talentMaterials = allMaterials.filter(material => material?.typeText.startsWith('Character Talent Material') && !material?.name.startsWith('Crown of Insight'));
-const weaponMaterials = allMaterials.filter(material => material?.typeText.startsWith('Weapon Ascension Material'));
-const wood = allMaterials.filter(material => material?.category === 'WOOD');
-const buildingMaterials = allMaterials.filter(material => material?.sortRank === 301 || material?.sortRank === 331);
+const defaultOptions = {matchCategories: true, verboseCategories: true};
+const allMaterials = genshinDb.materials('names', defaultOptions).filter(material => isValidMaterial(material)).sort((a, b) => a.sortRank === b.sortRank ? a.id - b.id : a.sortRank - b.sortRank);
+
+const characterAscensionMaterials = allMaterials.filter(material => material.typeText.startsWith('Character Ascension Material'));
+const characterLVLMaterials = allMaterials.filter(material => material.typeText.startsWith('Character Level-Up Material') && !material.description.startsWith('Character Ascension'));
+const characterWeaponEnhancementMaterials = allMaterials.filter(material => material.typeText.startsWith('Character and Weapon Enhancement Material'));
+const fish = allMaterials.filter(material => material.typeText === 'Fish');
+const localSpecialties = allMaterials.filter(material => material.typeText.startsWith('Local'));
+const talentMaterials = allMaterials.filter(material => material.typeText.startsWith('Character Talent Material') && !material.name.startsWith('Crown of Insight'));
+const weaponMaterials = allMaterials.filter(material => material.typeText.startsWith('Weapon Ascension Material'));
+const wood = allMaterials.filter(material => material.category === 'WOOD');
+const buildingMaterials = allMaterials.filter(material => material.sortRank === 301 || material.sortRank === 331);
 
 export const materials = {
 	buildingMaterials,
@@ -32,9 +39,9 @@ fs.writeFile('src/data.json', JSON.stringify(materials), error => {
 	}
 });
 
-const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 3);
-const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
-const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material?.rarity, 10) > 4);
+const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material.rarity, 10) > 3);
+const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material.rarity, 10) > 4);
+const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material.rarity, 10) > 4);
 const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhancementMaterials.filter(material => {
 	const rarityInt = Number.parseInt(material.rarity, 10);
 	const sortRankInt = Number.parseInt(material.sortRank, 10);
