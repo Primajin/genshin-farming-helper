@@ -18,6 +18,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           checkName: Make sure it builds. Then show a preview.
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Exit if build did not succeed
+        if: steps.wait-for-build.outputs.conclusion == 'failure'
+        run: exit 1
+        shell: bash
       - name: Sleep for 120 seconds
         if: steps.wait-for-build.outputs.conclusion == 'success'
         run: sleep 120s
