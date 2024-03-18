@@ -18,14 +18,15 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           checkName: Make sure it builds. Then show a preview.
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Sleep for 120 seconds
+        if: steps.wait-for-build.outputs.conclusion == 'success'
+        run: sleep 120s
+        shell: bash
       - uses: actions/checkout@v4
       - name: install puppeteer-headful
         uses: mujo-code/puppeteer-headful@master
         env:
           CI: 'true'
-      - name: Sleep for 120 seconds
-        run: sleep 120s
-        shell: bash
       - name: screenshots-ci-action
         uses: flameddd/screenshots-ci-action@master
         with:
