@@ -30,7 +30,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Brilliant Diamond Sliver"
@@ -42,6 +42,20 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -87,7 +101,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Brilliant Diamond Fragment"
@@ -99,6 +113,25 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-1"
@@ -144,7 +177,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             title="Brilliant Diamond Chunk"
@@ -156,6 +189,30 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-2"
@@ -201,7 +258,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-3"
             style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             title="Brilliant Diamond Gemstone"
@@ -213,6 +270,35 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-3"
@@ -257,7 +343,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Brilliant Diamond Sliver"
@@ -269,6 +355,20 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -314,7 +414,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Brilliant Diamond Fragment"
@@ -326,6 +426,25 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-1"
@@ -371,7 +490,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           title="Brilliant Diamond Chunk"
@@ -383,6 +502,30 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-2"
@@ -428,7 +571,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-3"
           style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           title="Brilliant Diamond Gemstone"
@@ -440,6 +583,35 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-3"
@@ -541,7 +713,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Iron Chunk"
@@ -553,6 +725,15 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -597,7 +778,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Iron Chunk"
@@ -609,6 +790,15 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -710,7 +900,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Slime Condensate"
@@ -722,6 +912,15 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -767,7 +966,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Slime Secretions"
@@ -779,6 +978,20 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-1"
@@ -824,7 +1037,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Slime Concentrate"
@@ -836,6 +1049,25 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-2"
@@ -880,7 +1112,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Slime Condensate"
@@ -892,6 +1124,15 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -937,7 +1178,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Slime Secretions"
@@ -949,6 +1190,20 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-1"
@@ -994,7 +1249,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Slime Concentrate"
@@ -1006,6 +1261,25 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-2"
@@ -1107,7 +1381,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Medaka"
@@ -1119,6 +1393,25 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -1163,7 +1456,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Medaka"
@@ -1175,6 +1468,25 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -1276,7 +1588,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             title="Dvalin's Plume"
@@ -1288,6 +1600,35 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -1332,7 +1673,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           title="Dvalin's Plume"
@@ -1344,6 +1685,35 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -1445,7 +1815,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Wolfhook"
@@ -1457,6 +1827,15 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -1501,7 +1880,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Wolfhook"
@@ -1513,6 +1892,15 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -1614,7 +2002,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Teachings of Freedom"
@@ -1626,6 +2014,20 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -1671,7 +2073,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Guide to Freedom"
@@ -1683,6 +2085,25 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-1"
@@ -1728,7 +2149,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             title="Philosophies of Freedom"
@@ -1740,6 +2161,30 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-2"
@@ -1784,7 +2229,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Teachings of Freedom"
@@ -1796,6 +2241,20 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -1841,7 +2300,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Guide to Freedom"
@@ -1853,6 +2312,25 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-1"
@@ -1898,7 +2376,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           title="Philosophies of Freedom"
@@ -1910,6 +2388,30 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-2"
@@ -2011,7 +2513,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Tile of Decarabian's Tower"
@@ -2023,6 +2525,20 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -2068,7 +2584,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Debris of Decarabian's City"
@@ -2080,6 +2596,25 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-1"
@@ -2125,7 +2660,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             title="Fragment of Decarabian's Epic"
@@ -2137,6 +2672,30 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-2"
@@ -2182,7 +2741,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-3"
             style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             title="Scattered Piece of Decarabian's Dream"
@@ -2194,6 +2753,35 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-3"
@@ -2238,7 +2826,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Tile of Decarabian's Tower"
@@ -2250,6 +2838,20 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
@@ -2295,7 +2897,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Debris of Decarabian's City"
@@ -2307,6 +2909,25 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-1"
@@ -2352,7 +2973,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           title="Fragment of Decarabian's Epic"
@@ -2364,6 +2985,30 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-2"
@@ -2409,7 +3054,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-3"
           style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           title="Scattered Piece of Decarabian's Dream"
@@ -2421,6 +3066,35 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-3"
@@ -2522,7 +3196,7 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
             </div>
           </label>
           <button
-            class="css-12v9q2g-FarmHelper"
+            class="css-1p1xeo8-FarmHelper"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Birch Wood"
@@ -2534,6 +3208,15 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
               src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
               width="75"
             />
+            <span
+              class="css-ruwv4l-FarmHelper"
+            >
+              <span
+                class="material-symbols-outlined fill"
+              >
+                star
+              </span>
+            </span>
             <b
               class="css-0"
               data-testid="value-tier-0"
@@ -2578,7 +3261,7 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
           </div>
         </label>
         <button
-          class="css-12v9q2g-FarmHelper"
+          class="css-1p1xeo8-FarmHelper"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Birch Wood"
@@ -2590,6 +3273,15 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
             src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
             width="75"
           />
+          <span
+            class="css-ruwv4l-FarmHelper"
+          >
+            <span
+              class="material-symbols-outlined fill"
+            >
+              star
+            </span>
+          </span>
           <b
             class="css-0"
             data-testid="value-tier-0"
