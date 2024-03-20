@@ -62,7 +62,7 @@ const button = css`
 		height: 20px;
 		position: absolute;
 		right: 0;
-		top: 75px;
+		top: 76px;
 		transform: translateY(-100%);
 		width: 20px;
 	}
@@ -73,6 +73,22 @@ const button = css`
 
 	> img {
 		display: inline-block;
+	}
+`;
+
+const rarity = css`
+	bottom: 12px;
+	color: #fdc950;
+	left: 50%;
+	position: absolute;
+	text-shadow: 0 0 3px rgba(50, 0, 0, 0.65);
+	transform: translateX(-50%);
+	white-space: nowrap;
+	z-index: 1;
+
+	> span {
+		font-size: 15px;
+		letter-spacing: -2pt;
 	}
 `;
 
@@ -308,6 +324,10 @@ function FarmHelper({
 							onClick={incrementTier[itemIndex]}
 						>
 							<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
+							<span css={rarity}>
+								{/* eslint-disable-next-line unicorn/no-new-array, react/no-array-index-key */}
+								{new Array(item.rarity ?? 1).fill('').map((_, index) => <span key={index} className='material-symbols-outlined fill'>star</span>)}
+							</span>
 							<b
 								css={goalValue[itemIndex] > 0 && tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}
 								data-testid={`value-tier-${itemIndex}`}
