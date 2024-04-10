@@ -49,6 +49,7 @@ const button = css`
 	background-size: contain;
 	border-radius: 7px;
 	border: 0 solid transparent;
+	color: #4a5566;
 	cursor: pointer;
 	height: 95px;
 	padding: 0;
@@ -65,6 +66,21 @@ const button = css`
 		top: 76px;
 		transform: translateY(-100%);
 		width: 20px;
+	}
+
+	&[data-goal] {
+		&::before {
+			background: #c2fd5e;
+			border-radius: 0 7px 0 7px;
+			color: #343432;
+			content: attr(data-goal);
+			font-weight: bold;
+			min-width: 20px;
+			padding: 2px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 
 	> * {
@@ -316,6 +332,7 @@ function FarmHelper({
 						</label>
 						<button
 							css={button}
+							data-goal={isGoalSet ? goalValue[itemIndex] : undefined}
 							data-testid={`button-tier-${itemIndex}`}
 							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
 							title={isGoalSet && !isGoalReached ? `${goalValue[itemIndex] - tierValue[itemIndex]} ${item.name} remaining` : item.name}
