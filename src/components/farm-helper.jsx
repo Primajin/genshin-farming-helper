@@ -296,6 +296,9 @@ function FarmHelper({
 					tooManyRetries++;
 				};
 
+				const isGoalSet = goalValue[itemIndex] > 0;
+				const isGoalReached = isGoalSet && tierValue[itemIndex] >= goalValue[itemIndex];
+
 				return (
 					<div key={item.name} css={wrapper}>
 						<label data-testid='goal-label' css={label} title='Set target goal. Color will change to green when reached'>
@@ -315,11 +318,7 @@ function FarmHelper({
 							css={button}
 							data-testid={`button-tier-${itemIndex}`}
 							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
-							title={
-								goalValue[itemIndex] > 0 && tierValue[itemIndex] <= goalValue[itemIndex]
-									? `${goalValue[itemIndex] - tierValue[itemIndex]} ${item.name} remaining`
-									: item.name
-							}
+							title={isGoalSet && !isGoalReached ? `${goalValue[itemIndex] - tierValue[itemIndex]} ${item.name} remaining` : item.name}
 							type='button'
 							onClick={incrementTier[itemIndex]}
 						>
@@ -328,10 +327,7 @@ function FarmHelper({
 								{/* eslint-disable-next-line unicorn/no-new-array, react/no-array-index-key */}
 								{new Array(item.rarity ?? 1).fill('').map((_, index) => <span key={index} className='material-symbols-outlined fill'>star</span>)}
 							</span>
-							<b
-								css={goalValue[itemIndex] > 0 && tierValue[itemIndex] >= goalValue[itemIndex] ? reachedGoal : undefined}
-								data-testid={`value-tier-${itemIndex}`}
-							>
+							<b css={isGoalReached ? reachedGoal : undefined} data-testid={`value-tier-${itemIndex}`}>
 								{tierValue[itemIndex]}
 							</b>
 						</button>
