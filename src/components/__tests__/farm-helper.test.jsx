@@ -34,6 +34,7 @@ const materialMap = new Map([
 const config = [0, false, 1, false, 2, false, 3];
 const configWithLock = [0, false, 1, true, 2, false, 3];
 const configWithLockPrefilled = [0, false, 4, true, 2, false, 3];
+const configWithTargetsSet = [1, false, 2, false, 3, true, 4, '', '', 3, 5];
 
 const globalMockRemove = vi.fn();
 describe('FarmHelper', () => {
@@ -209,6 +210,16 @@ describe('FarmHelper', () => {
 						break;
 					}
 				}
+			});
+		}
+
+		if (tiers > 3) {
+			it(`correctly shows targets for ${category} ${name} when they are set`, async () => {
+				render(<FarmHelper category={category} config={configWithTargetsSet} item={name} materials={materials} onRemove={globalMockRemove}/>);
+
+				const buttons = screen.getAllByTestId(/button-tier-/);
+				const lastButton = buttons.at(-1);
+				expect(lastButton.getAttribute('title')).toMatch(/1.+remaining/);
 			});
 		}
 	}
