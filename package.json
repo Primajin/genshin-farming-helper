@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/runtime": "^7.24.5",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^15.0.5",
+    "@testing-library/react": "^15.0.6",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.5.3",
     "eslint-config-xo-react": "^0.27.0",
