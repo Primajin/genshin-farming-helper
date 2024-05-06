@@ -8,7 +8,6 @@
     # "svelte.svelte-vscode"
     # Extension for Vue language support
     # "vue.volar"
-
   ];
   idx.previews = {
     previews = {
