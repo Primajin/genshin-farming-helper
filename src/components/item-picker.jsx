@@ -6,6 +6,7 @@ import {useState} from 'react';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
 } from '../constants';
+import {filterObject} from '../utils/objects.js';
 import {removeQuotesFromString} from '../utils/strings.js';
 
 const wrapper = css`
@@ -28,7 +29,14 @@ const wrapper = css`
 	}
 `;
 
-function ItemPicker({list, materials, type}) {
+const DEFAULT_PROPERTIES = {
+	list: [],
+	materials: [],
+	type: '',
+};
+
+function ItemPicker(properties) {
+	const {list, materials, type} = {...DEFAULT_PROPERTIES, ...filterObject(properties)};
 	return materials.map(material => {
 		const goesUpTo5 = Boolean(material['5starname']);
 		const rarity = type === materialTypes.BUILDING || type === materialTypes.LOCAL ? 0 : (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
@@ -69,14 +77,8 @@ function ItemPicker({list, materials, type}) {
 
 ItemPicker.propTypes = {
 	list: PropTypes.array,
-	materials: PropTypes.array.isRequired,
-	type: PropTypes.string.isRequired,
-};
-
-ItemPicker.defaultProps = {
-	list: [],
-	materials: [],
-	type: '',
+	materials: PropTypes.array,
+	type: PropTypes.string,
 };
 
 export default ItemPicker;
