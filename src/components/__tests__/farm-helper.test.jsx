@@ -280,6 +280,54 @@ describe('FarmHelper', () => {
 		}
 	});
 
+	it('removes a goal and changes back to grey when goal is removed', () => {
+		const {name} = materialMap.get(ASCENSION);
+
+		render(<FarmHelper category={ASCENSION} config={config} item={name} materials={materials} onRemove={globalMockRemove}/>);
+
+		const goalLabels = screen.getAllByTestId('goal-label');
+		const buttons = screen.getAllByTestId(/button-tier-/);
+		const valuesBefore = buttons.map(button => button.querySelector('b'));
+
+		for (const className of valuesBefore.map(value => value.className)) {
+			expect(className).toBe('css-0');
+		}
+
+		// Currently the values are     0, 1, 2, 3
+		// and the goals will be set to 0, 1, 2, 3
+		for (let i = 0; i < 4; i++) {
+			const input = goalLabels[i].querySelector('input');
+			fireEvent.change(input, {target: {value: `${i}`}});
+		}
+
+		// Now everything will be increased by one
+		for (let i = 0; i < 4; i++) {
+			fireEvent.click(buttons[i]);
+		}
+		// Until here is what was tested in the test before
+
+		// Now we remove all the goals again
+		for (let i = 0; i < 4; i++) {
+			const input = goalLabels[i].querySelector('input');
+			fireEvent.change(input, {target: {value: '0'}});
+		}
+
+		const valuesAfter = buttons.map(button => button.querySelector('b'));
+		for (const className of valuesAfter.map(value => value.className)) {
+			expect(className).toBe('css-0');
+		}
+
+		// We also test if it handles backspace (= sending empty string)
+		for (let i = 0; i < 4; i++) {
+			const input = goalLabels[i].querySelector('input');
+			fireEvent.change(input, {target: {value: ''}});
+		}
+
+		for (const className of valuesAfter.map(value => value.className)) {
+			expect(className).toBe('css-0');
+		}
+	});
+
 	it('calls remove correctly when button is clicked', () => {
 		const mockRemove = vi.fn();
 		const {name} = materialMap.get(ASCENSION);
