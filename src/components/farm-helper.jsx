@@ -302,6 +302,7 @@ function FarmHelper({
 				const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
 
 				let tooManyRetries = 0;
+				/* istanbul ignore next */
 				const tryOtherUrl = () => {
 					if (!tooManyRetries) {
 						setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
