@@ -8,8 +8,8 @@ import theme from '../theme';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
 } from '../constants';
-import {up} from '../utils/theming.js';
 import {materialsType} from '../types';
+import {up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
 

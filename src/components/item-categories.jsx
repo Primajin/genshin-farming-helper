@@ -2,8 +2,8 @@
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 
-import {materialTypes} from '../constants';
 import theme from '../theme';
+import {materialTypes} from '../constants';
 import {materialsType} from '../types';
 import ItemPicker from './item-picker.jsx';
 
