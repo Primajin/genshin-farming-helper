@@ -1514,3 +1514,5504 @@ exports[`Main > renders without crashing 1`] = `
   "unmount": [Function],
 }
 `;
+
+exports[`Main > renders without crashing and all them buttons clicked 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1ywc8q2-Main"
+      >
+        <video
+          autoplay=""
+          disablepictureinpicture=""
+          disableremoteplayback=""
+          loop=""
+          poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
+        >
+          <source
+            src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
+            type="audio/mp4"
+          />
+        </video>
+      </div>
+      <main>
+        <button
+          class="material-symbols-outlined css-of6521-Main"
+          title="Click to float items"
+          type="button"
+        >
+          stacked_bar_chart
+        </button>
+        <div
+          class="css-0"
+        >
+          <section>
+            <div
+              class="css-13cb1v3-FarmHelper"
+            >
+              <label
+                class="css-oe0wek-FarmHelper"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-gv0dhs-FarmHelper"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-rhvo53-FarmHelper"
+                data-testid="button-tier-0"
+                style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+                title="Teachings of Freedom"
+                type="button"
+              >
+                <img
+                  alt="Teachings of Freedom"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                  width="75"
+                />
+                <span
+                  class="css-ruwv4l-FarmHelper"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-13cb1v3-FarmHelper"
+            >
+              <label
+                class="css-oe0wek-FarmHelper"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-gv0dhs-FarmHelper"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-rhvo53-FarmHelper"
+                data-testid="button-tier-1"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+                title="Guide to Freedom"
+                type="button"
+              >
+                <img
+                  alt="Guide to Freedom"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                  width="75"
+                />
+                <span
+                  class="css-ruwv4l-FarmHelper"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-13cb1v3-FarmHelper"
+            >
+              <label
+                class="css-oe0wek-FarmHelper"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-gv0dhs-FarmHelper"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-rhvo53-FarmHelper"
+                data-testid="button-tier-2"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+                title="Philosophies of Freedom"
+                type="button"
+              >
+                <img
+                  alt="Philosophies of Freedom"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  width="75"
+                />
+                <span
+                  class="css-ruwv4l-FarmHelper"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-102pca7-FarmHelper"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
+        <form
+          class="css-1z0hshf-ItemCategories"
+        >
+          <fieldset
+            class="narrow"
+            role="group"
+          >
+            <legend>
+              Character Talent
+            </legend>
+            <label
+              aria-disabled="true"
+              class="css-pdowyh-ItemPicker"
+              title="Philosophies of Freedom"
+            >
+              <input
+                disabled=""
+                name="item"
+                type="radio"
+                value="TALENT.Philosophies of Freedom"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Philosophies of Freedom"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Philosophies of Freedom
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Philosophies of Order"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="TALENT.Philosophies of Order"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Philosophies of Order"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Philosophies of Order
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            class="narrow"
+            role="group"
+          >
+            <legend>
+              Weapon Ascension
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Scattered Piece of Decarabian's Dream"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WEAPON.Scattered Piece of Decarabian's Dream"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Scattered Piece of Decarabian's Dream"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Scattered Piece of Decarabian's Dream
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Golden Goblet of the Pristine Sea"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WEAPON.Golden Goblet of the Pristine Sea"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Golden Goblet of the Pristine Sea"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Golden Goblet of the Pristine Sea
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character and Weapon Enhancement
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Slime Concentrate"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ENHANCEMENT.Slime Concentrate"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Slime Concentrate"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Slime Concentrate
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Operative's Constancy"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ENHANCEMENT.Operative's Constancy"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Operative's Constancy"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Operative's Constancy
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character Ascension
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Brilliant Diamond Gemstone"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ASCENSION.Brilliant Diamond Gemstone"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Brilliant Diamond Gemstone
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character Level-Up
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Hurricane Seed"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Hurricane Seed"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Hurricane Seed"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Hurricane Seed
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Lightning Prism"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Lightning Prism"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Lightning Prism"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Lightning Prism
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Plume"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Plume"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Plume"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Plume
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Claw"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Claw"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Claw"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Claw
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Sigh"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Sigh"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Sigh"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Sigh
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Lightless Mass"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Lightless Mass"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Lightless Mass"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Lightless Mass
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Water That Failed To Transcend"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Water That Failed To Transcend"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Water That Failed To Transcend"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Water That Failed To Transcend
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Local Specialties
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Wolfhook"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Wolfhook"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Wolfhook"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Wolfhook
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Valberry"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Valberry"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Valberry"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Valberry
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Subdetection Unit"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Subdetection Unit"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Subdetection Unit"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Subdetection Unit
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Spring of the First Dewdrop"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Spring of the First Dewdrop"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Spring of the First Dewdrop"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Spring of the First Dewdrop
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fish
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Glaze Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Glaze Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Glaze Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Glaze Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Sweet-Flower Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Sweet-Flower Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Sweet-Flower Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Sweet-Flower Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Maintenance Mek: Gold Leader"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Maintenance Mek: Gold Leader"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Maintenance Mek: Gold Leader"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Maintenance Mek: Gold Leader
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Wood
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Birch Wood"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WOOD.Birch Wood"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Birch Wood"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Birch Wood
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Torch Wood"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WOOD.Torch Wood"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Torch Wood"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Torch Wood
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Building Materials
+            </legend>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1ywc8q2-Main"
+    >
+      <video
+        autoplay=""
+        disablepictureinpicture=""
+        disableremoteplayback=""
+        loop=""
+        poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
+      >
+        <source
+          src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
+          type="audio/mp4"
+        />
+      </video>
+    </div>
+    <main>
+      <button
+        class="material-symbols-outlined css-of6521-Main"
+        title="Click to float items"
+        type="button"
+      >
+        stacked_bar_chart
+      </button>
+      <div
+        class="css-0"
+      >
+        <section>
+          <div
+            class="css-13cb1v3-FarmHelper"
+          >
+            <label
+              class="css-oe0wek-FarmHelper"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-gv0dhs-FarmHelper"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-rhvo53-FarmHelper"
+              data-testid="button-tier-0"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              title="Teachings of Freedom"
+              type="button"
+            >
+              <img
+                alt="Teachings of Freedom"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                width="75"
+              />
+              <span
+                class="css-ruwv4l-FarmHelper"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-13cb1v3-FarmHelper"
+          >
+            <label
+              class="css-oe0wek-FarmHelper"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-gv0dhs-FarmHelper"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-rhvo53-FarmHelper"
+              data-testid="button-tier-1"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              title="Guide to Freedom"
+              type="button"
+            >
+              <img
+                alt="Guide to Freedom"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                width="75"
+              />
+              <span
+                class="css-ruwv4l-FarmHelper"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-13cb1v3-FarmHelper"
+          >
+            <label
+              class="css-oe0wek-FarmHelper"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-gv0dhs-FarmHelper"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-rhvo53-FarmHelper"
+              data-testid="button-tier-2"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              title="Philosophies of Freedom"
+              type="button"
+            >
+              <img
+                alt="Philosophies of Freedom"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                width="75"
+              />
+              <span
+                class="css-ruwv4l-FarmHelper"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-102pca7-FarmHelper"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
+      <form
+        class="css-1z0hshf-ItemCategories"
+      >
+        <fieldset
+          class="narrow"
+          role="group"
+        >
+          <legend>
+            Character Talent
+          </legend>
+          <label
+            aria-disabled="true"
+            class="css-pdowyh-ItemPicker"
+            title="Philosophies of Freedom"
+          >
+            <input
+              disabled=""
+              name="item"
+              type="radio"
+              value="TALENT.Philosophies of Freedom"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Philosophies of Freedom"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Philosophies of Freedom
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Philosophies of Order"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="TALENT.Philosophies of Order"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Philosophies of Order"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Philosophies of Order
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          class="narrow"
+          role="group"
+        >
+          <legend>
+            Weapon Ascension
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Scattered Piece of Decarabian's Dream"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.Scattered Piece of Decarabian's Dream"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Scattered Piece of Decarabian's Dream"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Scattered Piece of Decarabian's Dream
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Golden Goblet of the Pristine Sea"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.Golden Goblet of the Pristine Sea"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Golden Goblet of the Pristine Sea"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Golden Goblet of the Pristine Sea
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character and Weapon Enhancement
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Slime Concentrate"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ENHANCEMENT.Slime Concentrate"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Slime Concentrate"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Slime Concentrate
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Operative's Constancy"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ENHANCEMENT.Operative's Constancy"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Operative's Constancy"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Operative's Constancy
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character Ascension
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Brilliant Diamond Gemstone"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.Brilliant Diamond Gemstone"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Brilliant Diamond Gemstone
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character Level-Up
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Hurricane Seed"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Hurricane Seed"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Hurricane Seed"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Hurricane Seed
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Lightning Prism"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Lightning Prism"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Lightning Prism"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Lightning Prism
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Plume"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Plume"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Plume"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Plume
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Claw"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Claw"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Claw"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Claw
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Sigh"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Sigh"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Sigh"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Sigh
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Lightless Mass"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Lightless Mass"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Lightless Mass"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Lightless Mass
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Water That Failed To Transcend"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Water That Failed To Transcend"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Water That Failed To Transcend"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Water That Failed To Transcend
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Local Specialties
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Wolfhook"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Wolfhook"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Wolfhook"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Wolfhook
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Valberry"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Valberry"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Valberry"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Valberry
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Subdetection Unit"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Subdetection Unit"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Subdetection Unit"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Subdetection Unit
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Spring of the First Dewdrop"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Spring of the First Dewdrop"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Spring of the First Dewdrop"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Spring of the First Dewdrop
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fish
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Glaze Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Glaze Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Glaze Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Glaze Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Sweet-Flower Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Sweet-Flower Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Sweet-Flower Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Sweet-Flower Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Maintenance Mek: Gold Leader"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Maintenance Mek: Gold Leader"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Maintenance Mek: Gold Leader"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Maintenance Mek: Gold Leader
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Wood
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Birch Wood"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WOOD.Birch Wood"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Birch Wood"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Birch Wood
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Torch Wood"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WOOD.Torch Wood"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Torch Wood"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Torch Wood
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Building Materials
+          </legend>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+      </form>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Main > renders without crashing and all them buttons clicked 2`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1ywc8q2-Main"
+      >
+        <video
+          autoplay=""
+          disablepictureinpicture=""
+          disableremoteplayback=""
+          loop=""
+          poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
+        >
+          <source
+            src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
+            type="audio/mp4"
+          />
+        </video>
+      </div>
+      <main>
+        <button
+          class="material-symbols-outlined css-of6521-Main"
+          title="Click to stack items"
+          type="button"
+        >
+          full_stacked_bar_chart
+        </button>
+        <div
+          class="css-yihkxv-Main"
+        >
+          <section>
+            <div
+              class="css-13cb1v3-FarmHelper"
+            >
+              <label
+                class="css-oe0wek-FarmHelper"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-gv0dhs-FarmHelper"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-rhvo53-FarmHelper"
+                data-testid="button-tier-0"
+                style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+                title="Teachings of Freedom"
+                type="button"
+              >
+                <img
+                  alt="Teachings of Freedom"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                  width="75"
+                />
+                <span
+                  class="css-ruwv4l-FarmHelper"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-13cb1v3-FarmHelper"
+            >
+              <label
+                class="css-oe0wek-FarmHelper"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-gv0dhs-FarmHelper"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-rhvo53-FarmHelper"
+                data-testid="button-tier-1"
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+                title="Guide to Freedom"
+                type="button"
+              >
+                <img
+                  alt="Guide to Freedom"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                  width="75"
+                />
+                <span
+                  class="css-ruwv4l-FarmHelper"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-13cb1v3-FarmHelper"
+            >
+              <label
+                class="css-oe0wek-FarmHelper"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-gv0dhs-FarmHelper"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-rhvo53-FarmHelper"
+                data-testid="button-tier-2"
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+                title="Philosophies of Freedom"
+                type="button"
+              >
+                <img
+                  alt="Philosophies of Freedom"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  width="75"
+                />
+                <span
+                  class="css-ruwv4l-FarmHelper"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-102pca7-FarmHelper"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
+        <form
+          class="css-1z0hshf-ItemCategories"
+        >
+          <fieldset
+            class="narrow"
+            role="group"
+          >
+            <legend>
+              Character Talent
+            </legend>
+            <label
+              aria-disabled="true"
+              class="css-pdowyh-ItemPicker"
+              title="Philosophies of Freedom"
+            >
+              <input
+                disabled=""
+                name="item"
+                type="radio"
+                value="TALENT.Philosophies of Freedom"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Philosophies of Freedom"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Philosophies of Freedom
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Philosophies of Order"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="TALENT.Philosophies of Order"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Philosophies of Order"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Philosophies of Order
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            class="narrow"
+            role="group"
+          >
+            <legend>
+              Weapon Ascension
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Scattered Piece of Decarabian's Dream"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WEAPON.Scattered Piece of Decarabian's Dream"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Scattered Piece of Decarabian's Dream"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Scattered Piece of Decarabian's Dream
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Golden Goblet of the Pristine Sea"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WEAPON.Golden Goblet of the Pristine Sea"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Golden Goblet of the Pristine Sea"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Golden Goblet of the Pristine Sea
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character and Weapon Enhancement
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Slime Concentrate"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ENHANCEMENT.Slime Concentrate"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Slime Concentrate"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Slime Concentrate
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Operative's Constancy"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ENHANCEMENT.Operative's Constancy"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Operative's Constancy"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Operative's Constancy
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character Ascension
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Brilliant Diamond Gemstone"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ASCENSION.Brilliant Diamond Gemstone"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Brilliant Diamond Gemstone
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character Level-Up
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Hurricane Seed"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Hurricane Seed"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Hurricane Seed"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Hurricane Seed
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Lightning Prism"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Lightning Prism"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Lightning Prism"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Lightning Prism
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Plume"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Plume"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Plume"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Plume
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Claw"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Claw"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Claw"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Claw
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Sigh"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Sigh"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Sigh"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Sigh
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Lightless Mass"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Lightless Mass"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Lightless Mass"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Lightless Mass
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Water That Failed To Transcend"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Water That Failed To Transcend"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Water That Failed To Transcend"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Water That Failed To Transcend
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Local Specialties
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Wolfhook"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Wolfhook"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Wolfhook"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Wolfhook
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Valberry"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Valberry"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Valberry"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Valberry
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Subdetection Unit"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Subdetection Unit"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Subdetection Unit"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Subdetection Unit
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Spring of the First Dewdrop"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Spring of the First Dewdrop"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Spring of the First Dewdrop"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Spring of the First Dewdrop
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fish
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Glaze Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Glaze Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Glaze Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Glaze Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Sweet-Flower Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Sweet-Flower Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Sweet-Flower Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Sweet-Flower Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Maintenance Mek: Gold Leader"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Maintenance Mek: Gold Leader"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Maintenance Mek: Gold Leader"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Maintenance Mek: Gold Leader
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Wood
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Birch Wood"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WOOD.Birch Wood"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Birch Wood"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Birch Wood
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Torch Wood"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WOOD.Torch Wood"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Torch Wood"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Torch Wood
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Building Materials
+            </legend>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1ywc8q2-Main"
+    >
+      <video
+        autoplay=""
+        disablepictureinpicture=""
+        disableremoteplayback=""
+        loop=""
+        poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
+      >
+        <source
+          src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
+          type="audio/mp4"
+        />
+      </video>
+    </div>
+    <main>
+      <button
+        class="material-symbols-outlined css-of6521-Main"
+        title="Click to stack items"
+        type="button"
+      >
+        full_stacked_bar_chart
+      </button>
+      <div
+        class="css-yihkxv-Main"
+      >
+        <section>
+          <div
+            class="css-13cb1v3-FarmHelper"
+          >
+            <label
+              class="css-oe0wek-FarmHelper"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-gv0dhs-FarmHelper"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-rhvo53-FarmHelper"
+              data-testid="button-tier-0"
+              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              title="Teachings of Freedom"
+              type="button"
+            >
+              <img
+                alt="Teachings of Freedom"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                width="75"
+              />
+              <span
+                class="css-ruwv4l-FarmHelper"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-13cb1v3-FarmHelper"
+          >
+            <label
+              class="css-oe0wek-FarmHelper"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-gv0dhs-FarmHelper"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-rhvo53-FarmHelper"
+              data-testid="button-tier-1"
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              title="Guide to Freedom"
+              type="button"
+            >
+              <img
+                alt="Guide to Freedom"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                width="75"
+              />
+              <span
+                class="css-ruwv4l-FarmHelper"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-13cb1v3-FarmHelper"
+          >
+            <label
+              class="css-oe0wek-FarmHelper"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-gv0dhs-FarmHelper"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-rhvo53-FarmHelper"
+              data-testid="button-tier-2"
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              title="Philosophies of Freedom"
+              type="button"
+            >
+              <img
+                alt="Philosophies of Freedom"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                width="75"
+              />
+              <span
+                class="css-ruwv4l-FarmHelper"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-102pca7-FarmHelper"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
+      <form
+        class="css-1z0hshf-ItemCategories"
+      >
+        <fieldset
+          class="narrow"
+          role="group"
+        >
+          <legend>
+            Character Talent
+          </legend>
+          <label
+            aria-disabled="true"
+            class="css-pdowyh-ItemPicker"
+            title="Philosophies of Freedom"
+          >
+            <input
+              disabled=""
+              name="item"
+              type="radio"
+              value="TALENT.Philosophies of Freedom"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Philosophies of Freedom"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Philosophies of Freedom
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Philosophies of Order"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="TALENT.Philosophies of Order"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Philosophies of Order"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Philosophies of Order
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          class="narrow"
+          role="group"
+        >
+          <legend>
+            Weapon Ascension
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Scattered Piece of Decarabian's Dream"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.Scattered Piece of Decarabian's Dream"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Scattered Piece of Decarabian's Dream"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Scattered Piece of Decarabian's Dream
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Golden Goblet of the Pristine Sea"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.Golden Goblet of the Pristine Sea"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Golden Goblet of the Pristine Sea"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Golden Goblet of the Pristine Sea
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character and Weapon Enhancement
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Slime Concentrate"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ENHANCEMENT.Slime Concentrate"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Slime Concentrate"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Slime Concentrate
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Operative's Constancy"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ENHANCEMENT.Operative's Constancy"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Operative's Constancy"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Operative's Constancy
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character Ascension
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Brilliant Diamond Gemstone"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.Brilliant Diamond Gemstone"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Brilliant Diamond Gemstone
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character Level-Up
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Hurricane Seed"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Hurricane Seed"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Hurricane Seed"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Hurricane Seed
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Lightning Prism"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Lightning Prism"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Lightning Prism"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Lightning Prism
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Plume"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Plume"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Plume"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Plume
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Claw"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Claw"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Claw"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Claw
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Sigh"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Sigh"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Sigh"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Sigh
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Lightless Mass"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Lightless Mass"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Lightless Mass"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Lightless Mass
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Water That Failed To Transcend"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Water That Failed To Transcend"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Water That Failed To Transcend"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Water That Failed To Transcend
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Local Specialties
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Wolfhook"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Wolfhook"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Wolfhook"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Wolfhook
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Valberry"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Valberry"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Valberry"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Valberry
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Subdetection Unit"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Subdetection Unit"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Subdetection Unit"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Subdetection Unit
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Spring of the First Dewdrop"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Spring of the First Dewdrop"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Spring of the First Dewdrop"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Spring of the First Dewdrop
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fish
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Glaze Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Glaze Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Glaze Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Glaze Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Sweet-Flower Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Sweet-Flower Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Sweet-Flower Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Sweet-Flower Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Maintenance Mek: Gold Leader"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Maintenance Mek: Gold Leader"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Maintenance Mek: Gold Leader"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Maintenance Mek: Gold Leader
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Wood
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Birch Wood"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WOOD.Birch Wood"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Birch Wood"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Birch Wood
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Torch Wood"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WOOD.Torch Wood"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Torch Wood"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Torch Wood
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Building Materials
+          </legend>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+      </form>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Main > renders without crashing and all them buttons clicked 3`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1ywc8q2-Main"
+      >
+        <video
+          autoplay=""
+          disablepictureinpicture=""
+          disableremoteplayback=""
+          loop=""
+          poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
+        >
+          <source
+            src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
+            type="audio/mp4"
+          />
+        </video>
+      </div>
+      <main>
+        <div
+          class="css-yihkxv-Main"
+        />
+        <form
+          class="css-1z0hshf-ItemCategories"
+        >
+          <fieldset
+            class="narrow"
+            role="group"
+          >
+            <legend>
+              Character Talent
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Philosophies of Freedom"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="TALENT.Philosophies of Freedom"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Philosophies of Freedom"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Philosophies of Freedom
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Philosophies of Order"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="TALENT.Philosophies of Order"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Philosophies of Order"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Philosophies of Order
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            class="narrow"
+            role="group"
+          >
+            <legend>
+              Weapon Ascension
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Scattered Piece of Decarabian's Dream"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WEAPON.Scattered Piece of Decarabian's Dream"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Scattered Piece of Decarabian's Dream"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Scattered Piece of Decarabian's Dream
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Golden Goblet of the Pristine Sea"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WEAPON.Golden Goblet of the Pristine Sea"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Golden Goblet of the Pristine Sea"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Golden Goblet of the Pristine Sea
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character and Weapon Enhancement
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Slime Concentrate"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ENHANCEMENT.Slime Concentrate"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Slime Concentrate"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Slime Concentrate
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Operative's Constancy"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ENHANCEMENT.Operative's Constancy"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Operative's Constancy"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Operative's Constancy
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character Ascension
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Brilliant Diamond Gemstone"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="ASCENSION.Brilliant Diamond Gemstone"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Brilliant Diamond Gemstone
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Character Level-Up
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Hurricane Seed"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Hurricane Seed"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Hurricane Seed"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Hurricane Seed
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Lightning Prism"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Lightning Prism"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Lightning Prism"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Lightning Prism
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Plume"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Plume"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Plume"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Plume
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Claw"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Claw"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Claw"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Claw
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Dvalin's Sigh"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Dvalin's Sigh"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Dvalin's Sigh"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Dvalin's Sigh
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Lightless Mass"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Lightless Mass"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              >
+                <img
+                  alt="Lightless Mass"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Lightless Mass
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Water That Failed To Transcend"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LEVEL.Water That Failed To Transcend"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              >
+                <img
+                  alt="Water That Failed To Transcend"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Water That Failed To Transcend
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Local Specialties
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Wolfhook"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Wolfhook"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Wolfhook"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Wolfhook
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Valberry"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Valberry"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Valberry"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Valberry
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Subdetection Unit"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Subdetection Unit"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Subdetection Unit"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Subdetection Unit
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Spring of the First Dewdrop"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="LOCAL.Spring of the First Dewdrop"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Spring of the First Dewdrop"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Spring of the First Dewdrop
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fish
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Glaze Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Glaze Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Glaze Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Glaze Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Sweet-Flower Medaka"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Sweet-Flower Medaka"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Sweet-Flower Medaka"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Sweet-Flower Medaka
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Maintenance Mek: Gold Leader"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="FISH.Maintenance Mek: Gold Leader"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              >
+                <img
+                  alt="Maintenance Mek: Gold Leader"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Maintenance Mek: Gold Leader
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Wood
+            </legend>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Birch Wood"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WOOD.Birch Wood"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Birch Wood"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Birch Wood
+              </span>
+            </label>
+            <label
+              aria-disabled="false"
+              class="css-pdowyh-ItemPicker"
+              title="Torch Wood"
+            >
+              <input
+                name="item"
+                type="radio"
+                value="WOOD.Torch Wood"
+              />
+              <div
+                style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              >
+                <img
+                  alt="Torch Wood"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Torch Wood
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Building Materials
+            </legend>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1ywc8q2-Main"
+    >
+      <video
+        autoplay=""
+        disablepictureinpicture=""
+        disableremoteplayback=""
+        loop=""
+        poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg"
+      >
+        <source
+          src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4"
+          type="audio/mp4"
+        />
+      </video>
+    </div>
+    <main>
+      <div
+        class="css-yihkxv-Main"
+      />
+      <form
+        class="css-1z0hshf-ItemCategories"
+      >
+        <fieldset
+          class="narrow"
+          role="group"
+        >
+          <legend>
+            Character Talent
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Philosophies of Freedom"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="TALENT.Philosophies of Freedom"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Philosophies of Freedom"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Philosophies of Freedom
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Philosophies of Order"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="TALENT.Philosophies of Order"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Philosophies of Order"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Philosophies of Order
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          class="narrow"
+          role="group"
+        >
+          <legend>
+            Weapon Ascension
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Scattered Piece of Decarabian's Dream"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.Scattered Piece of Decarabian's Dream"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Scattered Piece of Decarabian's Dream"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Scattered Piece of Decarabian's Dream
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Golden Goblet of the Pristine Sea"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.Golden Goblet of the Pristine Sea"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Golden Goblet of the Pristine Sea"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Golden Goblet of the Pristine Sea
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character and Weapon Enhancement
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Slime Concentrate"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ENHANCEMENT.Slime Concentrate"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Slime Concentrate"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Slime Concentrate
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Operative's Constancy"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ENHANCEMENT.Operative's Constancy"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Operative's Constancy"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Operative's Constancy
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character Ascension
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Brilliant Diamond Gemstone"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.Brilliant Diamond Gemstone"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Brilliant Diamond Gemstone
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Character Level-Up
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Hurricane Seed"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Hurricane Seed"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Hurricane Seed"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Hurricane Seed
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Lightning Prism"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Lightning Prism"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Lightning Prism"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Lightning Prism
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Plume"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Plume"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Plume"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Plume
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Claw"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Claw"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Claw"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Claw
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Dvalin's Sigh"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Dvalin's Sigh"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Dvalin's Sigh"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Dvalin's Sigh
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Lightless Mass"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Lightless Mass"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            >
+              <img
+                alt="Lightless Mass"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Lightless Mass
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Water That Failed To Transcend"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.Water That Failed To Transcend"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            >
+              <img
+                alt="Water That Failed To Transcend"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Water That Failed To Transcend
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Local Specialties
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Wolfhook"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Wolfhook"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Wolfhook"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Wolfhook
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Valberry"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Valberry"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Valberry"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Valberry
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Subdetection Unit"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Subdetection Unit"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Subdetection Unit"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Subdetection Unit
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Spring of the First Dewdrop"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.Spring of the First Dewdrop"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Spring of the First Dewdrop"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Spring of the First Dewdrop
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fish
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Glaze Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Glaze Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Glaze Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Glaze Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Sweet-Flower Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Sweet-Flower Medaka"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Sweet-Flower Medaka"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Sweet-Flower Medaka
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Maintenance Mek: Gold Leader"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.Maintenance Mek: Gold Leader"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            >
+              <img
+                alt="Maintenance Mek: Gold Leader"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Maintenance Mek: Gold Leader
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Wood
+          </legend>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Birch Wood"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WOOD.Birch Wood"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Birch Wood"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Birch Wood
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-pdowyh-ItemPicker"
+            title="Torch Wood"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WOOD.Torch Wood"
+            />
+            <div
+              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            >
+              <img
+                alt="Torch Wood"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Torch Wood
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Building Materials
+          </legend>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+      </form>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
