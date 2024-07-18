@@ -5,7 +5,7 @@ import {
 
 import FarmHelper from '../farm-helper.jsx';
 import {materialTypes} from '../../constants/index.js';
-import {materials} from './mock-data.js';
+import {materials} from '../../__tests__/__mocks__/data.js';
 
 const {
 	ASCENSION,

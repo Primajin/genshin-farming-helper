@@ -1,5 +1,5 @@
 /* global localStorage */
-import localStorageState from './__tests__/__mocks__/local-storage.js';
+import localStorageState from '../__tests__/__mocks__/local-storage.js';
 import {isPRPreview} from './url.js';
 
 const localStorageKey = 'genshin-farming-helper';

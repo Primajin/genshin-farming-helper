@@ -5,7 +5,7 @@ import {
 import storage from '../local-storage.js';
 import * as urlUtils from '../url.js';
 
-vi.mock('./__mocks__/local-storage.js', () => ({
+vi.mock('../../__tests__/__mocks__/local-storage.js', () => ({
 	default: {mockKey: 'mockValue'},
 }));
 
