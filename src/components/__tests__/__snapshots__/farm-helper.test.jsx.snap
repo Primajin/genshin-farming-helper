@@ -7,15 +7,15 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -24,13 +24,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Brilliant Diamond Sliver"
@@ -43,7 +43,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -71,22 +71,22 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -95,13 +95,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Brilliant Diamond Fragment"
@@ -114,7 +114,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -147,22 +147,22 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -171,13 +171,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             title="Brilliant Diamond Chunk"
@@ -190,7 +190,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -228,22 +228,22 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -252,13 +252,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-3"
             style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             title="Brilliant Diamond Gemstone"
@@ -271,7 +271,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -308,7 +308,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -320,15 +320,15 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -337,13 +337,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Brilliant Diamond Sliver"
@@ -356,7 +356,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -384,22 +384,22 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -408,13 +408,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Brilliant Diamond Fragment"
@@ -427,7 +427,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -460,22 +460,22 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -484,13 +484,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           title="Brilliant Diamond Chunk"
@@ -503,7 +503,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -541,22 +541,22 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -565,13 +565,13 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-3"
           style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           title="Brilliant Diamond Gemstone"
@@ -584,7 +584,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -621,7 +621,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -690,15 +690,15 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -707,13 +707,13 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Iron Chunk"
@@ -726,7 +726,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -743,7 +743,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -755,15 +755,15 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -772,13 +772,13 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Iron Chunk"
@@ -791,7 +791,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -808,7 +808,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -877,15 +877,15 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -894,13 +894,13 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Slime Condensate"
@@ -913,7 +913,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -936,22 +936,22 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -960,13 +960,13 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Slime Secretions"
@@ -979,7 +979,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -1007,22 +1007,22 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -1031,13 +1031,13 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Slime Concentrate"
@@ -1050,7 +1050,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -1077,7 +1077,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -1089,15 +1089,15 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -1106,13 +1106,13 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Slime Condensate"
@@ -1125,7 +1125,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -1148,22 +1148,22 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -1172,13 +1172,13 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Slime Secretions"
@@ -1191,7 +1191,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -1219,22 +1219,22 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -1243,13 +1243,13 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Slime Concentrate"
@@ -1262,7 +1262,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -1289,7 +1289,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -1358,15 +1358,15 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -1375,13 +1375,13 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Medaka"
@@ -1394,7 +1394,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -1421,7 +1421,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -1433,15 +1433,15 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -1450,13 +1450,13 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Medaka"
@@ -1469,7 +1469,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -1496,7 +1496,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -1565,15 +1565,15 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -1582,13 +1582,13 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             title="Dvalin's Plume"
@@ -1601,7 +1601,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -1638,7 +1638,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -1650,15 +1650,15 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -1667,13 +1667,13 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           title="Dvalin's Plume"
@@ -1686,7 +1686,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -1723,7 +1723,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -1792,15 +1792,15 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -1809,13 +1809,13 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Wolfhook"
@@ -1828,7 +1828,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -1845,7 +1845,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -1857,15 +1857,15 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -1874,13 +1874,13 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Wolfhook"
@@ -1893,7 +1893,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -1910,7 +1910,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -1979,15 +1979,15 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -1996,13 +1996,13 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Teachings of Freedom"
@@ -2015,7 +2015,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2043,22 +2043,22 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -2067,13 +2067,13 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Guide to Freedom"
@@ -2086,7 +2086,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2119,22 +2119,22 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -2143,13 +2143,13 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             title="Philosophies of Freedom"
@@ -2162,7 +2162,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2194,7 +2194,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -2206,15 +2206,15 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -2223,13 +2223,13 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Teachings of Freedom"
@@ -2242,7 +2242,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -2270,22 +2270,22 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -2294,13 +2294,13 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Guide to Freedom"
@@ -2313,7 +2313,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -2346,22 +2346,22 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -2370,13 +2370,13 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           title="Philosophies of Freedom"
@@ -2389,7 +2389,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -2421,7 +2421,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -2490,15 +2490,15 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -2507,13 +2507,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
             title="Tile of Decarabian's Tower"
@@ -2526,7 +2526,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2554,22 +2554,22 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -2578,13 +2578,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-1"
             style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
             title="Debris of Decarabian's City"
@@ -2597,7 +2597,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2630,22 +2630,22 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -2654,13 +2654,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-2"
             style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
             title="Fragment of Decarabian's Epic"
@@ -2673,7 +2673,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2711,22 +2711,22 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               type="checkbox"
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               lock_open
             </div>
           </label>
         </div>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -2735,13 +2735,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-3"
             style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
             title="Scattered Piece of Decarabian's Dream"
@@ -2754,7 +2754,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -2791,7 +2791,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -2803,15 +2803,15 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -2820,13 +2820,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
           title="Tile of Decarabian's Tower"
@@ -2839,7 +2839,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -2867,22 +2867,22 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -2891,13 +2891,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-1"
           style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
           title="Debris of Decarabian's City"
@@ -2910,7 +2910,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -2943,22 +2943,22 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -2967,13 +2967,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-2"
           style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
           title="Fragment of Decarabian's Epic"
@@ -2986,7 +2986,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -3024,22 +3024,22 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             type="checkbox"
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             lock_open
           </div>
         </label>
       </div>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -3048,13 +3048,13 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-3"
           style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
           title="Scattered Piece of Decarabian's Dream"
@@ -3067,7 +3067,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -3104,7 +3104,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
@@ -3173,15 +3173,15 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
     <div>
       <section>
         <div
-          class="css-13cb1v3-FarmHelper"
+          class="css-am8us2"
         >
           <label
-            class="css-oe0wek-FarmHelper"
+            class="css-aij1r1"
             data-testid="goal-label"
             title="Set target goal. Color will change to green when reached"
           >
             <input
-              class="css-gv0dhs-FarmHelper"
+              class="css-11cvzo7"
               max="999"
               maxlength="3"
               min="0"
@@ -3190,13 +3190,13 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
               value=""
             />
             <div
-              class="material-symbols-outlined css-g5s9cx-FarmHelper"
+              class="material-symbols-outlined css-hl5muf"
             >
               pin
             </div>
           </label>
           <button
-            class="css-rhvo53-FarmHelper"
+            class="css-59nvs6"
             data-testid="button-tier-0"
             style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
             title="Birch Wood"
@@ -3209,7 +3209,7 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
               width="75"
             />
             <span
-              class="css-ruwv4l-FarmHelper"
+              class="css-g2gqi2"
             >
               <span
                 class="material-symbols-outlined fill"
@@ -3226,7 +3226,7 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
           </button>
         </div>
         <button
-          class="material-symbols-outlined css-102pca7-FarmHelper"
+          class="material-symbols-outlined css-1puj7t"
           title="Remove item"
           type="button"
         >
@@ -3238,15 +3238,15 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
   "container": <div>
     <section>
       <div
-        class="css-13cb1v3-FarmHelper"
+        class="css-am8us2"
       >
         <label
-          class="css-oe0wek-FarmHelper"
+          class="css-aij1r1"
           data-testid="goal-label"
           title="Set target goal. Color will change to green when reached"
         >
           <input
-            class="css-gv0dhs-FarmHelper"
+            class="css-11cvzo7"
             max="999"
             maxlength="3"
             min="0"
@@ -3255,13 +3255,13 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
             value=""
           />
           <div
-            class="material-symbols-outlined css-g5s9cx-FarmHelper"
+            class="material-symbols-outlined css-hl5muf"
           >
             pin
           </div>
         </label>
         <button
-          class="css-rhvo53-FarmHelper"
+          class="css-59nvs6"
           data-testid="button-tier-0"
           style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
           title="Birch Wood"
@@ -3274,7 +3274,7 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
             width="75"
           />
           <span
-            class="css-ruwv4l-FarmHelper"
+            class="css-g2gqi2"
           >
             <span
               class="material-symbols-outlined fill"
@@ -3291,7 +3291,7 @@ exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
         </button>
       </div>
       <button
-        class="material-symbols-outlined css-102pca7-FarmHelper"
+        class="material-symbols-outlined css-1puj7t"
         title="Remove item"
         type="button"
       >
