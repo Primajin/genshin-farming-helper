@@ -6,7 +6,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="css-1ywc8q2-Main"
+        class="css-1no4mqu"
       >
         <video
           autoplay=""
@@ -23,7 +23,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
       </div>
       <main>
         <button
-          class="material-symbols-outlined css-of6521-Main"
+          class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
         >
@@ -34,15 +34,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         >
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -51,13 +51,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Brilliant Diamond Sliver"
@@ -70,7 +70,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -98,22 +98,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -122,13 +122,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Brilliant Diamond Fragment"
@@ -141,7 +141,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -174,22 +174,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -198,13 +198,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value="2"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="2"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -218,7 +218,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -242,7 +242,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-2"
                 >
                   3
@@ -257,22 +257,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined fill css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined fill css-hl5muf"
                 >
                   lock
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -281,13 +281,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-3"
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
                 title="Brilliant Diamond Gemstone"
@@ -300,7 +300,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -337,7 +337,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -346,15 +346,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -363,13 +363,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
                 title="Iron Chunk"
@@ -382,7 +382,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -399,7 +399,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -408,15 +408,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -425,13 +425,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value="1"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="1"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -445,7 +445,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -454,7 +454,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-0"
                 >
                   1
@@ -468,22 +468,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -492,13 +492,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Slime Secretions"
@@ -511,7 +511,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -539,22 +539,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -563,13 +563,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Slime Concentrate"
@@ -582,7 +582,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -609,7 +609,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -618,15 +618,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -635,13 +635,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Medaka"
@@ -654,7 +654,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -681,7 +681,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -690,15 +690,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -707,13 +707,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
                 title="Hurricane Seed"
@@ -726,7 +726,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -758,7 +758,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -767,15 +767,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -784,13 +784,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value="2"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="2"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -804,7 +804,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -821,7 +821,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -830,15 +830,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -847,13 +847,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Teachings of Freedom"
@@ -866,7 +866,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -894,22 +894,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -918,13 +918,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value="2"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="2"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -938,7 +938,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -957,7 +957,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-1"
                 >
                   2
@@ -971,22 +971,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -995,13 +995,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
                 title="Philosophies of Freedom"
@@ -1014,7 +1014,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -1046,7 +1046,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -1055,15 +1055,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -1072,13 +1072,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Tile of Decarabian's Tower"
@@ -1091,7 +1091,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -1119,22 +1119,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -1143,13 +1143,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Debris of Decarabian's City"
@@ -1162,7 +1162,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -1195,22 +1195,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -1219,13 +1219,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value="3"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="3"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1239,7 +1239,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -1263,7 +1263,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-2"
                 >
                   3
@@ -1278,22 +1278,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined fill css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined fill css-hl5muf"
                 >
                   lock
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -1302,13 +1302,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value="5"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="5"
                 data-testid="button-tier-3"
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1322,7 +1322,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -1359,7 +1359,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -1368,15 +1368,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -1385,13 +1385,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
                 title="Birch Wood"
@@ -1404,7 +1404,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -1421,7 +1421,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -1436,7 +1436,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           <section />
         </div>
         <form
-          class="css-1z0hshf-ItemCategories"
+          class="css-mgmeqk"
         >
           <fieldset
             class="narrow"
@@ -1447,7 +1447,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Philosophies of Freedom"
             >
               <input
@@ -1473,7 +1473,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Philosophies of Order"
             >
               <input
@@ -1510,7 +1510,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Scattered Piece of Decarabian's Dream"
             >
               <input
@@ -1536,7 +1536,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Golden Goblet of the Pristine Sea"
             >
               <input
@@ -1572,7 +1572,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Slime Concentrate"
             >
               <input
@@ -1598,7 +1598,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Operative's Constancy"
             >
               <input
@@ -1634,7 +1634,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Brilliant Diamond Gemstone"
             >
               <input
@@ -1671,7 +1671,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Hurricane Seed"
             >
               <input
@@ -1697,7 +1697,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Lightning Prism"
             >
               <input
@@ -1722,7 +1722,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Dvalin's Plume"
             >
               <input
@@ -1747,7 +1747,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Dvalin's Claw"
             >
               <input
@@ -1772,7 +1772,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Dvalin's Sigh"
             >
               <input
@@ -1797,7 +1797,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Lightless Mass"
             >
               <input
@@ -1822,7 +1822,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Water That Failed To Transcend"
             >
               <input
@@ -1858,7 +1858,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Wolfhook"
             >
               <input
@@ -1884,7 +1884,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Valberry"
             >
               <input
@@ -1909,7 +1909,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Subdetection Unit"
             >
               <input
@@ -1934,7 +1934,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Spring of the First Dewdrop"
             >
               <input
@@ -1970,7 +1970,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Medaka"
             >
               <input
@@ -1996,7 +1996,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Glaze Medaka"
             >
               <input
@@ -2021,7 +2021,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Sweet-Flower Medaka"
             >
               <input
@@ -2046,7 +2046,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Maintenance Mek: Gold Leader"
             >
               <input
@@ -2082,7 +2082,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Birch Wood"
             >
               <input
@@ -2108,7 +2108,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Torch Wood"
             >
               <input
@@ -2153,7 +2153,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
   </body>,
   "container": <div>
     <div
-      class="css-1ywc8q2-Main"
+      class="css-1no4mqu"
     >
       <video
         autoplay=""
@@ -2170,7 +2170,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
     </div>
     <main>
       <button
-        class="material-symbols-outlined css-of6521-Main"
+        class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
       >
@@ -2181,15 +2181,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
       >
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2198,13 +2198,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Brilliant Diamond Sliver"
@@ -2217,7 +2217,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2245,22 +2245,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2269,13 +2269,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Brilliant Diamond Fragment"
@@ -2288,7 +2288,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2321,22 +2321,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2345,13 +2345,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value="2"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="2"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2365,7 +2365,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2389,7 +2389,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-2"
               >
                 3
@@ -2404,22 +2404,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined fill css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined fill css-hl5muf"
               >
                 lock
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2428,13 +2428,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-3"
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
               title="Brilliant Diamond Gemstone"
@@ -2447,7 +2447,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2484,7 +2484,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -2493,15 +2493,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2510,13 +2510,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               title="Iron Chunk"
@@ -2529,7 +2529,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2546,7 +2546,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -2555,15 +2555,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2572,13 +2572,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value="1"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="1"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2592,7 +2592,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2601,7 +2601,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-0"
               >
                 1
@@ -2615,22 +2615,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2639,13 +2639,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Slime Secretions"
@@ -2658,7 +2658,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2686,22 +2686,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2710,13 +2710,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Slime Concentrate"
@@ -2729,7 +2729,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2756,7 +2756,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -2765,15 +2765,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2782,13 +2782,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Medaka"
@@ -2801,7 +2801,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2828,7 +2828,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -2837,15 +2837,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2854,13 +2854,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               title="Hurricane Seed"
@@ -2873,7 +2873,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2905,7 +2905,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -2914,15 +2914,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2931,13 +2931,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value="2"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="2"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2951,7 +2951,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -2968,7 +2968,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -2977,15 +2977,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -2994,13 +2994,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Teachings of Freedom"
@@ -3013,7 +3013,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3041,22 +3041,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3065,13 +3065,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value="2"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="2"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -3085,7 +3085,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3104,7 +3104,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-1"
               >
                 2
@@ -3118,22 +3118,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3142,13 +3142,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               title="Philosophies of Freedom"
@@ -3161,7 +3161,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3193,7 +3193,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -3202,15 +3202,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3219,13 +3219,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Tile of Decarabian's Tower"
@@ -3238,7 +3238,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3266,22 +3266,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3290,13 +3290,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Debris of Decarabian's City"
@@ -3309,7 +3309,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3342,22 +3342,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3366,13 +3366,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value="3"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="3"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3386,7 +3386,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3410,7 +3410,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-2"
               >
                 3
@@ -3425,22 +3425,22 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined fill css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined fill css-hl5muf"
               >
                 lock
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3449,13 +3449,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value="5"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="5"
               data-testid="button-tier-3"
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3469,7 +3469,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3506,7 +3506,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -3515,15 +3515,15 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -3532,13 +3532,13 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               title="Birch Wood"
@@ -3551,7 +3551,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -3568,7 +3568,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -3583,7 +3583,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
         <section />
       </div>
       <form
-        class="css-1z0hshf-ItemCategories"
+        class="css-mgmeqk"
       >
         <fieldset
           class="narrow"
@@ -3594,7 +3594,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Philosophies of Freedom"
           >
             <input
@@ -3620,7 +3620,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Philosophies of Order"
           >
             <input
@@ -3657,7 +3657,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Scattered Piece of Decarabian's Dream"
           >
             <input
@@ -3683,7 +3683,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Golden Goblet of the Pristine Sea"
           >
             <input
@@ -3719,7 +3719,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Slime Concentrate"
           >
             <input
@@ -3745,7 +3745,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Operative's Constancy"
           >
             <input
@@ -3781,7 +3781,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Brilliant Diamond Gemstone"
           >
             <input
@@ -3818,7 +3818,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Hurricane Seed"
           >
             <input
@@ -3844,7 +3844,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Lightning Prism"
           >
             <input
@@ -3869,7 +3869,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Dvalin's Plume"
           >
             <input
@@ -3894,7 +3894,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Dvalin's Claw"
           >
             <input
@@ -3919,7 +3919,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Dvalin's Sigh"
           >
             <input
@@ -3944,7 +3944,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Lightless Mass"
           >
             <input
@@ -3969,7 +3969,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Water That Failed To Transcend"
           >
             <input
@@ -4005,7 +4005,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Wolfhook"
           >
             <input
@@ -4031,7 +4031,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Valberry"
           >
             <input
@@ -4056,7 +4056,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Subdetection Unit"
           >
             <input
@@ -4081,7 +4081,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Spring of the First Dewdrop"
           >
             <input
@@ -4117,7 +4117,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Medaka"
           >
             <input
@@ -4143,7 +4143,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Glaze Medaka"
           >
             <input
@@ -4168,7 +4168,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Sweet-Flower Medaka"
           >
             <input
@@ -4193,7 +4193,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Maintenance Mek: Gold Leader"
           >
             <input
@@ -4229,7 +4229,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Birch Wood"
           >
             <input
@@ -4255,7 +4255,7 @@ exports[`Main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Torch Wood"
           >
             <input
@@ -4357,7 +4357,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
   "baseElement": <body>
     <div>
       <div
-        class="css-1ywc8q2-Main"
+        class="css-1no4mqu"
       >
         <video
           autoplay=""
@@ -4374,7 +4374,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
       </div>
       <main>
         <button
-          class="material-symbols-outlined css-of6521-Main"
+          class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
         >
@@ -4385,15 +4385,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         >
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4402,13 +4402,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
                 title="Iron Chunk"
@@ -4421,7 +4421,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4438,7 +4438,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -4447,15 +4447,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4464,13 +4464,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value="1"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="1"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4484,7 +4484,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4493,7 +4493,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-0"
                 >
                   1
@@ -4507,22 +4507,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4531,13 +4531,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Slime Secretions"
@@ -4550,7 +4550,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4578,22 +4578,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4602,13 +4602,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Slime Concentrate"
@@ -4621,7 +4621,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4648,7 +4648,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -4657,15 +4657,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4674,13 +4674,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Medaka"
@@ -4693,7 +4693,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4720,7 +4720,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -4729,15 +4729,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4746,13 +4746,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
                 title="Hurricane Seed"
@@ -4765,7 +4765,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4797,7 +4797,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -4806,15 +4806,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4823,13 +4823,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value="2"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="2"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4843,7 +4843,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4860,7 +4860,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -4869,15 +4869,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4886,13 +4886,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Teachings of Freedom"
@@ -4905,7 +4905,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4933,22 +4933,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -4957,13 +4957,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value="2"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="2"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -4977,7 +4977,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -4996,7 +4996,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-1"
                 >
                   2
@@ -5010,22 +5010,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -5034,13 +5034,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
                 title="Philosophies of Freedom"
@@ -5053,7 +5053,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -5085,7 +5085,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -5094,15 +5094,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -5111,13 +5111,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
                 title="Tile of Decarabian's Tower"
@@ -5130,7 +5130,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -5158,22 +5158,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -5182,13 +5182,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
                 title="Debris of Decarabian's City"
@@ -5201,7 +5201,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -5234,22 +5234,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   lock_open
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -5258,13 +5258,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value="3"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="3"
                 data-testid="button-tier-2"
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5278,7 +5278,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -5302,7 +5302,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   </span>
                 </span>
                 <b
-                  class="css-hl1eko-FarmHelper"
+                  class="css-ke5xzh"
                   data-testid="value-tier-2"
                 >
                   3
@@ -5317,22 +5317,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   type="checkbox"
                 />
                 <div
-                  class="material-symbols-outlined fill css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined fill css-hl5muf"
                 >
                   lock
                 </div>
               </label>
             </div>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -5341,13 +5341,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value="5"
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-goal="5"
                 data-testid="button-tier-3"
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5361,7 +5361,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -5398,7 +5398,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -5407,15 +5407,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </section>
           <section>
             <div
-              class="css-13cb1v3-FarmHelper"
+              class="css-am8us2"
             >
               <label
-                class="css-oe0wek-FarmHelper"
+                class="css-aij1r1"
                 data-testid="goal-label"
                 title="Set target goal. Color will change to green when reached"
               >
                 <input
-                  class="css-gv0dhs-FarmHelper"
+                  class="css-11cvzo7"
                   max="999"
                   maxlength="3"
                   min="0"
@@ -5424,13 +5424,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   value=""
                 />
                 <div
-                  class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                  class="material-symbols-outlined css-hl5muf"
                 >
                   pin
                 </div>
               </label>
               <button
-                class="css-rhvo53-FarmHelper"
+                class="css-59nvs6"
                 data-testid="button-tier-0"
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
                 title="Birch Wood"
@@ -5443,7 +5443,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                   width="75"
                 />
                 <span
-                  class="css-ruwv4l-FarmHelper"
+                  class="css-g2gqi2"
                 >
                   <span
                     class="material-symbols-outlined fill"
@@ -5460,7 +5460,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-102pca7-FarmHelper"
+              class="material-symbols-outlined css-1puj7t"
               title="Remove item"
               type="button"
             >
@@ -5475,7 +5475,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           <section />
         </div>
         <form
-          class="css-1z0hshf-ItemCategories"
+          class="css-mgmeqk"
         >
           <fieldset
             class="narrow"
@@ -5486,7 +5486,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Philosophies of Freedom"
             >
               <input
@@ -5512,7 +5512,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Philosophies of Order"
             >
               <input
@@ -5549,7 +5549,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Scattered Piece of Decarabian's Dream"
             >
               <input
@@ -5575,7 +5575,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Golden Goblet of the Pristine Sea"
             >
               <input
@@ -5611,7 +5611,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Slime Concentrate"
             >
               <input
@@ -5637,7 +5637,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Operative's Constancy"
             >
               <input
@@ -5673,7 +5673,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Brilliant Diamond Gemstone"
             >
               <input
@@ -5709,7 +5709,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Hurricane Seed"
             >
               <input
@@ -5735,7 +5735,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Lightning Prism"
             >
               <input
@@ -5760,7 +5760,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Dvalin's Plume"
             >
               <input
@@ -5785,7 +5785,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Dvalin's Claw"
             >
               <input
@@ -5810,7 +5810,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Dvalin's Sigh"
             >
               <input
@@ -5835,7 +5835,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Lightless Mass"
             >
               <input
@@ -5860,7 +5860,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Water That Failed To Transcend"
             >
               <input
@@ -5896,7 +5896,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Wolfhook"
             >
               <input
@@ -5922,7 +5922,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Valberry"
             >
               <input
@@ -5947,7 +5947,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Subdetection Unit"
             >
               <input
@@ -5972,7 +5972,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Spring of the First Dewdrop"
             >
               <input
@@ -6008,7 +6008,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Medaka"
             >
               <input
@@ -6034,7 +6034,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Glaze Medaka"
             >
               <input
@@ -6059,7 +6059,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Sweet-Flower Medaka"
             >
               <input
@@ -6084,7 +6084,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Maintenance Mek: Gold Leader"
             >
               <input
@@ -6120,7 +6120,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Birch Wood"
             >
               <input
@@ -6146,7 +6146,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </label>
             <label
               aria-disabled="false"
-              class="css-pdowyh-ItemPicker"
+              class="css-4wqkks"
               title="Torch Wood"
             >
               <input
@@ -6191,7 +6191,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
   </body>,
   "container": <div>
     <div
-      class="css-1ywc8q2-Main"
+      class="css-1no4mqu"
     >
       <video
         autoplay=""
@@ -6208,7 +6208,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
     </div>
     <main>
       <button
-        class="material-symbols-outlined css-of6521-Main"
+        class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
       >
@@ -6219,15 +6219,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
       >
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6236,13 +6236,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               title="Iron Chunk"
@@ -6255,7 +6255,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6272,7 +6272,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -6281,15 +6281,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6298,13 +6298,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value="1"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="1"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6318,7 +6318,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6327,7 +6327,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-0"
               >
                 1
@@ -6341,22 +6341,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6365,13 +6365,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Slime Secretions"
@@ -6384,7 +6384,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6412,22 +6412,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6436,13 +6436,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Slime Concentrate"
@@ -6455,7 +6455,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6482,7 +6482,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -6491,15 +6491,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6508,13 +6508,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Medaka"
@@ -6527,7 +6527,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6554,7 +6554,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -6563,15 +6563,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6580,13 +6580,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               title="Hurricane Seed"
@@ -6599,7 +6599,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6631,7 +6631,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -6640,15 +6640,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6657,13 +6657,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value="2"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="2"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6677,7 +6677,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6694,7 +6694,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -6703,15 +6703,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6720,13 +6720,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Teachings of Freedom"
@@ -6739,7 +6739,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6767,22 +6767,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6791,13 +6791,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value="2"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="2"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6811,7 +6811,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6830,7 +6830,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-1"
               >
                 2
@@ -6844,22 +6844,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6868,13 +6868,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
               title="Philosophies of Freedom"
@@ -6887,7 +6887,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6919,7 +6919,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -6928,15 +6928,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -6945,13 +6945,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
               title="Tile of Decarabian's Tower"
@@ -6964,7 +6964,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -6992,22 +6992,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -7016,13 +7016,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
               title="Debris of Decarabian's City"
@@ -7035,7 +7035,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -7068,22 +7068,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 lock_open
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -7092,13 +7092,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value="3"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="3"
               data-testid="button-tier-2"
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -7112,7 +7112,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -7136,7 +7136,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 </span>
               </span>
               <b
-                class="css-hl1eko-FarmHelper"
+                class="css-ke5xzh"
                 data-testid="value-tier-2"
               >
                 3
@@ -7151,22 +7151,22 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 type="checkbox"
               />
               <div
-                class="material-symbols-outlined fill css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined fill css-hl5muf"
               >
                 lock
               </div>
             </label>
           </div>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -7175,13 +7175,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value="5"
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-goal="5"
               data-testid="button-tier-3"
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -7195,7 +7195,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -7232,7 +7232,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -7241,15 +7241,15 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         </section>
         <section>
           <div
-            class="css-13cb1v3-FarmHelper"
+            class="css-am8us2"
           >
             <label
-              class="css-oe0wek-FarmHelper"
+              class="css-aij1r1"
               data-testid="goal-label"
               title="Set target goal. Color will change to green when reached"
             >
               <input
-                class="css-gv0dhs-FarmHelper"
+                class="css-11cvzo7"
                 max="999"
                 maxlength="3"
                 min="0"
@@ -7258,13 +7258,13 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 value=""
               />
               <div
-                class="material-symbols-outlined css-g5s9cx-FarmHelper"
+                class="material-symbols-outlined css-hl5muf"
               >
                 pin
               </div>
             </label>
             <button
-              class="css-rhvo53-FarmHelper"
+              class="css-59nvs6"
               data-testid="button-tier-0"
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
               title="Birch Wood"
@@ -7277,7 +7277,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
                 width="75"
               />
               <span
-                class="css-ruwv4l-FarmHelper"
+                class="css-g2gqi2"
               >
                 <span
                   class="material-symbols-outlined fill"
@@ -7294,7 +7294,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-102pca7-FarmHelper"
+            class="material-symbols-outlined css-1puj7t"
             title="Remove item"
             type="button"
           >
@@ -7309,7 +7309,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
         <section />
       </div>
       <form
-        class="css-1z0hshf-ItemCategories"
+        class="css-mgmeqk"
       >
         <fieldset
           class="narrow"
@@ -7320,7 +7320,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Philosophies of Freedom"
           >
             <input
@@ -7346,7 +7346,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Philosophies of Order"
           >
             <input
@@ -7383,7 +7383,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Scattered Piece of Decarabian's Dream"
           >
             <input
@@ -7409,7 +7409,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Golden Goblet of the Pristine Sea"
           >
             <input
@@ -7445,7 +7445,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Slime Concentrate"
           >
             <input
@@ -7471,7 +7471,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Operative's Constancy"
           >
             <input
@@ -7507,7 +7507,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Brilliant Diamond Gemstone"
           >
             <input
@@ -7543,7 +7543,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Hurricane Seed"
           >
             <input
@@ -7569,7 +7569,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Lightning Prism"
           >
             <input
@@ -7594,7 +7594,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Dvalin's Plume"
           >
             <input
@@ -7619,7 +7619,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Dvalin's Claw"
           >
             <input
@@ -7644,7 +7644,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Dvalin's Sigh"
           >
             <input
@@ -7669,7 +7669,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Lightless Mass"
           >
             <input
@@ -7694,7 +7694,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Water That Failed To Transcend"
           >
             <input
@@ -7730,7 +7730,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Wolfhook"
           >
             <input
@@ -7756,7 +7756,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Valberry"
           >
             <input
@@ -7781,7 +7781,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Subdetection Unit"
           >
             <input
@@ -7806,7 +7806,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Spring of the First Dewdrop"
           >
             <input
@@ -7842,7 +7842,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Medaka"
           >
             <input
@@ -7868,7 +7868,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Glaze Medaka"
           >
             <input
@@ -7893,7 +7893,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Sweet-Flower Medaka"
           >
             <input
@@ -7918,7 +7918,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Maintenance Mek: Gold Leader"
           >
             <input
@@ -7954,7 +7954,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Birch Wood"
           >
             <input
@@ -7980,7 +7980,7 @@ exports[`Main with pre-saved helpers > renders without crashing 2`] = `
           </label>
           <label
             aria-disabled="false"
-            class="css-pdowyh-ItemPicker"
+            class="css-4wqkks"
             title="Torch Wood"
           >
             <input
