@@ -128,53 +128,53 @@ export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
 
-	const onRemove = name => {
-		const savedHelpers = storage.load();
-		for (const key of Object.keys(savedHelpers)) {
-			if (key.split('.')[1] === name) {
-				delete savedHelpers[key];
-			}
-		}
-
-		storage.save(savedHelpers);
-		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== name));
+	const onRemove = itemId => {
+		const storageState = storage.load();
+		const savedHelpers = storageState?.helpers ?? {};
+		delete savedHelpers[itemId];
+		storage.save({...storageState, helpers: savedHelpers});
+		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== itemId));
 	};
 
 	/**
 	 * The config array has seven positions
-	 * @typedef ConfigArray
-	 * @type {array}
-	 * @property {number}		0=0			low quality amount
-	 * @property {boolean}	1=false	low quality lock
-	 * @property {number}		2=0			mid quality amount
-	 * @property {boolean}	3=false	mid quality lock
-	 * @property {number}		4=0			high quality amount
-	 * @property {boolean}	5=false	high quality lock
-	 * @property {boolean}	6=0			super quality amount
+	 * @typedef ConfigObject
+	 * @type {Object}
+	 * @property {string} category - The type of the helper
+	 * @property {number} tierOne - The tier one value
+	 * @property {number | string} tierOneGoal - The tier one goal
+	 * @property {bool} tierOneLock - Is tier one locked
+	 * @property {number} tierTwo - The tier two value
+	 * @property {number | string} tierTwoGoal - The tier two goal
+	 * @property {bool} tierTwoLock - Is tier two locked
+	 * @property {number} tierThree - The tier three value
+	 * @property {number | string} tierThreeGoal - The tier three goal
+	 * @property {bool} tierThreeLock - Is tier three locked
+	 * @property {number} tierFour - The tier four value
+	 * @property {number | string} tierFourGoal - The tier four goal
 	 */
 
 	/**
 	 * Add a new helper with given Item
-	 * @type {(function({[config]: ConfigArray, itemName: string}): void)|*}
+	 * @type {(function({[config]: ConfigObject, itemId: string, category: string}): void)|*}
 	 */
 	const addHelperWithItem = useCallback(helper => {
-		const {config = [0, false, 0, false, 0, false, 0], itemName} = helper;
-		const savedHelpers = storage.load();
+		const {config, itemId, category} = helper;
 
-		const newHelpers = {...savedHelpers, [itemName]: config};
-		storage.save(newHelpers);
+		const storageState = storage.load();
+		const savedHelpers = storageState?.helpers ?? {};
+		const newHelpers = {...savedHelpers, [itemId]: config};
+		storage.save({...storageState, helpers: newHelpers});
 
-		const category = itemName.split('.')[0];
-		const item = itemName.split('.')[1];
 		setFarmHelperList(
 			previousHelpers =>
 				[
 					...previousHelpers,
 					<FarmHelper
-						key={item}
+						key={itemId}
 						category={category}
 						config={config}
-						item={item}
+						itemId={itemId}
 						materials={materials}
 						onRemove={onRemove}
 					/>,
@@ -183,16 +183,20 @@ export default function Main() {
 	}, []);
 
 	const onChange = event => {
-		addHelperWithItem({itemName: event.target.value});
+		const itemName = event.target.value;
+		const category = itemName.split('.')[0];
+		const itemId = itemName.split('.')[1];
+		addHelperWithItem({itemId, category});
 	};
 
 	useEffect(() => {
 		if (!didRun) {
 			didRun = true;
-			const savedHelpers = storage.load();
+			const storageState = storage.load();
+			const savedHelpers = storageState?.helpers;
 			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
-				for (const [key, value] of Object.entries(savedHelpers)) {
-					addHelperWithItem({itemName: key, config: value});
+				for (const [itemId, config] of Object.entries(savedHelpers)) {
+					addHelperWithItem({itemId, config, category: config.category});
 				}
 			} else {
 				// Storage is empty, create new

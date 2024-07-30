@@ -38,11 +38,12 @@ const DEFAULT_PROPERTIES = {
 function ItemPicker(properties) {
 	const {list, materials, type} = {...DEFAULT_PROPERTIES, ...filterObject(properties)};
 	return materials.map(material => {
+		const materialId = `${material.id}`;
 		const goesUpTo5 = Boolean(material['5starname']);
 		const rarity = type === materialTypes.BUILDING || type === materialTypes.LOCAL ? 0 : (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
 		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
 		const item = materials.find(material => material.name === highestName);
-		const disabled = list.includes(material.name);
+		const disabled = list.includes(materialId);
 		// eslint-disable-next-line no-warning-comments
 		// FIXME find a better way
 		// eslint-disable-next-line react-hooks/rules-of-hooks
@@ -60,8 +61,8 @@ function ItemPicker(properties) {
 		const name = removeQuotesFromString(material.name);
 
 		return (
-			<label key={name} css={wrapper} title={name} aria-disabled={disabled}>
-				<input type='radio' name='item' value={`${type}.${name}`} disabled={disabled}/>
+			<label key={`ItemPicker${materialId}`} css={wrapper} title={name} aria-disabled={disabled}>
+				<input type='radio' name='item' value={`${type}.${materialId}`} disabled={disabled}/>
 				<div style={{
 					backgroundImage: `url(${backgrounds[rarity]})`,
 				}}
