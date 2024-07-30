@@ -1,5 +1,20 @@
 const localStorageState = {
 	helpers: {
+		100_021: {
+			// Wolfhook
+			category: 'LOCAL',
+			tierOne: 1,
+			tierOneLock: true,
+			tierTwo: 0,
+			tierTwoLock: false,
+			tierThree: 0,
+			tierThreeLock: false,
+			tierFour: 0,
+			tierOneGoal: 2,
+			tierTwoGoal: '',
+			tierThreeGoal: '',
+			tierFourGoal: '',
+		},
 		101_001: {
 			// Iron Chunk
 			category: 'BUILDING',
