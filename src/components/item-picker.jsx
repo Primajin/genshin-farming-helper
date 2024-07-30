@@ -61,7 +61,7 @@ function ItemPicker(properties) {
 		const name = removeQuotesFromString(material.name);
 
 		return (
-			<label key={`ItemPicker${materialId}`} css={wrapper} title={name} aria-disabled={disabled}>
+			<label key={`ItemPicker${materialId}`} data-testid={`ItemPicker${materialId}`} css={wrapper} title={name} aria-disabled={disabled}>
 				<input type='radio' name='item' value={`${type}.${materialId}`} disabled={disabled}/>
 				<div style={{
 					backgroundImage: `url(${backgrounds[rarity]})`,
@@ -77,8 +77,8 @@ function ItemPicker(properties) {
 }
 
 ItemPicker.propTypes = {
-	list: PropTypes.array,
-	materials: PropTypes.array,
+	list: PropTypes.arrayOf(PropTypes.string),
+	materials: PropTypes.arrayOf(PropTypes.object),
 	type: PropTypes.string,
 };
 

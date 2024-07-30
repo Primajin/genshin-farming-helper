@@ -122,7 +122,7 @@ function ItemCategories({
 }
 
 ItemCategories.propTypes = {
-	list: PropTypes.array.isRequired,
+	list: PropTypes.arrayOf(PropTypes.string).isRequired,
 	materials: PropTypes.shape(materialsType).isRequired,
 	onChangeProp: PropTypes.func.isRequired,
 };

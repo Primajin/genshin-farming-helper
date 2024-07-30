@@ -22,30 +22,13 @@ describe('ItemCategories', () => {
 	});
 
 	it('disables items that are already in the list', () => {
-		const list = [
-			'Philosophies of Freedom',
-			'Scattered Piece of Decarabian\'s Dream',
-			'Slime Concentrate',
-			'Brilliant Diamond Gemstone',
-			'Hurricane Seed',
-			'Wolfhook',
-			'Medaka',
-			'Birch Wood',
-			'Philosophies of Freedom',
-			'Scattered Piece of Decarabian\'s Dream',
-			'Slime Concentrate',
-			'Brilliant Diamond Gemstone',
-			'Hurricane Seed',
-			'Wolfhook',
-			'Medaka',
-			'Birch Wood',
-		];
+		const list = ['100021', '101301', '104104', '104303', '112004', '113001', '114004', '131000'];
 
 		render(<ItemCategories list={list} materials={materials} onChangeProp={onChangeProperty}/>);
 
-		for (const item of list) {
-			const element = screen.getByLabelText(item);
-			expect(element).toBeDisabled();
+		for (const itemId of list) {
+			const label = screen.getByTestId(`ItemPicker${itemId}`);
+			expect(label.querySelector('input')).toBeDisabled();
 		}
 	});
 });
