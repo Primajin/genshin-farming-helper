@@ -38,12 +38,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
               <input
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Freedom"
+                value="TALENT.104303"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -63,12 +64,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
               <input
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Order"
+                value="TALENT.104346"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -100,12 +102,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Scattered Piece of Decarabian's Dream"
+                value="WEAPON.114004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -125,12 +128,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Golden Goblet of the Pristine Sea"
+                value="WEAPON.114060"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -161,12 +165,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Slime Concentrate"
+                value="ENHANCEMENT.112004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -186,12 +191,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Operative's Constancy"
+                value="ENHANCEMENT.112094"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -222,12 +228,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
               <input
                 name="item"
                 type="radio"
-                value="ASCENSION.Brilliant Diamond Gemstone"
+                value="ASCENSION.104104"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -258,12 +265,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Hurricane Seed"
+                value="LEVEL.113001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -283,12 +291,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightning Prism"
+                value="LEVEL.113002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -308,12 +317,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Plume"
+                value="LEVEL.113003"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -333,12 +343,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Claw"
+                value="LEVEL.113004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -358,12 +369,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Sigh"
+                value="LEVEL.113005"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -383,12 +395,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightless Mass"
+                value="LEVEL.113056"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -408,12 +421,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Water That Failed To Transcend"
+                value="LEVEL.113057"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -444,12 +458,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100021"
               title="Wolfhook"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Wolfhook"
+                value="LOCAL.100021"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -469,12 +484,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100022"
               title="Valberry"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Valberry"
+                value="LOCAL.100022"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -494,12 +510,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Subdetection Unit"
+                value="LOCAL.101239"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -519,12 +536,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Spring of the First Dewdrop"
+                value="LOCAL.101240"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -555,12 +573,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131000"
               title="Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Medaka"
+                value="FISH.131000"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -580,12 +599,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Glaze Medaka"
+                value="FISH.131001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -605,12 +625,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Sweet-Flower Medaka"
+                value="FISH.131002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -630,12 +651,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Maintenance Mek: Gold Leader"
+                value="FISH.131036"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -666,12 +688,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101301"
               title="Birch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Birch Wood"
+                value="WOOD.101301"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -691,12 +714,13 @@ exports[`Main > renders without crashing 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101322"
               title="Torch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Torch Wood"
+                value="WOOD.101322"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -767,12 +791,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
             <input
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Freedom"
+              value="TALENT.104303"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -792,12 +817,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
             <input
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Order"
+              value="TALENT.104346"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -829,12 +855,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Scattered Piece of Decarabian's Dream"
+              value="WEAPON.114004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -854,12 +881,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Golden Goblet of the Pristine Sea"
+              value="WEAPON.114060"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -890,12 +918,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Slime Concentrate"
+              value="ENHANCEMENT.112004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -915,12 +944,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Operative's Constancy"
+              value="ENHANCEMENT.112094"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -951,12 +981,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
             <input
               name="item"
               type="radio"
-              value="ASCENSION.Brilliant Diamond Gemstone"
+              value="ASCENSION.104104"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -987,12 +1018,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Hurricane Seed"
+              value="LEVEL.113001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1012,12 +1044,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightning Prism"
+              value="LEVEL.113002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1037,12 +1070,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Plume"
+              value="LEVEL.113003"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1062,12 +1096,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Claw"
+              value="LEVEL.113004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1087,12 +1122,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Sigh"
+              value="LEVEL.113005"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1112,12 +1148,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightless Mass"
+              value="LEVEL.113056"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1137,12 +1174,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Water That Failed To Transcend"
+              value="LEVEL.113057"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1173,12 +1211,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100021"
             title="Wolfhook"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Wolfhook"
+              value="LOCAL.100021"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -1198,12 +1237,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100022"
             title="Valberry"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Valberry"
+              value="LOCAL.100022"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -1223,12 +1263,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Subdetection Unit"
+              value="LOCAL.101239"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -1248,12 +1289,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Spring of the First Dewdrop"
+              value="LOCAL.101240"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -1284,12 +1326,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131000"
             title="Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Medaka"
+              value="FISH.131000"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -1309,12 +1352,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Glaze Medaka"
+              value="FISH.131001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -1334,12 +1378,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Sweet-Flower Medaka"
+              value="FISH.131002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -1359,12 +1404,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Maintenance Mek: Gold Leader"
+              value="FISH.131036"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -1395,12 +1441,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101301"
             title="Birch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Birch Wood"
+              value="WOOD.101301"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -1420,12 +1467,13 @@ exports[`Main > renders without crashing 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101322"
             title="Torch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Torch Wood"
+              value="WOOD.101322"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -1791,13 +1839,14 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="true"
               class="css-4wqkks"
+              data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
               <input
                 disabled=""
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Freedom"
+                value="TALENT.104303"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1817,12 +1866,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
               <input
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Order"
+                value="TALENT.104346"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1854,12 +1904,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Scattered Piece of Decarabian's Dream"
+                value="WEAPON.114004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1879,12 +1930,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Golden Goblet of the Pristine Sea"
+                value="WEAPON.114060"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -1915,12 +1967,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Slime Concentrate"
+                value="ENHANCEMENT.112004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -1940,12 +1993,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Operative's Constancy"
+                value="ENHANCEMENT.112094"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -1976,12 +2030,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
               <input
                 name="item"
                 type="radio"
-                value="ASCENSION.Brilliant Diamond Gemstone"
+                value="ASCENSION.104104"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2012,12 +2067,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Hurricane Seed"
+                value="LEVEL.113001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2037,12 +2093,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightning Prism"
+                value="LEVEL.113002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2062,12 +2119,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Plume"
+                value="LEVEL.113003"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2087,12 +2145,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Claw"
+                value="LEVEL.113004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2112,12 +2171,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Sigh"
+                value="LEVEL.113005"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2137,12 +2197,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightless Mass"
+                value="LEVEL.113056"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2162,12 +2223,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Water That Failed To Transcend"
+                value="LEVEL.113057"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2198,12 +2260,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100021"
               title="Wolfhook"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Wolfhook"
+                value="LOCAL.100021"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2223,12 +2286,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100022"
               title="Valberry"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Valberry"
+                value="LOCAL.100022"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2248,12 +2312,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Subdetection Unit"
+                value="LOCAL.101239"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2273,12 +2338,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Spring of the First Dewdrop"
+                value="LOCAL.101240"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2309,12 +2375,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131000"
               title="Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Medaka"
+                value="FISH.131000"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -2334,12 +2401,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Glaze Medaka"
+                value="FISH.131001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -2359,12 +2427,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Sweet-Flower Medaka"
+                value="FISH.131002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -2384,12 +2453,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Maintenance Mek: Gold Leader"
+                value="FISH.131036"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -2420,12 +2490,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101301"
               title="Birch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Birch Wood"
+                value="WOOD.101301"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2445,12 +2516,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101322"
               title="Torch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Torch Wood"
+                value="WOOD.101322"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -2759,13 +2831,14 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="true"
             class="css-4wqkks"
+            data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
             <input
               disabled=""
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Freedom"
+              value="TALENT.104303"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2785,12 +2858,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
             <input
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Order"
+              value="TALENT.104346"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2822,12 +2896,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Scattered Piece of Decarabian's Dream"
+              value="WEAPON.114004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2847,12 +2922,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Golden Goblet of the Pristine Sea"
+              value="WEAPON.114060"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2883,12 +2959,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Slime Concentrate"
+              value="ENHANCEMENT.112004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -2908,12 +2985,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Operative's Constancy"
+              value="ENHANCEMENT.112094"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -2944,12 +3022,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
             <input
               name="item"
               type="radio"
-              value="ASCENSION.Brilliant Diamond Gemstone"
+              value="ASCENSION.104104"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -2980,12 +3059,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Hurricane Seed"
+              value="LEVEL.113001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3005,12 +3085,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightning Prism"
+              value="LEVEL.113002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3030,12 +3111,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Plume"
+              value="LEVEL.113003"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3055,12 +3137,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Claw"
+              value="LEVEL.113004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3080,12 +3163,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Sigh"
+              value="LEVEL.113005"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3105,12 +3189,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightless Mass"
+              value="LEVEL.113056"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3130,12 +3215,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Water That Failed To Transcend"
+              value="LEVEL.113057"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3166,12 +3252,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100021"
             title="Wolfhook"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Wolfhook"
+              value="LOCAL.100021"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -3191,12 +3278,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100022"
             title="Valberry"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Valberry"
+              value="LOCAL.100022"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -3216,12 +3304,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Subdetection Unit"
+              value="LOCAL.101239"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -3241,12 +3330,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Spring of the First Dewdrop"
+              value="LOCAL.101240"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -3277,12 +3367,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131000"
             title="Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Medaka"
+              value="FISH.131000"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -3302,12 +3393,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Glaze Medaka"
+              value="FISH.131001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -3327,12 +3419,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Sweet-Flower Medaka"
+              value="FISH.131002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -3352,12 +3445,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Maintenance Mek: Gold Leader"
+              value="FISH.131036"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -3388,12 +3482,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101301"
             title="Birch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Birch Wood"
+              value="WOOD.101301"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -3413,12 +3508,13 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101322"
             title="Torch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Torch Wood"
+              value="WOOD.101322"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -3784,13 +3880,14 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="true"
               class="css-4wqkks"
+              data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
               <input
                 disabled=""
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Freedom"
+                value="TALENT.104303"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3810,12 +3907,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
               <input
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Order"
+                value="TALENT.104346"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3847,12 +3945,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Scattered Piece of Decarabian's Dream"
+                value="WEAPON.114004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3872,12 +3971,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Golden Goblet of the Pristine Sea"
+                value="WEAPON.114060"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -3908,12 +4008,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Slime Concentrate"
+                value="ENHANCEMENT.112004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -3933,12 +4034,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Operative's Constancy"
+                value="ENHANCEMENT.112094"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -3969,12 +4071,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
               <input
                 name="item"
                 type="radio"
-                value="ASCENSION.Brilliant Diamond Gemstone"
+                value="ASCENSION.104104"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4005,12 +4108,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Hurricane Seed"
+                value="LEVEL.113001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4030,12 +4134,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightning Prism"
+                value="LEVEL.113002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4055,12 +4160,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Plume"
+                value="LEVEL.113003"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4080,12 +4186,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Claw"
+                value="LEVEL.113004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4105,12 +4212,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Sigh"
+                value="LEVEL.113005"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4130,12 +4238,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightless Mass"
+                value="LEVEL.113056"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4155,12 +4264,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Water That Failed To Transcend"
+                value="LEVEL.113057"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4191,12 +4301,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100021"
               title="Wolfhook"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Wolfhook"
+                value="LOCAL.100021"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4216,12 +4327,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100022"
               title="Valberry"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Valberry"
+                value="LOCAL.100022"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4241,12 +4353,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Subdetection Unit"
+                value="LOCAL.101239"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4266,12 +4379,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Spring of the First Dewdrop"
+                value="LOCAL.101240"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4302,12 +4416,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131000"
               title="Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Medaka"
+                value="FISH.131000"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -4327,12 +4442,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Glaze Medaka"
+                value="FISH.131001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -4352,12 +4468,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Sweet-Flower Medaka"
+                value="FISH.131002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -4377,12 +4494,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Maintenance Mek: Gold Leader"
+                value="FISH.131036"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -4413,12 +4531,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101301"
               title="Birch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Birch Wood"
+                value="WOOD.101301"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4438,12 +4557,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101322"
               title="Torch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Torch Wood"
+                value="WOOD.101322"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -4752,13 +4872,14 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="true"
             class="css-4wqkks"
+            data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
             <input
               disabled=""
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Freedom"
+              value="TALENT.104303"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4778,12 +4899,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
             <input
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Order"
+              value="TALENT.104346"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4815,12 +4937,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Scattered Piece of Decarabian's Dream"
+              value="WEAPON.114004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4840,12 +4963,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Golden Goblet of the Pristine Sea"
+              value="WEAPON.114060"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4876,12 +5000,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Slime Concentrate"
+              value="ENHANCEMENT.112004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -4901,12 +5026,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Operative's Constancy"
+              value="ENHANCEMENT.112094"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4937,12 +5063,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
             <input
               name="item"
               type="radio"
-              value="ASCENSION.Brilliant Diamond Gemstone"
+              value="ASCENSION.104104"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -4973,12 +5100,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Hurricane Seed"
+              value="LEVEL.113001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -4998,12 +5126,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightning Prism"
+              value="LEVEL.113002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5023,12 +5152,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Plume"
+              value="LEVEL.113003"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5048,12 +5178,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Claw"
+              value="LEVEL.113004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5073,12 +5204,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Sigh"
+              value="LEVEL.113005"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5098,12 +5230,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightless Mass"
+              value="LEVEL.113056"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5123,12 +5256,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Water That Failed To Transcend"
+              value="LEVEL.113057"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5159,12 +5293,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100021"
             title="Wolfhook"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Wolfhook"
+              value="LOCAL.100021"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5184,12 +5319,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100022"
             title="Valberry"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Valberry"
+              value="LOCAL.100022"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5209,12 +5345,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Subdetection Unit"
+              value="LOCAL.101239"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5234,12 +5371,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Spring of the First Dewdrop"
+              value="LOCAL.101240"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5270,12 +5408,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131000"
             title="Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Medaka"
+              value="FISH.131000"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -5295,12 +5434,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Glaze Medaka"
+              value="FISH.131001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -5320,12 +5460,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Sweet-Flower Medaka"
+              value="FISH.131002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -5345,12 +5486,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Maintenance Mek: Gold Leader"
+              value="FISH.131036"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -5381,12 +5523,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101301"
             title="Birch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Birch Wood"
+              value="WOOD.101301"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5406,12 +5549,13 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101322"
             title="Torch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Torch Wood"
+              value="WOOD.101322"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5539,12 +5683,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
               <input
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Freedom"
+                value="TALENT.104303"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5564,12 +5709,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
               <input
                 name="item"
                 type="radio"
-                value="TALENT.Philosophies of Order"
+                value="TALENT.104346"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5601,12 +5747,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Scattered Piece of Decarabian's Dream"
+                value="WEAPON.114004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5626,12 +5773,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
               <input
                 name="item"
                 type="radio"
-                value="WEAPON.Golden Goblet of the Pristine Sea"
+                value="WEAPON.114060"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5662,12 +5810,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Slime Concentrate"
+                value="ENHANCEMENT.112004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -5687,12 +5836,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
               <input
                 name="item"
                 type="radio"
-                value="ENHANCEMENT.Operative's Constancy"
+                value="ENHANCEMENT.112094"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5723,12 +5873,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
               <input
                 name="item"
                 type="radio"
-                value="ASCENSION.Brilliant Diamond Gemstone"
+                value="ASCENSION.104104"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5759,12 +5910,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Hurricane Seed"
+                value="LEVEL.113001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5784,12 +5936,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightning Prism"
+                value="LEVEL.113002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5809,12 +5962,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Plume"
+                value="LEVEL.113003"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5834,12 +5988,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Claw"
+                value="LEVEL.113004"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5859,12 +6014,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Dvalin's Sigh"
+                value="LEVEL.113005"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5884,12 +6040,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Lightless Mass"
+                value="LEVEL.113056"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -5909,12 +6066,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
               <input
                 name="item"
                 type="radio"
-                value="LEVEL.Water That Failed To Transcend"
+                value="LEVEL.113057"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -5945,12 +6103,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100021"
               title="Wolfhook"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Wolfhook"
+                value="LOCAL.100021"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5970,12 +6129,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker100022"
               title="Valberry"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Valberry"
+                value="LOCAL.100022"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -5995,12 +6155,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Subdetection Unit"
+                value="LOCAL.101239"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6020,12 +6181,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
               <input
                 name="item"
                 type="radio"
-                value="LOCAL.Spring of the First Dewdrop"
+                value="LOCAL.101240"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6056,12 +6218,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131000"
               title="Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Medaka"
+                value="FISH.131000"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6081,12 +6244,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Glaze Medaka"
+                value="FISH.131001"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6106,12 +6270,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Sweet-Flower Medaka"
+                value="FISH.131002"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6131,12 +6296,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
               <input
                 name="item"
                 type="radio"
-                value="FISH.Maintenance Mek: Gold Leader"
+                value="FISH.131036"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6167,12 +6333,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101301"
               title="Birch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Birch Wood"
+                value="WOOD.101301"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6192,12 +6359,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
             <label
               aria-disabled="false"
               class="css-4wqkks"
+              data-testid="ItemPicker101322"
               title="Torch Wood"
             >
               <input
                 name="item"
                 type="radio"
-                value="WOOD.Torch Wood"
+                value="WOOD.101322"
               />
               <div
                 style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6268,12 +6436,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
             <input
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Freedom"
+              value="TALENT.104303"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -6293,12 +6462,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
             <input
               name="item"
               type="radio"
-              value="TALENT.Philosophies of Order"
+              value="TALENT.104346"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -6330,12 +6500,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Scattered Piece of Decarabian's Dream"
+              value="WEAPON.114004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6355,12 +6526,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
             <input
               name="item"
               type="radio"
-              value="WEAPON.Golden Goblet of the Pristine Sea"
+              value="WEAPON.114060"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6391,12 +6563,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Slime Concentrate"
+              value="ENHANCEMENT.112004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6416,12 +6589,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
             <input
               name="item"
               type="radio"
-              value="ENHANCEMENT.Operative's Constancy"
+              value="ENHANCEMENT.112094"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -6452,12 +6626,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
             <input
               name="item"
               type="radio"
-              value="ASCENSION.Brilliant Diamond Gemstone"
+              value="ASCENSION.104104"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6488,12 +6663,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Hurricane Seed"
+              value="LEVEL.113001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -6513,12 +6689,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightning Prism"
+              value="LEVEL.113002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -6538,12 +6715,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Plume"
+              value="LEVEL.113003"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6563,12 +6741,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Claw"
+              value="LEVEL.113004"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6588,12 +6767,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Dvalin's Sigh"
+              value="LEVEL.113005"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6613,12 +6793,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Lightless Mass"
+              value="LEVEL.113056"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
@@ -6638,12 +6819,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
             <input
               name="item"
               type="radio"
-              value="LEVEL.Water That Failed To Transcend"
+              value="LEVEL.113057"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
@@ -6674,12 +6856,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100021"
             title="Wolfhook"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Wolfhook"
+              value="LOCAL.100021"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6699,12 +6882,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker100022"
             title="Valberry"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Valberry"
+              value="LOCAL.100022"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6724,12 +6908,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Subdetection Unit"
+              value="LOCAL.101239"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6749,12 +6934,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
             <input
               name="item"
               type="radio"
-              value="LOCAL.Spring of the First Dewdrop"
+              value="LOCAL.101240"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6785,12 +6971,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131000"
             title="Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Medaka"
+              value="FISH.131000"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6810,12 +6997,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Glaze Medaka"
+              value="FISH.131001"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6835,12 +7023,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Sweet-Flower Medaka"
+              value="FISH.131002"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6860,12 +7049,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
             <input
               name="item"
               type="radio"
-              value="FISH.Maintenance Mek: Gold Leader"
+              value="FISH.131036"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
@@ -6896,12 +7086,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101301"
             title="Birch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Birch Wood"
+              value="WOOD.101301"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
@@ -6921,12 +7112,13 @@ exports[`Main > renders without crashing and all them buttons clicked 3`] = `
           <label
             aria-disabled="false"
             class="css-4wqkks"
+            data-testid="ItemPicker101322"
             title="Torch Wood"
           >
             <input
               name="item"
               type="radio"
-              value="WOOD.Torch Wood"
+              value="WOOD.101322"
             />
             <div
               style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
