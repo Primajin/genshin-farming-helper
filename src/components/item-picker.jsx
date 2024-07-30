@@ -41,18 +41,16 @@ function ItemPicker(properties) {
 		const materialId = `${material.id}`;
 		const goesUpTo5 = Boolean(material['5starname']);
 		const rarity = type === materialTypes.BUILDING || type === materialTypes.LOCAL ? 0 : (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
-		const highestName = material['5starname'] ?? material['4starname'] ?? material.name;
-		const item = materials.find(material => material.name === highestName);
 		const disabled = list.includes(materialId);
 		// eslint-disable-next-line no-warning-comments
 		// FIXME find a better way
 		// eslint-disable-next-line react-hooks/rules-of-hooks
-		const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
+		const [source, setSource] = useState(`${IMG_URL}${material.images?.filename_icon}.png`);
 
 		let tooManyRetries = 0;
 		const tryOtherUrl = () => {
 			if (!tooManyRetries) {
-				setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
+				setSource(`${IMG_URL2}${material.images?.filename_icon}.png`);
 			}
 
 			tooManyRetries++;
