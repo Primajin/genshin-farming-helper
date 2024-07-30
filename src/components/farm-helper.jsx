@@ -8,7 +8,7 @@ import theme from '../theme';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
 } from '../constants';
-import {materialsType} from '../types';
+import {helpersType, materialsType} from '../types';
 import {up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
@@ -124,8 +124,8 @@ const reachedGoal = css`
 
 function FarmHelper({
 	category,
-	config,
-	item,
+	config = {},
+	itemId,
 	materials: {
 		buildingMaterials,
 		characterAscensionMaterials,
@@ -139,126 +139,70 @@ function FarmHelper({
 	},
 	onRemove,
 }) {
-	let items = [];
-	let queryItem;
-	let dropsIndex = 0;
-	switch (category) {
-		case materialTypes.ASCENSION: {
-			items = characterAscensionMaterials.filter(material => material.name.startsWith(item.split(' ')[0]));
-			break;
-		}
+	const materials = [
+		...buildingMaterials,
+		...characterAscensionMaterials,
+		...characterLVLMaterials,
+		...characterWeaponEnhancementMaterials,
+		...fish,
+		...localSpecialties,
+		...talentMaterials,
+		...weaponMaterials,
+		...wood,
+	];
 
-		case materialTypes.BUILDING: {
-			items = [buildingMaterials.find(material => material.name === item)];
-			break;
-		}
+	const materialId = Number.parseInt(itemId, 10);
+	const rawItem = materials.find(material => material.id === materialId);
 
-		case materialTypes.ENHANCEMENT: {
-			const reversedCharacterWeaponEnhancementMaterials = characterWeaponEnhancementMaterials.slice();
-			queryItem = characterWeaponEnhancementMaterials.find(material => material.name === item);
-			dropsIndex = reversedCharacterWeaponEnhancementMaterials.findIndex(material => material.name === item);
+	const multipleItem = category === materialTypes.ENHANCEMENT || category === materialTypes.WEAPON || category === materialTypes.TALENT || category === materialTypes.ASCENSION;
+	const items = multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem];
 
-			items = [
-				reversedCharacterWeaponEnhancementMaterials[dropsIndex - 2],
-				reversedCharacterWeaponEnhancementMaterials[dropsIndex - 1],
-				reversedCharacterWeaponEnhancementMaterials[dropsIndex],
-			];
-			break;
-		}
-
-		case materialTypes.FISH: {
-			items = [fish.find(material => material.name === item)];
-			break;
-		}
-
-		case materialTypes.LEVEL: {
-			items = [characterLVLMaterials.find(material => material.name === item)];
-			break;
-		}
-
-		case materialTypes.LOCAL: {
-			items = [localSpecialties.find(material => material.name === item)];
-			break;
-		}
-
-		case materialTypes.TALENT: {
-			queryItem = talentMaterials.find(material => material.name === item);
-			items = talentMaterials.filter(material => material.sortRank === queryItem.sortRank);
-			break;
-		}
-
-		case materialTypes.WEAPON: {
-			queryItem = weaponMaterials.find(material => material.name === item);
-			items = weaponMaterials.filter(material => material.sortRank === queryItem.sortRank);
-			break;
-		}
-
-		case materialTypes.WOOD: {
-			items = [wood.find(material => material.name === item)];
-			break;
-		}
-
-		default: {
-			console.warn('encountered unexpected item of type', category, item);
-		}
-	}
-
+	// 1
 	const hasJustOne = items.length === 1;
-	const hasTierFour = items.length > 3;
+	const [tierOne, setTierOne] = useState(config.tierOne ?? 0);
+	const [tierOneLock, setTierOneLock] = useState(config.tierOneLock || hasJustOne);
+	const [tierOneGoal, setTierOneGoal] = useState(config.tierOneGoal ?? '');
+	const incrementTierOne = () => setTierOne(tierOne + 1);
 
-	const [tierOne, setTierOne] = useState(config[0]);
-	const [lockTierOne, setLockTierOne] = useState(config[1] || hasJustOne);
-	const [tierTwo, setTierTwo] = useState(config[2]);
-	const [lockTierTwo, setLockTierTwo] = useState(config[3]);
-	const [tierThree, setTierThree] = useState(config[4]);
-	const [lockTierThree, setLockTierThree] = useState(config[5]);
-	const [tierFour, setTierFour] = useState(config[6]);
-
-	const [tierOneGoal, setTierOneGoal] = useState(config[7] ?? '');
-	const [tierTwoGoal, setTierTwoGoal] = useState(config[8] ?? '');
-	const [tierThreeGoal, setTierThreeGoal] = useState(config[9] ?? '');
-	const [tierFourGoal, setTierFourGoal] = useState(config[10] ?? '');
-
-	const incrementTierOne = () => {
-		setTierOne(tierOne + 1);
-	};
-
-	const incrementTierTwo = () => {
-		setTierTwo(tierTwo + 1);
-	};
-
-	const incrementTierThree = () => {
-		setTierThree(tierThree + 1);
-	};
-
-	const incrementTierFour = () => {
-		setTierFour(tierFour + 1);
-	};
-
+	// 2
+	const [tierTwo, setTierTwo] = useState(config.tierTwo ?? 0);
+	const [tierTwoLock, setTierTwoLock] = useState(config.tierTwoLock ?? false);
+	const [tierTwoGoal, setTierTwoGoal] = useState(config.tierTwoGoal ?? '');
+	const incrementTierTwo = () => setTierTwo(tierTwo + 1);
 	useEffect(() => {
-		if (!lockTierOne && tierOne && tierOne / 3 >= 1) {
+		if (!tierOneLock && tierOne && tierOne / 3 >= 1) {
 			setTierTwo(Math.floor(tierOne / 3) + tierTwo);
 			setTierOne(tierOne % 3);
 		}
-	}, [lockTierOne, tierOne, tierTwo]);
+	}, [tierOneLock, tierOne, tierTwo]);
 
+	// 3
+	const [tierThree, setTierThree] = useState(config.tierThree ?? 0);
+	const [tierThreeLock, setTierThreeLock] = useState(config.tierThreeLock ?? false);
+	const [tierThreeGoal, setTierThreeGoal] = useState(config.tierThreeGoal ?? '');
+	const incrementTierThree = () => setTierThree(tierThree + 1);
 	useEffect(() => {
-		if (!lockTierTwo && tierTwo && tierTwo / 3 >= 1) {
+		if (!tierTwoLock && tierTwo && tierTwo / 3 >= 1) {
 			setTierThree(Math.floor(tierTwo / 3) + tierThree);
 			setTierTwo(tierTwo % 3);
 		}
-	}, [lockTierTwo, tierTwo, tierThree]);
+	}, [tierTwoLock, tierTwo, tierThree]);
 
+	// 4
+	const [tierFour, setTierFour] = useState(config.tierFour ?? 0);
+	const [tierFourGoal, setTierFourGoal] = useState(config.tierFourGoal ?? '');
+	const incrementTierFour = () => setTierFour(tierFour + 1);
+	const hasTierFour = items.length > 3;
 	useEffect(() => {
-		if (!lockTierThree && hasTierFour && tierThree && tierThree / 3 >= 1) {
+		if (hasTierFour && !tierThreeLock && tierThree && tierThree / 3 >= 1) {
 			setTierFour(Math.floor(tierThree / 3) + tierFour);
 			setTierThree(tierThree % 3);
 		}
-	}, [lockTierThree, hasTierFour, tierThree, tierFour]);
+	}, [tierThreeLock, hasTierFour, tierThree, tierFour]);
 
 	const incrementTier = [incrementTierOne, incrementTierTwo, incrementTierThree, incrementTierFour];
-	const setLockTier = [setLockTierOne, setLockTierTwo, setLockTierThree];
-	const lockedTier = [lockTierOne, lockTierTwo, lockTierThree];
+	const setLockTier = [setTierOneLock, setTierTwoLock, setTierThreeLock];
+	const lockedTier = [tierOneLock, tierTwoLock, tierThreeLock];
 	const tierValue = [tierOne, tierTwo, tierThree, tierFour];
 	const goalValue = [tierOneGoal, tierTwoGoal, tierThreeGoal, tierFourGoal];
 	const setGoalValue = [setTierOneGoal, setTierTwoGoal, setTierThreeGoal, setTierFourGoal];
@@ -274,24 +218,26 @@ function FarmHelper({
 		}
 	};
 
-	const savedHelpers = storage.load();
-	const newHelpers = {
-		...savedHelpers,
-		[`${category}.${item}`]: [
-			tierOne,
-			lockTierOne,
-			tierTwo,
-			lockTierTwo,
-			tierThree,
-			lockTierThree,
-			tierFour,
-			tierOneGoal,
-			tierTwoGoal,
-			tierThreeGoal,
-			tierFourGoal,
-		],
+	const storageState = storage.load();
+	const savedHelpers = storageState?.helpers ?? {};
+
+	const newConfig = {
+		...config,
+		category,
+		tierFour,
+		tierFourGoal,
+		tierOne,
+		tierOneGoal,
+		tierOneLock,
+		tierThree,
+		tierThreeGoal,
+		tierThreeLock,
+		tierTwo,
+		tierTwoGoal,
+		tierTwoLock,
 	};
-	storage.save(newHelpers);
+	const newHelpers = {...savedHelpers, [itemId]: newConfig};
+	storage.save({...storageState, helpers: newHelpers});
 
 	return (
 		<section>
@@ -366,7 +312,7 @@ function FarmHelper({
 				css={[actions, removeButton]}
 				title='Remove item'
 				type='button'
-				onClick={() => onRemove(item)}
+				onClick={() => onRemove(itemId)}
 			>
 				close
 			</button>
@@ -376,12 +322,8 @@ function FarmHelper({
 
 FarmHelper.propTypes = {
 	category: PropTypes.string.isRequired,
-	config: PropTypes.arrayOf(PropTypes.oneOfType([
-		PropTypes.bool,
-		PropTypes.number,
-		PropTypes.string,
-	])).isRequired,
-	item: PropTypes.string.isRequired,
+	config: PropTypes.shape(helpersType),
+	itemId: PropTypes.string.isRequired,
 	materials: PropTypes.shape(materialsType).isRequired,
 	onRemove: PropTypes.func.isRequired,
 };

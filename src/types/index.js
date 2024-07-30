@@ -11,3 +11,19 @@ export const materialsType = {
 	weaponMaterials: PropTypes.arrayOf(PropTypes.object),
 	wood: PropTypes.arrayOf(PropTypes.object),
 };
+
+export const helpersType = {
+	name: PropTypes.string,
+	tierFour: PropTypes.number,
+	tierFourGoal: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+	tierOne: PropTypes.number,
+	tierOneGoal: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+	tierOneLock: PropTypes.bool,
+	tierThree: PropTypes.number,
+	tierThreeGoal: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+	tierThreeLock: PropTypes.bool,
+	tierTwo: PropTypes.number,
+	tierTwoGoal: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+	tierTwoLock: PropTypes.bool,
+	type: PropTypes.string,
+};
