@@ -20,27 +20,63 @@ const {
 } = materialTypes;
 
 const materialMap = new Map([
-	[ASCENSION, {name: 'Brilliant Diamond Gemstone', tiers: 4}],
-	[BUILDING, {name: 'Iron Chunk', tiers: 1}],
-	[ENHANCEMENT, {name: 'Slime Concentrate', tiers: 3}],
-	[FISH, {name: 'Medaka', tiers: 1}],
-	[LEVEL, {name: 'Dvalin\'s Plume', tiers: 1}],
-	[LOCAL, {name: 'Wolfhook', tiers: 1}],
-	[TALENT, {name: 'Philosophies of Freedom', tiers: 3}],
-	[WEAPON, {name: 'Scattered Piece of Decarabian\'s Dream', tiers: 4}],
-	[WOOD, {name: 'Birch Wood', tiers: 1}],
+	[ASCENSION, {id: 104_104, name: 'Brilliant Diamond Gemstone', tiers: 4}],
+	[BUILDING, {id: 101_001, name: 'Iron Chunk', tiers: 1}],
+	[ENHANCEMENT, {id: 112_004, name: 'Slime Concentrate', tiers: 3}],
+	[FISH, {id: 131_000, name: 'Medaka', tiers: 1}],
+	[LEVEL, {id: 113_003, name: 'Dvalin\'s Plume', tiers: 1}],
+	[LOCAL, {id: 100_021, name: 'Wolfhook', tiers: 1}],
+	[TALENT, {id: 104_303, name: 'Philosophies of Freedom', tiers: 3}],
+	[WEAPON, {id: 114_004, name: 'Scattered Piece of Decarabian\'s Dream', tiers: 4}],
+	[WOOD, {id: 101_301, name: 'Birch Wood', tiers: 1}],
 ]);
 
-const config = [0, false, 1, false, 2, false, 3];
-const configWithLock = [0, false, 1, true, 2, false, 3];
-const configWithLockPrefilled = [0, false, 4, true, 2, false, 3];
-const configWithTargetsSet = [1, false, 2, false, 3, true, 4, '', '', 3, 5];
+const config = {
+	tierOne: 0,
+	tierOneLock: false,
+	tierTwo: 1,
+	tierTwoLock: false,
+	tierThree: 2,
+	tierThreeLock: false,
+	tierFour: 3,
+};
+const configWithLock = {
+	tierOne: 0,
+	tierOneLock: false,
+	tierTwo: 1,
+	tierTwoLock: true,
+	tierThree: 2,
+	tierThreeLock: false,
+	tierFour: 3,
+};
+const configWithLockPrefilled = {
+	tierOne: 0,
+	tierOneLock: false,
+	tierTwo: 4,
+	tierTwoLock: true,
+	tierThree: 2,
+	tierThreeLock: false,
+	tierFour: 3,
+};
+const configWithTargetsSet = {
+	tierOne: 1,
+	tierOneLock: false,
+	tierTwo: 2,
+	tierTwoLock: true,
+	tierThree: 3,
+	tierThreeLock: true,
+	tierFour: 4,
+	tierOneGoal: '',
+	tierTwoGoal: '',
+	tierThreeGoal: 3,
+	tierFourGoal: 5,
+};
 
 const globalMockRemove = vi.fn();
 describe('FarmHelper', () => {
-	for (const [category, {name, tiers}] of materialMap) {
+	for (const [category, {id, name, tiers}] of materialMap) {
 		it(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
-			const rendering = render(<FarmHelper category={category} config={config} item={name} materials={materials} onRemove={globalMockRemove}/>);
+			const rendering = render(<FarmHelper category={category} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 			expect(rendering).toMatchSnapshot();
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
@@ -48,7 +84,7 @@ describe('FarmHelper', () => {
 		});
 
 		it(`increases counter correctly for ${category} ${name} on first tier`, () => {
-			render(<FarmHelper category={category} config={config} item={name} materials={materials} onRemove={globalMockRemove}/>);
+			render(<FarmHelper category={category} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -105,7 +141,7 @@ describe('FarmHelper', () => {
 		});
 
 		it(`increases counter correctly for ${category} ${name} when second tier is locked`, () => {
-			render(<FarmHelper category={category} config={configWithLock} item={name} materials={materials} onRemove={globalMockRemove}/>);
+			render(<FarmHelper category={category} config={configWithLock} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -163,7 +199,7 @@ describe('FarmHelper', () => {
 
 		if (tiers > 1) {
 			it(`correctly tallies for ${category} ${name} when lock is lifted`, async () => {
-				render(<FarmHelper category={category} config={configWithLockPrefilled} item={name} materials={materials} onRemove={globalMockRemove}/>);
+				render(<FarmHelper category={category} config={configWithLockPrefilled} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 				const buttons = screen.getAllByTestId(/button-tier-/);
 				const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -215,7 +251,7 @@ describe('FarmHelper', () => {
 
 		if (tiers > 3) {
 			it(`correctly shows targets for ${category} ${name} when they are set`, async () => {
-				render(<FarmHelper category={category} config={configWithTargetsSet} item={name} materials={materials} onRemove={globalMockRemove}/>);
+				render(<FarmHelper category={category} config={configWithTargetsSet} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 				const buttons = screen.getAllByTestId(/button-tier-/);
 				const lastButton = buttons.at(-1);
@@ -225,9 +261,9 @@ describe('FarmHelper', () => {
 	}
 
 	it('increases correctly if every button was clicked sequentially', () => {
-		const {name} = materialMap.get(ASCENSION);
+		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} item={name} materials={materials} onRemove={globalMockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 		const buttons = screen.getAllByTestId(/button-tier-/);
 		const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -243,9 +279,9 @@ describe('FarmHelper', () => {
 	});
 
 	it('sets a goal and changes to green when goal is reached', () => {
-		const {name} = materialMap.get(ASCENSION);
+		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} item={name} materials={materials} onRemove={globalMockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 		const goalLabels = screen.getAllByTestId('goal-label');
 		const buttons = screen.getAllByTestId(/button-tier-/);
@@ -281,9 +317,9 @@ describe('FarmHelper', () => {
 	});
 
 	it('removes a goal and changes back to grey when goal is removed', () => {
-		const {name} = materialMap.get(ASCENSION);
+		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} item={name} materials={materials} onRemove={globalMockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 
 		const goalLabels = screen.getAllByTestId('goal-label');
 		const buttons = screen.getAllByTestId(/button-tier-/);
@@ -330,9 +366,9 @@ describe('FarmHelper', () => {
 
 	it('calls remove correctly when button is clicked', () => {
 		const mockRemove = vi.fn();
-		const {name} = materialMap.get(ASCENSION);
+		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} item={name} materials={materials} onRemove={mockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={mockRemove}/>);
 
 		const removeButton = screen.getByTitle('Remove item');
 		fireEvent.click(removeButton);
