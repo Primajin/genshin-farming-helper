@@ -3,7 +3,7 @@ import process from 'node:process';
 import {fileURLToPath} from 'node:url';
 import {defineConfig, searchForWorkspaceRoot} from 'vite';
 import react from '@vitejs/plugin-react';
-import {configDefaults} from 'vitest/config';
+import {configDefaults, coverageConfigDefaults} from 'vitest/config';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -31,6 +31,7 @@ export default defineConfig(() => ({
 		],
 		coverage: {
 			all: true,
+			exclude: ['src/index.jsx', ...coverageConfigDefaults.exclude]
 		},
 		globals: true,
 		environment: 'jsdom',
