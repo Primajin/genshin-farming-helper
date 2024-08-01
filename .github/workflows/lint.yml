@@ -31,6 +31,7 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
+          fingerprint: "38E6EABC680CCFCE10EA0454372717D2D3474974"
       - name: List keys
         run: gpg -K
       - name: Activate GPG Signing
