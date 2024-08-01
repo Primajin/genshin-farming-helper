@@ -34,7 +34,7 @@ export const materials = {
 };
 
 fs.writeFile('src/data.json', JSON.stringify(materials), error => {
-	/* V8 ignore next 3 */
+	/* v8 ignore next 3 */
 	if (error) {
 		console.error(error);
 	}
