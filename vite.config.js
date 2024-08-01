@@ -31,7 +31,7 @@ export default defineConfig(() => ({
 		],
 		coverage: {
 			all: true,
-			exclude: ['src/index.jsx', ...coverageConfigDefaults.exclude]
+			exclude: ['src/index.jsx', ...coverageConfigDefaults.exclude],
 		},
 		globals: true,
 		environment: 'jsdom',
