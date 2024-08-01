@@ -32,10 +32,11 @@ jobs:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           fingerprint: "38E6EABC680CCFCE10EA0454372717D2D3474974"
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+          git_config_global: true
       - name: List keys
         run: gpg -K
-      - name: Activate GPG Signing
-        run: git config --global commit.gpgsign true
       - name: Run linter
         uses: wearerequired/lint-action@v2
         with:
