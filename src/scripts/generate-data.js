@@ -62,7 +62,7 @@ export const materialsRare = {
 };
 
 fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-	/* V8 ignore next 3 */
+	/* v8 ignore next 3 */
 	if (error) {
 		console.error(error);
 	}
