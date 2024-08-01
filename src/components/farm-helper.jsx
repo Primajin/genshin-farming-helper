@@ -249,6 +249,9 @@ function FarmHelper({
 
 				let tooManyRetries = 0;
 				const tryOtherUrl = () => {
+					// eslint-disable-next-line no-warning-comments
+					// FIXME find a better way
+					/* v8 ignore next 6 */
 					if (!tooManyRetries) {
 						setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
 					}

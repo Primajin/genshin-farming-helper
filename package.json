@@ -75,6 +75,15 @@
       }
     ],
     "rules": {
+      "capitalized-comments": [
+        "error",
+        "always",
+        {
+          "ignorePattern": "v8|pragma|ignore|prettier-ignore",
+          "ignoreInlineComments": true,
+          "ignoreConsecutiveComments": true
+        }
+      ],
       "import/extensions": "off",
       "import/order": [
         "error",
