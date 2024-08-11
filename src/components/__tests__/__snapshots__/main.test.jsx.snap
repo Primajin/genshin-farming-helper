@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Main > renders without crashing 1`] = `
+exports[`main > renders without crashing 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -1563,7 +1563,7 @@ exports[`Main > renders without crashing 1`] = `
 }
 `;
 
-exports[`Main > renders without crashing and all them buttons clicked 1`] = `
+exports[`main > renders without crashing and all them buttons clicked 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -3604,7 +3604,7 @@ exports[`Main > renders without crashing and all them buttons clicked 1`] = `
 }
 `;
 
-exports[`Main > renders without crashing and all them buttons clicked 2`] = `
+exports[`main > renders without crashing and all them buttons clicked 2`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -5645,7 +5645,7 @@ exports[`Main > renders without crashing and all them buttons clicked 2`] = `
 }
 `;
 
-exports[`Main > renders without crashing and all them buttons clicked 3`] = `
+exports[`main > renders without crashing and all them buttons clicked 3`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

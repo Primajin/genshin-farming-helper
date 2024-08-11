@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ItemPicker > does not explode without props 1`] = `
+exports[`itemPicker > does not explode without props 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

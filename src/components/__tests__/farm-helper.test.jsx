@@ -73,14 +73,14 @@ const configWithTargetsSet = {
 };
 
 const globalMockRemove = vi.fn();
-describe('FarmHelper', () => {
+describe('farmHelper', () => {
 	for (const [category, {id, name, tiers}] of materialMap) {
 		it(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
 			const rendering = render(<FarmHelper category={category} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
 			expect(rendering).toMatchSnapshot();
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
-			expect(buttons.length).toBe(tiers);
+			expect(buttons).toHaveLength(tiers);
 		});
 
 		it(`increases counter correctly for ${category} ${name} on first tier`, () => {
