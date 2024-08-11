@@ -3,7 +3,7 @@ import {describe, it, expect} from 'vitest';
 
 import {materials, materialsRare} from '../generate-data.js';
 
-describe('Generate Data', () => {
+describe('generate Data', () => {
 	describe('materials', () => {
 		it('should test that correct data is generated', () => {
 			const keys = Object.keys(materials);
@@ -19,7 +19,7 @@ describe('Generate Data', () => {
 
 		it('should test that data is written to file', () => {
 			const file = fs.existsSync('src/data.json');
-			expect(file).toBe(true);
+			expect(file).toBeTruthy();
 		});
 	});
 
@@ -38,7 +38,7 @@ describe('Generate Data', () => {
 
 		it('should test that data is written to file', () => {
 			const file = fs.existsSync('src/data-rare.json');
-			expect(file).toBe(true);
+			expect(file).toBeTruthy();
 		});
 	});
 });

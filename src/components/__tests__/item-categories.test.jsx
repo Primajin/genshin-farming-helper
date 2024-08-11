@@ -8,13 +8,13 @@ import {materials} from '../../__tests__/__mocks__/data.js';
 
 const onChangeProperty = vi.fn();
 
-describe('ItemCategories', () => {
+describe('itemCategories', () => {
 	it('renders the correct number of categories and handles click', () => {
 		const rendering = render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProperty}/>);
 		expect(rendering).toMatchSnapshot();
 
 		const fieldsets = screen.getAllByRole('group');
-		expect(fieldsets.length).toBe(9);
+		expect(fieldsets).toHaveLength(9);
 
 		fireEvent.click(fieldsets[0].querySelector('label'));
 

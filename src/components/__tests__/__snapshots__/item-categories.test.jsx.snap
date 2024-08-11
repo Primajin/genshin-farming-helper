@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ItemCategories > renders the correct number of categories and handles click 1`] = `
+exports[`itemCategories > renders the correct number of categories and handles click 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>

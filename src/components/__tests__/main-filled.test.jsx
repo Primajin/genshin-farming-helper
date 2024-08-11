@@ -27,7 +27,7 @@ vi.mock('../../data-rare.json', async () => {
 
 const prototypeOfLocalStorage = Object.getPrototypeOf(localStorage);
 
-describe('Main with pre-saved helpers', () => {
+describe('main with pre-saved helpers', () => {
 	it('renders without crashing', () => {
 		vi.spyOn(prototypeOfLocalStorage, 'getItem').mockReturnValue(JSON.stringify(localStorageState));
 		const rendering = render(<Main/>);

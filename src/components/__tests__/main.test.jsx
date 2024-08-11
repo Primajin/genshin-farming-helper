@@ -23,7 +23,7 @@ vi.mock('../../data-rare.json', async () => {
 	};
 });
 
-describe('Main', () => {
+describe('main', () => {
 	it('renders without crashing', () => {
 		const rendering = render(<Main/>);
 		expect(rendering).toMatchSnapshot();

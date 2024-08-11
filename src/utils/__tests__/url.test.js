@@ -13,14 +13,14 @@ describe('isPRPreview', () => {
 		});
 
 		const result = isPRPreview();
-		expect(result).toBe(true);
+		expect(result).toBeTruthy();
 	});
 
 	it('should return false if the current URL does not include "/pr-preview"', () => {
 		// Mock the window.location object
 		Object.defineProperty(window, 'location', {value: {pathname: '/some/other/path'}});
 		const result = isPRPreview();
-		expect(result).toBe(false);
+		expect(result).toBeFalsy();
 	});
 
 	it('should handle the case when window.location is undefined', () => {
@@ -28,7 +28,7 @@ describe('isPRPreview', () => {
 		Object.defineProperty(window, 'location', {value: undefined});
 
 		const result = isPRPreview();
-		expect(result).toBe(false);
+		expect(result).toBeFalsy();
 	});
 
 	it('should handle the case when window in its entirety is undefined', () => {
@@ -36,6 +36,6 @@ describe('isPRPreview', () => {
 		window = undefined;
 
 		const result = isPRPreview();
-		expect(result).toBe(false);
+		expect(result).toBeFalsy();
 	});
 });

@@ -9,7 +9,7 @@ const philosophiesOfFreedom = materials.talentMaterials.find(material => materia
 const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material => material.id === 114_004);
 const slimeConcentrate = materials.characterWeaponEnhancementMaterials.find(material => material.id === 112_004);
 
-describe('ItemPicker', () => {
+describe('itemPicker', () => {
 	it('does not explode without props', () => {
 		const rendering = render(<ItemPicker/>);
 		expect(rendering).toMatchSnapshot();

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone with 4 tiers 1`] = `
+exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone with 4 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -683,7 +683,7 @@ exports[`FarmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
 }
 `;
 
-exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`] = `
+exports[`farmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -870,7 +870,7 @@ exports[`FarmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
 }
 `;
 
-exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3 tiers 1`] = `
+exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -1351,7 +1351,7 @@ exports[`FarmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
 }
 `;
 
-exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
+exports[`farmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -1558,7 +1558,7 @@ exports[`FarmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
 }
 `;
 
-exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`] = `
+exports[`farmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -1785,7 +1785,7 @@ exports[`FarmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
 }
 `;
 
-exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
+exports[`farmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -1972,7 +1972,7 @@ exports[`FarmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
 }
 `;
 
-exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 3 tiers 1`] = `
+exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 3 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -2483,7 +2483,7 @@ exports[`FarmHelper > renders correctly for TALENT Philosophies of Freedom with 
 }
 `;
 
-exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian's Dream with 4 tiers 1`] = `
+exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian's Dream with 4 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -3166,7 +3166,7 @@ exports[`FarmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
 }
 `;
 
-exports[`FarmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
+exports[`farmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
