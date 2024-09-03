@@ -20,15 +20,15 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.25.4",
+    "@babel/runtime": "^7.25.6",
     "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.0",
+    "@testing-library/react": "^16.0.1",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^2.0.5",
     "eslint": "^8.57.0",
     "eslint-config-xo": "~0.45.0",
     "eslint-config-xo-react": "^0.27.0",
-    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react": "^7.35.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^25.0.0",
