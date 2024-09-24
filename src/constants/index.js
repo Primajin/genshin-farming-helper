@@ -19,4 +19,4 @@ export const materialTypes = {
 };
 
 export const IMG_URL = 'https://res.cloudinary.com/genshin/image/upload/sprites/';
-export const IMG_URL2 = 'https://api.ambr.top/assets/UI/';
+export const IMG_URL2 = 'https://gi.yatta.moe/assets/UI/';

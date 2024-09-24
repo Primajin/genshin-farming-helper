@@ -26,7 +26,8 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'success'
         run: sleep 120s
         shell: bash
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: install puppeteer-headful
         uses: mujo-code/puppeteer-headful@master
         env:
