@@ -76,7 +76,7 @@ const globalMockRemove = vi.fn();
 describe('farmHelper', () => {
 	for (const [category, {id, name, tiers}] of materialMap) {
 		it(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
-			const rendering = render(<FarmHelper category={category} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+			const rendering = render(<FarmHelper category={category} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 			expect(rendering).toMatchSnapshot();
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
@@ -84,7 +84,7 @@ describe('farmHelper', () => {
 		});
 
 		it(`increases counter correctly for ${category} ${name} on first tier`, () => {
-			render(<FarmHelper category={category} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+			render(<FarmHelper category={category} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -141,7 +141,7 @@ describe('farmHelper', () => {
 		});
 
 		it(`increases counter correctly for ${category} ${name} when second tier is locked`, () => {
-			render(<FarmHelper category={category} config={configWithLock} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+			render(<FarmHelper category={category} config={configWithLock} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -199,7 +199,7 @@ describe('farmHelper', () => {
 
 		if (tiers > 1) {
 			it(`correctly tallies for ${category} ${name} when lock is lifted`, async () => {
-				render(<FarmHelper category={category} config={configWithLockPrefilled} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+				render(<FarmHelper category={category} config={configWithLockPrefilled} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 				const buttons = screen.getAllByTestId(/button-tier-/);
 				const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -251,7 +251,7 @@ describe('farmHelper', () => {
 
 		if (tiers > 3) {
 			it(`correctly shows targets for ${category} ${name} when they are set`, async () => {
-				render(<FarmHelper category={category} config={configWithTargetsSet} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+				render(<FarmHelper category={category} config={configWithTargetsSet} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 				const buttons = screen.getAllByTestId(/button-tier-/);
 				const lastButton = buttons.at(-1);
@@ -263,7 +263,7 @@ describe('farmHelper', () => {
 	it('increases correctly if every button was clicked sequentially', () => {
 		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 		const buttons = screen.getAllByTestId(/button-tier-/);
 		const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
@@ -281,7 +281,7 @@ describe('farmHelper', () => {
 	it('sets a goal and changes to green when goal is reached', () => {
 		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 		const goalLabels = screen.getAllByTestId('goal-label');
 		const buttons = screen.getAllByTestId(/button-tier-/);
@@ -319,7 +319,7 @@ describe('farmHelper', () => {
 	it('removes a goal and changes back to grey when goal is removed', () => {
 		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={globalMockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 		const goalLabels = screen.getAllByTestId('goal-label');
 		const buttons = screen.getAllByTestId(/button-tier-/);
@@ -368,7 +368,7 @@ describe('farmHelper', () => {
 		const mockRemove = vi.fn();
 		const {id} = materialMap.get(ASCENSION);
 
-		render(<FarmHelper category={ASCENSION} config={config} itemId={id} materials={materials} onRemove={mockRemove}/>);
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={mockRemove}/>);
 
 		const removeButton = screen.getByTitle('Remove item');
 		fireEvent.click(removeButton);

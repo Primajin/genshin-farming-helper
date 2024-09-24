@@ -55,6 +55,6 @@ describe('itemPicker', () => {
 		fireEvent.error(image);
 		const imageSourceAfter = image.getAttribute('src');
 		expect(imageSourceAfter.includes('cloudinary.com')).toBeFalsy();
-		expect(imageSourceAfter.includes('api.ambr.top')).toBeTruthy();
+		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeTruthy();
 	});
 });
