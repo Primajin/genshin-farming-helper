@@ -73,7 +73,10 @@
         ],
         "extends": [
           "plugin:vitest/legacy-recommended"
-        ]
+        ],
+        "rules": {
+          "unicorn/prefer-global-this": "off"
+        }
       }
     ],
     "rules": {
