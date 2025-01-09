@@ -29,9 +29,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Use WebApp Console Log Action
-        uses: Primajin/webapp-console-log-action@v1
+        uses: Primajin/webapp-console-log-action@7a95eb3b47815095e72d8977fedf7cfd6867e967
         with:
           webapp-url: https://helper.farm/pr-preview/pr-${{ github.event.number }}/
-          max-log-level: error #temp change to ignore pattern once implemented to only filter out 404 errors instead of allowing all errors
+          regexp-error: 'Failed \D+ 404 \(\)'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
