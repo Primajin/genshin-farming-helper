@@ -1,4 +1,4 @@
-/* global window */
+/* global window, document */
 /** @jsxImportSource @emotion/react */
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
@@ -8,6 +8,7 @@ import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';
 import theme from '../theme/index.js';
 import {breakpoints, up} from '../utils/theming.js';
+import {fullscreenElement, toggleFullscreen} from '../utils/fullscreen.js';
 import ItemCategories from './item-categories.jsx';
 import FarmHelper from './farm-helper.jsx';
 
@@ -111,6 +112,16 @@ const toggleFloat = css`
 	transform: rotate(90deg);
 `;
 
+const metaKeys = css`
+	margin: 0;
+	position: absolute;
+	top: 15px;
+`;
+
+const toggleFullScreen = css`
+	right: 0;
+`;
+
 const helperList = css`
 		display: flex;
 		flex-wrap: wrap;
@@ -127,6 +138,7 @@ const {actions} = theme;
 export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
+	const [fullScreen, setFullScreen] = useState(false);
 
 	const onRemove = itemId => {
 		const storageState = storage.load();
@@ -206,12 +218,34 @@ export default function Main() {
 	}, [addHelperWithItem]);
 
 	const showVideo = window?.innerWidth > 768;
-	const disabledKeys = farmHelperList.map(item => item.key);
+
+	useEffect(() => {
+		const setFullScreenState = () => {
+			document.fullscreenElement = fullscreenElement;
+			const isFullScreen = document.fullscreenElement !== null;
+			setFullScreen(isFullScreen);
+		};
+
+		// Register eventListener once
+		document.addEventListener('fullscreenchange', setFullScreenState);
+
+		return () => {
+			// Unregister eventListener once
+			document.removeEventListener('fullscreenchange', setFullScreenState);
+		};
+	}, []);
+
+	const handleFullscreen = () => {
+		toggleFullscreen();
+	};
+
 	const hasItems = farmHelperList.length > 0;
 
 	const handleFloatChange = () => {
 		setFloatGroups(!floatGroups);
 	};
+
+	const disabledKeys = farmHelperList.map(item => item.key);
 
 	return (
 		<>
@@ -224,6 +258,15 @@ export default function Main() {
 				</div>
 			)}
 			<main>
+				<button
+					className='material-symbols-outlined'
+					css={[actions, metaKeys, toggleFullScreen]}
+					title='Toggle full screen'
+					type='button'
+					onClick={handleFullscreen}
+				>
+					{fullScreen ? 'fullscreen_exit' : 'fullscreen'}
+				</button>
 				{hasItems && (
 					<button
 						className='material-symbols-outlined'
