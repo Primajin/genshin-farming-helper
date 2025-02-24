@@ -2,6 +2,7 @@
 import {
 	describe, it, vi, expect,
 } from 'vitest';
+
 import storage from '../local-storage.js';
 import * as urlUtils from '../url.js';
 

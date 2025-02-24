@@ -5,12 +5,6 @@
  */
 
 /**
- * The wake lock object from the navigator, if available.
- * @type {WakeLock|boolean}
- */
-const navigatorWakelock = typeof navigator !== 'undefined' && navigator.wakeLock;
-
-/**
  * The wake lock sentinel.
  * @type {WakeLockSentinel|null}
  */
@@ -21,6 +15,12 @@ let wakeLock = null;
  * @returns {Promise<boolean>} A promise that resolves to true if the wake lock is successfully requested, otherwise false.
  */
 export const requestWakeLock = async () => {
+	const navigatorWakelock = typeof navigator !== 'undefined' && navigator.wakeLock;
+	if (!navigatorWakelock) {
+		console.error('Wake Lock API not supported.');
+		return false;
+	}
+
 	try {
 		wakeLock = await navigatorWakelock.request();
 		wakeLock.addEventListener('release', () => {
