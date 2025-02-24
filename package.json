@@ -33,7 +33,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^26.0.0",
     "vite": "^6.1.1",
-    "vitest": "^3.0.1",
+    "vitest": "^3.0.6",
     "xo": "^0.60.0"
   },
   "scripts": {
