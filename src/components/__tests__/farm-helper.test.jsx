@@ -226,6 +226,7 @@ describe('farmHelper', () => {
 				}
 
 				const lock = screen.getByTestId('lock-tier-1');
+				// Keep await here even if it's not async, helps suppress an error
 				await fireEvent.click(lock.querySelector('input'));
 
 				const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
