@@ -23,6 +23,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
       </div>
       <main>
         <button
+          class="material-symbols-outlined css-cjlyyg"
+          title="Toggle full screen"
+          type="button"
+        >
+          fullscreen
+        </button>
+        <button
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
@@ -2193,6 +2200,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
       </video>
     </div>
     <main>
+      <button
+        class="material-symbols-outlined css-cjlyyg"
+        title="Toggle full screen"
+        type="button"
+      >
+        fullscreen
+      </button>
       <button
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
@@ -4422,6 +4436,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
       </div>
       <main>
         <button
+          class="material-symbols-outlined css-cjlyyg"
+          title="Toggle full screen"
+          type="button"
+        >
+          fullscreen
+        </button>
+        <button
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
@@ -6528,6 +6549,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
       </video>
     </div>
     <main>
+      <button
+        class="material-symbols-outlined css-cjlyyg"
+        title="Toggle full screen"
+        type="button"
+      >
+        fullscreen
+      </button>
       <button
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
