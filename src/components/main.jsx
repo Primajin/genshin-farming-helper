@@ -9,6 +9,7 @@ import storage from '../utils/local-storage.js';
 import theme from '../theme/index.js';
 import {breakpoints, up} from '../utils/theming.js';
 import {fullscreenElement, toggleFullscreen} from '../utils/fullscreen.js';
+import {releaseWakeLock, requestWakeLock} from '../utils/wake-lock.js';
 import ItemCategories from './item-categories.jsx';
 import FarmHelper from './farm-helper.jsx';
 
@@ -118,6 +119,10 @@ const metaKeys = css`
 	top: 15px;
 `;
 
+const toggleWakeLock = css`
+	left: 0;
+`;
+
 const toggleFullScreen = css`
 	right: 0;
 `;
@@ -139,6 +144,7 @@ export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
+	const [wakeLock, setWakeLock] = useState(false);
 
 	const onRemove = itemId => {
 		const storageState = storage.load();
@@ -217,8 +223,6 @@ export default function Main() {
 		}
 	}, [addHelperWithItem]);
 
-	const showVideo = window?.innerWidth > 768;
-
 	useEffect(() => {
 		const setFullScreenState = () => {
 			document.fullscreenElement = fullscreenElement;
@@ -235,6 +239,18 @@ export default function Main() {
 		};
 	}, []);
 
+	const widthLarger768 = window?.innerWidth > 768;
+
+	const handleWakeLock = async () => {
+		if (wakeLock) {
+			const released = await releaseWakeLock();
+			setWakeLock(!released);
+		} else {
+			const requested = await requestWakeLock();
+			setWakeLock(requested);
+		}
+	};
+
 	const handleFullscreen = () => {
 		toggleFullscreen();
 	};
@@ -250,7 +266,7 @@ export default function Main() {
 	return (
 		<>
 			<Global styles={globalStyles}/>
-			{showVideo && (
+			{widthLarger768 && (
 				<div css={video}>
 					<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg'>
 						<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
@@ -258,6 +274,17 @@ export default function Main() {
 				</div>
 			)}
 			<main>
+				{!widthLarger768 && (
+					<button
+						className='material-symbols-outlined'
+						css={[actions, metaKeys, toggleWakeLock]}
+						title='Keep screen awake'
+						type='button'
+						onClick={handleWakeLock}
+					>
+						{wakeLock ? 'bedtime' : 'bedtime_off'}
+					</button>
+				)}
 				<button
 					className='material-symbols-outlined'
 					css={[actions, metaKeys, toggleFullScreen]}
