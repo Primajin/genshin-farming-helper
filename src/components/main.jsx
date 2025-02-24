@@ -278,7 +278,7 @@ export default function Main() {
 					<button
 						className='material-symbols-outlined'
 						css={[actions, metaKeys, toggleWakeLock]}
-						title='Keep screen awake'
+						title={wakeLock ? 'Allow screen to sleep' : 'Keep screen awake'}
 						type='button'
 						onClick={handleWakeLock}
 					>
@@ -288,7 +288,7 @@ export default function Main() {
 				<button
 					className='material-symbols-outlined'
 					css={[actions, metaKeys, toggleFullScreen]}
-					title='Toggle full screen'
+					title={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
 					type='button'
 					onClick={handleFullscreen}
 				>

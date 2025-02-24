@@ -24,7 +24,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
       <main>
         <button
           class="material-symbols-outlined css-cjlyyg"
-          title="Toggle full screen"
+          title="Make fullscreen"
           type="button"
         >
           fullscreen
@@ -2202,7 +2202,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
     <main>
       <button
         class="material-symbols-outlined css-cjlyyg"
-        title="Toggle full screen"
+        title="Make fullscreen"
         type="button"
       >
         fullscreen
@@ -4437,7 +4437,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
       <main>
         <button
           class="material-symbols-outlined css-cjlyyg"
-          title="Toggle full screen"
+          title="Make fullscreen"
           type="button"
         >
           fullscreen
@@ -6551,7 +6551,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
     <main>
       <button
         class="material-symbols-outlined css-cjlyyg"
-        title="Toggle full screen"
+        title="Make fullscreen"
         type="button"
       >
         fullscreen

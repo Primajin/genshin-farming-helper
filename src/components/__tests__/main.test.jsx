@@ -30,6 +30,8 @@ describe('main', () => {
 	});
 
 	it('renders without crashing and all them buttons clicked', () => {
+		global.innerWidth = 700;
+		global.dispatchEvent(new Event('resize'));
 		const rendering = render(<Main/>);
 
 		// Add the first item
@@ -37,12 +39,28 @@ describe('main', () => {
 		fireEvent.click(buttons[0]);
 		expect(rendering).toMatchSnapshot();
 
-		const toggleFloat = screen.getByTitle('Click to float items');
-		fireEvent.click(toggleFloat);
+		const floatItems = screen.getByTitle('Click to float items');
+		fireEvent.click(floatItems);
+		expect(rendering).toMatchSnapshot();
+
+		const stackItems = screen.getByTitle('Click to stack items');
+		fireEvent.click(stackItems);
 		expect(rendering).toMatchSnapshot();
 
 		const removeButton = screen.getByTitle('Remove item');
 		fireEvent.click(removeButton);
 		expect(rendering).toMatchSnapshot();
+
+		const fullScreenButton = screen.getByTitle('Make fullscreen');
+		fireEvent.click(fullScreenButton);
+		expect(rendering).toMatchSnapshot();
+
+		// Screen does not actually go into fullscreen mode so there is no off case
+
+		const wakeButton = screen.getByTitle('Keep screen awake');
+		fireEvent.click(wakeButton);
+		expect(rendering).toMatchSnapshot();
+
+		// Screen does not actually go into wake mode so there is no off case
 	});
 });
