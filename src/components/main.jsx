@@ -120,11 +120,11 @@ const metaKeys = css`
 `;
 
 const toggleWakeLock = css`
-	left: 0;
+	left: 20px;
 `;
 
 const toggleFullScreen = css`
-	right: 0;
+	right: 20px;
 `;
 
 const helperList = css`
