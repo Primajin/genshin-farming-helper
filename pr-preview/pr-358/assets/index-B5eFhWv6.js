@@ -333,9 +333,9 @@ This is the trust I have placed in them. Betray it, and you taint my blood."`,ca
 	position: absolute;
 	top: 15px;
 `,h1=Pe`
-	left: 0;
+	left: 20px;
 `,d1=Pe`
-	right: 0;
+	right: 20px;
 `,u1=Pe`
 		display: flex;
 		flex-wrap: wrap;
