@@ -1,6 +1,6 @@
 /* global document */
 import {
-	afterEach, beforeEach, describe, expect, test, vi,
+	beforeEach, describe, expect, test, vi,
 } from 'vitest';
 
 import {toggleFullscreen} from '../fullscreen.js';
@@ -15,11 +15,6 @@ describe('toggleFullscreen', () => {
 			querySelector: vi.fn(),
 			exitFullscreen: vi.fn(),
 		};
-	});
-
-	afterEach(() => {
-		// Vi.clearAllMocks();
-		vi.resetModules();
 	});
 
 	test('should enter fullscreen mode when no element is in fullscreen', () => {
