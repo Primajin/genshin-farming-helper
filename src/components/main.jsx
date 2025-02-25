@@ -144,7 +144,7 @@ export default function Main() {
 	const [farmHelperList, setFarmHelperList] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
-	const [wakeLock, setWakeLock] = useState(false);
+	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
 
 	const onRemove = itemId => {
 		const storageState = storage.load();
@@ -242,12 +242,12 @@ export default function Main() {
 	const widthLarger768 = window?.innerWidth > 768;
 
 	const handleWakeLock = async () => {
-		if (wakeLock) {
-			const released = await releaseWakeLock();
-			setWakeLock(!released);
+		if (wakeLockSentinel) {
+			const releasedWakeLockSentinel = await releaseWakeLock(wakeLockSentinel);
+			setWakeLockSentinel(releasedWakeLockSentinel);
 		} else {
-			const requested = await requestWakeLock();
-			setWakeLock(requested);
+			const requestedWakeLockSentinel = await requestWakeLock(wakeLockSentinel);
+			setWakeLockSentinel(requestedWakeLockSentinel);
 		}
 	};
 
@@ -278,11 +278,11 @@ export default function Main() {
 					<button
 						className='material-symbols-outlined'
 						css={[actions, metaKeys, toggleWakeLock]}
-						title={wakeLock ? 'Allow screen to sleep' : 'Keep screen awake'}
+						title={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
 						type='button'
 						onClick={handleWakeLock}
 					>
-						{wakeLock ? 'bedtime' : 'bedtime_off'}
+						{wakeLockSentinel ? 'bedtime' : 'bedtime_off'}
 					</button>
 				)}
 				<button

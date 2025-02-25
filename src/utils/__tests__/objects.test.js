@@ -1,17 +1,17 @@
-import {describe, it, expect} from 'vitest';
+import {describe, test, expect} from 'vitest';
 
 import {filterObject} from '../objects.js';
 
 describe('objects', () => {
 	describe('filterObject', () => {
-		it('should return an empty object when passed an empty object', () => {
+		test('should return an empty object when passed an empty object', () => {
 			const input = {};
 			const expected = {};
 			const result = filterObject(input);
 			expect(result).toEqual(expected);
 		});
 
-		it('should remove properties with undefined values', () => {
+		test('should remove properties with undefined values', () => {
 			const input = {
 				a: 1,
 				b: undefined,
@@ -28,7 +28,7 @@ describe('objects', () => {
 			expect(result).toEqual(expected);
 		});
 
-		it('should not modify the original object', () => {
+		test('should not modify the original object', () => {
 			const input = {
 				a: 1,
 				b: undefined,
@@ -39,7 +39,7 @@ describe('objects', () => {
 			expect(input).toEqual(originalObject);
 		});
 
-		it('should return the same object if all properties have defined values', () => {
+		test('should return the same object if all properties have defined values', () => {
 			const input = {
 				a: 1,
 				b: null,
