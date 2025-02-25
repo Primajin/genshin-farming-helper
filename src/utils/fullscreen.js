@@ -1,5 +1,4 @@
 /* global document */
-// document may be used only after it has been checked against being undefined
 export const fullscreenElement = document.fullscreenElement || document.mozFullscreenElement || document.msFullscreenElement || document.webkitFullscreenDocument;
 
 /**
