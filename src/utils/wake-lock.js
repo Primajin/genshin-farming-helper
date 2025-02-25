@@ -5,45 +5,40 @@
  */
 
 /**
- * The wake lock sentinel.
- * @type {WakeLockSentinel|null}
- */
-let wakeLock = null;
-
-/**
  * Attempts to request a screen wake lock.
- * @returns {Promise<boolean>} A promise that resolves to true if the wake lock is successfully requested, otherwise false.
+ * @param {WakeLockSentinel|null} wakeLockSentinel The current wake lock sentinel.
+ * @returns {Promise<WakeLockSentinel|null>} A promise that resolves to the wake lock sentinel if the wake lock is successfully requested, otherwise null.
  */
-export const requestWakeLock = async () => {
+export const requestWakeLock = async wakeLockSentinel => {
 	const navigatorWakelock = typeof navigator !== 'undefined' && navigator.wakeLock;
 	if (!navigatorWakelock) {
 		console.error('Wake Lock API not supported.');
-		return false;
+		return null;
 	}
 
 	try {
-		wakeLock = await navigatorWakelock.request();
-		wakeLock.addEventListener('release', () => {
-			console.debug('Screen Wake Lock released:', wakeLock.released);
+		wakeLockSentinel = await navigatorWakelock.request();
+		wakeLockSentinel.addEventListener('release', () => {
+			console.debug('Screen Wake Lock released:', wakeLockSentinel.released);
 		});
 		console.debug('Screen Wake Lock requested.');
-		return true;
+		return wakeLockSentinel;
 	} catch (error) {
-		console.error(`${error.name}, ${error.message}`);
-		return false;
+		console.error(`${error.name}: ${error.message}`);
+		return null;
 	}
 };
 
 /**
  * Releases the screen wake lock if it is currently held.
- * @returns {boolean} True if the wake lock was released, otherwise false.
+ * @param {WakeLockSentinel|null} wakeLockSentinel The current wake lock sentinel.
+ * @returns {Promise<WakeLockSentinel|null>} A promise that resolves to null if the wake lock was released, otherwise the wake lock sentinel.
  */
-export const releaseWakeLock = async () => {
-	if (wakeLock) {
-		await wakeLock.release();
-		wakeLock = null;
-		return true;
+export const releaseWakeLock = async wakeLockSentinel => {
+	if (wakeLockSentinel) {
+		await wakeLockSentinel.release();
+		return null;
 	}
 
-	return false;
+	return wakeLockSentinel;
 };
