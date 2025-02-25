@@ -1,6 +1,6 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import {
-	describe, expect, it, vi,
+	describe, expect, test, vi,
 } from 'vitest';
 
 import FarmHelper from '../farm-helper.jsx';
@@ -75,7 +75,7 @@ const configWithTargetsSet = {
 const globalMockRemove = vi.fn();
 describe('farmHelper', () => {
 	for (const [category, {id, name, tiers}] of materialMap) {
-		it(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
+		test(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
 			const rendering = render(<FarmHelper category={category} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 			expect(rendering).toMatchSnapshot();
 
@@ -83,7 +83,7 @@ describe('farmHelper', () => {
 			expect(buttons).toHaveLength(tiers);
 		});
 
-		it(`increases counter correctly for ${category} ${name} on first tier`, () => {
+		test(`increases counter correctly for ${category} ${name} on first tier`, () => {
 			render(<FarmHelper category={category} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
@@ -140,7 +140,7 @@ describe('farmHelper', () => {
 			}
 		});
 
-		it(`increases counter correctly for ${category} ${name} when second tier is locked`, () => {
+		test(`increases counter correctly for ${category} ${name} when second tier is locked`, () => {
 			render(<FarmHelper category={category} config={configWithLock} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 			const buttons = screen.getAllByTestId(/button-tier-/);
@@ -198,7 +198,7 @@ describe('farmHelper', () => {
 		});
 
 		if (tiers > 1) {
-			it(`correctly tallies for ${category} ${name} when lock is lifted`, async () => {
+			test(`correctly tallies for ${category} ${name} when lock is lifted`, async () => {
 				render(<FarmHelper category={category} config={configWithLockPrefilled} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 				const buttons = screen.getAllByTestId(/button-tier-/);
@@ -251,7 +251,7 @@ describe('farmHelper', () => {
 		}
 
 		if (tiers > 3) {
-			it(`correctly shows targets for ${category} ${name} when they are set`, async () => {
+			test(`correctly shows targets for ${category} ${name} when they are set`, async () => {
 				render(<FarmHelper category={category} config={configWithTargetsSet} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 				const buttons = screen.getAllByTestId(/button-tier-/);
@@ -261,7 +261,7 @@ describe('farmHelper', () => {
 		}
 	}
 
-	it('increases correctly if every button was clicked sequentially', () => {
+	test('increases correctly if every button was clicked sequentially', () => {
 		const {id} = materialMap.get(ASCENSION);
 
 		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
@@ -279,7 +279,7 @@ describe('farmHelper', () => {
 		expect(valuesAfter).toMatchObject(['1', '2', '0', '5']);
 	});
 
-	it('sets a goal and changes to green when goal is reached', () => {
+	test('sets a goal and changes to green when goal is reached', () => {
 		const {id} = materialMap.get(ASCENSION);
 
 		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
@@ -317,7 +317,7 @@ describe('farmHelper', () => {
 		}
 	});
 
-	it('removes a goal and changes back to grey when goal is removed', () => {
+	test('removes a goal and changes back to grey when goal is removed', () => {
 		const {id} = materialMap.get(ASCENSION);
 
 		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
@@ -365,7 +365,7 @@ describe('farmHelper', () => {
 		}
 	});
 
-	it('calls remove correctly when button is clicked', () => {
+	test('calls remove correctly when button is clicked', () => {
 		const mockRemove = vi.fn();
 		const {id} = materialMap.get(ASCENSION);
 

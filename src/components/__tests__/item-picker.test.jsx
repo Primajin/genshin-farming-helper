@@ -1,5 +1,5 @@
 import {fireEvent, render, screen} from '@testing-library/react';
-import {describe, it, expect} from 'vitest';
+import {describe, test, expect} from 'vitest';
 
 import ItemPicker from '../item-picker.jsx';
 import {materialTypes} from '../../constants';
@@ -10,12 +10,12 @@ const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material
 const slimeConcentrate = materials.characterWeaponEnhancementMaterials.find(material => material.id === 112_004);
 
 describe('itemPicker', () => {
-	it('does not explode without props', () => {
+	test('does not explode without props', () => {
 		const rendering = render(<ItemPicker/>);
 		expect(rendering).toMatchSnapshot();
 	});
 
-	it('renders with single element (weapon)', () => {
+	test('renders with single element (weapon)', () => {
 		render(<ItemPicker materials={[scatteredPieceOfDecarabiansDream]} type={materialTypes.WEAPON}/>);
 		const label = screen.getByTitle('Scattered Piece of Decarabian\'s Dream');
 		expect(label).toBeDefined();
@@ -24,7 +24,7 @@ describe('itemPicker', () => {
 		expect(regExp.exec(backgroundStyle)[1]).toBe('/src/images/bg/background_Item_5_Star.png');
 	});
 
-	it('renders with single element (char lvl)', () => {
+	test('renders with single element (char lvl)', () => {
 		render(<ItemPicker materials={[slimeConcentrate]} type={materialTypes.LEVEL}/>);
 		const label = screen.getByTitle('Slime Concentrate');
 		expect(label).toBeDefined();
@@ -33,7 +33,7 @@ describe('itemPicker', () => {
 		expect(regExp.exec(backgroundStyle)[1]).toBe('/src/images/bg/background_Item_3_Star.png');
 	});
 
-	it('renders with multiple elements', () => {
+	test('renders with multiple elements', () => {
 		render(<ItemPicker materials={[scatteredPieceOfDecarabiansDream, philosophiesOfFreedom, slimeConcentrate]} type='hello'/>);
 		const label1 = screen.getByTitle('Scattered Piece of Decarabian\'s Dream');
 		const label2 = screen.getByTitle('Philosophies of Freedom');
@@ -46,7 +46,7 @@ describe('itemPicker', () => {
 		expect(regExp.exec(backgroundStyle)[1]).toBe('/src/images/bg/background_Item_4_Star.png');
 	});
 
-	it('renders alternative image when initial one can not be loaded', () => {
+	test('renders alternative image when initial one can not be loaded', () => {
 		render(<ItemPicker materials={[scatteredPieceOfDecarabiansDream]} type={materialTypes.LEVEL}/>);
 		const image = screen.getByTestId('image');
 		expect(image).toBeDefined();
