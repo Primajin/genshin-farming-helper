@@ -1,7 +1,8 @@
 /* global localStorage */
 import {
-	describe, it, vi, expect,
+	describe, test, vi, expect,
 } from 'vitest';
+
 import storage from '../local-storage.js';
 import * as urlUtils from '../url.js';
 
@@ -13,13 +14,13 @@ const prototypeOfLocalStorage = Object.getPrototypeOf(localStorage);
 
 describe('local-storage', () => {
 	describe('storage.load', () => {
-		it('should return value from mocked file when isPRPreview is true', () => {
+		test('should return value from mocked file when isPRPreview is true', () => {
 			vi.spyOn(urlUtils, 'isPRPreview').mockReturnValue(true);
 			const localStorageState = {mockKey: 'mockValue'};
 			expect(storage.load()).toEqual(localStorageState);
 		});
 
-		it('should return parsed value from localStorage when isPRPreview is false', () => {
+		test('should return parsed value from localStorage when isPRPreview is false', () => {
 			vi.spyOn(urlUtils, 'isPRPreview').mockReturnValue(false);
 			const mockValue = {realKey: 'realValue'};
 			vi.spyOn(prototypeOfLocalStorage, 'getItem').mockReturnValue(JSON.stringify(mockValue));
@@ -28,7 +29,7 @@ describe('local-storage', () => {
 	});
 
 	describe('storage.save', () => {
-		it('should save the stringified value to localStorage', () => {
+		test('should save the stringified value to localStorage', () => {
 			const mockValue = {someKey: 'someValue'};
 			const setItemSpy = vi.spyOn(prototypeOfLocalStorage, 'setItem');
 			storage.save(mockValue);

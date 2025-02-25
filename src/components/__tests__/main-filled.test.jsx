@@ -1,7 +1,9 @@
 /* global localStorage */
-import {fireEvent, render, screen} from '@testing-library/react';
 import {
-	describe, expect, it, vi,
+	act, fireEvent, render, screen,
+} from '@testing-library/react';
+import {
+	describe, expect, test, vi,
 } from 'vitest';
 
 import Main from '../main.jsx';
@@ -28,13 +30,15 @@ vi.mock('../../data-rare.json', async () => {
 const prototypeOfLocalStorage = Object.getPrototypeOf(localStorage);
 
 describe('main with pre-saved helpers', () => {
-	it('renders without crashing', () => {
+	test('renders without crashing', async () => {
 		vi.spyOn(prototypeOfLocalStorage, 'getItem').mockReturnValue(JSON.stringify(localStorageState));
 		const rendering = render(<Main/>);
 		expect(rendering).toMatchSnapshot();
 
 		const removeButtons = screen.getAllByTitle('Remove item');
-		fireEvent.click(removeButtons[0]);
+		await act(() => {
+			fireEvent.click(removeButtons[0]);
+		});
 		expect(rendering).toMatchSnapshot();
 	});
 });
