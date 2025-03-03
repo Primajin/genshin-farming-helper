@@ -13,7 +13,7 @@
   "type": "module",
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@fontsource-variable/material-symbols-outlined": "^5.1.4",
+    "@fontsource-variable/material-symbols-outlined": "^5.2.5",
     "genshin-db": "^5.1.12",
     "gh-pages": "^6.3.0",
     "react": "19.0.0",
@@ -29,7 +29,7 @@
     "eslint-config-xo": "~0.45.0",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^26.0.0",
     "vite": "^6.2.0",
