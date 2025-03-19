@@ -36,6 +36,8 @@ jobs:
         run: npm run generate
       - name: Run build with Base
         run: npx vite build --base="/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/"
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
