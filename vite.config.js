@@ -19,7 +19,7 @@ export default defineConfig(() => ({
 			enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
 			bundleName: 'genshin-farming-helper',
 			uploadToken: process.env.CODECOV_TOKEN,
-			telemetry: false
+			telemetry: false,
 		}),
 	],
 	resolve: {
