@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.26.9",
+    "@codecov/vite-plugin": "^1.9.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@vitejs/plugin-react": "^4.3.4",
@@ -38,7 +39,7 @@
   },
   "scripts": {
     "build": "vite build",
-    "coverage": "vitest run --coverage",
+    "coverage": "vitest run --coverage --reporter=junit --outputFile=test-report.junit.xml",
     "deploy": "gh-pages -d build",
     "generate": "node src/scripts/generate-data.js",
     "lint": "xo",
