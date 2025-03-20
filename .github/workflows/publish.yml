@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Run build
         run: npm run build
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
