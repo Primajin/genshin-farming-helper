@@ -27,7 +27,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="TALENT.104301"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Teachings of Freedom"
@@ -53,7 +53,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="TALENT.104302"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Guide to Freedom"
@@ -79,7 +79,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="TALENT.104303"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Philosophies of Freedom"
@@ -105,7 +105,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="TALENT.104344"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Teachings of Order"
@@ -131,7 +131,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="TALENT.104345"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Guide to Order"
@@ -157,7 +157,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="TALENT.104346"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Philosophies of Order"
@@ -195,7 +195,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114001"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Tile of Decarabian's Tower"
@@ -221,7 +221,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114002"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Debris of Decarabian's City"
@@ -247,7 +247,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114003"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Fragment of Decarabian's Epic"
@@ -273,7 +273,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114004"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Scattered Piece of Decarabian's Dream"
@@ -299,7 +299,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114057"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Broken Goblet of the Pristine Sea"
@@ -325,7 +325,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114058"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Wine Goblet of the Pristine Sea"
@@ -351,7 +351,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114059"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Silver Goblet of the Pristine Sea"
@@ -377,7 +377,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WEAPON.114060"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Golden Goblet of the Pristine Sea"
@@ -414,7 +414,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.112002"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Slime Condensate"
@@ -440,7 +440,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.112003"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Slime Secretions"
@@ -466,7 +466,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.112004"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Slime Concentrate"
@@ -492,7 +492,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.112092"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Old Operative's Pocket Watch"
@@ -518,7 +518,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.112093"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Operative's Standard Pocket Watch"
@@ -544,7 +544,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ENHANCEMENT.112094"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Operative's Constancy"
@@ -581,7 +581,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ASCENSION.104101"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             >
               <img
                 alt="Brilliant Diamond Sliver"
@@ -607,7 +607,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ASCENSION.104102"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Brilliant Diamond Fragment"
@@ -633,7 +633,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ASCENSION.104103"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Brilliant Diamond Chunk"
@@ -659,7 +659,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="ASCENSION.104104"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Brilliant Diamond Gemstone"
@@ -696,7 +696,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113001"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Hurricane Seed"
@@ -722,7 +722,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113002"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Lightning Prism"
@@ -748,7 +748,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113003"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Dvalin's Plume"
@@ -774,7 +774,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113004"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Dvalin's Claw"
@@ -800,7 +800,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113005"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Dvalin's Sigh"
@@ -826,7 +826,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113056"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             >
               <img
                 alt="Lightless Mass"
@@ -852,7 +852,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LEVEL.113057"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             >
               <img
                 alt="Water That Failed To Transcend"
@@ -889,7 +889,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LOCAL.100021"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Wolfhook"
@@ -915,7 +915,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LOCAL.100022"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Valberry"
@@ -941,7 +941,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LOCAL.101239"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Subdetection Unit"
@@ -967,7 +967,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="LOCAL.101240"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Spring of the First Dewdrop"
@@ -1004,7 +1004,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="FISH.131000"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Medaka"
@@ -1030,7 +1030,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="FISH.131001"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Glaze Medaka"
@@ -1056,7 +1056,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="FISH.131002"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Sweet-Flower Medaka"
@@ -1082,7 +1082,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="FISH.131036"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             >
               <img
                 alt="Maintenance Mek: Gold Leader"
@@ -1119,7 +1119,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WOOD.101301"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Birch Wood"
@@ -1145,7 +1145,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="WOOD.101322"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Torch Wood"
@@ -1182,7 +1182,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="BUILDING.101001"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="Iron Chunk"
@@ -1208,7 +1208,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               value="BUILDING.101002"
             />
             <div
-              style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
                 alt="White Iron Chunk"
@@ -1253,7 +1253,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="TALENT.104301"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Teachings of Freedom"
@@ -1279,7 +1279,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="TALENT.104302"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Guide to Freedom"
@@ -1305,7 +1305,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="TALENT.104303"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Philosophies of Freedom"
@@ -1331,7 +1331,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="TALENT.104344"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Teachings of Order"
@@ -1357,7 +1357,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="TALENT.104345"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Guide to Order"
@@ -1383,7 +1383,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="TALENT.104346"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Philosophies of Order"
@@ -1421,7 +1421,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114001"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Tile of Decarabian's Tower"
@@ -1447,7 +1447,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114002"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Debris of Decarabian's City"
@@ -1473,7 +1473,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114003"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Fragment of Decarabian's Epic"
@@ -1499,7 +1499,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114004"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Scattered Piece of Decarabian's Dream"
@@ -1525,7 +1525,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114057"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Broken Goblet of the Pristine Sea"
@@ -1551,7 +1551,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114058"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Wine Goblet of the Pristine Sea"
@@ -1577,7 +1577,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114059"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Silver Goblet of the Pristine Sea"
@@ -1603,7 +1603,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WEAPON.114060"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Golden Goblet of the Pristine Sea"
@@ -1640,7 +1640,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.112002"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Slime Condensate"
@@ -1666,7 +1666,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.112003"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Slime Secretions"
@@ -1692,7 +1692,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.112004"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Slime Concentrate"
@@ -1718,7 +1718,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.112092"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Old Operative's Pocket Watch"
@@ -1744,7 +1744,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.112093"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Operative's Standard Pocket Watch"
@@ -1770,7 +1770,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ENHANCEMENT.112094"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Operative's Constancy"
@@ -1807,7 +1807,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ASCENSION.104101"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           >
             <img
               alt="Brilliant Diamond Sliver"
@@ -1833,7 +1833,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ASCENSION.104102"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Brilliant Diamond Fragment"
@@ -1859,7 +1859,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ASCENSION.104103"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Brilliant Diamond Chunk"
@@ -1885,7 +1885,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="ASCENSION.104104"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Brilliant Diamond Gemstone"
@@ -1922,7 +1922,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113001"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Hurricane Seed"
@@ -1948,7 +1948,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113002"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Lightning Prism"
@@ -1974,7 +1974,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113003"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Dvalin's Plume"
@@ -2000,7 +2000,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113004"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Dvalin's Claw"
@@ -2026,7 +2026,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113005"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Dvalin's Sigh"
@@ -2052,7 +2052,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113056"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           >
             <img
               alt="Lightless Mass"
@@ -2078,7 +2078,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LEVEL.113057"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           >
             <img
               alt="Water That Failed To Transcend"
@@ -2115,7 +2115,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LOCAL.100021"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Wolfhook"
@@ -2141,7 +2141,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LOCAL.100022"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Valberry"
@@ -2167,7 +2167,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LOCAL.101239"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Subdetection Unit"
@@ -2193,7 +2193,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="LOCAL.101240"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Spring of the First Dewdrop"
@@ -2230,7 +2230,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="FISH.131000"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Medaka"
@@ -2256,7 +2256,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="FISH.131001"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Glaze Medaka"
@@ -2282,7 +2282,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="FISH.131002"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Sweet-Flower Medaka"
@@ -2308,7 +2308,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="FISH.131036"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           >
             <img
               alt="Maintenance Mek: Gold Leader"
@@ -2345,7 +2345,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WOOD.101301"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Birch Wood"
@@ -2371,7 +2371,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="WOOD.101322"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Torch Wood"
@@ -2408,7 +2408,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="BUILDING.101001"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="Iron Chunk"
@@ -2434,7 +2434,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             value="BUILDING.101002"
           />
           <div
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           >
             <img
               alt="White Iron Chunk"

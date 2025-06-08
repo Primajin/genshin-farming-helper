@@ -32,7 +32,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             title="Brilliant Diamond Sliver"
             type="button"
           >
@@ -103,7 +103,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <button
             class="css-59nvs6"
             data-testid="button-tier-1"
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             title="Brilliant Diamond Fragment"
             type="button"
           >
@@ -179,7 +179,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <button
             class="css-59nvs6"
             data-testid="button-tier-2"
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             title="Brilliant Diamond Chunk"
             type="button"
           >
@@ -260,7 +260,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <button
             class="css-59nvs6"
             data-testid="button-tier-3"
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             title="Brilliant Diamond Gemstone"
             type="button"
           >
@@ -345,7 +345,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           title="Brilliant Diamond Sliver"
           type="button"
         >
@@ -416,7 +416,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
         <button
           class="css-59nvs6"
           data-testid="button-tier-1"
-          style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           title="Brilliant Diamond Fragment"
           type="button"
         >
@@ -492,7 +492,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
         <button
           class="css-59nvs6"
           data-testid="button-tier-2"
-          style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           title="Brilliant Diamond Chunk"
           type="button"
         >
@@ -573,7 +573,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
         <button
           class="css-59nvs6"
           data-testid="button-tier-3"
-          style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           title="Brilliant Diamond Gemstone"
           type="button"
         >
@@ -715,7 +715,7 @@ exports[`farmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             title="Iron Chunk"
             type="button"
           >
@@ -780,7 +780,7 @@ exports[`farmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           title="Iron Chunk"
           type="button"
         >
@@ -902,7 +902,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             title="Slime Condensate"
             type="button"
           >
@@ -968,7 +968,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           <button
             class="css-59nvs6"
             data-testid="button-tier-1"
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             title="Slime Secretions"
             type="button"
           >
@@ -1039,7 +1039,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           <button
             class="css-59nvs6"
             data-testid="button-tier-2"
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             title="Slime Concentrate"
             type="button"
           >
@@ -1114,7 +1114,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           title="Slime Condensate"
           type="button"
         >
@@ -1180,7 +1180,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
         <button
           class="css-59nvs6"
           data-testid="button-tier-1"
-          style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           title="Slime Secretions"
           type="button"
         >
@@ -1251,7 +1251,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
         <button
           class="css-59nvs6"
           data-testid="button-tier-2"
-          style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           title="Slime Concentrate"
           type="button"
         >
@@ -1383,7 +1383,7 @@ exports[`farmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             title="Medaka"
             type="button"
           >
@@ -1458,7 +1458,7 @@ exports[`farmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           title="Medaka"
           type="button"
         >
@@ -1590,7 +1590,7 @@ exports[`farmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             title="Dvalin's Plume"
             type="button"
           >
@@ -1675,7 +1675,7 @@ exports[`farmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           title="Dvalin's Plume"
           type="button"
         >
@@ -1817,7 +1817,7 @@ exports[`farmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             title="Wolfhook"
             type="button"
           >
@@ -1882,7 +1882,7 @@ exports[`farmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           title="Wolfhook"
           type="button"
         >
@@ -2004,7 +2004,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             title="Teachings of Freedom"
             type="button"
           >
@@ -2075,7 +2075,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
           <button
             class="css-59nvs6"
             data-testid="button-tier-1"
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             title="Guide to Freedom"
             type="button"
           >
@@ -2151,7 +2151,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
           <button
             class="css-59nvs6"
             data-testid="button-tier-2"
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             title="Philosophies of Freedom"
             type="button"
           >
@@ -2231,7 +2231,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           title="Teachings of Freedom"
           type="button"
         >
@@ -2302,7 +2302,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
         <button
           class="css-59nvs6"
           data-testid="button-tier-1"
-          style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           title="Guide to Freedom"
           type="button"
         >
@@ -2378,7 +2378,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
         <button
           class="css-59nvs6"
           data-testid="button-tier-2"
-          style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           title="Philosophies of Freedom"
           type="button"
         >
@@ -2515,7 +2515,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
             title="Tile of Decarabian's Tower"
             type="button"
           >
@@ -2586,7 +2586,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <button
             class="css-59nvs6"
             data-testid="button-tier-1"
-            style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
             title="Debris of Decarabian's City"
             type="button"
           >
@@ -2662,7 +2662,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <button
             class="css-59nvs6"
             data-testid="button-tier-2"
-            style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
             title="Fragment of Decarabian's Epic"
             type="button"
           >
@@ -2743,7 +2743,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <button
             class="css-59nvs6"
             data-testid="button-tier-3"
-            style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
             title="Scattered Piece of Decarabian's Dream"
             type="button"
           >
@@ -2828,7 +2828,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_2_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
           title="Tile of Decarabian's Tower"
           type="button"
         >
@@ -2899,7 +2899,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
         <button
           class="css-59nvs6"
           data-testid="button-tier-1"
-          style="background-image: url(/src/images/bg/background_Item_3_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
           title="Debris of Decarabian's City"
           type="button"
         >
@@ -2975,7 +2975,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
         <button
           class="css-59nvs6"
           data-testid="button-tier-2"
-          style="background-image: url(/src/images/bg/background_Item_4_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
           title="Fragment of Decarabian's Epic"
           type="button"
         >
@@ -3056,7 +3056,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
         <button
           class="css-59nvs6"
           data-testid="button-tier-3"
-          style="background-image: url(/src/images/bg/background_Item_5_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
           title="Scattered Piece of Decarabian's Dream"
           type="button"
         >
@@ -3198,7 +3198,7 @@ exports[`farmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
           <button
             class="css-59nvs6"
             data-testid="button-tier-0"
-            style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             title="Birch Wood"
             type="button"
           >
@@ -3263,7 +3263,7 @@ exports[`farmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
         <button
           class="css-59nvs6"
           data-testid="button-tier-0"
-          style="background-image: url(/src/images/bg/background_Item_1_Star.png);"
+          style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
           title="Birch Wood"
           type="button"
         >
