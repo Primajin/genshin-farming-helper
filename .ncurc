@@ -1,0 +1,4 @@
+module.exports = {
+	target: (name, [{ operator }]) => operator === '^' ? 'minor' : operator === '~' ? 'patch' : 'latest',
+	filter: (_, [{ major, operator }]) => !(major === '0' || major === undefined || operator === undefined)
+}
