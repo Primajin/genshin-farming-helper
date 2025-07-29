@@ -1,6 +1,7 @@
 import xo from 'eslint-config-xo';
 import xoReact from 'eslint-config-xo-react';
-import vitestPlugin from 'eslint-plugin-vitest';
+import vitest from '@vitest/eslint-plugin'
+
 
 const config = [
 	// Apply XO base config to all files
@@ -60,10 +61,10 @@ const config = [
 	{
 		files: ['src/**/__tests__/*'],
 		plugins: {
-			vitest: vitestPlugin,
+			vitest,
 		},
 		rules: {
-			...vitestPlugin.configs['legacy-recommended'].rules,
+			...vitest.configs.recommended.rules,
 			'unicorn/prefer-global-this': 'off',
 			// Allow unused vars in tests (they're often imported for testing)
 			'no-unused-vars': 'off',
