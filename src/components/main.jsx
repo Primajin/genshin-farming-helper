@@ -2,7 +2,6 @@
 /** @jsxImportSource @emotion/react */
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
-
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';
@@ -184,20 +183,18 @@ export default function Main() {
 		const newHelpers = {...savedHelpers, [itemId]: config};
 		storage.save({...storageState, helpers: newHelpers});
 
-		setFarmHelperList(
-			previousHelpers =>
-				[
-					...previousHelpers,
-					<FarmHelper
-						key={itemId}
-						category={category}
-						config={config}
-						itemId={itemId}
-						materials={materials}
-						onRemove={onRemove}
-					/>,
-				],
-		);
+		setFarmHelperList(previousHelpers =>
+			[
+				...previousHelpers,
+				<FarmHelper
+					key={itemId}
+					category={category}
+					config={config}
+					itemId={itemId}
+					materials={materials}
+					onRemove={onRemove}
+				/>,
+			]);
 	}, []);
 
 	const onChange = event => {

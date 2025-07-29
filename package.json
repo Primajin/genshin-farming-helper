@@ -26,16 +26,17 @@
     "@testing-library/react": "^16.3.0",
     "@vitejs/plugin-react": "^4.7.0",
     "@vitest/coverage-v8": "^3.2.4",
-    "eslint": "^8.57.1",
-    "eslint-config-xo": "~0.45.0",
-    "eslint-config-xo-react": "^0.27.0",
+    "eslint": "^9.32.0",
+    "eslint-config-xo": "^0.48.0",
+    "eslint-config-xo-react": "^0.28.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-vitest": "^0.5.4",
     "jsdom": "^26.1.0",
+    "prop-types": "^15.8.1",
     "vite": "^6.3.5",
     "vitest": "^3.2.2",
-    "xo": "^0.60.0"
+    "xo": "^1.2.1"
   },
   "scripts": {
     "build": "vite build",
@@ -60,65 +61,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "xo": {
-    "extends": [
-      "xo",
-      "xo-react"
-    ],
-    "overrides": [
-      {
-        "files": "src/**/__tests__/*",
-        "plugins": [
-          "vitest"
-        ],
-        "extends": [
-          "plugin:vitest/legacy-recommended"
-        ],
-        "rules": {
-          "unicorn/prefer-global-this": "off"
-        }
-      }
-    ],
-    "rules": {
-      "capitalized-comments": [
-        "error",
-        "always",
-        {
-          "ignorePattern": "v8|pragma|ignore|prettier-ignore",
-          "ignoreInlineComments": true,
-          "ignoreConsecutiveComments": true
-        }
-      ],
-      "import/extensions": "off",
-      "import/order": [
-        "error",
-        {
-          "groups": [
-            "builtin",
-            "external",
-            "parent",
-            "sibling",
-            "index"
-          ]
-        }
-      ],
-      "react/react-in-jsx-scope": "off",
-      "react/require-default-props": [
-        2,
-        {
-          "forbidDefaultForRequired": true,
-          "functions": "defaultArguments"
-        }
-      ],
-      "react/no-unknown-property": [
-        2,
-        {
-          "ignore": [
-            "css"
-          ]
-        }
-      ]
-    }
-  }
+  ]
 }

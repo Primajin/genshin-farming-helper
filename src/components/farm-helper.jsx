@@ -2,7 +2,6 @@
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
-
 import storage from '../utils/local-storage.js';
 import theme from '../theme';
 import {
@@ -208,7 +207,7 @@ function FarmHelper({
 	const setGoalValue = [setTierOneGoal, setTierTwoGoal, setTierThreeGoal, setTierFourGoal];
 
 	const handleGoalChange = index => event => {
-		const value = event.target.value;
+		const {value} = event.target;
 		if (value) {
 			if (value.length < 4) { // Up to 999
 				setGoalValue[index](Number.parseInt(value, 10));

@@ -2,13 +2,12 @@
 import {
 	beforeEach, describe, expect, test, vi,
 } from 'vitest';
-
 import {toggleFullscreen} from '../fullscreen.js';
 
 describe('toggleFullscreen', () => {
 	beforeEach(() => {
-		const originalDocument = global.document;
-		global.document = {
+		const originalDocument = globalThis.document;
+		globalThis.document = {
 			...originalDocument,
 			fullscreenElement: null,
 			documentElement: {},
