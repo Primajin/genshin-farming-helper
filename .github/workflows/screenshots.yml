@@ -38,7 +38,7 @@ jobs:
           devices: iPhone 13,iPad Pro,iPad Pro landscape
           fullpage: false
           noDesktop: true
-          releaseId: 132411332
+          releaseId: 236029200
           type: png
           url: ${{ env.PR_NUMBER }}
         env:
