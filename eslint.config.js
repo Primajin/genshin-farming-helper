@@ -1,7 +1,6 @@
 import xo from 'eslint-config-xo';
 import xoReact from 'eslint-config-xo-react';
-import vitest from '@vitest/eslint-plugin'
-
+import vitest from '@vitest/eslint-plugin';
 
 const config = [
 	// Apply XO base config to all files
