@@ -4,7 +4,7 @@ import {css} from '@emotion/react';
 import {useState} from 'react';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
-} from '../constants';
+} from '../constants/index.js';
 import {filterObject} from '../utils/objects.js';
 import {removeQuotesFromString} from '../utils/strings.js';
 
@@ -43,7 +43,6 @@ function ItemPicker(properties) {
 		const disabled = list.includes(materialId);
 		// eslint-disable-next-line no-warning-comments
 		// FIXME find a better way
-		// eslint-disable-next-line react-hooks/rules-of-hooks
 		const [source, setSource] = useState(`${IMG_URL}${material.images?.filename_icon}.png`);
 
 		let tooManyRetries = 0;

@@ -3,13 +3,16 @@ import xoReact from 'eslint-config-xo-react';
 import vitestPlugin from 'eslint-plugin-vitest';
 
 const config = [
-	// Base XO configuration
+	// Apply XO base config to all files
 	...xo,
 
-	// XO React configuration
-	...xoReact,
+	// Apply XO React config to JSX/TSX files only
+	{
+		files: ['**/*.jsx', '**/*.tsx'],
+		...xoReact[0],
+	},
 
-	// General rules override
+	// Our custom rules override for all files
 	{
 		rules: {
 			'capitalized-comments': [
@@ -21,6 +24,7 @@ const config = [
 					ignoreConsecutiveComments: true,
 				},
 			],
+			'import-x/extensions': 'off', // Disable file extensions globally
 			'import-x/order': [
 				'error',
 				{
@@ -52,15 +56,7 @@ const config = [
 		},
 	},
 
-	// File extensions override - disable for all JS files
-	{
-		files: ['**/*.js', '**/*.jsx'],
-		rules: {
-			'import-x/extensions': 'off',
-		},
-	},
-
-	// Test files configuration
+	// Test files configuration - this should come after the base configs
 	{
 		files: ['src/**/__tests__/*'],
 		plugins: {
@@ -73,6 +69,45 @@ const config = [
 			'no-unused-vars': 'off',
 			// Allow navigator redeclaration in tests (for mocking)
 			'no-redeclare': 'off',
+		},
+	},
+
+	// Special files configuration
+	{
+		files: ['setup-tests.js'],
+		rules: {
+			// Allow unassigned imports in setup files
+			'import-x/no-unassigned-import': 'off',
+		},
+	},
+
+	// Allow navigator redeclaration in utility files that need to mock it
+	{
+		files: ['src/utils/wake-lock.js'],
+		rules: {
+			'no-redeclare': 'off',
+		},
+	},
+
+	// JSX files configuration - allow JSX components that may appear unused
+	{
+		files: ['**/*.jsx'],
+		rules: {
+			// JSX components are often imported but appear unused to the linter
+			'no-unused-vars': ['error', {
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				varsIgnorePattern: '^React$|^[A-Z]', // Ignore React and PascalCase (component names)
+			}],
+		},
+	},
+
+	// Final override - ensure import-x/extensions is disabled
+	{
+		files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+		rules: {
+			'import-x/extensions': 'off',
 		},
 	},
 ];

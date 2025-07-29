@@ -1,4 +1,4 @@
-import fs from 'node:fs';
+import fs from 'node:fs/promises';
 import genshinDb from 'genshin-db';
 
 const isValidMaterial = material => material
@@ -21,7 +21,7 @@ const weaponMaterials = allMaterials.filter(material => material.typeText.starts
 const wood = allMaterials.filter(material => material.category === 'WOOD');
 const buildingMaterials = allMaterials.filter(material => material.sortRank === 301 || material.sortRank === 331);
 
-export const materials = {
+const materials = {
 	buildingMaterials,
 	characterAscensionMaterials,
 	characterLVLMaterials,
@@ -33,12 +33,11 @@ export const materials = {
 	wood,
 };
 
-fs.writeFile('src/data.json', JSON.stringify(materials), error => {
-	/* V8 ignore next 3 */
-	if (error) {
-		console.error(error);
-	}
-});
+try {
+	await fs.writeFile('src/data.json', JSON.stringify(materials));
+} catch (error) {
+	console.error(error);
+}
 
 const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material.rarity, 10) > 3);
 const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material.rarity, 10) > 4);
@@ -49,7 +48,7 @@ const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhance
 	return rarityInt > 2 ? (rarityInt === 3 ? !characterWeaponEnhancementMaterials.some(material => material.sortRank === sortRankInt && material.rarity > 3) : true) : false;
 });
 
-export const materialsRare = {
+const materialsRare = {
 	buildingMaterials,
 	characterAscensionMaterials: characterAscensionMaterialsRare,
 	characterLVLMaterials,
@@ -61,9 +60,8 @@ export const materialsRare = {
 	wood,
 };
 
-fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-	/* V8 ignore next 3 */
-	if (error) {
-		console.error(error);
-	}
-});
+try {
+	await fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare));
+} catch (error) {
+	console.error(error);
+}

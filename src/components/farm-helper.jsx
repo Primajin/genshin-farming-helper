@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
 import storage from '../utils/local-storage.js';
-import theme from '../theme';
+import theme from '../theme/index.js';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
-} from '../constants';
-import {helpersType, materialsType} from '../types';
+} from '../constants/index.js';
+import {helpersType, materialsType} from '../types/index.js';
 import {up} from '../utils/theming.js';
 
 const {actions, primary} = theme;
@@ -243,7 +243,6 @@ function FarmHelper({
 			{items.map((item, itemIndex) => {
 				// eslint-disable-next-line no-warning-comments
 				// FIXME find a better way
-				// eslint-disable-next-line react-hooks/rules-of-hooks
 				const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
 
 				let tooManyRetries = 0;
@@ -287,7 +286,7 @@ function FarmHelper({
 						>
 							<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
 							<span css={rarity}>
-								{/* eslint-disable-next-line unicorn/no-new-array, react/no-array-index-key */}
+								{/* eslint-disable-next-line unicorn/no-new-array */}
 								{new Array(item.rarity ?? 1).fill('').map((_, index) => <span key={index} className='material-symbols-outlined fill'>star</span>)}
 							</span>
 							<b css={isGoalReached ? reachedGoal : undefined} data-testid={`value-tier-${itemIndex}`}>
