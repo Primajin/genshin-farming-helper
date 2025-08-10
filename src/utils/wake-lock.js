@@ -1,4 +1,3 @@
-/* global navigator */
 /**
  * Utility module for managing screen wake locks.
  * @module wakeLock

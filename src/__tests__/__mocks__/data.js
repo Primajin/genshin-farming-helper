@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+/* eslint-disable camelcase, @stylistic/max-len */
 
 export const materials = {
 	buildingMaterials: [

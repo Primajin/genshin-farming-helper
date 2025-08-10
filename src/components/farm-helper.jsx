@@ -122,9 +122,11 @@ const reachedGoal = css`
 	color: #347d39;
 `;
 
+const defaultConfig = {};
+
 function FarmHelper({
 	category,
-	config = {},
+	config = defaultConfig,
 	itemId,
 	materials: {
 		buildingMaterials,
@@ -208,7 +210,7 @@ function FarmHelper({
 	const setGoalValue = [setTierOneGoal, setTierTwoGoal, setTierThreeGoal, setTierFourGoal];
 
 	const handleGoalChange = index => event => {
-		const value = event.target.value;
+		const {value} = event.target;
 		if (value) {
 			if (value.length < 4) { // Up to 999
 				setGoalValue[index](Number.parseInt(value, 10));

@@ -70,8 +70,7 @@ function ItemPicker(properties) {
 				<span>{name}</span>
 			</label>
 		);
-	},
-	);
+	});
 }
 
 ItemPicker.propTypes = {
