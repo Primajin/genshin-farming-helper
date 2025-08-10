@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     name: Deploy the latest main version to Github pages.
     steps:
