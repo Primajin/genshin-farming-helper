@@ -2,7 +2,6 @@
 import {
 	beforeEach, describe, expect, test, vi,
 } from 'vitest';
-
 import {toggleFullscreen} from '../fullscreen.js';
 
 describe('toggleFullscreen', () => {
