@@ -1,6 +1,7 @@
 import {
 	beforeEach, describe, expect, test, vi,
 } from 'vitest';
+
 import {releaseWakeLock, requestWakeLock} from '../wake-lock.js';
 
 describe('wake lock', () => {

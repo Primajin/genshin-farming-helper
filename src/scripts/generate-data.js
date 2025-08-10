@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+
 import genshinDb from 'genshin-db';
 
 const isValidMaterial = material => material
@@ -34,7 +35,7 @@ export const materials = {
 };
 
 fs.promises.writeFile('src/data.json', JSON.stringify(materials), error => {
-	/* V8 ignore next 3 */
+	/* v8 ignore next 3 */
 	if (error) {
 		console.error(error);
 	}
@@ -62,7 +63,7 @@ export const materialsRare = {
 };
 
 fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-	/* V8 ignore next 3 */
+	/* v8 ignore next 3 */
 	if (error) {
 		console.error(error);
 	}

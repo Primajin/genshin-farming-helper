@@ -5,6 +5,7 @@ import {
 import {
 	describe, expect, test, vi,
 } from 'vitest';
+
 import Main from '../main.jsx';
 import localStorageState from '../../__tests__/__mocks__/local-storage.js';
 
