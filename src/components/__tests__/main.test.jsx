@@ -1,11 +1,9 @@
 import {
 	act, fireEvent, render, screen,
 } from '@testing-library/react';
-
 import {
 	beforeEach, describe, expect, test, vi,
 } from 'vitest';
-
 import Main from '../main.jsx';
 
 vi.mock('../../data.json', async () => {
@@ -30,7 +28,7 @@ describe('main', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		global.navigator = {
+		globalThis.navigator = {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -49,8 +47,8 @@ describe('main', () => {
 	});
 
 	test('renders without crashing and all them buttons clicked', async () => {
-		global.innerWidth = 700;
-		global.dispatchEvent(new Event('resize'));
+		globalThis.innerWidth = 700;
+		globalThis.dispatchEvent(new Event('resize'));
 		const rendering = render(<Main/>);
 
 		// Add the first item
@@ -81,14 +79,14 @@ describe('main', () => {
 		const fullScreenButton = screen.getByTitle('Make fullscreen');
 		await act(() => {
 			fireEvent.click(fullScreenButton);
-			global.document.dispatchEvent(new Event('fullscreenchange'));
+			globalThis.document.dispatchEvent(new Event('fullscreenchange'));
 		});
 		expect(rendering).toMatchSnapshot();
 
 		const exitFullScreenButton = screen.getByTitle('Exit fullscreen');
 		await act(() => {
 			fireEvent.click(exitFullScreenButton);
-			global.document.dispatchEvent(new Event('fullscreenchange'));
+			globalThis.document.dispatchEvent(new Event('fullscreenchange'));
 		});
 		expect(rendering).toMatchSnapshot();
 
