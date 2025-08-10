@@ -30,8 +30,7 @@ const eslintConfig = [
 				{
 					'newlines-between': 'always',
 					groups: [
-						'builtin',
-						'external',
+						['builtin', 'external'],
 						['parent', 'sibling'],
 						'index',
 					],
