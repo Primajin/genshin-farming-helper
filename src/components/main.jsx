@@ -17,7 +17,7 @@ const globalStyles = css`
 	*, *::before, *::after {
 		box-sizing: border-box;
 	}
-	
+
 	body {
 		background: transparent top center url("https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg") no-repeat fixed;
 		background-size: cover;
@@ -86,7 +86,7 @@ const globalStyles = css`
 		section {
 			margin-top: 20px;
 			min-width: 155px;
-			
+
 			&:empty {
 				margin-top: 0;
 			}
@@ -184,20 +184,18 @@ export default function Main() {
 		const newHelpers = {...savedHelpers, [itemId]: config};
 		storage.save({...storageState, helpers: newHelpers});
 
-		setFarmHelperList(
-			previousHelpers =>
-				[
-					...previousHelpers,
-					<FarmHelper
-						key={itemId}
-						category={category}
-						config={config}
-						itemId={itemId}
-						materials={materials}
-						onRemove={onRemove}
-					/>,
-				],
-		);
+		setFarmHelperList(previousHelpers =>
+			[
+				...previousHelpers,
+				<FarmHelper
+					key={itemId}
+					category={category}
+					config={config}
+					itemId={itemId}
+					materials={materials}
+					onRemove={onRemove}
+				/>,
+			]);
 	}, []);
 
 	const onChange = event => {
@@ -263,16 +261,31 @@ export default function Main() {
 
 	const disabledKeys = farmHelperList.map(item => item.key);
 
+	const videoBackground
+		= (
+			<div css={video}>
+				<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg'>
+					<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
+				</video>
+			</div>
+		);
+
+	const stackToggle = (
+		<button
+			className='material-symbols-outlined'
+			css={[actions, toggleFloat]}
+			title={floatGroups ? 'Click to stack items' : 'Click to float items'}
+			type='button'
+			onClick={handleFloatChange}
+		>
+			{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
+		</button>
+	);
+
 	return (
 		<>
 			<Global styles={globalStyles}/>
-			{widthLarger768 && (
-				<div css={video}>
-					<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg'>
-						<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
-					</video>
-				</div>
-			)}
+			{widthLarger768 ? videoBackground : null}
 			<main>
 				{!widthLarger768 && (
 					<button
@@ -294,20 +307,10 @@ export default function Main() {
 				>
 					{fullScreen ? 'fullscreen_exit' : 'fullscreen'}
 				</button>
-				{hasItems && (
-					<button
-						className='material-symbols-outlined'
-						css={[actions, toggleFloat]}
-						title={floatGroups ? 'Click to stack items' : 'Click to float items'}
-						type='button'
-						onClick={handleFloatChange}
-					>
-						{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
-					</button>
-				)}
+				{hasItems ? stackToggle : null}
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
-					{hasItems && <><section/><section/><section/><section/><section/><section/></>}
+					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>

@@ -1,4 +1,3 @@
-/* global navigator */
 import {
 	act, fireEvent, render, screen,
 } from '@testing-library/react';

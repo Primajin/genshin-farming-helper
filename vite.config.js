@@ -2,7 +2,7 @@ import path from 'node:path';
 import process from 'node:process';
 import {fileURLToPath} from 'node:url';
 import react from '@vitejs/plugin-react';
-import {codecovVitePlugin} from '@codecov/vite-plugin';
+// Import {codecovVitePlugin} from '@codecov/vite-plugin';
 import {configDefaults, coverageConfigDefaults} from 'vitest/config';
 import {defineConfig, searchForWorkspaceRoot} from 'vite';
 
@@ -15,12 +15,12 @@ export default defineConfig(() => ({
 	},
 	plugins: [
 		react(),
-		codecovVitePlugin({
-			enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-			bundleName: 'genshin-farming-helper',
-			uploadToken: process.env.CODECOV_TOKEN,
-			telemetry: false,
-		}),
+		// CodecovVitePlugin({
+		// 	enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
+		// 	bundleName: 'genshin-farming-helper',
+		// 	uploadToken: process.env.CODECOV_TOKEN,
+		// 	telemetry: false,
+		// }),
 	],
 	resolve: {
 		preserveSymlinks: true,

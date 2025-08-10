@@ -33,7 +33,7 @@ describe('isPRPreview', () => {
 	});
 
 	test('should handle the case when window in its entirety is undefined', () => {
-		// eslint-disable-next-line no-global-assign
+		// eslint-disable-next-line no-global-assign,no-implicit-globals
 		window = undefined;
 
 		const result = isPRPreview();

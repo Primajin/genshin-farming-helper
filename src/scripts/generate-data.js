@@ -33,7 +33,7 @@ export const materials = {
 	wood,
 };
 
-fs.writeFile('src/data.json', JSON.stringify(materials), error => {
+fs.promises.writeFile('src/data.json', JSON.stringify(materials), error => {
 	/* v8 ignore next 3 */
 	if (error) {
 		console.error(error);
@@ -61,7 +61,7 @@ export const materialsRare = {
 	wood,
 };
 
-fs.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
+fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
 	/* v8 ignore next 3 */
 	if (error) {
 		console.error(error);
