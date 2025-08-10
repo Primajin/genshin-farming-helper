@@ -29,7 +29,7 @@ describe('main', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		global.navigator = {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -48,8 +48,8 @@ describe('main', () => {
 	});
 
 	test('renders without crashing and all them buttons clicked', async () => {
-		globalThis.innerWidth = 700;
-		globalThis.dispatchEvent(new Event('resize'));
+		global.innerWidth = 700;
+		global.dispatchEvent(new Event('resize'));
 		const rendering = render(<Main/>);
 
 		// Add the first item
@@ -80,14 +80,14 @@ describe('main', () => {
 		const fullScreenButton = screen.getByTitle('Make fullscreen');
 		await act(() => {
 			fireEvent.click(fullScreenButton);
-			globalThis.document.dispatchEvent(new Event('fullscreenchange'));
+			global.document.dispatchEvent(new Event('fullscreenchange'));
 		});
 		expect(rendering).toMatchSnapshot();
 
 		const exitFullScreenButton = screen.getByTitle('Exit fullscreen');
 		await act(() => {
 			fireEvent.click(exitFullScreenButton);
-			globalThis.document.dispatchEvent(new Event('fullscreenchange'));
+			global.document.dispatchEvent(new Event('fullscreenchange'));
 		});
 		expect(rendering).toMatchSnapshot();
 
