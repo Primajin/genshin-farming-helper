@@ -1,5 +1,4 @@
 import fs from 'node:fs';
-
 import genshinDb from 'genshin-db';
 
 const isValidMaterial = material => material

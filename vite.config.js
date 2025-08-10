@@ -1,7 +1,6 @@
 import path from 'node:path';
 import process from 'node:process';
 import {fileURLToPath} from 'node:url';
-
 import react from '@vitejs/plugin-react';
 // Import {codecovVitePlugin} from '@codecov/vite-plugin';
 import {configDefaults, coverageConfigDefaults} from 'vitest/config';
