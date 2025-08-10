@@ -1,7 +1,5 @@
 import fs from 'node:fs';
-
 import {describe, test, expect} from 'vitest';
-
 import {materials, materialsRare} from '../generate-data.js';
 
 describe('generate Data', () => {

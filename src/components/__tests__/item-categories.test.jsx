@@ -2,7 +2,6 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, test, expect, vi,
 } from 'vitest';
-
 import ItemCategories from '../item-categories.jsx';
 import {materials} from '../../__tests__/__mocks__/data.js';
 
