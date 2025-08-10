@@ -19,7 +19,9 @@ const getItem = _key => null;
  * @param _value {string}
  * @returns {void}
  */
-const setItem = (_key, _value) => {};
+const setItem = (_key, _value) => {
+	// Do nothing, this is a mock
+};
 
 /**
  * Getter and setter for local storage

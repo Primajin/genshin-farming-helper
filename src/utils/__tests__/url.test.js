@@ -1,5 +1,5 @@
-/* global window */
 import {describe, test, expect} from 'vitest';
+
 import {isPRPreview} from '../url.js';
 
 describe('isPRPreview', () => {

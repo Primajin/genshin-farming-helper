@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
+
 import theme from '../theme';
 import {materialTypes} from '../constants';
 import {materialsType} from '../types';

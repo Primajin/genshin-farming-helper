@@ -1,8 +1,12 @@
 import vitest from '@vitest/eslint-plugin';
 import xo from 'xo';
+import xoConfig from 'eslint-config-xo';
+import xoReactConfig from 'eslint-config-xo-react';
 
 /** @type {import('xo').FlatXoConfig} */
 const eslintConfig = [
+	...xoConfig,
+	...xoReactConfig,
 	{
 		files: ['src/**/__tests__/*'], // Or any other pattern
 		plugins: {
@@ -15,27 +19,16 @@ const eslintConfig = [
 	},
 	{
 		files: ['**/*.{js,jsx,ts,tsx}'],
-		languageOptions: {ecmaVersion: 'latest'},
-		react: true,
 		rules: {
-			'capitalized-comments': [
-				'error',
-				'always',
-				{
-					ignorePattern: 'v8|pragma|ignore|prettier-ignore',
-					ignoreInlineComments: true,
-					ignoreConsecutiveComments: true,
-				},
-			],
 			'import-x/extensions': 'off',
 			'import-x/order': [
 				'error',
 				{
+					'newlines-between': 'always',
 					groups: [
 						'builtin',
 						'external',
-						'parent',
-						'sibling',
+						['parent', 'sibling'],
 						'index',
 					],
 				},
@@ -60,4 +53,5 @@ const eslintConfig = [
 	},
 ];
 
+// Ensure that the config is compatible with ESLint (this will import the necessary plugins and parsers under the hood)
 export default xo.xoToEslintConfig(eslintConfig);
