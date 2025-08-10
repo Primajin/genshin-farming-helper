@@ -2,13 +2,17 @@ import vitest from '@vitest/eslint-plugin';
 import xo from 'xo';
 import xoConfig from 'eslint-config-xo';
 import xoReactConfig from 'eslint-config-xo-react';
+import {globalIgnores} from 'eslint/config';
 
 /** @type {import('xo').FlatXoConfig} */
 const eslintConfig = [
+	globalIgnores([
+		'package-lock.json',
+	]),
 	...xoConfig,
 	...xoReactConfig,
 	{
-		files: ['src/**/__tests__/*'], // Or any other pattern
+		files: ['src/**/__tests__/*'],
 		plugins: {
 			vitest,
 		},
