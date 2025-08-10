@@ -8,7 +8,7 @@ describe('wake lock', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		global.navigator = {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -35,7 +35,7 @@ describe('wake lock', () => {
 		});
 
 		test('should handle errors when Wake Lock API is not supported.', async () => {
-			globalThis.navigator.wakeLock = null;
+			global.navigator.wakeLock = null;
 			const consoleSpy = vi.spyOn(console, 'error');
 			const wakeLockSentinel = null;
 			const result = await requestWakeLock(wakeLockSentinel);
@@ -44,7 +44,7 @@ describe('wake lock', () => {
 		});
 
 		test('should handle errors when requesting a wake lock', async () => {
-			globalThis.navigator.wakeLock.request = vi.fn().mockRejectedValue(new Error('Test error'));
+			global.navigator.wakeLock.request = vi.fn().mockRejectedValue(new Error('Test error'));
 			const consoleSpy = vi.spyOn(console, 'error');
 			const wakeLockSentinel = null;
 			const result = await requestWakeLock(wakeLockSentinel);

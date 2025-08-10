@@ -2,3 +2,4 @@ node_modules
 build
 src/data.json
 src/data-rare.json
+test-report.junit.xml

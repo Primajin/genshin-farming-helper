@@ -7,8 +7,8 @@ import {toggleFullscreen} from '../fullscreen.js';
 
 describe('toggleFullscreen', () => {
 	beforeEach(() => {
-		const originalDocument = globalThis.document;
-		globalThis.document = {
+		const originalDocument = global.document;
+		global.document = {
 			...originalDocument,
 			fullscreenElement: null,
 			documentElement: {},

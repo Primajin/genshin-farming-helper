@@ -5,7 +5,7 @@ import {isPRPreview} from '../url.js';
 describe('isPRPreview', () => {
 	test('should return true if the current URL includes "/pr-preview"', () => {
 		// Mock the window.location object
-		Object.defineProperty(globalThis, 'location', {
+		Object.defineProperty(global, 'location', {
 			value: {
 				pathname: '/some/path/pr-preview',
 			},
@@ -18,14 +18,14 @@ describe('isPRPreview', () => {
 
 	test('should return false if the current URL does not include "/pr-preview"', () => {
 		// Mock the window.location object
-		Object.defineProperty(globalThis, 'location', {value: {pathname: '/some/other/path'}});
+		Object.defineProperty(global, 'location', {value: {pathname: '/some/other/path'}});
 		const result = isPRPreview();
 		expect(result).toBeFalsy();
 	});
 
 	test('should handle the case when window.location is undefined', () => {
 		// Mock the window.location object to be undefined
-		Object.defineProperty(globalThis, 'location', {value: undefined});
+		Object.defineProperty(global, 'location', {value: undefined});
 
 		const result = isPRPreview();
 		expect(result).toBeFalsy();
@@ -33,7 +33,7 @@ describe('isPRPreview', () => {
 
 	test('should handle the case when window in its entirety is undefined', () => {
 		// eslint-disable-next-line no-global-assign,no-implicit-globals
-		globalThis = undefined;
+		global = undefined;
 
 		const result = isPRPreview();
 		expect(result).toBeFalsy();
