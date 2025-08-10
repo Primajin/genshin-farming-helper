@@ -2,6 +2,7 @@
 /** @jsxImportSource @emotion/react */
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
+
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';

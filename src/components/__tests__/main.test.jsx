@@ -4,6 +4,7 @@ import {
 import {
 	beforeEach, describe, expect, test, vi,
 } from 'vitest';
+
 import Main from '../main.jsx';
 
 vi.mock('../../data.json', async () => {
