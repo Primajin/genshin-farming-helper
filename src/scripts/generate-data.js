@@ -34,7 +34,7 @@ export const materials = {
 };
 
 fs.promises.writeFile('src/data.json', JSON.stringify(materials), error => {
-	/* v8 ignore next 3 */
+	/* V8 ignore next 3 */
 	if (error) {
 		console.error(error);
 	}
@@ -62,7 +62,7 @@ export const materialsRare = {
 };
 
 fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-	/* v8 ignore next 3 */
+	/* V8 ignore next 3 */
 	if (error) {
 		console.error(error);
 	}
