@@ -1,4 +1,5 @@
 import {describe, test, expect} from 'vitest';
+
 import {
 	breakpoints, deviceSpecs, forDevice, up,
 } from '../theming.js';
