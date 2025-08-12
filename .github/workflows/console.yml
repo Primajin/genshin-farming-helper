@@ -27,7 +27,7 @@ jobs:
         run: sleep 120s
         shell: bash
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Use WebApp Console Log Action
         uses: Primajin/webapp-console-log-action@v1
         with:
