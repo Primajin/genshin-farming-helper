@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: '21'
+          node-version: '24'
           cache: 'npm'
       - name: Cache dependencies
         uses: actions/cache@v4
