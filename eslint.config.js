@@ -1,6 +1,5 @@
 import vitest from '@vitest/eslint-plugin';
 import xo from 'xo';
-import xoConfig from 'eslint-config-xo';
 import xoReactConfig from 'eslint-config-xo-react';
 import {globalIgnores} from 'eslint/config';
 
@@ -9,7 +8,6 @@ const eslintConfig = [
 	globalIgnores([
 		'package-lock.json',
 	]),
-	...xoConfig,
 	...xoReactConfig,
 	{
 		files: ['src/**/__tests__/*'],
@@ -17,7 +15,7 @@ const eslintConfig = [
 			vitest,
 		},
 		rules: {
-			...vitest.configs.recommended.rules, // You can also use vitest.configs.all.rules to enable all rules
+			...vitest.configs.recommended.rules,
 			'unicorn/prefer-global-this': 'off',
 		},
 	},
