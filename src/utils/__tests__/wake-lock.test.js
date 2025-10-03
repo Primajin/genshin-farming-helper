@@ -29,9 +29,9 @@ describe('wake lock', () => {
 			// Const sentinelSpy = vi.spyOn(result, 'addEventListener');
 			expect(result).not.toBeNull();
 			// Expect(result.addEventListener).toHaveBeenCalledWith('release', expect.any(Function));
-			expect(consoleSpy).toHaveBeenCalledWith('Screen Wake Lock requested.');
+			expect(consoleSpy).toHaveBeenCalledWithExactlyOnceWith('Screen Wake Lock requested.');
 			result.dispatchEvent(new Event('release'));
-			expect(consoleSpy).toHaveBeenCalledWith('Screen Wake Lock released:', 'hello');
+			expect(consoleSpy).toHaveBeenCalledWithExactlyOnceWith('Screen Wake Lock released:', 'hello');
 		});
 
 		test('should handle errors when Wake Lock API is not supported.', async () => {
@@ -40,7 +40,7 @@ describe('wake lock', () => {
 			const wakeLockSentinel = null;
 			const result = await requestWakeLock(wakeLockSentinel);
 			expect(result).toBeNull();
-			expect(consoleSpy).toHaveBeenCalledWith('Wake Lock API not supported.');
+			expect(consoleSpy).toHaveBeenCalledWithExactlyOnceWith('Wake Lock API not supported.');
 		});
 
 		test('should handle errors when requesting a wake lock', async () => {
@@ -49,7 +49,7 @@ describe('wake lock', () => {
 			const wakeLockSentinel = null;
 			const result = await requestWakeLock(wakeLockSentinel);
 			expect(result).toBeNull();
-			expect(consoleSpy).toHaveBeenCalledWith('Error: Test error');
+			expect(consoleSpy).toHaveBeenCalledWithExactlyOnceWith('Error: Test error');
 		});
 	});
 
