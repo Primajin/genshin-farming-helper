@@ -21,7 +21,7 @@ describe('toggleFullscreen', () => {
 		const element = {requestFullscreen: vi.fn()};
 		const querySpy = vi.spyOn(document, 'querySelector').mockReturnValue(element);
 		toggleFullscreen('#test');
-		expect(querySpy).toHaveBeenCalledWith('#test');
+		expect(querySpy).toHaveBeenCalledWithExactlyOnceWith('#test');
 		expect(element.requestFullscreen).toHaveBeenCalled();
 	});
 
@@ -42,7 +42,7 @@ describe('toggleFullscreen', () => {
 		const consoleSpy = vi.spyOn(console, 'debug');
 		vi.spyOn(document, 'querySelector').mockReturnValue(element);
 		expect(() => toggleFullscreen('#test')).not.toThrow();
-		expect(consoleSpy).toHaveBeenCalledWith('Fullscreen is not supported');
+		expect(consoleSpy).toHaveBeenCalledWithExactlyOnceWith('Fullscreen is not supported');
 	});
 
 	test('should not throw an error if exitFullscreen is not supported', () => {
@@ -50,6 +50,6 @@ describe('toggleFullscreen', () => {
 		document.exitFullscreen = undefined;
 		const consoleSpy = vi.spyOn(console, 'debug');
 		expect(() => toggleFullscreen('#test')).not.toThrow();
-		expect(consoleSpy).toHaveBeenCalledWith('Exit fullscreen is not supported');
+		expect(consoleSpy).toHaveBeenCalledWithExactlyOnceWith('Exit fullscreen is not supported');
 	});
 });
