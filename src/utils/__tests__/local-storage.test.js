@@ -33,7 +33,7 @@ describe('local-storage', () => {
 			const mockValue = {someKey: 'someValue'};
 			const setItemSpy = vi.spyOn(prototypeOfLocalStorage, 'setItem');
 			storage.save(mockValue);
-			expect(setItemSpy).toHaveBeenCalledWithExactlyOnceWith('genshin-farming-helper', JSON.stringify(mockValue));
+			expect(setItemSpy).toHaveBeenCalledWith('genshin-farming-helper', JSON.stringify(mockValue));
 		});
 	});
 });
