@@ -42,18 +42,21 @@ const categories = css`
 `;
 
 function PresetCategories({activePresets, onChangeProp}) {
+	// Empty labels for grid alignment (4 per row)
+	const emptyLabels = Array.from({length: 4}, (_, index) => <label key={`empty-${index}`}/>);
+
 	return (
 		<form css={categories} onChange={onChangeProp}>
 			<fieldset role='group'>
 				<legend>Characters</legend>
 				<PresetPicker presets={presets.characters} type='character' activePresets={activePresets}/>
-				<label/><label/><label/><label/>
+				{emptyLabels}
 			</fieldset>
 
 			<fieldset role='group'>
 				<legend>Weapons</legend>
 				<PresetPicker presets={presets.weapons} type='weapon' activePresets={activePresets}/>
-				<label/><label/><label/><label/>
+				{emptyLabels}
 			</fieldset>
 		</form>
 	);

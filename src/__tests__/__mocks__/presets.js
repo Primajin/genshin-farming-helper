@@ -18,6 +18,7 @@ export const presets = {
 				},
 			],
 			images: {
+				// eslint-disable-next-line camelcase
 				filename_icon: 'UI_AvatarIcon_PlayerBoy',
 			},
 		},
@@ -36,6 +37,7 @@ export const presets = {
 				},
 			],
 			images: {
+				// eslint-disable-next-line camelcase
 				filename_icon: 'UI_EquipIcon_Sword',
 			},
 		},
