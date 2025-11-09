@@ -1443,6 +1443,84 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           <section />
         </div>
         <form
+          class="css-1lpop5k"
+        >
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Characters
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickercharacter.10000005"
+              title="Test Character"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="character.10000005"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              >
+                <img
+                  alt="Test Character"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_AvatarIcon_PlayerBoy.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Character
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Weapons
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerweapon.11101"
+              title="Test Weapon"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="weapon.11101"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              >
+                <img
+                  alt="Test Weapon"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_EquipIcon_Sword.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Weapon
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+        </form>
+        <form
           class="css-mgmeqk"
         >
           <fieldset
@@ -3621,6 +3699,84 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         <section />
       </div>
       <form
+        class="css-1lpop5k"
+      >
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Characters
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickercharacter.10000005"
+            title="Test Character"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="character.10000005"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+            >
+              <img
+                alt="Test Character"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_AvatarIcon_PlayerBoy.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Character
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Weapons
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerweapon.11101"
+            title="Test Weapon"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="weapon.11101"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Test Weapon"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_EquipIcon_Sword.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Weapon
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+      </form>
+      <form
         class="css-mgmeqk"
       >
         <fieldset
@@ -5793,6 +5949,84 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           <section />
         </div>
         <form
+          class="css-1lpop5k"
+        >
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Characters
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickercharacter.10000005"
+              title="Test Character"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="character.10000005"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              >
+                <img
+                  alt="Test Character"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_AvatarIcon_PlayerBoy.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Character
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Weapons
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerweapon.11101"
+              title="Test Weapon"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="weapon.11101"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              >
+                <img
+                  alt="Test Weapon"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_EquipIcon_Sword.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Weapon
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
+        </form>
+        <form
           class="css-mgmeqk"
         >
           <fieldset
@@ -7906,6 +8140,84 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         <section />
         <section />
       </div>
+      <form
+        class="css-1lpop5k"
+      >
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Characters
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickercharacter.10000005"
+            title="Test Character"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="character.10000005"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+            >
+              <img
+                alt="Test Character"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_AvatarIcon_PlayerBoy.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Character
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Weapons
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerweapon.11101"
+            title="Test Weapon"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="weapon.11101"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Test Weapon"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_EquipIcon_Sword.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Weapon
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
+      </form>
       <form
         class="css-mgmeqk"
       >

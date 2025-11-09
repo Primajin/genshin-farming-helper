@@ -5,12 +5,14 @@ import {Global, css} from '@emotion/react';
 
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
+import presets from '../presets.json';
 import storage from '../utils/local-storage.js';
 import theme from '../theme/index.js';
 import {breakpoints, up} from '../utils/theming.js';
 import {fullscreenElement, toggleFullscreen} from '../utils/fullscreen.js';
 import {releaseWakeLock, requestWakeLock} from '../utils/wake-lock.js';
 import ItemCategories from './item-categories.jsx';
+import PresetCategories from './preset-categories.jsx';
 import FarmHelper from './farm-helper.jsx';
 
 const globalStyles = css`
@@ -159,6 +161,7 @@ function createInitialFarmHelpers() {
 
 export default function Main() {
 	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
+	const [activePresets, setActivePresets] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
 	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
@@ -226,6 +229,182 @@ export default function Main() {
 		const itemId = itemName.split('.')[1];
 		addHelperWithItem({itemId, category});
 	};
+
+	// Helper to find material category by ID
+	const findMaterialCategory = materialId => {
+		const allMaterialsFlat = [
+			...materials.buildingMaterials,
+			...materials.characterAscensionMaterials,
+			...materials.characterLVLMaterials,
+			...materials.characterWeaponEnhancementMaterials,
+			...materials.fish,
+			...materials.localSpecialties,
+			...materials.talentMaterials,
+			...materials.weaponMaterials,
+			...materials.wood,
+		];
+
+		const material = allMaterialsFlat.find(m => m.id === materialId);
+		if (!material) {
+			return null;
+		}
+
+		// Determine category based on material type
+		if (materials.talentMaterials.includes(material)) {
+			return 'TALENT';
+		}
+
+		if (materials.weaponMaterials.includes(material)) {
+			return 'WEAPON';
+		}
+
+		if (materials.characterWeaponEnhancementMaterials.includes(material)) {
+			return 'ENHANCEMENT';
+		}
+
+		if (materials.characterAscensionMaterials.includes(material)) {
+			return 'ASCENSION';
+		}
+
+		if (materials.characterLVLMaterials.includes(material)) {
+			return 'LEVEL';
+		}
+
+		if (materials.localSpecialties.includes(material)) {
+			return 'LOCAL';
+		}
+
+		if (materials.fish.includes(material)) {
+			return 'FISH';
+		}
+
+		if (materials.wood.includes(material)) {
+			return 'WOOD';
+		}
+
+		if (materials.buildingMaterials.includes(material)) {
+			return 'BUILDING';
+		}
+
+		return null;
+	};
+
+	const onPresetChange = event => {
+		const {checked, value} = event.target;
+		const [type, presetIdString] = value.split('.');
+		const presetId = Number.parseInt(presetIdString, 10);
+
+		const preset = type === 'character'
+			? presets.characters.find(c => c.id === presetId)
+			: presets.weapons.find(w => w.id === presetId);
+
+		if (!preset) {
+			return;
+		}
+
+		const storageState = storage.load();
+		const savedHelpers = storageState?.helpers ?? {};
+		const savedPresets = storageState?.presets ?? [];
+
+		if (checked) {
+			// Add preset
+			const newPresets = [...savedPresets, value];
+			setActivePresets(newPresets);
+
+			// Add or update goals for each material in the preset
+			for (const item of preset.items) {
+				const itemId = String(item.id);
+				const category = findMaterialCategory(item.id);
+
+				if (!category) {
+					continue;
+				}
+
+				if (savedHelpers[itemId]) {
+					// Material already tracked - update goals
+					const config = savedHelpers[itemId];
+					const goalFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+
+					for (const goalField of goalFields) {
+						const currentGoal = config[goalField] || 0;
+						config[goalField] = currentGoal + item.count;
+					}
+
+					savedHelpers[itemId] = config;
+				} else {
+					// New material - add with goal set
+					const config = {
+						category,
+						tierFour: 0,
+						tierFourGoal: item.count,
+						tierOne: 0,
+						tierOneGoal: item.count,
+						tierOneLock: false,
+						tierThree: 0,
+						tierThreeGoal: item.count,
+						tierThreeLock: false,
+						tierTwo: 0,
+						tierTwoGoal: item.count,
+						tierTwoLock: false,
+					};
+					savedHelpers[itemId] = config;
+					addHelperWithItem({itemId, config, category});
+				}
+			}
+
+			storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
+			// Force re-render by updating state
+			setFarmHelperList(previousHelpers => [...previousHelpers]);
+		} else {
+			// Remove preset
+			const newPresets = savedPresets.filter(p => p !== value);
+			setActivePresets(newPresets);
+
+			// Reduce or remove goals for each material in the preset
+			for (const item of preset.items) {
+				const itemId = String(item.id);
+
+				if (savedHelpers[itemId]) {
+					const config = savedHelpers[itemId];
+					const goalFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+
+					for (const goalField of goalFields) {
+						const currentGoal = config[goalField] || 0;
+						const newGoal = Math.max(0, currentGoal - item.count);
+						config[goalField] = newGoal === 0 ? '' : newGoal;
+					}
+
+					savedHelpers[itemId] = config;
+				}
+			}
+
+			storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
+			// Force re-render by updating state
+			setFarmHelperList(previousHelpers => [...previousHelpers]);
+		}
+	};
+
+	useEffect(() => {
+		if (!didRun) {
+			didRun = true;
+			const storageState = storage.load();
+			const savedHelpers = storageState?.helpers;
+			const savedPresets = storageState?.presets ?? [];
+
+			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
+				for (const [itemId, config] of Object.entries(savedHelpers)) {
+					// eslint-disable-next-line react-hooks/set-state-in-effect
+					addHelperWithItem({itemId, config, category: config.category});
+				}
+			} else {
+				// Storage is empty, create new
+				storage.save({});
+			}
+
+			// Set presets after helpers are loaded
+			setActivePresets(savedPresets);
+		}
+	}, [addHelperWithItem]);
 
 	useEffect(() => {
 		const setFullScreenState = () => {
@@ -318,6 +497,7 @@ export default function Main() {
 					{farmHelperList}
 					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
+				<PresetCategories activePresets={activePresets} onChangeProp={onPresetChange}/>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>
 		</>

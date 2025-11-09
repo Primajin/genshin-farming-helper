@@ -34,6 +34,15 @@ vi.mock('../../data-rare.json', async () => {
 	};
 });
 
+vi.mock('../../presets.json', async () => {
+	const {presets} = await vi.importActual('../../__tests__/__mocks__/presets.js');
+	return {
+		default: {
+			...presets,
+		},
+	};
+});
+
 const prototypeOfLocalStorage = Object.getPrototypeOf(localStorage);
 
 describe('main with pre-saved helpers', () => {
