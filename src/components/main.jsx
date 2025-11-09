@@ -230,21 +230,25 @@ export default function Main() {
 		addHelperWithItem({itemId, category});
 	};
 
+	// Helper to get all materials as a flat array
+	const getAllMaterialsFlat = () => [
+		...materials.buildingMaterials,
+		...materials.characterAscensionMaterials,
+		...materials.characterLVLMaterials,
+		...materials.characterWeaponEnhancementMaterials,
+		...materials.fish,
+		...materials.localSpecialties,
+		...materials.talentMaterials,
+		...materials.weaponMaterials,
+		...materials.wood,
+	];
+
+	// Helper to find material by ID
+	const findMaterial = materialId => getAllMaterialsFlat().find(m => m.id === materialId);
+
 	// Helper to find material category by ID
 	const findMaterialCategory = materialId => {
-		const allMaterialsFlat = [
-			...materials.buildingMaterials,
-			...materials.characterAscensionMaterials,
-			...materials.characterLVLMaterials,
-			...materials.characterWeaponEnhancementMaterials,
-			...materials.fish,
-			...materials.localSpecialties,
-			...materials.talentMaterials,
-			...materials.weaponMaterials,
-			...materials.wood,
-		];
-
-		const material = allMaterialsFlat.find(m => m.id === materialId);
+		const material = findMaterial(materialId);
 		if (!material) {
 			return null;
 		}
@@ -289,19 +293,61 @@ export default function Main() {
 		return null;
 	};
 
-	// Helper to update goal fields for a material
-	const updateGoalFields = (config, count, isAdding) => {
-		const goalFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-
-		for (const goalField of goalFields) {
-			const currentGoal = config[goalField] || 0;
-			if (isAdding) {
-				config[goalField] = currentGoal + count;
-			} else {
-				const newGoal = Math.max(0, currentGoal - count);
-				config[goalField] = newGoal === 0 ? '' : newGoal;
-			}
+	// Helper to update a specific tier goal
+	const updateTierGoal = (config, tierIndex, count, isAdding) => {
+		const goalField = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'][tierIndex];
+		const currentGoal = config[goalField] || 0;
+		if (isAdding) {
+			config[goalField] = currentGoal + count;
+		} else {
+			const newGoal = Math.max(0, currentGoal - count);
+			config[goalField] = newGoal === 0 ? '' : newGoal;
 		}
+	};
+
+	// Helper to group preset items by sortRank and process them
+	const groupPresetItems = presetItems => {
+		const grouped = {};
+
+		for (const item of presetItems) {
+			const material = findMaterial(item.id);
+			if (!material) {
+				continue;
+			}
+
+			const {sortRank} = material;
+			grouped[sortRank] ||= [];
+
+			grouped[sortRank].push({
+				...item,
+				rarity: Number.parseInt(material.rarity, 10),
+			});
+		}
+
+		// For each group, find the highest rarity item to use as the base
+		const processed = [];
+		for (const items of Object.values(grouped)) {
+			// Sort by rarity descending
+			items.sort((a, b) => b.rarity - a.rarity);
+
+			const highestTier = items[0];
+			const category = findMaterialCategory(highestTier.id);
+
+			if (!category) {
+				continue;
+			}
+
+			processed.push({
+				id: highestTier.id,
+				category,
+				tiers: items.map((item, index) => ({
+					tierIndex: items.length - 1 - index, // Reverse: lowest rarity = tier 0
+					count: item.count,
+				})),
+			});
+		}
+
+		return processed;
 	};
 
 	// Helper to rebuild the helper list from storage
@@ -342,34 +388,42 @@ export default function Main() {
 			? [...savedPresets, value]
 			: savedPresets.filter(p => p !== value);
 
-		// Update goals for each material in the preset
-		for (const item of preset.items) {
-			const itemId = String(item.id);
-			const category = findMaterialCategory(item.id);
+		// Group preset items by sortRank to avoid duplicates
+		const groupedItems = groupPresetItems(preset.items);
 
-			if (!category && checked) {
-				continue;
-			}
+		// Update goals for each grouped material
+		for (const groupedItem of groupedItems) {
+			const itemId = String(groupedItem.id);
+			const {category, tiers} = groupedItem;
 
 			if (savedHelpers[itemId]) {
-				// Material already tracked - update goals
-				updateGoalFields(savedHelpers[itemId], item.count, checked);
+				// Material already tracked - update tier-specific goals
+				for (const tier of tiers) {
+					updateTierGoal(savedHelpers[itemId], tier.tierIndex, tier.count, checked);
+				}
 			} else if (checked) {
-				// New material - add with goal set
-				savedHelpers[itemId] = {
+				// New material - add with tier-specific goals
+				const config = {
 					category,
 					tierFour: 0,
-					tierFourGoal: item.count,
+					tierFourGoal: '',
 					tierOne: 0,
-					tierOneGoal: item.count,
+					tierOneGoal: '',
 					tierOneLock: false,
 					tierThree: 0,
-					tierThreeGoal: item.count,
+					tierThreeGoal: '',
 					tierThreeLock: false,
 					tierTwo: 0,
-					tierTwoGoal: item.count,
+					tierTwoGoal: '',
 					tierTwoLock: false,
 				};
+
+				// Set tier-specific goals
+				for (const tier of tiers) {
+					updateTierGoal(config, tier.tierIndex, tier.count, true);
+				}
+
+				savedHelpers[itemId] = config;
 			}
 		}
 
@@ -389,10 +443,9 @@ export default function Main() {
 			const savedPresets = storageState?.presets ?? [];
 
 			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
-				for (const [itemId, config] of Object.entries(savedHelpers)) {
-					// eslint-disable-next-line react-hooks/set-state-in-effect
-					addHelperWithItem({itemId, config, category: config.category});
-				}
+				// Rebuild the entire helper list from saved state
+				const newHelpers = rebuildHelperList(savedHelpers);
+				setFarmHelperList(newHelpers);
 			} else {
 				// Storage is empty, create new
 				storage.save({});
