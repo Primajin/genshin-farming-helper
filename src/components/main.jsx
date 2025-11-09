@@ -289,6 +289,38 @@ export default function Main() {
 		return null;
 	};
 
+	// Helper to update goal fields for a material
+	const updateGoalFields = (config, count, isAdding) => {
+		const goalFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+
+		for (const goalField of goalFields) {
+			const currentGoal = config[goalField] || 0;
+			if (isAdding) {
+				config[goalField] = currentGoal + count;
+			} else {
+				const newGoal = Math.max(0, currentGoal - count);
+				config[goalField] = newGoal === 0 ? '' : newGoal;
+			}
+		}
+	};
+
+	// Helper to rebuild the helper list from storage
+	const rebuildHelperList = savedHelpers => {
+		const newHelpers = [];
+		for (const [itemId, config] of Object.entries(savedHelpers)) {
+			newHelpers.push(<FarmHelper
+				key={itemId}
+				category={config.category}
+				config={config}
+				itemId={itemId}
+				materials={materials}
+				onRemove={onRemove}
+			/>);
+		}
+
+		return newHelpers;
+	};
+
 	const onPresetChange = event => {
 		const {checked, value} = event.target;
 		const [type, presetIdString] = value.split('.');
@@ -306,82 +338,47 @@ export default function Main() {
 		const savedHelpers = storageState?.helpers ?? {};
 		const savedPresets = storageState?.presets ?? [];
 
-		if (checked) {
-			// Add preset
-			const newPresets = [...savedPresets, value];
-			setActivePresets(newPresets);
+		const newPresets = checked
+			? [...savedPresets, value]
+			: savedPresets.filter(p => p !== value);
 
-			// Add or update goals for each material in the preset
-			for (const item of preset.items) {
-				const itemId = String(item.id);
-				const category = findMaterialCategory(item.id);
+		// Update goals for each material in the preset
+		for (const item of preset.items) {
+			const itemId = String(item.id);
+			const category = findMaterialCategory(item.id);
 
-				if (!category) {
-					continue;
-				}
-
-				if (savedHelpers[itemId]) {
-					// Material already tracked - update goals
-					const config = savedHelpers[itemId];
-					const goalFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-
-					for (const goalField of goalFields) {
-						const currentGoal = config[goalField] || 0;
-						config[goalField] = currentGoal + item.count;
-					}
-
-					savedHelpers[itemId] = config;
-				} else {
-					// New material - add with goal set
-					const config = {
-						category,
-						tierFour: 0,
-						tierFourGoal: item.count,
-						tierOne: 0,
-						tierOneGoal: item.count,
-						tierOneLock: false,
-						tierThree: 0,
-						tierThreeGoal: item.count,
-						tierThreeLock: false,
-						tierTwo: 0,
-						tierTwoGoal: item.count,
-						tierTwoLock: false,
-					};
-					savedHelpers[itemId] = config;
-					addHelperWithItem({itemId, config, category});
-				}
+			if (!category && checked) {
+				continue;
 			}
 
-			storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
-			// Force re-render by updating state
-			setFarmHelperList(previousHelpers => [...previousHelpers]);
-		} else {
-			// Remove preset
-			const newPresets = savedPresets.filter(p => p !== value);
-			setActivePresets(newPresets);
-
-			// Reduce or remove goals for each material in the preset
-			for (const item of preset.items) {
-				const itemId = String(item.id);
-
-				if (savedHelpers[itemId]) {
-					const config = savedHelpers[itemId];
-					const goalFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-
-					for (const goalField of goalFields) {
-						const currentGoal = config[goalField] || 0;
-						const newGoal = Math.max(0, currentGoal - item.count);
-						config[goalField] = newGoal === 0 ? '' : newGoal;
-					}
-
-					savedHelpers[itemId] = config;
-				}
+			if (savedHelpers[itemId]) {
+				// Material already tracked - update goals
+				updateGoalFields(savedHelpers[itemId], item.count, checked);
+			} else if (checked) {
+				// New material - add with goal set
+				savedHelpers[itemId] = {
+					category,
+					tierFour: 0,
+					tierFourGoal: item.count,
+					tierOne: 0,
+					tierOneGoal: item.count,
+					tierOneLock: false,
+					tierThree: 0,
+					tierThreeGoal: item.count,
+					tierThreeLock: false,
+					tierTwo: 0,
+					tierTwoGoal: item.count,
+					tierTwoLock: false,
+				};
 			}
-
-			storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
-			// Force re-render by updating state
-			setFarmHelperList(previousHelpers => [...previousHelpers]);
 		}
+
+		storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
+		setActivePresets(newPresets);
+
+		// Rebuild the helper list
+		const newHelpers = rebuildHelperList(savedHelpers);
+		setFarmHelperList(newHelpers);
 	};
 
 	useEffect(() => {
