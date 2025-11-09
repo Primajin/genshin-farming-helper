@@ -25,6 +25,15 @@ vi.mock('../../data-rare.json', async () => {
 	};
 });
 
+vi.mock('../../presets.json', async () => {
+	const {presets} = await vi.importActual('../../__tests__/__mocks__/presets.js');
+	return {
+		default: {
+			...presets,
+		},
+	};
+});
+
 describe('main', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
@@ -71,7 +80,7 @@ describe('main', () => {
 		});
 		expect(rendering).toMatchSnapshot();
 
-		const removeButton = screen.getByTitle('Remove item');
+		const removeButton = screen.getAllByTitle('Remove item')[0];
 		await act(() => {
 			fireEvent.click(removeButton);
 		});

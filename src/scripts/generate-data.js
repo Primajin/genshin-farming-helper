@@ -67,3 +67,88 @@ fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error
 		console.error(error);
 	}
 });
+
+// Generate presets for characters and weapons
+const aggregateMaterials = costs => {
+	const items = {};
+
+	for (const [, materials] of Object.entries(costs)) {
+		for (const material of materials) {
+			// Skip Mora
+			if (material.name === 'Mora') {
+				continue;
+			}
+
+			if (items[material.id]) {
+				items[material.id].count += material.count;
+			} else {
+				items[material.id] = {
+					id: material.id,
+					name: material.name,
+					count: material.count,
+				};
+			}
+		}
+	}
+
+	return items;
+};
+
+const generatePresets = () => {
+	const presets = {
+		characters: [],
+		weapons: [],
+	};
+
+	// Get all characters
+	const characters = genshinDb.characters('names', defaultOptions);
+	for (const character of characters) {
+		if (!character?.costs) {
+			continue;
+		}
+
+		const items = aggregateMaterials(character.costs);
+
+		if (Object.keys(items).length > 0) {
+			presets.characters.push({
+				id: character.id,
+				name: character.name,
+				element: character.elementText,
+				rarity: character.rarity,
+				items: Object.values(items),
+				images: character.images,
+			});
+		}
+	}
+
+	// Get all weapons
+	const weapons = genshinDb.weapons('names', defaultOptions);
+	for (const weapon of weapons) {
+		if (!weapon?.costs) {
+			continue;
+		}
+
+		const items = aggregateMaterials(weapon.costs);
+
+		if (Object.keys(items).length > 0) {
+			presets.weapons.push({
+				id: weapon.id,
+				name: weapon.name,
+				weaponType: weapon.weaponText,
+				rarity: weapon.rarity,
+				items: Object.values(items),
+				images: weapon.images,
+			});
+		}
+	}
+
+	return presets;
+};
+
+const presets = generatePresets();
+fs.promises.writeFile('src/presets.json', JSON.stringify(presets), error => {
+	/* V8 ignore next 3 */
+	if (error) {
+		console.error(error);
+	}
+});
