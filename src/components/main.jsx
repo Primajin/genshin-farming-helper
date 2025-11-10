@@ -397,8 +397,8 @@ export default function Main() {
 		const presetMaterialTotals = {};
 
 		for (const presetValue of newPresets) {
-			const [presetType, presetIdStr] = presetValue.split('.');
-			const id = Number.parseInt(presetIdStr, 10);
+			const [presetType, presetIdString_] = presetValue.split('.');
+			const id = Number.parseInt(presetIdString_, 10);
 			const activePreset = presetType === 'character'
 				? presets.characters.find(c => c.id === id)
 				: presets.weapons.find(w => w.id === id);
@@ -413,12 +413,12 @@ export default function Main() {
 				const itemId = String(groupedItem.id);
 				const {category, tiers} = groupedItem;
 
-				if (!presetMaterialTotals[itemId]) {
-					presetMaterialTotals[itemId] = {
-						category,
-						tiers: {0: 0, 1: 0, 2: 0, 3: 0}
-					};
-				}
+				presetMaterialTotals[itemId] ||= {
+					category,
+					tiers: {
+						0: 0, 1: 0, 2: 0, 3: 0,
+					},
+				};
 
 				for (const tier of tiers) {
 					presetMaterialTotals[itemId].tiers[tier.tierIndex] += tier.count;
@@ -448,22 +448,20 @@ export default function Main() {
 
 		// Add new helpers for items that don't exist yet
 		for (const [itemId, {category, tiers}] of Object.entries(presetMaterialTotals)) {
-			if (!updatedHelpers[itemId]) {
-				updatedHelpers[itemId] = {
-					category,
-					tierFour: 0,
-					tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
-					tierOne: 0,
-					tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
-					tierOneLock: false,
-					tierThree: 0,
-					tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
-					tierThreeLock: false,
-					tierTwo: 0,
-					tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
-					tierTwoLock: false,
-				};
-			}
+			updatedHelpers[itemId] ||= {
+				category,
+				tierFour: 0,
+				tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
+				tierOne: 0,
+				tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
+				tierOneLock: false,
+				tierThree: 0,
+				tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
+				tierThreeLock: false,
+				tierTwo: 0,
+				tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
+				tierTwoLock: false,
+			};
 		}
 
 		storage.save({...storageState, helpers: updatedHelpers, presets: newPresets});
