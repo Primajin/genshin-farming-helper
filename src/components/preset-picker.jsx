@@ -24,7 +24,7 @@ const wrapper = css`
 	}
 `;
 
-function PresetPicker({presets, type, activePresets}) {
+function PresetPicker({presets, type, activePresets, onClickProp}) {
 	return presets.map(preset => {
 		const presetId = `${type}.${preset.id}`;
 		const isActive = activePresets.includes(presetId);
@@ -43,8 +43,14 @@ function PresetPicker({presets, type, activePresets}) {
 			tooManyRetries++;
 		};
 
+		const handleClick = () => {
+			if (onClickProp) {
+				onClickProp({target: {value: presetId}});
+			}
+		};
+
 		return (
-			<label key={`PresetPicker${presetId}`} data-testid={`PresetPicker${presetId}`} css={wrapper} title={preset.name}>
+			<label key={`PresetPicker${presetId}`} data-testid={`PresetPicker${presetId}`} css={wrapper} title={preset.name} onClick={handleClick}>
 				<input readOnly checked={isActive} type='checkbox' name='preset' value={presetId}/>
 				<div style={{
 					backgroundImage: `url(${backgrounds[rarity]})`,
@@ -60,6 +66,7 @@ function PresetPicker({presets, type, activePresets}) {
 
 PresetPicker.propTypes = {
 	activePresets: PropTypes.arrayOf(PropTypes.string).isRequired,
+	onClickProp: PropTypes.func,
 	presets: PropTypes.arrayOf(PropTypes.object).isRequired,
 	type: PropTypes.string.isRequired,
 };

@@ -102,14 +102,14 @@ function PresetCategories({activePresets, onChangeProp}) {
 	const emptyLabels = Array.from({length: 4}, (_, index) => <label key={`empty-${index}`}/>);
 
 	return (
-		<form css={categories} onChange={onChangeProp}>
+		<form css={categories}>
 			<h3>Presets</h3>
 
 			<fieldset role='group' className={collapsed.characters ? 'collapsed' : ''}>
 				<legend className={collapsed.characters ? 'collapsed' : ''} onClick={() => toggleCollapse('characters')}>
 					Characters
 				</legend>
-				<PresetPicker presets={presets.characters} type='character' activePresets={activePresets}/>
+				<PresetPicker presets={presets.characters} type='character' activePresets={activePresets} onClickProp={onChangeProp}/>
 				{emptyLabels}
 			</fieldset>
 
@@ -117,7 +117,7 @@ function PresetCategories({activePresets, onChangeProp}) {
 				<legend className={collapsed.weapons ? 'collapsed' : ''} onClick={() => toggleCollapse('weapons')}>
 					Weapons
 				</legend>
-				<PresetPicker presets={presets.weapons} type='weapon' activePresets={activePresets}/>
+				<PresetPicker presets={presets.weapons} type='weapon' activePresets={activePresets} onClickProp={onChangeProp}/>
 				{emptyLabels}
 			</fieldset>
 
@@ -125,7 +125,7 @@ function PresetCategories({activePresets, onChangeProp}) {
 				<legend className={collapsed.fishingRods ? 'collapsed' : ''} onClick={() => toggleCollapse('fishingRods')}>
 					Fishing Rods
 				</legend>
-				<PresetPicker presets={presets.fishingRods} type='fishingRod' activePresets={activePresets}/>
+				<PresetPicker presets={presets.fishingRods} type='fishingRod' activePresets={activePresets} onClickProp={onChangeProp}/>
 				{emptyLabels}
 			</fieldset>
 		</form>
