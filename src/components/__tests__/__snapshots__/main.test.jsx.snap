@@ -130,7 +130,7 @@ exports[`main > renders without crashing 1`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -142,7 +142,7 @@ exports[`main > renders without crashing 1`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -150,7 +150,33 @@ exports[`main > renders without crashing 1`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -1020,7 +1046,7 @@ exports[`main > renders without crashing 1`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -1032,7 +1058,7 @@ exports[`main > renders without crashing 1`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -1040,7 +1066,33 @@ exports[`main > renders without crashing 1`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -2594,7 +2646,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -2606,7 +2658,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -2614,7 +2666,33 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -4111,7 +4189,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -4123,7 +4201,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -4131,7 +4209,33 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -5685,7 +5789,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -5697,7 +5801,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -5705,7 +5809,33 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -7202,7 +7332,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -7214,7 +7344,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -7222,7 +7352,33 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -8776,7 +8932,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -8788,7 +8944,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -8796,7 +8952,33 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -10293,7 +10475,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -10305,7 +10487,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -10313,7 +10495,33 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -11556,7 +11764,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -11568,7 +11776,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -11576,7 +11784,33 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -12762,7 +12996,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -12774,7 +13008,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -12782,7 +13016,33 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -14025,7 +14285,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -14037,7 +14297,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -14045,7 +14305,33 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -15231,7 +15517,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -15243,7 +15529,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -15251,7 +15537,33 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -16494,7 +16806,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -16506,7 +16818,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -16514,7 +16826,33 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -17700,7 +18038,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -17712,7 +18050,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -17720,7 +18058,33 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -18963,7 +19327,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -18975,7 +19339,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -18983,7 +19347,33 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -20169,7 +20559,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -20181,7 +20571,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -20189,7 +20579,33 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />
@@ -21432,7 +21848,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             <label
               class="css-1rqbrqu"
               data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
+              title="Test Fishing Rod 1"
             >
               <input
                 name="preset"
@@ -21444,7 +21860,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
                 style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
               >
                 <img
-                  alt="Test Fishing Rod"
+                  alt="Test Fishing Rod 1"
                   data-testid="image"
                   height="75"
                   src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -21452,7 +21868,33 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
                 />
               </div>
               <span>
-                Test Fishing Rod
+                Test Fishing Rod 1
+              </span>
+            </label>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201002"
+              title="Test Fishing Rod 2"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201002"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod 2"
+                  data-testid="image"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod 2
               </span>
             </label>
             <label />
@@ -22638,7 +23080,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           <label
             class="css-1rqbrqu"
             data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
+            title="Test Fishing Rod 1"
           >
             <input
               name="preset"
@@ -22650,7 +23092,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
             >
               <img
-                alt="Test Fishing Rod"
+                alt="Test Fishing Rod 1"
                 data-testid="image"
                 height="75"
                 src="https://gi.yatta.moe/assets/UI/undefined.png"
@@ -22658,7 +23100,33 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               />
             </div>
             <span>
-              Test Fishing Rod
+              Test Fishing Rod 1
+            </span>
+          </label>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201002"
+            title="Test Fishing Rod 2"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201002"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod 2"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod 2
             </span>
           </label>
           <label />

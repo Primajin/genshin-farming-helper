@@ -45,11 +45,32 @@ export const presets = {
 	fishingRods: [
 		{
 			id: 201_001,
-			name: 'Test Fishing Rod',
+			name: 'Test Fishing Rod 1',
 			items: [
 				{
 					id: 131_046,
 					name: 'Common Axehead Fish',
+					count: 20,
+				},
+				{
+					id: 131_047,
+					name: 'Veggie Mauler Shark',
+					count: 20,
+				},
+			],
+		},
+		{
+			id: 201_002,
+			name: 'Test Fishing Rod 2',
+			items: [
+				{
+					id: 131_046,
+					name: 'Common Axehead Fish',
+					count: 20,
+				},
+				{
+					id: 131_048,
+					name: 'Medaka',
 					count: 20,
 				},
 			],

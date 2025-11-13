@@ -6,6 +6,7 @@ import {
 } from 'vitest';
 
 import Main from '../main.jsx';
+import storage from '../../utils/local-storage.js';
 
 vi.mock('../../data.json', async () => {
 	const {materials} = await vi.importActual('../../__tests__/__mocks__/data.js');
@@ -110,6 +111,73 @@ describe('main', () => {
 		await act(() => {
 			fireEvent.click(sleepButton);
 		});
+		expect(rendering).toMatchSnapshot();
+	});
+
+	test('fishing rod presets tally correctly when multiple rods are selected', async () => {
+		const rendering = render(<Main/>);
+
+		// Get fishing rod preset labels by their data-testid
+		const fishingRodLabel1 = screen.getByTestId('PresetPickerfishingRod.201001');
+		const fishingRodLabel2 = screen.getByTestId('PresetPickerfishingRod.201002');
+
+		// Click the first fishing rod preset label
+		await act(() => {
+			fireEvent.click(fishingRodLabel1);
+		});
+
+		// Get the storage after first preset
+		const storageState1 = storage.load();
+		const helpers1 = storageState1?.helpers ?? {};
+		const fishId1 = '131046'; // Common Axehead Fish from test data (shared between both rods)
+		const fishId2 = '131047'; // Veggie Mauler Shark from rod 1 only
+
+		// Verify that the fish items are added with count 20 each
+		expect(helpers1[fishId1]).toBeDefined();
+		expect(helpers1[fishId1].tierOneGoal).toBe(20);
+		expect(helpers1[fishId2]).toBeDefined();
+		expect(helpers1[fishId2].tierOneGoal).toBe(20);
+
+		// Click the second fishing rod preset (should tally with first)
+		await act(() => {
+			fireEvent.click(fishingRodLabel2);
+		});
+
+		const storageState2 = storage.load();
+		const helpers2 = storageState2?.helpers ?? {};
+		const fishId3 = '131048'; // Medaka from rod 2 only
+
+		// Verify the shared fish (Common Axehead) is tallied to 40 (20 + 20)
+		expect(helpers2[fishId1]).toBeDefined();
+		expect(helpers2[fishId1].tierOneGoal).toBe(40);
+		
+		// Verify fish unique to rod 1 still has 20
+		expect(helpers2[fishId2]).toBeDefined();
+		expect(helpers2[fishId2].tierOneGoal).toBe(20);
+		
+		// Verify fish unique to rod 2 is added with 20
+		expect(helpers2[fishId3]).toBeDefined();
+		expect(helpers2[fishId3].tierOneGoal).toBe(20);
+
+		// Click the first fishing rod preset again to remove it
+		await act(() => {
+			fireEvent.click(fishingRodLabel1);
+		});
+
+		const storageState3 = storage.load();
+		const helpers3 = storageState3?.helpers ?? {};
+
+		// Verify the shared fish (Common Axehead) is back to 20 (only rod 2)
+		expect(helpers3[fishId1]).toBeDefined();
+		expect(helpers3[fishId1].tierOneGoal).toBe(20);
+		
+		// Verify fish unique to rod 1 is removed
+		expect(helpers3[fishId2]).toBeUndefined();
+		
+		// Verify fish unique to rod 2 still has 20
+		expect(helpers3[fishId3]).toBeDefined();
+		expect(helpers3[fishId3].tierOneGoal).toBe(20);
+
 		expect(rendering).toMatchSnapshot();
 	});
 });
