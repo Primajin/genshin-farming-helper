@@ -240,11 +240,17 @@ This is the trust I have placed in them. Betray it, and you taint my blood."`,ca
 			margin-right: 5px;
 		}
 		
-		&.collapsed::before {
-			content: '▶ ';
+		&.collapsed {
+			border-radius: 7px;
+			border-bottom: 1px solid rgba(0,0,0,0.5);
+			margin-bottom: 15px;
+			
+			&::before {
+				content: '▶ ';
+			}
 		}
 	}
-`;function w1({activePresets:s,onChangeProp:d}){const[m,l]=ne.useState({characters:!1,weapons:!1,fishingRods:!1}),f=U=>{l(G=>({...G,[U]:!G[U]}))},w=Array.from({length:4},(U,G)=>M("label",{},`empty-${G}`));return Ge("form",{css:x_,onChange:d,children:[M("h3",{children:"Presets"}),Ge("fieldset",{role:"group",className:m.characters?"collapsed":"",children:[M("legend",{className:m.characters?"collapsed":"",onClick:()=>f("characters"),children:"Characters"}),M(xr,{presets:kn.characters,type:"character",activePresets:s}),w]}),Ge("fieldset",{role:"group",className:m.weapons?"collapsed":"",children:[M("legend",{className:m.weapons?"collapsed":"",onClick:()=>f("weapons"),children:"Weapons"}),M(xr,{presets:kn.weapons,type:"weapon",activePresets:s}),w]}),Ge("fieldset",{role:"group",className:m.fishingRods?"collapsed":"",children:[M("legend",{className:m.fishingRods?"collapsed":"",onClick:()=>f("fishingRods"),children:"Fishing Rods"}),M(xr,{presets:kn.fishingRods,type:"fishingRod",activePresets:s}),w]})]})}w1.propTypes={activePresets:H.arrayOf(H.string).isRequired,onChangeProp:H.func.isRequired};const{actions:ml,primary:e1}=Tn,F_=Ze`
+`;function w1({activePresets:s,onChangeProp:d}){const[m,l]=ne.useState({characters:!0,weapons:!0,fishingRods:!0}),f=U=>{l(G=>({...G,[U]:!G[U]}))},w=Array.from({length:4},(U,G)=>M("label",{},`empty-${G}`));return Ge("form",{css:x_,onChange:d,children:[M("h3",{children:"Presets"}),Ge("fieldset",{role:"group",className:m.characters?"collapsed":"",children:[M("legend",{className:m.characters?"collapsed":"",onClick:()=>f("characters"),children:"Characters"}),M(xr,{presets:kn.characters,type:"character",activePresets:s}),w]}),Ge("fieldset",{role:"group",className:m.weapons?"collapsed":"",children:[M("legend",{className:m.weapons?"collapsed":"",onClick:()=>f("weapons"),children:"Weapons"}),M(xr,{presets:kn.weapons,type:"weapon",activePresets:s}),w]}),Ge("fieldset",{role:"group",className:m.fishingRods?"collapsed":"",children:[M("legend",{className:m.fishingRods?"collapsed":"",onClick:()=>f("fishingRods"),children:"Fishing Rods"}),M(xr,{presets:kn.fishingRods,type:"fishingRod",activePresets:s}),w]})]})}w1.propTypes={activePresets:H.arrayOf(H.string).isRequired,onChangeProp:H.func.isRequired};const{actions:ml,primary:e1}=Tn,F_=Ze`
 	display: inline-block;
 	margin: 2px;
 	position: relative;
