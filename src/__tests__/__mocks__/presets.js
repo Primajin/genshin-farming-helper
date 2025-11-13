@@ -42,4 +42,17 @@ export const presets = {
 			},
 		},
 	],
+	fishingRods: [
+		{
+			id: 201_001,
+			name: 'Test Fishing Rod',
+			items: [
+				{
+					id: 131_046,
+					name: 'Common Axehead Fish',
+					count: 20,
+				},
+			],
+		},
+	],
 };

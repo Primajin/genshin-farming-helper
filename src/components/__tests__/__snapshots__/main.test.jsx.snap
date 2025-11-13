@@ -33,8 +33,11 @@ exports[`main > renders without crashing 1`] = `
           class="css-0"
         />
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -109,10 +112,50 @@ exports[`main > renders without crashing 1`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -871,8 +914,11 @@ exports[`main > renders without crashing 1`] = `
         class="css-0"
       />
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -947,10 +993,50 @@ exports[`main > renders without crashing 1`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -2083,8 +2169,11 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           <section />
         </div>
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -2159,10 +2248,50 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -3238,8 +3367,11 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
         <section />
       </div>
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -3314,10 +3446,50 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -4450,8 +4622,11 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           <section />
         </div>
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -4526,10 +4701,50 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -5605,8 +5820,11 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         <section />
       </div>
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -5681,10 +5899,50 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -6817,8 +7075,11 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           <section />
         </div>
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -6893,10 +7154,50 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -7972,8 +8273,11 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
         <section />
       </div>
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -8048,10 +8352,50 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -8858,8 +9202,11 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           class="css-0"
         />
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -8934,10 +9281,50 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -9687,8 +10074,11 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
         class="css-0"
       />
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -9763,10 +10153,50 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -10573,8 +11003,11 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           class="css-0"
         />
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -10649,10 +11082,50 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -11402,8 +11875,11 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
         class="css-0"
       />
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -11478,10 +11954,50 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -12288,8 +12804,11 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           class="css-0"
         />
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -12364,10 +12883,50 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -13117,8 +13676,11 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
         class="css-0"
       />
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -13193,10 +13755,50 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -14003,8 +14605,11 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           class="css-0"
         />
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -14079,10 +14684,50 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -14832,8 +15477,11 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
         class="css-0"
       />
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -14908,10 +15556,50 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -15718,8 +16406,11 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           class="css-0"
         />
         <form
-          class="css-1lpop5k"
+          class="css-zg18v3"
         >
+          <h3>
+            Presets
+          </h3>
           <fieldset
             role="group"
           >
@@ -15794,10 +16485,50 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             <label />
             <label />
           </fieldset>
+          <fieldset
+            role="group"
+          >
+            <legend>
+              Fishing Rods
+            </legend>
+            <label
+              class="css-1rqbrqu"
+              data-testid="PresetPickerfishingRod.201001"
+              title="Test Fishing Rod"
+            >
+              <input
+                name="preset"
+                readonly=""
+                type="checkbox"
+                value="fishingRod.201001"
+              />
+              <div
+                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+              >
+                <img
+                  alt="Test Fishing Rod"
+                  data-testid="image"
+                  height="75"
+                  src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                  width="75"
+                />
+              </div>
+              <span>
+                Test Fishing Rod
+              </span>
+            </label>
+            <label />
+            <label />
+            <label />
+            <label />
+          </fieldset>
         </form>
         <form
-          class="css-mgmeqk"
+          class="css-rug5du"
         >
+          <h3>
+            Direct Item Tracking
+          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -16547,8 +17278,11 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
         class="css-0"
       />
       <form
-        class="css-1lpop5k"
+        class="css-zg18v3"
       >
+        <h3>
+          Presets
+        </h3>
         <fieldset
           role="group"
         >
@@ -16623,10 +17357,50 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           <label />
           <label />
         </fieldset>
+        <fieldset
+          role="group"
+        >
+          <legend>
+            Fishing Rods
+          </legend>
+          <label
+            class="css-1rqbrqu"
+            data-testid="PresetPickerfishingRod.201001"
+            title="Test Fishing Rod"
+          >
+            <input
+              name="preset"
+              readonly=""
+              type="checkbox"
+              value="fishingRod.201001"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Test Fishing Rod"
+                data-testid="image"
+                height="75"
+                src="https://res.cloudinary.com/genshin/image/upload/sprites/undefined.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Test Fishing Rod
+            </span>
+          </label>
+          <label />
+          <label />
+          <label />
+          <label />
+        </fieldset>
       </form>
       <form
-        class="css-mgmeqk"
+        class="css-rug5du"
       >
+        <h3>
+          Direct Item Tracking
+        </h3>
         <fieldset
           class="narrow"
           role="group"
