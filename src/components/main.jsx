@@ -293,21 +293,6 @@ export default function Main() {
 		return null;
 	};
 
-	// Helper to update a specific tier goal
-	const updateTierGoal = (config, tierIndex, count, isAdding) => {
-		const goalField = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'][tierIndex];
-		const currentGoal = Number.parseInt(config[goalField], 10) || 0;
-		const newGoal = isAdding ? currentGoal + count : Math.max(0, currentGoal - count);
-		console.log(`[updateTierGoal] ${goalField}: ${currentGoal} ${isAdding ? '+' : '-'} ${count} = ${newGoal}`);
-		config[goalField] = newGoal === 0 ? '' : newGoal;
-	};
-
-	// Helper to check if all tier goals are 0 or empty
-	const hasNoGoals = config => {
-		const goals = [config.tierOneGoal, config.tierTwoGoal, config.tierThreeGoal, config.tierFourGoal];
-		return goals.every(goal => goal === '' || goal === 0);
-	};
-
 	// Helper to group preset items by sortRank and process them
 	const groupPresetItems = presetItems => {
 		const grouped = {};
@@ -377,7 +362,9 @@ export default function Main() {
 
 		const preset = type === 'character'
 			? presets.characters.find(c => c.id === presetId)
-			: presets.weapons.find(w => w.id === presetId);
+			: (type === 'weapon'
+				? presets.weapons.find(w => w.id === presetId)
+				: presets.fishingRods.find(r => r.id === presetId));
 
 		if (!preset) {
 			return;
@@ -401,7 +388,9 @@ export default function Main() {
 			const id = Number.parseInt(presetIdString_, 10);
 			const activePreset = presetType === 'character'
 				? presets.characters.find(c => c.id === id)
-				: presets.weapons.find(w => w.id === id);
+				: (presetType === 'weapon'
+					? presets.weapons.find(w => w.id === id)
+					: presets.fishingRods.find(r => r.id === id));
 
 			if (!activePreset) {
 				continue;
@@ -434,7 +423,7 @@ export default function Main() {
 		for (const itemId of Object.keys(updatedHelpers)) {
 			if (presetMaterialTotals[itemId]) {
 				// This item is still needed by active presets - update its goals
-				const {category, tiers} = presetMaterialTotals[itemId];
+				const {tiers} = presetMaterialTotals[itemId];
 				const helper = updatedHelpers[itemId];
 
 				// Update each tier goal
