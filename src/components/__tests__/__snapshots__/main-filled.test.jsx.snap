@@ -1443,17 +1443,17 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           <section />
         </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -1489,11 +1489,11 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -1529,11 +1529,11 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -3751,17 +3751,17 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         <section />
       </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -3797,11 +3797,11 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -3837,11 +3837,11 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -6053,17 +6053,17 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           <section />
         </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -6099,11 +6099,11 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -6139,11 +6139,11 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -8297,17 +8297,17 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         <section />
       </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -8343,11 +8343,11 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -8383,11 +8383,11 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
