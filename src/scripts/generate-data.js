@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import genshinDb from 'genshin-db';
 
-import {fishingRods} from './fishing-rods-data.js';
+import {fishingRodRecipes} from './fishing-rods-data.js';
 
 const isValidMaterial = material => material
 	&& material.typeText
@@ -145,14 +145,20 @@ const generatePresets = () => {
 		}
 	}
 
-	// Get all fish materials for mapping
+	// Get all fishing rods from genshin-db FISH_ROD category
+	const fishingRods = genshinDb.materials('FISH_ROD', {matchCategories: true, verboseCategories: true});
 	const allFish = genshinDb.materials('names', defaultOptions).filter(m => m.typeText === 'Fish');
 
 	// Process fishing rods
 	for (const rod of fishingRods) {
+		if (!rod?.id || !fishingRodRecipes[rod.id]) {
+			continue;
+		}
+
 		const items = [];
 
-		for (const fishName of rod.fish) {
+		// Get fish requirements from manual recipe data using ID
+		for (const fishName of fishingRodRecipes[rod.id]) {
 			const fishMaterial = allFish.find(f => f.name === fishName);
 			if (fishMaterial) {
 				items.push({
@@ -167,7 +173,9 @@ const generatePresets = () => {
 			presets.fishingRods.push({
 				id: rod.id,
 				name: rod.name,
+				rarity: rod.rarity,
 				items,
+				images: rod.images,
 			});
 		}
 	}

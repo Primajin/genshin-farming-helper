@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
+import {useState} from 'react';
 
 import theme from '../theme';
 import PresetPicker from './preset-picker.jsx';
@@ -33,6 +34,15 @@ const categories = css`
 		justify-content: space-around;
 		margin-top: 25px;
 		padding: 5px 10px 6px;
+		transition: max-height 0.3s ease-out;
+		overflow: hidden;
+
+		&.collapsed {
+			max-height: 0;
+			padding: 0 10px;
+			margin-top: 0;
+			border: 0;
+		}
 
 		label {
 			margin: 5px 0;
@@ -52,10 +62,36 @@ const categories = css`
 		padding: 5px 18px 0;
 		position: relative;
 		top: -11px;
+		cursor: pointer;
+		user-select: none;
+		
+		&:hover {
+			background: ${theme.secondary};
+		}
+		
+		&::before {
+			content: '▼ ';
+			font-size: 0.8em;
+			margin-right: 5px;
+		}
+		
+		&.collapsed::before {
+			content: '▶ ';
+		}
 	}
 `;
 
 function PresetCategories({activePresets, onChangeProp}) {
+	const [collapsed, setCollapsed] = useState({
+		characters: false,
+		weapons: false,
+		fishingRods: false,
+	});
+
+	const toggleCollapse = section => {
+		setCollapsed(previous => ({...previous, [section]: !previous[section]}));
+	};
+
 	// Empty labels for grid alignment (4 per row)
 	const emptyLabels = Array.from({length: 4}, (_, index) => <label key={`empty-${index}`}/>);
 
@@ -63,20 +99,26 @@ function PresetCategories({activePresets, onChangeProp}) {
 		<form css={categories} onChange={onChangeProp}>
 			<h3>Presets</h3>
 
-			<fieldset role='group'>
-				<legend>Characters</legend>
+			<fieldset role='group' className={collapsed.characters ? 'collapsed' : ''}>
+				<legend className={collapsed.characters ? 'collapsed' : ''} onClick={() => toggleCollapse('characters')}>
+					Characters
+				</legend>
 				<PresetPicker presets={presets.characters} type='character' activePresets={activePresets}/>
 				{emptyLabels}
 			</fieldset>
 
-			<fieldset role='group'>
-				<legend>Weapons</legend>
+			<fieldset role='group' className={collapsed.weapons ? 'collapsed' : ''}>
+				<legend className={collapsed.weapons ? 'collapsed' : ''} onClick={() => toggleCollapse('weapons')}>
+					Weapons
+				</legend>
 				<PresetPicker presets={presets.weapons} type='weapon' activePresets={activePresets}/>
 				{emptyLabels}
 			</fieldset>
 
-			<fieldset role='group'>
-				<legend>Fishing Rods</legend>
+			<fieldset role='group' className={collapsed.fishingRods ? 'collapsed' : ''}>
+				<legend className={collapsed.fishingRods ? 'collapsed' : ''} onClick={() => toggleCollapse('fishingRods')}>
+					Fishing Rods
+				</legend>
 				<PresetPicker presets={presets.fishingRods} type='fishingRod' activePresets={activePresets}/>
 				{emptyLabels}
 			</fieldset>

@@ -39,7 +39,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             <img
               alt="Brilliant Diamond Sliver"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
               width="75"
             />
             <span
@@ -110,7 +110,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             <img
               alt="Brilliant Diamond Fragment"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
               width="75"
             />
             <span
@@ -186,7 +186,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             <img
               alt="Brilliant Diamond Chunk"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
               width="75"
             />
             <span
@@ -267,7 +267,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
             <img
               alt="Brilliant Diamond Gemstone"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
               width="75"
             />
             <span
@@ -352,7 +352,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <img
             alt="Brilliant Diamond Sliver"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
             width="75"
           />
           <span
@@ -423,7 +423,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <img
             alt="Brilliant Diamond Fragment"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
             width="75"
           />
           <span
@@ -499,7 +499,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <img
             alt="Brilliant Diamond Chunk"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
             width="75"
           />
           <span
@@ -580,7 +580,7 @@ exports[`farmHelper > renders correctly for ASCENSION Brilliant Diamond Gemstone
           <img
             alt="Brilliant Diamond Gemstone"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
             width="75"
           />
           <span
@@ -722,7 +722,7 @@ exports[`farmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
             <img
               alt="Iron Chunk"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
               width="75"
             />
             <span
@@ -787,7 +787,7 @@ exports[`farmHelper > renders correctly for BUILDING Iron Chunk with 1 tiers 1`]
           <img
             alt="Iron Chunk"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
             width="75"
           />
           <span
@@ -909,7 +909,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             <img
               alt="Slime Condensate"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
               width="75"
             />
             <span
@@ -975,7 +975,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             <img
               alt="Slime Secretions"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
               width="75"
             />
             <span
@@ -1046,7 +1046,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
             <img
               alt="Slime Concentrate"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
               width="75"
             />
             <span
@@ -1121,7 +1121,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           <img
             alt="Slime Condensate"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
             width="75"
           />
           <span
@@ -1187,7 +1187,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           <img
             alt="Slime Secretions"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
             width="75"
           />
           <span
@@ -1258,7 +1258,7 @@ exports[`farmHelper > renders correctly for ENHANCEMENT Slime Concentrate with 3
           <img
             alt="Slime Concentrate"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
             width="75"
           />
           <span
@@ -1390,7 +1390,7 @@ exports[`farmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
             <img
               alt="Medaka"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
               width="75"
             />
             <span
@@ -1465,7 +1465,7 @@ exports[`farmHelper > renders correctly for FISH Medaka with 1 tiers 1`] = `
           <img
             alt="Medaka"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
             width="75"
           />
           <span
@@ -1597,7 +1597,7 @@ exports[`farmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
             <img
               alt="Dvalin's Plume"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
               width="75"
             />
             <span
@@ -1682,7 +1682,7 @@ exports[`farmHelper > renders correctly for LEVEL Dvalin's Plume with 1 tiers 1`
           <img
             alt="Dvalin's Plume"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
             width="75"
           />
           <span
@@ -1824,7 +1824,7 @@ exports[`farmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
             <img
               alt="Wolfhook"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
               width="75"
             />
             <span
@@ -1889,7 +1889,7 @@ exports[`farmHelper > renders correctly for LOCAL Wolfhook with 1 tiers 1`] = `
           <img
             alt="Wolfhook"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
             width="75"
           />
           <span
@@ -2011,7 +2011,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
             <img
               alt="Teachings of Freedom"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
               width="75"
             />
             <span
@@ -2082,7 +2082,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
             <img
               alt="Guide to Freedom"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
               width="75"
             />
             <span
@@ -2158,7 +2158,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
             <img
               alt="Philosophies of Freedom"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
               width="75"
             />
             <span
@@ -2238,7 +2238,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
           <img
             alt="Teachings of Freedom"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
             width="75"
           />
           <span
@@ -2309,7 +2309,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
           <img
             alt="Guide to Freedom"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
             width="75"
           />
           <span
@@ -2385,7 +2385,7 @@ exports[`farmHelper > renders correctly for TALENT Philosophies of Freedom with 
           <img
             alt="Philosophies of Freedom"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
             width="75"
           />
           <span
@@ -2522,7 +2522,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             <img
               alt="Tile of Decarabian's Tower"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
               width="75"
             />
             <span
@@ -2593,7 +2593,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             <img
               alt="Debris of Decarabian's City"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
               width="75"
             />
             <span
@@ -2669,7 +2669,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             <img
               alt="Fragment of Decarabian's Epic"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
               width="75"
             />
             <span
@@ -2750,7 +2750,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
             <img
               alt="Scattered Piece of Decarabian's Dream"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
               width="75"
             />
             <span
@@ -2835,7 +2835,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <img
             alt="Tile of Decarabian's Tower"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
             width="75"
           />
           <span
@@ -2906,7 +2906,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <img
             alt="Debris of Decarabian's City"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
             width="75"
           />
           <span
@@ -2982,7 +2982,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <img
             alt="Fragment of Decarabian's Epic"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
             width="75"
           />
           <span
@@ -3063,7 +3063,7 @@ exports[`farmHelper > renders correctly for WEAPON Scattered Piece of Decarabian
           <img
             alt="Scattered Piece of Decarabian's Dream"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
             width="75"
           />
           <span
@@ -3205,7 +3205,7 @@ exports[`farmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
             <img
               alt="Birch Wood"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
               width="75"
             />
             <span
@@ -3270,7 +3270,7 @@ exports[`farmHelper > renders correctly for WOOD Birch Wood with 1 tiers 1`] = `
           <img
             alt="Birch Wood"
             height="75"
-            src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+            src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
             width="75"
           />
           <span
