@@ -43,7 +43,11 @@ function PresetPicker({presets, type, activePresets, onClickProp}) {
 			tooManyRetries++;
 		};
 
-		const handleClick = () => {
+		const handleClick = event => {
+			// Prevent the default checkbox behavior since we're managing state ourselves
+			event.preventDefault();
+			event.stopPropagation();
+
 			if (onClickProp) {
 				onClickProp({target: {value: presetId}});
 			}
