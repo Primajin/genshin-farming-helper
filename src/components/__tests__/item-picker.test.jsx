@@ -59,10 +59,10 @@ describe('itemPicker', () => {
 		const image = screen.getByTestId('image');
 		expect(image).toBeDefined();
 		const imageSourceBefore = image.getAttribute('src');
-		expect(imageSourceBefore.includes('cloudinary.com')).toBeTruthy();
+		expect(imageSourceBefore.includes('gi.yatta.moe')).toBeTruthy();
 		fireEvent.error(image);
 		const imageSourceAfter = image.getAttribute('src');
-		expect(imageSourceAfter.includes('cloudinary.com')).toBeFalsy();
-		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeTruthy();
+		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeFalsy();
+		expect(imageSourceAfter.includes('cloudinary.com')).toBeTruthy();
 	});
 });
