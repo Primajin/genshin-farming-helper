@@ -155,20 +155,26 @@ const generatePresets = () => {
 			continue;
 		}
 
-		const items = [];
+		const itemsMap = {};
 
-		// Get fish requirements from manual recipe data using ID
-		for (const fishName of fishingRodRecipes[rod.id]) {
-			const fishMaterial = allFish.find(f => f.name === fishName);
+		// Get fish requirements from manual recipe data using fish IDs
+		// Aggregate duplicate fish (some rods require same fish type multiple times)
+		for (const fishId of fishingRodRecipes[rod.id]) {
+			const fishMaterial = allFish.find(f => f.id === fishId);
 			if (fishMaterial) {
-				items.push({
-					id: fishMaterial.id,
-					name: fishMaterial.name,
-					count: 20, // Each fishing rod requires 20 of each fish
-				});
+				if (itemsMap[fishMaterial.id]) {
+					itemsMap[fishMaterial.id].count += 20;
+				} else {
+					itemsMap[fishMaterial.id] = {
+						id: fishMaterial.id,
+						name: fishMaterial.name,
+						count: 20, // Each fishing rod requires 20 of each fish
+					};
+				}
 			}
 		}
 
+		const items = Object.values(itemsMap);
 		if (items.length > 0) {
 			presets.fishingRods.push({
 				id: rod.id,

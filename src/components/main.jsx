@@ -304,9 +304,10 @@ export default function Main() {
 			}
 
 			const {sortRank} = material;
-			grouped[sortRank] ||= [];
+			const groupKey = `${sortRank}_${item.id}`;
+			grouped[groupKey] ||= [];
 
-			grouped[sortRank].push({
+			grouped[groupKey].push({
 				...item,
 				rarity: Number.parseInt(material.rarity, 10),
 			});
@@ -431,6 +432,14 @@ export default function Main() {
 				for (let i = 0; i < 4; i++) {
 					const newGoal = tiers[i];
 					helper[tierFields[i]] = newGoal > 0 ? newGoal : '';
+				}
+			} else {
+				// This item is no longer needed by any preset
+				// Remove it if all goals are empty/zero (meaning it was likely preset-added)
+				const helper = updatedHelpers[itemId];
+				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal || helper.tierThreeGoal || helper.tierFourGoal;
+				if (!hasGoals) {
+					delete updatedHelpers[itemId];
 				}
 			}
 		}
