@@ -75,17 +75,23 @@ const categories = css`
 			margin-right: 5px;
 		}
 		
-		&.collapsed::before {
-			content: '▶ ';
+		&.collapsed {
+			border-radius: 7px;
+			border-bottom: 1px solid rgba(0,0,0,0.5);
+			margin-bottom: 15px;
+			
+			&::before {
+				content: '▶ ';
+			}
 		}
 	}
 `;
 
 function PresetCategories({activePresets, onChangeProp}) {
 	const [collapsed, setCollapsed] = useState({
-		characters: false,
-		weapons: false,
-		fishingRods: false,
+		characters: true,
+		weapons: true,
+		fishingRods: true,
 	});
 
 	const toggleCollapse = section => {

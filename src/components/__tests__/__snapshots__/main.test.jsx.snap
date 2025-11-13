@@ -33,17 +33,17 @@ exports[`main > renders without crashing 1`] = `
           class="css-0"
         />
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -79,11 +79,11 @@ exports[`main > renders without crashing 1`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -119,11 +119,11 @@ exports[`main > renders without crashing 1`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -923,17 +923,17 @@ exports[`main > renders without crashing 1`] = `
         class="css-0"
       />
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -969,11 +969,11 @@ exports[`main > renders without crashing 1`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -1009,11 +1009,11 @@ exports[`main > renders without crashing 1`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -1955,6 +1955,245 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
                   min="0"
                   step="1"
                   type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
                   value="9"
                 />
                 <div
@@ -1966,9 +2205,80 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               <button
                 class="css-59nvs6"
                 data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
-                title="9 Brilliant Diamond Fragment remaining"
+                title="Brilliant Diamond Fragment"
                 type="button"
               >
                 <img
@@ -2187,17 +2497,17 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           <section />
         </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -2233,11 +2543,11 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -2273,11 +2583,11 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -3162,6 +3472,245 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
                 min="0"
                 step="1"
                 type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
                 value="9"
               />
               <div
@@ -3173,9 +3722,80 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             <button
               class="css-59nvs6"
               data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
-              title="9 Brilliant Diamond Fragment remaining"
+              title="Brilliant Diamond Fragment"
               type="button"
             >
               <img
@@ -3394,17 +4014,17 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
         <section />
       </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -3440,11 +4060,11 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -3480,11 +4100,11 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -4426,6 +5046,245 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
                   min="0"
                   step="1"
                   type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
                   value="9"
                 />
                 <div
@@ -4437,9 +5296,80 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               <button
                 class="css-59nvs6"
                 data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
-                title="9 Brilliant Diamond Fragment remaining"
+                title="Brilliant Diamond Fragment"
                 type="button"
               >
                 <img
@@ -4658,17 +5588,17 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           <section />
         </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -4704,11 +5634,11 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -4744,11 +5674,11 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -5633,6 +6563,245 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
                 min="0"
                 step="1"
                 type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
                 value="9"
               />
               <div
@@ -5644,9 +6813,80 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             <button
               class="css-59nvs6"
               data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
-              title="9 Brilliant Diamond Fragment remaining"
+              title="Brilliant Diamond Fragment"
               type="button"
             >
               <img
@@ -5865,17 +7105,17 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         <section />
       </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -5911,11 +7151,11 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -5951,11 +7191,11 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -6897,6 +8137,245 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
                   min="0"
                   step="1"
                   type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
                   value="9"
                 />
                 <div
@@ -6908,9 +8387,80 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               <button
                 class="css-59nvs6"
                 data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
                 data-testid="button-tier-1"
                 style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
-                title="9 Brilliant Diamond Fragment remaining"
+                title="Brilliant Diamond Fragment"
                 type="button"
               >
                 <img
@@ -7129,17 +8679,17 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           <section />
         </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -7175,11 +8725,11 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -7215,11 +8765,11 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -8104,6 +9654,245 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
                 min="0"
                 step="1"
                 type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
                 value="9"
               />
               <div
@@ -8115,9 +9904,80 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             <button
               class="css-59nvs6"
               data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
               data-testid="button-tier-1"
               style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
-              title="9 Brilliant Diamond Fragment remaining"
+              title="Brilliant Diamond Fragment"
               type="button"
             >
               <img
@@ -8336,17 +10196,17 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
         <section />
       </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -8382,11 +10242,11 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -8422,11 +10282,11 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -9270,21 +11130,346 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
         >
           fullscreen
         </button>
+        <button
+          class="material-symbols-outlined css-y9b2se"
+          title="Click to float items"
+          type="button"
+        >
+          stacked_bar_chart
+        </button>
         <div
           class="css-0"
-        />
+        >
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value="9"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -9320,11 +11505,11 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -9360,11 +11545,11 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -10151,21 +12336,346 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
       >
         fullscreen
       </button>
+      <button
+        class="material-symbols-outlined css-y9b2se"
+        title="Click to float items"
+        type="button"
+      >
+        stacked_bar_chart
+      </button>
       <div
         class="css-0"
-      />
+      >
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value="9"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -10201,11 +12711,11 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -10241,11 +12751,11 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -11089,21 +13599,346 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
         >
           fullscreen_exit
         </button>
+        <button
+          class="material-symbols-outlined css-y9b2se"
+          title="Click to float items"
+          type="button"
+        >
+          stacked_bar_chart
+        </button>
         <div
           class="css-0"
-        />
+        >
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value="9"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -11139,11 +13974,11 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -11179,11 +14014,11 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -11970,21 +14805,346 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
       >
         fullscreen_exit
       </button>
+      <button
+        class="material-symbols-outlined css-y9b2se"
+        title="Click to float items"
+        type="button"
+      >
+        stacked_bar_chart
+      </button>
       <div
         class="css-0"
-      />
+      >
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value="9"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -12020,11 +15180,11 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -12060,11 +15220,11 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -12908,21 +16068,346 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
         >
           fullscreen_exit
         </button>
+        <button
+          class="material-symbols-outlined css-y9b2se"
+          title="Click to float items"
+          type="button"
+        >
+          stacked_bar_chart
+        </button>
         <div
           class="css-0"
-        />
+        >
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value="9"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -12958,11 +16443,11 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -12998,11 +16483,11 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -13789,21 +17274,346 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
       >
         fullscreen_exit
       </button>
+      <button
+        class="material-symbols-outlined css-y9b2se"
+        title="Click to float items"
+        type="button"
+      >
+        stacked_bar_chart
+      </button>
       <div
         class="css-0"
-      />
+      >
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value="9"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -13839,11 +17649,11 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -13879,11 +17689,11 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -14727,21 +18537,346 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
         >
           fullscreen_exit
         </button>
+        <button
+          class="material-symbols-outlined css-y9b2se"
+          title="Click to float items"
+          type="button"
+        >
+          stacked_bar_chart
+        </button>
         <div
           class="css-0"
-        />
+        >
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value="9"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -14777,11 +18912,11 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -14817,11 +18952,11 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -15608,21 +19743,346 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
       >
         fullscreen_exit
       </button>
+      <button
+        class="material-symbols-outlined css-y9b2se"
+        title="Click to float items"
+        type="button"
+      >
+        stacked_bar_chart
+      </button>
       <div
         class="css-0"
-      />
+      >
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value="9"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -15658,11 +20118,11 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -15698,11 +20158,11 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
@@ -16546,21 +21006,346 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
         >
           fullscreen_exit
         </button>
+        <button
+          class="material-symbols-outlined css-y9b2se"
+          title="Click to float items"
+          type="button"
+        >
+          stacked_bar_chart
+        </button>
         <div
           class="css-0"
-        />
+        >
+          <section>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value="9"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-goal="9"
+                data-testid="button-tier-0"
+                style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+                title="9 Brilliant Diamond Sliver remaining"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Sliver"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-0"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-0"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-1"
+                style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+                title="Brilliant Diamond Fragment"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Fragment"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-1"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-1"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-2"
+                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+                title="Brilliant Diamond Chunk"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Chunk"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-2"
+                >
+                  0
+                </b>
+              </button>
+              <label
+                data-testid="lock-tier-2"
+                title="Lock this tier from automatically tallying up to the next"
+              >
+                <input
+                  type="checkbox"
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  lock_open
+                </div>
+              </label>
+            </div>
+            <div
+              class="css-am8us2"
+            >
+              <label
+                class="css-aij1r1"
+                data-testid="goal-label"
+                title="Set target goal. Color will change to green when reached"
+              >
+                <input
+                  class="css-11cvzo7"
+                  max="999"
+                  maxlength="3"
+                  min="0"
+                  step="1"
+                  type="number"
+                  value=""
+                />
+                <div
+                  class="material-symbols-outlined css-hl5muf"
+                >
+                  pin
+                </div>
+              </label>
+              <button
+                class="css-59nvs6"
+                data-testid="button-tier-3"
+                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+                title="Brilliant Diamond Gemstone"
+                type="button"
+              >
+                <img
+                  alt="Brilliant Diamond Gemstone"
+                  height="75"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                  width="75"
+                />
+                <span
+                  class="css-g2gqi2"
+                >
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                  <span
+                    class="material-symbols-outlined fill"
+                  >
+                    star
+                  </span>
+                </span>
+                <b
+                  class="css-0"
+                  data-testid="value-tier-3"
+                >
+                  0
+                </b>
+              </button>
+            </div>
+            <button
+              class="material-symbols-outlined css-1puj7t"
+              title="Remove item"
+              type="button"
+            >
+              close
+            </button>
+          </section>
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+          <section />
+        </div>
         <form
-          class="css-jq0nnk"
+          class="css-q9wq49"
         >
           <h3>
             Presets
           </h3>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Characters
             </legend>
@@ -16596,11 +21381,11 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Weapons
             </legend>
@@ -16636,11 +21421,11 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             <label />
           </fieldset>
           <fieldset
-            class=""
+            class="collapsed"
             role="group"
           >
             <legend
-              class=""
+              class="collapsed"
             >
               Fishing Rods
             </legend>
@@ -17427,21 +22212,346 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
       >
         fullscreen_exit
       </button>
+      <button
+        class="material-symbols-outlined css-y9b2se"
+        title="Click to float items"
+        type="button"
+      >
+        stacked_bar_chart
+      </button>
       <div
         class="css-0"
-      />
+      >
+        <section>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value="9"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-goal="9"
+              data-testid="button-tier-0"
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+              title="9 Brilliant Diamond Sliver remaining"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Sliver"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-0"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-0"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-1"
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+              title="Brilliant Diamond Fragment"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Fragment"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-1"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-1"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-2"
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+              title="Brilliant Diamond Chunk"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Chunk"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-2"
+              >
+                0
+              </b>
+            </button>
+            <label
+              data-testid="lock-tier-2"
+              title="Lock this tier from automatically tallying up to the next"
+            >
+              <input
+                type="checkbox"
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                lock_open
+              </div>
+            </label>
+          </div>
+          <div
+            class="css-am8us2"
+          >
+            <label
+              class="css-aij1r1"
+              data-testid="goal-label"
+              title="Set target goal. Color will change to green when reached"
+            >
+              <input
+                class="css-11cvzo7"
+                max="999"
+                maxlength="3"
+                min="0"
+                step="1"
+                type="number"
+                value=""
+              />
+              <div
+                class="material-symbols-outlined css-hl5muf"
+              >
+                pin
+              </div>
+            </label>
+            <button
+              class="css-59nvs6"
+              data-testid="button-tier-3"
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+              title="Brilliant Diamond Gemstone"
+              type="button"
+            >
+              <img
+                alt="Brilliant Diamond Gemstone"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
+                width="75"
+              />
+              <span
+                class="css-g2gqi2"
+              >
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+                <span
+                  class="material-symbols-outlined fill"
+                >
+                  star
+                </span>
+              </span>
+              <b
+                class="css-0"
+                data-testid="value-tier-3"
+              >
+                0
+              </b>
+            </button>
+          </div>
+          <button
+            class="material-symbols-outlined css-1puj7t"
+            title="Remove item"
+            type="button"
+          >
+            close
+          </button>
+        </section>
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+        <section />
+      </div>
       <form
-        class="css-jq0nnk"
+        class="css-q9wq49"
       >
         <h3>
           Presets
         </h3>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Characters
           </legend>
@@ -17477,11 +22587,11 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Weapons
           </legend>
@@ -17517,11 +22627,11 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           <label />
         </fieldset>
         <fieldset
-          class=""
+          class="collapsed"
           role="group"
         >
           <legend
-            class=""
+            class="collapsed"
           >
             Fishing Rods
           </legend>
