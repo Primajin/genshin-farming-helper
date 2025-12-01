@@ -1,9 +1,17 @@
 import {fireEvent, render, screen} from '@testing-library/react';
-import {describe, test, expect} from 'vitest';
+import {
+	describe, test, expect, vi,
+} from 'vitest';
 
 import ItemPicker from '../item-picker.jsx';
 import {materialTypes} from '../../constants';
-import {materials} from '../../__tests__/__mocks__/data.js';
+
+vi.mock('../../__tests__/__mocks__/data.js', async () => {
+	const actual = await vi.importActual('../../__tests__/__mocks__/data.js');
+	return actual;
+});
+
+const {materials} = await import('../../__tests__/__mocks__/data.js');
 
 const philosophiesOfFreedom = materials.talentMaterials.find(material => material.id === 104_303);
 const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material => material.id === 114_004);

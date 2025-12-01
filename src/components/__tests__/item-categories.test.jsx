@@ -4,7 +4,13 @@ import {
 } from 'vitest';
 
 import ItemCategories from '../item-categories.jsx';
-import {materials} from '../../__tests__/__mocks__/data.js';
+
+vi.mock('../../__tests__/__mocks__/data.js', async () => {
+	const actual = await vi.importActual('../../__tests__/__mocks__/data.js');
+	return actual;
+});
+
+const {materials} = await import('../../__tests__/__mocks__/data.js');
 
 const onChangeProperty = vi.fn();
 
