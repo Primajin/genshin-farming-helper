@@ -137,11 +137,28 @@ const helperList = css`
 		};
 `;
 
-let didRun = false;
 const {actions} = theme;
 
+// Helper function to create initial farm helpers from storage
+function createInitialFarmHelpers() {
+	const storageState = storage.load();
+	const savedHelpers = storageState?.helpers;
+	if (savedHelpers && Object.keys(savedHelpers).length > 0) {
+		// Return the data needed to create FarmHelper components later
+		return Object.entries(savedHelpers).map(([itemId, config]) => ({
+			itemId,
+			config,
+			category: config.category,
+		}));
+	}
+
+	// Storage is empty, create new
+	storage.save({});
+	return [];
+}
+
 export default function Main() {
-	const [farmHelperList, setFarmHelperList] = useState([]);
+	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
 	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
@@ -151,8 +168,20 @@ export default function Main() {
 		const savedHelpers = storageState?.helpers ?? {};
 		delete savedHelpers[itemId];
 		storage.save({...storageState, helpers: savedHelpers});
-		setFarmHelperList(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.key !== itemId));
+		setFarmHelperData(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.itemId !== itemId));
 	};
+
+	// Create the FarmHelper components from the data
+	const farmHelperList = farmHelperData.map(({itemId, config, category}) => (
+		<FarmHelper
+			key={itemId}
+			category={category}
+			config={config}
+			itemId={itemId}
+			materials={materials}
+			onRemove={onRemove}
+		/>
+	));
 
 	/**
 	 * The config array has seven positions
@@ -184,17 +213,10 @@ export default function Main() {
 		const newHelpers = {...savedHelpers, [itemId]: config};
 		storage.save({...storageState, helpers: newHelpers});
 
-		setFarmHelperList(previousHelpers =>
+		setFarmHelperData(previousHelpers =>
 			[
 				...previousHelpers,
-				<FarmHelper
-					key={itemId}
-					category={category}
-					config={config}
-					itemId={itemId}
-					materials={materials}
-					onRemove={onRemove}
-				/>,
+				{itemId, config, category},
 			]);
 	}, []);
 
@@ -204,22 +226,6 @@ export default function Main() {
 		const itemId = itemName.split('.')[1];
 		addHelperWithItem({itemId, category});
 	};
-
-	useEffect(() => {
-		if (!didRun) {
-			didRun = true;
-			const storageState = storage.load();
-			const savedHelpers = storageState?.helpers;
-			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
-				for (const [itemId, config] of Object.entries(savedHelpers)) {
-					addHelperWithItem({itemId, config, category: config.category});
-				}
-			} else {
-				// Storage is empty, create new
-				storage.save({});
-			}
-		}
-	}, [addHelperWithItem]);
 
 	useEffect(() => {
 		const setFullScreenState = () => {
@@ -259,7 +265,7 @@ export default function Main() {
 		setFloatGroups(!floatGroups);
 	};
 
-	const disabledKeys = farmHelperList.map(item => item.key);
+	const disabledKeys = farmHelperData.map(item => item.itemId);
 
 	const videoBackground
 		= (

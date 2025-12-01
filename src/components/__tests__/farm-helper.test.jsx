@@ -5,7 +5,13 @@ import {
 
 import FarmHelper from '../farm-helper.jsx';
 import {materialTypes} from '../../constants/index.js';
-import {materials} from '../../__tests__/__mocks__/data.js';
+
+vi.mock('../../__tests__/__mocks__/data.js', async () => {
+	const actual = await vi.importActual('../../__tests__/__mocks__/data.js');
+	return actual;
+});
+
+const {materials} = await import('../../__tests__/__mocks__/data.js');
 
 const {
 	ASCENSION,
@@ -73,6 +79,41 @@ const configWithTargetsSet = {
 };
 
 const globalMockRemove = vi.fn();
+
+// Expected values maps for different tier counts
+const expectedValuesBefore = {
+	1: ['0'],
+	2: ['0', '1'],
+	3: ['0', '1', '2'],
+	4: ['0', '1', '2', '3'],
+};
+
+const expectedValuesAfterFirstTier = {
+	1: ['9'],
+	2: ['0', '4'],
+	3: ['0', '1', '3'],
+	4: ['0', '1', '0', '4'],
+};
+
+const expectedValuesAfterFirstTierWithLock = {
+	1: ['9'],
+	2: ['0', '4'],
+	3: ['0', '4', '2'],
+	4: ['0', '4', '2', '3'],
+};
+
+const expectedValuesBeforeWithLockPrefilled = {
+	2: ['0', '4'],
+	3: ['0', '4', '2'],
+	4: ['0', '4', '2', '3'],
+};
+
+const expectedValuesAfterLockLifted = {
+	2: ['0', '4'],
+	3: ['0', '1', '4'],
+	4: ['0', '1', '1', '4'],
+};
+
 describe('farmHelper', () => {
 	for (const [category, {id, name, tiers}] of materialMap) {
 		test(`renders correctly for ${category} ${name} with ${tiers} tiers`, () => {
@@ -89,27 +130,7 @@ describe('farmHelper', () => {
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
 
-			switch (tiers) {
-				case 1: {
-					expect(valuesBefore).toMatchObject(['0']);
-					break;
-				}
-
-				case 2: {
-					expect(valuesBefore).toMatchObject(['0', '1']);
-					break;
-				}
-
-				case 3: {
-					expect(valuesBefore).toMatchObject(['0', '1', '2']);
-					break;
-				}
-
-				default: {
-					expect(valuesBefore).toMatchObject(['0', '1', '2', '3']);
-					break;
-				}
-			}
+			expect(valuesBefore).toMatchObject(expectedValuesBefore[tiers]);
 
 			for (let i = 0; i < 9; i++) {
 				fireEvent.click(buttons[0]);
@@ -117,27 +138,7 @@ describe('farmHelper', () => {
 
 			const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
 
-			switch (tiers) {
-				case 1: {
-					expect(valuesAfter).toMatchObject(['9']);
-					break;
-				}
-
-				case 2: {
-					expect(valuesAfter).toMatchObject(['0', '4']);
-					break;
-				}
-
-				case 3: {
-					expect(valuesAfter).toMatchObject(['0', '1', '3']);
-					break;
-				}
-
-				default: {
-					expect(valuesAfter).toMatchObject(['0', '1', '0', '4']);
-					break;
-				}
-			}
+			expect(valuesAfter).toMatchObject(expectedValuesAfterFirstTier[tiers]);
 		});
 
 		test(`increases counter correctly for ${category} ${name} when second tier is locked`, () => {
@@ -146,27 +147,7 @@ describe('farmHelper', () => {
 			const buttons = screen.getAllByTestId(/button-tier-/);
 			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
 
-			switch (tiers) {
-				case 1: {
-					expect(valuesBefore).toMatchObject(['0']);
-					break;
-				}
-
-				case 2: {
-					expect(valuesBefore).toMatchObject(['0', '1']);
-					break;
-				}
-
-				case 3: {
-					expect(valuesBefore).toMatchObject(['0', '1', '2']);
-					break;
-				}
-
-				default: {
-					expect(valuesBefore).toMatchObject(['0', '1', '2', '3']);
-					break;
-				}
-			}
+			expect(valuesBefore).toMatchObject(expectedValuesBefore[tiers]);
 
 			for (let i = 0; i < 9; i++) {
 				fireEvent.click(buttons[0]);
@@ -174,27 +155,7 @@ describe('farmHelper', () => {
 
 			const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
 
-			switch (tiers) {
-				case 1: {
-					expect(valuesAfter).toMatchObject(['9']);
-					break;
-				}
-
-				case 2: {
-					expect(valuesAfter).toMatchObject(['0', '4']);
-					break;
-				}
-
-				case 3: {
-					expect(valuesAfter).toMatchObject(['0', '4', '2']);
-					break;
-				}
-
-				default: {
-					expect(valuesAfter).toMatchObject(['0', '4', '2', '3']);
-					break;
-				}
-			}
+			expect(valuesAfter).toMatchObject(expectedValuesAfterFirstTierWithLock[tiers]);
 		});
 
 		if (tiers > 1) {
@@ -204,22 +165,7 @@ describe('farmHelper', () => {
 				const buttons = screen.getAllByTestId(/button-tier-/);
 				const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
 
-				switch (tiers) {
-					case 2: {
-						expect(valuesBefore).toMatchObject(['0', '4']);
-						break;
-					}
-
-					case 3: {
-						expect(valuesBefore).toMatchObject(['0', '4', '2']);
-						break;
-					}
-
-					default: {
-						expect(valuesBefore).toMatchObject(['0', '4', '2', '3']);
-						break;
-					}
-				}
+				expect(valuesBefore).toMatchObject(expectedValuesBeforeWithLockPrefilled[tiers]);
 
 				for (let i = 0; i < 9; i++) {
 					fireEvent.click(buttons[0]);
@@ -231,22 +177,7 @@ describe('farmHelper', () => {
 
 				const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
 
-				switch (tiers) {
-					case 2: {
-						expect(valuesAfter).toMatchObject(['0', '4']);
-						break;
-					}
-
-					case 3: {
-						expect(valuesAfter).toMatchObject(['0', '1', '4']);
-						break;
-					}
-
-					default: {
-						expect(valuesAfter).toMatchObject(['0', '1', '1', '4']);
-						break;
-					}
-				}
+				expect(valuesAfter).toMatchObject(expectedValuesAfterLockLifted[tiers]);
 			});
 		}
 
@@ -308,13 +239,17 @@ describe('farmHelper', () => {
 
 		const valuesAfter = buttons.map(button => button.querySelector('b'));
 
-		for (const [index, className] of valuesAfter.map(value => value.className).entries()) {
-			if (index % 2) {
-				expect(className).not.toBe('css-0');
-			} else {
-				expect(className).toBe('css-0');
-			}
-		}
+		// Verify odd indices have changed (not 'css-0')
+		const oddIndexClasses = valuesAfter
+			.filter((_, index) => index % 2)
+			.map(value => value.className);
+		expect(oddIndexClasses.every(className => className !== 'css-0')).toBe(true);
+
+		// Verify even indices remain unchanged ('css-0')
+		const evenIndexClasses = valuesAfter
+			.filter((_, index) => !(index % 2))
+			.map(value => value.className);
+		expect(evenIndexClasses.every(className => className === 'css-0')).toBe(true);
 	});
 
 	test('removes a goal and changes back to grey when goal is removed', () => {
