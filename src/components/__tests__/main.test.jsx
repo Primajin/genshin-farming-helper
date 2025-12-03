@@ -26,12 +26,12 @@ vi.mock('../data-rare.json', async () => {
 });
 
 vi.mock('../presets.json', () => ({
-    default: {
-      characters: ['Character 1', 'Character 2'],
-      weapons: ['Weapon 1', 'Weapon 2'],
-      fishingRods: [{name: 'Fishing Rod 1'}, {name: 'Fishing Rod 2'}],
-    }
-  }));
+	default: {
+		characters: ['Character 1', 'Character 2'],
+		weapons: ['Weapon 1', 'Weapon 2'],
+		fishingRods: [{name: 'Fishing Rod 1'}, {name: 'Fishing Rod 2'}],
+	},
+}));
 
 describe('main', () => {
 	beforeEach(() => {

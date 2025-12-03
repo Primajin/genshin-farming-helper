@@ -69,8 +69,8 @@ fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error
 	}
 });
 
-const characters = genshinDb.characters('names', { matchCategories: true });
-const weapons = genshinDb.weapons('names', { matchCategories: true });
+const characters = genshinDb.characters('names', {matchCategories: true});
+const weapons = genshinDb.weapons('names', {matchCategories: true});
 
 export const presets = {
 	characters,

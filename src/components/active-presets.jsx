@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
-import { css } from '@emotion/react';
+import {css} from '@emotion/react';
 
 const presetList = css`
   display: flex;
@@ -26,24 +26,24 @@ const removeButton = css`
   margin-left: 10px;
 `;
 
-function ActivePresets({ presets, onRemove }) {
-  return (
-    <div css={presetList}>
-      {presets.map((preset, index) => (
-        <div key={index} css={presetItem} data-testid={`preset-item-${index}`}>
-          <span>{preset.name} ({preset.currentLevel} to {preset.targetLevel})</span>
-          <button css={removeButton} onClick={() => onRemove(preset)}>
-            <span className="material-symbols-outlined">close</span>
-          </button>
-        </div>
-      ))}
-    </div>
-  );
+function ActivePresets({presets, onRemove}) {
+	return (
+		<div css={presetList}>
+			{presets.map((preset, index) => (
+				<div key={index} css={presetItem} data-testid={`preset-item-${index}`}>
+					<span>{preset.name} ({preset.currentLevel} to {preset.targetLevel})</span>
+					<button css={removeButton} onClick={() => onRemove(preset)}>
+						<span className='material-symbols-outlined'>close</span>
+					</button>
+				</div>
+			))}
+		</div>
+	);
 }
 
 ActivePresets.propTypes = {
-  presets: PropTypes.array.isRequired,
-  onRemove: PropTypes.func.isRequired,
+	presets: PropTypes.array.isRequired,
+	onRemove: PropTypes.func.isRequired,
 };
 
 export default ActivePresets;

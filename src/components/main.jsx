@@ -2,6 +2,7 @@
 /** @jsxImportSource @emotion/react */
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
+
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';
@@ -239,61 +240,65 @@ export default function Main() {
 		addHelperWithItem({itemId, category});
 	};
 
-	const onAddPreset = (preset) => {
-		setActivePresets(prev => [...prev, preset]);
+	const onAddPreset = preset => {
+		setActivePresets(previous => [...previous, preset]);
 		const newFarmHelperData = [...farmHelperData];
 
-		preset.materials.forEach(material => {
-		  const dbMaterial = allMaterials.find(m => m.name === material.name);
-		  if (!dbMaterial) return;
+		for (const material of preset.materials) {
+			const dbMaterial = allMaterials.find(m => m.name === material.name);
+			if (!dbMaterial) {
+				continue;
+			}
 
-		  const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
+			const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
 
-		  if (existingHelperIndex !== -1) {
-			const existingHelper = newFarmHelperData[existingHelperIndex];
-			const tier = `tier${dbMaterial.rarity}Goal`;
-			existingHelper.config[tier] = (existingHelper.config[tier] || 0) + material.count;
-		  } else {
-			const category = Object.keys(materialsRare).find(key => materialsRare[key].some(m => m.id === dbMaterial.id));
-			const newHelper = {
-			  itemId: String(dbMaterial.id),
-			  category,
-			  config: {
-				[`tier${dbMaterial.rarity}Goal`]: material.count,
-			  },
-			};
-			newFarmHelperData.push(newHelper);
-		  }
-		});
+			if (existingHelperIndex === -1) {
+				const category = Object.keys(materialsRare).find(key => materialsRare[key].some(m => m.id === dbMaterial.id));
+				const newHelper = {
+					itemId: String(dbMaterial.id),
+					category,
+					config: {
+						[`tier${dbMaterial.rarity}Goal`]: material.count,
+					},
+				};
+				newFarmHelperData.push(newHelper);
+			} else {
+				const existingHelper = newFarmHelperData[existingHelperIndex];
+				const tier = `tier${dbMaterial.rarity}Goal`;
+				existingHelper.config[tier] = (existingHelper.config[tier] || 0) + material.count;
+			}
+		}
 
 		setFarmHelperData(newFarmHelperData);
-	  };
+	};
 
-	  const onRemovePreset = (preset) => {
+	const onRemovePreset = preset => {
 		const newActivePresets = activePresets.filter(p => p.name !== preset.name);
 		setActivePresets(newActivePresets);
 
 		const newFarmHelperData = [...farmHelperData];
 
-		preset.materials.forEach(material => {
-		  const dbMaterial = allMaterials.find(m => m.name === material.name);
-		  if (!dbMaterial) return;
-
-		  const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
-
-		  if (existingHelperIndex !== -1) {
-			const existingHelper = newFarmHelperData[existingHelperIndex];
-			const tier = `tier${dbMaterial.rarity}Goal`;
-			existingHelper.config[tier] = (existingHelper.config[tier] || 0) - material.count;
-
-			if (existingHelper.config[tier] <= 0) {
-			  newFarmHelperData.splice(existingHelperIndex, 1);
+		for (const material of preset.materials) {
+			const dbMaterial = allMaterials.find(m => m.name === material.name);
+			if (!dbMaterial) {
+				continue;
 			}
-		  }
-		});
+
+			const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
+
+			if (existingHelperIndex !== -1) {
+				const existingHelper = newFarmHelperData[existingHelperIndex];
+				const tier = `tier${dbMaterial.rarity}Goal`;
+				existingHelper.config[tier] = (existingHelper.config[tier] || 0) - material.count;
+
+				if (existingHelper.config[tier] <= 0) {
+					newFarmHelperData.splice(existingHelperIndex, 1);
+				}
+			}
+		}
 
 		setFarmHelperData(newFarmHelperData);
-	  }
+	};
 
 	useEffect(() => {
 		const storageState = storage.load();
@@ -404,13 +409,13 @@ export default function Main() {
 					checklist
 				</button>
 				{hasItems ? stackToggle : null}
-				<ActivePresets presets={activePresets} onRemove={onRemovePreset} />
+				<ActivePresets presets={activePresets} onRemove={onRemovePreset}/>
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
 					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
-				{isPresetPickerOpen && <PresetPicker onClose={closePresetPicker} onAddPreset={onAddPreset} />}
+				{isPresetPickerOpen ? <PresetPicker onClose={closePresetPicker} onAddPreset={onAddPreset}/> : null}
 			</main>
 		</>
 	);
