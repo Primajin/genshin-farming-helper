@@ -2,7 +2,6 @@
 /** @jsxImportSource @emotion/react */
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
-
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';
@@ -12,6 +11,8 @@ import {fullscreenElement, toggleFullscreen} from '../utils/fullscreen.js';
 import {releaseWakeLock, requestWakeLock} from '../utils/wake-lock.js';
 import ItemCategories from './item-categories.jsx';
 import FarmHelper from './farm-helper.jsx';
+import PresetPicker from './preset-picker.jsx';
+import ActivePresets from './active-presets.jsx';
 
 const globalStyles = css`
 	*, *::before, *::after {
@@ -127,6 +128,10 @@ const toggleFullScreen = css`
 	right: 20px;
 `;
 
+const presetPickerButton = css`
+	left: 50px;
+`;
+
 const helperList = css`
 		display: flex;
 		flex-wrap: wrap;
@@ -157,11 +162,18 @@ function createInitialFarmHelpers() {
 	return [];
 }
 
+const allMaterials = Object.values(materials).flat();
+
 export default function Main() {
 	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
 	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
+	const [isPresetPickerOpen, setIsPresetPickerOpen] = useState(false);
+	const [activePresets, setActivePresets] = useState(() => {
+		const storageState = storage.load();
+		return storageState?.presets ?? [];
+	});
 
 	const onRemove = itemId => {
 		const storageState = storage.load();
@@ -227,6 +239,67 @@ export default function Main() {
 		addHelperWithItem({itemId, category});
 	};
 
+	const onAddPreset = (preset) => {
+		setActivePresets(prev => [...prev, preset]);
+		const newFarmHelperData = [...farmHelperData];
+
+		preset.materials.forEach(material => {
+		  const dbMaterial = allMaterials.find(m => m.name === material.name);
+		  if (!dbMaterial) return;
+
+		  const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
+
+		  if (existingHelperIndex !== -1) {
+			const existingHelper = newFarmHelperData[existingHelperIndex];
+			const tier = `tier${dbMaterial.rarity}Goal`;
+			existingHelper.config[tier] = (existingHelper.config[tier] || 0) + material.count;
+		  } else {
+			const category = Object.keys(materialsRare).find(key => materialsRare[key].some(m => m.id === dbMaterial.id));
+			const newHelper = {
+			  itemId: String(dbMaterial.id),
+			  category,
+			  config: {
+				[`tier${dbMaterial.rarity}Goal`]: material.count,
+			  },
+			};
+			newFarmHelperData.push(newHelper);
+		  }
+		});
+
+		setFarmHelperData(newFarmHelperData);
+	  };
+
+	  const onRemovePreset = (preset) => {
+		const newActivePresets = activePresets.filter(p => p.name !== preset.name);
+		setActivePresets(newActivePresets);
+
+		const newFarmHelperData = [...farmHelperData];
+
+		preset.materials.forEach(material => {
+		  const dbMaterial = allMaterials.find(m => m.name === material.name);
+		  if (!dbMaterial) return;
+
+		  const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
+
+		  if (existingHelperIndex !== -1) {
+			const existingHelper = newFarmHelperData[existingHelperIndex];
+			const tier = `tier${dbMaterial.rarity}Goal`;
+			existingHelper.config[tier] = (existingHelper.config[tier] || 0) - material.count;
+
+			if (existingHelper.config[tier] <= 0) {
+			  newFarmHelperData.splice(existingHelperIndex, 1);
+			}
+		  }
+		});
+
+		setFarmHelperData(newFarmHelperData);
+	  }
+
+	useEffect(() => {
+		const storageState = storage.load();
+		storage.save({...storageState, presets: activePresets});
+	}, [activePresets]);
+
 	useEffect(() => {
 		const setFullScreenState = () => {
 			document.fullscreenElement = fullscreenElement;
@@ -288,6 +361,14 @@ export default function Main() {
 		</button>
 	);
 
+	const openPresetPicker = () => {
+		setIsPresetPickerOpen(true);
+	};
+
+	const closePresetPicker = () => {
+		setIsPresetPickerOpen(false);
+	};
+
 	return (
 		<>
 			<Global styles={globalStyles}/>
@@ -313,12 +394,23 @@ export default function Main() {
 				>
 					{fullScreen ? 'fullscreen_exit' : 'fullscreen'}
 				</button>
+				<button
+					className='material-symbols-outlined'
+					css={[actions, metaKeys, presetPickerButton]}
+					title='Open Preset Picker'
+					type='button'
+					onClick={openPresetPicker}
+				>
+					checklist
+				</button>
 				{hasItems ? stackToggle : null}
+				<ActivePresets presets={activePresets} onRemove={onRemovePreset} />
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
 					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
+				{isPresetPickerOpen && <PresetPicker onClose={closePresetPicker} onAddPreset={onAddPreset} />}
 			</main>
 		</>
 	);

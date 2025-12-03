@@ -20,6 +20,7 @@ const talentMaterials = allMaterials.filter(material => material.typeText.starts
 const weaponMaterials = allMaterials.filter(material => material.typeText.startsWith('Weapon Ascension Material'));
 const wood = allMaterials.filter(material => material.category === 'WOOD');
 const buildingMaterials = allMaterials.filter(material => material.sortRank === 301 || material.sortRank === 331);
+const fishingRods = allMaterials.filter(material => material.category === 'FISH_ROD');
 
 export const materials = {
 	buildingMaterials,
@@ -62,6 +63,22 @@ export const materialsRare = {
 };
 
 fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
+	/* V8 ignore next 3 */
+	if (error) {
+		console.error(error);
+	}
+});
+
+const characters = genshinDb.characters('names', { matchCategories: true });
+const weapons = genshinDb.weapons('names', { matchCategories: true });
+
+export const presets = {
+	characters,
+	weapons,
+	fishingRods,
+};
+
+fs.promises.writeFile('src/presets.json', JSON.stringify(presets), error => {
 	/* V8 ignore next 3 */
 	if (error) {
 		console.error(error);
