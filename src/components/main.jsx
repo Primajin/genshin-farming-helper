@@ -3,7 +3,7 @@
 import {
 	useCallback, useEffect, useState,
 } from 'react';
-import { Global, css } from '@emotion/react';
+import {Global, css} from '@emotion/react';
 
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
@@ -151,7 +151,7 @@ const helperList = css`
 		};
 `;
 
-const { actions } = theme;
+const {actions} = theme;
 
 // Helper function to create initial farm helpers from storage
 function createInitialFarmHelpers() {
@@ -185,16 +185,25 @@ function getGoalTier(category, dbMaterial) {
 
 	const rarity = dbMaterial.rarity || 1;
 	switch (rarity) {
-		case 1:
+		case 1: {
 			return 'tierOneGoal';
-		case 2:
+		}
+
+		case 2: {
 			return 'tierTwoGoal';
-		case 3:
+		}
+
+		case 3: {
 			return 'tierThreeGoal';
-		case 4:
+		}
+
+		case 4: {
 			return 'tierFourGoal';
-		default:
+		}
+
+		default: {
 			return 'tierOneGoal';
+		}
 	}
 }
 
@@ -213,7 +222,7 @@ export default function Main() {
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
 		delete savedHelpers[itemId];
-		storage.save({ ...storageState, helpers: savedHelpers });
+		storage.save({...storageState, helpers: savedHelpers});
 		setFarmHelperData(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.itemId !== itemId));
 	}, []);
 
@@ -260,8 +269,8 @@ export default function Main() {
 
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
-		const newHelpers = { ...savedHelpers, [itemId]: config };
-		storage.save({ ...storageState, helpers: newHelpers });
+		const newHelpers = {...savedHelpers, [itemId]: config};
+		storage.save({...storageState, helpers: newHelpers});
 
 		setFarmHelperData(previousHelpers =>
 			[
@@ -277,7 +286,7 @@ export default function Main() {
 		const category = itemName.split('.')[0];
 		const itemId = itemName.split('.')[1];
 		addHelperWithItem({
-			itemId, category, config: { category },
+			itemId, category, config: {category},
 		});
 	};
 
@@ -295,9 +304,7 @@ export default function Main() {
 				const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
 
 				let categoryKey = Object.keys(materialsRare).find(key => materialsRare[key].some(m => m.id === dbMaterial.id));
-				if (!categoryKey) {
-					categoryKey = Object.keys(materials).find(key => materials[key].some(m => m.id === dbMaterial.id));
-				}
+				categoryKey ||= Object.keys(materials).find(key => materials[key].some(m => m.id === dbMaterial.id));
 
 				if (categoryKey) {
 					const category = categoryKey.replaceAll(/([A-Z])/g, '-$1').toLowerCase();
@@ -376,7 +383,7 @@ export default function Main() {
 
 	useEffect(() => {
 		const storageState = storage.load();
-		storage.save({ ...storageState, presets: activePresets });
+		storage.save({...storageState, presets: activePresets});
 	}, [activePresets]);
 
 	useEffect(() => {
@@ -422,18 +429,18 @@ export default function Main() {
 	const videoBackground
 		= (
 			<div css={video}>
-				<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg">
-					<source src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4" type="audio/mp4"/>
+				<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg'>
+					<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
 				</video>
 			</div>
 		);
 
 	const stackToggle = (
 		<button
-			className="material-symbols-outlined"
+			className='material-symbols-outlined'
 			css={[actions, toggleFloat]}
 			title={floatGroups ? 'Unfloat items' : 'Click to float items'}
-			type="button"
+			type='button'
 			onClick={handleFloatChange}
 		>
 			{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
@@ -455,29 +462,29 @@ export default function Main() {
 			<main>
 				{!widthLarger768 && (
 					<button
-						className="material-symbols-outlined"
+						className='material-symbols-outlined'
 						css={[actions, metaKeys, toggleWakeLock]}
 						title={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
-						type="button"
+						type='button'
 						onClick={handleWakeLock}
 					>
 						{wakeLockSentinel ? 'bedtime' : 'bedtime_off'}
 					</button>
 				)}
 				<button
-					className="material-symbols-outlined"
+					className='material-symbols-outlined'
 					css={[actions, metaKeys, toggleFullScreen]}
 					title={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
-					type="button"
+					type='button'
 					onClick={handleFullscreen}
 				>
 					{fullScreen ? 'fullscreen_exit' : 'fullscreen'}
 				</button>
 				<button
-					className="material-symbols-outlined"
+					className='material-symbols-outlined'
 					css={[actions, metaKeys, presetPickerButton]}
-					title="Open Preset Picker"
-					type="button"
+					title='Open Preset Picker'
+					type='button'
 					onClick={openPresetPicker}
 				>
 					checklist
@@ -489,7 +496,7 @@ export default function Main() {
 					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
-				{isPresetPickerOpen ? <div data-testid="preset-picker-container"><PresetPicker onClose={closePresetPicker} onAddPreset={onAddPreset}/></div> : null}
+				{isPresetPickerOpen ? <div data-testid='preset-picker-container'><PresetPicker onClose={closePresetPicker} onAddPreset={onAddPreset}/></div> : null}
 			</main>
 		</>
 	);

@@ -60,10 +60,12 @@ const getMaterials = (item, currentLevel, targetLevel) => {
 	if (!item) {
 		return materials;
 	}
+
 	const {costs} = item;
 	if (!costs) {
 		return materials;
 	}
+
 	const startIndex = levelOptions.indexOf(currentLevel);
 	const endIndex = levelOptions.indexOf(targetLevel);
 
@@ -140,7 +142,7 @@ function PresetPicker({onClose, onAddPreset}) {
 
 		return (
 			<div>
-				<select data-testid="preset-select" value={selectedItem} onChange={event => setSelectedItem(event.target.value)}>
+				<select data-testid='preset-select' value={selectedItem} onChange={event => setSelectedItem(event.target.value)}>
 					{items.map(item => {
 						const name = typeof item === 'string' ? item : item.name;
 						return <option key={name} value={name}>{name}</option>;
@@ -151,14 +153,14 @@ function PresetPicker({onClose, onAddPreset}) {
 						<label>
 							Current Level:
 							{' '}
-							<select data-testid="current-level-select" value={currentLevel} onChange={event => setCurrentLevel(event.target.value)}>
+							<select data-testid='current-level-select' value={currentLevel} onChange={event => setCurrentLevel(event.target.value)}>
 								{levelOptions.map(level => <option key={level} value={level}>{level}</option>)}
 							</select>
 						</label>
 						<label>
 							Target Level:
 							{' '}
-							<select data-testid="target-level-select" value={targetLevel} onChange={event => setTargetLevel(event.target.value)}>
+							<select data-testid='target-level-select' value={targetLevel} onChange={event => setTargetLevel(event.target.value)}>
 								{levelOptions.map(level => <option key={level} value={level}>{level}</option>)}
 							</select>
 						</label>
