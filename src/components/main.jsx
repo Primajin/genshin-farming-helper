@@ -1,17 +1,27 @@
 /* global window, document */
 /** @jsxImportSource @emotion/react */
-import {useCallback, useEffect, useState} from 'react';
-import {Global, css} from '@emotion/react';
+import {
+	useCallback, useEffect, useState,
+} from 'react';
+import { Global, css } from '@emotion/react';
 
 import materials from '../data.json';
 import materialsRare from '../data-rare.json';
 import storage from '../utils/local-storage.js';
 import theme from '../theme/index.js';
-import {breakpoints, up} from '../utils/theming.js';
-import {fullscreenElement, toggleFullscreen} from '../utils/fullscreen.js';
-import {releaseWakeLock, requestWakeLock} from '../utils/wake-lock.js';
+import {
+	breakpoints, up,
+} from '../utils/theming.js';
+import {
+	fullscreenElement, toggleFullscreen,
+} from '../utils/fullscreen.js';
+import {
+	releaseWakeLock, requestWakeLock,
+} from '../utils/wake-lock.js';
 import ItemCategories from './item-categories.jsx';
 import FarmHelper from './farm-helper.jsx';
+import PresetPicker from './preset-picker.jsx';
+import ActivePresets from './active-presets.jsx';
 
 const globalStyles = css`
 	*, *::before, *::after {
@@ -127,6 +137,10 @@ const toggleFullScreen = css`
 	right: 20px;
 `;
 
+const presetPickerButton = css`
+	left: 50px;
+`;
+
 const helperList = css`
 		display: flex;
 		flex-wrap: wrap;
@@ -137,7 +151,7 @@ const helperList = css`
 		};
 `;
 
-const {actions} = theme;
+const { actions } = theme;
 
 // Helper function to create initial farm helpers from storage
 function createInitialFarmHelpers() {
@@ -157,22 +171,56 @@ function createInitialFarmHelpers() {
 	return [];
 }
 
+const allMaterials = Object.values(materials).flat();
+
+function getGoalTier(category, dbMaterial) {
+	const isMultiple = category === 'character-weapon-enhancement-materials'
+		|| category === 'weapon-materials'
+		|| category === 'talent-materials'
+		|| category === 'character-ascension-materials';
+
+	if (!isMultiple) {
+		return 'tierOneGoal';
+	}
+
+	const rarity = dbMaterial.rarity || 1;
+	switch (rarity) {
+		case 1:
+			return 'tierOneGoal';
+		case 2:
+			return 'tierTwoGoal';
+		case 3:
+			return 'tierThreeGoal';
+		case 4:
+			return 'tierFourGoal';
+		default:
+			return 'tierOneGoal';
+	}
+}
+
 export default function Main() {
 	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
 	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
+	const [isPresetPickerOpen, setIsPresetPickerOpen] = useState(false);
+	const [activePresets, setActivePresets] = useState(() => {
+		const storageState = storage.load();
+		return storageState?.presets ?? [];
+	});
 
-	const onRemove = itemId => {
+	const onRemove = useCallback(itemId => {
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
 		delete savedHelpers[itemId];
-		storage.save({...storageState, helpers: savedHelpers});
+		storage.save({ ...storageState, helpers: savedHelpers });
 		setFarmHelperData(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.itemId !== itemId));
-	};
+	}, []);
 
 	// Create the FarmHelper components from the data
-	const farmHelperList = farmHelperData.map(({itemId, config, category}) => (
+	const farmHelperList = farmHelperData.map(({
+		itemId, config, category,
+	}) => (
 		<FarmHelper
 			key={itemId}
 			category={category}
@@ -206,17 +254,21 @@ export default function Main() {
 	 * @type {(function({[config]: ConfigObject, itemId: string, category: string}): void)|*}
 	 */
 	const addHelperWithItem = useCallback(helper => {
-		const {config, itemId, category} = helper;
+		const {
+			config, itemId, category,
+		} = helper;
 
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
-		const newHelpers = {...savedHelpers, [itemId]: config};
-		storage.save({...storageState, helpers: newHelpers});
+		const newHelpers = { ...savedHelpers, [itemId]: config };
+		storage.save({ ...storageState, helpers: newHelpers });
 
 		setFarmHelperData(previousHelpers =>
 			[
 				...previousHelpers,
-				{itemId, config, category},
+				{
+					itemId, config, category,
+				},
 			]);
 	}, []);
 
@@ -224,8 +276,108 @@ export default function Main() {
 		const itemName = event.target.value;
 		const category = itemName.split('.')[0];
 		const itemId = itemName.split('.')[1];
-		addHelperWithItem({itemId, category});
+		addHelperWithItem({
+			itemId, category, config: { category },
+		});
 	};
+
+	const onAddPreset = useCallback(preset => {
+		setActivePresets(previous => [...previous, preset]);
+		setFarmHelperData(previousFarmHelpers => {
+			const newFarmHelperData = [...previousFarmHelpers];
+
+			for (const material of preset.materials) {
+				const dbMaterial = allMaterials.find(m => m.name === material.name);
+				if (!dbMaterial) {
+					continue;
+				}
+
+				const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
+
+				let categoryKey = Object.keys(materialsRare).find(key => materialsRare[key].some(m => m.id === dbMaterial.id));
+				if (!categoryKey) {
+					categoryKey = Object.keys(materials).find(key => materials[key].some(m => m.id === dbMaterial.id));
+				}
+
+				if (categoryKey) {
+					const category = categoryKey.replaceAll(/([A-Z])/g, '-$1').toLowerCase();
+					const tier = getGoalTier(category, dbMaterial);
+
+					if (existingHelperIndex === -1) {
+						const newHelper = {
+							itemId: String(dbMaterial.id),
+							category,
+							config: {
+								[tier]: material.count,
+							},
+						};
+						newFarmHelperData.push(newHelper);
+					} else {
+						const existingHelper = newFarmHelperData[existingHelperIndex];
+						newFarmHelperData[existingHelperIndex] = {
+							...existingHelper,
+							config: {
+								...existingHelper.config,
+								[tier]: (existingHelper.config[tier] ?? 0) + material.count,
+							},
+						};
+					}
+				}
+			}
+
+			return newFarmHelperData;
+		});
+	}, []);
+
+	const onRemovePreset = useCallback(preset => {
+		setActivePresets(previous => previous.filter(p => p.name !== preset.name));
+		setFarmHelperData(previousFarmHelpers => {
+			const newFarmHelperData = [...previousFarmHelpers];
+
+			for (const material of preset.materials) {
+				const dbMaterial = allMaterials.find(m => m.name === material.name);
+				if (!dbMaterial) {
+					continue;
+				}
+
+				const existingHelperIndex = newFarmHelperData.findIndex(helper => helper.itemId === String(dbMaterial.id));
+
+				if (existingHelperIndex !== -1) {
+					const existingHelper = newFarmHelperData[existingHelperIndex];
+					const camelCaseCategory = existingHelper.category.replaceAll(/-(\w)/g, (match, letter) => letter.toUpperCase());
+					const tier = getGoalTier(camelCaseCategory, dbMaterial);
+
+					const newConfig = {
+						...existingHelper.config,
+						[tier]: (existingHelper.config[tier] || 0) - material.count,
+					};
+
+					if (newConfig[tier] < 0) {
+						newConfig[tier] = 0;
+					}
+
+					newFarmHelperData[existingHelperIndex] = {
+						...existingHelper,
+						config: newConfig,
+					};
+
+					const hasNoValues = (!newConfig.tierOne && !newConfig.tierTwo && !newConfig.tierThree && !newConfig.tierFour);
+					const hasNoGoals = (!newConfig.tierOneGoal && !newConfig.tierTwoGoal && !newConfig.tierThreeGoal && !newConfig.tierFourGoal);
+
+					if (hasNoValues && hasNoGoals) {
+						newFarmHelperData.splice(existingHelperIndex, 1);
+					}
+				}
+			}
+
+			return newFarmHelperData;
+		});
+	}, []);
+
+	useEffect(() => {
+		const storageState = storage.load();
+		storage.save({ ...storageState, presets: activePresets });
+	}, [activePresets]);
 
 	useEffect(() => {
 		const setFullScreenState = () => {
@@ -270,23 +422,31 @@ export default function Main() {
 	const videoBackground
 		= (
 			<div css={video}>
-				<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster='https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg'>
-					<source src='https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4' type='audio/mp4'/>
+				<video disablePictureInPicture disableRemotePlayback autoPlay loop muted poster="https://genshin.hoyoverse.com/_nuxt/img/poster.47f71d4.jpg">
+					<source src="https://genshin.hoyoverse.com/_nuxt/videos/bg.3e78e80.mp4" type="audio/mp4"/>
 				</video>
 			</div>
 		);
 
 	const stackToggle = (
 		<button
-			className='material-symbols-outlined'
+			className="material-symbols-outlined"
 			css={[actions, toggleFloat]}
-			title={floatGroups ? 'Click to stack items' : 'Click to float items'}
-			type='button'
+			title={floatGroups ? 'Unfloat items' : 'Click to float items'}
+			type="button"
 			onClick={handleFloatChange}
 		>
 			{floatGroups ? 'full_stacked_bar_chart' : 'stacked_bar_chart'}
 		</button>
 	);
+
+	const openPresetPicker = () => {
+		setIsPresetPickerOpen(true);
+	};
+
+	const closePresetPicker = () => {
+		setIsPresetPickerOpen(false);
+	};
 
 	return (
 		<>
@@ -295,30 +455,41 @@ export default function Main() {
 			<main>
 				{!widthLarger768 && (
 					<button
-						className='material-symbols-outlined'
+						className="material-symbols-outlined"
 						css={[actions, metaKeys, toggleWakeLock]}
 						title={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
-						type='button'
+						type="button"
 						onClick={handleWakeLock}
 					>
 						{wakeLockSentinel ? 'bedtime' : 'bedtime_off'}
 					</button>
 				)}
 				<button
-					className='material-symbols-outlined'
+					className="material-symbols-outlined"
 					css={[actions, metaKeys, toggleFullScreen]}
 					title={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
-					type='button'
+					type="button"
 					onClick={handleFullscreen}
 				>
 					{fullScreen ? 'fullscreen_exit' : 'fullscreen'}
 				</button>
+				<button
+					className="material-symbols-outlined"
+					css={[actions, metaKeys, presetPickerButton]}
+					title="Open Preset Picker"
+					type="button"
+					onClick={openPresetPicker}
+				>
+					checklist
+				</button>
 				{hasItems ? stackToggle : null}
+				<ActivePresets presets={activePresets} onRemove={onRemovePreset}/>
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
 					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
+				{isPresetPickerOpen ? <div data-testid="preset-picker-container"><PresetPicker onClose={closePresetPicker} onAddPreset={onAddPreset}/></div> : null}
 			</main>
 		</>
 	);

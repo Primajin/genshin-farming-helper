@@ -1,0 +1,7 @@
+
+> genshin-farming-helper@1.0.0 prestart
+> npm run generate
+
+
+> genshin-farming-helper@1.0.0 generate
+> node src/scripts/generate-data.js

@@ -30,12 +30,22 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           fullscreen
         </button>
         <button
+          class="material-symbols-outlined css-10mysne"
+          title="Open Preset Picker"
+          type="button"
+        >
+          checklist
+        </button>
+        <button
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
         >
           stacked_bar_chart
         </button>
+        <div
+          class="css-19611vv"
+        />
         <div
           class="css-0"
         >
@@ -2208,12 +2218,22 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         fullscreen
       </button>
       <button
+        class="material-symbols-outlined css-10mysne"
+        title="Open Preset Picker"
+        type="button"
+      >
+        checklist
+      </button>
+      <button
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
       >
         stacked_bar_chart
       </button>
+      <div
+        class="css-19611vv"
+      />
       <div
         class="css-0"
       >
@@ -4443,12 +4463,22 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           fullscreen
         </button>
         <button
+          class="material-symbols-outlined css-10mysne"
+          title="Open Preset Picker"
+          type="button"
+        >
+          checklist
+        </button>
+        <button
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
         >
           stacked_bar_chart
         </button>
+        <div
+          class="css-19611vv"
+        />
         <div
           class="css-0"
         >
@@ -6557,12 +6587,22 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         fullscreen
       </button>
       <button
+        class="material-symbols-outlined css-10mysne"
+        title="Open Preset Picker"
+        type="button"
+      >
+        checklist
+      </button>
+      <button
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
       >
         stacked_bar_chart
       </button>
+      <div
+        class="css-19611vv"
+      />
       <div
         class="css-0"
       >
