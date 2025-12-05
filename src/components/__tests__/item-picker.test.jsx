@@ -1,9 +1,8 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import {describe, test, expect} from 'vitest';
-
-import ItemPicker from '../item-picker.jsx';
-import {materialTypes} from '../../constants';
-import {materials} from '../../__tests__/__mocks__/data.js';
+import ItemPicker from 'components/molecules/item-picker.jsx';
+import {materialTypes} from 'constants/index.js';
+import {materials} from '__tests__/__mocks__/data.js';
 
 const philosophiesOfFreedom = materials.talentMaterials.find(material => material.id === 104_303);
 const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material => material.id === 114_004);

@@ -1,11 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
-
-import theme from '../theme';
-import {materialTypes} from '../constants';
-import {materialsType} from '../types';
-import ItemPicker from './item-picker.jsx';
+import theme from 'theme';
+import {materialTypes} from 'constants/index.js';
+import {materialsType} from 'types';
+import ItemPicker from 'components/molecules/item-picker.jsx';
 
 const categories = css`
 	margin: 25px auto 0;
