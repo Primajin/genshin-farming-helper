@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useState} from 'react';
 
-import theme from '../theme';
-import PresetPicker from './preset-picker.jsx';
-import presets from '../presets.json';
+import theme from 'theme';
+import PresetPicker from 'components/molecules/preset-picker.jsx';
+import presets from 'presets';
 
 const categories = css`
 	margin: 25px auto 0;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useState} from 'react';
 
-import {backgrounds, IMG_URL, IMG_URL2} from '../constants';
+import {backgrounds, IMG_URL, IMG_URL2} from 'constants';
 
 const wrapper = css`
 	cursor: pointer;
