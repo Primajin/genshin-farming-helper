@@ -2,14 +2,13 @@
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
-
-import storage from '../utils/local-storage.js';
-import theme from '../theme';
+import storage from 'utils/local-storage.js';
+import theme from 'theme';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
-} from '../constants';
-import {helpersType, materialsType} from '../types';
-import {up} from '../utils/theming.js';
+} from 'constants/index.js';
+import {helpersType, materialsType} from 'types';
+import {up} from 'utils/theming.js';
 
 const {actions, primary} = theme;
 

@@ -2,16 +2,15 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, test, expect, vi,
 } from 'vitest';
+import ItemPicker from 'components/molecules/item-picker.jsx';
+import {materialTypes} from 'constants/index.js';
 
-import ItemPicker from '../item-picker.jsx';
-import {materialTypes} from '../../constants';
-
-vi.mock('../../__tests__/__mocks__/data.js', async () => {
-	const actual = await vi.importActual('../../__tests__/__mocks__/data.js');
+vi.mock('__tests__/__mocks__/data.js', async () => {
+	const actual = await vi.importActual('__tests__/__mocks__/data.js');
 	return actual;
 });
 
-const {materials} = await import('../../__tests__/__mocks__/data.js');
+const {materials} = await import('__tests__/__mocks__/data.js');
 
 const philosophiesOfFreedom = materials.talentMaterials.find(material => material.id === 104_303);
 const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material => material.id === 114_004);
@@ -59,10 +58,10 @@ describe('itemPicker', () => {
 		const image = screen.getByTestId('image');
 		expect(image).toBeDefined();
 		const imageSourceBefore = image.getAttribute('src');
-		expect(imageSourceBefore.includes('cloudinary.com')).toBeTruthy();
+		expect(imageSourceBefore.includes('gi.yatta.moe')).toBeTruthy();
 		fireEvent.error(image);
 		const imageSourceAfter = image.getAttribute('src');
-		expect(imageSourceAfter.includes('cloudinary.com')).toBeFalsy();
-		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeTruthy();
+		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeFalsy();
+		expect(imageSourceAfter.includes('cloudinary.com')).toBeTruthy();
 	});
 });

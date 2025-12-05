@@ -1,15 +1,28 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
-
-import theme from '../theme';
-import {materialTypes} from '../constants';
-import {materialsType} from '../types';
-import ItemPicker from './item-picker.jsx';
+import theme from 'theme';
+import {materialTypes} from 'constants/index.js';
+import {materialsType} from 'types';
+import ItemPicker from 'components/molecules/item-picker.jsx';
 
 const categories = css`
 	margin: 25px auto 0;
 	max-width: 396px;
+
+	h3 {
+		color: ${theme.text};
+		font-size: 1.2em;
+		margin: 30px 0 10px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		
+		&:first-of-type {
+			margin-top: 10px;
+		}
+	}
 
 	fieldset {
 		background: ${theme.primary};
@@ -64,6 +77,8 @@ function ItemCategories({
 }) {
 	return (
 		<form css={categories} onChange={onChangeProp}>
+			<h3>Direct Item Tracking</h3>
+
 			<fieldset className='narrow' role='group'>
 				<legend>Character Talent</legend>
 				<ItemPicker materials={talentMaterials} type={materialTypes.TALENT} list={list}/>
