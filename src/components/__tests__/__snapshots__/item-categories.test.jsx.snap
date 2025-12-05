@@ -676,6 +676,188 @@ exports[`itemCategories > renders the correct number of categories and handles c
               Brilliant Diamond Gemstone
             </span>
           </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104121"
+            title="Varunada Lazurite Sliver"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104121"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Sliver"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104121.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Sliver
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104122"
+            title="Varunada Lazurite Fragment"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104122"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Fragment"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104122.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Fragment
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104123"
+            title="Varunada Lazurite Chunk"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104123"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Chunk"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104123.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Chunk
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104124"
+            title="Varunada Lazurite Gemstone"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104124"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Gemstone"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104124.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Gemstone
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker112122"
+            title="Broken Drive Shaft"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.112122"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Broken Drive Shaft"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112122.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Broken Drive Shaft
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker112123"
+            title="Reinforced Drive Shaft"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.112123"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+            >
+              <img
+                alt="Reinforced Drive Shaft"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112123.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Reinforced Drive Shaft
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker112124"
+            title="Precision Drive Shaft"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.112124"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+            >
+              <img
+                alt="Precision Drive Shaft"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112124.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Precision Drive Shaft
+            </span>
+          </label>
           <label />
           <label />
           <label />
@@ -687,6 +869,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
           <legend>
             Character Level-Up
           </legend>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker113077"
+            title="Precision Kuuvahki Stamping Die"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.113077"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Precision Kuuvahki Stamping Die"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113077.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Precision Kuuvahki Stamping Die
+            </span>
+          </label>
           <label
             aria-disabled="false"
             class="css-4wqkks"
@@ -982,6 +1190,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </div>
             <span>
               Spring of the First Dewdrop
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker101257"
+            title="Portable Bearing"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.101257"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Portable Bearing"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101257.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Portable Bearing
             </span>
           </label>
           <label />
@@ -1983,6 +2217,188 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Brilliant Diamond Gemstone
           </span>
         </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104121"
+          title="Varunada Lazurite Sliver"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104121"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Sliver"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104121.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Sliver
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104122"
+          title="Varunada Lazurite Fragment"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104122"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Fragment"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104122.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Fragment
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104123"
+          title="Varunada Lazurite Chunk"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104123"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Chunk"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104123.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Chunk
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104124"
+          title="Varunada Lazurite Gemstone"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104124"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Gemstone"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104124.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Gemstone
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker112122"
+          title="Broken Drive Shaft"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.112122"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Broken Drive Shaft"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112122.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Broken Drive Shaft
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker112123"
+          title="Reinforced Drive Shaft"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.112123"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+          >
+            <img
+              alt="Reinforced Drive Shaft"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112123.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Reinforced Drive Shaft
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker112124"
+          title="Precision Drive Shaft"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.112124"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+          >
+            <img
+              alt="Precision Drive Shaft"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112124.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Precision Drive Shaft
+          </span>
+        </label>
         <label />
         <label />
         <label />
@@ -1994,6 +2410,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
         <legend>
           Character Level-Up
         </legend>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker113077"
+          title="Precision Kuuvahki Stamping Die"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="LEVEL.113077"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+          >
+            <img
+              alt="Precision Kuuvahki Stamping Die"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113077.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Precision Kuuvahki Stamping Die
+          </span>
+        </label>
         <label
           aria-disabled="false"
           class="css-4wqkks"
@@ -2289,6 +2731,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </div>
           <span>
             Spring of the First Dewdrop
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker101257"
+          title="Portable Bearing"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="LOCAL.101257"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Portable Bearing"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101257.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Portable Bearing
           </span>
         </label>
         <label />

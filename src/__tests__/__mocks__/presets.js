@@ -22,6 +22,63 @@ export const presets = {
 				filename_icon: 'UI_AvatarIcon_PlayerBoy',
 			},
 		},
+		{
+			id: 10_000_121,
+			name: 'Aino',
+			element: 'Hydro',
+			rarity: 4,
+			items: [
+				{
+					id: 101_257,
+					name: 'Portable Bearing',
+					count: 168,
+				},
+				{
+					id: 104_121,
+					name: 'Varunada Lazurite Sliver',
+					count: 1,
+				},
+				{
+					id: 104_122,
+					name: 'Varunada Lazurite Fragment',
+					count: 9,
+				},
+				{
+					id: 104_123,
+					name: 'Varunada Lazurite Chunk',
+					count: 9,
+				},
+				{
+					id: 104_124,
+					name: 'Varunada Lazurite Gemstone',
+					count: 6,
+				},
+				{
+					id: 112_122,
+					name: 'Broken Drive Shaft',
+					count: 18,
+				},
+				{
+					id: 112_123,
+					name: 'Reinforced Drive Shaft',
+					count: 30,
+				},
+				{
+					id: 112_124,
+					name: 'Precision Drive Shaft',
+					count: 36,
+				},
+				{
+					id: 113_077,
+					name: 'Precision Kuuvahki Stamping Die',
+					count: 46,
+				},
+			],
+			images: {
+				// eslint-disable-next-line camelcase
+				filename_icon: 'UI_AvatarIcon_Aino',
+			},
+		},
 	],
 	weapons: [
 		{
