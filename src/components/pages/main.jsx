@@ -335,7 +335,8 @@ export default function Main() {
 			}
 
 			const {sortRank} = material;
-			const groupKey = `${sortRank}_${item.id}`;
+			// Group by sortRank only (not item.id) to combine tiers of the same material
+			const groupKey = String(sortRank);
 			grouped[groupKey] ||= [];
 
 			grouped[groupKey].push({
