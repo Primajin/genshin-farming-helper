@@ -119,7 +119,7 @@ describe('main', () => {
 	test('character preset adds materials with correct tier targets - Aino example', async () => {
 		// Render the component
 		const rendering = render(<Main/>);
-		
+
 		// Click the "Add Preset" button to open the modal
 		const addPresetButton = screen.getByLabelText('Add preset');
 		await act(() => {
@@ -134,30 +134,29 @@ describe('main', () => {
 
 		// Check that helpers were added
 		const allSections = document.querySelectorAll('section');
-		
+
 		// Filter to farm helper sections (they contain material buttons)
-		const helpers = Array.from(allSections).filter(section =>  {
+		const helpers = [...allSections].filter(section =>
 			// Helper sections have remove buttons
-			return section.querySelector('button[title="Remove item"]');
-		});
-		
+			section.querySelector('button[title="Remove item"]'));
+
 		// Should have exactly 4 helpers:
 		// 1. Portable Bearing (single tier)
 		// 2. Varunada Lazurite (4 tiers combined: Sliver, Fragment, Chunk, Gemstone)
 		// 3. Drive Shaft (3 tiers combined: Broken, Reinforced, Precision)
 		// 4. Precision Kuuvahki Stamping Die (single tier)
-		
+
 		expect(helpers.length).toBe(4);
-		
+
 		// Debug: log what we got
 		console.log(`Got ${helpers.length} helpers`);
-		helpers.forEach((h, i) => {
+		for (const [i, h] of helpers.entries()) {
 			const img = h.querySelector('img');
 			const imgAlt = img ? img.alt : 'no image';
 			const tierButtons = h.querySelectorAll('[data-testid^="button-tier-"]');
 			console.log(`Helper ${i}: ${imgAlt} (${tierButtons.length} tiers)`);
-		});
-		
+		}
+
 		// Verify we have materials with correct tier counts
 		// Portable Bearing: 1 tier
 		const portableBearingHelper = helpers.find(h => {
@@ -167,7 +166,7 @@ describe('main', () => {
 		expect(portableBearingHelper).toBeDefined();
 		const bearingTiers = portableBearingHelper.querySelectorAll('[data-testid^="button-tier-"]');
 		expect(bearingTiers.length).toBe(1);
-		
+
 		// Varunada Lazurite: 4 tiers
 		const varunadaHelper = helpers.find(h => {
 			const img = h.querySelector('img');
@@ -176,7 +175,7 @@ describe('main', () => {
 		expect(varunadaHelper).toBeDefined();
 		const varunadaTiers = varunadaHelper.querySelectorAll('[data-testid^="button-tier-"]');
 		expect(varunadaTiers.length).toBe(4);
-		
+
 		// Drive Shaft: 3 tiers
 		const driveShaftHelper = helpers.find(h => {
 			const img = h.querySelector('img');
@@ -185,7 +184,7 @@ describe('main', () => {
 		expect(driveShaftHelper).toBeDefined();
 		const driveShaftTiers = driveShaftHelper.querySelectorAll('[data-testid^="button-tier-"]');
 		expect(driveShaftTiers.length).toBe(3);
-		
+
 		// Precision Kuuvahki Stamping Die: 1 tier
 		const stampingDieHelper = helpers.find(h => {
 			const img = h.querySelector('img');
