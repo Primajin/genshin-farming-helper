@@ -6,7 +6,14 @@ import {
 	describe, expect, test, vi,
 } from 'vitest';
 import Main from 'components/pages/main.jsx';
-import localStorageState from '__tests__/__mocks__/local-storage.js';
+
+vi.mock('__tests__/__mocks__/local-storage.js', async () => {
+	const actual = await vi.importActual('__tests__/__mocks__/local-storage.js');
+	return actual;
+});
+
+const localStorageModule = await import('__tests__/__mocks__/local-storage.js');
+const localStorageState = localStorageModule.default;
 
 vi.mock('data', async () => {
 	const {materials} = await vi.importActual('__tests__/__mocks__/data.js');

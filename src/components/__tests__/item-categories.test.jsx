@@ -2,8 +2,15 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, test, expect, vi,
 } from 'vitest';
+
 import ItemCategories from 'components/organisms/item-categories.jsx';
-import {materials} from '__tests__/__mocks__/data.js';
+
+vi.mock('__tests__/__mocks__/data.js', async () => {
+	const actual = await vi.importActual('__tests__/__mocks__/data.js');
+	return actual;
+});
+
+const {materials} = await import('__tests__/__mocks__/data.js');
 
 const onChangeProperty = vi.fn();
 
