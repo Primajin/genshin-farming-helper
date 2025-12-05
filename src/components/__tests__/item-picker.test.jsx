@@ -2,7 +2,6 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, test, expect, vi,
 } from 'vitest';
-
 import ItemPicker from 'components/molecules/item-picker.jsx';
 import {materialTypes} from 'constants/index.js';
 

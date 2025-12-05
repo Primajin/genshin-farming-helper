@@ -2,7 +2,6 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, expect, test, vi,
 } from 'vitest';
-
 import FarmHelper from 'components/organisms/farm-helper.jsx';
 import {materialTypes} from 'constants/index.js';
 
