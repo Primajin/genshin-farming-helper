@@ -24,6 +24,17 @@ export default defineConfig(() => ({
 	],
 	resolve: {
 		preserveSymlinks: true,
+		alias: {
+			components: path.resolve(__dirname, 'src/components'),
+			constants: path.resolve(__dirname, 'src/constants'),
+			data: path.resolve(__dirname, 'src/data.json'),
+			'data-rare': path.resolve(__dirname, 'src/data-rare.json'),
+			presets: path.resolve(__dirname, 'src/presets.json'),
+			theme: path.resolve(__dirname, 'src/theme'),
+			types: path.resolve(__dirname, 'src/types'),
+			utils: path.resolve(__dirname, 'src/utils'),
+			__tests__: path.resolve(__dirname, 'src/__tests__'),
+		},
 	},
 	server: {
 		port: 3000,

@@ -2,18 +2,17 @@
 /** @jsxImportSource @emotion/react */
 import {useCallback, useEffect, useState} from 'react';
 import {Global, css} from '@emotion/react';
-
-import materials from '../data.json';
-import materialsRare from '../data-rare.json';
-import presets from '../presets.json';
-import storage from '../utils/local-storage.js';
-import theme from '../theme/index.js';
-import {breakpoints, up} from '../utils/theming.js';
-import {fullscreenElement, toggleFullscreen} from '../utils/fullscreen.js';
-import {releaseWakeLock, requestWakeLock} from '../utils/wake-lock.js';
-import ItemCategories from './item-categories.jsx';
-import PresetCategories from './preset-categories.jsx';
-import FarmHelper from './farm-helper.jsx';
+import materials from 'data';
+import materialsRare from 'data-rare';
+import presets from 'presets';
+import storage from 'utils/local-storage.js';
+import theme from 'theme/index.js';
+import {breakpoints, up} from 'utils/theming.js';
+import {fullscreenElement, toggleFullscreen} from 'utils/fullscreen.js';
+import {releaseWakeLock, requestWakeLock} from 'utils/wake-lock.js';
+import ItemCategories from 'components/organisms/item-categories.jsx';
+import PresetModal from 'components/organisms/preset-modal.jsx';
+import FarmHelper from 'components/organisms/farm-helper.jsx';
 
 const globalStyles = css`
 	*, *::before, *::after {
@@ -139,6 +138,37 @@ const helperList = css`
 		};
 `;
 
+const fab = css`
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border: none;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	z-index: 999;
+
+	&:hover {
+		transform: scale(1.1);
+		box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
+`;
+
+let didRun = false;
 const {actions} = theme;
 
 // Helper function to create initial farm helpers from storage
@@ -165,6 +195,7 @@ export default function Main() {
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
 	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
+	const [isPresetModalOpen, setIsPresetModalOpen] = useState(false);
 
 	const onRemove = itemId => {
 		const storageState = storage.load();
@@ -582,9 +613,23 @@ export default function Main() {
 					{farmHelperList}
 					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
 				</div>
-				<PresetCategories activePresets={activePresets} onChangeProp={onPresetChange}/>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>
+			<button
+				css={fab}
+				type='button'
+				title='Add preset'
+				aria-label='Add preset'
+				onClick={() => setIsPresetModalOpen(true)}
+			>
+				+
+			</button>
+			<PresetModal
+				isOpen={isPresetModalOpen}
+				activePresets={activePresets}
+				onClose={() => setIsPresetModalOpen(false)}
+				onPresetChange={onPresetChange}
+			/>
 		</>
 	);
 }

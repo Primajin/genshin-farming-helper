@@ -1099,6 +1099,84 @@ exports[`itemCategories > renders the correct number of categories and handles c
               Maintenance Mek: Gold Leader
             </span>
           </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker131046"
+            title="Common Axehead Fish"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.131046"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Common Axehead Fish"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131046.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Common Axehead Fish
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker131047"
+            title="Veggie Mauler Shark"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.131047"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Veggie Mauler Shark"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131047.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Veggie Mauler Shark
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker131048"
+            title="Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.131048"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Medaka"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131048.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Medaka
+            </span>
+          </label>
           <label />
           <label />
           <label />
@@ -2326,6 +2404,84 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </div>
           <span>
             Maintenance Mek: Gold Leader
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker131046"
+          title="Common Axehead Fish"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="FISH.131046"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Common Axehead Fish"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131046.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Common Axehead Fish
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker131047"
+          title="Veggie Mauler Shark"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="FISH.131047"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Veggie Mauler Shark"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131047.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Veggie Mauler Shark
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker131048"
+          title="Medaka"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="FISH.131048"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Medaka"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131048.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Medaka
           </span>
         </label>
         <label />

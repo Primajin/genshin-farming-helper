@@ -1443,133 +1443,6 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           <section />
         </div>
         <form
-          class="css-q9wq49"
-        >
-          <h3>
-            Presets
-          </h3>
-          <fieldset
-            class="collapsed"
-            role="group"
-          >
-            <legend
-              class="collapsed"
-            >
-              Characters
-            </legend>
-            <label
-              class="css-1rqbrqu"
-              data-testid="PresetPickercharacter.10000005"
-              title="Test Character"
-            >
-              <input
-                name="preset"
-                readonly=""
-                type="checkbox"
-                value="character.10000005"
-              />
-              <div
-                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
-              >
-                <img
-                  alt="Test Character"
-                  data-testid="image"
-                  height="75"
-                  src="https://gi.yatta.moe/assets/UI/UI_AvatarIcon_PlayerBoy.png"
-                  width="75"
-                />
-              </div>
-              <span>
-                Test Character
-              </span>
-            </label>
-            <label />
-            <label />
-            <label />
-            <label />
-          </fieldset>
-          <fieldset
-            class="collapsed"
-            role="group"
-          >
-            <legend
-              class="collapsed"
-            >
-              Weapons
-            </legend>
-            <label
-              class="css-1rqbrqu"
-              data-testid="PresetPickerweapon.11101"
-              title="Test Weapon"
-            >
-              <input
-                name="preset"
-                readonly=""
-                type="checkbox"
-                value="weapon.11101"
-              />
-              <div
-                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
-              >
-                <img
-                  alt="Test Weapon"
-                  data-testid="image"
-                  height="75"
-                  src="https://gi.yatta.moe/assets/UI/UI_EquipIcon_Sword.png"
-                  width="75"
-                />
-              </div>
-              <span>
-                Test Weapon
-              </span>
-            </label>
-            <label />
-            <label />
-            <label />
-            <label />
-          </fieldset>
-          <fieldset
-            class="collapsed"
-            role="group"
-          >
-            <legend
-              class="collapsed"
-            >
-              Fishing Rods
-            </legend>
-            <label
-              class="css-1rqbrqu"
-              data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
-            >
-              <input
-                name="preset"
-                readonly=""
-                type="checkbox"
-                value="fishingRod.201001"
-              />
-              <div
-                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
-              >
-                <img
-                  alt="Test Fishing Rod"
-                  data-testid="image"
-                  height="75"
-                  src="https://gi.yatta.moe/assets/UI/undefined.png"
-                  width="75"
-                />
-              </div>
-              <span>
-                Test Fishing Rod
-              </span>
-            </label>
-            <label />
-            <label />
-            <label />
-            <label />
-          </fieldset>
-        </form>
-        <form
           class="css-rug5du"
         >
           <h3>
@@ -2310,6 +2183,14 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </fieldset>
         </form>
       </main>
+      <button
+        aria-label="Add preset"
+        class="css-580j1s"
+        title="Add preset"
+        type="button"
+      >
+        +
+      </button>
     </div>
   </body>,
   "container": <div>
@@ -3751,133 +3632,6 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         <section />
       </div>
       <form
-        class="css-q9wq49"
-      >
-        <h3>
-          Presets
-        </h3>
-        <fieldset
-          class="collapsed"
-          role="group"
-        >
-          <legend
-            class="collapsed"
-          >
-            Characters
-          </legend>
-          <label
-            class="css-1rqbrqu"
-            data-testid="PresetPickercharacter.10000005"
-            title="Test Character"
-          >
-            <input
-              name="preset"
-              readonly=""
-              type="checkbox"
-              value="character.10000005"
-            />
-            <div
-              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
-            >
-              <img
-                alt="Test Character"
-                data-testid="image"
-                height="75"
-                src="https://gi.yatta.moe/assets/UI/UI_AvatarIcon_PlayerBoy.png"
-                width="75"
-              />
-            </div>
-            <span>
-              Test Character
-            </span>
-          </label>
-          <label />
-          <label />
-          <label />
-          <label />
-        </fieldset>
-        <fieldset
-          class="collapsed"
-          role="group"
-        >
-          <legend
-            class="collapsed"
-          >
-            Weapons
-          </legend>
-          <label
-            class="css-1rqbrqu"
-            data-testid="PresetPickerweapon.11101"
-            title="Test Weapon"
-          >
-            <input
-              name="preset"
-              readonly=""
-              type="checkbox"
-              value="weapon.11101"
-            />
-            <div
-              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
-            >
-              <img
-                alt="Test Weapon"
-                data-testid="image"
-                height="75"
-                src="https://gi.yatta.moe/assets/UI/UI_EquipIcon_Sword.png"
-                width="75"
-              />
-            </div>
-            <span>
-              Test Weapon
-            </span>
-          </label>
-          <label />
-          <label />
-          <label />
-          <label />
-        </fieldset>
-        <fieldset
-          class="collapsed"
-          role="group"
-        >
-          <legend
-            class="collapsed"
-          >
-            Fishing Rods
-          </legend>
-          <label
-            class="css-1rqbrqu"
-            data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
-          >
-            <input
-              name="preset"
-              readonly=""
-              type="checkbox"
-              value="fishingRod.201001"
-            />
-            <div
-              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
-            >
-              <img
-                alt="Test Fishing Rod"
-                data-testid="image"
-                height="75"
-                src="https://gi.yatta.moe/assets/UI/undefined.png"
-                width="75"
-              />
-            </div>
-            <span>
-              Test Fishing Rod
-            </span>
-          </label>
-          <label />
-          <label />
-          <label />
-          <label />
-        </fieldset>
-      </form>
-      <form
         class="css-rug5du"
       >
         <h3>
@@ -4618,6 +4372,14 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         </fieldset>
       </form>
     </main>
+    <button
+      aria-label="Add preset"
+      class="css-580j1s"
+      title="Add preset"
+      type="button"
+    >
+      +
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -6053,133 +5815,6 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           <section />
         </div>
         <form
-          class="css-q9wq49"
-        >
-          <h3>
-            Presets
-          </h3>
-          <fieldset
-            class="collapsed"
-            role="group"
-          >
-            <legend
-              class="collapsed"
-            >
-              Characters
-            </legend>
-            <label
-              class="css-1rqbrqu"
-              data-testid="PresetPickercharacter.10000005"
-              title="Test Character"
-            >
-              <input
-                name="preset"
-                readonly=""
-                type="checkbox"
-                value="character.10000005"
-              />
-              <div
-                style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
-              >
-                <img
-                  alt="Test Character"
-                  data-testid="image"
-                  height="75"
-                  src="https://gi.yatta.moe/assets/UI/UI_AvatarIcon_PlayerBoy.png"
-                  width="75"
-                />
-              </div>
-              <span>
-                Test Character
-              </span>
-            </label>
-            <label />
-            <label />
-            <label />
-            <label />
-          </fieldset>
-          <fieldset
-            class="collapsed"
-            role="group"
-          >
-            <legend
-              class="collapsed"
-            >
-              Weapons
-            </legend>
-            <label
-              class="css-1rqbrqu"
-              data-testid="PresetPickerweapon.11101"
-              title="Test Weapon"
-            >
-              <input
-                name="preset"
-                readonly=""
-                type="checkbox"
-                value="weapon.11101"
-              />
-              <div
-                style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
-              >
-                <img
-                  alt="Test Weapon"
-                  data-testid="image"
-                  height="75"
-                  src="https://gi.yatta.moe/assets/UI/UI_EquipIcon_Sword.png"
-                  width="75"
-                />
-              </div>
-              <span>
-                Test Weapon
-              </span>
-            </label>
-            <label />
-            <label />
-            <label />
-            <label />
-          </fieldset>
-          <fieldset
-            class="collapsed"
-            role="group"
-          >
-            <legend
-              class="collapsed"
-            >
-              Fishing Rods
-            </legend>
-            <label
-              class="css-1rqbrqu"
-              data-testid="PresetPickerfishingRod.201001"
-              title="Test Fishing Rod"
-            >
-              <input
-                name="preset"
-                readonly=""
-                type="checkbox"
-                value="fishingRod.201001"
-              />
-              <div
-                style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
-              >
-                <img
-                  alt="Test Fishing Rod"
-                  data-testid="image"
-                  height="75"
-                  src="https://gi.yatta.moe/assets/UI/undefined.png"
-                  width="75"
-                />
-              </div>
-              <span>
-                Test Fishing Rod
-              </span>
-            </label>
-            <label />
-            <label />
-            <label />
-            <label />
-          </fieldset>
-        </form>
-        <form
           class="css-rug5du"
         >
           <h3>
@@ -6919,6 +6554,14 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </fieldset>
         </form>
       </main>
+      <button
+        aria-label="Add preset"
+        class="css-580j1s"
+        title="Add preset"
+        type="button"
+      >
+        +
+      </button>
     </div>
   </body>,
   "container": <div>
@@ -8297,133 +7940,6 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         <section />
       </div>
       <form
-        class="css-q9wq49"
-      >
-        <h3>
-          Presets
-        </h3>
-        <fieldset
-          class="collapsed"
-          role="group"
-        >
-          <legend
-            class="collapsed"
-          >
-            Characters
-          </legend>
-          <label
-            class="css-1rqbrqu"
-            data-testid="PresetPickercharacter.10000005"
-            title="Test Character"
-          >
-            <input
-              name="preset"
-              readonly=""
-              type="checkbox"
-              value="character.10000005"
-            />
-            <div
-              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
-            >
-              <img
-                alt="Test Character"
-                data-testid="image"
-                height="75"
-                src="https://gi.yatta.moe/assets/UI/UI_AvatarIcon_PlayerBoy.png"
-                width="75"
-              />
-            </div>
-            <span>
-              Test Character
-            </span>
-          </label>
-          <label />
-          <label />
-          <label />
-          <label />
-        </fieldset>
-        <fieldset
-          class="collapsed"
-          role="group"
-        >
-          <legend
-            class="collapsed"
-          >
-            Weapons
-          </legend>
-          <label
-            class="css-1rqbrqu"
-            data-testid="PresetPickerweapon.11101"
-            title="Test Weapon"
-          >
-            <input
-              name="preset"
-              readonly=""
-              type="checkbox"
-              value="weapon.11101"
-            />
-            <div
-              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
-            >
-              <img
-                alt="Test Weapon"
-                data-testid="image"
-                height="75"
-                src="https://gi.yatta.moe/assets/UI/UI_EquipIcon_Sword.png"
-                width="75"
-              />
-            </div>
-            <span>
-              Test Weapon
-            </span>
-          </label>
-          <label />
-          <label />
-          <label />
-          <label />
-        </fieldset>
-        <fieldset
-          class="collapsed"
-          role="group"
-        >
-          <legend
-            class="collapsed"
-          >
-            Fishing Rods
-          </legend>
-          <label
-            class="css-1rqbrqu"
-            data-testid="PresetPickerfishingRod.201001"
-            title="Test Fishing Rod"
-          >
-            <input
-              name="preset"
-              readonly=""
-              type="checkbox"
-              value="fishingRod.201001"
-            />
-            <div
-              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
-            >
-              <img
-                alt="Test Fishing Rod"
-                data-testid="image"
-                height="75"
-                src="https://gi.yatta.moe/assets/UI/undefined.png"
-                width="75"
-              />
-            </div>
-            <span>
-              Test Fishing Rod
-            </span>
-          </label>
-          <label />
-          <label />
-          <label />
-          <label />
-        </fieldset>
-      </form>
-      <form
         class="css-rug5du"
       >
         <h3>
@@ -9163,6 +8679,14 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         </fieldset>
       </form>
     </main>
+    <button
+      aria-label="Add preset"
+      class="css-580j1s"
+      title="Add preset"
+      type="button"
+    >
+      +
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

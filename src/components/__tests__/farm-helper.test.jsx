@@ -2,16 +2,15 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, expect, test, vi,
 } from 'vitest';
-
-import FarmHelper from '../farm-helper.jsx';
-import {materialTypes} from '../../constants/index.js';
+import FarmHelper from 'components/organisms/farm-helper.jsx';
+import {materialTypes} from 'constants/index.js';
 
 vi.mock('../../__tests__/__mocks__/data.js', async () => {
 	const actual = await vi.importActual('../../__tests__/__mocks__/data.js');
 	return actual;
 });
 
-const {materials} = await import('../../__tests__/__mocks__/data.js');
+const {materials} = await import('__tests__/__mocks__/data.js');
 
 const {
 	ASCENSION,
