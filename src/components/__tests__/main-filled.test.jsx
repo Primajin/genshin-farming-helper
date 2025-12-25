@@ -4,7 +4,6 @@ import {
 import {
 	describe, expect, test, vi,
 } from 'vitest';
-
 import Main from 'components/pages/main.jsx';
 
 vi.mock('data', async () => {

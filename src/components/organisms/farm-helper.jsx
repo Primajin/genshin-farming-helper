@@ -155,13 +155,8 @@ function FarmHelper({
 	const materialId = Number.parseInt(itemId, 10);
 	const rawItem = materials.find(material => material.id === materialId);
 
-	if (!rawItem) {
-		console.error(`Material with id ${materialId} not found in materials list`);
-		return null;
-	}
-
 	const multipleItem = category === materialTypes.ENHANCEMENT || category === materialTypes.WEAPON || category === materialTypes.TALENT || category === materialTypes.ASCENSION;
-	const items = multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem];
+	const items = rawItem ? (multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
 
 	// 1
 	const hasJustOne = items.length === 1;
@@ -244,6 +239,11 @@ function FarmHelper({
 	};
 	const newHelpers = {...savedHelpers, [itemId]: newConfig};
 	storage.save({...storageState, helpers: newHelpers});
+
+	// Early return if no items found
+	if (items.length === 0) {
+		return null;
+	}
 
 	return (
 		<section>

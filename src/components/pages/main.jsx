@@ -352,7 +352,7 @@ export default function Main() {
 			items.sort((a, b) => b.rarity - a.rarity);
 
 			const highestTier = items[0];
-			const lowestTier = items[items.length - 1];
+			const lowestTier = items.at(-1);
 			const category = findMaterialCategory(highestTier.id);
 
 			if (!category) {
@@ -373,21 +373,18 @@ export default function Main() {
 	};
 
 	// Helper to rebuild the helper list from storage
-	const rebuildHelperList = savedHelpers => {
+	const rebuildHelperList = useCallback(savedHelpers => {
 		const newHelpers = [];
 		for (const [itemId, config] of Object.entries(savedHelpers)) {
-			newHelpers.push(<FarmHelper
-				key={itemId}
-				category={config.category}
-				config={config}
-				itemId={itemId}
-				materials={materials}
-				onRemove={onRemove}
-			/>);
+			newHelpers.push({
+				itemId,
+				config,
+				category: config.category,
+			});
 		}
 
 		return newHelpers;
-	};
+	}, []);
 
 	const onPresetChange = event => {
 		const {value} = event.target;
@@ -613,7 +610,7 @@ export default function Main() {
 				{hasItems ? stackToggle : null}
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
-					{hasItems && Array.from({length: 6}, (_, index) => <section key={`spacer-${index}`}/>)}
+					{hasItems ? Array.from({length: 6}, (_, index) => <section key={`spacer-${index}`}/>) : null}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>
