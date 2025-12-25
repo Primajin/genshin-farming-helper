@@ -499,7 +499,7 @@ export default function Main() {
 
 		// Rebuild the helper list
 		const newHelpers = rebuildHelperList(updatedHelpers);
-		setFarmHelperList(newHelpers);
+		setFarmHelperData(newHelpers);
 	};
 
 	useEffect(() => {
@@ -512,7 +512,7 @@ export default function Main() {
 			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
 				// Rebuild the entire helper list from saved state
 				const newHelpers = rebuildHelperList(savedHelpers);
-				setFarmHelperList(newHelpers);
+				setFarmHelperData(newHelpers);
 			} else {
 				// Storage is empty, create new
 				storage.save({});
@@ -521,7 +521,7 @@ export default function Main() {
 			// Set presets after helpers are loaded
 			setActivePresets(savedPresets);
 		}
-	}, [addHelperWithItem]);
+	}, [addHelperWithItem, rebuildHelperList]);
 
 	useEffect(() => {
 		const setFullScreenState = () => {

@@ -1,4 +1,4 @@
-/* global localStorage */
+/* global document */
 import {
 	act, fireEvent, render, screen,
 } from '@testing-library/react';
@@ -118,7 +118,7 @@ describe('main', () => {
 
 	test('character preset adds materials with correct tier targets - Aino example', async () => {
 		// Render the component
-		const rendering = render(<Main/>);
+		render(<Main/>);
 
 		// Click the "Add Preset" button to open the modal
 		const addPresetButton = screen.getByLabelText('Add preset');
