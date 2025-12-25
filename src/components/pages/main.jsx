@@ -432,7 +432,7 @@ export default function Main() {
 		}
 
 		return totals;
-	}, [findPreset]);
+	}, [findPreset, groupPresetItems]);
 
 	// Helper to update helper goals from material totals
 	const updateHelperGoals = useCallback((helpers, materialTotals) => {

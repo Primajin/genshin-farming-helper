@@ -262,7 +262,7 @@ function FarmHelper({
 		if (!tierOneLock && tierOne && tierOne / 3 >= 1) {
 			// eslint-disable-next-line react-hooks/set-state-in-effect
 			setTierTwo(Math.floor(tierOne / 3) + tierTwo);
-			// eslint-disable-next-line react-hooks/set-state-in-effect
+
 			setTierOne(tierOne % 3);
 		}
 	}, [tierOneLock, tierOne, tierTwo]);
@@ -276,7 +276,7 @@ function FarmHelper({
 		if (!tierTwoLock && tierTwo && tierTwo / 3 >= 1) {
 			// eslint-disable-next-line react-hooks/set-state-in-effect
 			setTierThree(Math.floor(tierTwo / 3) + tierThree);
-			// eslint-disable-next-line react-hooks/set-state-in-effect
+
 			setTierTwo(tierTwo % 3);
 		}
 	}, [tierTwoLock, tierTwo, tierThree]);
@@ -290,7 +290,7 @@ function FarmHelper({
 		if (hasTierFour && !tierThreeLock && tierThree && tierThree / 3 >= 1) {
 			// eslint-disable-next-line react-hooks/set-state-in-effect
 			setTierFour(Math.floor(tierThree / 3) + tierFour);
-			// eslint-disable-next-line react-hooks/set-state-in-effect
+
 			setTierThree(tierThree % 3);
 		}
 	}, [tierThreeLock, hasTierFour, tierThree, tierFour]);

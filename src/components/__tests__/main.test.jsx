@@ -36,9 +36,6 @@ vi.mock('presets', async () => {
 
 describe('main', () => {
 	beforeEach(() => {
-		// Clear localStorage before each test
-		localStorage.clear();
-
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
 		global.navigator = {

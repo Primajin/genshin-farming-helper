@@ -6,11 +6,8 @@ exports[`itemCategories > renders the correct number of categories and handles c
   "baseElement": <body>
     <div>
       <form
-        class="css-rug5du"
+        class="css-mgmeqk"
       >
-        <h3>
-          Direct Item Tracking
-        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -1547,11 +1544,8 @@ exports[`itemCategories > renders the correct number of categories and handles c
   </body>,
   "container": <div>
     <form
-      class="css-rug5du"
+      class="css-mgmeqk"
     >
-      <h3>
-        Direct Item Tracking
-      </h3>
       <fieldset
         class="narrow"
         role="group"

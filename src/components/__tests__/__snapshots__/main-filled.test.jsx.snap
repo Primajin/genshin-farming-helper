@@ -1443,11 +1443,8 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           <section />
         </div>
         <form
-          class="css-rug5du"
+          class="css-mgmeqk"
         >
-          <h3>
-            Direct Item Tracking
-          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -3632,11 +3629,8 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         <section />
       </div>
       <form
-        class="css-rug5du"
+        class="css-mgmeqk"
       >
-        <h3>
-          Direct Item Tracking
-        </h3>
         <fieldset
           class="narrow"
           role="group"
@@ -5815,11 +5809,8 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           <section />
         </div>
         <form
-          class="css-rug5du"
+          class="css-mgmeqk"
         >
-          <h3>
-            Direct Item Tracking
-          </h3>
           <fieldset
             class="narrow"
             role="group"
@@ -7940,11 +7931,8 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         <section />
       </div>
       <form
-        class="css-rug5du"
+        class="css-mgmeqk"
       >
-        <h3>
-          Direct Item Tracking
-        </h3>
         <fieldset
           class="narrow"
           role="group"
