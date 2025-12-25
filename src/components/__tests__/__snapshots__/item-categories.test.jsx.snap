@@ -33,7 +33,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Teachings of Freedom"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
                 width="75"
               />
             </div>
@@ -59,7 +59,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Guide to Freedom"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
                 width="75"
               />
             </div>
@@ -85,7 +85,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Philosophies of Freedom"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                 width="75"
               />
             </div>
@@ -111,7 +111,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Teachings of Order"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104344.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104344.png"
                 width="75"
               />
             </div>
@@ -137,7 +137,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Guide to Order"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104345.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104345.png"
                 width="75"
               />
             </div>
@@ -163,7 +163,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Philosophies of Order"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104346.png"
                 width="75"
               />
             </div>
@@ -201,7 +201,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Tile of Decarabian's Tower"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
                 width="75"
               />
             </div>
@@ -227,7 +227,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Debris of Decarabian's City"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
                 width="75"
               />
             </div>
@@ -253,7 +253,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Fragment of Decarabian's Epic"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
                 width="75"
               />
             </div>
@@ -279,7 +279,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Scattered Piece of Decarabian's Dream"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                 width="75"
               />
             </div>
@@ -305,7 +305,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Broken Goblet of the Pristine Sea"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114057.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114057.png"
                 width="75"
               />
             </div>
@@ -331,7 +331,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Wine Goblet of the Pristine Sea"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114058.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114058.png"
                 width="75"
               />
             </div>
@@ -357,7 +357,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Silver Goblet of the Pristine Sea"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114059.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114059.png"
                 width="75"
               />
             </div>
@@ -383,7 +383,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Golden Goblet of the Pristine Sea"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114060.png"
                 width="75"
               />
             </div>
@@ -420,7 +420,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Slime Condensate"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
                 width="75"
               />
             </div>
@@ -446,7 +446,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Slime Secretions"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
                 width="75"
               />
             </div>
@@ -472,7 +472,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Slime Concentrate"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                 width="75"
               />
             </div>
@@ -498,7 +498,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Old Operative's Pocket Watch"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112092.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112092.png"
                 width="75"
               />
             </div>
@@ -524,7 +524,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Operative's Standard Pocket Watch"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112093.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112093.png"
                 width="75"
               />
             </div>
@@ -550,7 +550,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Operative's Constancy"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112094.png"
                 width="75"
               />
             </div>
@@ -587,7 +587,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Brilliant Diamond Sliver"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
                 width="75"
               />
             </div>
@@ -613,7 +613,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Brilliant Diamond Fragment"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
                 width="75"
               />
             </div>
@@ -639,7 +639,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Brilliant Diamond Chunk"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
                 width="75"
               />
             </div>
@@ -665,12 +665,194 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Brilliant Diamond Gemstone"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                 width="75"
               />
             </div>
             <span>
               Brilliant Diamond Gemstone
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104121"
+            title="Varunada Lazurite Sliver"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104121"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Sliver"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104121.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Sliver
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104122"
+            title="Varunada Lazurite Fragment"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104122"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Fragment"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104122.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Fragment
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104123"
+            title="Varunada Lazurite Chunk"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104123"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Chunk"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104123.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Chunk
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker104124"
+            title="Varunada Lazurite Gemstone"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.104124"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+            >
+              <img
+                alt="Varunada Lazurite Gemstone"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104124.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Varunada Lazurite Gemstone
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker112122"
+            title="Broken Drive Shaft"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.112122"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Broken Drive Shaft"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112122.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Broken Drive Shaft
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker112123"
+            title="Reinforced Drive Shaft"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.112123"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+            >
+              <img
+                alt="Reinforced Drive Shaft"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112123.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Reinforced Drive Shaft
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker112124"
+            title="Precision Drive Shaft"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="ASCENSION.112124"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+            >
+              <img
+                alt="Precision Drive Shaft"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112124.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Precision Drive Shaft
             </span>
           </label>
           <label />
@@ -684,6 +866,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
           <legend>
             Character Level-Up
           </legend>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker113077"
+            title="Precision Kuuvahki Stamping Die"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LEVEL.113077"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Precision Kuuvahki Stamping Die"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113077.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Precision Kuuvahki Stamping Die
+            </span>
+          </label>
           <label
             aria-disabled="false"
             class="css-4wqkks"
@@ -702,7 +910,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Hurricane Seed"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                 width="75"
               />
             </div>
@@ -728,7 +936,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Lightning Prism"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113002.png"
                 width="75"
               />
             </div>
@@ -754,7 +962,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Dvalin's Plume"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
                 width="75"
               />
             </div>
@@ -780,7 +988,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Dvalin's Claw"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113004.png"
                 width="75"
               />
             </div>
@@ -806,7 +1014,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Dvalin's Sigh"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113005.png"
                 width="75"
               />
             </div>
@@ -832,7 +1040,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Lightless Mass"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113056.png"
                 width="75"
               />
             </div>
@@ -858,7 +1066,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Water That Failed To Transcend"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113057.png"
                 width="75"
               />
             </div>
@@ -895,7 +1103,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Wolfhook"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                 width="75"
               />
             </div>
@@ -921,7 +1129,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Valberry"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100022.png"
                 width="75"
               />
             </div>
@@ -947,7 +1155,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Subdetection Unit"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101239.png"
                 width="75"
               />
             </div>
@@ -973,12 +1181,38 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Spring of the First Dewdrop"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101240.png"
                 width="75"
               />
             </div>
             <span>
               Spring of the First Dewdrop
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker101257"
+            title="Portable Bearing"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="LOCAL.101257"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Portable Bearing"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101257.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Portable Bearing
             </span>
           </label>
           <label />
@@ -1010,7 +1244,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                 width="75"
               />
             </div>
@@ -1036,7 +1270,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Glaze Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131001.png"
                 width="75"
               />
             </div>
@@ -1062,7 +1296,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Sweet-Flower Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131002.png"
                 width="75"
               />
             </div>
@@ -1088,12 +1322,90 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Maintenance Mek: Gold Leader"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131036.png"
                 width="75"
               />
             </div>
             <span>
               Maintenance Mek: Gold Leader
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker131046"
+            title="Common Axehead Fish"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.131046"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Common Axehead Fish"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131046.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Common Axehead Fish
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker131047"
+            title="Veggie Mauler Shark"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.131047"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Veggie Mauler Shark"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131047.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Veggie Mauler Shark
+            </span>
+          </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker131048"
+            title="Medaka"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="FISH.131048"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+            >
+              <img
+                alt="Medaka"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131048.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Medaka
             </span>
           </label>
           <label />
@@ -1125,7 +1437,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Birch Wood"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                 width="75"
               />
             </div>
@@ -1151,7 +1463,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Torch Wood"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101322.png"
                 width="75"
               />
             </div>
@@ -1188,7 +1500,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="Iron Chunk"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
                 width="75"
               />
             </div>
@@ -1214,7 +1526,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
                 alt="White Iron Chunk"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101002.png"
                 width="75"
               />
             </div>
@@ -1259,7 +1571,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Teachings of Freedom"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
               width="75"
             />
           </div>
@@ -1285,7 +1597,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Guide to Freedom"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
               width="75"
             />
           </div>
@@ -1311,7 +1623,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Philosophies of Freedom"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
               width="75"
             />
           </div>
@@ -1337,7 +1649,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Teachings of Order"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104344.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104344.png"
               width="75"
             />
           </div>
@@ -1363,7 +1675,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Guide to Order"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104345.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104345.png"
               width="75"
             />
           </div>
@@ -1389,7 +1701,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Philosophies of Order"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104346.png"
               width="75"
             />
           </div>
@@ -1427,7 +1739,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Tile of Decarabian's Tower"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
               width="75"
             />
           </div>
@@ -1453,7 +1765,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Debris of Decarabian's City"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
               width="75"
             />
           </div>
@@ -1479,7 +1791,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Fragment of Decarabian's Epic"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
               width="75"
             />
           </div>
@@ -1505,7 +1817,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Scattered Piece of Decarabian's Dream"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
               width="75"
             />
           </div>
@@ -1531,7 +1843,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Broken Goblet of the Pristine Sea"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114057.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114057.png"
               width="75"
             />
           </div>
@@ -1557,7 +1869,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Wine Goblet of the Pristine Sea"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114058.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114058.png"
               width="75"
             />
           </div>
@@ -1583,7 +1895,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Silver Goblet of the Pristine Sea"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114059.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114059.png"
               width="75"
             />
           </div>
@@ -1609,7 +1921,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Golden Goblet of the Pristine Sea"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114060.png"
               width="75"
             />
           </div>
@@ -1646,7 +1958,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Slime Condensate"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
               width="75"
             />
           </div>
@@ -1672,7 +1984,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Slime Secretions"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
               width="75"
             />
           </div>
@@ -1698,7 +2010,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Slime Concentrate"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
               width="75"
             />
           </div>
@@ -1724,7 +2036,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Old Operative's Pocket Watch"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112092.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112092.png"
               width="75"
             />
           </div>
@@ -1750,7 +2062,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Operative's Standard Pocket Watch"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112093.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112093.png"
               width="75"
             />
           </div>
@@ -1776,7 +2088,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Operative's Constancy"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112094.png"
               width="75"
             />
           </div>
@@ -1813,7 +2125,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Brilliant Diamond Sliver"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
               width="75"
             />
           </div>
@@ -1839,7 +2151,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Brilliant Diamond Fragment"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
               width="75"
             />
           </div>
@@ -1865,7 +2177,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Brilliant Diamond Chunk"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
               width="75"
             />
           </div>
@@ -1891,12 +2203,194 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Brilliant Diamond Gemstone"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
               width="75"
             />
           </div>
           <span>
             Brilliant Diamond Gemstone
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104121"
+          title="Varunada Lazurite Sliver"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104121"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Sliver"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104121.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Sliver
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104122"
+          title="Varunada Lazurite Fragment"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104122"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Fragment"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104122.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Fragment
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104123"
+          title="Varunada Lazurite Chunk"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104123"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Chunk"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104123.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Chunk
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker104124"
+          title="Varunada Lazurite Gemstone"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.104124"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_5_Star.png");"
+          >
+            <img
+              alt="Varunada Lazurite Gemstone"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104124.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Varunada Lazurite Gemstone
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker112122"
+          title="Broken Drive Shaft"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.112122"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Broken Drive Shaft"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112122.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Broken Drive Shaft
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker112123"
+          title="Reinforced Drive Shaft"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.112123"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_2_Star.png");"
+          >
+            <img
+              alt="Reinforced Drive Shaft"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112123.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Reinforced Drive Shaft
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker112124"
+          title="Precision Drive Shaft"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="ASCENSION.112124"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_3_Star.png");"
+          >
+            <img
+              alt="Precision Drive Shaft"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112124.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Precision Drive Shaft
           </span>
         </label>
         <label />
@@ -1910,6 +2404,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
         <legend>
           Character Level-Up
         </legend>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker113077"
+          title="Precision Kuuvahki Stamping Die"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="LEVEL.113077"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+          >
+            <img
+              alt="Precision Kuuvahki Stamping Die"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113077.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Precision Kuuvahki Stamping Die
+          </span>
+        </label>
         <label
           aria-disabled="false"
           class="css-4wqkks"
@@ -1928,7 +2448,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Hurricane Seed"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
               width="75"
             />
           </div>
@@ -1954,7 +2474,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Lightning Prism"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113002.png"
               width="75"
             />
           </div>
@@ -1980,7 +2500,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Dvalin's Plume"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
               width="75"
             />
           </div>
@@ -2006,7 +2526,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Dvalin's Claw"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113004.png"
               width="75"
             />
           </div>
@@ -2032,7 +2552,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Dvalin's Sigh"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113005.png"
               width="75"
             />
           </div>
@@ -2058,7 +2578,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Lightless Mass"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113056.png"
               width="75"
             />
           </div>
@@ -2084,7 +2604,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Water That Failed To Transcend"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113057.png"
               width="75"
             />
           </div>
@@ -2121,7 +2641,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Wolfhook"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
               width="75"
             />
           </div>
@@ -2147,7 +2667,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Valberry"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100022.png"
               width="75"
             />
           </div>
@@ -2173,7 +2693,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Subdetection Unit"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101239.png"
               width="75"
             />
           </div>
@@ -2199,12 +2719,38 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Spring of the First Dewdrop"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101240.png"
               width="75"
             />
           </div>
           <span>
             Spring of the First Dewdrop
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker101257"
+          title="Portable Bearing"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="LOCAL.101257"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Portable Bearing"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101257.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Portable Bearing
           </span>
         </label>
         <label />
@@ -2236,7 +2782,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Medaka"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
               width="75"
             />
           </div>
@@ -2262,7 +2808,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Glaze Medaka"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131001.png"
               width="75"
             />
           </div>
@@ -2288,7 +2834,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Sweet-Flower Medaka"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131002.png"
               width="75"
             />
           </div>
@@ -2314,12 +2860,90 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Maintenance Mek: Gold Leader"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131036.png"
               width="75"
             />
           </div>
           <span>
             Maintenance Mek: Gold Leader
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker131046"
+          title="Common Axehead Fish"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="FISH.131046"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Common Axehead Fish"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131046.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Common Axehead Fish
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker131047"
+          title="Veggie Mauler Shark"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="FISH.131047"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Veggie Mauler Shark"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131047.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Veggie Mauler Shark
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker131048"
+          title="Medaka"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="FISH.131048"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_1_Star.png");"
+          >
+            <img
+              alt="Medaka"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131048.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Medaka
           </span>
         </label>
         <label />
@@ -2351,7 +2975,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Birch Wood"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
               width="75"
             />
           </div>
@@ -2377,7 +3001,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Torch Wood"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101322.png"
               width="75"
             />
           </div>
@@ -2414,7 +3038,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="Iron Chunk"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
               width="75"
             />
           </div>
@@ -2440,7 +3064,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
               alt="White Iron Chunk"
               data-testid="image"
               height="75"
-              src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101002.png"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101002.png"
               width="75"
             />
           </div>

@@ -1,4 +1,3 @@
-/* global localStorage */
 import {
 	describe, test, vi, expect,
 } from 'vitest';
