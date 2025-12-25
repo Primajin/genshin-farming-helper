@@ -386,54 +386,39 @@ export default function Main() {
 		return newHelpers;
 	}, []);
 
-	const onPresetChange = event => {
-		const {value} = event.target;
-		const [type, presetIdString] = value.split('.');
-		const presetId = Number.parseInt(presetIdString, 10);
-
-		const preset = type === 'character'
-			? presets.characters.find(c => c.id === presetId)
-			: (type === 'weapon'
-				? presets.weapons.find(w => w.id === presetId)
-				: presets.fishingRods.find(r => r.id === presetId));
-
-		if (!preset) {
-			return;
+	// Helper to find preset by type and ID
+	const findPreset = useCallback((type, id) => {
+		if (type === 'character') {
+			return presets.characters.find(c => c.id === id);
 		}
 
-		const storageState = storage.load();
-		const savedHelpers = storageState?.helpers ?? {};
-		const savedPresets = storageState?.presets ?? [];
+		if (type === 'weapon') {
+			return presets.weapons.find(w => w.id === id);
+		}
 
-		// Determine if we're adding or removing based on current state
-		const isCurrentlyActive = savedPresets.includes(value);
-		const newPresets = isCurrentlyActive
-			? savedPresets.filter(p => p !== value)
-			: [...savedPresets, value];
+		return presets.fishingRods.find(r => r.id === id);
+	}, []);
 
-		// Rebuild all preset materials from scratch based on active presets
-		const presetMaterialTotals = {};
+	// Helper to aggregate materials from active presets
+	const aggregatePresetMaterials = useCallback(activePresetValues => {
+		const totals = {};
 
-		for (const presetValue of newPresets) {
-			const [presetType, presetIdString_] = presetValue.split('.');
-			const id = Number.parseInt(presetIdString_, 10);
-			const activePreset = presetType === 'character'
-				? presets.characters.find(c => c.id === id)
-				: (presetType === 'weapon'
-					? presets.weapons.find(w => w.id === id)
-					: presets.fishingRods.find(r => r.id === id));
+		for (const presetValue of activePresetValues) {
+			const [presetType, presetIdString] = presetValue.split('.');
+			const id = Number.parseInt(presetIdString, 10);
+			const preset = findPreset(presetType, id);
 
-			if (!activePreset) {
+			if (!preset) {
 				continue;
 			}
 
-			const groupedItems = groupPresetItems(activePreset.items);
+			const groupedItems = groupPresetItems(preset.items);
 
 			for (const groupedItem of groupedItems) {
 				const itemId = String(groupedItem.id);
 				const {category, tiers} = groupedItem;
 
-				presetMaterialTotals[itemId] ||= {
+				totals[itemId] ||= {
 					category,
 					tiers: {
 						0: 0, 1: 0, 2: 0, 3: 0,
@@ -441,42 +426,42 @@ export default function Main() {
 				};
 
 				for (const tier of tiers) {
-					presetMaterialTotals[itemId].tiers[tier.tierIndex] += tier.count;
+					totals[itemId].tiers[tier.tierIndex] += tier.count;
 				}
 			}
 		}
 
-		// Update savedHelpers to match preset totals
-		// First, remove any preset-based helpers that are no longer needed
-		const updatedHelpers = {...savedHelpers};
+		return totals;
+	}, [findPreset]);
 
-		// Remove helpers that came from presets but are no longer active
-		for (const itemId of Object.keys(updatedHelpers)) {
-			if (presetMaterialTotals[itemId]) {
-				// This item is still needed by active presets - update its goals
-				const {tiers} = presetMaterialTotals[itemId];
-				const helper = updatedHelpers[itemId];
+	// Helper to update helper goals from material totals
+	const updateHelperGoals = useCallback((helpers, materialTotals) => {
+		const updated = {...helpers};
+		const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
 
-				// Update each tier goal
-				const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+		for (const itemId of Object.keys(updated)) {
+			if (materialTotals[itemId]) {
+				// Update goals for items still in active presets
+				const {tiers} = materialTotals[itemId];
+				const helper = updated[itemId];
+
 				for (let i = 0; i < 4; i++) {
-					const newGoal = tiers[i];
-					helper[tierFields[i]] = newGoal > 0 ? newGoal : '';
+					helper[tierFields[i]] = tiers[i] > 0 ? tiers[i] : '';
 				}
 			} else {
-				// This item is no longer needed by any preset
-				// Remove it if all goals are empty/zero (meaning it was likely preset-added)
-				const helper = updatedHelpers[itemId];
-				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal || helper.tierThreeGoal || helper.tierFourGoal;
+				// Remove if no goals (likely preset-added)
+				const helper = updated[itemId];
+				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal
+					|| helper.tierThreeGoal || helper.tierFourGoal;
 				if (!hasGoals) {
-					delete updatedHelpers[itemId];
+					delete updated[itemId];
 				}
 			}
 		}
 
-		// Add new helpers for items that don't exist yet
-		for (const [itemId, {category, tiers}] of Object.entries(presetMaterialTotals)) {
-			updatedHelpers[itemId] ||= {
+		// Add new helpers for new materials
+		for (const [itemId, {category, tiers}] of Object.entries(materialTotals)) {
+			updated[itemId] ||= {
 				category,
 				tierFour: 0,
 				tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
@@ -492,13 +477,42 @@ export default function Main() {
 			};
 		}
 
+		return updated;
+	}, []);
+
+	const onPresetChange = useCallback(event => {
+		const {value} = event.target;
+		const [type, presetIdString] = value.split('.');
+		const presetId = Number.parseInt(presetIdString, 10);
+
+		const preset = findPreset(type, presetId);
+		if (!preset) {
+			return;
+		}
+
+		const storageState = storage.load();
+		const savedHelpers = storageState?.helpers ?? {};
+		const savedPresets = storageState?.presets ?? [];
+
+		// Toggle preset active state
+		const isCurrentlyActive = savedPresets.includes(value);
+		const newPresets = isCurrentlyActive
+			? savedPresets.filter(p => p !== value)
+			: [...savedPresets, value];
+
+		// Aggregate materials from all active presets
+		const materialTotals = aggregatePresetMaterials(newPresets);
+
+		// Update helpers based on material totals
+		const updatedHelpers = updateHelperGoals(savedHelpers, materialTotals);
+
 		storage.save({...storageState, helpers: updatedHelpers, presets: newPresets});
 		setActivePresets(newPresets);
 
 		// Rebuild the helper list
 		const newHelpers = rebuildHelperList(updatedHelpers);
 		setFarmHelperData(newHelpers);
-	};
+	}, [findPreset, aggregatePresetMaterials, updateHelperGoals, rebuildHelperList]);
 
 	useEffect(() => {
 		if (!didRun) {
