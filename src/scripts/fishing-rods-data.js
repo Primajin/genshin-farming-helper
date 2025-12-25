@@ -3,6 +3,9 @@
 // This data is not available in genshin-db, so we maintain it manually
 // Using fish IDs for reliable matching
 export const fishingRodRecipes = {
+	200_900: [ // Wilderness Rod
+		// obtained from a quest, no recipe
+	],
 	200_901: [ // Windtangler
 		131_000, // Medaka
 		131_003, // Aizen Medaka
@@ -22,7 +25,7 @@ export const fishingRodRecipes = {
 		131_014, // Purple Shirakodai
 	],
 	200_904: [ // Moonstringer
-		// obtained from event, no recipe
+		// obtained from an event, no recipe
 	],
 	200_905: [ // Serendipity
 		131_000, // Medaka

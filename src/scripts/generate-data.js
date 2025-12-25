@@ -158,19 +158,15 @@ const generatePresets = () => {
 		const itemsMap = {};
 
 		// Get fish requirements from manual recipe data using fish IDs
-		// Aggregate duplicate fish (some rods require same fish type multiple times)
+		// Each fishing rod requires exactly 4 different fish types, 20 of each
 		for (const fishId of fishingRodRecipes[rod.id]) {
 			const fishMaterial = allFish.find(f => f.id === fishId);
 			if (fishMaterial) {
-				if (itemsMap[fishMaterial.id]) {
-					itemsMap[fishMaterial.id].count += 20;
-				} else {
-					itemsMap[fishMaterial.id] = {
-						id: fishMaterial.id,
-						name: fishMaterial.name,
-						count: 20, // Each fishing rod requires 20 of each fish
-					};
-				}
+				itemsMap[fishMaterial.id] = {
+					id: fishMaterial.id,
+					name: fishMaterial.name,
+					count: 20, // Each fishing rod requires 20 of each fish
+				};
 			}
 		}
 
