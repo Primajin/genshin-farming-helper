@@ -352,6 +352,7 @@ export default function Main() {
 			items.sort((a, b) => b.rarity - a.rarity);
 
 			const highestTier = items[0];
+			const lowestTier = items[items.length - 1];
 			const category = findMaterialCategory(highestTier.id);
 
 			if (!category) {
@@ -359,7 +360,7 @@ export default function Main() {
 			}
 
 			processed.push({
-				id: highestTier.id,
+				id: lowestTier.id, // Use lowest tier ID as the canonical key
 				category,
 				tiers: items.map((item, index) => ({
 					tierIndex: items.length - 1 - index, // Reverse: lowest rarity = tier 0
@@ -612,7 +613,7 @@ export default function Main() {
 				{hasItems ? stackToggle : null}
 				<div css={floatGroups ? helperList : undefined}>
 					{farmHelperList}
-					{hasItems ? <><section/><section/><section/><section/><section/><section/></> : null}
+					{hasItems && Array.from({length: 6}, (_, index) => <section key={`spacer-${index}`}/>)}
 				</div>
 				<ItemCategories list={disabledKeys} materials={materialsRare} onChangeProp={onChange}/>
 			</main>

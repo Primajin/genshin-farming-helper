@@ -5,18 +5,10 @@ import {
 	describe, expect, test, vi,
 } from 'vitest';
 
-import Main from '../main.jsx';
+import Main from 'components/pages/main.jsx';
 
-vi.mock('../../__tests__/__mocks__/local-storage.js', async () => {
-	const actual = await vi.importActual('../../__tests__/__mocks__/local-storage.js');
-	return actual;
-});
-
-const localStorageModule = await import('../../__tests__/__mocks__/local-storage.js');
-const localStorageState = localStorageModule.default;
-
-vi.mock('../../data.json', async () => {
-	const {materials} = await vi.importActual('../../__tests__/__mocks__/data.js');
+vi.mock('data', async () => {
+	const {materials} = await vi.importActual('__tests__/__mocks__/data.js');
 	return {
 		default: {
 			...materials,
@@ -24,8 +16,8 @@ vi.mock('../../data.json', async () => {
 	};
 });
 
-vi.mock('../../data-rare.json', async () => {
-	const {materialsRare} = await vi.importActual('../../__tests__/__mocks__/data.js');
+vi.mock('data-rare', async () => {
+	const {materialsRare} = await vi.importActual('__tests__/__mocks__/data.js');
 	return {
 		default: {
 			...materialsRare,
@@ -33,14 +25,17 @@ vi.mock('../../data-rare.json', async () => {
 	};
 });
 
-vi.mock('../../presets.json', async () => {
-	const {presets} = await vi.importActual('../../__tests__/__mocks__/presets.js');
+vi.mock('presets', async () => {
+	const {presets} = await vi.importActual('__tests__/__mocks__/presets.js');
 	return {
 		default: {
 			...presets,
 		},
 	};
 });
+
+const localStorageModule = await import('__tests__/__mocks__/local-storage.js');
+const localStorageState = localStorageModule.default;
 
 const prototypeOfLocalStorage = Object.getPrototypeOf(localStorage);
 
