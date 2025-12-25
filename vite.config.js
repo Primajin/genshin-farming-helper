@@ -2,6 +2,7 @@ import path from 'node:path';
 import process from 'node:process';
 import {fileURLToPath} from 'node:url';
 import react from '@vitejs/plugin-react';
+import mkcert from 'vite-plugin-mkcert';
 // Import {codecovVitePlugin} from '@codecov/vite-plugin';
 import {configDefaults, coverageConfigDefaults} from 'vitest/config';
 import {defineConfig, searchForWorkspaceRoot} from 'vite';
@@ -14,6 +15,7 @@ export default defineConfig(() => ({
 		outDir: 'build',
 	},
 	plugins: [
+		mkcert(),
 		react(),
 		// CodecovVitePlugin({
 		// 	enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
@@ -37,6 +39,7 @@ export default defineConfig(() => ({
 		},
 	},
 	server: {
+		https: true,
 		port: 3000,
 		fs: {
 			allow: [searchForWorkspaceRoot(process.cwd()), __dirname],
