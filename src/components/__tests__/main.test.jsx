@@ -146,13 +146,13 @@ describe('main', () => {
 		expect(helpers.length).toBe(4);
 
 		// Debug: log what we got
-		console.log(`Got ${helpers.length} helpers`);
-		for (const [i, h] of helpers.entries()) {
-			const img = h.querySelector('img');
-			const imgAlt = img ? img.alt : 'no image';
-			const tierButtons = h.querySelectorAll('[data-testid^="button-tier-"]');
-			console.log(`Helper ${i}: ${imgAlt} (${tierButtons.length} tiers)`);
-		}
+		// console.log(`Got ${helpers.length} helpers`);
+		// for (const [i, h] of helpers.entries()) {
+		// 	const img = h.querySelector('img');
+		// 	const imgAlt = img ? img.alt : 'no image';
+		// 	const tierButtons = h.querySelectorAll('[data-testid^="button-tier-"]');
+		// 	console.log(`Helper ${i}: ${imgAlt} (${tierButtons.length} tiers)`);
+		// }
 
 		// Verify we have materials with correct tier counts
 		// Portable Bearing: 1 tier
