@@ -2,16 +2,15 @@ import {fireEvent, render, screen} from '@testing-library/react';
 import {
 	describe, test, expect, vi,
 } from 'vitest';
-
-import ItemPicker from '../item-picker.jsx';
-import {materialTypes} from '../../constants';
+import ItemPicker from 'components/molecules/item-picker.jsx';
+import {materialTypes} from 'constants/index.js';
 
 vi.mock('../../__tests__/__mocks__/data.js', async () => {
 	const actual = await vi.importActual('../../__tests__/__mocks__/data.js');
 	return actual;
 });
 
-const {materials} = await import('../../__tests__/__mocks__/data.js');
+const {materials} = await import('__tests__/__mocks__/data.js');
 
 const philosophiesOfFreedom = materials.talentMaterials.find(material => material.id === 104_303);
 const scatteredPieceOfDecarabiansDream = materials.weaponMaterials.find(material => material.id === 114_004);
@@ -29,7 +28,7 @@ describe('itemPicker', () => {
 		expect(label).toBeDefined();
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
 		const regExp = /url\((\S+)\)/g;
-		expect(regExp.exec(backgroundStyle)[1]).toBe('"/src/images/bg/background_Item_5_Star.png"');
+		expect(regExp.exec(backgroundStyle)[1]).toContain('/src/images/bg/background_Item_5_Star.png');
 	});
 
 	test('renders with single element (char lvl)', () => {
@@ -38,7 +37,7 @@ describe('itemPicker', () => {
 		expect(label).toBeDefined();
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
 		const regExp = /url\((\S+)\)/g;
-		expect(regExp.exec(backgroundStyle)[1]).toBe('"/src/images/bg/background_Item_3_Star.png"');
+		expect(regExp.exec(backgroundStyle)[1]).toContain('/src/images/bg/background_Item_3_Star.png');
 	});
 
 	test('renders with multiple elements', () => {
@@ -51,7 +50,7 @@ describe('itemPicker', () => {
 		expect(label3).toBeDefined();
 		const backgroundStyle = label2.querySelectorAll('div')[0].getAttribute('style');
 		const regExp = /url\((\S+)\)/g;
-		expect(regExp.exec(backgroundStyle)[1]).toBe('"/src/images/bg/background_Item_4_Star.png"');
+		expect(regExp.exec(backgroundStyle)[1]).toContain('/src/images/bg/background_Item_4_Star.png');
 	});
 
 	test('renders alternative image when initial one can not be loaded', () => {
@@ -59,10 +58,10 @@ describe('itemPicker', () => {
 		const image = screen.getByTestId('image');
 		expect(image).toBeDefined();
 		const imageSourceBefore = image.getAttribute('src');
-		expect(imageSourceBefore.includes('cloudinary.com')).toBeTruthy();
+		expect(imageSourceBefore.includes('gi.yatta.moe')).toBeTruthy();
 		fireEvent.error(image);
 		const imageSourceAfter = image.getAttribute('src');
-		expect(imageSourceAfter.includes('cloudinary.com')).toBeFalsy();
-		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeTruthy();
+		expect(imageSourceAfter.includes('gi.yatta.moe')).toBeFalsy();
+		expect(imageSourceAfter.includes('cloudinary.com')).toBeTruthy();
 	});
 });

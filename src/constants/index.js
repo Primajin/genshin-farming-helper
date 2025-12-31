@@ -18,5 +18,5 @@ export const materialTypes = {
 	WOOD: 'WOOD',
 };
 
-export const IMG_URL = 'https://res.cloudinary.com/genshin/image/upload/sprites/';
-export const IMG_URL2 = 'https://gi.yatta.moe/assets/UI/';
+export const IMG_URL = 'https://gi.yatta.moe/assets/UI/';
+export const IMG_URL2 = 'https://res.cloudinary.com/genshin/image/upload/sprites/';
