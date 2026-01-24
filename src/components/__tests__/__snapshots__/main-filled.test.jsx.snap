@@ -74,7 +74,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Wolfhook"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                   width="75"
                 />
                 <span
@@ -136,7 +136,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Iron Chunk"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
                   width="75"
                 />
                 <span
@@ -198,7 +198,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Birch Wood"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                   width="75"
                 />
                 <span
@@ -260,7 +260,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Brilliant Diamond Sliver"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
                   width="75"
                 />
                 <span
@@ -331,7 +331,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Brilliant Diamond Fragment"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
                   width="75"
                 />
                 <span
@@ -408,7 +408,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Brilliant Diamond Chunk"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
                   width="75"
                 />
                 <span
@@ -490,7 +490,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Brilliant Diamond Gemstone"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                   width="75"
                 />
                 <span
@@ -572,7 +572,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Teachings of Freedom"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
                   width="75"
                 />
                 <span
@@ -644,7 +644,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Guide to Freedom"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
                   width="75"
                 />
                 <span
@@ -720,7 +720,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Philosophies of Freedom"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                   width="75"
                 />
                 <span
@@ -798,7 +798,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Slime Condensate"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
                   width="75"
                 />
                 <span
@@ -864,7 +864,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Slime Secretions"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
                   width="75"
                 />
                 <span
@@ -935,7 +935,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Slime Concentrate"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                   width="75"
                 />
                 <span
@@ -1007,7 +1007,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Hurricane Seed"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                   width="75"
                 />
                 <span
@@ -1084,7 +1084,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Tile of Decarabian's Tower"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
                   width="75"
                 />
                 <span
@@ -1155,7 +1155,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Debris of Decarabian's City"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
                   width="75"
                 />
                 <span
@@ -1232,7 +1232,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Fragment of Decarabian's Epic"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
                   width="75"
                 />
                 <span
@@ -1315,7 +1315,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Scattered Piece of Decarabian's Dream"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                   width="75"
                 />
                 <span
@@ -1397,7 +1397,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 <img
                   alt="Medaka"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                   width="75"
                 />
                 <span
@@ -1471,7 +1471,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Philosophies of Freedom"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                   width="75"
                 />
               </div>
@@ -1497,7 +1497,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Philosophies of Order"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104346.png"
                   width="75"
                 />
               </div>
@@ -1536,7 +1536,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Scattered Piece of Decarabian's Dream"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                   width="75"
                 />
               </div>
@@ -1562,7 +1562,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Golden Goblet of the Pristine Sea"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114060.png"
                   width="75"
                 />
               </div>
@@ -1600,7 +1600,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Slime Concentrate"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                   width="75"
                 />
               </div>
@@ -1626,7 +1626,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Operative's Constancy"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112094.png"
                   width="75"
                 />
               </div>
@@ -1664,7 +1664,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Brilliant Diamond Gemstone"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                   width="75"
                 />
               </div>
@@ -1702,7 +1702,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Hurricane Seed"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                   width="75"
                 />
               </div>
@@ -1728,7 +1728,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Lightning Prism"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113002.png"
                   width="75"
                 />
               </div>
@@ -1754,7 +1754,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Dvalin's Plume"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
                   width="75"
                 />
               </div>
@@ -1780,7 +1780,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Dvalin's Claw"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113004.png"
                   width="75"
                 />
               </div>
@@ -1806,7 +1806,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Dvalin's Sigh"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113005.png"
                   width="75"
                 />
               </div>
@@ -1832,7 +1832,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Lightless Mass"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113056.png"
                   width="75"
                 />
               </div>
@@ -1858,7 +1858,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Water That Failed To Transcend"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113057.png"
                   width="75"
                 />
               </div>
@@ -1896,7 +1896,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Wolfhook"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                   width="75"
                 />
               </div>
@@ -1922,7 +1922,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Valberry"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100022.png"
                   width="75"
                 />
               </div>
@@ -1948,7 +1948,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Subdetection Unit"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101239.png"
                   width="75"
                 />
               </div>
@@ -1974,7 +1974,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Spring of the First Dewdrop"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101240.png"
                   width="75"
                 />
               </div>
@@ -2012,7 +2012,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Medaka"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                   width="75"
                 />
               </div>
@@ -2038,7 +2038,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Glaze Medaka"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131001.png"
                   width="75"
                 />
               </div>
@@ -2064,7 +2064,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Sweet-Flower Medaka"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131002.png"
                   width="75"
                 />
               </div>
@@ -2090,7 +2090,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Maintenance Mek: Gold Leader"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131036.png"
                   width="75"
                 />
               </div>
@@ -2128,7 +2128,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Birch Wood"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                   width="75"
                 />
               </div>
@@ -2154,7 +2154,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                   alt="Torch Wood"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101322.png"
                   width="75"
                 />
               </div>
@@ -2180,6 +2180,14 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </fieldset>
         </form>
       </main>
+      <button
+        aria-label="Add preset"
+        class="css-1tekqcb"
+        title="Add preset"
+        type="button"
+      >
+        +
+      </button>
     </div>
   </body>,
   "container": <div>
@@ -2252,7 +2260,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Wolfhook"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                 width="75"
               />
               <span
@@ -2314,7 +2322,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Iron Chunk"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
                 width="75"
               />
               <span
@@ -2376,7 +2384,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Birch Wood"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                 width="75"
               />
               <span
@@ -2438,7 +2446,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Brilliant Diamond Sliver"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
                 width="75"
               />
               <span
@@ -2509,7 +2517,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Brilliant Diamond Fragment"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
                 width="75"
               />
               <span
@@ -2586,7 +2594,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Brilliant Diamond Chunk"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
                 width="75"
               />
               <span
@@ -2668,7 +2676,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Brilliant Diamond Gemstone"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                 width="75"
               />
               <span
@@ -2750,7 +2758,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Teachings of Freedom"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
                 width="75"
               />
               <span
@@ -2822,7 +2830,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Guide to Freedom"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
                 width="75"
               />
               <span
@@ -2898,7 +2906,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Philosophies of Freedom"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                 width="75"
               />
               <span
@@ -2976,7 +2984,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Slime Condensate"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
                 width="75"
               />
               <span
@@ -3042,7 +3050,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Slime Secretions"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
                 width="75"
               />
               <span
@@ -3113,7 +3121,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Slime Concentrate"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                 width="75"
               />
               <span
@@ -3185,7 +3193,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Hurricane Seed"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                 width="75"
               />
               <span
@@ -3262,7 +3270,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Tile of Decarabian's Tower"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
                 width="75"
               />
               <span
@@ -3333,7 +3341,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Debris of Decarabian's City"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
                 width="75"
               />
               <span
@@ -3410,7 +3418,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Fragment of Decarabian's Epic"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
                 width="75"
               />
               <span
@@ -3493,7 +3501,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Scattered Piece of Decarabian's Dream"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                 width="75"
               />
               <span
@@ -3575,7 +3583,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               <img
                 alt="Medaka"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                 width="75"
               />
               <span
@@ -3649,7 +3657,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Philosophies of Freedom"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                 width="75"
               />
             </div>
@@ -3675,7 +3683,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Philosophies of Order"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104346.png"
                 width="75"
               />
             </div>
@@ -3714,7 +3722,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Scattered Piece of Decarabian's Dream"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                 width="75"
               />
             </div>
@@ -3740,7 +3748,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Golden Goblet of the Pristine Sea"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114060.png"
                 width="75"
               />
             </div>
@@ -3778,7 +3786,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Slime Concentrate"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                 width="75"
               />
             </div>
@@ -3804,7 +3812,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Operative's Constancy"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112094.png"
                 width="75"
               />
             </div>
@@ -3842,7 +3850,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Brilliant Diamond Gemstone"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                 width="75"
               />
             </div>
@@ -3880,7 +3888,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Hurricane Seed"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                 width="75"
               />
             </div>
@@ -3906,7 +3914,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Lightning Prism"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113002.png"
                 width="75"
               />
             </div>
@@ -3932,7 +3940,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Dvalin's Plume"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
                 width="75"
               />
             </div>
@@ -3958,7 +3966,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Dvalin's Claw"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113004.png"
                 width="75"
               />
             </div>
@@ -3984,7 +3992,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Dvalin's Sigh"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113005.png"
                 width="75"
               />
             </div>
@@ -4010,7 +4018,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Lightless Mass"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113056.png"
                 width="75"
               />
             </div>
@@ -4036,7 +4044,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Water That Failed To Transcend"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113057.png"
                 width="75"
               />
             </div>
@@ -4074,7 +4082,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Wolfhook"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                 width="75"
               />
             </div>
@@ -4100,7 +4108,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Valberry"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100022.png"
                 width="75"
               />
             </div>
@@ -4126,7 +4134,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Subdetection Unit"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101239.png"
                 width="75"
               />
             </div>
@@ -4152,7 +4160,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Spring of the First Dewdrop"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101240.png"
                 width="75"
               />
             </div>
@@ -4190,7 +4198,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                 width="75"
               />
             </div>
@@ -4216,7 +4224,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Glaze Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131001.png"
                 width="75"
               />
             </div>
@@ -4242,7 +4250,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Sweet-Flower Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131002.png"
                 width="75"
               />
             </div>
@@ -4268,7 +4276,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Maintenance Mek: Gold Leader"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131036.png"
                 width="75"
               />
             </div>
@@ -4306,7 +4314,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Birch Wood"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                 width="75"
               />
             </div>
@@ -4332,7 +4340,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
                 alt="Torch Wood"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101322.png"
                 width="75"
               />
             </div>
@@ -4358,6 +4366,14 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         </fieldset>
       </form>
     </main>
+    <button
+      aria-label="Add preset"
+      class="css-1tekqcb"
+      title="Add preset"
+      type="button"
+    >
+      +
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -4486,7 +4502,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Iron Chunk"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
                   width="75"
                 />
                 <span
@@ -4548,7 +4564,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Birch Wood"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                   width="75"
                 />
                 <span
@@ -4610,7 +4626,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Brilliant Diamond Sliver"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
                   width="75"
                 />
                 <span
@@ -4681,7 +4697,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Brilliant Diamond Fragment"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
                   width="75"
                 />
                 <span
@@ -4758,7 +4774,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Brilliant Diamond Chunk"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
                   width="75"
                 />
                 <span
@@ -4840,7 +4856,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Brilliant Diamond Gemstone"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                   width="75"
                 />
                 <span
@@ -4922,7 +4938,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Teachings of Freedom"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
                   width="75"
                 />
                 <span
@@ -4994,7 +5010,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Guide to Freedom"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
                   width="75"
                 />
                 <span
@@ -5070,7 +5086,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Philosophies of Freedom"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                   width="75"
                 />
                 <span
@@ -5148,7 +5164,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Slime Condensate"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
                   width="75"
                 />
                 <span
@@ -5214,7 +5230,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Slime Secretions"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
                   width="75"
                 />
                 <span
@@ -5285,7 +5301,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Slime Concentrate"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                   width="75"
                 />
                 <span
@@ -5357,7 +5373,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Hurricane Seed"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                   width="75"
                 />
                 <span
@@ -5434,7 +5450,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Tile of Decarabian's Tower"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
                   width="75"
                 />
                 <span
@@ -5505,7 +5521,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Debris of Decarabian's City"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
                   width="75"
                 />
                 <span
@@ -5582,7 +5598,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Fragment of Decarabian's Epic"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
                   width="75"
                 />
                 <span
@@ -5665,7 +5681,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Scattered Piece of Decarabian's Dream"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                   width="75"
                 />
                 <span
@@ -5747,7 +5763,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 <img
                   alt="Medaka"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                   width="75"
                 />
                 <span
@@ -5821,7 +5837,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Philosophies of Freedom"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                   width="75"
                 />
               </div>
@@ -5847,7 +5863,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Philosophies of Order"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104346.png"
                   width="75"
                 />
               </div>
@@ -5886,7 +5902,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Scattered Piece of Decarabian's Dream"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                   width="75"
                 />
               </div>
@@ -5912,7 +5928,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Golden Goblet of the Pristine Sea"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114060.png"
                   width="75"
                 />
               </div>
@@ -5950,7 +5966,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Slime Concentrate"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                   width="75"
                 />
               </div>
@@ -5976,7 +5992,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Operative's Constancy"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112094.png"
                   width="75"
                 />
               </div>
@@ -6014,7 +6030,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Brilliant Diamond Gemstone"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                   width="75"
                 />
               </div>
@@ -6052,7 +6068,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Hurricane Seed"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                   width="75"
                 />
               </div>
@@ -6078,7 +6094,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Lightning Prism"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113002.png"
                   width="75"
                 />
               </div>
@@ -6104,7 +6120,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Dvalin's Plume"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
                   width="75"
                 />
               </div>
@@ -6130,7 +6146,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Dvalin's Claw"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113004.png"
                   width="75"
                 />
               </div>
@@ -6156,7 +6172,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Dvalin's Sigh"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113005.png"
                   width="75"
                 />
               </div>
@@ -6182,7 +6198,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Lightless Mass"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113056.png"
                   width="75"
                 />
               </div>
@@ -6208,7 +6224,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Water That Failed To Transcend"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113057.png"
                   width="75"
                 />
               </div>
@@ -6245,7 +6261,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Wolfhook"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                   width="75"
                 />
               </div>
@@ -6271,7 +6287,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Valberry"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100022.png"
                   width="75"
                 />
               </div>
@@ -6297,7 +6313,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Subdetection Unit"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101239.png"
                   width="75"
                 />
               </div>
@@ -6323,7 +6339,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Spring of the First Dewdrop"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101240.png"
                   width="75"
                 />
               </div>
@@ -6361,7 +6377,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Medaka"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                   width="75"
                 />
               </div>
@@ -6387,7 +6403,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Glaze Medaka"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131001.png"
                   width="75"
                 />
               </div>
@@ -6413,7 +6429,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Sweet-Flower Medaka"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131002.png"
                   width="75"
                 />
               </div>
@@ -6439,7 +6455,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Maintenance Mek: Gold Leader"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131036.png"
                   width="75"
                 />
               </div>
@@ -6477,7 +6493,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Birch Wood"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                   width="75"
                 />
               </div>
@@ -6503,7 +6519,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                   alt="Torch Wood"
                   data-testid="image"
                   height="75"
-                  src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                  src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101322.png"
                   width="75"
                 />
               </div>
@@ -6529,6 +6545,14 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </fieldset>
         </form>
       </main>
+      <button
+        aria-label="Add preset"
+        class="css-1tekqcb"
+        title="Add preset"
+        type="button"
+      >
+        +
+      </button>
     </div>
   </body>,
   "container": <div>
@@ -6600,7 +6624,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Iron Chunk"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101001.png"
                 width="75"
               />
               <span
@@ -6662,7 +6686,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Birch Wood"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                 width="75"
               />
               <span
@@ -6724,7 +6748,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Brilliant Diamond Sliver"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104101.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104101.png"
                 width="75"
               />
               <span
@@ -6795,7 +6819,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Brilliant Diamond Fragment"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104102.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104102.png"
                 width="75"
               />
               <span
@@ -6872,7 +6896,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Brilliant Diamond Chunk"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104103.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104103.png"
                 width="75"
               />
               <span
@@ -6954,7 +6978,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Brilliant Diamond Gemstone"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                 width="75"
               />
               <span
@@ -7036,7 +7060,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Teachings of Freedom"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104301.png"
                 width="75"
               />
               <span
@@ -7108,7 +7132,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Guide to Freedom"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104302.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104302.png"
                 width="75"
               />
               <span
@@ -7184,7 +7208,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Philosophies of Freedom"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                 width="75"
               />
               <span
@@ -7262,7 +7286,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Slime Condensate"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112002.png"
                 width="75"
               />
               <span
@@ -7328,7 +7352,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Slime Secretions"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112003.png"
                 width="75"
               />
               <span
@@ -7399,7 +7423,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Slime Concentrate"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                 width="75"
               />
               <span
@@ -7471,7 +7495,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Hurricane Seed"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                 width="75"
               />
               <span
@@ -7548,7 +7572,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Tile of Decarabian's Tower"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114001.png"
                 width="75"
               />
               <span
@@ -7619,7 +7643,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Debris of Decarabian's City"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114002.png"
                 width="75"
               />
               <span
@@ -7696,7 +7720,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Fragment of Decarabian's Epic"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114003.png"
                 width="75"
               />
               <span
@@ -7779,7 +7803,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Scattered Piece of Decarabian's Dream"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                 width="75"
               />
               <span
@@ -7861,7 +7885,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               <img
                 alt="Medaka"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                 width="75"
               />
               <span
@@ -7935,7 +7959,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Philosophies of Freedom"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104303.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104303.png"
                 width="75"
               />
             </div>
@@ -7961,7 +7985,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Philosophies of Order"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104346.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104346.png"
                 width="75"
               />
             </div>
@@ -8000,7 +8024,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Scattered Piece of Decarabian's Dream"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114004.png"
                 width="75"
               />
             </div>
@@ -8026,7 +8050,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Golden Goblet of the Pristine Sea"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_114060.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114060.png"
                 width="75"
               />
             </div>
@@ -8064,7 +8088,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Slime Concentrate"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112004.png"
                 width="75"
               />
             </div>
@@ -8090,7 +8114,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Operative's Constancy"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_112094.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_112094.png"
                 width="75"
               />
             </div>
@@ -8128,7 +8152,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Brilliant Diamond Gemstone"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_104104.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_104104.png"
                 width="75"
               />
             </div>
@@ -8166,7 +8190,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Hurricane Seed"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113001.png"
                 width="75"
               />
             </div>
@@ -8192,7 +8216,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Lightning Prism"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113002.png"
                 width="75"
               />
             </div>
@@ -8218,7 +8242,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Dvalin's Plume"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113003.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113003.png"
                 width="75"
               />
             </div>
@@ -8244,7 +8268,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Dvalin's Claw"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113004.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113004.png"
                 width="75"
               />
             </div>
@@ -8270,7 +8294,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Dvalin's Sigh"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113005.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113005.png"
                 width="75"
               />
             </div>
@@ -8296,7 +8320,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Lightless Mass"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113056.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113056.png"
                 width="75"
               />
             </div>
@@ -8322,7 +8346,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Water That Failed To Transcend"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_113057.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_113057.png"
                 width="75"
               />
             </div>
@@ -8359,7 +8383,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Wolfhook"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100021.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100021.png"
                 width="75"
               />
             </div>
@@ -8385,7 +8409,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Valberry"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_100022.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_100022.png"
                 width="75"
               />
             </div>
@@ -8411,7 +8435,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Subdetection Unit"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101239.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101239.png"
                 width="75"
               />
             </div>
@@ -8437,7 +8461,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Spring of the First Dewdrop"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101240.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101240.png"
                 width="75"
               />
             </div>
@@ -8475,7 +8499,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131000.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131000.png"
                 width="75"
               />
             </div>
@@ -8501,7 +8525,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Glaze Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131001.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131001.png"
                 width="75"
               />
             </div>
@@ -8527,7 +8551,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Sweet-Flower Medaka"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131002.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131002.png"
                 width="75"
               />
             </div>
@@ -8553,7 +8577,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Maintenance Mek: Gold Leader"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_131036.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_131036.png"
                 width="75"
               />
             </div>
@@ -8591,7 +8615,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Birch Wood"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101301.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101301.png"
                 width="75"
               />
             </div>
@@ -8617,7 +8641,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
                 alt="Torch Wood"
                 data-testid="image"
                 height="75"
-                src="https://res.cloudinary.com/genshin/image/upload/sprites/UI_ItemIcon_101322.png"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_101322.png"
                 width="75"
               />
             </div>
@@ -8643,6 +8667,14 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         </fieldset>
       </form>
     </main>
+    <button
+      aria-label="Add preset"
+      class="css-1tekqcb"
+      title="Add preset"
+      type="button"
+    >
+      +
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -2,12 +2,11 @@
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useState} from 'react';
-
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
-} from '../constants';
-import {filterObject} from '../utils/objects.js';
-import {removeQuotesFromString} from '../utils/strings.js';
+} from 'constants/index.js';
+import {filterObject} from 'utils/objects.js';
+import {removeQuotesFromString} from 'utils/strings.js';
 
 const wrapper = css`
 	cursor: pointer;
