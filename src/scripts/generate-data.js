@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 import genshinDb from 'genshin-db';
 
+import {fishingRodRecipes} from './fishing-rods-data.js';
+
 const isValidMaterial = material => material
 	&& material.typeText
 	&& material.category
@@ -62,6 +64,129 @@ export const materialsRare = {
 };
 
 fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
+	/* V8 ignore next 3 */
+	if (error) {
+		console.error(error);
+	}
+});
+
+// Generate presets for characters and weapons
+const aggregateMaterials = costs => {
+	const items = {};
+
+	for (const [, materials] of Object.entries(costs)) {
+		for (const material of materials) {
+			// Skip Mora
+			if (material.name === 'Mora') {
+				continue;
+			}
+
+			if (items[material.id]) {
+				items[material.id].count += material.count;
+			} else {
+				items[material.id] = {
+					id: material.id,
+					name: material.name,
+					count: material.count,
+				};
+			}
+		}
+	}
+
+	return items;
+};
+
+const generatePresets = () => {
+	const presets = {
+		characters: [],
+		weapons: [],
+		fishingRods: [],
+	};
+
+	// Get all characters
+	const characters = genshinDb.characters('names', defaultOptions);
+	for (const character of characters) {
+		if (!character?.costs) {
+			continue;
+		}
+
+		const items = aggregateMaterials(character.costs);
+
+		if (Object.keys(items).length > 0) {
+			presets.characters.push({
+				id: character.id,
+				name: character.name,
+				element: character.elementText,
+				rarity: character.rarity,
+				items: Object.values(items),
+				images: character.images,
+			});
+		}
+	}
+
+	// Get all weapons
+	const weapons = genshinDb.weapons('names', defaultOptions);
+	for (const weapon of weapons) {
+		if (!weapon?.costs) {
+			continue;
+		}
+
+		const items = aggregateMaterials(weapon.costs);
+
+		if (Object.keys(items).length > 0) {
+			presets.weapons.push({
+				id: weapon.id,
+				name: weapon.name,
+				weaponType: weapon.weaponText,
+				rarity: weapon.rarity,
+				items: Object.values(items),
+				images: weapon.images,
+			});
+		}
+	}
+
+	// Get all fishing rods from genshin-db FISH_ROD category
+	const fishingRods = genshinDb.materials('FISH_ROD', {matchCategories: true, verboseCategories: true});
+	const allFish = genshinDb.materials('names', defaultOptions).filter(m => m.typeText === 'Fish');
+
+	// Process fishing rods
+	for (const rod of fishingRods) {
+		if (!rod?.id || !fishingRodRecipes[rod.id]) {
+			continue;
+		}
+
+		const itemsMap = {};
+
+		// Get fish requirements from manual recipe data using fish IDs
+		// Each fishing rod requires exactly 4 different fish types, 20 of each
+		for (const fishId of fishingRodRecipes[rod.id]) {
+			const fishMaterial = allFish.find(f => f.id === fishId);
+			if (fishMaterial) {
+				itemsMap[fishMaterial.id] = {
+					id: fishMaterial.id,
+					name: fishMaterial.name,
+					count: 20, // Each fishing rod requires 20 of each fish
+				};
+			}
+		}
+
+		const items = Object.values(itemsMap);
+		if (items.length > 0) {
+			presets.fishingRods.push({
+				id: rod.id,
+				name: rod.name,
+				rarity: rod.rarity,
+				items,
+				images: rod.images,
+			});
+		}
+	}
+
+	return presets;
+};
+
+const presets = generatePresets();
+fs.promises.writeFile('src/presets.json', JSON.stringify(presets), error => {
 	/* V8 ignore next 3 */
 	if (error) {
 		console.error(error);

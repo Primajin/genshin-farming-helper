@@ -2,14 +2,13 @@
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useEffect, useState} from 'react';
-
-import storage from '../utils/local-storage.js';
-import theme from '../theme';
+import storage from 'utils/local-storage.js';
+import theme from 'theme';
 import {
 	backgrounds, IMG_URL, IMG_URL2, materialTypes,
-} from '../constants';
-import {helpersType, materialsType} from '../types';
-import {up} from '../utils/theming.js';
+} from 'constants/index.js';
+import {helpersType, materialsType} from 'types';
+import {up} from 'utils/theming.js';
 
 const {actions, primary} = theme;
 
@@ -124,6 +123,94 @@ const reachedGoal = css`
 
 const defaultConfig = {};
 
+// Helper component to render individual tier item
+function TierItem({
+	item,
+	itemIndex,
+	goalValue,
+	tierValue,
+	isLocked,
+	handleGoalChange,
+	incrementTier,
+	setLockTier,
+	isLastItem,
+}) {
+	const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
+
+	let tooManyRetries = 0;
+	const tryOtherUrl = () => {
+		/* V8 ignore next 3 */
+		if (!tooManyRetries) {
+			setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
+		}
+
+		tooManyRetries++;
+	};
+
+	const isGoalSet = goalValue > 0;
+	const isGoalReached = isGoalSet && tierValue >= goalValue;
+
+	return (
+		<div key={item.name} css={wrapper}>
+			<label data-testid='goal-label' css={label} title='Set target goal. Color will change to green when reached'>
+				<input
+					css={input}
+					max='999'
+					maxLength='3'
+					min='0'
+					step='1'
+					type='number'
+					value={goalValue}
+					onChange={handleGoalChange}
+				/>
+				<div css={actions} className='material-symbols-outlined'>pin</div>
+			</label>
+			<button
+				css={button}
+				data-goal={isGoalSet ? goalValue : undefined}
+				data-testid={`button-tier-${itemIndex}`}
+				style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
+				title={isGoalSet && !isGoalReached ? `${goalValue - tierValue} ${item.name} remaining` : item.name}
+				type='button'
+				onClick={incrementTier}
+			>
+				<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
+				<span css={rarity}>
+					{/* eslint-disable-next-line unicorn/no-new-array, react/no-array-index-key */}
+					{new Array(item.rarity ?? 1).fill('').map((_, index) => <span key={index} className='material-symbols-outlined fill'>star</span>)}
+				</span>
+				<b css={isGoalReached ? reachedGoal : undefined} data-testid={`value-tier-${itemIndex}`}>
+					{tierValue}
+				</b>
+			</button>
+			{!isLastItem && (
+				<label data-testid={`lock-tier-${itemIndex}`} title='Lock this tier from automatically tallying up to the next'>
+					<input
+						type='checkbox'
+						checked={isLocked}
+						onChange={() => setLockTier(!isLocked)}
+					/>
+					<div css={actions} className={`material-symbols-outlined${isLocked ? ' fill' : ''}`}>
+						{isLocked ? 'lock' : 'lock_open'}
+					</div>
+				</label>
+			)}
+		</div>
+	);
+}
+
+TierItem.propTypes = {
+	goalValue: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+	handleGoalChange: PropTypes.func.isRequired,
+	incrementTier: PropTypes.func.isRequired,
+	isLastItem: PropTypes.bool.isRequired,
+	isLocked: PropTypes.bool.isRequired,
+	item: PropTypes.object.isRequired,
+	itemIndex: PropTypes.number.isRequired,
+	setLockTier: PropTypes.func.isRequired,
+	tierValue: PropTypes.number.isRequired,
+};
+
 function FarmHelper({
 	category,
 	config = defaultConfig,
@@ -157,7 +244,7 @@ function FarmHelper({
 	const rawItem = materials.find(material => material.id === materialId);
 
 	const multipleItem = category === materialTypes.ENHANCEMENT || category === materialTypes.WEAPON || category === materialTypes.TALENT || category === materialTypes.ASCENSION;
-	const items = multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem];
+	const items = rawItem ? (multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
 
 	// 1
 	const hasJustOne = items.length === 1;
@@ -173,7 +260,9 @@ function FarmHelper({
 	const incrementTierTwo = () => setTierTwo(tierTwo + 1);
 	useEffect(() => {
 		if (!tierOneLock && tierOne && tierOne / 3 >= 1) {
+			// eslint-disable-next-line react-hooks/set-state-in-effect
 			setTierTwo(Math.floor(tierOne / 3) + tierTwo);
+
 			setTierOne(tierOne % 3);
 		}
 	}, [tierOneLock, tierOne, tierTwo]);
@@ -185,7 +274,9 @@ function FarmHelper({
 	const incrementTierThree = () => setTierThree(tierThree + 1);
 	useEffect(() => {
 		if (!tierTwoLock && tierTwo && tierTwo / 3 >= 1) {
+			// eslint-disable-next-line react-hooks/set-state-in-effect
 			setTierThree(Math.floor(tierTwo / 3) + tierThree);
+
 			setTierTwo(tierTwo % 3);
 		}
 	}, [tierTwoLock, tierTwo, tierThree]);
@@ -197,7 +288,9 @@ function FarmHelper({
 	const hasTierFour = items.length > 3;
 	useEffect(() => {
 		if (hasTierFour && !tierThreeLock && tierThree && tierThree / 3 >= 1) {
+			// eslint-disable-next-line react-hooks/set-state-in-effect
 			setTierFour(Math.floor(tierThree / 3) + tierFour);
+
 			setTierThree(tierThree % 3);
 		}
 	}, [tierThreeLock, hasTierFour, tierThree, tierFour]);
@@ -241,77 +334,27 @@ function FarmHelper({
 	const newHelpers = {...savedHelpers, [itemId]: newConfig};
 	storage.save({...storageState, helpers: newHelpers});
 
+	// Early return if no items found
+	if (items.length === 0) {
+		return null;
+	}
+
 	return (
 		<section>
-			{items.map((item, itemIndex) => {
-				// eslint-disable-next-line no-warning-comments
-				// FIXME find a better way
-				// eslint-disable-next-line react-hooks/rules-of-hooks
-				const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
-
-				let tooManyRetries = 0;
-				const tryOtherUrl = () => {
-					// eslint-disable-next-line no-warning-comments
-					// FIXME find a better way
-					/* v8 ignore next 6 */
-					if (!tooManyRetries) {
-						setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
-					}
-
-					tooManyRetries++;
-				};
-
-				const isGoalSet = goalValue[itemIndex] > 0;
-				const isGoalReached = isGoalSet && tierValue[itemIndex] >= goalValue[itemIndex];
-
-				return (
-					<div key={item.name} css={wrapper}>
-						<label data-testid='goal-label' css={label} title='Set target goal. Color will change to green when reached'>
-							<input
-								css={input}
-								max='999'
-								maxLength='3'
-								min='0'
-								step='1'
-								type='number'
-								value={goalValue[itemIndex]}
-								onChange={handleGoalChange(itemIndex)}
-							/>
-							<div css={actions} className='material-symbols-outlined'>pin</div>
-						</label>
-						<button
-							css={button}
-							data-goal={isGoalSet ? goalValue[itemIndex] : undefined}
-							data-testid={`button-tier-${itemIndex}`}
-							style={{backgroundImage: `url(${backgrounds[(item.rarity ?? 1) - 1]})`}}
-							title={isGoalSet && !isGoalReached ? `${goalValue[itemIndex] - tierValue[itemIndex]} ${item.name} remaining` : item.name}
-							type='button'
-							onClick={incrementTier[itemIndex]}
-						>
-							<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
-							<span css={rarity}>
-								{/* eslint-disable-next-line unicorn/no-new-array, react/no-array-index-key */}
-								{new Array(item.rarity ?? 1).fill('').map((_, index) => <span key={index} className='material-symbols-outlined fill'>star</span>)}
-							</span>
-							<b css={isGoalReached ? reachedGoal : undefined} data-testid={`value-tier-${itemIndex}`}>
-								{tierValue[itemIndex]}
-							</b>
-						</button>
-						{itemIndex < items.length - 1 && (
-							<label data-testid={`lock-tier-${itemIndex}`} title='Lock this tier from automatically tallying up to the next'>
-								<input
-									type='checkbox'
-									checked={lockedTier[itemIndex]}
-									onChange={() => setLockTier[itemIndex](!lockedTier[itemIndex])}
-								/>
-								<div css={actions} className={`material-symbols-outlined${lockedTier[itemIndex] ? ' fill' : ''}`}>
-									{lockedTier[itemIndex] ? 'lock' : 'lock_open'}
-								</div>
-							</label>
-						)}
-					</div>
-				);
-			})}
+			{items.map((item, itemIndex) => (
+				<TierItem
+					key={item.name}
+					item={item}
+					itemIndex={itemIndex}
+					goalValue={goalValue[itemIndex]}
+					tierValue={tierValue[itemIndex]}
+					isLocked={lockedTier[itemIndex]}
+					handleGoalChange={handleGoalChange(itemIndex)}
+					incrementTier={incrementTier[itemIndex]}
+					setLockTier={setLockTier[itemIndex]}
+					isLastItem={itemIndex >= items.length - 1}
+				/>
+			))}
 			<button
 				className='material-symbols-outlined'
 				css={[actions, removeButton]}
