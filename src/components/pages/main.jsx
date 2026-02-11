@@ -348,25 +348,48 @@ export default function Main() {
 		// For each group, find the highest rarity item to use as the base
 		const processed = [];
 		for (const items of Object.values(grouped)) {
-			// Sort by rarity descending
-			items.sort((a, b) => b.rarity - a.rarity);
+			// Check if items have different rarities (indicating tiers of same material)
+			const uniqueRarities = new Set(items.map(item => item.rarity));
+			const hasDifferentRarities = uniqueRarities.size > 1;
 
-			const highestTier = items[0];
-			const lowestTier = items.at(-1);
-			const category = findMaterialCategory(highestTier.id);
+			if (hasDifferentRarities) {
+				// Sort by rarity descending
+				items.sort((a, b) => b.rarity - a.rarity);
 
-			if (!category) {
-				continue;
+				const highestTier = items[0];
+				const lowestTier = items.at(-1);
+				const category = findMaterialCategory(highestTier.id);
+
+				if (!category) {
+					continue;
+				}
+
+				processed.push({
+					id: lowestTier.id, // Use lowest tier ID as the canonical key
+					category,
+					tiers: items.map((item, index) => ({
+						tierIndex: items.length - 1 - index, // Reverse: lowest rarity = tier 0
+						count: item.count,
+					})),
+				});
+			} else {
+				// All items have same rarity - treat as separate materials
+				for (const item of items) {
+					const category = findMaterialCategory(item.id);
+					if (!category) {
+						continue;
+					}
+
+					processed.push({
+						id: item.id,
+						category,
+						tiers: [{
+							tierIndex: 0,
+							count: item.count,
+						}],
+					});
+				}
 			}
-
-			processed.push({
-				id: lowestTier.id, // Use lowest tier ID as the canonical key
-				category,
-				tiers: items.map((item, index) => ({
-					tierIndex: items.length - 1 - index, // Reverse: lowest rarity = tier 0
-					count: item.count,
-				})),
-			});
 		}
 
 		return processed;
@@ -439,6 +462,15 @@ export default function Main() {
 		const updated = {...helpers};
 		const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
 
+		// First pass: Clear all preset-driven goals (we'll recalculate them)
+		// Keep track of which items came from presets originally
+		for (const itemId of Object.keys(updated)) {
+			const helper = updated[itemId];
+			// Don't modify manually added items (items without any preset goals)
+			// We'll just update the ones that have preset goals
+		}
+
+		// Second pass: Update goals based on current material totals
 		for (const itemId of Object.keys(updated)) {
 			if (materialTotals[itemId]) {
 				// Update goals for items still in active presets
@@ -449,17 +481,21 @@ export default function Main() {
 					helper[tierFields[i]] = tiers[i] > 0 ? tiers[i] : '';
 				}
 			} else {
-				// Remove if no goals (likely preset-added)
+				// Item is not in any active preset anymore
+				// Remove if it has no progress and all goals are empty (likely preset-only)
 				const helper = updated[itemId];
+				const hasProgress = helper.tierOne || helper.tierTwo || helper.tierThree || helper.tierFour;
 				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal
 					|| helper.tierThreeGoal || helper.tierFourGoal;
-				if (!hasGoals) {
+				
+				// Only remove if it was purely from presets (no manual progress)
+				if (!hasProgress && !hasGoals) {
 					delete updated[itemId];
 				}
 			}
 		}
 
-		// Add new helpers for new materials
+		// Third pass: Add new helpers for new materials
 		for (const [itemId, {category, tiers}] of Object.entries(materialTotals)) {
 			updated[itemId] ||= {
 				category,
