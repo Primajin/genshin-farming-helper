@@ -206,16 +206,22 @@ export default function Main() {
 	};
 
 	// Create the FarmHelper components from the data
-	const farmHelperList = farmHelperData.map(({itemId, config, category}) => (
-		<FarmHelper
-			key={itemId}
-			category={category}
-			config={config}
-			itemId={itemId}
-			materials={materials}
-			onRemove={onRemove}
-		/>
-	));
+	const farmHelperList = farmHelperData.map(({itemId, config, category}) => {
+		// Create a key that includes the goal values to force re-mount when presets change them
+		const goalKey = `${config?.tierOneGoal || ''}-${config?.tierTwoGoal || ''}-${config?.tierThreeGoal || ''}-${config?.tierFourGoal || ''}`;
+		const key = `${itemId}-${goalKey}`;
+
+		return (
+			<FarmHelper
+				key={key}
+				category={category}
+				config={config}
+				itemId={itemId}
+				materials={materials}
+				onRemove={onRemove}
+			/>
+		);
+	});
 
 	/**
 	 * The config array has seven positions

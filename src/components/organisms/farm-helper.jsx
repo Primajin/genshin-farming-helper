@@ -251,23 +251,12 @@ function FarmHelper({
 	const [tierOne, setTierOne] = useState(config.tierOne ?? 0);
 	const [tierOneLock, setTierOneLock] = useState(config.tierOneLock || hasJustOne);
 	const [tierOneGoal, setTierOneGoal] = useState(config.tierOneGoal ?? '');
-
-	// Update state when config props change (e.g., from preset changes)
-	useEffect(() => {
-		setTierOneGoal(config.tierOneGoal ?? '');
-	}, [config.tierOneGoal]);
-
 	const incrementTierOne = () => setTierOne(tierOne + 1);
 
 	// 2
 	const [tierTwo, setTierTwo] = useState(config.tierTwo ?? 0);
 	const [tierTwoLock, setTierTwoLock] = useState(config.tierTwoLock ?? false);
 	const [tierTwoGoal, setTierTwoGoal] = useState(config.tierTwoGoal ?? '');
-
-	useEffect(() => {
-		setTierTwoGoal(config.tierTwoGoal ?? '');
-	}, [config.tierTwoGoal]);
-
 	const incrementTierTwo = () => setTierTwo(tierTwo + 1);
 	useEffect(() => {
 		if (!tierOneLock && tierOne && tierOne / 3 >= 1) {
@@ -282,11 +271,6 @@ function FarmHelper({
 	const [tierThree, setTierThree] = useState(config.tierThree ?? 0);
 	const [tierThreeLock, setTierThreeLock] = useState(config.tierThreeLock ?? false);
 	const [tierThreeGoal, setTierThreeGoal] = useState(config.tierThreeGoal ?? '');
-
-	useEffect(() => {
-		setTierThreeGoal(config.tierThreeGoal ?? '');
-	}, [config.tierThreeGoal]);
-
 	const incrementTierThree = () => setTierThree(tierThree + 1);
 	useEffect(() => {
 		if (!tierTwoLock && tierTwo && tierTwo / 3 >= 1) {
@@ -300,11 +284,6 @@ function FarmHelper({
 	// 4
 	const [tierFour, setTierFour] = useState(config.tierFour ?? 0);
 	const [tierFourGoal, setTierFourGoal] = useState(config.tierFourGoal ?? '');
-
-	useEffect(() => {
-		setTierFourGoal(config.tierFourGoal ?? '');
-	}, [config.tierFourGoal]);
-
 	const incrementTierFour = () => setTierFour(tierFour + 1);
 	const hasTierFour = items.length > 3;
 	useEffect(() => {
@@ -334,6 +313,9 @@ function FarmHelper({
 		}
 	};
 
+	const storageState = storage.load();
+	const savedHelpers = storageState?.helpers ?? {};
+
 	const newConfig = {
 		...config,
 		category,
@@ -349,32 +331,8 @@ function FarmHelper({
 		tierTwoGoal,
 		tierTwoLock,
 	};
-
-	// Save to storage when configuration changes (user interactions)
-	// Use useEffect to avoid saving on every render
-	// Only save if values actually differ from props (user made a change)
-	useEffect(() => {
-		// Check if any value has changed from the config props
-		const hasChanges = tierOne !== (config.tierOne ?? 0)
-			|| tierOneGoal !== (config.tierOneGoal ?? '')
-			|| tierOneLock !== (config.tierOneLock ?? false)
-			|| tierTwo !== (config.tierTwo ?? 0)
-			|| tierTwoGoal !== (config.tierTwoGoal ?? '')
-			|| tierTwoLock !== (config.tierTwoLock ?? false)
-			|| tierThree !== (config.tierThree ?? 0)
-			|| tierThreeGoal !== (config.tierThreeGoal ?? '')
-			|| tierThreeLock !== (config.tierThreeLock ?? false)
-			|| tierFour !== (config.tierFour ?? 0)
-			|| tierFourGoal !== (config.tierFourGoal ?? '');
-
-		// Only save if there are actual user-made changes
-		if (hasChanges) {
-			const storageState = storage.load();
-			const savedHelpers = storageState?.helpers ?? {};
-			const newHelpers = {...savedHelpers, [itemId]: newConfig};
-			storage.save({...storageState, helpers: newHelpers});
-		}
-	}, [itemId, config, category, tierOne, tierOneGoal, tierOneLock, tierTwo, tierTwoGoal, tierTwoLock, tierThree, tierThreeGoal, tierThreeLock, tierFour, tierFourGoal, newConfig]);
+	const newHelpers = {...savedHelpers, [itemId]: newConfig};
+	storage.save({...storageState, helpers: newHelpers});
 
 	// Early return if no items found
 	if (items.length === 0) {
