@@ -42,6 +42,9 @@
     "build": "vite build",
     "coverage": "vitest run --coverage --reporter=junit --outputFile=test-report.junit.xml",
     "deploy": "gh-pages -d build",
+    "e2e": "playwright test",
+    "e2e:headed": "playwright test --headed",
+    "e2e:ui": "playwright test --ui",
     "generate": "node src/scripts/generate-data.js",
     "lint": "xo --config eslint.config.js",
     "lint:fix": "npm run lint -- --fix",
@@ -49,12 +52,14 @@
     "prebuild": "npm run generate",
     "precoverage": "npm run generate",
     "predeploy": "npm run build",
+    "pree2e": "npm run generate",
     "prestart": "npm run generate",
     "pretest": "npm run generate",
     "publish": "npm run deploy",
     "serve": "vite preview",
     "start": "vite",
-    "test": "vitest"
+    "test": "vitest",
+    "test:all": "npm run lint && npm test && npm run e2e"
   },
   "browserslist": [
     ">0.2%",
