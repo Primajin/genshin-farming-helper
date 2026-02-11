@@ -428,92 +428,6 @@ export default function Main() {
 		return presets.fishingRods.find(r => r.id === id);
 	}, []);
 
-	// Helper to aggregate materials from active presets
-	const aggregatePresetMaterials = useCallback(activePresetValues => {
-		const totals = {};
-
-		for (const presetValue of activePresetValues) {
-			const [presetType, presetIdString] = presetValue.split('.');
-			const id = Number.parseInt(presetIdString, 10);
-			const preset = findPreset(presetType, id);
-
-			if (!preset) {
-				continue;
-			}
-
-			const groupedItems = groupPresetItems(preset.items);
-
-			for (const groupedItem of groupedItems) {
-				const itemId = String(groupedItem.id);
-				const {category, tiers} = groupedItem;
-
-				totals[itemId] ||= {
-					category,
-					tiers: {
-						0: 0, 1: 0, 2: 0, 3: 0,
-					},
-				};
-
-				for (const tier of tiers) {
-					totals[itemId].tiers[tier.tierIndex] += tier.count;
-				}
-			}
-		}
-
-		return totals;
-	}, [findPreset, groupPresetItems]);
-
-	// Helper to update helper goals from material totals
-	const updateHelperGoals = useCallback((helpers, materialTotals) => {
-		const updated = {...helpers};
-		const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-
-		// First pass: Update or clear goals based on current material totals
-		for (const itemId of Object.keys(updated)) {
-			if (materialTotals[itemId]) {
-				// Update goals for items still in active presets
-				const {tiers} = materialTotals[itemId];
-				const helper = updated[itemId];
-
-				for (let i = 0; i < 4; i++) {
-					helper[tierFields[i]] = tiers[i] > 0 ? tiers[i] : '';
-				}
-			} else {
-				// Item is not in any active preset anymore
-				// Remove if it has no progress and all goals are empty (likely preset-only)
-				const helper = updated[itemId];
-				const hasProgress = helper.tierOne || helper.tierTwo || helper.tierThree || helper.tierFour;
-				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal
-					|| helper.tierThreeGoal || helper.tierFourGoal;
-
-				// Only remove if it was purely from presets (no manual progress)
-				if (!hasProgress && !hasGoals) {
-					delete updated[itemId];
-				}
-			}
-		}
-
-		// Second pass: Add new helpers for new materials
-		for (const [itemId, {category, tiers}] of Object.entries(materialTotals)) {
-			updated[itemId] ||= {
-				category,
-				tierFour: 0,
-				tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
-				tierOne: 0,
-				tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
-				tierOneLock: false,
-				tierThree: 0,
-				tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
-				tierThreeLock: false,
-				tierTwo: 0,
-				tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
-				tierTwoLock: false,
-			};
-		}
-
-		return updated;
-	}, []);
-
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
 		const [type, presetIdString] = value.split('.');
@@ -525,7 +439,6 @@ export default function Main() {
 		}
 
 		const storageState = storage.load();
-		const savedHelpers = storageState?.helpers ?? {};
 		const savedPresets = storageState?.presets ?? [];
 
 		// Toggle preset active state
@@ -534,19 +447,65 @@ export default function Main() {
 			? savedPresets.filter(p => p !== value)
 			: [...savedPresets, value];
 
-		// Aggregate materials from all active presets
-		const materialTotals = aggregatePresetMaterials(newPresets);
-
-		// Update helpers based on material totals
-		const updatedHelpers = updateHelperGoals(savedHelpers, materialTotals);
-
-		storage.save({...storageState, helpers: updatedHelpers, presets: newPresets});
+		// Save the updated preset list
+		storage.save({...storageState, presets: newPresets});
 		setActivePresets(newPresets);
 
-		// Rebuild the helper list
-		const newHelpers = rebuildHelperList(updatedHelpers);
-		setFarmHelperData(newHelpers);
-	}, [findPreset, aggregatePresetMaterials, updateHelperGoals, rebuildHelperList]);
+		// If activating the preset, add all its materials using the same path as manual selection
+		if (!isCurrentlyActive) {
+			// Group the preset items to handle multi-tier materials
+			const groupedItems = groupPresetItems(preset.items);
+
+			// Add each material using the standard addHelperWithItem flow
+			for (const groupedItem of groupedItems) {
+				const itemId = String(groupedItem.id);
+				const {category, tiers} = groupedItem;
+
+				// Check if this item already exists
+				const storageState = storage.load();
+				const savedHelpers = storageState?.helpers ?? {};
+				const existingHelper = savedHelpers[itemId];
+
+				if (existingHelper) {
+					// Item exists - update goals by adding preset amounts
+					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+					const updatedConfig = {...existingHelper};
+
+					for (const tier of tiers) {
+						const currentGoal = existingHelper[tierFields[tier.tierIndex]] || 0;
+						const newGoal = currentGoal + tier.count;
+						updatedConfig[tierFields[tier.tierIndex]] = newGoal;
+					}
+
+					// Save the updated config
+					const newHelpers = {...savedHelpers, [itemId]: updatedConfig};
+					storage.save({...storageState, helpers: newHelpers});
+
+					// Update the UI by rebuilding helpers
+					const rebuilt = rebuildHelperList(newHelpers);
+					setFarmHelperData(rebuilt);
+				} else {
+					// Item doesn't exist - create new helper with preset goals
+					const config = {
+						category,
+						tierFour: 0,
+						tierFourGoal: tiers.find(t => t.tierIndex === 3)?.count || '',
+						tierOne: 0,
+						tierOneGoal: tiers.find(t => t.tierIndex === 0)?.count || '',
+						tierOneLock: false,
+						tierThree: 0,
+						tierThreeGoal: tiers.find(t => t.tierIndex === 2)?.count || '',
+						tierThreeLock: false,
+						tierTwo: 0,
+						tierTwoGoal: tiers.find(t => t.tierIndex === 1)?.count || '',
+						tierTwoLock: false,
+					};
+
+					addHelperWithItem({itemId, config, category});
+				}
+			}
+		}
+	}, [findPreset, groupPresetItems, addHelperWithItem, rebuildHelperList]);
 
 	useEffect(() => {
 		if (!didRun) {
