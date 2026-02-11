@@ -319,7 +319,7 @@ describe('preset functionality', () => {
 		const axeheadItemId = '131046';
 		let axeheadHelper = storageState.helpers[axeheadItemId];
 		expect(axeheadHelper).toBeDefined();
-		let initialGoal = axeheadHelper.tierOneGoal || axeheadHelper.tierTwoGoal
+		const initialGoal = axeheadHelper.tierOneGoal || axeheadHelper.tierTwoGoal
 			|| axeheadHelper.tierThreeGoal || axeheadHelper.tierFourGoal;
 		expect(initialGoal).toBe(20);
 

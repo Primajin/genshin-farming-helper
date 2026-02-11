@@ -15,7 +15,7 @@ export default defineConfig(() => ({
 		outDir: 'build',
 	},
 	plugins: [
-		...(process.env.NODE_ENV !== 'test' ? [mkcert()] : []),
+		...(process.env.NODE_ENV === 'test' ? [] : [mkcert()]),
 		react(),
 		// CodecovVitePlugin({
 		// 	enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,

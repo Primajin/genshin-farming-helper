@@ -251,23 +251,23 @@ function FarmHelper({
 	const [tierOne, setTierOne] = useState(config.tierOne ?? 0);
 	const [tierOneLock, setTierOneLock] = useState(config.tierOneLock || hasJustOne);
 	const [tierOneGoal, setTierOneGoal] = useState(config.tierOneGoal ?? '');
-	
+
 	// Update state when config props change (e.g., from preset changes)
 	useEffect(() => {
 		setTierOneGoal(config.tierOneGoal ?? '');
 	}, [config.tierOneGoal]);
-	
+
 	const incrementTierOne = () => setTierOne(tierOne + 1);
 
 	// 2
 	const [tierTwo, setTierTwo] = useState(config.tierTwo ?? 0);
 	const [tierTwoLock, setTierTwoLock] = useState(config.tierTwoLock ?? false);
 	const [tierTwoGoal, setTierTwoGoal] = useState(config.tierTwoGoal ?? '');
-	
+
 	useEffect(() => {
 		setTierTwoGoal(config.tierTwoGoal ?? '');
 	}, [config.tierTwoGoal]);
-	
+
 	const incrementTierTwo = () => setTierTwo(tierTwo + 1);
 	useEffect(() => {
 		if (!tierOneLock && tierOne && tierOne / 3 >= 1) {
@@ -282,11 +282,11 @@ function FarmHelper({
 	const [tierThree, setTierThree] = useState(config.tierThree ?? 0);
 	const [tierThreeLock, setTierThreeLock] = useState(config.tierThreeLock ?? false);
 	const [tierThreeGoal, setTierThreeGoal] = useState(config.tierThreeGoal ?? '');
-	
+
 	useEffect(() => {
 		setTierThreeGoal(config.tierThreeGoal ?? '');
 	}, [config.tierThreeGoal]);
-	
+
 	const incrementTierThree = () => setTierThree(tierThree + 1);
 	useEffect(() => {
 		if (!tierTwoLock && tierTwo && tierTwo / 3 >= 1) {
@@ -300,11 +300,11 @@ function FarmHelper({
 	// 4
 	const [tierFour, setTierFour] = useState(config.tierFour ?? 0);
 	const [tierFourGoal, setTierFourGoal] = useState(config.tierFourGoal ?? '');
-	
+
 	useEffect(() => {
 		setTierFourGoal(config.tierFourGoal ?? '');
 	}, [config.tierFourGoal]);
-	
+
 	const incrementTierFour = () => setTierFour(tierFour + 1);
 	const hasTierFour = items.length > 3;
 	useEffect(() => {

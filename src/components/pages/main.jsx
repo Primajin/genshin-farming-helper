@@ -479,7 +479,7 @@ export default function Main() {
 				const hasProgress = helper.tierOne || helper.tierTwo || helper.tierThree || helper.tierFour;
 				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal
 					|| helper.tierThreeGoal || helper.tierFourGoal;
-				
+
 				// Only remove if it was purely from presets (no manual progress)
 				if (!hasProgress && !hasGoals) {
 					delete updated[itemId];
@@ -489,22 +489,20 @@ export default function Main() {
 
 		// Second pass: Add new helpers for new materials
 		for (const [itemId, {category, tiers}] of Object.entries(materialTotals)) {
-			if (!updated[itemId]) {
-				updated[itemId] = {
-					category,
-					tierFour: 0,
-					tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
-					tierOne: 0,
-					tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
-					tierOneLock: false,
-					tierThree: 0,
-					tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
-					tierThreeLock: false,
-					tierTwo: 0,
-					tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
-					tierTwoLock: false,
-				};
-			}
+			updated[itemId] ||= {
+				category,
+				tierFour: 0,
+				tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
+				tierOne: 0,
+				tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
+				tierOneLock: false,
+				tierThree: 0,
+				tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
+				tierThreeLock: false,
+				tierTwo: 0,
+				tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
+				tierTwoLock: false,
+			};
 		}
 
 		return updated;
