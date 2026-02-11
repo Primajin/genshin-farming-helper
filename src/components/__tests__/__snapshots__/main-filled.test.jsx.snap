@@ -1711,12 +1711,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113002"
@@ -1737,12 +1738,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113003"
@@ -1763,12 +1765,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113004"
@@ -1789,12 +1792,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113005"
@@ -1815,12 +1819,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113056"
@@ -1841,12 +1846,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113057"
@@ -1905,12 +1911,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LOCAL.100022"
@@ -2021,12 +2028,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="FISH.131001"
@@ -2047,12 +2055,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="FISH.131002"
@@ -2073,12 +2082,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="FISH.131036"
@@ -2137,12 +2147,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="WOOD.101322"
@@ -3897,12 +3908,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113002"
@@ -3923,12 +3935,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113003"
@@ -3949,12 +3962,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113004"
@@ -3975,12 +3989,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113005"
@@ -4001,12 +4016,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113056"
@@ -4027,12 +4043,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113057"
@@ -4091,12 +4108,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LOCAL.100022"
@@ -4207,12 +4225,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="FISH.131001"
@@ -4233,12 +4252,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="FISH.131002"
@@ -4259,12 +4279,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="FISH.131036"
@@ -4323,12 +4344,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="WOOD.101322"
@@ -6077,12 +6099,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113002"
@@ -6103,12 +6126,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113003"
@@ -6129,12 +6153,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113004"
@@ -6155,12 +6180,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113005"
@@ -6181,12 +6207,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113056"
@@ -6207,12 +6234,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="LEVEL.113057"
@@ -6386,12 +6414,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="FISH.131001"
@@ -6412,12 +6441,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="FISH.131002"
@@ -6438,12 +6468,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="FISH.131036"
@@ -6502,12 +6533,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
+              aria-disabled="true"
               class="css-4wqkks"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
               <input
+                disabled=""
                 name="item"
                 type="radio"
                 value="WOOD.101322"
@@ -8199,12 +8231,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113002"
@@ -8225,12 +8258,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113003"
@@ -8251,12 +8285,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113004"
@@ -8277,12 +8312,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113005"
@@ -8303,12 +8339,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113056"
@@ -8329,12 +8366,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="LEVEL.113057"
@@ -8508,12 +8546,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="FISH.131001"
@@ -8534,12 +8573,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="FISH.131002"
@@ -8560,12 +8600,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="FISH.131036"
@@ -8624,12 +8665,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
+            aria-disabled="true"
             class="css-4wqkks"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
             <input
+              disabled=""
               name="item"
               type="radio"
               value="WOOD.101322"

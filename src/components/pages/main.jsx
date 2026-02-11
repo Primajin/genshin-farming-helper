@@ -250,13 +250,35 @@ export default function Main() {
 
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
-		const newHelpers = {...savedHelpers, [itemId]: config};
+
+		// If item already exists, don't add duplicate
+		if (savedHelpers[itemId]) {
+			return;
+		}
+
+		// Create default config if not provided
+		const defaultConfig = config || {
+			category,
+			tierFour: 0,
+			tierFourGoal: '',
+			tierOne: 0,
+			tierOneGoal: '',
+			tierOneLock: false,
+			tierThree: 0,
+			tierThreeGoal: '',
+			tierThreeLock: false,
+			tierTwo: 0,
+			tierTwoGoal: '',
+			tierTwoLock: false,
+		};
+
+		const newHelpers = {...savedHelpers, [itemId]: defaultConfig};
 		storage.save({...storageState, helpers: newHelpers});
 
 		setFarmHelperData(previousHelpers =>
 			[
 				...previousHelpers,
-				{itemId, config, category},
+				{itemId, config: defaultConfig, category},
 			]);
 	}, []);
 
@@ -428,6 +450,57 @@ export default function Main() {
 		return presets.fishingRods.find(r => r.id === id);
 	}, []);
 
+	// Helper to find if any tier of a material exists in helpers
+	const findExistingHelperForMaterial = (savedHelpers, materialId) => {
+		const materialIdString = String(materialId);
+
+		// First check exact match
+		if (savedHelpers[materialIdString]) {
+			return {itemId: materialIdString, helper: savedHelpers[materialIdString]};
+		}
+
+		// For multi-tier materials, check all tiers
+		// Multi-tier materials have consecutive IDs (e.g., 104101, 104102, 104103, 104104)
+		const material = findMaterial(materialId);
+		if (!material) {
+			return null;
+		}
+
+		const {sortRank} = material;
+		const allMaterials = getAllMaterialsFlat();
+		const sameMaterialTiers = allMaterials.filter(m => m.sortRank === sortRank);
+
+		// Sort by ID to check for consecutive sequences
+		sameMaterialTiers.sort((a, b) => a.id - b.id);
+
+		// Check if IDs are consecutive (indicating tiers of same material)
+		// Tiered materials: 104101, 104102, 104103, 104104 (diff = 1)
+		// Separate items: 131046, 131047, 131048 might not be consecutive or might have gaps
+		const ids = sameMaterialTiers.map(m => m.id);
+		let isConsecutive = true;
+		for (let i = 1; i < ids.length; i++) {
+			if (ids[i] - ids[i - 1] !== 1) {
+				isConsecutive = false;
+				break;
+			}
+		}
+
+		// Only check other tiers if IDs are consecutive (multi-tier material)
+		if (!isConsecutive || ids.length === 1) {
+			return null;
+		}
+
+		// This is a multi-tier material, check all tiers
+		for (const tierMaterial of sameMaterialTiers) {
+			const tierId = String(tierMaterial.id);
+			if (tierId !== materialIdString && savedHelpers[tierId]) {
+				return {itemId: tierId, helper: savedHelpers[tierId]};
+			}
+		}
+
+		return null;
+	};
+
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
 		const [type, presetIdString] = value.split('.');
@@ -461,24 +534,24 @@ export default function Main() {
 				const itemId = String(groupedItem.id);
 				const {category, tiers} = groupedItem;
 
-				// Check if this item already exists
+				// Check if ANY tier of this material already exists
 				const storageState = storage.load();
 				const savedHelpers = storageState?.helpers ?? {};
-				const existingHelper = savedHelpers[itemId];
+				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
-				if (existingHelper) {
+				if (existing) {
 					// Item exists - update goals by adding preset amounts
 					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-					const updatedConfig = {...existingHelper};
+					const updatedConfig = {...existing.helper};
 
 					for (const tier of tiers) {
-						const currentGoal = existingHelper[tierFields[tier.tierIndex]] || 0;
+						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
 						const newGoal = currentGoal + tier.count;
 						updatedConfig[tierFields[tier.tierIndex]] = newGoal;
 					}
 
-					// Save the updated config
-					const newHelpers = {...savedHelpers, [itemId]: updatedConfig};
+					// Save the updated config using the EXISTING itemId
+					const newHelpers = {...savedHelpers, [existing.itemId]: updatedConfig};
 					storage.save({...storageState, helpers: newHelpers});
 
 					// Update the UI by rebuilding helpers
@@ -505,7 +578,7 @@ export default function Main() {
 				}
 			}
 		}
-	}, [findPreset, groupPresetItems, addHelperWithItem, rebuildHelperList]);
+	}, [findPreset, groupPresetItems, addHelperWithItem, rebuildHelperList, findMaterial, getAllMaterialsFlat, findExistingHelperForMaterial]);
 
 	useEffect(() => {
 		if (!didRun) {
@@ -566,7 +639,22 @@ export default function Main() {
 		setFloatGroups(!floatGroups);
 	};
 
-	const disabledKeys = farmHelperData.map(item => item.itemId);
+	const disabledKeys = farmHelperData.flatMap(item => {
+		const {itemId} = item;
+		const material = findMaterial(Number.parseInt(itemId, 10));
+
+		if (!material) {
+			return [itemId];
+		}
+
+		// For multi-tier materials, disable all tiers
+		const {sortRank} = material;
+		const allMaterials = getAllMaterialsFlat();
+		const sameMaterialTiers = allMaterials.filter(m => m.sortRank === sortRank);
+
+		// Return all tier IDs as strings
+		return sameMaterialTiers.map(m => String(m.id));
+	});
 
 	const videoBackground
 		= (
