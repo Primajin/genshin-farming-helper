@@ -524,9 +524,51 @@ export default function Main() {
 		storage.save({...storageState, presets: newPresets});
 		setActivePresets(newPresets);
 
-		// If activating the preset, add all its materials using the same path as manual selection
-		if (!isCurrentlyActive) {
-			// Group the preset items to handle multi-tier materials
+		// Toggle preset: add or subtract goals
+		if (isCurrentlyActive) {
+			// Deactivating preset - subtract goals
+			const groupedItems = groupPresetItems(preset.items);
+
+			for (const groupedItem of groupedItems) {
+				const storageState = storage.load();
+				const savedHelpers = storageState?.helpers ?? {};
+				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
+
+				if (existing) {
+					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+					const updatedConfig = {...existing.helper};
+
+					for (const tier of groupedItem.tiers) {
+						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
+						const newGoal = Math.max(0, currentGoal - tier.count);
+						updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
+					}
+
+					// Check if there's any progress or remaining goals
+					const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
+						|| updatedConfig.tierThree || updatedConfig.tierFour;
+					const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
+						|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
+
+					if (!hasProgress && !hasAnyGoal) {
+						// Remove the helper entirely
+						delete savedHelpers[existing.itemId];
+						storage.save({...storageState, helpers: savedHelpers});
+						setFarmHelperData(previousHelpers =>
+							previousHelpers.filter(h => h.itemId !== existing.itemId));
+					} else {
+						// Update with reduced goals
+						const newHelpers = {...savedHelpers, [existing.itemId]: updatedConfig};
+						storage.save({...storageState, helpers: newHelpers});
+
+						// Update the UI by rebuilding helpers
+						const rebuilt = rebuildHelperList(newHelpers);
+						setFarmHelperData(rebuilt);
+					}
+				}
+			}
+		} else {
+			// Activating preset - add goals
 			const groupedItems = groupPresetItems(preset.items);
 
 			// Add each material using the standard addHelperWithItem flow
@@ -652,8 +694,24 @@ export default function Main() {
 		const allMaterials = getAllMaterialsFlat();
 		const sameMaterialTiers = allMaterials.filter(m => m.sortRank === sortRank);
 
-		// Return all tier IDs as strings
-		return sameMaterialTiers.map(m => String(m.id));
+		// Check if IDs are consecutive (indicating tiers of same material)
+		sameMaterialTiers.sort((a, b) => a.id - b.id);
+		const ids = sameMaterialTiers.map(m => m.id);
+		let isConsecutive = true;
+		for (let i = 1; i < ids.length; i++) {
+			if (ids[i] - ids[i - 1] !== 1) {
+				isConsecutive = false;
+				break;
+			}
+		}
+
+		// Only disable all tiers if IDs are consecutive (multi-tier material)
+		if (isConsecutive && ids.length > 1) {
+			return sameMaterialTiers.map(m => String(m.id));
+		}
+
+		// Otherwise only disable this specific item
+		return [itemId];
 	});
 
 	const videoBackground
