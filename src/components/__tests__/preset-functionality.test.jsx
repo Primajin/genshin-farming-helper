@@ -365,4 +365,58 @@ describe('preset functionality', () => {
 		axeheadHelper = storageState.helpers[axeheadItemId];
 		expect(axeheadHelper).toBeUndefined();
 	});
+
+	test('should toggle preset on and off correctly without creating duplicates', async () => {
+		render(<Main/>);
+
+		const addPresetButton = screen.getByLabelText('Add preset');
+		await act(() => fireEvent.click(addPresetButton));
+
+		const testCharCheckbox = screen.getByLabelText('Test Character');
+
+		// Add preset (first click)
+		await act(() => fireEvent.click(testCharCheckbox));
+
+		let storageState = storage.load();
+		let presetCount = storageState.presets?.filter(p => p === 'character.10000005').length || 0;
+		expect(presetCount).toBe(1);
+
+		let allSections = document.querySelectorAll('section');
+		let helpers = [...allSections].filter(section =>
+			section.querySelector('button[title="Remove item"]'));
+		const helperCountAfterAdd = helpers.length;
+		expect(helperCountAfterAdd).toBeGreaterThan(0);
+
+		// Remove preset (second click - toggle off)
+		await act(() => fireEvent.click(testCharCheckbox));
+
+		storageState = storage.load();
+		presetCount = storageState.presets?.filter(p => p === 'character.10000005').length || 0;
+		expect(presetCount).toBe(0);
+
+		allSections = document.querySelectorAll('section');
+		helpers = [...allSections].filter(section =>
+			section.querySelector('button[title="Remove item"]'));
+		expect(helpers.length).toBe(0);
+
+		// Add preset again (third click - toggle on)
+		await act(() => fireEvent.click(testCharCheckbox));
+
+		storageState = storage.load();
+		presetCount = storageState.presets?.filter(p => p === 'character.10000005').length || 0;
+		expect(presetCount).toBe(1);
+
+		allSections = document.querySelectorAll('section');
+		helpers = [...allSections].filter(section =>
+			section.querySelector('button[title="Remove item"]'));
+		expect(helpers.length).toBe(helperCountAfterAdd);
+
+		// Verify no duplicate helpers were created
+		const helperIds = [...helpers].map(h => {
+			const img = h.querySelector('img');
+			return img?.alt || '';
+		});
+		const uniqueIds = [...new Set(helperIds)];
+		expect(helperIds.length).toBe(uniqueIds.length);
+	});
 });
