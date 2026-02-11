@@ -514,61 +514,30 @@ export default function Main() {
 		const storageState = storage.load();
 		const savedPresets = storageState?.presets ?? [];
 
-		// Toggle preset active state
-		const isCurrentlyActive = savedPresets.includes(value);
-		const newPresets = isCurrentlyActive
-			? savedPresets.filter(p => p !== value)
-			: [...savedPresets, value];
+		// Check if preset is currently active
+		const currentCount = savedPresets.filter(p => p === value).length;
+
+		let newPresets;
+		let isAdding;
+
+		if (currentCount > 0) {
+			// Preset exists - remove one instance
+			const index = savedPresets.indexOf(value);
+			newPresets = [...savedPresets.slice(0, index), ...savedPresets.slice(index + 1)];
+			isAdding = false;
+		} else {
+			// Preset doesn't exist - add it
+			newPresets = [...savedPresets, value];
+			isAdding = true;
+		}
 
 		// Save the updated preset list
 		storage.save({...storageState, presets: newPresets});
 		setActivePresets(newPresets);
 
-		// Toggle preset: add or subtract goals
-		if (isCurrentlyActive) {
-			// Deactivating preset - subtract goals
-			const groupedItems = groupPresetItems(preset.items);
-
-			for (const groupedItem of groupedItems) {
-				const storageState = storage.load();
-				const savedHelpers = storageState?.helpers ?? {};
-				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
-
-				if (existing) {
-					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-					const updatedConfig = {...existing.helper};
-
-					for (const tier of groupedItem.tiers) {
-						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
-						const newGoal = Math.max(0, currentGoal - tier.count);
-						updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
-					}
-
-					// Check if there's any progress or remaining goals
-					const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
-						|| updatedConfig.tierThree || updatedConfig.tierFour;
-					const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
-						|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
-
-					if (!hasProgress && !hasAnyGoal) {
-						// Remove the helper entirely
-						delete savedHelpers[existing.itemId];
-						storage.save({...storageState, helpers: savedHelpers});
-						setFarmHelperData(previousHelpers =>
-							previousHelpers.filter(h => h.itemId !== existing.itemId));
-					} else {
-						// Update with reduced goals
-						const newHelpers = {...savedHelpers, [existing.itemId]: updatedConfig};
-						storage.save({...storageState, helpers: newHelpers});
-
-						// Update the UI by rebuilding helpers
-						const rebuilt = rebuildHelperList(newHelpers);
-						setFarmHelperData(rebuilt);
-					}
-				}
-			}
-		} else {
-			// Activating preset - add goals
+		// Add or subtract goals based on action
+		if (isAdding) {
+			// Adding preset - add goals
 			const groupedItems = groupPresetItems(preset.items);
 
 			// Add each material using the standard addHelperWithItem flow
@@ -617,6 +586,48 @@ export default function Main() {
 					};
 
 					addHelperWithItem({itemId, config, category});
+				}
+			}
+		} else {
+			// Removing preset - subtract goals
+			const groupedItems = groupPresetItems(preset.items);
+
+			for (const groupedItem of groupedItems) {
+				const storageState = storage.load();
+				const savedHelpers = storageState?.helpers ?? {};
+				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
+
+				if (existing) {
+					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+					const updatedConfig = {...existing.helper};
+
+					for (const tier of groupedItem.tiers) {
+						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
+						const newGoal = Math.max(0, currentGoal - tier.count);
+						updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
+					}
+
+					// Check if there's any progress or remaining goals
+					const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
+						|| updatedConfig.tierThree || updatedConfig.tierFour;
+					const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
+						|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
+
+					if (!hasProgress && !hasAnyGoal) {
+						// Remove the helper entirely
+						delete savedHelpers[existing.itemId];
+						storage.save({...storageState, helpers: savedHelpers});
+						setFarmHelperData(previousHelpers =>
+							previousHelpers.filter(h => h.itemId !== existing.itemId));
+					} else {
+						// Update with reduced goals
+						const newHelpers = {...savedHelpers, [existing.itemId]: updatedConfig};
+						storage.save({...storageState, helpers: newHelpers});
+
+						// Update the UI by rebuilding helpers
+						const rebuilt = rebuildHelperList(newHelpers);
+						setFarmHelperData(rebuilt);
+					}
 				}
 			}
 		}
