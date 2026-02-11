@@ -501,49 +501,6 @@ export default function Main() {
 		return null;
 	};
 
-	const onPresetChange = useCallback(event => {
-		const {value} = event.target;
-		const [type, presetIdString] = value.split('.');
-		const presetId = Number.parseInt(presetIdString, 10);
-
-		const preset = findPreset(type, presetId);
-		if (!preset) {
-			return;
-		}
-
-		// Use functional update to avoid race conditions with rapid clicks
-		setActivePresets(currentPresets => {
-			// Check if preset is currently active using current state
-			const currentCount = currentPresets.filter(p => p === value).length;
-
-			let newPresets;
-			let isAdding;
-
-			if (currentCount > 0) {
-				// Preset exists - remove one instance
-				const index = currentPresets.indexOf(value);
-				newPresets = [...currentPresets.slice(0, index), ...currentPresets.slice(index + 1)];
-				isAdding = false;
-			} else {
-				// Preset doesn't exist - add it
-				newPresets = [...currentPresets, value];
-				isAdding = true;
-			}
-
-			// Save the updated preset list to storage
-			const storageState = storage.load();
-			storage.save({...storageState, presets: newPresets});
-
-			// Process the preset change after state update
-			// Use setTimeout to avoid blocking and ensure state is committed
-			setTimeout(() => {
-				processPresetChange(preset, isAdding);
-			}, 0);
-
-			return newPresets;
-		});
-	}, [findPreset]);
-
 	const processPresetChange = useCallback((preset, isAdding) => {
 		// Add or subtract goals based on action
 		if (isAdding) {
@@ -642,6 +599,48 @@ export default function Main() {
 			}
 		}
 	}, [groupPresetItems, addHelperWithItem, rebuildHelperList, findExistingHelperForMaterial]);
+
+	const onPresetChange = useCallback(event => {
+		const {value} = event.target;
+		const [type, presetIdString] = value.split('.');
+		const presetId = Number.parseInt(presetIdString, 10);
+
+		const preset = findPreset(type, presetId);
+		if (!preset) {
+			return;
+		}
+
+		// Load storage once before state update to avoid inconsistency
+		const storageState = storage.load();
+
+		// Use functional update to avoid race conditions with rapid clicks
+		setActivePresets(currentPresets => {
+			// Check if preset is currently active using current state
+			const currentCount = currentPresets.filter(p => p === value).length;
+
+			let newPresets;
+			let isAdding;
+
+			if (currentCount > 0) {
+				// Preset exists - remove one instance
+				const index = currentPresets.indexOf(value);
+				newPresets = [...currentPresets.slice(0, index), ...currentPresets.slice(index + 1)];
+				isAdding = false;
+			} else {
+				// Preset doesn't exist - add it
+				newPresets = [...currentPresets, value];
+				isAdding = true;
+			}
+
+			// Save the updated preset list to storage
+			storage.save({...storageState, presets: newPresets});
+
+			// Process preset change immediately (storage.save is synchronous)
+			processPresetChange(preset, isAdding);
+
+			return newPresets;
+		});
+	}, [findPreset, processPresetChange]);
 
 	useEffect(() => {
 		if (!didRun) {
