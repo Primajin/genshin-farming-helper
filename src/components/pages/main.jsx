@@ -511,30 +511,40 @@ export default function Main() {
 			return;
 		}
 
-		const storageState = storage.load();
-		const savedPresets = storageState?.presets ?? [];
+		// Use functional update to avoid race conditions with rapid clicks
+		setActivePresets(currentPresets => {
+			// Check if preset is currently active using current state
+			const currentCount = currentPresets.filter(p => p === value).length;
 
-		// Check if preset is currently active
-		const currentCount = savedPresets.filter(p => p === value).length;
+			let newPresets;
+			let isAdding;
 
-		let newPresets;
-		let isAdding;
+			if (currentCount > 0) {
+				// Preset exists - remove one instance
+				const index = currentPresets.indexOf(value);
+				newPresets = [...currentPresets.slice(0, index), ...currentPresets.slice(index + 1)];
+				isAdding = false;
+			} else {
+				// Preset doesn't exist - add it
+				newPresets = [...currentPresets, value];
+				isAdding = true;
+			}
 
-		if (currentCount > 0) {
-			// Preset exists - remove one instance
-			const index = savedPresets.indexOf(value);
-			newPresets = [...savedPresets.slice(0, index), ...savedPresets.slice(index + 1)];
-			isAdding = false;
-		} else {
-			// Preset doesn't exist - add it
-			newPresets = [...savedPresets, value];
-			isAdding = true;
-		}
+			// Save the updated preset list to storage
+			const storageState = storage.load();
+			storage.save({...storageState, presets: newPresets});
 
-		// Save the updated preset list
-		storage.save({...storageState, presets: newPresets});
-		setActivePresets(newPresets);
+			// Process the preset change after state update
+			// Use setTimeout to avoid blocking and ensure state is committed
+			setTimeout(() => {
+				processPresetChange(preset, isAdding);
+			}, 0);
 
+			return newPresets;
+		});
+	}, [findPreset]);
+
+	const processPresetChange = useCallback((preset, isAdding) => {
 		// Add or subtract goals based on action
 		if (isAdding) {
 			// Adding preset - add goals
@@ -631,7 +641,7 @@ export default function Main() {
 				}
 			}
 		}
-	}, [findPreset, groupPresetItems, addHelperWithItem, rebuildHelperList, findMaterial, getAllMaterialsFlat, findExistingHelperForMaterial]);
+	}, [groupPresetItems, addHelperWithItem, rebuildHelperList, findExistingHelperForMaterial]);
 
 	useEffect(() => {
 		if (!didRun) {
