@@ -462,15 +462,7 @@ export default function Main() {
 		const updated = {...helpers};
 		const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
 
-		// First pass: Clear all preset-driven goals (we'll recalculate them)
-		// Keep track of which items came from presets originally
-		for (const itemId of Object.keys(updated)) {
-			const helper = updated[itemId];
-			// Don't modify manually added items (items without any preset goals)
-			// We'll just update the ones that have preset goals
-		}
-
-		// Second pass: Update goals based on current material totals
+		// First pass: Update or clear goals based on current material totals
 		for (const itemId of Object.keys(updated)) {
 			if (materialTotals[itemId]) {
 				// Update goals for items still in active presets
@@ -495,22 +487,24 @@ export default function Main() {
 			}
 		}
 
-		// Third pass: Add new helpers for new materials
+		// Second pass: Add new helpers for new materials
 		for (const [itemId, {category, tiers}] of Object.entries(materialTotals)) {
-			updated[itemId] ||= {
-				category,
-				tierFour: 0,
-				tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
-				tierOne: 0,
-				tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
-				tierOneLock: false,
-				tierThree: 0,
-				tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
-				tierThreeLock: false,
-				tierTwo: 0,
-				tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
-				tierTwoLock: false,
-			};
+			if (!updated[itemId]) {
+				updated[itemId] = {
+					category,
+					tierFour: 0,
+					tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
+					tierOne: 0,
+					tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
+					tierOneLock: false,
+					tierThree: 0,
+					tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
+					tierThreeLock: false,
+					tierTwo: 0,
+					tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
+					tierTwoLock: false,
+				};
+			}
 		}
 
 		return updated;

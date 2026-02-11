@@ -391,6 +391,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
               Golden Goblet of the Pristine Sea
             </span>
           </label>
+          <label
+            aria-disabled="false"
+            class="css-4wqkks"
+            data-testid="ItemPicker114017"
+            title="Mist Veiled Lead Elixir"
+          >
+            <input
+              name="item"
+              type="radio"
+              value="WEAPON.114017"
+            />
+            <div
+              style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+            >
+              <img
+                alt="Mist Veiled Lead Elixir"
+                data-testid="image"
+                height="75"
+                src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114017.png"
+                width="75"
+              />
+            </div>
+            <span>
+              Mist Veiled Lead Elixir
+            </span>
+          </label>
           <label />
           <label />
           <label />
@@ -1927,6 +1953,32 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </div>
           <span>
             Golden Goblet of the Pristine Sea
+          </span>
+        </label>
+        <label
+          aria-disabled="false"
+          class="css-4wqkks"
+          data-testid="ItemPicker114017"
+          title="Mist Veiled Lead Elixir"
+        >
+          <input
+            name="item"
+            type="radio"
+            value="WEAPON.114017"
+          />
+          <div
+            style="background-image: url("/src/images/bg/background_Item_4_Star.png");"
+          >
+            <img
+              alt="Mist Veiled Lead Elixir"
+              data-testid="image"
+              height="75"
+              src="https://gi.yatta.moe/assets/UI/UI_ItemIcon_114017.png"
+              width="75"
+            />
+          </div>
+          <span>
+            Mist Veiled Lead Elixir
           </span>
         </label>
         <label />
