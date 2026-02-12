@@ -289,6 +289,18 @@ export default function Main() {
 		addHelperWithItem({itemId, category});
 	};
 
+	// Uncheck all radio buttons when farmHelperData changes
+	// This fixes the issue where removing a helper leaves the radio button checked but enabled
+	// Clicking an already-checked radio doesn't fire onChange, so we need to uncheck them
+	useEffect(() => {
+		const radioButtons = document.querySelectorAll('input[type="radio"][name="item"]');
+		for (const radio of radioButtons) {
+			if (!radio.disabled) {
+				radio.checked = false;
+			}
+		}
+	}, [farmHelperData]);
+
 	// Helper to get all materials as a flat array
 	const getAllMaterialsFlat = () => [
 		...materials.buildingMaterials,
@@ -623,11 +635,20 @@ export default function Main() {
 			const storageState = storage.load();
 			storage.save({...storageState, presets: newPresets});
 
-			// Process the preset change (add or remove helpers)
-			processPresetChange(preset, !isActive); // IsAdding = !isActive
-
 			return newPresets;
 		});
+
+		// Process the preset change AFTER state update completes
+		// Use setTimeout to ensure React has finished batching state updates
+		setTimeout(() => {
+			const storageState = storage.load();
+			const currentPresets = storageState?.presets ?? [];
+			const isActive = currentPresets.includes(value);
+
+			// Call processPresetChange with the correct isAdding parameter
+			// isAdding should be true if preset is NOW active (was just added)
+			processPresetChange(preset, isActive);
+		}, 0);
 	}, [findPreset, processPresetChange]);
 
 	useEffect(() => {
