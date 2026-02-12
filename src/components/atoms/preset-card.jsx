@@ -16,10 +16,13 @@ const wrapper = css`
 		height: 75px;
 		margin-bottom: 5px;
 		width: 75px;
+		border: 2px solid transparent;
+		transition: border-color 0.2s ease;
 	}
 
 	input:checked + div {
-		opacity: .5;
+		border-color: #4CAF50; /* Green border for active presets */
+		box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 	}
 `;
 

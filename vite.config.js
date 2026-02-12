@@ -39,7 +39,7 @@ export default defineConfig(() => ({
 		},
 	},
 	server: {
-		https: process.env.NODE_ENV === 'test' ? false : true,
+		https: process.env.NODE_ENV !== 'test',
 		port: 3000,
 		fs: {
 			allow: [searchForWorkspaceRoot(process.cwd()), __dirname],
