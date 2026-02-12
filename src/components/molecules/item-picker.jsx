@@ -22,7 +22,6 @@ const wrapper = css`
 		width: 75px;
 	}
 
-	input:checked + div,
 	input:disabled + div {
 		opacity: .5;
 	}
