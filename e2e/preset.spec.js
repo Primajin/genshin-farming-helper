@@ -287,7 +287,7 @@ test.describe('Preset Functionality', () => {
 		const removeCount = await removeButtons.count();
 
 		// Remove all helpers by clicking them sequentially
-		// eslint-disable-next-line no-await-in-loop
+
 		for (let i = 0; i < removeCount; i++) {
 			// Always click the first one as the list updates
 			// eslint-disable-next-line no-await-in-loop
