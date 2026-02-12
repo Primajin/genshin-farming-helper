@@ -502,6 +502,11 @@ export default function Main() {
 	};
 
 	const processPresetChange = useCallback((preset, isAdding) => {
+		// Load storage ONCE at the start to avoid race conditions
+		const storageState = storage.load();
+		const savedHelpers = storageState?.helpers ? {...storageState.helpers} : {};
+		let helpersModified = false;
+
 		// Add or subtract goals based on action
 		if (isAdding) {
 			// Adding preset - add goals
@@ -513,8 +518,6 @@ export default function Main() {
 				const {category, tiers} = groupedItem;
 
 				// Check if ANY tier of this material already exists
-				const storageState = storage.load();
-				const savedHelpers = storageState?.helpers ?? {};
 				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
 				if (existing) {
@@ -529,12 +532,8 @@ export default function Main() {
 					}
 
 					// Save the updated config using the EXISTING itemId
-					const newHelpers = {...savedHelpers, [existing.itemId]: updatedConfig};
-					storage.save({...storageState, helpers: newHelpers});
-
-					// Update the UI by rebuilding helpers
-					const rebuilt = rebuildHelperList(newHelpers);
-					setFarmHelperData(rebuilt);
+					savedHelpers[existing.itemId] = updatedConfig;
+					helpersModified = true;
 				} else {
 					// Item doesn't exist - create new helper with preset goals
 					const config = {
@@ -552,7 +551,8 @@ export default function Main() {
 						tierTwoLock: false,
 					};
 
-					addHelperWithItem({itemId, config, category});
+					savedHelpers[itemId] = config;
+					helpersModified = true;
 				}
 			}
 		} else {
@@ -560,8 +560,6 @@ export default function Main() {
 			const groupedItems = groupPresetItems(preset.items);
 
 			for (const groupedItem of groupedItems) {
-				const storageState = storage.load();
-				const savedHelpers = storageState?.helpers ?? {};
 				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
 				if (existing) {
@@ -583,22 +581,23 @@ export default function Main() {
 					if (!hasProgress && !hasAnyGoal) {
 						// Remove the helper entirely
 						delete savedHelpers[existing.itemId];
-						storage.save({...storageState, helpers: savedHelpers});
-						setFarmHelperData(previousHelpers =>
-							previousHelpers.filter(h => h.itemId !== existing.itemId));
+						helpersModified = true;
 					} else {
 						// Update with reduced goals
-						const newHelpers = {...savedHelpers, [existing.itemId]: updatedConfig};
-						storage.save({...storageState, helpers: newHelpers});
-
-						// Update the UI by rebuilding helpers
-						const rebuilt = rebuildHelperList(newHelpers);
-						setFarmHelperData(rebuilt);
+						savedHelpers[existing.itemId] = updatedConfig;
+						helpersModified = true;
 					}
 				}
 			}
 		}
-	}, [groupPresetItems, addHelperWithItem, rebuildHelperList, findExistingHelperForMaterial]);
+
+		// Save all changes at once and rebuild helpers list
+		if (helpersModified) {
+			storage.save({...storageState, helpers: savedHelpers});
+			const rebuilt = rebuildHelperList(savedHelpers);
+			setFarmHelperData(rebuilt);
+		}
+	}, [groupPresetItems, rebuildHelperList, findExistingHelperForMaterial]);
 
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
