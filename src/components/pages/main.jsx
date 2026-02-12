@@ -621,33 +621,29 @@ export default function Main() {
 			return;
 		}
 
-		// Use functional update to avoid race conditions with rapid clicks
-		setActivePresets(currentPresets => {
-			// Check if preset is currently active using current state
-			const isActive = currentPresets.includes(value);
+		// Determine the action BEFORE state update
+		const storageState = storage.load();
+		const currentPresets = storageState?.presets ?? [];
+		const wasActive = currentPresets.includes(value);
+		const willBeActive = !wasActive;
 
+		// Update active presets state
+		setActivePresets(currentPresets => {
 			// Toggle the preset: remove if active, add if not active
-			const newPresets = isActive
+			const newPresets = wasActive
 				? currentPresets.filter(p => p !== value) // Remove
 				: [...currentPresets, value]; // Add
 
 			// Save the updated preset list to storage
-			const storageState = storage.load();
 			storage.save({...storageState, presets: newPresets});
 
 			return newPresets;
 		});
 
-		// Process the preset change AFTER state update completes
-		// Use setTimeout to ensure React has finished batching state updates
+		// Process the preset change with the known state
+		// Use setTimeout to ensure React finishes the render cycle
 		setTimeout(() => {
-			const storageState = storage.load();
-			const currentPresets = storageState?.presets ?? [];
-			const isActive = currentPresets.includes(value);
-
-			// Call processPresetChange with the correct isAdding parameter
-			// isAdding should be true if preset is NOW active (was just added)
-			processPresetChange(preset, isActive);
+			processPresetChange(preset, willBeActive);
 		}, 0);
 	}, [findPreset, processPresetChange]);
 
