@@ -52,7 +52,6 @@ This is the trust I have placed in them. Betray it, and you taint my blood."`,ca
 		width: 75px;
 	}
 
-	input:checked + div,
 	input:disabled + div {
 		opacity: .5;
 	}
