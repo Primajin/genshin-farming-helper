@@ -1,6 +1,8 @@
 /* global window, document */
 /** @jsxImportSource @emotion/react */
-import {useCallback, useEffect, useState} from 'react';
+import {
+	useCallback, useEffect, useRef, useState,
+} from 'react';
 import {Global, css} from '@emotion/react';
 import materials from 'data';
 import materialsRare from 'data-rare';
@@ -9,6 +11,7 @@ import storage from 'utils/local-storage.js';
 import theme from 'theme/index.js';
 import {breakpoints, up} from 'utils/theming.js';
 import {fullscreenElement, toggleFullscreen} from 'utils/fullscreen.js';
+import {getConsecutiveTierIds} from 'utils/materials.js';
 import {releaseWakeLock, requestWakeLock} from 'utils/wake-lock.js';
 import ItemCategories from 'components/organisms/item-categories.jsx';
 import PresetModal from 'components/organisms/preset-modal.jsx';
@@ -63,7 +66,13 @@ const globalStyles = css`
 	}
 
 	input {
-		display: none;
+		clip: rect(0, 0, 0, 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
 	}
 
 	main {
@@ -78,11 +87,11 @@ const globalStyles = css`
 
 		${up('sm')} {
 			max-width: 90%;
-		};
+		}
 
 		${up('xl')} {
 			max-width: ${breakpoints.get('xl')}px;
-		};
+		}
 
 		section {
 			margin-top: 20px;
@@ -135,7 +144,7 @@ const helperList = css`
 
 		${up('md')} {
 			justify-content: space-between;
-		};
+		}
 `;
 
 const fab = css`
@@ -145,7 +154,7 @@ const fab = css`
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background: linear-gradient(135deg, ${theme.fab.start} 0%, ${theme.fab.end} 100%);
 	color: white;
 	border: none;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -168,7 +177,6 @@ const fab = css`
 	}
 `;
 
-let didRun = false;
 const {actions} = theme;
 
 // Helper function to create initial farm helpers from storage
@@ -190,6 +198,7 @@ function createInitialFarmHelpers() {
 }
 
 export default function Main() {
+	const didRun = useRef(false);
 	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
 	const [activePresets, setActivePresets] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
@@ -225,17 +234,9 @@ export default function Main() {
 				}
 
 				// Check multi-tier match (preset item might be a different tier of the same material)
-				const {sortRank} = material;
-				const allMaterials = getAllMaterialsFlat();
-				const sameTiers = allMaterials.filter(m => m.sortRank === sortRank);
-				sameTiers.sort((a, b) => a.id - b.id);
-				const ids = sameTiers.map(m => m.id);
-				const isConsecutive = ids.length > 1 && ids.every((id, i) => i === 0 || id === ids[i - 1] + 1);
-
-				if (isConsecutive) {
-					// The lowest tier ID is used as the helper key
-					const lowestId = String(ids[0]);
-					return lowestId === itemId;
+				const tierIds = getConsecutiveTierIds(item.id, getAllMaterialsFlat());
+				if (tierIds.length > 1) {
+					return String(tierIds[0]) === itemId;
 				}
 
 				return false;
@@ -324,24 +325,15 @@ export default function Main() {
 			]);
 	}, []);
 
+	/** Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal. */
 	const onChange = event => {
 		const itemName = event.target.value;
 		const category = itemName.split('.')[0];
 		const itemId = itemName.split('.')[1];
+		// Uncheck immediately so the same radio can be re-selected if the helper is later removed
+		event.target.checked = false;
 		addHelperWithItem({itemId, category});
 	};
-
-	// Uncheck all radio buttons when farmHelperData changes
-	// This fixes the issue where removing a helper leaves the radio button checked but enabled
-	// Clicking an already-checked radio doesn't fire onChange, so we need to uncheck them
-	useEffect(() => {
-		const radioButtons = document.querySelectorAll('input[type="radio"][name="item"]');
-		for (const radio of radioButtons) {
-			if (!radio.disabled) {
-				radio.checked = false;
-			}
-		}
-	}, [farmHelperData]);
 
 	// Helper to get all materials as a flat array
 	const getAllMaterialsFlat = () => [
@@ -477,7 +469,7 @@ export default function Main() {
 		return processed;
 	};
 
-	// Helper to rebuild the helper list from storage
+	/** Convert the helpers object from storage into the array format used by React state. */
 	const rebuildHelperList = useCallback(savedHelpers => {
 		const newHelpers = [];
 		for (const [itemId, config] of Object.entries(savedHelpers)) {
@@ -520,42 +512,24 @@ export default function Main() {
 			return null;
 		}
 
-		const {sortRank} = material;
-		const allMaterials = getAllMaterialsFlat();
-		const sameMaterialTiers = allMaterials.filter(m => m.sortRank === sortRank);
+		const tierIds = getConsecutiveTierIds(materialId, getAllMaterialsFlat());
 
-		// Sort by ID to check for consecutive sequences
-		sameMaterialTiers.sort((a, b) => a.id - b.id);
-
-		// Check if IDs are consecutive (indicating tiers of same material)
-		// Tiered materials: 104101, 104102, 104103, 104104 (diff = 1)
-		// Separate items: 131046, 131047, 131048 might not be consecutive or might have gaps
-		const ids = sameMaterialTiers.map(m => m.id);
-		let isConsecutive = true;
-		for (let i = 1; i < ids.length; i++) {
-			if (ids[i] - ids[i - 1] !== 1) {
-				isConsecutive = false;
-				break;
-			}
-		}
-
-		// Only check other tiers if IDs are consecutive (multi-tier material)
-		if (!isConsecutive || ids.length === 1) {
+		// Only check other tiers if this is a multi-tier material
+		if (tierIds.length <= 1) {
 			return null;
 		}
 
-		// This is a multi-tier material, check all tiers
-		for (const tierMaterial of sameMaterialTiers) {
-			const tierId = String(tierMaterial.id);
-			if (tierId !== materialIdString && savedHelpers[tierId]) {
-				return {itemId: tierId, helper: savedHelpers[tierId]};
+		for (const tierId of tierIds) {
+			const tierIdString = String(tierId);
+			if (tierIdString !== materialIdString && savedHelpers[tierIdString]) {
+				return {itemId: tierIdString, helper: savedHelpers[tierIdString]};
 			}
 		}
 
 		return null;
 	};
 
-	// Process preset items by modifying savedHelpers in place. Returns true if modified.
+	/** Add or remove a preset's materials from the helpers object (mutates `savedHelpers` in place). */
 	const applyPresetToHelpers = useCallback((preset, isAdding, savedHelpers) => {
 		const groupedItems = groupPresetItems(preset.items);
 		let helpersModified = false;
@@ -628,6 +602,7 @@ export default function Main() {
 		return helpersModified;
 	}, [groupPresetItems, findExistingHelperForMaterial]);
 
+	/** Toggle a preset on/off. Loads storage once, computes all changes, then saves atomically. */
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
 		const [type, presetIdString] = value.split('.');
@@ -662,8 +637,8 @@ export default function Main() {
 	}, [findPreset, applyPresetToHelpers, rebuildHelperList]);
 
 	useEffect(() => {
-		if (!didRun) {
-			didRun = true;
+		if (!didRun.current) {
+			didRun.current = true;
 			const storageState = storage.load();
 			const savedHelpers = storageState?.helpers;
 			const savedPresets = storageState?.presets ?? [];
@@ -720,37 +695,9 @@ export default function Main() {
 		setFloatGroups(!floatGroups);
 	};
 
-	const disabledKeys = farmHelperData.flatMap(item => {
-		const {itemId} = item;
-		const material = findMaterial(Number.parseInt(itemId, 10));
-
-		if (!material) {
-			return [itemId];
-		}
-
-		// For multi-tier materials, disable all tiers
-		const {sortRank} = material;
-		const allMaterials = getAllMaterialsFlat();
-		const sameMaterialTiers = allMaterials.filter(m => m.sortRank === sortRank);
-
-		// Check if IDs are consecutive (indicating tiers of same material)
-		sameMaterialTiers.sort((a, b) => a.id - b.id);
-		const ids = sameMaterialTiers.map(m => m.id);
-		let isConsecutive = true;
-		for (let i = 1; i < ids.length; i++) {
-			if (ids[i] - ids[i - 1] !== 1) {
-				isConsecutive = false;
-				break;
-			}
-		}
-
-		// Only disable all tiers if IDs are consecutive (multi-tier material)
-		if (isConsecutive && ids.length > 1) {
-			return sameMaterialTiers.map(m => String(m.id));
-		}
-
-		// Otherwise only disable this specific item
-		return [itemId];
+	const disabledKeys = farmHelperData.flatMap(({itemId}) => {
+		const tierIds = getConsecutiveTierIds(Number.parseInt(itemId, 10), getAllMaterialsFlat());
+		return tierIds.map(String);
 	});
 
 	const videoBackground
@@ -767,6 +714,7 @@ export default function Main() {
 			className='material-symbols-outlined'
 			css={[actions, toggleFloat]}
 			title={floatGroups ? 'Click to stack items' : 'Click to float items'}
+			aria-label={floatGroups ? 'Stack items' : 'Float items'}
 			type='button'
 			onClick={handleFloatChange}
 		>
@@ -784,6 +732,7 @@ export default function Main() {
 						className='material-symbols-outlined'
 						css={[actions, metaKeys, toggleWakeLock]}
 						title={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
+						aria-label={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
 						type='button'
 						onClick={handleWakeLock}
 					>
@@ -794,6 +743,7 @@ export default function Main() {
 					className='material-symbols-outlined'
 					css={[actions, metaKeys, toggleFullScreen]}
 					title={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
+					aria-label={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
 					type='button'
 					onClick={handleFullscreen}
 				>

@@ -25,6 +25,26 @@ describe('local-storage', () => {
 			vi.spyOn(prototypeOfLocalStorage, 'getItem').mockReturnValue(JSON.stringify(mockValue));
 			expect(storage.load()).toEqual(mockValue);
 		});
+
+		test('should return null when localStorage contains corrupted JSON', () => {
+			vi.spyOn(urlUtils, 'isPRPreview').mockReturnValue(false);
+			vi.spyOn(prototypeOfLocalStorage, 'getItem').mockReturnValue('{invalid json!!!');
+			expect(storage.load()).toBeNull();
+		});
+
+		test('should return null when getItem throws', () => {
+			vi.spyOn(urlUtils, 'isPRPreview').mockReturnValue(false);
+			vi.spyOn(prototypeOfLocalStorage, 'getItem').mockImplementation(() => {
+				throw new Error('SecurityError');
+			});
+			expect(storage.load()).toBeNull();
+		});
+
+		test('should return null when localStorage is empty', () => {
+			vi.spyOn(urlUtils, 'isPRPreview').mockReturnValue(false);
+			vi.spyOn(prototypeOfLocalStorage, 'getItem').mockReturnValue(null);
+			expect(storage.load()).toBeNull();
+		});
 	});
 
 	describe('storage.save', () => {
@@ -33,6 +53,13 @@ describe('local-storage', () => {
 			const setItemSpy = vi.spyOn(prototypeOfLocalStorage, 'setItem');
 			storage.save(mockValue);
 			expect(setItemSpy).toHaveBeenCalledWith('genshin-farming-helper', JSON.stringify(mockValue));
+		});
+
+		test('should not throw on QuotaExceededError', () => {
+			vi.spyOn(prototypeOfLocalStorage, 'setItem').mockImplementation(() => {
+				throw new DOMException('quota exceeded', 'QuotaExceededError');
+			});
+			expect(() => storage.save({large: 'data'})).not.toThrow();
 		});
 	});
 });

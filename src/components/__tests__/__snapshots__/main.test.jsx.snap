@@ -23,6 +23,7 @@ exports[`main > renders without crashing 1`] = `
       </div>
       <main>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -767,6 +768,7 @@ exports[`main > renders without crashing 1`] = `
     </div>
     <main>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -1552,6 +1554,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -1559,6 +1562,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -1566,6 +1570,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           fullscreen
         </button>
         <button
+          aria-label="Float items"
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
@@ -1792,7 +1797,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -2527,6 +2532,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -2534,6 +2540,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -2541,6 +2548,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
         fullscreen
       </button>
       <button
+        aria-label="Float items"
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
@@ -2767,7 +2775,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -3559,6 +3567,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -3566,6 +3575,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -3573,6 +3583,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           fullscreen
         </button>
         <button
+          aria-label="Stack items"
           class="material-symbols-outlined css-y9b2se"
           title="Click to stack items"
           type="button"
@@ -3580,7 +3591,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           full_stacked_bar_chart
         </button>
         <div
-          class="css-10y4p1y"
+          class="css-1anhihu"
         >
           <section>
             <div
@@ -3799,7 +3810,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -4534,6 +4545,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -4541,6 +4553,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -4548,6 +4561,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         fullscreen
       </button>
       <button
+        aria-label="Stack items"
         class="material-symbols-outlined css-y9b2se"
         title="Click to stack items"
         type="button"
@@ -4555,7 +4569,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         full_stacked_bar_chart
       </button>
       <div
-        class="css-10y4p1y"
+        class="css-1anhihu"
       >
         <section>
           <div
@@ -4774,7 +4788,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -5566,6 +5580,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -5573,6 +5588,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -5580,6 +5596,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           fullscreen
         </button>
         <button
+          aria-label="Float items"
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
@@ -5806,7 +5823,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -6541,6 +6558,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -6548,6 +6566,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -6555,6 +6574,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
         fullscreen
       </button>
       <button
+        aria-label="Float items"
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
@@ -6781,7 +6801,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -7573,6 +7593,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -7580,6 +7601,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -8308,6 +8330,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -8315,6 +8338,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -9100,6 +9124,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -9107,6 +9132,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Exit fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Exit fullscreen"
           type="button"
@@ -9835,6 +9861,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -9842,6 +9869,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Exit fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Exit fullscreen"
         type="button"
@@ -10627,6 +10655,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -10634,6 +10663,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Exit fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Exit fullscreen"
           type="button"
@@ -11362,6 +11392,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -11369,6 +11400,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Exit fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Exit fullscreen"
         type="button"
@@ -12154,6 +12186,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
     <div>
       <main>
         <button
+          aria-label="Allow screen to sleep"
           class="material-symbols-outlined css-1if2dfw"
           title="Allow screen to sleep"
           type="button"
@@ -12161,6 +12194,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           bedtime
         </button>
         <button
+          aria-label="Exit fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Exit fullscreen"
           type="button"
@@ -12889,6 +12923,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Allow screen to sleep"
         class="material-symbols-outlined css-1if2dfw"
         title="Allow screen to sleep"
         type="button"
@@ -12896,6 +12931,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
         bedtime
       </button>
       <button
+        aria-label="Exit fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Exit fullscreen"
         type="button"
@@ -13681,6 +13717,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
     <div>
       <main>
         <button
+          aria-label="Keep screen awake"
           class="material-symbols-outlined css-1if2dfw"
           title="Keep screen awake"
           type="button"
@@ -13688,6 +13725,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           bedtime_off
         </button>
         <button
+          aria-label="Exit fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Exit fullscreen"
           type="button"
@@ -14416,6 +14454,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
   "container": <div>
     <main>
       <button
+        aria-label="Keep screen awake"
         class="material-symbols-outlined css-1if2dfw"
         title="Keep screen awake"
         type="button"
@@ -14423,6 +14462,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
         bedtime_off
       </button>
       <button
+        aria-label="Exit fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Exit fullscreen"
         type="button"

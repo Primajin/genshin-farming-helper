@@ -23,6 +23,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
       </div>
       <main>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -30,6 +31,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           fullscreen
         </button>
         <button
+          aria-label="Float items"
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
@@ -95,7 +97,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -157,7 +159,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -219,7 +221,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -531,7 +533,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -756,7 +758,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -966,7 +968,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -1043,7 +1045,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -1356,7 +1358,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -1428,7 +1430,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -2195,6 +2197,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
     </div>
     <main>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -2202,6 +2205,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         fullscreen
       </button>
       <button
+        aria-label="Float items"
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
@@ -2267,7 +2271,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -2329,7 +2333,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -2391,7 +2395,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -2703,7 +2707,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -2928,7 +2932,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -3138,7 +3142,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -3215,7 +3219,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -3528,7 +3532,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -3600,7 +3604,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -4424,6 +4428,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
       </div>
       <main>
         <button
+          aria-label="Make fullscreen"
           class="material-symbols-outlined css-cjlyyg"
           title="Make fullscreen"
           type="button"
@@ -4431,6 +4436,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           fullscreen
         </button>
         <button
+          aria-label="Float items"
           class="material-symbols-outlined css-y9b2se"
           title="Click to float items"
           type="button"
@@ -4495,7 +4501,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -4557,7 +4563,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -4869,7 +4875,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -5094,7 +5100,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -5304,7 +5310,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -5381,7 +5387,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -5694,7 +5700,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -5766,7 +5772,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </button>
             </div>
             <button
-              class="material-symbols-outlined css-1puj7t"
+              class="material-symbols-outlined css-1q5momp"
               title="Remove item"
               type="button"
             >
@@ -6529,6 +6535,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
     </div>
     <main>
       <button
+        aria-label="Make fullscreen"
         class="material-symbols-outlined css-cjlyyg"
         title="Make fullscreen"
         type="button"
@@ -6536,6 +6543,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         fullscreen
       </button>
       <button
+        aria-label="Float items"
         class="material-symbols-outlined css-y9b2se"
         title="Click to float items"
         type="button"
@@ -6600,7 +6608,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -6662,7 +6670,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -6974,7 +6982,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -7199,7 +7207,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -7409,7 +7417,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -7486,7 +7494,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -7799,7 +7807,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >
@@ -7871,7 +7879,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </button>
           </div>
           <button
-            class="material-symbols-outlined css-1puj7t"
+            class="material-symbols-outlined css-1q5momp"
             title="Remove item"
             type="button"
           >

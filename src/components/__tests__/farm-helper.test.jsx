@@ -299,6 +299,11 @@ describe('farmHelper', () => {
 		}
 	});
 
+	test('renders nothing when itemId does not match any material', () => {
+		const {container} = render(<FarmHelper category={ASCENSION} config={config} itemId='999999' materials={materials} onRemove={globalMockRemove}/>);
+		expect(container.querySelector('section')).toBeNull();
+	});
+
 	test('calls remove correctly when button is clicked', () => {
 		const mockRemove = vi.fn();
 		const {id} = materialMap.get(ASCENSION);

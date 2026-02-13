@@ -29,7 +29,7 @@ const tabButton = css`
 	
 	&.active {
 		background: ${theme.primary};
-		border-bottom-color: #ffcc00;
+		border-bottom-color: ${theme.accent};
 	}
 `;
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
 import {useRef, useState} from 'react';
 import {backgrounds, IMG_URL, IMG_URL2} from 'constants/index.js';
+import theme from 'theme';
 
 const wrapper = css`
 	cursor: pointer;
@@ -23,7 +24,7 @@ const wrapper = css`
 	}
 
 	input[type="checkbox"]:checked + div {
-		box-shadow: inset 0 0 0 2px #4CAF50, 0 0 8px rgba(76, 175, 80, 0.5);
+		box-shadow: inset 0 0 0 2px ${theme.success}, 0 0 8px rgba(76, 175, 80, 0.5);
 	}
 `;
 

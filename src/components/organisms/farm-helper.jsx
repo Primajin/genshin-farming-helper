@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import PropTypes from 'prop-types';
 import {css} from '@emotion/react';
-import {useEffect, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import storage from 'utils/local-storage.js';
 import theme from 'theme';
 import {
@@ -10,7 +10,7 @@ import {
 import {helpersType, materialsType} from 'types';
 import {up} from 'utils/theming.js';
 
-const {actions, primary} = theme;
+const {actions, goalBadge, primary, star, successDark, text} = theme;
 
 const wrapper = css`
 	display: inline-block;
@@ -48,7 +48,7 @@ const button = css`
 	background-size: contain;
 	border-radius: 7px;
 	border: 0 solid transparent;
-	color: #4a5566;
+	color: ${text};
 	cursor: pointer;
 	height: 95px;
 	padding: 0;
@@ -69,9 +69,9 @@ const button = css`
 
 	&[data-goal] {
 		&::before {
-			background: #c2fd5e;
+			background: ${goalBadge.background};
 			border-radius: 0 7px 0 7px;
-			color: #343432;
+			color: ${goalBadge.text};
 			content: attr(data-goal);
 			font-weight: bold;
 			min-width: 20px;
@@ -93,7 +93,7 @@ const button = css`
 
 const rarity = css`
 	bottom: 12px;
-	color: #fdc950;
+	color: ${star};
 	left: 50%;
 	position: absolute;
 	text-shadow: 0 0 3px rgba(50, 0, 0, 0.65);
@@ -114,11 +114,11 @@ const removeButton = css`
 
 	${up('md')} {
 		margin-left: 10px;
-	};
+	}
 `;
 
 const reachedGoal = css`
-	color: #347d39;
+	color: ${successDark};
 `;
 
 const defaultConfig = {};
@@ -136,15 +136,14 @@ function TierItem({
 	isLastItem,
 }) {
 	const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
+	const hasRetried = useRef(false);
 
-	let tooManyRetries = 0;
 	const tryOtherUrl = () => {
 		/* V8 ignore next 3 */
-		if (!tooManyRetries) {
+		if (!hasRetried.current) {
+			hasRetried.current = true;
 			setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
 		}
-
-		tooManyRetries++;
 	};
 
 	const isGoalSet = goalValue > 0;
