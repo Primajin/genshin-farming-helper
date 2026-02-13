@@ -68,8 +68,8 @@ describe('Manual helper removal', () => {
 			fireEvent.click(itemSelector);
 		});
 
-		// Button should now be disabled (checked)
-		expect(itemSelector.checked).toBe(true);
+		// Button should now be disabled (added to helpers)
+		expect(itemSelector.disabled).toBe(true);
 
 		// Verify helper was added to storage
 		let storageState = storage.load();
