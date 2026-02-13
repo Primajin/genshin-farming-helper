@@ -43,8 +43,7 @@ exports[`main > renders without crashing 1`] = `
               Character Talent
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -69,8 +68,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -107,8 +105,7 @@ exports[`main > renders without crashing 1`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -133,8 +130,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -170,8 +166,7 @@ exports[`main > renders without crashing 1`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -196,8 +191,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -233,8 +227,7 @@ exports[`main > renders without crashing 1`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -270,8 +263,7 @@ exports[`main > renders without crashing 1`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -296,8 +288,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -322,8 +313,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -348,8 +338,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -374,8 +363,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -400,8 +388,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -426,8 +413,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -463,8 +449,7 @@ exports[`main > renders without crashing 1`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -489,8 +474,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -515,8 +499,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -541,8 +524,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -578,8 +560,7 @@ exports[`main > renders without crashing 1`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -604,8 +585,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -630,8 +610,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -656,8 +635,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -693,8 +671,7 @@ exports[`main > renders without crashing 1`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -719,8 +696,7 @@ exports[`main > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -811,8 +787,7 @@ exports[`main > renders without crashing 1`] = `
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -837,8 +812,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -875,8 +849,7 @@ exports[`main > renders without crashing 1`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -901,8 +874,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -938,8 +910,7 @@ exports[`main > renders without crashing 1`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -964,8 +935,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -1001,8 +971,7 @@ exports[`main > renders without crashing 1`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -1038,8 +1007,7 @@ exports[`main > renders without crashing 1`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -1064,8 +1032,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -1090,8 +1057,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -1116,8 +1082,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -1142,8 +1107,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -1168,8 +1132,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -1194,8 +1157,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -1231,8 +1193,7 @@ exports[`main > renders without crashing 1`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -1257,8 +1218,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -1283,8 +1243,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -1309,8 +1268,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -1346,8 +1304,7 @@ exports[`main > renders without crashing 1`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -1372,8 +1329,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -1398,8 +1354,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -1424,8 +1379,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -1461,8 +1415,7 @@ exports[`main > renders without crashing 1`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -1487,8 +1440,7 @@ exports[`main > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -1866,7 +1818,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -1892,8 +1844,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -1930,8 +1881,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -1956,8 +1906,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -1993,8 +1942,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -2019,8 +1967,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -2056,8 +2003,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -2093,8 +2039,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -2119,8 +2064,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -2145,8 +2089,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -2171,8 +2114,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -2197,8 +2139,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -2223,8 +2164,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -2249,8 +2189,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -2286,8 +2225,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -2312,8 +2250,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -2338,8 +2275,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -2364,8 +2300,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -2401,8 +2336,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -2427,8 +2361,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -2453,8 +2386,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -2479,8 +2411,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -2516,8 +2447,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -2542,8 +2472,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -2864,7 +2793,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -2890,8 +2819,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -2928,8 +2856,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -2954,8 +2881,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -2991,8 +2917,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -3017,8 +2942,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -3054,8 +2978,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -3091,8 +3014,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -3117,8 +3039,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -3143,8 +3064,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -3169,8 +3089,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -3195,8 +3114,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -3221,8 +3139,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -3247,8 +3164,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -3284,8 +3200,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -3310,8 +3225,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -3336,8 +3250,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -3362,8 +3275,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -3399,8 +3311,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -3425,8 +3336,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -3451,8 +3361,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -3477,8 +3386,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -3514,8 +3422,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -3540,8 +3447,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -3919,7 +3825,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -3945,8 +3851,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -3983,8 +3888,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -4009,8 +3913,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -4046,8 +3949,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -4072,8 +3974,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -4109,8 +4010,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -4146,8 +4046,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -4172,8 +4071,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -4198,8 +4096,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -4224,8 +4121,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -4250,8 +4146,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -4276,8 +4171,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -4302,8 +4196,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -4339,8 +4232,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -4365,8 +4257,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -4391,8 +4282,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -4417,8 +4307,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -4454,8 +4343,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -4480,8 +4368,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -4506,8 +4393,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -4532,8 +4418,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -4569,8 +4454,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -4595,8 +4479,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -4917,7 +4800,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -4943,8 +4826,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -4981,8 +4863,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -5007,8 +4888,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -5044,8 +4924,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -5070,8 +4949,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -5107,8 +4985,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -5144,8 +5021,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -5170,8 +5046,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -5196,8 +5071,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -5222,8 +5096,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -5248,8 +5121,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -5274,8 +5146,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -5300,8 +5171,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -5337,8 +5207,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -5363,8 +5232,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -5389,8 +5257,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -5415,8 +5282,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -5452,8 +5318,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -5478,8 +5343,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -5504,8 +5368,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -5530,8 +5393,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -5567,8 +5429,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -5593,8 +5454,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -5972,7 +5832,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -5998,8 +5858,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -6036,8 +5895,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -6062,8 +5920,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -6099,8 +5956,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -6125,8 +5981,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -6162,8 +6017,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -6199,8 +6053,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -6225,8 +6078,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -6251,8 +6103,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -6277,8 +6128,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -6303,8 +6153,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -6329,8 +6178,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -6355,8 +6203,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -6392,8 +6239,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -6418,8 +6264,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -6444,8 +6289,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -6470,8 +6314,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -6507,8 +6350,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -6533,8 +6375,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -6559,8 +6400,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -6585,8 +6425,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -6622,8 +6461,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -6648,8 +6486,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -6970,7 +6807,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -6996,8 +6833,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -7034,8 +6870,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -7060,8 +6895,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -7097,8 +6931,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -7123,8 +6956,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -7160,8 +6992,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -7197,8 +7028,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -7223,8 +7053,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -7249,8 +7078,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -7275,8 +7103,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -7301,8 +7128,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -7327,8 +7153,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -7353,8 +7178,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -7390,8 +7214,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -7416,8 +7239,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -7442,8 +7264,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -7468,8 +7289,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -7505,8 +7325,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -7531,8 +7350,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -7557,8 +7375,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -7583,8 +7400,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -7620,8 +7436,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -7646,8 +7461,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -7786,8 +7600,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Character Talent
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -7812,8 +7625,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -7850,8 +7662,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -7876,8 +7687,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -7913,8 +7723,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -7939,8 +7748,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -7976,8 +7784,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -8013,8 +7820,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -8039,8 +7845,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -8065,8 +7870,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -8091,8 +7895,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -8117,8 +7920,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -8143,8 +7945,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -8169,8 +7970,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -8206,8 +8006,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -8232,8 +8031,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -8258,8 +8056,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -8284,8 +8081,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -8321,8 +8117,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -8347,8 +8142,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -8373,8 +8167,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -8399,8 +8192,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -8436,8 +8228,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -8462,8 +8253,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -8545,8 +8335,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -8571,8 +8360,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -8609,8 +8397,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -8635,8 +8422,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -8672,8 +8458,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -8698,8 +8483,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -8735,8 +8519,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -8772,8 +8555,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -8798,8 +8580,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -8824,8 +8605,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -8850,8 +8630,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -8876,8 +8655,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -8902,8 +8680,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -8928,8 +8705,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -8965,8 +8741,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -8991,8 +8766,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -9017,8 +8791,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -9043,8 +8816,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -9080,8 +8852,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -9106,8 +8877,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -9132,8 +8902,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -9158,8 +8927,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -9195,8 +8963,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -9221,8 +8988,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -9361,8 +9127,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Character Talent
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -9387,8 +9152,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -9425,8 +9189,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -9451,8 +9214,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -9488,8 +9250,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -9514,8 +9275,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -9551,8 +9311,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -9588,8 +9347,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -9614,8 +9372,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -9640,8 +9397,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -9666,8 +9422,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -9692,8 +9447,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -9718,8 +9472,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -9744,8 +9497,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -9781,8 +9533,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -9807,8 +9558,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -9833,8 +9583,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -9859,8 +9608,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -9896,8 +9644,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -9922,8 +9669,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -9948,8 +9694,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -9974,8 +9719,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -10011,8 +9755,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -10037,8 +9780,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -10120,8 +9862,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -10146,8 +9887,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -10184,8 +9924,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -10210,8 +9949,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -10247,8 +9985,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -10273,8 +10010,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -10310,8 +10046,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -10347,8 +10082,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -10373,8 +10107,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -10399,8 +10132,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -10425,8 +10157,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -10451,8 +10182,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -10477,8 +10207,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -10503,8 +10232,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -10540,8 +10268,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -10566,8 +10293,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -10592,8 +10318,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -10618,8 +10343,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -10655,8 +10379,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -10681,8 +10404,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -10707,8 +10429,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -10733,8 +10454,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -10770,8 +10490,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -10796,8 +10515,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -10936,8 +10654,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Character Talent
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -10962,8 +10679,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -11000,8 +10716,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -11026,8 +10741,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -11063,8 +10777,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -11089,8 +10802,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -11126,8 +10838,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -11163,8 +10874,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -11189,8 +10899,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -11215,8 +10924,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -11241,8 +10949,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -11267,8 +10974,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -11293,8 +10999,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -11319,8 +11024,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -11356,8 +11060,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -11382,8 +11085,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -11408,8 +11110,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -11434,8 +11135,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -11471,8 +11171,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -11497,8 +11196,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -11523,8 +11221,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -11549,8 +11246,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -11586,8 +11282,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -11612,8 +11307,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -11695,8 +11389,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -11721,8 +11414,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -11759,8 +11451,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -11785,8 +11476,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -11822,8 +11512,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -11848,8 +11537,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -11885,8 +11573,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -11922,8 +11609,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -11948,8 +11634,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -11974,8 +11659,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -12000,8 +11684,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -12026,8 +11709,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -12052,8 +11734,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -12078,8 +11759,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -12115,8 +11795,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -12141,8 +11820,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -12167,8 +11845,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -12193,8 +11870,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -12230,8 +11906,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -12256,8 +11931,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -12282,8 +11956,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -12308,8 +11981,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -12345,8 +12017,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -12371,8 +12042,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -12511,8 +12181,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Character Talent
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -12537,8 +12206,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -12575,8 +12243,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -12601,8 +12268,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -12638,8 +12304,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -12664,8 +12329,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -12701,8 +12365,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -12738,8 +12401,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -12764,8 +12426,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -12790,8 +12451,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -12816,8 +12476,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -12842,8 +12501,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -12868,8 +12526,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -12894,8 +12551,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -12931,8 +12587,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -12957,8 +12612,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -12983,8 +12637,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -13009,8 +12662,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -13046,8 +12698,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -13072,8 +12723,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -13098,8 +12748,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -13124,8 +12773,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -13161,8 +12809,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -13187,8 +12834,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -13270,8 +12916,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -13296,8 +12941,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -13334,8 +12978,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -13360,8 +13003,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -13397,8 +13039,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -13423,8 +13064,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -13460,8 +13100,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -13497,8 +13136,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -13523,8 +13161,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -13549,8 +13186,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -13575,8 +13211,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -13601,8 +13236,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -13627,8 +13261,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -13653,8 +13286,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -13690,8 +13322,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -13716,8 +13347,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -13742,8 +13372,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -13768,8 +13397,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -13805,8 +13433,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -13831,8 +13458,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -13857,8 +13483,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -13883,8 +13508,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -13920,8 +13544,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -13946,8 +13569,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -14086,8 +13708,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Character Talent
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -14112,8 +13733,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -14150,8 +13770,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Weapon Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -14176,8 +13795,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -14213,8 +13831,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Character and Weapon Enhancement
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -14239,8 +13856,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -14276,8 +13892,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Character Ascension
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -14313,8 +13928,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Character Level-Up
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -14339,8 +13953,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -14365,8 +13978,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -14391,8 +14003,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -14417,8 +14028,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -14443,8 +14053,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -14469,8 +14078,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -14506,8 +14114,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -14532,8 +14139,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -14558,8 +14164,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -14584,8 +14189,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -14621,8 +14225,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Fish
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -14647,8 +14250,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -14673,8 +14275,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -14699,8 +14300,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -14736,8 +14336,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               Wood
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -14762,8 +14361,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -14845,8 +14443,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -14871,8 +14468,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -14909,8 +14505,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -14935,8 +14530,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -14972,8 +14566,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -14998,8 +14591,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -15035,8 +14627,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -15072,8 +14663,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -15098,8 +14688,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -15124,8 +14713,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -15150,8 +14738,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -15176,8 +14763,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -15202,8 +14788,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -15228,8 +14813,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -15265,8 +14849,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -15291,8 +14874,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -15317,8 +14899,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -15343,8 +14924,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -15380,8 +14960,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -15406,8 +14985,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -15432,8 +15010,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -15458,8 +15035,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -15495,8 +15071,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -15521,8 +15096,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >

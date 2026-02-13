@@ -1454,7 +1454,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -1480,8 +1480,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -1519,7 +1518,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -1545,8 +1544,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -1583,7 +1581,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -1609,8 +1607,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -1647,7 +1644,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -1685,7 +1682,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -1711,8 +1708,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -1737,8 +1733,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -1763,8 +1758,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -1789,8 +1783,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -1815,8 +1808,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -1841,8 +1833,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -1879,7 +1870,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -1906,7 +1897,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </label>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -1932,8 +1923,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -1958,8 +1948,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -1996,7 +1985,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -2022,8 +2011,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -2048,8 +2036,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -2074,8 +2061,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -2112,7 +2098,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -2138,8 +2124,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -3641,7 +3626,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -3667,8 +3652,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -3706,7 +3690,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -3732,8 +3716,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -3770,7 +3753,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -3796,8 +3779,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -3834,7 +3816,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -3872,7 +3854,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -3898,8 +3880,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -3924,8 +3905,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -3950,8 +3930,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -3976,8 +3955,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -4002,8 +3980,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -4028,8 +4005,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -4066,7 +4042,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -4093,7 +4069,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </label>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -4119,8 +4095,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -4145,8 +4120,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -4183,7 +4157,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -4209,8 +4183,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -4235,8 +4208,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -4261,8 +4233,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -4299,7 +4270,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -4325,8 +4296,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -5822,7 +5792,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104303"
               title="Philosophies of Freedom"
             >
@@ -5848,8 +5818,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104346"
               title="Philosophies of Order"
             >
@@ -5887,7 +5856,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114004"
               title="Scattered Piece of Decarabian's Dream"
             >
@@ -5913,8 +5882,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker114060"
               title="Golden Goblet of the Pristine Sea"
             >
@@ -5951,7 +5919,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112004"
               title="Slime Concentrate"
             >
@@ -5977,8 +5945,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker112094"
               title="Operative's Constancy"
             >
@@ -6015,7 +5982,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker104104"
               title="Brilliant Diamond Gemstone"
             >
@@ -6053,7 +6020,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113001"
               title="Hurricane Seed"
             >
@@ -6079,8 +6046,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113002"
               title="Lightning Prism"
             >
@@ -6105,8 +6071,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113003"
               title="Dvalin's Plume"
             >
@@ -6131,8 +6096,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113004"
               title="Dvalin's Claw"
             >
@@ -6157,8 +6121,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113005"
               title="Dvalin's Sigh"
             >
@@ -6183,8 +6146,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113056"
               title="Lightless Mass"
             >
@@ -6209,8 +6171,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker113057"
               title="Water That Failed To Transcend"
             >
@@ -6246,8 +6207,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               Local Specialties
             </legend>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100021"
               title="Wolfhook"
             >
@@ -6272,8 +6232,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker100022"
               title="Valberry"
             >
@@ -6298,8 +6257,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101239"
               title="Subdetection Unit"
             >
@@ -6324,8 +6282,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101240"
               title="Spring of the First Dewdrop"
             >
@@ -6362,7 +6319,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131000"
               title="Medaka"
             >
@@ -6388,8 +6345,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131001"
               title="Glaze Medaka"
             >
@@ -6414,8 +6370,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131002"
               title="Sweet-Flower Medaka"
             >
@@ -6440,8 +6395,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker131036"
               title="Maintenance Mek: Gold Leader"
             >
@@ -6478,7 +6432,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </legend>
             <label
               aria-disabled="true"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101301"
               title="Birch Wood"
             >
@@ -6504,8 +6458,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
               </span>
             </label>
             <label
-              aria-disabled="false"
-              class="css-9hpc24"
+              class="css-1es0wqq"
               data-testid="ItemPicker101322"
               title="Torch Wood"
             >
@@ -7944,7 +7897,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -7970,8 +7923,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -8009,7 +7961,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -8035,8 +7987,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -8073,7 +8024,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -8099,8 +8050,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -8137,7 +8087,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -8175,7 +8125,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -8201,8 +8151,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -8227,8 +8176,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -8253,8 +8201,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -8279,8 +8226,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -8305,8 +8251,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -8331,8 +8276,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -8368,8 +8312,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -8394,8 +8337,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -8420,8 +8362,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -8446,8 +8387,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -8484,7 +8424,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -8510,8 +8450,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -8536,8 +8475,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -8562,8 +8500,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -8600,7 +8537,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           </legend>
           <label
             aria-disabled="true"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -8626,8 +8563,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >

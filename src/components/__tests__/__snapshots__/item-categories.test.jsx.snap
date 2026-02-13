@@ -16,8 +16,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Character Talent
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104301"
             title="Teachings of Freedom"
           >
@@ -42,8 +41,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104302"
             title="Guide to Freedom"
           >
@@ -68,8 +66,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104303"
             title="Philosophies of Freedom"
           >
@@ -94,8 +91,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104344"
             title="Teachings of Order"
           >
@@ -120,8 +116,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104345"
             title="Guide to Order"
           >
@@ -146,8 +141,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104346"
             title="Philosophies of Order"
           >
@@ -184,8 +178,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Weapon Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114001"
             title="Tile of Decarabian's Tower"
           >
@@ -210,8 +203,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114002"
             title="Debris of Decarabian's City"
           >
@@ -236,8 +228,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114003"
             title="Fragment of Decarabian's Epic"
           >
@@ -262,8 +253,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114004"
             title="Scattered Piece of Decarabian's Dream"
           >
@@ -288,8 +278,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114057"
             title="Broken Goblet of the Pristine Sea"
           >
@@ -314,8 +303,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114058"
             title="Wine Goblet of the Pristine Sea"
           >
@@ -340,8 +328,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114059"
             title="Silver Goblet of the Pristine Sea"
           >
@@ -366,8 +353,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114060"
             title="Golden Goblet of the Pristine Sea"
           >
@@ -392,8 +378,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker114017"
             title="Mist Veiled Lead Elixir"
           >
@@ -429,8 +414,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Character and Weapon Enhancement
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112002"
             title="Slime Condensate"
           >
@@ -455,8 +439,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112003"
             title="Slime Secretions"
           >
@@ -481,8 +464,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112004"
             title="Slime Concentrate"
           >
@@ -507,8 +489,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112092"
             title="Old Operative's Pocket Watch"
           >
@@ -533,8 +514,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112093"
             title="Operative's Standard Pocket Watch"
           >
@@ -559,8 +539,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112094"
             title="Operative's Constancy"
           >
@@ -596,8 +575,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Character Ascension
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104101"
             title="Brilliant Diamond Sliver"
           >
@@ -622,8 +600,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104102"
             title="Brilliant Diamond Fragment"
           >
@@ -648,8 +625,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104103"
             title="Brilliant Diamond Chunk"
           >
@@ -674,8 +650,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104104"
             title="Brilliant Diamond Gemstone"
           >
@@ -700,8 +675,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104121"
             title="Varunada Lazurite Sliver"
           >
@@ -726,8 +700,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104122"
             title="Varunada Lazurite Fragment"
           >
@@ -752,8 +725,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104123"
             title="Varunada Lazurite Chunk"
           >
@@ -778,8 +750,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker104124"
             title="Varunada Lazurite Gemstone"
           >
@@ -804,8 +775,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112122"
             title="Broken Drive Shaft"
           >
@@ -830,8 +800,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112123"
             title="Reinforced Drive Shaft"
           >
@@ -856,8 +825,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker112124"
             title="Precision Drive Shaft"
           >
@@ -893,8 +861,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Character Level-Up
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113077"
             title="Precision Kuuvahki Stamping Die"
           >
@@ -919,8 +886,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113001"
             title="Hurricane Seed"
           >
@@ -945,8 +911,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113002"
             title="Lightning Prism"
           >
@@ -971,8 +936,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113003"
             title="Dvalin's Plume"
           >
@@ -997,8 +961,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113004"
             title="Dvalin's Claw"
           >
@@ -1023,8 +986,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113005"
             title="Dvalin's Sigh"
           >
@@ -1049,8 +1011,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113056"
             title="Lightless Mass"
           >
@@ -1075,8 +1036,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker113057"
             title="Water That Failed To Transcend"
           >
@@ -1112,8 +1072,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Local Specialties
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100021"
             title="Wolfhook"
           >
@@ -1138,8 +1097,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker100022"
             title="Valberry"
           >
@@ -1164,8 +1122,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101239"
             title="Subdetection Unit"
           >
@@ -1190,8 +1147,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101240"
             title="Spring of the First Dewdrop"
           >
@@ -1216,8 +1172,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101257"
             title="Portable Bearing"
           >
@@ -1253,8 +1208,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Fish
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131000"
             title="Medaka"
           >
@@ -1279,8 +1233,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131001"
             title="Glaze Medaka"
           >
@@ -1305,8 +1258,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131002"
             title="Sweet-Flower Medaka"
           >
@@ -1331,8 +1283,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131036"
             title="Maintenance Mek: Gold Leader"
           >
@@ -1357,8 +1308,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131046"
             title="Common Axehead Fish"
           >
@@ -1383,8 +1333,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131047"
             title="Veggie Mauler Shark"
           >
@@ -1409,8 +1358,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker131048"
             title="Medaka"
           >
@@ -1446,8 +1394,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Wood
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101301"
             title="Birch Wood"
           >
@@ -1472,8 +1419,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101322"
             title="Torch Wood"
           >
@@ -1509,8 +1455,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             Building Materials
           </legend>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101001"
             title="Iron Chunk"
           >
@@ -1535,8 +1480,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
             </span>
           </label>
           <label
-            aria-disabled="false"
-            class="css-9hpc24"
+            class="css-1es0wqq"
             data-testid="ItemPicker101002"
             title="White Iron Chunk"
           >
@@ -1580,8 +1524,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Character Talent
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104301"
           title="Teachings of Freedom"
         >
@@ -1606,8 +1549,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104302"
           title="Guide to Freedom"
         >
@@ -1632,8 +1574,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104303"
           title="Philosophies of Freedom"
         >
@@ -1658,8 +1599,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104344"
           title="Teachings of Order"
         >
@@ -1684,8 +1624,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104345"
           title="Guide to Order"
         >
@@ -1710,8 +1649,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104346"
           title="Philosophies of Order"
         >
@@ -1748,8 +1686,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Weapon Ascension
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114001"
           title="Tile of Decarabian's Tower"
         >
@@ -1774,8 +1711,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114002"
           title="Debris of Decarabian's City"
         >
@@ -1800,8 +1736,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114003"
           title="Fragment of Decarabian's Epic"
         >
@@ -1826,8 +1761,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114004"
           title="Scattered Piece of Decarabian's Dream"
         >
@@ -1852,8 +1786,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114057"
           title="Broken Goblet of the Pristine Sea"
         >
@@ -1878,8 +1811,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114058"
           title="Wine Goblet of the Pristine Sea"
         >
@@ -1904,8 +1836,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114059"
           title="Silver Goblet of the Pristine Sea"
         >
@@ -1930,8 +1861,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114060"
           title="Golden Goblet of the Pristine Sea"
         >
@@ -1956,8 +1886,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker114017"
           title="Mist Veiled Lead Elixir"
         >
@@ -1993,8 +1922,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Character and Weapon Enhancement
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112002"
           title="Slime Condensate"
         >
@@ -2019,8 +1947,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112003"
           title="Slime Secretions"
         >
@@ -2045,8 +1972,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112004"
           title="Slime Concentrate"
         >
@@ -2071,8 +1997,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112092"
           title="Old Operative's Pocket Watch"
         >
@@ -2097,8 +2022,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112093"
           title="Operative's Standard Pocket Watch"
         >
@@ -2123,8 +2047,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112094"
           title="Operative's Constancy"
         >
@@ -2160,8 +2083,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Character Ascension
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104101"
           title="Brilliant Diamond Sliver"
         >
@@ -2186,8 +2108,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104102"
           title="Brilliant Diamond Fragment"
         >
@@ -2212,8 +2133,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104103"
           title="Brilliant Diamond Chunk"
         >
@@ -2238,8 +2158,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104104"
           title="Brilliant Diamond Gemstone"
         >
@@ -2264,8 +2183,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104121"
           title="Varunada Lazurite Sliver"
         >
@@ -2290,8 +2208,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104122"
           title="Varunada Lazurite Fragment"
         >
@@ -2316,8 +2233,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104123"
           title="Varunada Lazurite Chunk"
         >
@@ -2342,8 +2258,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker104124"
           title="Varunada Lazurite Gemstone"
         >
@@ -2368,8 +2283,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112122"
           title="Broken Drive Shaft"
         >
@@ -2394,8 +2308,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112123"
           title="Reinforced Drive Shaft"
         >
@@ -2420,8 +2333,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker112124"
           title="Precision Drive Shaft"
         >
@@ -2457,8 +2369,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Character Level-Up
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113077"
           title="Precision Kuuvahki Stamping Die"
         >
@@ -2483,8 +2394,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113001"
           title="Hurricane Seed"
         >
@@ -2509,8 +2419,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113002"
           title="Lightning Prism"
         >
@@ -2535,8 +2444,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113003"
           title="Dvalin's Plume"
         >
@@ -2561,8 +2469,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113004"
           title="Dvalin's Claw"
         >
@@ -2587,8 +2494,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113005"
           title="Dvalin's Sigh"
         >
@@ -2613,8 +2519,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113056"
           title="Lightless Mass"
         >
@@ -2639,8 +2544,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker113057"
           title="Water That Failed To Transcend"
         >
@@ -2676,8 +2580,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Local Specialties
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker100021"
           title="Wolfhook"
         >
@@ -2702,8 +2605,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker100022"
           title="Valberry"
         >
@@ -2728,8 +2630,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101239"
           title="Subdetection Unit"
         >
@@ -2754,8 +2655,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101240"
           title="Spring of the First Dewdrop"
         >
@@ -2780,8 +2680,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101257"
           title="Portable Bearing"
         >
@@ -2817,8 +2716,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Fish
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131000"
           title="Medaka"
         >
@@ -2843,8 +2741,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131001"
           title="Glaze Medaka"
         >
@@ -2869,8 +2766,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131002"
           title="Sweet-Flower Medaka"
         >
@@ -2895,8 +2791,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131036"
           title="Maintenance Mek: Gold Leader"
         >
@@ -2921,8 +2816,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131046"
           title="Common Axehead Fish"
         >
@@ -2947,8 +2841,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131047"
           title="Veggie Mauler Shark"
         >
@@ -2973,8 +2866,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker131048"
           title="Medaka"
         >
@@ -3010,8 +2902,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Wood
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101301"
           title="Birch Wood"
         >
@@ -3036,8 +2927,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101322"
           title="Torch Wood"
         >
@@ -3073,8 +2963,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           Building Materials
         </legend>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101001"
           title="Iron Chunk"
         >
@@ -3099,8 +2988,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           </span>
         </label>
         <label
-          aria-disabled="false"
-          class="css-9hpc24"
+          class="css-1es0wqq"
           data-testid="ItemPicker101002"
           title="White Iron Chunk"
         >
