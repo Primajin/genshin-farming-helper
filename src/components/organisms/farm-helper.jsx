@@ -313,26 +313,34 @@ function FarmHelper({
 		}
 	};
 
-	const storageState = storage.load();
-	const savedHelpers = storageState?.helpers ?? {};
+	// Save state to storage after changes (not during render)
+	useEffect(() => {
+		const storageState = storage.load();
+		const savedHelpers = storageState?.helpers ?? {};
 
-	const newConfig = {
-		...config,
-		category,
-		tierFour,
-		tierFourGoal,
-		tierOne,
-		tierOneGoal,
-		tierOneLock,
-		tierThree,
-		tierThreeGoal,
-		tierThreeLock,
-		tierTwo,
-		tierTwoGoal,
-		tierTwoLock,
-	};
-	const newHelpers = {...savedHelpers, [itemId]: newConfig};
-	storage.save({...storageState, helpers: newHelpers});
+		// Only save if this helper still exists in storage (prevents race with removal)
+		if (!savedHelpers[itemId]) {
+			return;
+		}
+
+		const newConfig = {
+			...config,
+			category,
+			tierFour,
+			tierFourGoal,
+			tierOne,
+			tierOneGoal,
+			tierOneLock,
+			tierThree,
+			tierThreeGoal,
+			tierThreeLock,
+			tierTwo,
+			tierTwoGoal,
+			tierTwoLock,
+		};
+		const newHelpers = {...savedHelpers, [itemId]: newConfig};
+		storage.save({...storageState, helpers: newHelpers});
+	}, [config, category, itemId, tierOne, tierOneGoal, tierOneLock, tierTwo, tierTwoGoal, tierTwoLock, tierThree, tierThreeGoal, tierThreeLock, tierFour, tierFourGoal]);
 
 	// Early return if no items found
 	if (items.length === 0) {

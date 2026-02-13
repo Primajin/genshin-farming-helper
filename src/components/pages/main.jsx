@@ -201,7 +201,49 @@ export default function Main() {
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
 		delete savedHelpers[itemId];
-		storage.save({...storageState, helpers: savedHelpers});
+
+		// Deactivate any presets that included this material
+		const currentPresets = storageState?.presets ?? [];
+		const newPresets = currentPresets.filter(presetKey => {
+			const [type, presetIdString] = presetKey.split('.');
+			const presetId = Number.parseInt(presetIdString, 10);
+			const preset = findPreset(type, presetId);
+			if (!preset) {
+				return false;
+			}
+
+			// Check if any item in this preset matches the removed helper
+			return !preset.items.some(item => {
+				const material = findMaterial(item.id);
+				if (!material) {
+					return false;
+				}
+
+				// Check exact match
+				if (String(item.id) === itemId) {
+					return true;
+				}
+
+				// Check multi-tier match (preset item might be a different tier of the same material)
+				const {sortRank} = material;
+				const allMaterials = getAllMaterialsFlat();
+				const sameTiers = allMaterials.filter(m => m.sortRank === sortRank);
+				sameTiers.sort((a, b) => a.id - b.id);
+				const ids = sameTiers.map(m => m.id);
+				const isConsecutive = ids.length > 1 && ids.every((id, i) => i === 0 || id === ids[i - 1] + 1);
+
+				if (isConsecutive) {
+					// The lowest tier ID is used as the helper key
+					const lowestId = String(ids[0]);
+					return lowestId === itemId;
+				}
+
+				return false;
+			});
+		});
+
+		storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
+		setActivePresets(newPresets);
 		setFarmHelperData(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.itemId !== itemId));
 	};
 
@@ -513,42 +555,30 @@ export default function Main() {
 		return null;
 	};
 
-	const processPresetChange = useCallback((preset, isAdding) => {
-		// Load storage ONCE at the start to avoid race conditions
-		const storageState = storage.load();
-		const savedHelpers = storageState?.helpers ? {...storageState.helpers} : {};
+	// Process preset items by modifying savedHelpers in place. Returns true if modified.
+	const applyPresetToHelpers = useCallback((preset, isAdding, savedHelpers) => {
+		const groupedItems = groupPresetItems(preset.items);
 		let helpersModified = false;
 
-		// Add or subtract goals based on action
 		if (isAdding) {
-			// Adding preset - add goals
-			const groupedItems = groupPresetItems(preset.items);
-
-			// Add each material using the standard addHelperWithItem flow
 			for (const groupedItem of groupedItems) {
 				const itemId = String(groupedItem.id);
 				const {category, tiers} = groupedItem;
-
-				// Check if ANY tier of this material already exists
 				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
 				if (existing) {
-					// Item exists - update goals by adding preset amounts
 					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
 					const updatedConfig = {...existing.helper};
 
 					for (const tier of tiers) {
 						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
-						const newGoal = currentGoal + tier.count;
-						updatedConfig[tierFields[tier.tierIndex]] = newGoal;
+						updatedConfig[tierFields[tier.tierIndex]] = currentGoal + tier.count;
 					}
 
-					// Save the updated config using the EXISTING itemId
 					savedHelpers[existing.itemId] = updatedConfig;
 					helpersModified = true;
 				} else {
-					// Item doesn't exist - create new helper with preset goals
-					const config = {
+					savedHelpers[itemId] = {
 						category,
 						tierFour: 0,
 						tierFourGoal: tiers.find(t => t.tierIndex === 3)?.count || '',
@@ -562,15 +592,10 @@ export default function Main() {
 						tierTwoGoal: tiers.find(t => t.tierIndex === 1)?.count || '',
 						tierTwoLock: false,
 					};
-
-					savedHelpers[itemId] = config;
 					helpersModified = true;
 				}
 			}
 		} else {
-			// Removing preset - subtract goals
-			const groupedItems = groupPresetItems(preset.items);
-
 			for (const groupedItem of groupedItems) {
 				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
@@ -584,32 +609,24 @@ export default function Main() {
 						updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
 					}
 
-					// Check if there's any progress or remaining goals
 					const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
 						|| updatedConfig.tierThree || updatedConfig.tierFour;
 					const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
 						|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
 
 					if (!hasProgress && !hasAnyGoal) {
-						// Remove the helper entirely
 						delete savedHelpers[existing.itemId];
-						helpersModified = true;
 					} else {
-						// Update with reduced goals
 						savedHelpers[existing.itemId] = updatedConfig;
-						helpersModified = true;
 					}
+
+					helpersModified = true;
 				}
 			}
 		}
 
-		// Save all changes at once and rebuild helpers list
-		if (helpersModified) {
-			storage.save({...storageState, helpers: savedHelpers});
-			const rebuilt = rebuildHelperList(savedHelpers);
-			setFarmHelperData(rebuilt);
-		}
-	}, [groupPresetItems, rebuildHelperList, findExistingHelperForMaterial]);
+		return helpersModified;
+	}, [groupPresetItems, findExistingHelperForMaterial]);
 
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
@@ -621,31 +638,28 @@ export default function Main() {
 			return;
 		}
 
-		// Determine the action BEFORE state update
+		// Load storage ONCE - all modifications happen on this snapshot
 		const storageState = storage.load();
 		const currentPresets = storageState?.presets ?? [];
 		const wasActive = currentPresets.includes(value);
-		const willBeActive = !wasActive;
+		const isAdding = !wasActive;
 
-		// Update active presets state
-		setActivePresets(currentPresets => {
-			// Toggle the preset: remove if active, add if not active
-			const newPresets = wasActive
-				? currentPresets.filter(p => p !== value) // Remove
-				: [...currentPresets, value]; // Add
+		// Compute new presets list
+		const newPresets = wasActive
+			? currentPresets.filter(p => p !== value)
+			: [...currentPresets, value];
 
-			// Save the updated preset list to storage
-			storage.save({...storageState, presets: newPresets});
+		// Compute new helpers
+		const savedHelpers = storageState?.helpers ? {...storageState.helpers} : {};
+		applyPresetToHelpers(preset, isAdding, savedHelpers);
 
-			return newPresets;
-		});
+		// Save everything atomically
+		storage.save({...storageState, presets: newPresets, helpers: savedHelpers});
 
-		// Process the preset change with the known state
-		// Use setTimeout to ensure React finishes the render cycle
-		setTimeout(() => {
-			processPresetChange(preset, willBeActive);
-		}, 0);
-	}, [findPreset, processPresetChange]);
+		// Update React state
+		setActivePresets(newPresets);
+		setFarmHelperData(rebuildHelperList(savedHelpers));
+	}, [findPreset, applyPresetToHelpers, rebuildHelperList]);
 
 	useEffect(() => {
 		if (!didRun) {
