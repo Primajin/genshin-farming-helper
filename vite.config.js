@@ -51,7 +51,6 @@ export default defineConfig(() => ({
 			'src/index.jsx',
 			'src/data.json',
 			'src/data-rare.json',
-			'e2e/**',
 		],
 		coverage: {
 			all: true,

@@ -5,5 +5,3 @@ src/data-rare.json
 src/presets.json
 test-report.junit.xml
 coverage/
-playwright-report/
-test-results/
