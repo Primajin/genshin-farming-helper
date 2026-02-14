@@ -1,6 +1,8 @@
 /* global window, document */
 /** @jsxImportSource @emotion/react */
-import {useCallback, useEffect, useState} from 'react';
+import {
+	useCallback, useEffect, useRef, useState,
+} from 'react';
 import {Global, css} from '@emotion/react';
 import materials from 'data';
 import materialsRare from 'data-rare';
@@ -9,6 +11,7 @@ import storage from 'utils/local-storage.js';
 import theme from 'theme/index.js';
 import {breakpoints, up} from 'utils/theming.js';
 import {fullscreenElement, toggleFullscreen} from 'utils/fullscreen.js';
+import {getConsecutiveTierIds} from 'utils/materials.js';
 import {releaseWakeLock, requestWakeLock} from 'utils/wake-lock.js';
 import ItemCategories from 'components/organisms/item-categories.jsx';
 import PresetModal from 'components/organisms/preset-modal.jsx';
@@ -63,7 +66,13 @@ const globalStyles = css`
 	}
 
 	input {
-		display: none;
+		clip: rect(0, 0, 0, 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
 	}
 
 	main {
@@ -78,11 +87,11 @@ const globalStyles = css`
 
 		${up('sm')} {
 			max-width: 90%;
-		};
+		}
 
 		${up('xl')} {
 			max-width: ${breakpoints.get('xl')}px;
-		};
+		}
 
 		section {
 			margin-top: 20px;
@@ -135,7 +144,7 @@ const helperList = css`
 
 		${up('md')} {
 			justify-content: space-between;
-		};
+		}
 `;
 
 const fab = css`
@@ -145,7 +154,7 @@ const fab = css`
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background: linear-gradient(135deg, ${theme.fab.start} 0%, ${theme.fab.end} 100%);
 	color: white;
 	border: none;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -168,7 +177,6 @@ const fab = css`
 	}
 `;
 
-let didRun = false;
 const {actions} = theme;
 
 // Helper function to create initial farm helpers from storage
@@ -190,6 +198,7 @@ function createInitialFarmHelpers() {
 }
 
 export default function Main() {
+	const didRun = useRef(false);
 	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
 	const [activePresets, setActivePresets] = useState([]);
 	const [floatGroups, setFloatGroups] = useState(false);
@@ -201,21 +210,61 @@ export default function Main() {
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
 		delete savedHelpers[itemId];
-		storage.save({...storageState, helpers: savedHelpers});
+
+		// Deactivate any presets that included this material
+		const currentPresets = storageState?.presets ?? [];
+		const newPresets = currentPresets.filter(presetKey => {
+			const [type, presetIdString] = presetKey.split('.');
+			const presetId = Number.parseInt(presetIdString, 10);
+			const preset = findPreset(type, presetId);
+			if (!preset) {
+				return false;
+			}
+
+			// Check if any item in this preset matches the removed helper
+			return !preset.items.some(item => {
+				const material = findMaterial(item.id);
+				if (!material) {
+					return false;
+				}
+
+				// Check exact match
+				if (String(item.id) === itemId) {
+					return true;
+				}
+
+				// Check multi-tier match (preset item might be a different tier of the same material)
+				const tierIds = getConsecutiveTierIds(item.id, getAllMaterialsFlat());
+				if (tierIds.length > 1) {
+					return String(tierIds[0]) === itemId;
+				}
+
+				return false;
+			});
+		});
+
+		storage.save({...storageState, helpers: savedHelpers, presets: newPresets});
+		setActivePresets(newPresets);
 		setFarmHelperData(previousHelpers => previousHelpers.filter(previousHelper => previousHelper.itemId !== itemId));
 	};
 
 	// Create the FarmHelper components from the data
-	const farmHelperList = farmHelperData.map(({itemId, config, category}) => (
-		<FarmHelper
-			key={itemId}
-			category={category}
-			config={config}
-			itemId={itemId}
-			materials={materials}
-			onRemove={onRemove}
-		/>
-	));
+	const farmHelperList = farmHelperData.map(({itemId, config, category}) => {
+		// Create a key that includes the goal values to force re-mount when presets change them
+		const goalKey = `${config?.tierOneGoal || ''}-${config?.tierTwoGoal || ''}-${config?.tierThreeGoal || ''}-${config?.tierFourGoal || ''}`;
+		const key = `${itemId}-${goalKey}`;
+
+		return (
+			<FarmHelper
+				key={key}
+				category={category}
+				config={config}
+				itemId={itemId}
+				materials={materials}
+				onRemove={onRemove}
+			/>
+		);
+	});
 
 	/**
 	 * The config array has seven positions
@@ -244,20 +293,45 @@ export default function Main() {
 
 		const storageState = storage.load();
 		const savedHelpers = storageState?.helpers ?? {};
-		const newHelpers = {...savedHelpers, [itemId]: config};
+
+		// If item already exists, don't add duplicate
+		if (savedHelpers[itemId]) {
+			return;
+		}
+
+		// Create default config if not provided
+		const defaultConfig = config || {
+			category,
+			tierFour: 0,
+			tierFourGoal: '',
+			tierOne: 0,
+			tierOneGoal: '',
+			tierOneLock: false,
+			tierThree: 0,
+			tierThreeGoal: '',
+			tierThreeLock: false,
+			tierTwo: 0,
+			tierTwoGoal: '',
+			tierTwoLock: false,
+		};
+
+		const newHelpers = {...savedHelpers, [itemId]: defaultConfig};
 		storage.save({...storageState, helpers: newHelpers});
 
 		setFarmHelperData(previousHelpers =>
 			[
 				...previousHelpers,
-				{itemId, config, category},
+				{itemId, config: defaultConfig, category},
 			]);
 	}, []);
 
+	/** Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal. */
 	const onChange = event => {
 		const itemName = event.target.value;
 		const category = itemName.split('.')[0];
 		const itemId = itemName.split('.')[1];
+		// Uncheck immediately so the same radio can be re-selected if the helper is later removed
+		event.target.checked = false;
 		addHelperWithItem({itemId, category});
 	};
 
@@ -348,31 +422,54 @@ export default function Main() {
 		// For each group, find the highest rarity item to use as the base
 		const processed = [];
 		for (const items of Object.values(grouped)) {
-			// Sort by rarity descending
-			items.sort((a, b) => b.rarity - a.rarity);
+			// Check if items have different rarities (indicating tiers of same material)
+			const uniqueRarities = new Set(items.map(item => item.rarity));
+			const hasDifferentRarities = uniqueRarities.size > 1;
 
-			const highestTier = items[0];
-			const lowestTier = items.at(-1);
-			const category = findMaterialCategory(highestTier.id);
+			if (hasDifferentRarities) {
+				// Sort by rarity descending
+				items.sort((a, b) => b.rarity - a.rarity);
 
-			if (!category) {
-				continue;
+				const highestTier = items[0];
+				const lowestTier = items.at(-1);
+				const category = findMaterialCategory(highestTier.id);
+
+				if (!category) {
+					continue;
+				}
+
+				processed.push({
+					id: lowestTier.id, // Use lowest tier ID as the canonical key
+					category,
+					tiers: items.map((item, index) => ({
+						tierIndex: items.length - 1 - index, // Reverse: lowest rarity = tier 0
+						count: item.count,
+					})),
+				});
+			} else {
+				// All items have same rarity - treat as separate materials
+				for (const item of items) {
+					const category = findMaterialCategory(item.id);
+					if (!category) {
+						continue;
+					}
+
+					processed.push({
+						id: item.id,
+						category,
+						tiers: [{
+							tierIndex: 0,
+							count: item.count,
+						}],
+					});
+				}
 			}
-
-			processed.push({
-				id: lowestTier.id, // Use lowest tier ID as the canonical key
-				category,
-				tiers: items.map((item, index) => ({
-					tierIndex: items.length - 1 - index, // Reverse: lowest rarity = tier 0
-					count: item.count,
-				})),
-			});
 		}
 
 		return processed;
 	};
 
-	// Helper to rebuild the helper list from storage
+	/** Convert the helpers object from storage into the array format used by React state. */
 	const rebuildHelperList = useCallback(savedHelpers => {
 		const newHelpers = [];
 		for (const [itemId, config] of Object.entries(savedHelpers)) {
@@ -399,87 +496,113 @@ export default function Main() {
 		return presets.fishingRods.find(r => r.id === id);
 	}, []);
 
-	// Helper to aggregate materials from active presets
-	const aggregatePresetMaterials = useCallback(activePresetValues => {
-		const totals = {};
+	// Helper to find if any tier of a material exists in helpers
+	const findExistingHelperForMaterial = (savedHelpers, materialId) => {
+		const materialIdString = String(materialId);
 
-		for (const presetValue of activePresetValues) {
-			const [presetType, presetIdString] = presetValue.split('.');
-			const id = Number.parseInt(presetIdString, 10);
-			const preset = findPreset(presetType, id);
+		// First check exact match
+		if (savedHelpers[materialIdString]) {
+			return {itemId: materialIdString, helper: savedHelpers[materialIdString]};
+		}
 
-			if (!preset) {
-				continue;
+		// For multi-tier materials, check all tiers
+		// Multi-tier materials have consecutive IDs (e.g., 104101, 104102, 104103, 104104)
+		const material = findMaterial(materialId);
+		if (!material) {
+			return null;
+		}
+
+		const tierIds = getConsecutiveTierIds(materialId, getAllMaterialsFlat());
+
+		// Only check other tiers if this is a multi-tier material
+		if (tierIds.length <= 1) {
+			return null;
+		}
+
+		for (const tierId of tierIds) {
+			const tierIdString = String(tierId);
+			if (tierIdString !== materialIdString && savedHelpers[tierIdString]) {
+				return {itemId: tierIdString, helper: savedHelpers[tierIdString]};
 			}
+		}
 
-			const groupedItems = groupPresetItems(preset.items);
+		return null;
+	};
 
+	/** Add or remove a preset's materials from the helpers object (mutates `savedHelpers` in place). */
+	const applyPresetToHelpers = useCallback((preset, isAdding, savedHelpers) => {
+		const groupedItems = groupPresetItems(preset.items);
+		let helpersModified = false;
+
+		if (isAdding) {
 			for (const groupedItem of groupedItems) {
 				const itemId = String(groupedItem.id);
 				const {category, tiers} = groupedItem;
+				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
-				totals[itemId] ||= {
-					category,
-					tiers: {
-						0: 0, 1: 0, 2: 0, 3: 0,
-					},
-				};
+				if (existing) {
+					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+					const updatedConfig = {...existing.helper};
 
-				for (const tier of tiers) {
-					totals[itemId].tiers[tier.tierIndex] += tier.count;
+					for (const tier of tiers) {
+						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
+						updatedConfig[tierFields[tier.tierIndex]] = currentGoal + tier.count;
+					}
+
+					savedHelpers[existing.itemId] = updatedConfig;
+					helpersModified = true;
+				} else {
+					savedHelpers[itemId] = {
+						category,
+						tierFour: 0,
+						tierFourGoal: tiers.find(t => t.tierIndex === 3)?.count || '',
+						tierOne: 0,
+						tierOneGoal: tiers.find(t => t.tierIndex === 0)?.count || '',
+						tierOneLock: false,
+						tierThree: 0,
+						tierThreeGoal: tiers.find(t => t.tierIndex === 2)?.count || '',
+						tierThreeLock: false,
+						tierTwo: 0,
+						tierTwoGoal: tiers.find(t => t.tierIndex === 1)?.count || '',
+						tierTwoLock: false,
+					};
+					helpersModified = true;
+				}
+			}
+		} else {
+			for (const groupedItem of groupedItems) {
+				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
+
+				if (existing) {
+					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+					const updatedConfig = {...existing.helper};
+
+					for (const tier of groupedItem.tiers) {
+						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
+						const newGoal = Math.max(0, currentGoal - tier.count);
+						updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
+					}
+
+					const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
+						|| updatedConfig.tierThree || updatedConfig.tierFour;
+					const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
+						|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
+
+					if (!hasProgress && !hasAnyGoal) {
+						delete savedHelpers[existing.itemId];
+					} else {
+						savedHelpers[existing.itemId] = updatedConfig;
+					}
+
+					helpersModified = true;
 				}
 			}
 		}
 
-		return totals;
-	}, [findPreset, groupPresetItems]);
+		return helpersModified;
+	}, [groupPresetItems, findExistingHelperForMaterial]);
 
-	// Helper to update helper goals from material totals
-	const updateHelperGoals = useCallback((helpers, materialTotals) => {
-		const updated = {...helpers};
-		const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-
-		for (const itemId of Object.keys(updated)) {
-			if (materialTotals[itemId]) {
-				// Update goals for items still in active presets
-				const {tiers} = materialTotals[itemId];
-				const helper = updated[itemId];
-
-				for (let i = 0; i < 4; i++) {
-					helper[tierFields[i]] = tiers[i] > 0 ? tiers[i] : '';
-				}
-			} else {
-				// Remove if no goals (likely preset-added)
-				const helper = updated[itemId];
-				const hasGoals = helper.tierOneGoal || helper.tierTwoGoal
-					|| helper.tierThreeGoal || helper.tierFourGoal;
-				if (!hasGoals) {
-					delete updated[itemId];
-				}
-			}
-		}
-
-		// Add new helpers for new materials
-		for (const [itemId, {category, tiers}] of Object.entries(materialTotals)) {
-			updated[itemId] ||= {
-				category,
-				tierFour: 0,
-				tierFourGoal: tiers[3] > 0 ? tiers[3] : '',
-				tierOne: 0,
-				tierOneGoal: tiers[0] > 0 ? tiers[0] : '',
-				tierOneLock: false,
-				tierThree: 0,
-				tierThreeGoal: tiers[2] > 0 ? tiers[2] : '',
-				tierThreeLock: false,
-				tierTwo: 0,
-				tierTwoGoal: tiers[1] > 0 ? tiers[1] : '',
-				tierTwoLock: false,
-			};
-		}
-
-		return updated;
-	}, []);
-
+	/** Toggle a preset on/off. Loads storage once, computes all changes, then saves atomically. */
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
 		const [type, presetIdString] = value.split('.');
@@ -490,33 +613,32 @@ export default function Main() {
 			return;
 		}
 
+		// Load storage ONCE - all modifications happen on this snapshot
 		const storageState = storage.load();
-		const savedHelpers = storageState?.helpers ?? {};
-		const savedPresets = storageState?.presets ?? [];
+		const currentPresets = storageState?.presets ?? [];
+		const wasActive = currentPresets.includes(value);
+		const isAdding = !wasActive;
 
-		// Toggle preset active state
-		const isCurrentlyActive = savedPresets.includes(value);
-		const newPresets = isCurrentlyActive
-			? savedPresets.filter(p => p !== value)
-			: [...savedPresets, value];
+		// Compute new presets list
+		const newPresets = wasActive
+			? currentPresets.filter(p => p !== value)
+			: [...currentPresets, value];
 
-		// Aggregate materials from all active presets
-		const materialTotals = aggregatePresetMaterials(newPresets);
+		// Compute new helpers
+		const savedHelpers = storageState?.helpers ? {...storageState.helpers} : {};
+		applyPresetToHelpers(preset, isAdding, savedHelpers);
 
-		// Update helpers based on material totals
-		const updatedHelpers = updateHelperGoals(savedHelpers, materialTotals);
+		// Save everything atomically
+		storage.save({...storageState, presets: newPresets, helpers: savedHelpers});
 
-		storage.save({...storageState, helpers: updatedHelpers, presets: newPresets});
+		// Update React state
 		setActivePresets(newPresets);
-
-		// Rebuild the helper list
-		const newHelpers = rebuildHelperList(updatedHelpers);
-		setFarmHelperData(newHelpers);
-	}, [findPreset, aggregatePresetMaterials, updateHelperGoals, rebuildHelperList]);
+		setFarmHelperData(rebuildHelperList(savedHelpers));
+	}, [findPreset, applyPresetToHelpers, rebuildHelperList]);
 
 	useEffect(() => {
-		if (!didRun) {
-			didRun = true;
+		if (!didRun.current) {
+			didRun.current = true;
 			const storageState = storage.load();
 			const savedHelpers = storageState?.helpers;
 			const savedPresets = storageState?.presets ?? [];
@@ -573,7 +695,10 @@ export default function Main() {
 		setFloatGroups(!floatGroups);
 	};
 
-	const disabledKeys = farmHelperData.map(item => item.itemId);
+	const disabledKeys = farmHelperData.flatMap(({itemId}) => {
+		const tierIds = getConsecutiveTierIds(Number.parseInt(itemId, 10), getAllMaterialsFlat());
+		return tierIds.map(String);
+	});
 
 	const videoBackground
 		= (
@@ -589,6 +714,7 @@ export default function Main() {
 			className='material-symbols-outlined'
 			css={[actions, toggleFloat]}
 			title={floatGroups ? 'Click to stack items' : 'Click to float items'}
+			aria-label={floatGroups ? 'Stack items' : 'Float items'}
 			type='button'
 			onClick={handleFloatChange}
 		>
@@ -606,6 +732,7 @@ export default function Main() {
 						className='material-symbols-outlined'
 						css={[actions, metaKeys, toggleWakeLock]}
 						title={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
+						aria-label={wakeLockSentinel ? 'Allow screen to sleep' : 'Keep screen awake'}
 						type='button'
 						onClick={handleWakeLock}
 					>
@@ -616,6 +743,7 @@ export default function Main() {
 					className='material-symbols-outlined'
 					css={[actions, metaKeys, toggleFullScreen]}
 					title={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
+					aria-label={fullScreen ? 'Exit fullscreen' : 'Make fullscreen'}
 					type='button'
 					onClick={handleFullscreen}
 				>

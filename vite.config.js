@@ -15,7 +15,7 @@ export default defineConfig(() => ({
 		outDir: 'build',
 	},
 	plugins: [
-		mkcert(),
+		...(process.env.NODE_ENV === 'test' ? [] : [mkcert()]),
 		react(),
 		// CodecovVitePlugin({
 		// 	enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
@@ -39,7 +39,7 @@ export default defineConfig(() => ({
 		},
 	},
 	server: {
-		https: true,
+		https: process.env.NODE_ENV !== 'test',
 		port: 3000,
 		fs: {
 			allow: [searchForWorkspaceRoot(process.cwd()), __dirname],

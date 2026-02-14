@@ -694,6 +694,21 @@ export const materials = {
 			images: {filename_icon: 'UI_ItemIcon_114060'},
 			version: '4.0',
 		},
+		{
+			id: 114_017,
+			name: 'Mist Veiled Lead Elixir',
+			rarity: 4,
+			sortRank: 15_102,
+			description: 'Test weapon material for weapon presets.',
+			category: 'AVATAR_MATERIAL',
+			typeText: 'Weapon Ascension Material',
+			dropDomainId: 4310,
+			dropDomainName: 'Domain of Forgery: Test Domain',
+			daysOfWeek: ['Monday', 'Thursday', 'Sunday'],
+			sources: ['Test'],
+			images: {filename_icon: 'UI_ItemIcon_114017'},
+			version: '',
+		},
 	],
 	wood: [
 		{

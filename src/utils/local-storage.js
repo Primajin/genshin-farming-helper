@@ -35,8 +35,25 @@ const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem
  * @property {function(any): void} save Save the given value to local storage by stringifying it
  */
 const storage = {
-	load: () => isPRPreview() ? localStorageState : JSON.parse(fromLocalStorage.getItem(localStorageKey)),
-	save: value => fromLocalStorage.setItem(localStorageKey, JSON.stringify(value)),
+	load() {
+		if (isPRPreview()) {
+			return localStorageState;
+		}
+
+		try {
+			const raw = fromLocalStorage.getItem(localStorageKey);
+			return raw === null ? null : JSON.parse(raw);
+		} catch {
+			return null;
+		}
+	},
+	save(value) {
+		try {
+			fromLocalStorage.setItem(localStorageKey, JSON.stringify(value));
+		} catch {
+			// QuotaExceededError or other storage failure — silently ignore
+		}
+	},
 };
 
 export default storage;
