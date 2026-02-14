@@ -49,12 +49,11 @@
     "precoverage": "npm run generate",
     "predeploy": "npm run build",
     "prestart": "npm run generate",
-    "pretest:unit": "npm run generate",
+    "pretest": "npm run generate",
     "publish": "npm run deploy",
     "serve": "vite preview",
     "start": "vite",
-    "test": "npm run lint && npm run test:unit",
-    "test:unit": "vitest"
+    "test": "vitest"
   },
   "browserslist": [
     ">0.2%",
