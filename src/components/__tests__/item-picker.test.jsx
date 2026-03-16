@@ -27,7 +27,7 @@ describe('itemPicker', () => {
 		const label = screen.getByTitle('Scattered Piece of Decarabian\'s Dream');
 		expect(label).toBeDefined();
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
-		const regExp = /url\((\S+)\)/g;
+		const regExp = /url\((\S+)\)/gv;
 		expect(regExp.exec(backgroundStyle)[1]).toContain('/src/images/bg/background_Item_5_Star.png');
 	});
 
@@ -36,7 +36,7 @@ describe('itemPicker', () => {
 		const label = screen.getByTitle('Slime Concentrate');
 		expect(label).toBeDefined();
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
-		const regExp = /url\((\S+)\)/g;
+		const regExp = /url\((\S+)\)/gv;
 		expect(regExp.exec(backgroundStyle)[1]).toContain('/src/images/bg/background_Item_3_Star.png');
 	});
 
@@ -49,7 +49,7 @@ describe('itemPicker', () => {
 		expect(label2).toBeDefined();
 		expect(label3).toBeDefined();
 		const backgroundStyle = label2.querySelectorAll('div')[0].getAttribute('style');
-		const regExp = /url\((\S+)\)/g;
+		const regExp = /url\((\S+)\)/gv;
 		expect(regExp.exec(backgroundStyle)[1]).toContain('/src/images/bg/background_Item_4_Star.png');
 	});
 

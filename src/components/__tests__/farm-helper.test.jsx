@@ -119,15 +119,15 @@ describe('farmHelper', () => {
 			const rendering = render(<FarmHelper category={category} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 			expect(rendering).toMatchSnapshot();
 
-			const buttons = screen.getAllByTestId(/button-tier-/);
+			const buttons = screen.getAllByTestId(/button-tier-/v);
 			expect(buttons).toHaveLength(tiers);
 		});
 
 		test(`increases counter correctly for ${category} ${name} on first tier`, () => {
 			render(<FarmHelper category={category} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
-			const buttons = screen.getAllByTestId(/button-tier-/);
-			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+			const buttons = screen.getAllByTestId(/button-tier-/v);
+			const valuesBefore = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 			expect(valuesBefore).toMatchObject(expectedValuesBefore[tiers]);
 
@@ -135,7 +135,7 @@ describe('farmHelper', () => {
 				fireEvent.click(buttons[0]);
 			}
 
-			const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+			const valuesAfter = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 			expect(valuesAfter).toMatchObject(expectedValuesAfterFirstTier[tiers]);
 		});
@@ -143,8 +143,8 @@ describe('farmHelper', () => {
 		test(`increases counter correctly for ${category} ${name} when second tier is locked`, () => {
 			render(<FarmHelper category={category} config={configWithLock} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
-			const buttons = screen.getAllByTestId(/button-tier-/);
-			const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+			const buttons = screen.getAllByTestId(/button-tier-/v);
+			const valuesBefore = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 			expect(valuesBefore).toMatchObject(expectedValuesBefore[tiers]);
 
@@ -152,7 +152,7 @@ describe('farmHelper', () => {
 				fireEvent.click(buttons[0]);
 			}
 
-			const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+			const valuesAfter = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 			expect(valuesAfter).toMatchObject(expectedValuesAfterFirstTierWithLock[tiers]);
 		});
@@ -161,8 +161,8 @@ describe('farmHelper', () => {
 			test(`correctly tallies for ${category} ${name} when lock is lifted`, async () => {
 				render(<FarmHelper category={category} config={configWithLockPrefilled} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
-				const buttons = screen.getAllByTestId(/button-tier-/);
-				const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+				const buttons = screen.getAllByTestId(/button-tier-/v);
+				const valuesBefore = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 				expect(valuesBefore).toMatchObject(expectedValuesBeforeWithLockPrefilled[tiers]);
 
@@ -174,7 +174,7 @@ describe('farmHelper', () => {
 				// Keep await here even if it's not async, helps suppress an error
 				await fireEvent.click(lock.querySelector('input'));
 
-				const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+				const valuesAfter = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 				expect(valuesAfter).toMatchObject(expectedValuesAfterLockLifted[tiers]);
 			});
@@ -184,9 +184,9 @@ describe('farmHelper', () => {
 			test(`correctly shows targets for ${category} ${name} when they are set`, async () => {
 				render(<FarmHelper category={category} config={configWithTargetsSet} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
-				const buttons = screen.getAllByTestId(/button-tier-/);
+				const buttons = screen.getAllByTestId(/button-tier-/v);
 				const lastButton = buttons.at(-1);
-				expect(lastButton.getAttribute('title')).toMatch(/1.+remaining/);
+				expect(lastButton.getAttribute('title')).toMatch(/1.+remaining/v);
 			});
 		}
 	}
@@ -196,14 +196,14 @@ describe('farmHelper', () => {
 
 		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
-		const buttons = screen.getAllByTestId(/button-tier-/);
-		const valuesBefore = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+		const buttons = screen.getAllByTestId(/button-tier-/v);
+		const valuesBefore = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 		for (let i = 0; i < 4; i++) {
 			fireEvent.click(buttons[i]);
 		}
 
-		const valuesAfter = screen.getAllByTestId(/value-tier-/).map(element => element.textContent);
+		const valuesAfter = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
 		expect(valuesBefore).toMatchObject(['0', '1', '2', '3']);
 		expect(valuesAfter).toMatchObject(['1', '2', '0', '5']);
@@ -215,7 +215,7 @@ describe('farmHelper', () => {
 		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 		const goalLabels = screen.getAllByTestId('goal-label');
-		const buttons = screen.getAllByTestId(/button-tier-/);
+		const buttons = screen.getAllByTestId(/button-tier-/v);
 		const valuesBefore = buttons.map(button => button.querySelector('b'));
 
 		for (const className of valuesBefore.map(value => value.className)) {
@@ -257,7 +257,7 @@ describe('farmHelper', () => {
 		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
 
 		const goalLabels = screen.getAllByTestId('goal-label');
-		const buttons = screen.getAllByTestId(/button-tier-/);
+		const buttons = screen.getAllByTestId(/button-tier-/v);
 		const valuesBefore = buttons.map(button => button.querySelector('b'));
 
 		for (const className of valuesBefore.map(value => value.className)) {

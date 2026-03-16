@@ -33,7 +33,7 @@ describe('itemCard', () => {
 		render(<ItemCard name='Test Item' value='test.123' icon='icon_test' rarity={4}/>);
 		const label = screen.getByTitle('Test Item');
 		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
-		const regExp = /url\((\S+)\)/g;
+		const regExp = /url\((\S+)\)/gv;
 		expect(regExp.exec(backgroundStyle)[1]).toContain('background_Item_5_Star.png');
 	});
 
