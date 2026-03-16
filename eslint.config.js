@@ -1,6 +1,5 @@
 import vitest from '@vitest/eslint-plugin';
 import xo from 'xo';
-import xoReactConfig from 'eslint-config-xo-react';
 import {globalIgnores} from 'eslint/config';
 
 /** @type {import('xo').FlatXoConfig} */
@@ -8,7 +7,6 @@ const eslintConfig = [
 	globalIgnores([
 		'package-lock.json',
 	]),
-	...xoReactConfig,
 	{
 		files: ['src/**/__tests__/*'],
 		plugins: {
@@ -20,6 +18,7 @@ const eslintConfig = [
 		},
 	},
 	{
+		react: true,
 		files: ['**/*.{js,jsx,ts,tsx}'],
 		rules: {
 			'import-x/extensions': 'off',
@@ -50,6 +49,11 @@ const eslintConfig = [
 					],
 				},
 			],
+		},
+	},
+	{
+		settings: {
+			react: {version: '19'},
 		},
 	},
 ];
