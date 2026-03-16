@@ -11,7 +11,7 @@ const isValidMaterial = material => material
 	&& material.name;
 
 const defaultOptions = {matchCategories: true, verboseCategories: true};
-const allMaterials = genshinDb.materials('names', defaultOptions).filter(material => isValidMaterial(material)).sort((a, b) => a.sortRank === b.sortRank ? a.id - b.id : a.sortRank - b.sortRank);
+const allMaterials = genshinDb.materials('names', defaultOptions).filter(material => isValidMaterial(material)).toSorted((a, b) => a.sortRank === b.sortRank ? a.id - b.id : a.sortRank - b.sortRank);
 
 const characterAscensionMaterials = allMaterials.filter(material => material.typeText.startsWith('Character Ascension Material'));
 const characterLVLMaterials = allMaterials.filter(material => material.typeText.startsWith('Character Level-Up Material') && !material.description.startsWith('Character Ascension'));
