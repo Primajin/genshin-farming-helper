@@ -25,3 +25,7 @@ updates:
       prefix: ":books:"
     labels:
       - "dependencies"
+    groups:
+      dependencies:
+        patterns:
+          - "*"
