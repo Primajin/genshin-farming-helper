@@ -30,7 +30,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "jsdom": "^29.0.1",
-    "vite": "^8.0.3",
+    "vite": "^8.0.5",
     "vite-plugin-mkcert": "^1.17.10",
     "vitest": "^4.0.3",
     "xo": "^2.0.2"
