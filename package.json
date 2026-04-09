@@ -17,21 +17,21 @@
     "genshin-db": "^5.2.9",
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/coverage-v8": "^4.1.3",
-    "@vitest/eslint-plugin": "^1.6.14",
+    "@vitest/eslint-plugin": "^1.6.15",
     "eslint": "^9.39.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "jsdom": "^29.0.2",
     "vite": "^8.0.7",
-    "vite-plugin-mkcert": "^1.17.10",
+    "vite-plugin-mkcert": "^1.17.12",
     "vitest": "^4.0.3",
     "xo": "^2.0.2"
   },
