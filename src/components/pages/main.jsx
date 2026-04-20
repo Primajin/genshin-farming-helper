@@ -1,7 +1,7 @@
 /* global window, document */
 /** @jsxImportSource @emotion/react */
 import {
-	useCallback, useEffect, useRef, useState,
+	useCallback, useEffect, useState,
 } from 'react';
 import {Global, css} from '@emotion/react';
 import materials from 'data';
@@ -184,7 +184,6 @@ function createInitialFarmHelpers() {
 	const storageState = storage.load();
 	const savedHelpers = storageState?.helpers;
 	if (savedHelpers && Object.keys(savedHelpers).length > 0) {
-		// Return the data needed to create FarmHelper components later
 		return Object.entries(savedHelpers).map(([itemId, config]) => ({
 			itemId,
 			config,
@@ -192,15 +191,18 @@ function createInitialFarmHelpers() {
 		}));
 	}
 
-	// Storage is empty, create new
-	storage.save({});
 	return [];
 }
 
+// Helper function to load initial presets from storage
+function createInitialPresets() {
+	const storageState = storage.load();
+	return storageState?.presets ?? [];
+}
+
 export default function Main() {
-	const didRun = useRef(false);
-	const [farmHelperData, setFarmHelperData] = useState(() => createInitialFarmHelpers());
-	const [activePresets, setActivePresets] = useState([]);
+	const [farmHelperData, setFarmHelperData] = useState(createInitialFarmHelpers);
+	const [activePresets, setActivePresets] = useState(createInitialPresets);
 	const [floatGroups, setFloatGroups] = useState(false);
 	const [fullScreen, setFullScreen] = useState(false);
 	const [wakeLockSentinel, setWakeLockSentinel] = useState(null);
@@ -636,26 +638,12 @@ export default function Main() {
 		setFarmHelperData(rebuildHelperList(savedHelpers));
 	}, [findPreset, applyPresetToHelpers, rebuildHelperList]);
 
+	// Initialize empty storage on first mount if nothing has been saved yet
 	useEffect(() => {
-		if (!didRun.current) {
-			didRun.current = true;
-			const storageState = storage.load();
-			const savedHelpers = storageState?.helpers;
-			const savedPresets = storageState?.presets ?? [];
-
-			if (savedHelpers && Object.keys(savedHelpers).length > 0) {
-				// Rebuild the entire helper list from saved state
-				const newHelpers = rebuildHelperList(savedHelpers);
-				setFarmHelperData(newHelpers);
-			} else {
-				// Storage is empty, create new
-				storage.save({});
-			}
-
-			// Set presets after helpers are loaded
-			setActivePresets(savedPresets);
+		if (!storage.load()) {
+			storage.save({});
 		}
-	}, [addHelperWithItem, rebuildHelperList]);
+	}, []);
 
 	useEffect(() => {
 		const setFullScreenState = () => {
