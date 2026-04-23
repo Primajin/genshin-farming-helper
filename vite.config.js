@@ -2,7 +2,7 @@ import path from 'node:path';
 import process from 'node:process';
 import react from '@vitejs/plugin-react';
 import mkcert from 'vite-plugin-mkcert';
-// Import {codecovVitePlugin} from '@codecov/vite-plugin';
+import {codecovVitePlugin} from '@codecov/vite-plugin';
 import {configDefaults, coverageConfigDefaults} from 'vitest/config';
 import {defineConfig, searchForWorkspaceRoot} from 'vite';
 
@@ -14,12 +14,13 @@ export default defineConfig(() => ({
 	plugins: [
 		...(process.env.NODE_ENV === 'test' ? [] : [mkcert()]),
 		react(),
-		// CodecovVitePlugin({
-		// 	enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-		// 	bundleName: 'genshin-farming-helper',
-		// 	uploadToken: process.env.CODECOV_TOKEN,
-		// 	telemetry: false,
-		// }),
+		// Put the Codecov vite plugin after all other plugins
+		codecovVitePlugin({
+			enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
+			bundleName: 'genshin-farming-helper',
+			uploadToken: process.env.CODECOV_TOKEN,
+			gitService: 'github',
+		}),
 	],
 	resolve: {
 		preserveSymlinks: true,
@@ -56,5 +57,9 @@ export default defineConfig(() => ({
 		globals: true,
 		environment: 'jsdom',
 		setupFiles: './setup-tests.js',
+		reporters: ['default', 'junit'],
+		outputFile: {
+			junit: './test-report.junit.xml',
+		},
 	},
 }));
