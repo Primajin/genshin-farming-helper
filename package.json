@@ -37,6 +37,11 @@
     "vitest": "^4.0.3",
     "xo": "^2.0.2"
   },
+  "overrides": {
+    "@codecov/vite-plugin": {
+      "vite": "$vite"
+    }
+  },
   "scripts": {
     "build": "vite build",
     "coverage": "vitest run --coverage",
