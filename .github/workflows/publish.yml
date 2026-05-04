@@ -7,6 +7,13 @@ on:
 permissions:
   contents: write
 
+# Serialise all gh-pages writes so this push-to-main deploy cannot race the
+# PR-preview workflow (which also writes to gh-pages).
+# cancel-in-progress: false ensures no deploy is silently dropped.
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest

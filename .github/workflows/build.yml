@@ -10,7 +10,15 @@ on:
 
 permissions: write-all
 
-concurrency: preview-${{ github.ref }}
+# Use a single shared concurrency group so all runs that write to gh-pages are
+# serialised. "preview-${{ github.ref }}" only serialises per PR, which still
+# allows concurrent writes from different PRs (or synchronize vs. closed events)
+# and causes "remote contains work not present locally" / rebase conflicts.
+# cancel-in-progress: false ensures queued runs still execute (important for
+# the "closed" event that removes a preview).
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -34,8 +42,13 @@ jobs:
         run: npm ci
       - name: Generate resources
         run: npm run generate
+      - name: Set env
+        shell: bash
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          echo "BASE_URL=pr-preview/pr-${PR_NUMBER}/" >> "$GITHUB_ENV"
       - name: Run build with Base
-        run: npx vite build --base="/pr-preview/pr-$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')/"
+        run: npx vite build --base="${{ env.BASE_URL }}"
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       - name: Deploy preview
