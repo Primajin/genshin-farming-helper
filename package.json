@@ -17,8 +17,8 @@
     "genshin-db": "^5.2.10",
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@codecov/vite-plugin": "^2.0.1",
