@@ -8,21 +8,8 @@ import {materialsType} from 'types';
 import ItemPicker from 'components/molecules/item-picker.jsx';
 
 const searchInput = css`
-	clip: auto;
-	clip-path: none;
-	height: auto;
-	overflow: visible;
-	position: static;
-	white-space: normal;
-	width: 100%;
-	background: ${theme.primary};
-	border: 1px solid rgba(0,0,0,0.3);
-	border-radius: 5px;
-	color: ${theme.text};
-	font-size: 14px;
+	${theme.searchInput};
 	margin-top: 10px;
-	padding: 8px 12px;
-	box-sizing: border-box;
 `;
 
 const categories = css`

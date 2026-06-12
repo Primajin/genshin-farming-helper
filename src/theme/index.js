@@ -27,6 +27,22 @@ const theme = {
 		margin-top: 3px;
 		padding: 3px;
 	`,
+	searchInput: css`
+		clip: auto;
+		clip-path: none;
+		height: auto;
+		overflow: visible;
+		position: static;
+		white-space: normal;
+		width: 100%;
+		background: ${primary};
+		border: 1px solid rgba(0,0,0,0.3);
+		border-radius: 5px;
+		color: ${text};
+		font-size: 14px;
+		padding: 8px 12px;
+		box-sizing: border-box;
+	`,
 };
 
 export default theme;

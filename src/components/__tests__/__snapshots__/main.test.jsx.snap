@@ -38,7 +38,7 @@ exports[`main > renders without crashing 1`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -790,7 +790,7 @@ exports[`main > renders without crashing 1`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -1830,7 +1830,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -2815,7 +2815,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -3857,7 +3857,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -4842,7 +4842,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -5884,7 +5884,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -6869,7 +6869,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -7672,7 +7672,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -8416,7 +8416,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -9217,7 +9217,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -9961,7 +9961,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -10762,7 +10762,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -11506,7 +11506,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -12307,7 +12307,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -13051,7 +13051,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -13852,7 +13852,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -14596,7 +14596,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""

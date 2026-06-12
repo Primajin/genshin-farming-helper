@@ -10,7 +10,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -1525,7 +1525,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
     >
       <input
         aria-label="Search items"
-        class="css-sd2pl7"
+        class="css-ebn10e"
         placeholder="Search items…"
         type="text"
         value=""

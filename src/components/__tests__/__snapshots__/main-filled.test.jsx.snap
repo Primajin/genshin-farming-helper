@@ -1449,7 +1449,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -3630,7 +3630,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
@@ -5805,7 +5805,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         >
           <input
             aria-label="Search items"
-            class="css-sd2pl7"
+            class="css-ebn10e"
             placeholder="Search items…"
             type="text"
             value=""
@@ -7919,7 +7919,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
       >
         <input
           aria-label="Search items"
-          class="css-sd2pl7"
+          class="css-ebn10e"
           placeholder="Search items…"
           type="text"
           value=""
