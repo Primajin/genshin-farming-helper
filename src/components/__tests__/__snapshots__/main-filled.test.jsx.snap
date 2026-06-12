@@ -1451,7 +1451,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -3632,7 +3632,7 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -5807,7 +5807,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -7921,7 +7921,7 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset

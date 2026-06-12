@@ -23,7 +23,7 @@ describe('presetModal search', () => {
 
 	test('renders the search input when modal is open', () => {
 		render(<PresetModal isOpen activePresets={[]} onClose={vi.fn()} onPresetChange={vi.fn()}/>);
-		expect(screen.getByRole('textbox', {name: 'Search presets'})).toBeDefined();
+		expect(screen.getByRole('searchbox', {name: 'Search presets'})).toBeDefined();
 	});
 
 	test('shows all presets when search term is empty', () => {
@@ -34,7 +34,7 @@ describe('presetModal search', () => {
 
 	test('filters presets by search term', () => {
 		render(<PresetModal isOpen activePresets={[]} onClose={vi.fn()} onPresetChange={vi.fn()}/>);
-		const searchInput = screen.getByRole('textbox', {name: 'Search presets'});
+		const searchInput = screen.getByRole('searchbox', {name: 'Search presets'});
 
 		fireEvent.change(searchInput, {target: {value: 'Aino'}});
 
@@ -44,7 +44,7 @@ describe('presetModal search', () => {
 
 	test('resets search term when switching tabs', async () => {
 		render(<PresetModal isOpen activePresets={[]} onClose={vi.fn()} onPresetChange={vi.fn()}/>);
-		const searchInput = screen.getByRole('textbox', {name: 'Search presets'});
+		const searchInput = screen.getByRole('searchbox', {name: 'Search presets'});
 
 		fireEvent.change(searchInput, {target: {value: 'Aino'}});
 		expect(searchInput.value).toBe('Aino');
@@ -54,7 +54,7 @@ describe('presetModal search', () => {
 			fireEvent.click(weaponsTab);
 		});
 
-		expect(screen.getByRole('textbox', {name: 'Search presets'}).value).toBe('');
+		expect(screen.getByRole('searchbox', {name: 'Search presets'}).value).toBe('');
 	});
 
 	test('filters presets on weapons tab', async () => {
@@ -65,7 +65,7 @@ describe('presetModal search', () => {
 			fireEvent.click(weaponsTab);
 		});
 
-		const searchInput = screen.getByRole('textbox', {name: 'Search presets'});
+		const searchInput = screen.getByRole('searchbox', {name: 'Search presets'});
 		fireEvent.change(searchInput, {target: {value: 'Test Weapon'}});
 
 		expect(screen.getByTitle('Test Weapon')).toBeDefined();

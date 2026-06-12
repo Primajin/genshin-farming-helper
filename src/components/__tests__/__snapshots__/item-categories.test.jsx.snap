@@ -12,7 +12,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -1527,7 +1527,7 @@ exports[`itemCategories > renders the correct number of categories and handles c
         aria-label="Search items"
         class="css-ebn10e"
         placeholder="Search items…"
-        type="text"
+        type="search"
         value=""
       />
       <fieldset

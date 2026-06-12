@@ -64,7 +64,7 @@ function PresetModal({isOpen, onClose, activePresets, onPresetChange}) {
 			>
 				<input
 					css={searchInput}
-					type='text'
+					type='search'
 					placeholder='Search presets…'
 					aria-label='Search presets'
 					value={searchTerm}

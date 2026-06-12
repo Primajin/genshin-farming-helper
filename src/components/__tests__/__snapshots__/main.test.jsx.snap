@@ -40,7 +40,7 @@ exports[`main > renders without crashing 1`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -792,7 +792,7 @@ exports[`main > renders without crashing 1`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -1832,7 +1832,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -2817,7 +2817,7 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -3859,7 +3859,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -4844,7 +4844,7 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -5886,7 +5886,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -6871,7 +6871,7 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -7674,7 +7674,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -8418,7 +8418,7 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -9219,7 +9219,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -9963,7 +9963,7 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -10764,7 +10764,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -11508,7 +11508,7 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -12309,7 +12309,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -13053,7 +13053,7 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset
@@ -13854,7 +13854,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
             aria-label="Search items"
             class="css-ebn10e"
             placeholder="Search items…"
-            type="text"
+            type="search"
             value=""
           />
           <fieldset
@@ -14598,7 +14598,7 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
           aria-label="Search items"
           class="css-ebn10e"
           placeholder="Search items…"
-          type="text"
+          type="search"
           value=""
         />
         <fieldset

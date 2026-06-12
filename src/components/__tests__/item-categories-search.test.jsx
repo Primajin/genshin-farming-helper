@@ -16,7 +16,7 @@ const onChangeProperty = vi.fn();
 describe('itemCategories search', () => {
 	test('renders the search input', () => {
 		render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProperty}/>);
-		expect(screen.getByRole('textbox', {name: 'Search items'})).toBeDefined();
+		expect(screen.getByRole('searchbox', {name: 'Search items'})).toBeDefined();
 	});
 
 	test('shows all fieldsets when search term is empty', () => {
@@ -27,7 +27,7 @@ describe('itemCategories search', () => {
 
 	test('filters items by search term', () => {
 		render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProperty}/>);
-		const searchInput = screen.getByRole('textbox', {name: 'Search items'});
+		const searchInput = screen.getByRole('searchbox', {name: 'Search items'});
 
 		fireEvent.change(searchInput, {target: {value: 'Iron Chunk'}});
 
@@ -36,7 +36,7 @@ describe('itemCategories search', () => {
 
 	test('hides fieldsets with no matching items when searching', () => {
 		render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProperty}/>);
-		const searchInput = screen.getByRole('textbox', {name: 'Search items'});
+		const searchInput = screen.getByRole('searchbox', {name: 'Search items'});
 
 		// Search for something that only exists in Building Materials
 		fireEvent.change(searchInput, {target: {value: 'Iron Chunk'}});
@@ -48,7 +48,7 @@ describe('itemCategories search', () => {
 
 	test('restores all fieldsets when search is cleared', () => {
 		render(<ItemCategories list={[]} materials={materials} onChangeProp={onChangeProperty}/>);
-		const searchInput = screen.getByRole('textbox', {name: 'Search items'});
+		const searchInput = screen.getByRole('searchbox', {name: 'Search items'});
 
 		fireEvent.change(searchInput, {target: {value: 'Iron Chunk'}});
 		fireEvent.change(searchInput, {target: {value: ''}});

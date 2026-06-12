@@ -92,7 +92,7 @@ function ItemCategories({
 		<form css={categories} onChange={onChangeProp}>
 			<input
 				css={searchInput}
-				type='text'
+				type='search'
 				placeholder='Search items…'
 				aria-label='Search items'
 				value={searchTerm}
