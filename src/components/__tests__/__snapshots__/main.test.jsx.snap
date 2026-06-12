@@ -36,6 +36,13 @@ exports[`main > renders without crashing 1`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -781,6 +788,13 @@ exports[`main > renders without crashing 1`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -1814,6 +1828,13 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -2792,6 +2813,13 @@ exports[`main > renders without crashing and all them buttons clicked 1`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -3827,6 +3855,13 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -4805,6 +4840,13 @@ exports[`main > renders without crashing and all them buttons clicked 2`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -5840,6 +5882,13 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -6818,6 +6867,13 @@ exports[`main > renders without crashing and all them buttons clicked 3`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -7614,6 +7670,13 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -8351,6 +8414,13 @@ exports[`main > renders without crashing and all them buttons clicked 4`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -9145,6 +9215,13 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -9882,6 +9959,13 @@ exports[`main > renders without crashing and all them buttons clicked 5`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -10676,6 +10760,13 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -11413,6 +11504,13 @@ exports[`main > renders without crashing and all them buttons clicked 6`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -12207,6 +12305,13 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -12944,6 +13049,13 @@ exports[`main > renders without crashing and all them buttons clicked 7`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -13738,6 +13850,13 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -14475,6 +14594,13 @@ exports[`main > renders without crashing and all them buttons clicked 8`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"

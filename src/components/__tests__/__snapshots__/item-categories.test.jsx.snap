@@ -8,6 +8,13 @@ exports[`itemCategories > renders the correct number of categories and handles c
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -1516,6 +1523,13 @@ exports[`itemCategories > renders the correct number of categories and handles c
     <form
       class="css-mgmeqk"
     >
+      <input
+        aria-label="Search items"
+        class="css-ebn10e"
+        placeholder="Search items…"
+        type="search"
+        value=""
+      />
       <fieldset
         class="narrow"
         role="group"

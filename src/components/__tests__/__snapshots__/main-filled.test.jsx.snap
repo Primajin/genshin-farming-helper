@@ -1447,6 +1447,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -3621,6 +3628,13 @@ exports[`main with pre-saved helpers > renders without crashing 1`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
@@ -5789,6 +5803,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
         <form
           class="css-mgmeqk"
         >
+          <input
+            aria-label="Search items"
+            class="css-ebn10e"
+            placeholder="Search items…"
+            type="search"
+            value=""
+          />
           <fieldset
             class="narrow"
             role="group"
@@ -7896,6 +7917,13 @@ exports[`main with pre-saved helpers > renders without crashing 2`] = `
       <form
         class="css-mgmeqk"
       >
+        <input
+          aria-label="Search items"
+          class="css-ebn10e"
+          placeholder="Search items…"
+          type="search"
+          value=""
+        />
         <fieldset
           class="narrow"
           role="group"
