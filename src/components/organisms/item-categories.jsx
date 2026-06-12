@@ -70,7 +70,10 @@ function ItemCategories({
 	const [searchTerm, setSearchTerm] = useState('');
 
 	const filterMaterials = materials => {
-		if (!searchTerm) return materials;
+		if (!searchTerm) {
+			return materials;
+		}
+
 		return materials.filter(material =>
 			material.name.toLowerCase().includes(searchTerm.toLowerCase()));
 	};
