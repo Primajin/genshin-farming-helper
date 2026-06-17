@@ -3,4 +3,4 @@
  * @param {string} string - The input string that may contain quotation marks
  * @returns {string} The string without any quotation marks
  */
-export const removeQuotesFromString = string => string.replace(/^["'](?<content>.+(?=["']$))["']$/v, '$<content>');
+export const removeQuotesFromString = string => string.replace(/^["'](?<content>.+(?=["']$))["']$/v, (...arguments_) => arguments_.at(-1).content);
