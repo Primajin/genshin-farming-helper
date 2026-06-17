@@ -6,6 +6,7 @@ import {
 	beforeEach, describe, expect, test, vi,
 } from 'vitest';
 import Main from 'components/pages/main.jsx';
+import storage from 'utils/local-storage.js';
 
 vi.mock('data', async () => {
 	const {materials} = await vi.importActual('__tests__/__mocks__/data.js');
@@ -190,5 +191,41 @@ describe('main', () => {
 		expect(stampingDieHelper).toBeDefined();
 		const stampingDieTiers = stampingDieHelper.querySelectorAll('[data-testid^="button-tier-"]');
 		expect(stampingDieTiers.length).toBe(1);
+	});
+
+	test('keeps a helper unique when the same item is selected again', async () => {
+		storage.save({
+			helpers: {
+				104_303: {
+					category: 'TALENT',
+					tierFour: 0,
+					tierFourGoal: '',
+					tierOne: 1,
+					tierOneGoal: '',
+					tierOneLock: false,
+					tierThree: 0,
+					tierThreeGoal: '',
+					tierThreeLock: false,
+					tierTwo: 0,
+					tierTwoGoal: '',
+					tierTwoLock: false,
+				},
+			},
+		});
+		render(<Main/>);
+
+		const existingValue = screen.getByTestId('value-tier-0').textContent;
+		expect(existingValue).toBe('1');
+
+		const radio = screen.getByDisplayValue('TALENT.104303');
+		radio.disabled = false;
+
+		await act(() => {
+			fireEvent.click(radio);
+		});
+
+		expect(screen.getAllByTitle('Remove item')).toHaveLength(1);
+		expect(radio.checked).toBe(false);
+		expect(screen.getByTestId('value-tier-0').textContent).toBe(existingValue);
 	});
 });
