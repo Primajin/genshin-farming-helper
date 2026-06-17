@@ -269,24 +269,24 @@ export default function Main() {
 	});
 
 	/**
-	 @typedef {object} ConfigObject
-	 @property {string} category Helper category.
-	 @property {number} tierOne Current tier-one count.
-	 @property {number | string} tierOneGoal Target tier-one count.
-	 @property {boolean} tierOneLock Whether tier one is locked.
-	 @property {number} tierTwo Current tier-two count.
-	 @property {number | string} tierTwoGoal Target tier-two count.
-	 @property {boolean} tierTwoLock Whether tier two is locked.
-	 @property {number} tierThree Current tier-three count.
-	 @property {number | string} tierThreeGoal Target tier-three count.
-	 @property {boolean} tierThreeLock Whether tier three is locked.
-	 @property {number} tierFour Current tier-four count.
-	 @property {number | string} tierFourGoal Target tier-four count.
+	 * @typedef {object} ConfigObject
+	 * @property {string} category Helper category.
+	 * @property {number} tierOne Current tier-one count.
+	 * @property {number | string} tierOneGoal Target tier-one count.
+	 * @property {boolean} tierOneLock Whether tier one is locked.
+	 * @property {number} tierTwo Current tier-two count.
+	 * @property {number | string} tierTwoGoal Target tier-two count.
+	 * @property {boolean} tierTwoLock Whether tier two is locked.
+	 * @property {number} tierThree Current tier-three count.
+	 * @property {number | string} tierThreeGoal Target tier-three count.
+	 * @property {boolean} tierThreeLock Whether tier three is locked.
+	 * @property {number} tierFour Current tier-four count.
+	 * @property {number | string} tierFourGoal Target tier-four count.
 	 */
 
 	/**
-	 Add a new helper with the given item.
-	 @param {{config?: ConfigObject, itemId: string, category: string}} helper The helper definition to add.
+	 * Add a new helper with the given item.
+	 * @param {{config?: ConfigObject, itemId: string, category: string}} helper The helper definition to add.
 	 */
 	const addHelperWithItem = useCallback(helper => {
 		const {config, itemId, category} = helper;
@@ -326,8 +326,8 @@ export default function Main() {
 	}, []);
 
 	/**
-	 Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal.
-	 @param {React.ChangeEvent<HTMLInputElement>} event The radio-button change event.
+	 * Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal.
+	 * @param {React.ChangeEvent<HTMLInputElement>} event The radio-button change event.
 	 */
 	const onChange = event => {
 		const itemName = event.target.value;
