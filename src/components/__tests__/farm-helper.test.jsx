@@ -186,7 +186,7 @@ describe('farmHelper', () => {
 
 				const buttons = screen.getAllByTestId(/button-tier-/v);
 				const lastButton = buttons.at(-1);
-				expect(lastButton.getAttribute('title')).toMatch(/^1 .* remaining$/v);
+				expect(lastButton.getAttribute('title')).toMatch(/^1 .+ remaining$/v);
 			});
 		}
 	}
