@@ -1,6 +1,5 @@
 import fs from 'node:fs';
 import genshinDb from 'genshin-db';
-
 import {fishingRodRecipes} from './fishing-rods-data.js';
 
 const isValidMaterial = material => material

@@ -44,6 +44,6 @@ jobs:
         with:
           auto_fix: true
           xo: true
-          xo_args: "--config eslint.config.js"
+          xo_args: "--config xo.config.js"
           commit_message: ":sparkles: fix code style issues with ${linter}"
           git_email: Primajin@users.noreply.github.com

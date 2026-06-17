@@ -1,5 +1,4 @@
 import {describe, test, expect} from 'vitest';
-
 import {filterObject} from '../objects.js';
 
 describe('objects', () => {
