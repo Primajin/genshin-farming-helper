@@ -8,7 +8,7 @@ expect.addSnapshotSerializer({
 	test: value => typeof value === 'string' && value.includes('background-image: url("/@fs'),
 	serialize(value) {
 		// Normalize path to use forward slashes and remove OS-specific prefixes
-		return value.replaceAll(/background-image: url\("\/[^"]*\/(?<path>src\/images\/[^"]+)"\);/gv, (...regexMatches) => `"background-image: url("/${regexMatches.at(-1).path}");"`);
+		return value.replaceAll(/background-image: url\("\/[^"]*\/(?<path>src\/images\/[^"]+)"\);/gv, (match, _, offset, source, groups) => `"background-image: url("/${groups.path}");"`);
 	},
 });
 
