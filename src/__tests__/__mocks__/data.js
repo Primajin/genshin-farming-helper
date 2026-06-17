@@ -1,4 +1,4 @@
-/* eslint-disable camelcase, @stylistic/max-len */
+/* eslint-disable camelcase, @stylistic/max-len -- mock data mirrors the upstream genshin-db payload shape */
 
 export const materials = {
 	buildingMaterials: [

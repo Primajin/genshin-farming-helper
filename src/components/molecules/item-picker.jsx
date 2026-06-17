@@ -13,7 +13,7 @@ const DEFAULT_PROPERTIES = {
 function ItemPicker(properties) {
 	const {list, materials, type} = {...DEFAULT_PROPERTIES, ...filterObject(properties)};
 	return materials.map(material => {
-		const materialId = `${material.id}`;
+		const materialId = String(material.id);
 		const goesUpTo5 = Boolean(material['5starname']);
 		const rarity = type === materialTypes.BUILDING || type === materialTypes.LOCAL ? 0 : (material.rarity ?? (goesUpTo5 ? 5 : 4)) - 1;
 		const isDisabled = list.includes(materialId);

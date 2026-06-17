@@ -45,10 +45,12 @@ function ItemCard({
 	const hasRetried = useRef(false);
 
 	const tryOtherUrl = () => {
-		if (!hasRetried.current) {
-			hasRetried.current = true;
-			setSource(`${IMG_URL2}${icon}.png`);
+		if (hasRetried.current) {
+			return;
 		}
+
+		hasRetried.current = true;
+		setSource(`${IMG_URL2}${icon}.png`);
 	};
 
 	return (

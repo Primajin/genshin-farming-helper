@@ -217,7 +217,7 @@ export default function Main() {
 		const currentPresets = storageState?.presets ?? [];
 		const newPresets = currentPresets.filter(presetKey => {
 			const [type, presetIdString] = presetKey.split('.');
-			const presetId = Number.parseInt(presetIdString, 10);
+			const presetId = Number(presetIdString);
 			const preset = findPreset(type, presetId);
 			if (!preset) {
 				return false;
@@ -269,26 +269,24 @@ export default function Main() {
 	});
 
 	/**
-	 * The config array has seven positions
-	 * @typedef ConfigObject
-	 * @type {Object}
-	 * @property {string} category - The type of the helper
-	 * @property {number} tierOne - The tier one value
-	 * @property {number | string} tierOneGoal - The tier one goal
-	 * @property {bool} tierOneLock - Is tier one locked
-	 * @property {number} tierTwo - The tier two value
-	 * @property {number | string} tierTwoGoal - The tier two goal
-	 * @property {bool} tierTwoLock - Is tier two locked
-	 * @property {number} tierThree - The tier three value
-	 * @property {number | string} tierThreeGoal - The tier three goal
-	 * @property {bool} tierThreeLock - Is tier three locked
-	 * @property {number} tierFour - The tier four value
-	 * @property {number | string} tierFourGoal - The tier four goal
+	 @typedef {object} ConfigObject
+	 @property {string} category Helper category.
+	 @property {number} tierOne Current tier-one count.
+	 @property {number | string} tierOneGoal Target tier-one count.
+	 @property {boolean} tierOneLock Whether tier one is locked.
+	 @property {number} tierTwo Current tier-two count.
+	 @property {number | string} tierTwoGoal Target tier-two count.
+	 @property {boolean} tierTwoLock Whether tier two is locked.
+	 @property {number} tierThree Current tier-three count.
+	 @property {number | string} tierThreeGoal Target tier-three count.
+	 @property {boolean} tierThreeLock Whether tier three is locked.
+	 @property {number} tierFour Current tier-four count.
+	 @property {number | string} tierFourGoal Target tier-four count.
 	 */
 
 	/**
-	 * Add a new helper with given Item
-	 * @type {(function({[config]: ConfigObject, itemId: string, category: string}): void)|*}
+	 Add a new helper with the given item.
+	 @param {{config?: ConfigObject, itemId: string, category: string}} helper The helper definition to add.
 	 */
 	const addHelperWithItem = useCallback(helper => {
 		const {config, itemId, category} = helper;
@@ -297,7 +295,7 @@ export default function Main() {
 		const savedHelpers = storageState?.helpers ?? {};
 
 		// If item already exists, don't add duplicate
-		if (savedHelpers[itemId]) {
+		if (Object.hasOwn(savedHelpers, itemId)) {
 			return;
 		}
 
@@ -327,11 +325,13 @@ export default function Main() {
 			]);
 	}, []);
 
-	/** Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal. */
+	/**
+	 Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal.
+	 @param {React.ChangeEvent<HTMLInputElement>} event The radio-button change event.
+	 */
 	const onChange = event => {
 		const itemName = event.target.value;
-		const category = itemName.split('.')[0];
-		const itemId = itemName.split('.')[1];
+		const [category, itemId] = itemName.split('.', 2);
 		// Uncheck immediately so the same radio can be re-selected if the helper is later removed
 		event.target.checked = false;
 		addHelperWithItem({itemId, category});
@@ -417,7 +417,7 @@ export default function Main() {
 
 			grouped[groupKey].push({
 				...item,
-				rarity: Number.parseInt(material.rarity, 10),
+				rarity: Number(material.rarity),
 			});
 		}
 
@@ -452,18 +452,16 @@ export default function Main() {
 				// All items have same rarity - treat as separate materials
 				for (const item of items) {
 					const category = findMaterialCategory(item.id);
-					if (!category) {
-						continue;
+					if (category) {
+						processed.push({
+							id: item.id,
+							category,
+							tiers: [{
+								tierIndex: 0,
+								count: item.count,
+							}],
+						});
 					}
-
-					processed.push({
-						id: item.id,
-						category,
-						tiers: [{
-							tierIndex: 0,
-							count: item.count,
-						}],
-					});
 				}
 			}
 		}
@@ -503,7 +501,7 @@ export default function Main() {
 		const materialIdString = String(materialId);
 
 		// First check exact match
-		if (savedHelpers[materialIdString]) {
+		if (Object.hasOwn(savedHelpers, materialIdString)) {
 			return {itemId: materialIdString, helper: savedHelpers[materialIdString]};
 		}
 
@@ -523,7 +521,7 @@ export default function Main() {
 
 		for (const tierId of tierIds) {
 			const tierIdString = String(tierId);
-			if (tierIdString !== materialIdString && savedHelpers[tierIdString]) {
+			if (tierIdString !== materialIdString && Object.hasOwn(savedHelpers, tierIdString)) {
 				return {itemId: tierIdString, helper: savedHelpers[tierIdString]};
 			}
 		}
@@ -608,7 +606,7 @@ export default function Main() {
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
 		const [type, presetIdString] = value.split('.');
-		const presetId = Number.parseInt(presetIdString, 10);
+		const presetId = Number(presetIdString);
 
 		const preset = findPreset(type, presetId);
 		if (!preset) {
@@ -684,7 +682,7 @@ export default function Main() {
 	};
 
 	const disabledKeys = farmHelperData.flatMap(({itemId}) => {
-		const tierIds = getConsecutiveTierIds(Number.parseInt(itemId, 10), getAllMaterialsFlat());
+		const tierIds = getConsecutiveTierIds(Number(itemId), getAllMaterialsFlat());
 		return tierIds.map(String);
 	});
 

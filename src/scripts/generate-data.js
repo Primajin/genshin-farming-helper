@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import genshinDb from 'genshin-db';
+
 import {fishingRodRecipes} from './fishing-rods-data.js';
 
 const isValidMaterial = material => material
@@ -41,13 +42,13 @@ fs.promises.writeFile('src/data.json', JSON.stringify(materials), error => {
 	}
 });
 
-const talentMaterialsRare = materials.talentMaterials.filter(material => Number.parseInt(material.rarity, 10) > 3);
-const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number.parseInt(material.rarity, 10) > 4);
-const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number.parseInt(material.rarity, 10) > 4);
+const talentMaterialsRare = materials.talentMaterials.filter(material => Number(material.rarity) > 3);
+const weaponMaterialsRare = materials.weaponMaterials.filter(material => Number(material.rarity) > 4);
+const characterAscensionMaterialsRare = materials.characterAscensionMaterials.filter(material => Number(material.rarity) > 4);
 const characterWeaponEnhancementMaterialsRare = materials.characterWeaponEnhancementMaterials.filter(material => {
-	const rarityInt = Number.parseInt(material.rarity, 10);
-	const sortRankInt = Number.parseInt(material.sortRank, 10);
-	return rarityInt > 2 ? (rarityInt === 3 ? !characterWeaponEnhancementMaterials.some(material => material.sortRank === sortRankInt && material.rarity > 3) : true) : false;
+	const rarityInt = Number(material.rarity);
+	const sortRankInt = Number(material.sortRank);
+	return rarityInt > 2 ? (rarityInt === 3 ? characterWeaponEnhancementMaterials.every(existingMaterial => !(existingMaterial.sortRank === sortRankInt && existingMaterial.rarity > 3)) : true) : false;
 });
 
 export const materialsRare = {
@@ -73,21 +74,18 @@ fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error
 const aggregateMaterials = costs => {
 	const items = {};
 
-	for (const [, materials] of Object.entries(costs)) {
-		for (const material of materials) {
-			// Skip Mora
-			if (material.name === 'Mora') {
-				continue;
-			}
-
-			if (items[material.id]) {
-				items[material.id].count += material.count;
-			} else {
-				items[material.id] = {
-					id: material.id,
-					name: material.name,
-					count: material.count,
-				};
+	for (const materialsGroup of Object.values(costs)) {
+		for (const material of materialsGroup) {
+			if (material.name !== 'Mora') {
+				if (Object.hasOwn(items, material.id)) {
+					items[material.id].count += material.count;
+				} else {
+					items[material.id] = {
+						id: material.id,
+						name: material.name,
+						count: material.count,
+					};
+				}
 			}
 		}
 	}
@@ -150,15 +148,16 @@ const generatePresets = () => {
 
 	// Process fishing rods
 	for (const rod of fishingRods) {
-		if (!rod?.id || !fishingRodRecipes[rod.id]) {
+		if (!rod?.id || !Object.hasOwn(fishingRodRecipes, rod.id)) {
 			continue;
 		}
 
+		const recipe = fishingRodRecipes[rod.id];
 		const itemsMap = {};
 
 		// Get fish requirements from manual recipe data using fish IDs
 		// Each fishing rod requires exactly 4 different fish types, 20 of each
-		for (const fishId of fishingRodRecipes[rod.id]) {
+		for (const fishId of recipe) {
 			const fishMaterial = allFish.find(f => f.id === fishId);
 			if (fishMaterial) {
 				itemsMap[fishMaterial.id] = {
