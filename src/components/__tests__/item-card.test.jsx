@@ -32,9 +32,9 @@ describe('itemCard', () => {
 	test('renders background image based on rarity index', () => {
 		render(<ItemCard name='Test Item' value='test.123' icon='icon_test' rarity={4}/>);
 		const label = screen.getByTitle('Test Item');
-		const backgroundStyle = label.querySelectorAll('div')[0].getAttribute('style');
-		const regExp = /url\((\S+)\)/gv;
-		expect(regExp.exec(backgroundStyle)[1]).toContain('background_Item_5_Star.png');
+		const backgroundStyle = label.querySelector('div').getAttribute('style');
+		const regExp = /url\((?<url>\S+)\)/v;
+		expect(regExp.exec(backgroundStyle).groups.url).toContain('background_Item_5_Star.png');
 	});
 
 	test('falls back to alternative image URL on error', () => {

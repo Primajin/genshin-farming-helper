@@ -186,7 +186,7 @@ describe('farmHelper', () => {
 
 				const buttons = screen.getAllByTestId(/button-tier-/v);
 				const lastButton = buttons.at(-1);
-				expect(lastButton.getAttribute('title')).toMatch(/1.+remaining/v);
+				expect(lastButton.getAttribute('title')).toMatch(/^1 .+ remaining$/v);
 			});
 		}
 	}
@@ -218,7 +218,8 @@ describe('farmHelper', () => {
 		const buttons = screen.getAllByTestId(/button-tier-/v);
 		const valuesBefore = buttons.map(button => button.querySelector('b'));
 
-		for (const className of valuesBefore.map(value => value.className)) {
+		const valueBeforeClassNames = valuesBefore.map(value => value.className);
+		for (const className of valueBeforeClassNames) {
 			expect(className).toBe('css-0');
 		}
 
@@ -226,7 +227,7 @@ describe('farmHelper', () => {
 		// and the goals will be set to 0, 1, 2, 3
 		for (let i = 0; i < 4; i++) {
 			const input = goalLabels[i].querySelector('input');
-			fireEvent.change(input, {target: {value: `${i}`}});
+			fireEvent.change(input, {target: {value: String(i)}});
 		}
 
 		// Now everything will be increased by one
@@ -260,7 +261,8 @@ describe('farmHelper', () => {
 		const buttons = screen.getAllByTestId(/button-tier-/v);
 		const valuesBefore = buttons.map(button => button.querySelector('b'));
 
-		for (const className of valuesBefore.map(value => value.className)) {
+		const valueBeforeClassNames = valuesBefore.map(value => value.className);
+		for (const className of valueBeforeClassNames) {
 			expect(className).toBe('css-0');
 		}
 
@@ -268,7 +270,7 @@ describe('farmHelper', () => {
 		// and the goals will be set to 0, 1, 2, 3
 		for (let i = 0; i < 4; i++) {
 			const input = goalLabels[i].querySelector('input');
-			fireEvent.change(input, {target: {value: `${i}`}});
+			fireEvent.change(input, {target: {value: String(i)}});
 		}
 
 		// Now everything will be increased by one
@@ -284,7 +286,8 @@ describe('farmHelper', () => {
 		}
 
 		const valuesAfter = buttons.map(button => button.querySelector('b'));
-		for (const className of valuesAfter.map(value => value.className)) {
+		const valueAfterClassNames = valuesAfter.map(value => value.className);
+		for (const className of valueAfterClassNames) {
 			expect(className).toBe('css-0');
 		}
 
@@ -294,7 +297,7 @@ describe('farmHelper', () => {
 			fireEvent.change(input, {target: {value: ''}});
 		}
 
-		for (const className of valuesAfter.map(value => value.className)) {
+		for (const className of valueAfterClassNames) {
 			expect(className).toBe('css-0');
 		}
 	});
@@ -313,5 +316,21 @@ describe('farmHelper', () => {
 		const removeButton = screen.getByTitle('Remove item');
 		fireEvent.click(removeButton);
 		expect(mockRemove).toHaveBeenCalledTimes(1);
+	});
+
+	test('falls back to the alternative image URL only once after repeated image errors', () => {
+		const {id, name} = materialMap.get(ASCENSION);
+
+		render(<FarmHelper category={ASCENSION} config={config} itemId={id.toString()} materials={materials} onRemove={globalMockRemove}/>);
+
+		const image = screen.getAllByAltText(name)[0];
+		expect(image.getAttribute('src')).toContain('gi.yatta.moe');
+
+		fireEvent.error(image);
+		const sourceAfterFirstError = image.getAttribute('src');
+		expect(sourceAfterFirstError).toContain('cloudinary.com');
+
+		fireEvent.error(image);
+		expect(image.getAttribute('src')).toBe(sourceAfterFirstError);
 	});
 });

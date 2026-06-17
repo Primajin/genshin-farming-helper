@@ -140,10 +140,12 @@ function TierItem({
 
 	const tryOtherUrl = () => {
 		/* V8 ignore next 3 */
-		if (!hasRetried.current) {
-			hasRetried.current = true;
-			setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
+		if (hasRetried.current) {
+			return;
 		}
+
+		hasRetried.current = true;
+		setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
 	};
 
 	const isGoalSet = goalValue > 0;
@@ -239,10 +241,15 @@ function FarmHelper({
 		...wood,
 	];
 
-	const materialId = Number.parseInt(itemId, 10);
+	const materialId = Number(itemId);
 	const rawItem = materials.find(material => material.id === materialId);
 
-	const multipleItem = category === materialTypes.ENHANCEMENT || category === materialTypes.WEAPON || category === materialTypes.TALENT || category === materialTypes.ASCENSION;
+	const multipleItem = [
+		materialTypes.ENHANCEMENT,
+		materialTypes.WEAPON,
+		materialTypes.TALENT,
+		materialTypes.ASCENSION,
+	].includes(category);
 	const items = rawItem ? (multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
 
 	// 1
@@ -258,12 +265,14 @@ function FarmHelper({
 	const [tierTwoGoal, setTierTwoGoal] = useState(config.tierTwoGoal ?? '');
 	const incrementTierTwo = () => setTierTwo(tierTwo + 1);
 	useEffect(() => {
-		if (!tierOneLock && tierOne && tierOne / 3 >= 1) {
-			// eslint-disable-next-line react-hooks/set-state-in-effect
-			setTierTwo(Math.floor(tierOne / 3) + tierTwo);
-
-			setTierOne(tierOne % 3);
+		if (!(!tierOneLock && tierOne && tierOne / 3 >= 1)) {
+			return;
 		}
+
+		// eslint-disable-next-line react-hooks/set-state-in-effect
+		setTierTwo(Math.floor(tierOne / 3) + tierTwo);
+
+		setTierOne(tierOne % 3);
 	}, [tierOneLock, tierOne, tierTwo]);
 
 	// 3
@@ -272,12 +281,14 @@ function FarmHelper({
 	const [tierThreeGoal, setTierThreeGoal] = useState(config.tierThreeGoal ?? '');
 	const incrementTierThree = () => setTierThree(tierThree + 1);
 	useEffect(() => {
-		if (!tierTwoLock && tierTwo && tierTwo / 3 >= 1) {
-			// eslint-disable-next-line react-hooks/set-state-in-effect
-			setTierThree(Math.floor(tierTwo / 3) + tierThree);
-
-			setTierTwo(tierTwo % 3);
+		if (!(!tierTwoLock && tierTwo && tierTwo / 3 >= 1)) {
+			return;
 		}
+
+		// eslint-disable-next-line react-hooks/set-state-in-effect
+		setTierThree(Math.floor(tierTwo / 3) + tierThree);
+
+		setTierTwo(tierTwo % 3);
 	}, [tierTwoLock, tierTwo, tierThree]);
 
 	// 4
@@ -286,12 +297,14 @@ function FarmHelper({
 	const incrementTierFour = () => setTierFour(tierFour + 1);
 	const hasTierFour = items.length > 3;
 	useEffect(() => {
-		if (hasTierFour && !tierThreeLock && tierThree && tierThree / 3 >= 1) {
-			// eslint-disable-next-line react-hooks/set-state-in-effect
-			setTierFour(Math.floor(tierThree / 3) + tierFour);
-
-			setTierThree(tierThree % 3);
+		if (!(hasTierFour && !tierThreeLock && tierThree && tierThree / 3 >= 1)) {
+			return;
 		}
+
+		// eslint-disable-next-line react-hooks/set-state-in-effect
+		setTierFour(Math.floor(tierThree / 3) + tierFour);
+
+		setTierThree(tierThree % 3);
 	}, [tierThreeLock, hasTierFour, tierThree, tierFour]);
 
 	const incrementTier = [incrementTierOne, incrementTierTwo, incrementTierThree, incrementTierFour];
@@ -305,7 +318,7 @@ function FarmHelper({
 		const {value} = event.target;
 		if (value) {
 			if (value.length < 4) { // Up to 999
-				setGoalValue[index](Number.parseInt(value, 10));
+				setGoalValue[index](Number(value));
 			}
 		} else {
 			setGoalValue[index]('');
@@ -318,7 +331,7 @@ function FarmHelper({
 		const savedHelpers = storageState?.helpers ?? {};
 
 		// Only save if this helper still exists in storage (prevents race with removal)
-		if (!savedHelpers[itemId]) {
+		if (!Object.hasOwn(savedHelpers, itemId)) {
 			return;
 		}
 

@@ -5,8 +5,8 @@ const localStorageKey = 'genshin-farming-helper';
 
 /**
  * Returns the current value associated with the given key, or null if the given key does not exist.
- * @param _key {string}
- * @returns {string | null}
+ * @param {string} _key The storage key to look up.
+ * @returns {string | null} The stored string value, if present.
  */
 const getItem = _key => null;
 
@@ -14,8 +14,8 @@ const getItem = _key => null;
  * Sets the value of the pair identified by key to value, creating a new key/value pair if none existed for key previously.
  * Throws a "QuotaExceededError" DOMException exception if the new value couldn't be set. (Setting could fail if, e.g., the user has disabled storage for the site, or if the quota has been exceeded.)
  * Dispatches a storage event on Window objects holding an equivalent Storage object.
- * @param _key {string}
- * @param _value {string}
+ * @param {string} _key The storage key to write.
+ * @param {string} _value The serialized value to store.
  * @returns {void}
  */
 const setItem = (_key, _value) => {
@@ -24,15 +24,15 @@ const setItem = (_key, _value) => {
 
 /**
  * Getter and setter for local storage
- * @type {{getItem: (function(key: string): string | null), setItem: (function(key: string, value: string): void)}|Storage}
+ * @type {Pick<Storage, 'getItem' | 'setItem'>}
  */
 const fromLocalStorage = typeof localStorage === 'undefined' ? {getItem, setItem} : localStorage;
 // LocalStorage may be used only after it has been checked against being undefined
 
 /**
  * Getter and setter for local storage for lazy people who don't want to call JSON parse all the time
- * @property {function(): any} load Load the data from local storage and parse it
- * @property {function(any): void} save Save the given value to local storage by stringifying it
+ * @property {() => unknown} load Loads and parses the current local storage value.
+ * @property {(value: unknown) => void} save Saves the provided value after stringifying it.
  */
 const storage = {
 	load() {
