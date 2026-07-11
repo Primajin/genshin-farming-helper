@@ -1,9 +1,16 @@
 
 import {
-	beforeEach, describe, expect, test, vi,
+	beforeEach,
+	describe,
+	expect,
+	test,
+	vi,
 } from 'vitest';
 import {
-	act, fireEvent, render, screen,
+	act,
+	fireEvent,
+	render,
+	screen,
 } from '@testing-library/react';
 
 import Main from '../pages/main.jsx';
@@ -41,7 +48,7 @@ describe('Preset removal', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		global.navigator = {
+		globalThis.navigator = {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({

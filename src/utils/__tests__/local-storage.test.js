@@ -1,5 +1,8 @@
 import {
-	describe, test, vi, expect,
+	describe,
+	test,
+	vi,
+	expect,
 } from 'vitest';
 
 import storage from '../local-storage.js';

@@ -1,0 +1,319 @@
+
+  src/components/organisms/item-categories.jsx:92:3
+  [31m✖[39m   92:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   93:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  103:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  104:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  105:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  106:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  106:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  106:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  106:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  111:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  112:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  113:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  114:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  114:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  114:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  114:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  119:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  120:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  121:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  122:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  122:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  122:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  122:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  127:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  128:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  129:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  130:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  130:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  130:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  130:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  135:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  136:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  137:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  138:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  138:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  138:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  138:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  143:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  144:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  145:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  146:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  146:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  146:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  146:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  151:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  152:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  153:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  154:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  154:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  154:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  154:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  159:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  160:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  161:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  162:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  162:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  162:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  162:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  167:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  168:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  169:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  170:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  170:14  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  170:22  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  170:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/pages/main.jsx:262:4
+  [31m✖[39m  262:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  284:2   Expected JSDoc line to have no prefix.                                                             jsdoc/require-asterisk-prefix
+  [31m✖[39m  693:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  694:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  695:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  701:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  714:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  715:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  717:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  719:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  730:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  741:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  743:56  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  745:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  747:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  756:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/organisms/farm-helper.jsx:158:3
+  [31m✖[39m  158:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  159:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  160:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  170:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  172:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  181:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  182:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  183:60  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  185:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  190:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  191:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  196:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  365:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  367:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  380:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/farm-helper.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m  122:29  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  130:11  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  147:11  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  165:12  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  188:12  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  200:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  218:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  261:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  309:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  317:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  327:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/item-card.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   12:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   21:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   29:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   36:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   44:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   55:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   65:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   73:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   79:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   85:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/modal-dialog.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   13:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   18:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   24:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   29:28  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   37:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   44:30  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   53:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   59:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   59:61  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   64:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/preset-functionality.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   49:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+  [31m✖[39m   66:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  116:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  171:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  261:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  304:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  372:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/tab-panel.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   18:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   25:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   37:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   43:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   43:71  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   49:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   56:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/main.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   49:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+  [31m✖[39m   63:28  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   68:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+  [31m✖[39m   70:28  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  126:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  222:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/item-categories-search.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   21:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   26:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   32:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   41:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   53:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/item-picker.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   24:28  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   29:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   38:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   47:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   60:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/preset-grid.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   33:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   39:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   47:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   54:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   63:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/preset-search.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   32:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   37:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   43:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   53:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   68:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/organisms/modal-dialog.jsx:95:3
+  [31m✖[39m   95:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   96:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   97:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   98:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   99:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  108:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/preset-merge.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   49:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+  [31m✖[39m   71:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  130:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  158:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/molecules/tab-panel.jsx:42:3
+  [31m✖[39m   42:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   43:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   45:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   46:7   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   59:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/atoms/item-card.jsx:57:3
+  [31m✖[39m   57:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   64:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   71:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   75:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   77:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/preset-removal.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   51:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+  [31m✖[39m   66:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m  107:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/organisms/preset-modal.jsx:59:3
+  [31m✖[39m   59:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   60:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   65:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   73:5   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/scripts/generate-data.js:38:1
+  [31m✖[39m   38:1   Do not use top-level side effects in exported modules.                                             unicorn/no-top-level-side-effects
+  [31m✖[39m   66:1   Do not use top-level side effects in exported modules.                                             unicorn/no-top-level-side-effects
+  [31m✖[39m  187:1   Do not use top-level side effects in exported modules.                                             unicorn/no-top-level-side-effects
+
+  src/components/__tests__/item-categories.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   21:28  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   35:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/manual-removal.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   46:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+  [31m✖[39m   61:10  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  xo.config.js:1:1
+  [31m✖[39m    1:1   @eslint/compat should be listed in the project's dependencies. Run npm i @eslint/compat to add it  import-x/no-extraneous-dependencies
+  [31m✖[39m    1:32  "@eslint/compat" is extraneous.                                                                    n/no-extraneous-import
+
+  src/index.jsx:9:13
+  [31m✖[39m    9:13  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m    9:25  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/__tests__/main-filled.test.jsx:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   50:28  React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/components/molecules/preset-grid.jsx:36:3
+  [31m✖[39m   36:3   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+  [31m✖[39m   48:6   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/utils/__tests__/fullscreen.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   15:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+
+  src/utils/__tests__/wake-lock.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+  [31m✖[39m   15:3   Do not assign properties on the global object.                                                     unicorn/no-global-object-property-assignment
+
+  src/__tests__/__mocks__/data.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/__tests__/__mocks__/local-storage.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/__tests__/__mocks__/presets.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/components/molecules/item-picker.jsx:22:4
+  [31m✖[39m   22:4   React must be in scope when using JSX                                                              react/react-in-jsx-scope
+
+  src/scripts/__tests__/generate-data.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/utils/__tests__/local-storage.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/utils/__tests__/materials.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/utils/__tests__/objects.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/utils/__tests__/strings.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/utils/__tests__/theming.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  src/utils/__tests__/url.test.js:1:1
+  [31m✖[39m    1:1   Directory name __tests__ is not in kebab case. Rename it to __tests.                               unicorn/filename-case
+
+  238 errors
+

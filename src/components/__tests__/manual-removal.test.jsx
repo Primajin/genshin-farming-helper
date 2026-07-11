@@ -1,6 +1,10 @@
 /* global document */
 import {
-	beforeEach, describe, expect, test, vi,
+	beforeEach,
+	describe,
+	expect,
+	test,
+	vi,
 } from 'vitest';
 import {act, fireEvent, render} from '@testing-library/react';
 
@@ -39,7 +43,7 @@ describe('Manual helper removal', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		global.navigator = {
+		globalThis.navigator = {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({

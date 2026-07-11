@@ -1,8 +1,15 @@
 import {
-	act, fireEvent, render, screen,
+	act,
+	fireEvent,
+	render,
+	screen,
 } from '@testing-library/react';
 import {
-	beforeEach, describe, test, expect, vi,
+	beforeEach,
+	describe,
+	test,
+	expect,
+	vi,
 } from 'vitest';
 import PresetModal from 'components/organisms/preset-modal.jsx';
 import storage from 'utils/local-storage.js';
