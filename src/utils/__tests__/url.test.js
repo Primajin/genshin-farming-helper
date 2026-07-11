@@ -1,4 +1,6 @@
-import {describe, test, expect, vi} from 'vitest';
+import {
+	describe, test, expect, vi,
+} from 'vitest';
 
 import {isPRPreview} from '../url.js';
 
