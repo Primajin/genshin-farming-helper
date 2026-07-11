@@ -1,6 +1,9 @@
 import {fireEvent, render, screen} from '@testing-library/react';
 import {
-	describe, test, expect, vi,
+	describe,
+	test,
+	expect,
+	vi,
 } from 'vitest';
 import ItemCategories from 'components/organisms/item-categories.jsx';
 

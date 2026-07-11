@@ -1,8 +1,8 @@
 /**
- * Filters an object by removing properties with undefined values.
- *
- * @param {object} object - The object to be filtered.
- * @returns {object} A new object with only the properties that have defined values.
+ Filters an object by removing properties with undefined values.
+
+ @param {object} object - The object to be filtered.
+ @returns {object} A new object with only the properties that have defined values.
  */
 export const filterObject = object => {
 	const returnValue = {};

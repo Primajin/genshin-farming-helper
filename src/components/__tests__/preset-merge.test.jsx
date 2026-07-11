@@ -1,9 +1,16 @@
 /* global document */
 import {
-	act, fireEvent, render, screen,
+	act,
+	fireEvent,
+	render,
+	screen,
 } from '@testing-library/react';
 import {
-	beforeEach, describe, expect, test, vi,
+	beforeEach,
+	describe,
+	expect,
+	test,
+	vi,
 } from 'vitest';
 import Main from 'components/pages/main.jsx';
 import storage from 'utils/local-storage.js';
@@ -39,7 +46,7 @@ describe('preset merge with existing items', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		global.navigator = {
+		globalThis.navigator = {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({

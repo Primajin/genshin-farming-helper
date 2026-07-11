@@ -1,7 +1,9 @@
 /* global window, document */
 /** @jsxImportSource @emotion/react */
 import {
-	useCallback, useEffect, useState,
+	useCallback,
+	useEffect,
+	useState,
 } from 'react';
 import {Global, css} from '@emotion/react';
 import materials from 'data';
@@ -285,8 +287,8 @@ export default function Main() {
 	 */
 
 	/**
-	 * Add a new helper with the given item.
-	 * @param {{config?: ConfigObject, itemId: string, category: string}} helper The helper definition to add.
+	 Add a new helper with the given item.
+	 @param {{config?: ConfigObject, itemId: string, category: string}} helper The helper definition to add.
 	 */
 	const addHelperWithItem = useCallback(helper => {
 		const {config, itemId, category} = helper;
@@ -326,8 +328,8 @@ export default function Main() {
 	}, []);
 
 	/**
-	 * Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal.
-	 * @param {React.ChangeEvent<HTMLInputElement>} event The radio-button change event.
+	 Handle radio-button clicks in the item picker. Unchecks the radio immediately so it can be re-selected after removal.
+	 @param {React.ChangeEvent<HTMLInputElement>} event The radio-button change event.
 	 */
 	const onChange = event => {
 		const itemName = event.target.value;

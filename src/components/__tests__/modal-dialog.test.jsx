@@ -1,7 +1,10 @@
 /* global document */
 import {fireEvent, render, screen} from '@testing-library/react';
 import {
-	describe, expect, test, vi,
+	describe,
+	expect,
+	test,
+	vi,
 } from 'vitest';
 import ModalDialog from 'components/organisms/modal-dialog.jsx';
 

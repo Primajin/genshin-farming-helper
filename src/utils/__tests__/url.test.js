@@ -1,4 +1,4 @@
-import {describe, test, expect} from 'vitest';
+import {describe, test, expect, vi} from 'vitest';
 
 import {isPRPreview} from '../url.js';
 
@@ -32,10 +32,10 @@ describe('isPRPreview', () => {
 	});
 
 	test('should handle the case when window in its entirety is undefined', () => {
-		// eslint-disable-next-line no-global-assign,no-implicit-globals
-		global = undefined;
+		vi.stubGlobal('window', undefined);
 
 		const result = isPRPreview();
 		expect(result).toBeFalsy();
+		vi.unstubAllGlobals();
 	});
 });
