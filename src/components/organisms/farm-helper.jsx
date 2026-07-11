@@ -244,13 +244,13 @@ function FarmHelper({
 	const materialId = Number(itemId);
 	const rawItem = materials.find(material => material.id === materialId);
 
-	const multipleItem = [
+	const isMultipleItem = [
 		materialTypes.ENHANCEMENT,
 		materialTypes.WEAPON,
 		materialTypes.TALENT,
 		materialTypes.ASCENSION,
 	].includes(category);
-	const items = rawItem ? (multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
+	const items = rawItem ? (isMultipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
 
 	// 1
 	const hasJustOne = items.length === 1;
