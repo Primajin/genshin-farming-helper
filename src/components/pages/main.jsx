@@ -532,7 +532,7 @@ export default function Main() {
 	/** Add or remove a preset's materials from the helpers object (mutates `savedHelpers` in place). */
 	const applyPresetToHelpers = useCallback((preset, isAdding, savedHelpers) => {
 		const groupedItems = groupPresetItems(preset.items);
-		let helpersModified = false;
+		let isHelpersModified = false;
 
 		if (isAdding) {
 			for (const groupedItem of groupedItems) {
@@ -550,7 +550,6 @@ export default function Main() {
 					}
 
 					savedHelpers[existing.itemId] = updatedConfig;
-					helpersModified = true;
 				} else {
 					savedHelpers[itemId] = {
 						category,
@@ -566,8 +565,9 @@ export default function Main() {
 						tierTwoGoal: tiers.find(t => t.tierIndex === 1)?.count || '',
 						tierTwoLock: false,
 					};
-					helpersModified = true;
 				}
+
+				isHelpersModified = true;
 			}
 		} else {
 			for (const groupedItem of groupedItems) {
@@ -594,12 +594,12 @@ export default function Main() {
 						savedHelpers[existing.itemId] = updatedConfig;
 					}
 
-					helpersModified = true;
+					isHelpersModified = true;
 				}
 			}
 		}
 
-		return helpersModified;
+		return isHelpersModified;
 	}, [groupPresetItems, findExistingHelperForMaterial]);
 
 	/** Toggle a preset on/off. Loads storage once, computes all changes, then saves atomically. */
@@ -659,7 +659,7 @@ export default function Main() {
 		};
 	}, []);
 
-	const widthLarger768 = window?.innerWidth > 768;
+	const isWidthLarger768 = window?.innerWidth > 768;
 
 	const handleWakeLock = async () => {
 		if (wakeLockSentinel) {
@@ -711,9 +711,9 @@ export default function Main() {
 	return (
 		<>
 			<Global styles={globalStyles}/>
-			{widthLarger768 ? videoBackground : null}
+			{isWidthLarger768 ? videoBackground : null}
 			<main>
-				{!widthLarger768 && (
+				{!isWidthLarger768 && (
 					<button
 						className='material-symbols-outlined'
 						css={[actions, metaKeys, toggleWakeLock]}
