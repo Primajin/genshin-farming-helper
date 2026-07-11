@@ -177,7 +177,7 @@ function TierItem({
 			>
 				<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
 				<span css={rarity}>
-					{['star-1', 'star-2', 'star-3', 'star-4', 'star-5'].slice(0, item.rarity ?? 1).map(starKey => <span key={starKey} className='material-symbols-outlined fill'>star</span>)}
+					{Array.from({length: item.rarity ?? 1}, (_, i) => <span key={`star-${i + 1}`} className='material-symbols-outlined fill'>star</span>)}
 				</span>
 				<b css={isGoalReached ? reachedGoal : undefined} data-testid={`value-tier-${itemIndex}`}>
 					{tierValue}

@@ -271,16 +271,16 @@ export default function Main() {
 	});
 
 	/**
-	 @typedef {object} ConfigObject
-	 @property {string} category Helper category.
-	 @property {number} tierOne Current tier-one count.
-	 @property {number | string} tierOneGoal Target tier-one count.
-	 @property {boolean} tierOneLock Whether tier one is locked.
-	 @property {number} tierTwo Current tier-two count.
-	 @property {number | string} tierTwoGoal Target tier-two count.
-	 @property {boolean} tierTwoLock Whether tier two is locked.
-	 @property {number} tierThree Current tier-three count.
-	 @property {number | string} tierThreeGoal Target tier-three count.
+	 * @typedef {object} ConfigObject
+	 * @property {string} category Helper category.
+	 * @property {number} tierOne Current tier-one count.
+	 * @property {number | string} tierOneGoal Target tier-one count.
+	 * @property {boolean} tierOneLock Whether tier one is locked.
+	 * @property {number} tierTwo Current tier-two count.
+	 * @property {number | string} tierTwoGoal Target tier-two count.
+	 * @property {boolean} tierTwoLock Whether tier two is locked.
+	 * @property {number} tierThree Current tier-three count.
+	 * @property {number | string} tierThreeGoal Target tier-three count.
 	 * @property {boolean} tierThreeLock Whether tier three is locked.
 	 * @property {number} tierFour Current tier-four count.
 	 * @property {number | string} tierFourGoal Target tier-four count.
