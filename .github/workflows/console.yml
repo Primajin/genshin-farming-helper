@@ -10,6 +10,8 @@ jobs:
   console:
     runs-on: ubuntu-latest
     name: Get console logs
+    env:
+      PREVIEW_URL: https://helper.farm/pr-preview/pr-${{ github.event.number }}/
     steps:
       - name: Wait for build to succeed
         uses: fountainhead/action-wait-for-check@v1.2.0
@@ -22,16 +24,35 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'failure'
         run: exit 1
         shell: bash
-      - name: Sleep for 120 seconds
+      - name: Wait for preview page to become available
         if: steps.wait-for-build.outputs.conclusion == 'success'
-        run: sleep 120s
+        run: |
+          timeout_seconds=180
+          interval_seconds=5
+          elapsed_seconds=0
+
+          while [ "$elapsed_seconds" -lt "$timeout_seconds" ]; do
+            status_code=$(curl --silent --output /dev/null --write-out "%{http_code}" "${PREVIEW_URL}" || true)
+
+            if [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ]; then
+              echo "Preview is available at ${PREVIEW_URL} (HTTP ${status_code})."
+              exit 0
+            fi
+
+            echo "Preview still unavailable at ${PREVIEW_URL} (HTTP ${status_code}). Retrying in ${interval_seconds}s..."
+            sleep "$interval_seconds"
+            elapsed_seconds=$((elapsed_seconds + interval_seconds))
+          done
+
+          echo "Timed out after ${timeout_seconds}s waiting for preview at ${PREVIEW_URL} to return a 2xx response."
+          exit 1
         shell: bash
       - name: Checkout code
         uses: actions/checkout@v7
       - name: Use WebApp Console Log Action
         uses: Primajin/webapp-console-log-action@v1
         with:
-          webapp-url: https://helper.farm/pr-preview/pr-${{ github.event.number }}/
+          webapp-url: ${{ env.PREVIEW_URL }}
           regexp-error: 'Failed \D+ 404 \(\)'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
