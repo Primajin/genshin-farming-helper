@@ -1,12 +1,12 @@
 /**
- * Utility module for managing screen wake locks.
- * @module wakeLock
+ Utility module for managing screen wake locks.
+ @module wakeLock
  */
 
 /**
- * Attempts to request a screen wake lock.
- * @param {WakeLockSentinel|null} wakeLockSentinel The current wake lock sentinel.
- * @returns {Promise<WakeLockSentinel|null>} A promise that resolves to the wake lock sentinel if the wake lock is successfully requested, otherwise null.
+ Attempts to request a screen wake lock.
+ @param {WakeLockSentinel|null} wakeLockSentinel The current wake lock sentinel.
+ @returns {Promise<WakeLockSentinel|null>} A promise that resolves to the wake lock sentinel if the wake lock is successfully requested, otherwise null.
  */
 export const requestWakeLock = async wakeLockSentinel => {
 	const navigatorWakelock = typeof navigator !== 'undefined' && navigator.wakeLock;
@@ -29,9 +29,9 @@ export const requestWakeLock = async wakeLockSentinel => {
 };
 
 /**
- * Releases the screen wake lock if it is currently held.
- * @param {WakeLockSentinel|null} wakeLockSentinel The current wake lock sentinel.
- * @returns {Promise<WakeLockSentinel|null>} A promise that resolves to null if the wake lock was released, otherwise the wake lock sentinel.
+ Releases the screen wake lock if it is currently held.
+ @param {WakeLockSentinel|null} wakeLockSentinel The current wake lock sentinel.
+ @returns {Promise<WakeLockSentinel|null>} A promise that resolves to null if the wake lock was released, otherwise the wake lock sentinel.
  */
 export const releaseWakeLock = async wakeLockSentinel => {
 	if (wakeLockSentinel) {

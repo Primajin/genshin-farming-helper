@@ -177,8 +177,7 @@ function TierItem({
 			>
 				<img alt={item.name} src={source} width='75' height='75' onError={tryOtherUrl}/>
 				<span css={rarity}>
-					{/* eslint-disable-next-line unicorn/no-new-array, react/no-array-index-key */}
-					{new Array(item.rarity ?? 1).fill('').map((_, index) => <span key={index} className='material-symbols-outlined fill'>star</span>)}
+					{Array.from({length: item.rarity ?? 1}, (_, i) => <span key={`star-${i + 1}`} className='material-symbols-outlined fill'>star</span>)}
 				</span>
 				<b css={isGoalReached ? reachedGoal : undefined} data-testid={`value-tier-${itemIndex}`}>
 					{tierValue}
@@ -244,13 +243,13 @@ function FarmHelper({
 	const materialId = Number(itemId);
 	const rawItem = materials.find(material => material.id === materialId);
 
-	const multipleItem = [
+	const isMultipleItem = [
 		materialTypes.ENHANCEMENT,
 		materialTypes.WEAPON,
 		materialTypes.TALENT,
 		materialTypes.ASCENSION,
 	].includes(category);
-	const items = rawItem ? (multipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
+	const items = rawItem ? (isMultipleItem ? materials.filter(material => material.sortRank === rawItem.sortRank) : [rawItem]) : [];
 
 	// 1
 	const hasJustOne = items.length === 1;
