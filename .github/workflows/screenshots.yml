@@ -34,17 +34,17 @@ jobs:
           while [ "$elapsed_seconds" -lt "$timeout_seconds" ]; do
             status_code=$(curl --silent --output /dev/null --write-out "%{http_code}" "${PREVIEW_URL}" || true)
 
-            if [ "$status_code" != "404" ]; then
+            if [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ]; then
               echo "Preview is available at ${PREVIEW_URL} (HTTP ${status_code})."
               exit 0
             fi
 
-            echo "Preview still unavailable at ${PREVIEW_URL} (HTTP 404). Retrying in ${interval_seconds}s..."
+            echo "Preview still unavailable at ${PREVIEW_URL} (HTTP ${status_code}). Retrying in ${interval_seconds}s..."
             sleep "$interval_seconds"
             elapsed_seconds=$((elapsed_seconds + interval_seconds))
           done
 
-          echo "Timed out after ${timeout_seconds}s waiting for preview at ${PREVIEW_URL}; still returning HTTP 404."
+          echo "Timed out after ${timeout_seconds}s waiting for preview at ${PREVIEW_URL} to return a 2xx response."
           exit 1
         shell: bash
       - name: Checkout code
