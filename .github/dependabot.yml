@@ -9,6 +9,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "saturday"
+      time: "00:01"
     commit-message:
       prefix: ":books:"
     labels:
@@ -21,6 +23,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "saturday"
+      time: "00:01"
     commit-message:
       prefix: ":books:"
     labels:
