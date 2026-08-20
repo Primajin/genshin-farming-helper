@@ -6,222 +6,45 @@ on:
   pull_request:
     types: [ opened, reopened, synchronize, closed ]
 
-# Least privilege by default; each job widens as needed.
+# Least privilege by default; each caller job grants what its reusable
+# workflow needs. The heavy jobs live in reusable `_*.yml` workflows; this file
+# orchestrates them and aggregates their results into one `All checks green`
+# gate.
 permissions: {}
 
 jobs:
   test:
     if: github.event_name == 'push' || github.event.action != 'closed'
-    runs-on: ubuntu-latest
-    name: Make sure the unit tests pass.
     permissions:
       contents: read
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '24'
-          cache: 'npm'
-      - name: Cache dependencies
-        uses: actions/cache@v6
-        with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: npm-
-      - name: Install dependencies
-        run: npm ci
-      - name: Run coverage
-        run: npm run coverage
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v7
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-      - name: Upload test results to Codecov
-        if: ${{ !cancelled() }}
-        uses: codecov/test-results-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+    uses: ./.github/workflows/_test.yml
+    secrets: inherit
 
   lint:
     if: github.event_name == 'push' || github.event.action != 'closed'
-    runs-on: ubuntu-latest
-    name: Make sure the code adheres to the XO coding standard.
     permissions: write-all
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '24'
-          cache: 'npm'
-      - name: Cache dependencies
-        uses: actions/cache@v6
-        with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: npm-
-      - name: Install dependencies
-        run: npm ci
-      - name: Import GPG key
-        uses: crazy-max/ghaction-import-gpg@v7
-        with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          fingerprint: "38E6EABC680CCFCE10EA0454372717D2D3474974"
-          git_user_signingkey: true
-          git_commit_gpgsign: true
-          git_config_global: true
-      - name: List keys
-        run: gpg -K
-      - name: Run linter
-        uses: wearerequired/lint-action@v3
-        with:
-          auto_fix: true
-          xo: true
-          xo_args: "--config xo.config.js"
-          commit_message: ":sparkles: fix code style issues with ${linter}"
-          git_email: Primajin@users.noreply.github.com
+    uses: ./.github/workflows/_lint.yml
+    secrets: inherit
 
   build:
     if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    name: Make sure it builds. Then show a preview.
-    # Serialise gh-pages writes with the push-to-main deploy (publish.yml shares
-    # this group). Scoped to this job so the rest of CI is not pulled into the
-    # group and cancelled on push-to-main.
-    concurrency:
-      group: gh-pages
-      cancel-in-progress: false
     permissions: write-all
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: '24'
-          cache: 'npm'
-      - name: Cache dependencies
-        uses: actions/cache@v6
-        with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('package-lock.json') }}
-          restore-keys: npm-
-      - name: Install dependencies
-        run: npm ci
-      - name: Generate resources
-        run: npm run generate
-      - name: Set env
-        shell: bash
-        run: |
-          PR_NUMBER="${{ github.event.pull_request.number }}"
-          echo "BASE_URL=pr-preview/pr-${PR_NUMBER}/" >> "$GITHUB_ENV"
-      - name: Run build with Base
-        run: npx vite build --base="${{ env.BASE_URL }}"
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: ./build/
-          custom-url: helper.farm
+    uses: ./.github/workflows/_build.yml
+    secrets: inherit
 
   console:
     if: github.event_name == 'pull_request' && github.event.action != 'closed'
     needs: build
-    runs-on: ubuntu-latest
-    name: Get console logs
     permissions: write-all
-    env:
-      PREVIEW_URL: https://helper.farm/pr-preview/pr-${{ github.event.number }}/
-    steps:
-      - name: Wait for preview page to become available
-        run: |
-          timeout_seconds=180
-          interval_seconds=5
-          elapsed_seconds=0
-
-          while [ "$elapsed_seconds" -lt "$timeout_seconds" ]; do
-            status_code=$(curl --silent --output /dev/null --write-out "%{http_code}" "${PREVIEW_URL}" || true)
-
-            if [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ]; then
-              echo "Preview is available at ${PREVIEW_URL} (HTTP ${status_code})."
-              exit 0
-            fi
-
-            echo "Preview still unavailable at ${PREVIEW_URL} (HTTP ${status_code}). Retrying in ${interval_seconds}s..."
-            sleep "$interval_seconds"
-            elapsed_seconds=$((elapsed_seconds + interval_seconds))
-          done
-
-          echo "Timed out after ${timeout_seconds}s waiting for preview at ${PREVIEW_URL} to return a 2xx response."
-          exit 1
-        shell: bash
-      - name: Checkout code
-        uses: actions/checkout@v7
-      - name: Use WebApp Console Log Action
-        uses: Primajin/webapp-console-log-action@v1
-        with:
-          webapp-url: ${{ env.PREVIEW_URL }}
-          regexp-error: 'Failed \D+ 404 \(\)'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: ./.github/workflows/_console.yml
+    secrets: inherit
 
   screenshots:
     if: github.event_name == 'pull_request' && github.event.action != 'closed'
     needs: build
-    runs-on: ubuntu-latest
-    name: Take a screenshot after page was built
     permissions: write-all
-    env:
-      PREVIEW_URL: https://helper.farm/pr-preview/pr-${{ github.event.number }}/
-    steps:
-      - name: Wait for preview page to become available
-        run: |
-          timeout_seconds=180
-          interval_seconds=5
-          elapsed_seconds=0
-
-          while [ "$elapsed_seconds" -lt "$timeout_seconds" ]; do
-            status_code=$(curl --silent --output /dev/null --write-out "%{http_code}" "${PREVIEW_URL}" || true)
-
-            if [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ]; then
-              echo "Preview is available at ${PREVIEW_URL} (HTTP ${status_code})."
-              exit 0
-            fi
-
-            echo "Preview still unavailable at ${PREVIEW_URL} (HTTP ${status_code}). Retrying in ${interval_seconds}s..."
-            sleep "$interval_seconds"
-            elapsed_seconds=$((elapsed_seconds + interval_seconds))
-          done
-
-          echo "Timed out after ${timeout_seconds}s waiting for preview at ${PREVIEW_URL} to return a 2xx response."
-          exit 1
-        shell: bash
-      - name: Checkout code
-        uses: actions/checkout@v7
-      - name: install puppeteer-headful
-        uses: mujo-code/puppeteer-headful@master
-        env:
-          CI: 'true'
-      - name: screenshots-ci-action
-        uses: Primajin/screenshots-ci-action@v3
-        with:
-          devices: iPhone 13,iPad Pro,iPad Pro landscape
-          fullPage: false
-          noDesktop: true
-          releaseId: 236029200
-          type: png
-          url: ${{ env.PREVIEW_URL }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/upload-artifact@v7
-        with:
-          path: screenshots
-          name: Download-screenshots
+    uses: ./.github/workflows/_screenshots.yml
+    secrets: inherit
 
   all-green:
     name: All checks green
