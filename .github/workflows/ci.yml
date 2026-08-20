@@ -6,12 +6,6 @@ on:
   pull_request:
     types: [ opened, reopened, synchronize, closed ]
 
-# Serialise every gh-pages write (the PR preview deploy here, and the
-# push-to-main deploy in publish.yml) so they cannot race on the gh-pages branch.
-concurrency:
-  group: gh-pages
-  cancel-in-progress: false
-
 # Least privilege by default; each job widens as needed.
 permissions: {}
 
@@ -95,6 +89,12 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     name: Make sure it builds. Then show a preview.
+    # Serialise gh-pages writes with the push-to-main deploy (publish.yml shares
+    # this group). Scoped to this job so the rest of CI is not pulled into the
+    # group and cancelled on push-to-main.
+    concurrency:
+      group: gh-pages
+      cancel-in-progress: false
     permissions: write-all
     steps:
       - name: Checkout code
