@@ -54,7 +54,7 @@ jobs:
         env:
           CI: 'true'
       - name: screenshots-ci-action
-        uses: flameddd/screenshots-ci-action@master
+        uses: Primajin/screenshots-ci-action@v3
         with:
           devices: iPhone 13,iPad Pro,iPad Pro landscape
           fullpage: false
