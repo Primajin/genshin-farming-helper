@@ -11,10 +11,10 @@ import {releaseWakeLock, requestWakeLock} from '../wake-lock.js';
 describe('wake lock', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
-		const originalNavigator = navigator;
-		globalThis.navigator = {
-			...originalNavigator,
-			wakeLock: {
+		Object.defineProperty(navigator, 'wakeLock', {
+			configurable: true,
+			writable: true,
+			value: {
 				request: vi.fn().mockResolvedValue({
 					addEventListener: eventTarget.addEventListener.bind(eventTarget),
 					dispatchEvent: eventTarget.dispatchEvent.bind(eventTarget),
@@ -22,7 +22,7 @@ describe('wake lock', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 	});
 
 	describe('request lock', () => {
