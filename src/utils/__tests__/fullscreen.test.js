@@ -11,14 +11,28 @@ import {toggleFullscreen} from '../fullscreen.js';
 
 describe('toggleFullscreen', () => {
 	beforeEach(() => {
-		const originalDocument = document;
-		globalThis.document = {
-			...originalDocument,
-			fullscreenElement: null,
-			documentElement: {},
-			querySelector: vi.fn(),
-			exitFullscreen: vi.fn(),
-		};
+		Object.defineProperties(document, {
+			fullscreenElement: {
+				configurable: true,
+				writable: true,
+				value: null,
+			},
+			documentElement: {
+				configurable: true,
+				writable: true,
+				value: {},
+			},
+			querySelector: {
+				configurable: true,
+				writable: true,
+				value: vi.fn(),
+			},
+			exitFullscreen: {
+				configurable: true,
+				writable: true,
+				value: vi.fn(),
+			},
+		});
 	});
 
 	test('should enter fullscreen mode when no element is in fullscreen', () => {

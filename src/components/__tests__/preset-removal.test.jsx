@@ -47,10 +47,10 @@ vi.mock('presets', async () => {
 describe('Preset removal', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
-		const originalNavigator = navigator;
-		globalThis.navigator = {
-			...originalNavigator,
-			wakeLock: {
+		Object.defineProperty(navigator, 'wakeLock', {
+			configurable: true,
+			writable: true,
+			value: {
 				request: vi.fn().mockResolvedValue({
 					addEventListener: eventTarget.addEventListener.bind(eventTarget),
 					dispatchEvent: eventTarget.dispatchEvent.bind(eventTarget),
@@ -58,7 +58,7 @@ describe('Preset removal', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 		storage.save({});
 	});
 

@@ -45,10 +45,10 @@ vi.mock('presets', async () => {
 describe('main', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
-		const originalNavigator = navigator;
-		globalThis.navigator = {
-			...originalNavigator,
-			wakeLock: {
+		Object.defineProperty(navigator, 'wakeLock', {
+			configurable: true,
+			writable: true,
+			value: {
 				request: vi.fn().mockResolvedValue({
 					addEventListener: eventTarget.addEventListener.bind(eventTarget),
 					dispatchEvent: eventTarget.dispatchEvent.bind(eventTarget),
@@ -56,7 +56,7 @@ describe('main', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 	});
 
 	test('renders without crashing', () => {
