@@ -43,7 +43,7 @@ describe('Manual helper removal', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		vi.stubGlobal('navigator', {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -53,7 +53,7 @@ describe('Manual helper removal', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 		storage.save({});
 	});
 

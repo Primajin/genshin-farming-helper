@@ -48,7 +48,7 @@ describe('Preset removal', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		vi.stubGlobal('navigator', {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -58,7 +58,7 @@ describe('Preset removal', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 		storage.save({});
 	});
 

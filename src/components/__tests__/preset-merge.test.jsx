@@ -46,7 +46,7 @@ describe('preset merge with existing items', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		vi.stubGlobal('navigator', {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -56,7 +56,7 @@ describe('preset merge with existing items', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 		// Clear storage before each test
 		storage.save({});
 	});
