@@ -12,7 +12,7 @@ describe('wake lock', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		vi.stubGlobal('navigator', {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -22,7 +22,7 @@ describe('wake lock', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 	});
 
 	describe('request lock', () => {

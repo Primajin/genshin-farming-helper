@@ -46,7 +46,7 @@ describe('main', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		vi.stubGlobal('navigator', {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -56,7 +56,7 @@ describe('main', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 	});
 
 	test('renders without crashing', () => {
