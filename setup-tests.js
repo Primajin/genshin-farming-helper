@@ -15,7 +15,9 @@ expect.addSnapshotSerializer({
 // Runs a cleanup after each test case (e.g. clearing jsdom)
 afterEach(() => {
 	cleanup();
+	vi.restoreAllMocks();
 	vi.clearAllMocks();
 	vi.resetAllMocks();
+	vi.unstubAllGlobals();
 	localStorage.clear();
 });

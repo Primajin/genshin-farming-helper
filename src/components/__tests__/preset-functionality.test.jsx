@@ -46,7 +46,7 @@ describe('preset functionality', () => {
 	beforeEach(() => {
 		const eventTarget = new EventTarget();
 		const originalNavigator = navigator;
-		globalThis.navigator = {
+		vi.stubGlobal('navigator', {
 			...originalNavigator,
 			wakeLock: {
 				request: vi.fn().mockResolvedValue({
@@ -56,7 +56,7 @@ describe('preset functionality', () => {
 					released: 'hello',
 				}),
 			},
-		};
+		});
 		// Clear storage before each test
 		storage.save({});
 	});

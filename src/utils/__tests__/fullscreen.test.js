@@ -12,13 +12,13 @@ import {toggleFullscreen} from '../fullscreen.js';
 describe('toggleFullscreen', () => {
 	beforeEach(() => {
 		const originalDocument = document;
-		globalThis.document = {
+		vi.stubGlobal('document', {
 			...originalDocument,
 			fullscreenElement: null,
 			documentElement: {},
 			querySelector: vi.fn(),
 			exitFullscreen: vi.fn(),
-		};
+		});
 	});
 
 	test('should enter fullscreen mode when no element is in fullscreen', () => {
