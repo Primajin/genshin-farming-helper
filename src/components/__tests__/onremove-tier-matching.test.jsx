@@ -63,6 +63,30 @@ vi.mock('presets', async () => {
 						filename_icon: 'UI_AvatarIcon_Test',
 					},
 				},
+				// Tracks ONLY the second tier (104102) of the 104101-104104
+				// consecutive group, deliberately excluding the group's lowest
+				// id (104101). This isolates the tier-match ternary's true
+				// branch: removing helper 104101 is not an exact match for the
+				// tracked item (104102), so the only way this preset gets
+				// deactivated is via `tierIds[0] === itemId` genuinely
+				// evaluating to true.
+				{
+					id: 99_998,
+					name: 'Test Tier Match Preset',
+					element: 'Geo',
+					rarity: 3,
+					items: [
+						{
+							id: 104_102,
+							name: 'Brilliant Diamond Fragment',
+							count: 1,
+						},
+					],
+					images: {
+						// eslint-disable-next-line camelcase
+						filename_icon: 'UI_AvatarIcon_Test',
+					},
+				},
 			],
 		},
 	};
@@ -127,6 +151,51 @@ describe('onRemove tier matching against active presets', () => {
 		const storageState = storage.load();
 		expect(storageState.helpers['104104']).toBeUndefined();
 		expect(storageState.presets).toEqual(['character.10000005', 'weapon.11101']);
+	});
+
+	test('removing the tier group\'s lowest-id helper deactivates a preset tracking a higher tier of that same group', async () => {
+		// "Test Tier Match Preset" (character.99998) tracks only material
+		// 104102 — a higher tier of the 104101-104104 consecutive group —
+		// and deliberately does NOT track 104101 itself. Removing helper
+		// 104101 (the group's lowest id) is therefore not an exact match
+		// for the tracked item, so the preset can only be deactivated via
+		// the tier-match ternary's true branch: `tierIds[0] === itemId`
+		// (104101 === 104101). The earlier test in this file removes
+		// 104104 (not the group's lowest), which makes that branch
+		// evaluate to false either way and cannot discriminate it — this
+		// case is the one the mutation-testing review found missing.
+		storage.save({
+			helpers: {
+				104_101: {
+					category: 'ASCENSION',
+					tierOne: 0,
+					tierOneLock: false,
+					tierTwo: 0,
+					tierTwoLock: false,
+					tierThree: 0,
+					tierThreeLock: false,
+					tierFour: 0,
+					tierOneGoal: '',
+					tierTwoGoal: '',
+					tierThreeGoal: '',
+					tierFourGoal: '',
+				},
+			},
+			presets: ['character.99998'],
+		});
+
+		render(<Main/>);
+
+		const removeButtons = screen.getAllByTitle('Remove item');
+		expect(removeButtons).toHaveLength(1);
+
+		await act(() => {
+			fireEvent.click(removeButtons[0]);
+		});
+
+		const storageState = storage.load();
+		expect(storageState.helpers['104101']).toBeUndefined();
+		expect(storageState.presets).toEqual([]);
 	});
 
 	test('adding a preset whose sole tracked item is a building material categorizes it correctly', async () => {
