@@ -36,7 +36,9 @@ export const materials = {
 };
 
 fs.promises.writeFile('src/data.json', JSON.stringify(materials), error => {
-	/* V8 ignore next 3 */
+	/*
+	V8 ignore next 3
+	*/
 	if (error) {
 		console.error(error);
 	}
@@ -64,7 +66,9 @@ export const materialsRare = {
 };
 
 fs.promises.writeFile('src/data-rare.json', JSON.stringify(materialsRare), error => {
-	/* V8 ignore next 3 */
+	/*
+	V8 ignore next 3
+	*/
 	if (error) {
 		console.error(error);
 	}
@@ -185,7 +189,9 @@ const generatePresets = () => {
 
 const presets = generatePresets();
 fs.promises.writeFile('src/presets.json', JSON.stringify(presets), error => {
-	/* V8 ignore next 3 */
+	/*
+	V8 ignore next 3
+	*/
 	if (error) {
 		console.error(error);
 	}

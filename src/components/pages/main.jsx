@@ -218,7 +218,7 @@ export default function Main() {
 		// Deactivate any presets that included this material
 		const currentPresets = storageState?.presets ?? [];
 		const newPresets = currentPresets.filter(presetKey => {
-			const [type, presetIdString] = presetKey.split('.');
+			const [type, presetIdString] = presetKey.split('.', 2);
 			const presetId = Number(presetIdString);
 			const preset = findPreset(type, presetId);
 			if (!preset) {
@@ -239,11 +239,7 @@ export default function Main() {
 
 				// Check multi-tier match (preset item might be a different tier of the same material)
 				const tierIds = getConsecutiveTierIds(item.id, getAllMaterialsFlat());
-				if (tierIds.length > 1) {
-					return String(tierIds[0]) === itemId;
-				}
-
-				return false;
+				return tierIds.length > 1 ? String(tierIds[0]) === itemId : false;
 			});
 		});
 
@@ -254,7 +250,6 @@ export default function Main() {
 
 	// Create the FarmHelper components from the data
 	const farmHelperList = farmHelperData.map(({itemId, config, category}) => {
-		// Create a key that includes the goal values to force re-mount when presets change them
 		const goalKey = `${config?.tierOneGoal || ''}-${config?.tierTwoGoal || ''}-${config?.tierThreeGoal || ''}-${config?.tierFourGoal || ''}`;
 		const key = `${itemId}-${goalKey}`;
 
@@ -395,11 +390,7 @@ export default function Main() {
 			return 'WOOD';
 		}
 
-		if (materials.buildingMaterials.includes(material)) {
-			return 'BUILDING';
-		}
-
-		return null;
+		return materials.buildingMaterials.includes(material) ? 'BUILDING' : null;
 	};
 
 	// Helper to group preset items by sortRank and process them
@@ -426,12 +417,10 @@ export default function Main() {
 		// For each group, find the highest rarity item to use as the base
 		const processed = [];
 		for (const items of Object.values(grouped)) {
-			// Check if items have different rarities (indicating tiers of same material)
 			const uniqueRarities = new Set(items.map(item => item.rarity));
 			const hasDifferentRarities = uniqueRarities.size > 1;
 
 			if (hasDifferentRarities) {
-				// Sort by rarity descending
 				items.sort((a, b) => b.rarity - a.rarity);
 
 				const highestTier = items[0];
@@ -451,7 +440,6 @@ export default function Main() {
 					})),
 				});
 			} else {
-				// All items have same rarity - treat as separate materials
 				for (const item of items) {
 					const category = findMaterialCategory(item.id);
 					if (category) {
@@ -471,7 +459,9 @@ export default function Main() {
 		return processed;
 	};
 
-	/** Convert the helpers object from storage into the array format used by React state. */
+	/**
+	Convert the helpers object from storage into the array format used by React state.
+	*/
 	const rebuildHelperList = useCallback(savedHelpers => {
 		const newHelpers = [];
 		for (const [itemId, config] of Object.entries(savedHelpers)) {
@@ -491,11 +481,7 @@ export default function Main() {
 			return presets.characters.find(c => c.id === id);
 		}
 
-		if (type === 'weapon') {
-			return presets.weapons.find(w => w.id === id);
-		}
-
-		return presets.fishingRods.find(r => r.id === id);
+		return type === 'weapon' ? presets.weapons.find(w => w.id === id) : presets.fishingRods.find(r => r.id === id);
 	}, []);
 
 	// Helper to find if any tier of a material exists in helpers
@@ -531,7 +517,9 @@ export default function Main() {
 		return null;
 	};
 
-	/** Add or remove a preset's materials from the helpers object (mutates `savedHelpers` in place). */
+	/**
+	Add or remove a preset's materials from the helpers object (mutates `savedHelpers` in place).
+	*/
 	const applyPresetToHelpers = useCallback((preset, isAdding, savedHelpers) => {
 		const groupedItems = groupPresetItems(preset.items);
 		let isHelpersModified = false;
@@ -575,39 +563,43 @@ export default function Main() {
 			for (const groupedItem of groupedItems) {
 				const existing = findExistingHelperForMaterial(savedHelpers, groupedItem.id);
 
-				if (existing) {
-					const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
-					const updatedConfig = {...existing.helper};
-
-					for (const tier of groupedItem.tiers) {
-						const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
-						const newGoal = Math.max(0, currentGoal - tier.count);
-						updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
-					}
-
-					const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
-						|| updatedConfig.tierThree || updatedConfig.tierFour;
-					const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
-						|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
-
-					if (!hasProgress && !hasAnyGoal) {
-						delete savedHelpers[existing.itemId];
-					} else {
-						savedHelpers[existing.itemId] = updatedConfig;
-					}
-
-					isHelpersModified = true;
+				if (!existing) {
+					continue;
 				}
+
+				const tierFields = ['tierOneGoal', 'tierTwoGoal', 'tierThreeGoal', 'tierFourGoal'];
+				const updatedConfig = {...existing.helper};
+
+				for (const tier of groupedItem.tiers) {
+					const currentGoal = existing.helper[tierFields[tier.tierIndex]] || 0;
+					const newGoal = Math.max(0, currentGoal - tier.count);
+					updatedConfig[tierFields[tier.tierIndex]] = newGoal === 0 ? '' : newGoal;
+				}
+
+				const hasProgress = updatedConfig.tierOne || updatedConfig.tierTwo
+					|| updatedConfig.tierThree || updatedConfig.tierFour;
+				const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
+					|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
+
+				if (!hasProgress && !hasAnyGoal) {
+					delete savedHelpers[existing.itemId];
+				} else {
+					savedHelpers[existing.itemId] = updatedConfig;
+				}
+
+				isHelpersModified = true;
 			}
 		}
 
 		return isHelpersModified;
 	}, [groupPresetItems, findExistingHelperForMaterial]);
 
-	/** Toggle a preset on/off. Loads storage once, computes all changes, then saves atomically. */
+	/**
+	Toggle a preset on/off. Loads storage once, computes all changes, then saves atomically.
+	*/
 	const onPresetChange = useCallback(event => {
 		const {value} = event.target;
-		const [type, presetIdString] = value.split('.');
+		const [type, presetIdString] = value.split('.', 2);
 		const presetId = Number(presetIdString);
 
 		const preset = findPreset(type, presetId);
@@ -656,7 +648,6 @@ export default function Main() {
 		document.addEventListener('fullscreenchange', setFullScreenState);
 
 		return () => {
-			// Unregister eventListener once
 			document.removeEventListener('fullscreenchange', setFullScreenState);
 		};
 	}, []);

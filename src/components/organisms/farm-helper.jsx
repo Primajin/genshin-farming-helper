@@ -136,15 +136,14 @@ function TierItem({
 	isLastItem,
 }) {
 	const [source, setSource] = useState(`${IMG_URL}${item.images?.filename_icon}.png`);
-	const hasRetried = useRef(false);
+	const hasRetriedRef = useRef(false);
 
 	const tryOtherUrl = () => {
-		/* V8 ignore next 3 */
-		if (hasRetried.current) {
+		if (hasRetriedRef.current) {
 			return;
 		}
 
-		hasRetried.current = true;
+		hasRetriedRef.current = true;
 		setSource(`${IMG_URL2}${item.images?.filename_icon}.png`);
 	};
 

@@ -42,14 +42,14 @@ function ItemCard({
 	'data-testid': dataTestId,
 }) {
 	const [source, setSource] = useState(`${IMG_URL}${icon}.png`);
-	const hasRetried = useRef(false);
+	const hasRetriedRef = useRef(false);
 
 	const tryOtherUrl = () => {
-		if (hasRetried.current) {
+		if (hasRetriedRef.current) {
 			return;
 		}
 
-		hasRetried.current = true;
+		hasRetriedRef.current = true;
 		setSource(`${IMG_URL2}${icon}.png`);
 	};
 
