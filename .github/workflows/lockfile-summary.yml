@@ -1,0 +1,16 @@
+name: Lockfile summary
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '**/package-lock.json'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  summary:
+    if: github.event.pull_request.user.login == 'renovate[bot]'
+    uses: Primajin/.github/.github/workflows/lockfile-summary.yml@main
