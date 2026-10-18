@@ -35,17 +35,13 @@ jobs:
         shell: bash
       - name: Checkout code
         uses: actions/checkout@v7
-      - name: install puppeteer-headful
-        uses: mujo-code/puppeteer-headful@master
-        env:
-          CI: 'true'
       - name: screenshots-ci-action
-        uses: Primajin/screenshots-ci-action@v3
+        uses: Primajin/screenshots-ci-action@v4
         with:
-          devices: iPhone 13,iPad Pro,iPad Pro landscape
-          fullPage: false
-          noDesktop: true
-          releaseId: 236029200
+          devices: iPhone 13,iPad Pro 11,iPad Pro 11 landscape
+          full-page: false
+          no-desktop: true
+          release-id: 236029200
           type: png
           url: ${{ env.PREVIEW_URL }}
         env:
