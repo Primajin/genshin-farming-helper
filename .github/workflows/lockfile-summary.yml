@@ -13,4 +13,4 @@ permissions:
 jobs:
   summary:
     if: github.event.pull_request.user.login == 'renovate[bot]'
-    uses: Primajin/.github/.github/workflows/lockfile-summary.yml@main
+    uses: Primajin/.github/.github/workflows/lockfile-summary.yml@v1

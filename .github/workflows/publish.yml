@@ -42,4 +42,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
-          retry_on_conflict: true
