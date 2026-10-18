@@ -61,7 +61,7 @@
     "@codecov/vite-plugin": {
       "vite": "$vite"
     },
-    "katex": "^0.18.2"
+    "katex": "^0.19.0"
   },
   "browserslist": [
     ">0.2%",
