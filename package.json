@@ -60,7 +60,8 @@
   "overrides": {
     "@codecov/vite-plugin": {
       "vite": "$vite"
-    }
+    },
+    "katex": "^0.18.2"
   },
   "browserslist": [
     ">0.2%",
