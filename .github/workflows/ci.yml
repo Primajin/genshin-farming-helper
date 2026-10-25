@@ -22,13 +22,17 @@ jobs:
 
   lint:
     if: github.event_name == 'push' || github.event.action != 'closed'
-    permissions: write-all
+    permissions:
+      contents: write # checkout and lint-action pushes auto-fix commits to the PR branch
+      checks: write # lint-action creates the check run with annotations
     uses: ./.github/workflows/_lint.yml
     secrets: inherit
 
   build:
     if: github.event_name == 'pull_request'
-    permissions: write-all
+    permissions:
+      contents: write # checkout and pr-preview-action pushes the preview to gh-pages
+      pull-requests: write # pr-preview-action posts the sticky preview comment
     uses: ./.github/workflows/_build.yml
     secrets: inherit
 
