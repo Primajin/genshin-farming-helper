@@ -35,7 +35,9 @@ jobs:
   console:
     if: github.event_name == 'pull_request' && github.event.action != 'closed'
     needs: build
-    permissions: write-all
+    permissions:
+      contents: read # checkout
+      pull-requests: write # post the console log comment
     uses: ./.github/workflows/_console.yml
     secrets: inherit
 
