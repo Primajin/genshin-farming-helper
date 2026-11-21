@@ -239,7 +239,7 @@ export default function Main() {
 
 				// Check multi-tier match (preset item might be a different tier of the same material)
 				const tierIds = getConsecutiveTierIds(item.id, getAllMaterialsFlat());
-				return tierIds.length > 1 ? String(tierIds[0]) === itemId : false;
+				return (tierIds.length > 1) && (String(tierIds[0]) === itemId);
 			});
 		});
 
@@ -581,10 +581,10 @@ export default function Main() {
 				const hasAnyGoal = updatedConfig.tierOneGoal || updatedConfig.tierTwoGoal
 					|| updatedConfig.tierThreeGoal || updatedConfig.tierFourGoal;
 
-				if (!hasProgress && !hasAnyGoal) {
-					delete savedHelpers[existing.itemId];
-				} else {
+				if (hasProgress || hasAnyGoal) {
 					savedHelpers[existing.itemId] = updatedConfig;
+				} else {
+					delete savedHelpers[existing.itemId];
 				}
 
 				isHelpersModified = true;
