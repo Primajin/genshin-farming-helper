@@ -134,7 +134,7 @@ describe('farmHelper', () => {
 
 			expect(valuesBefore).toMatchObject(expectedValuesBefore[tiers]);
 
-			for (let i = 0; i < 9; i++) {
+			for (let index = 0; index < 9; index++) {
 				fireEvent.click(buttons[0]);
 			}
 
@@ -151,7 +151,7 @@ describe('farmHelper', () => {
 
 			expect(valuesBefore).toMatchObject(expectedValuesBefore[tiers]);
 
-			for (let i = 0; i < 9; i++) {
+			for (let index = 0; index < 9; index++) {
 				fireEvent.click(buttons[0]);
 			}
 
@@ -169,7 +169,7 @@ describe('farmHelper', () => {
 
 				expect(valuesBefore).toMatchObject(expectedValuesBeforeWithLockPrefilled[tiers]);
 
-				for (let i = 0; i < 9; i++) {
+				for (let index = 0; index < 9; index++) {
 					fireEvent.click(buttons[0]);
 				}
 
@@ -202,8 +202,8 @@ describe('farmHelper', () => {
 		const buttons = screen.getAllByTestId(/button-tier-/v);
 		const valuesBefore = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
 
-		for (let i = 0; i < 4; i++) {
-			fireEvent.click(buttons[i]);
+		for (let index = 0; index < 4; index++) {
+			fireEvent.click(buttons[index]);
 		}
 
 		const valuesAfter = screen.getAllByTestId(/value-tier-/v).map(element => element.textContent);
@@ -228,14 +228,14 @@ describe('farmHelper', () => {
 
 		// Currently the values are     0, 1, 2, 3
 		// and the goals will be set to 0, 1, 2, 3
-		for (let i = 0; i < 4; i++) {
-			const input = goalLabels[i].querySelector('input');
-			fireEvent.change(input, {target: {value: String(i)}});
+		for (let index = 0; index < 4; index++) {
+			const input = goalLabels[index].querySelector('input');
+			fireEvent.change(input, {target: {value: String(index)}});
 		}
 
 		// Now everything will be increased by one
-		for (let i = 0; i < 4; i++) {
-			fireEvent.click(buttons[i]);
+		for (let index = 0; index < 4; index++) {
+			fireEvent.click(buttons[index]);
 		}
 		// The values are now         1, 2, 0, 5
 		// so the goals will match on the second and the last item
@@ -271,20 +271,20 @@ describe('farmHelper', () => {
 
 		// Currently the values are     0, 1, 2, 3
 		// and the goals will be set to 0, 1, 2, 3
-		for (let i = 0; i < 4; i++) {
-			const input = goalLabels[i].querySelector('input');
-			fireEvent.change(input, {target: {value: String(i)}});
+		for (let index = 0; index < 4; index++) {
+			const input = goalLabels[index].querySelector('input');
+			fireEvent.change(input, {target: {value: String(index)}});
 		}
 
 		// Now everything will be increased by one
-		for (let i = 0; i < 4; i++) {
-			fireEvent.click(buttons[i]);
+		for (let index = 0; index < 4; index++) {
+			fireEvent.click(buttons[index]);
 		}
 		// Until here is what was tested in the test before
 
 		// Now we remove all the goals again
-		for (let i = 0; i < 4; i++) {
-			const input = goalLabels[i].querySelector('input');
+		for (let index = 0; index < 4; index++) {
+			const input = goalLabels[index].querySelector('input');
 			fireEvent.change(input, {target: {value: '0'}});
 		}
 
@@ -295,8 +295,8 @@ describe('farmHelper', () => {
 		}
 
 		// We also test if it handles backspace (= sending empty string)
-		for (let i = 0; i < 4; i++) {
-			const input = goalLabels[i].querySelector('input');
+		for (let index = 0; index < 4; index++) {
+			const input = goalLabels[index].querySelector('input');
 			fireEvent.change(input, {target: {value: ''}});
 		}
 

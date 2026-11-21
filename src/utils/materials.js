@@ -3,7 +3,7 @@
  @param {number[]} ids - Sorted array of IDs
  @returns {boolean} Whether the IDs form a single consecutive sequence.
  */
-export const isConsecutiveIds = ids => ids.length > 1 && ids.every((id, i) => i === 0 || id === ids[i - 1] + 1);
+export const isConsecutiveIds = ids => ids.length > 1 && ids.every((id, index) => index === 0 || id === ids[index - 1] + 1);
 
 /**
  Find all tier IDs for a material by its sortRank.
